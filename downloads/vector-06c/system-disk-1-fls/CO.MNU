@@ -1,0 +1,112 @@
+D)	Упаковать текущ. диск ARC...
+E CO.TOK
+X:ARC !.ARC /A *.*
+C:CO
+T)	Упаковать текущ. файл ARC...
+X:ARC !.ARC /A !.!
+E !.!
+E CO.TOK
+C:CO
+B)	Упаковать  В: => А:   ARC...
+E CO.TOK
+X:ARC A:ARHIVE.ARC /A B:*.*
+C:CO
+E)	Упаковать  А: => С:   ARC...
+X:ARC C:ARHIVE.ARC /A A:*.*
+E CO.TOK
+C:CO
+A) Трансляция *.ASM программой MAC.
+0 5B A
+X:MAC ! $ PZ SZ
+X:LOAD !.HEX
+E !.HEX
+E CO.TOK
+C:CO
+1) Раб. с Ассем. (REL) на диске C:
+0 4A A
+X:PIP C:MAS.CоM = A:MAS.COM
+X:PIP C:L80.CоM = A:L80.COM
+X:PIP C:SID.CоM = A:SID.COM
+E CO.TOK
+C:CO
+2) Раб. с Ассем. (HEX) на диске C:
+0 4A A
+X:PIP C:MAC.CоM  = A:MAC.COM
+X:PIP C:LOAD.CоM = A:LOAD.COM
+X:PIP C:SID.CоM  = A:SID.COM
+E CO.TOK
+C:CO
+F)	Быстрое форматирование диска A:
+X:SF A
+N
+E CO.TOK
+C:CO
+f)	Быстрое форматирование диска B:
+X:SF B
+N
+E CO.TOK
+C:CO
+G) Генерация  программы на диск A:
+0 5C A
+X:SYSGEN !.! A:100
+Y
+Y
+Y
+E CO.TOK
+C:CO
+g) Генерация  программы на диск B:
+0 5C A
+X:SYSGEN !.! B:100
+Y
+Y
+Y
+E CO.TOK
+C:CO
+C)	Копирование напрямую  A: --> B:
+X:COPYDISK
+ANYYNY
+X:COVER    .COM
+AN
+E CO.TOK
+C:CO
+c)	Копирование напрямую  B: --> A:
+X:COPYDISK
+BNYYNY
+X:COVER    .COM
+AN
+E CO.TOK
+C:CO
+P) Защита  директория  на диске A:
+X:COVER    .COM
+AN
+E CO.TOK
+C:CO
+p) Защита  директория  на диске B:
+X:COVER    .COM
+BN
+E CO.TOK
+C:CO
+M)	Копирование файла в MS-DOS (A:)
+X:COMMAND .COM
+A
+COPY A:=!.!
+DIR
+
+E CO.TOK
+C:CO
+m)	Копирование файла в MS-DOS (B:)
+X:COMMAND .COM
+B
+COPY B:=!.!
+DIR
+
+E CO.TOK
+C:CO
+O) Оброботать VPCX, удалив файл PCX...
+X:VPCX !.!
+E !.!
+E CO.TOK
+C:CO
+8) Тестирование электронного диска...
+ 8
+0)	     В О З В Р А Т...
