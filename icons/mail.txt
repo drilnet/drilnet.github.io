@@ -1,0 +1,2 @@
+
+    mail.svg, mail_20x20.png - Иконка из набора Oxygen.

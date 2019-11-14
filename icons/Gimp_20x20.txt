@@ -1,0 +1,4 @@
+
+    Набор:    Nuvola 2
+    Дизайнер: David Vignoni
+    Лицензия: LGPL

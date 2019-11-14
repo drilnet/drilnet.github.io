@@ -1,0 +1,5 @@
+
+    Файл:     Linux_20x20.png
+    Набор:    Crystal project
+    Дизайнер: Everaldo Coelho
+    Лицензия: LGPL
