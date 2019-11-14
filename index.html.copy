@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+
+<!-- (C) Demidov S.V. -->
+
+	<head> 
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+
+	<meta name="keywords" content="hobby, hobby github, hobby github demidov, hobby github demidov s">
+	<meta name="keywords" content="hobby github demidov s.v, hobby github demidov s.v.">
+	<meta name="keywords" content="demidov github, demidov s github, demidov s.v github">
+	<meta name="keywords" content="demidov s.v. github, demidov stanislav github">
+
+	<meta name="keywords" content="demidov, demidov s, demidov s.v, demidov s.v., demidov stanislav">
+
+	<meta name="keywords" content="модель игральной кости, игральная кость">
+	<meta name="keywords" content="игральная кость blender, игральная кость blender3d, игральная кость blender-3d">
+	<meta name="keywords" content="dice blender, dice blender3d, dice blender-3d">
+	<meta name="keywords" content="dice2 blender, dice2 blender3d, dice2 blender-3d">
+	<meta name="keywords" content="кубик blender, кубик blender3d, кубик blender-3d">
+
+	<meta name="keywords" content="анимированный кубик, анимированный dice, анимированный dice2">
+	<meta name="keywords" content="анимированная игральная кость">
+
+	<meta name="keywords" content="модель мотора">
+	<meta name="keywords" content="мотор blender, мотор blender3d, мотор blender-3d">
+	<meta name="keywords" content="motor blender, motor blender3d, motor blender-3d">
+
+	<meta name="keywords" content="государственная символика украины">
+	<meta name="keywords" content="флаг blender, флаг blender3d, флаг blender-3d">
+	<meta name="keywords" content="герб blender, герб blender3d, герб blender-3d">
+	<meta name="keywords" content="флаг украины, герб украины">
+
+	<meta name="keywords" content="disabled person blender, disabled person blender3d, disabled person blender-3d">
+	<meta name="keywords" content="анимированная иконка, анимированная иконка blender">
+	<meta name="keywords" content="анимированная иконка blender3d, анимированная иконка blender-3d">
+	<meta name="keywords" content="инвалид blender, инвалид blender3d, инвалид blender-3d">
+
+	<meta name="keywords" content="флоппи диск, флоппи диск 3.5">
+	<meta name="keywords" content="флоппи blender, флоппи blender3d, флоппи blender-3d">
+	<meta name="keywords" content="диск blender, диск blender3d, диск blender-3d">
+	<meta name="keywords" content="флоппи диск blender, флоппи диск blender3d, флоппи диск blender-3d">
+
+	<meta name="keywords" content="логотип vrLE8, логотип vrLE16, logo vrle8, logo vrle16, логотип rle, logo rle">
+	<meta name="keywords" content="логотип vrLE8 blender, логотип vrLE16 blender, logo vrle8 blender, logo vrle16 blender, логотип rle blender, logo rle blender">
+	<meta name="keywords" content="логотип vrLE8 blender3d, логотип vrLE16 blender3d, logo vrle8 blender3d, logo vrle16 blender3d, логотип rle blender3d, logo rle blender3d">
+	<meta name="keywords" content="логотип vrLE8 blender-3d, логотип vrLE16 blender-3d, logo vrle8 blender-3d, logo vrle16 blender-3d, логотип rle blender-3d, logo rle blender-3d">
+
+	<meta name="keywords" content="tea2025b, tea2025b blender, tea2025b blender3d, tea2025b blender-3d">
+	<meta name="keywords" content="tea2025b в 3d">
+
+	<meta name="keywords" content="подписываем цифровые фотографии, скрипт цифровые фотографии">
+	<meta name="keywords" content="подписываем цифровые фото, скрипт цифровые фото">
+	<meta name="keywords" content="подписываем фотографии">
+	<meta name="keywords" content="подписываем фото">
+
+	<meta name="keywords" content="вектор, вектор-06ц, вектор06ц, вектор06">
+
+	<meta name="keywords" content="вектор украина">
+	<meta name="keywords" content="вектор-06ц украина, вектор-06 украина">
+	<meta name="keywords" content="вектор06ц украина, вектор06 украина">
+
+	<meta name="keywords" content="ожившее кино">
+	<meta name="keywords" content="вектор-06ц ожившее кино, вектор-06 ожившее кино, вектор ожившее кино">
+	<meta name="keywords" content="вектор06ц ожившее кино, вектор06 ожившее кино">
+	<meta name="keywords" content="вектор-06ц кино, вектор-06 кино, вектор кино">
+	<meta name="keywords" content="вектор06ц кино, вектор06 кино">
+
+	<meta name="keywords" content="конвертер графических файлов spr в bmp, spr в bmp, spr2bmp">
+	<meta name="keywords" content="spr, spr вектор-06ц, spr вектор-06, spr вектор">
+	<meta name="keywords" content="spr вектор06ц, spr вектор06">
+	<meta name="keywords" content="spr, spr vector-06c, spr vector-06, spr vector">
+
+	<meta name="keywords" content="конвертер графических файлов grf в bmp, grf в bmp, grf2bmp">
+	<meta name="keywords" content="grf, grf вектор-06ц, grf вектор-06, grf вектор">
+	<meta name="keywords" content="grf вектор06ц, grf вектор06">
+	<meta name="keywords" content="grf, grf vector-06c, grf vector-06, grf vector">
+
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор'а-06Ц">
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор'а-06">
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор'а">
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор">
+	<meta name="keywords" content="perl фото, perl фотографии">
+	<meta name="keywords" content="perl скрипт фото, perl скрипт фотографии">
+	<meta name="keywords" content="perl photo, perl photos">
+	<meta name="keywords" content="perl script photo, perl script photos">
+
+	<meta name="keywords" content="rle кодирование/декодирование своими руками">
+	<meta name="keywords" content="rle кодирование">
+	<meta name="keywords" content="rle декодирование">
+	<meta name="keywords" content="rle">
+
+	<meta name="keywords" content="ящик для экспонирования фоторезиста">
+
+	<meta name="keywords" content="усилитель звука на микросхеме tea2025b">
+	<meta name="keywords" content="усилитель звука tea2025b">
+	<meta name="keywords" content="усилитель tea2025b">
+
+	<meta name="keywords" content="усилитель звука на микросхеме tea2025">
+	<meta name="keywords" content="усилитель звука tea2025">
+	<meta name="keywords" content="усилитель tea2025">
+
+	<meta name="keywords" content="схема tea2025b">
+	<meta name="keywords" content="печатная плата tea2025b">
+	<meta name="keywords" content="собранная плата tea2025b">
+
+	<meta name="keywords" content="схема tea2025">
+	<meta name="keywords" content="печатная плата tea2025">
+	<meta name="keywords" content="собранная плата tea2025">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+
+<body>
+
+	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+	<tr>
+	<td>
+
+	<span class="texthobby"><b>Hobby</b></span>
+
+	<hr class="ttt">
+
+	<br>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+		<a href="https://github.com">GITHUB</a>
+		- Моя записная книжка (наброски, заметки и т.д. и т.п.)!
+		</td>
+
+		<td style="padding-right: 16px;">
+
+			<table align="right" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td style="padding: 0px 8px 0px 8px;">
+
+				<!-- Google поиск -->
+
+				<table class="iconsearch"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://google.com">
+				<div class="icon"><img src="icons/googlesearch_20x20.png" title="Поисковая система Google"></div>
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 8px 0px 0px">
+
+				<!-- Meta поиск -->
+
+				<table class="iconsearch"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://meta.ua">
+				<div class="icon"><img src="icons/metasearch_20x20.png" title="Украинская поисковая система Meta"></div>
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 0px 0px 0px">
+
+				<!-- Yandex поиск -->
+
+				<table class="iconsearch"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://yandex.ru">
+				<div class="icon"><img src="icons/yandexsearch_20x20.png" title="Поисковая система Yandex"></div>
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+	<br>
+
+	</td>
+	</tr>
+
+	<!-- Репозитории автора -->
+
+	<tr>
+	<td>
+
+	<hr>
+	<br>
+
+		<div class="textrepo">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<b>Все репозитории автора:</b>
+
+		<br>
+
+		<p>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/blender3d-dice2">
+		Blender 3D. Модель игральной кости (dice)</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/blender3d-motor">
+		Blender 3D. Модель мотора (motor)</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/blender3d-ukrainian-symbols">
+		Blender 3D. Государственная символика Украины (Флаг, Герб)</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/blender3d-disabled-person">
+		Blender 3D. Disabled Person (анимированная иконка)</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/blender3d-floppy-disk-35">
+		Blender 3D. Флоппи диск 3.5"</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/blender3d-logovrle8-logovrle16">
+		Blender 3D. Логотип VRLE8 и Логотип VRLE16</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/blender3d-tea2025b">
+		Blender 3D. Микросхема TEA2025B в 3D</a>
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/programming-perl-signature-images" title="Скрипт написан на Perl">
+		Скрипт, который подписывает цифровые фотографии</a>
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/vector-06c-kino">
+		Вектор-06Ц. Ожившее кино</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/vector-06c-spr2bmp">
+		Вектор-06Ц. Конвертер графических файлов SPR в BMP</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/vector-06c-grf2bmp">
+		Вектор-06Ц. Конвертер графических файлов GRF в BMP</a>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/vector-06c-color256" title="Скрипт написан на Perl">
+		Скрипт, который показывает все цвета Вектор'а-06Ц</a>
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<b>Файловый архив Вектор'а-06Ц:</b>
+
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+		Системный диск Вектор'а-06Ц с МикроДОС Т-34 (Харьковский вариант)
+
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+		Библиотека ПК (Харьков 1993г.). Выпуск 1. ВЕКТОР-06Ц ИЗНУТРИ. Руководство для начинающих специалистов
+
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+		Библиотека ПК (Харьков 1993г.). Выпуск 2. Системные программы МикроДОС ПК Вектор-06Ц
+
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+		Библиотека ПК (Харьков 1993г.). Выпуск 3. Язык программирования ЛС-ПАСКАЛЬ
+
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td style="padding: 4px 0px 1px 0px;">
+
+			<table align="left" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://drilnet.github.io/downloads/vector-06c/downloads.html">Перейти в архив Вектор'а-06Ц</a>
+			</td>
+
+			<td style="padding-left: 8px; padding-right: 8px;">
+
+			<a href="https://drilnet.github.io/downloads/vector-06c/downloads.html" target="_blank">
+			<div class="icon"><img src="icons/file_2.png" title="Перейти в архив Вектор'а-06Ц (открыть в новой вкладке)"></div>
+			</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/rle">
+		RLE кодирование/декодирование своими руками (VRLE8, VRLE16)</a>
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/electronics">
+		Электроника (всё в одном репозитории)</a>
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+		<a href="https://github.com/drilnet/electronics/tree/master/Box%20For%20Exposure%20Photoresist"
+		title="Ящик из подручного материала">
+		Ящик для экспонирования фоторезиста</a>
+
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+		<a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B"
+		title="Схема, печатная плата, собранная плата">
+		Усилитель звука на микросхеме TEA2025B</a>
+
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+		<a href="https://github.com/drilnet/electronics/tree/master/Speakers%20Genius%20SP-G06"
+		title="Что было и Что стало">
+		Ремонт компьютерных колонок Genius SP-G06</a>
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;
+		<b>Репозиторий:</b>
+		<a href="https://github.com/drilnet/Intelligence"
+		title="Intelligence. Artificial Intelligence">
+		Интеллект. Искусственный интеллект</a>
+
+		</p>
+
+		</td>
+		</tr>
+		</table>
+
+		</div>
+
+	<hr>
+
+	</td>
+	</tr>
+
+
+	<!-- Ссылки на сайты -->
+	<!-- Бесплатное программное обеспечение -->
+
+	<tr>
+	<td>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+
+		<b><span title="Бесплатное программное обеспечение">Бесплатное ПО:</span></b>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- FreeBSD -->
+
+			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://freebsd.org">
+			<div class="icon"><img src="icons/FreeBSD_20x20.png" title="Операционная система FreeBSD"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- Linux -->
+
+			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://linux.org">
+			<div class="icon"><img src="icons/Linux_20x20.png" title="Операционная система Linux"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- Blender 3D -->
+
+			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.blender.org">
+			<div class="icon"><img src="icons/Blender_20x20.png" title="3D редактор Blender"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- Gimp -->
+
+			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.gimp.org">
+			<div class="icon"><img src="icons/Gimp_20x20.png" title="Графический редактор Gimp (2D)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- ExpressPCB -->
+
+			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.expresspcb.com">
+			<div class="icon"><img src="icons/ExpressPCB_20x20.png" title="Редактор схем и Разводка плат (ExpressPCB)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- TinyCAD -->
+
+			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.tinycad.net">
+			<div class="icon"><img src="icons/TinyCAD_20x20.png" title="Редактор схем TinyCAD"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Почтовый адрес -->
+
+	<tr>
+	<td>
+
+	<hr>
+
+	<br>
+
+		<table align="center" width="320px" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<img src="icons/mail_20x20.png">
+
+		<br>
+
+		<span class="spoilerurl"
+		onclick="document.getElementById('mail_s1').style.display = (document.getElementById('mail_s1').style.display=='none'?'inline':'none');"
+		title="Нажмите">
+
+		<b>Почтовый адрес:</b>
+
+		</span>
+
+		<div id="mail_s1" style="display: none; width: 100%;">
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		Станислав Владимирович Демидов,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		ул. Стадионная, дом 1-Б, кв. 20,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		пос. Донец, Балаклейский р-н,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		Харьковская обл., 64250, Украина
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		<b><i>Любая помощь приветствуется!</i></b>
+
+		</div>
+
+		<br>
+		<br>
+
+		<img src="icons/mail_20x20.png">
+
+		<br>
+
+		<span class="spoilerurl"
+		onclick="document.getElementById('mail_s2').style.display = (document.getElementById('mail_s2').style.display=='none'?'inline':'none');"
+		title="Click">
+
+		<b>Mailing addres:</b>
+
+		</span>
+
+		<div id="mail_s2" style="display: none; width: 100%;">
+
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		Stanislav Vladimirovich Demidov,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		ul. Stadionnaya, dom 1, korp. B, kv. 20,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		g. Donets, Balakleyskiy r-n,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		obl. Khar`kovskaya, 64250, Ukraine
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		<b><i>Any help is appreciated!</i></b>
+
+		</div>
+
+		</td>
+		</tr>
+		</table>
+
+	<br>
+
+	<hr>
+
+	</td>
+	</tr>
+
+	<!-- Подвал -->
+
+	<tr>
+	<td>
+
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr style="font-size: 0.8em;">
+		<td align="center">
+
+		Написать мне также можно на (замечания, предложения): <b>stdls[ухо]mail.ru</b> или <b>bbarsinov[ухо]gmail.com
+
+		<br>
+
+		<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). (C) Демидов С.В.
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td align="center">
+
+	<img src="icons/Disabled_Person_(mini).gif" title="Человек с ограниченными возможностями">
+
+	</td>
+	</tr>
+
+	</table>
+
+</body>
+</html>
