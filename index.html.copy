@@ -124,7 +124,7 @@
 
 	<span class="texthobby"><b>Hobby</b></span>
 
-	<hr class="ttt">
+	<hr class="hrwhite">
 
 	<br>
 
@@ -1158,6 +1158,32 @@
 		</tr>
 		</table>
 
+	<hr>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td align="center">
+
+		<p>
+
+		<!-- README.MD -->
+
+		<a href="https://github.com/OlgaVlasova/markdown-doc/blob/master/README.md#SpecialSymbol"
+		target="_blank" title="(C) Olga Vlasova (в новой вкладке)">
+		Правила оформления файла README.MD на GITHUB</a>
+
+		<br>
+
+		<!-- РУСЯЗ -->
+
+		<a href="https://drilnet.github.io/rusurl.html"
+		target="_blank" title="Ссылки на ресурсы (в новой вкладке)">
+		Ох уж этот русский язык</a>
+
+		<p>
+
 	</td>
 	</tr>
 
@@ -1167,7 +1193,6 @@
 	<td>
 
 	<hr>
-
 	<br>
 
 		<table align="center" width="320px" cellspacing="0" cellpadding="0" border="0">
@@ -1255,7 +1280,6 @@
 		</table>
 
 	<br>
-
 	<hr>
 
 	</td>
