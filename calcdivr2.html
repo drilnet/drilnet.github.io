@@ -1,0 +1,6830 @@
+<!DOCTYPE html>
+<html>
+
+<!-- (C) Demidov S.V. -->
+
+	<head> 
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script language="javascript" src="js/javascript-calcdivr2.js"></script>
+
+	</head>
+
+<!-- Установить переключатель в 150dpi (для FireFox) -->
+<body onload="CALCDIVPageFormulas_SetRadioButton_150DPI(); CALCDIVPageCalculation_SetRadioButton_150DPI(); CALCDIVFormulas_SetRadioButton_150DPI();">
+
+	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+	<tr>
+	<td>
+
+		<br>
+
+			<table class="calcdivpagebgh1" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+			Делитель напряжения на 2-х резисторах
+
+			</td>
+			</tr>
+
+			</table>
+
+		<br>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td align="center">
+
+		<table class="calcdivpagebgh2" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Схема делителя
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+				<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+				title="Нарисовано в TinyCAD">
+
+			</td>
+
+			<td valign="bottom" style="padding-left: 8px;">
+
+				<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+				<td>
+
+				<a href="https://www.tinycad.net" target="_blank">
+				<img class="icon" src="icons/TinyCAD_20x20.png"
+				title="Редактор схем TinyCAD (откроется в новой вкладке)">
+				</a>
+
+				</td>
+				</tr>
+
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<br>
+		<br>
+
+		<!-- Warning 1 -->
+		<table class="calcdivbgwarning_1" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<hr class="calcdivwarninghr">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+			<img class="icon" src="images-calcdivr2/Warning.png" title="Изображения формул и расчётов - сделаны плохо!">
+			</td>
+
+			<td style="padding-left: 8px;">
+			Изображения формул и расчётов - сделаны плохо!
+			</td>
+
+			</tr>
+			</table>
+
+		<hr class="calcdivwarninghr">
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+		<br>
+
+		<table class="calcdivpagebgh2" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Формулы
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Спойлер. Формулы -->
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('rsfsp').style.display = (document.getElementById('rsfsp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Развернуть/Свернуть</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<br>
+
+		<!-- То, что под спойлером -->
+
+		<div id="rsfsp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			Размер формулам:
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="PageFormulasSize" id="rbf_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVPAGEFORMULASSIZE_1()">
+			<label for="rbf_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="PageFormulasSize" id="rbf_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVPAGEFORMULASSIZE_2()">
+			<label for="rbf_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="PageFormulasSize" id="rbf_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVPAGEFORMULASSIZE_3()">
+			<label for="rbf_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Начало формул -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+				<span class="calcdivpagebgh3">
+				───[ Выходное напряжение <b>Uout1</b>, <b>Uout2</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим Uout1, Uout1 = R1 / (R1 + R2) * Uin -->
+				<span id="idformulassize_x1"><img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим Uout2, Uout2 = R2 / (R1 + R2) * Uin -->
+				<span id="idformulassize_x2"><img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим Uout1 (Uin - Uout2) -->
+				<span id="idformulassize_x3"><img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим Uout2 (Uin - Uout1) -->
+				<span id="idformulassize_x4"><img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Входное напряжение <b>Uin</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим Uin (Uout1), Uin = (R1 + R2) / R1 * Uout1 -->
+				<span id="idformulassize_x5"><img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим Uin (Uout2), Uin = (R1 + R2) / R2 * Uout2 -->
+				<span id="idformulassize_x6"><img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим Uin (Uout1 + Uout2) -->
+				<span id="idformulassize_x7"><img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Резистор <b>R1</b>, <b>R2</b>, и их <b>Rtotal</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим R1 (var1), R1 = Uin * R2 / Uout2 - R2 -->
+				<span id="idformulassize_x8"><img class="icon" src="images-calcdivr2/Find R1 (var1) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим R2 (var1), R2 = Uin * R1 / Uout1 - R1 -->
+				<span id="idformulassize_x9"><img class="icon" src="images-calcdivr2/Find R2 (var1) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим R1 (var2), R1 = Uout1 * Rtotal / Uin -->
+				<span id="idformulassize_x10"><img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим R2 (var2), R2 = Uout2 * Rtotal / Uin -->
+				<span id="idformulassize_x11"><img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<b>Примечание.</b>
+				<br>
+				<b>Rtotal</b> - суммарное значение резисторов <b>R1</b> и <b>R2</b> (<b>R1</b> + <b>R2</b>).
+				<br>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим R1 (var3), R1 = Uout1 * Rtotal / (Uout1 + Uout2) -->
+				<span id="idformulassize_x12"><img class="icon" src="images-calcdivr2/Find R1 (var3) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим R2 (var3), R2 = Uout2 * Rtotal / (Uout1 + Uout2) -->
+				<span id="idformulassize_x13"><img class="icon" src="images-calcdivr2/Find R2 (var3) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим R1 (var4), R1 = Rtotal - R2 -->
+				<span id="idformulassize_x14"><img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим R2 (var4), R2 = Rtotal - R1 -->
+				<span id="idformulassize_x15"><img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим Rtotal, Rtotal = Uin / I -->
+				<span id="idformulassize_x16"><img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Рассеиваемая мощность на <b>R1</b>, <b>R2</b> (<b>P1</b>, <b>P2</b>) ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим P1, P1 = Uout1 * Uout1 / R1 -->
+				<span id="idformulassize_x17"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2, P2 = Uout2 * Uout2 / R2 -->
+				<span id="idformulassize_x18"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Ток <b>I</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим I (var1), I = Uout1 / R1 -->
+				<span id="idformulassize_x19"><img class="icon" src="images-calcdivr2/Find I (var1) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим I (var2), I = Uout2 / R2 -->
+				<span id="idformulassize_x20"><img class="icon" src="images-calcdivr2/Find I (var2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Формула находим I (var3), I = Uin / (R1 + R2) -->
+				<span id="idformulassize_x21"><img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим I (var4), I = Uin / Rtotal -->
+				<span id="idformulassize_x22"><img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+		</div>
+
+		<table class="calcdivpagebgh2" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Расчёты
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Спойлер. Расчёты -->
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('rscsp').style.display = (document.getElementById('rscsp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Развернуть/Свернуть</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<br>
+
+		<!-- То, что под спойлером -->
+
+		<div id="rscsp" style="display: none; width: 100%;">
+
+			<!-- Warning 2 -->
+			<table class="calcdivbgwarning_2" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+			<hr class="calcdivwarninghr">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+				<img class="icon" src="images-calcdivr2/Warning.png" title="Расчёты с небольшими погрешностями!">
+				</td>
+
+				<td style="padding-left: 8px;">
+				Расчёты с небольшими погрешностями!
+				</td>
+
+				</tr>
+				</table>
+
+			<hr class="calcdivwarninghr">
+
+			</td>
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			Размер расчётам:
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="PageCalculationSize" id="rbc_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVPAGECALCULATIONSIZE_1()">
+			<label for="rbc_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="PageCalculationSize" id="rbc_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVPAGECALCULATIONSIZE_2()">
+			<label for="rbc_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="PageCalculationSize" id="rbc_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVPAGECALCULATIONSIZE_3()">
+			<label for="rbc_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Начало расчётов -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+				<span class="calcdivpagebgh3">
+				───[ Выходное напряжение <b>Uout1</b>, <b>Uout2</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт Uout1, Uout1 = R1 / (R1 + R2) * Uin, Uout1 = 1000 / (1000 + 2000) * 10 = 3.33В -->
+				<span id="idcalculationsize_y1"><img class="icon" src="images-calcdivr2/Calculation Uout1 (RU) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт Uout2, Uout2 = R2 / (R1 + R2) * Uin, Uout2 = 2000 / (1000 + 2000) * 10 = 6.66В -->
+				<span id="idcalculationsize_y2"><img class="icon" src="images-calcdivr2/Calculation Uout2 (RU) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расяёт Uout1 (Uin - Uout2), Uout1 = 10 - 6.66 = 3.33В -->
+				<span id="idcalculationsize_y3"><img class="icon" src="images-calcdivr2/Calculation Uout1 (Uin - Uout2) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт Uout2 (Uin - Uout1), Uout2 = 10 - 3.33 = 6.66В -->
+				<span id="idcalculationsize_y4"><img class="icon" src="images-calcdivr2/Calculation Uout2 (Uin - Uout1) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Входное напряжение <b>Uin</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт Uin (Uout1), Uin = (R1 + R2) / R1 * Uout1, Uin = (1000 + 2000) / 1000 * 3.33 = 10В -->
+				<span id="idcalculationsize_y5"><img class="icon" src="images-calcdivr2/Calculation Uin (Uout1) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт Uin (Uout2), Uin = (R1 + R2) / R2 * Uout2, Uin = (1000 + 2000) / 2000 * 6.66 = 10В -->
+				<span id="idcalculationsize_y6"><img class="icon" src="images-calcdivr2/Calculation Uin (Uout2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт Uin (Uout1 + Uout2), Uin = 3.33 + 6.66 = 10В -->
+				<span id="idcalculationsize_y7"><img class="icon" src="images-calcdivr2/Calculation Uin (Uout1 + Uout2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Резистор <b>R1</b>, <b>R2</b>, и их <b>Rtotal</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт R1 (var1), R1 = Uin * R2 / Uout2 - R2, R1 = 10 * 2000 / 6.66 - 2000 = 1000Ом -->
+				<span id="idcalculationsize_y8"><img class="icon" src="images-calcdivr2/Calculation R1 (var1) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт R2 (var1), R2 = Uin * R1 / Uout1 - R1, R2 = 10 * 1000 / 3.33 - 1000 = 2000Ом -->
+				<span id="idcalculationsize_y9"><img class="icon" src="images-calcdivr2/Calculation R2 (var1) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт R1 (var2), R1 = Uout1 * Rtotal / Uin, R1 = 3.33 * 3000 / 10 = 1000Ом -->
+				<span id="idcalculationsize_y10"><img class="icon" src="images-calcdivr2/Calculation R1 (var2) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт R2 (var2), R2 = Uout2 * Rtotal / Uin, R2 = 6.66 * 3000 / 10 = 2000Ом -->
+				<span id="idcalculationsize_y11"><img class="icon" src="images-calcdivr2/Calculation R2 (var2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<b>Примечание.</b>
+				<br>
+				<b>Rtotal</b> - суммарное значение резисторов <b>R1</b> и <b>R2</b> (<b>R1</b> + <b>R2</b>).
+				<br>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт R1 (var3), R1 = Uout1 * Rtotal / (Uout1 + Uout2), R1 = 3.33 * 3000 / (3.33 + 6.66) = 1000Ом -->
+				<span id="idcalculationsize_y12"><img class="icon" src="images-calcdivr2/Calculation R1 (var3) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт R2 (var3), R2 = Uout2 * Rtotal / (Uout1 + Uout2), R2 = 6.66 * 3000 / (3.33 + 6.66) = 2000Ом -->
+				<span id="idcalculationsize_y13"><img class="icon" src="images-calcdivr2/Calculation R2 (var3) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт R1 (var4), R1 = Rtotal - R2, R1 = 3000 - 2000 = 1000Ом -->
+				<span id="idcalculationsize_y14"><img class="icon" src="images-calcdivr2/Calculation R1 (var4) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт R2 (var4), R2 = Rtotal - R1, R2 = 3000 - 1000 = 2000Ом -->
+				<span id="idcalculationsize_y15"><img class="icon" src="images-calcdivr2/Calculation R2 (var4) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт Rtotal, Rtotal = Uin / I, Rtotal = 10 / 0.0033 = 3000Ом -->
+				<span id="idcalculationsize_y16"><img class="icon" src="images-calcdivr2/Calculation Rtotal (Uin div I) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Рассеиваемая мощность на <b>R1</b>, <b>R2</b> (<b>P1</b>, <b>P2</b>) ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт P1, P1 = Uout1 * Uout1 / R1, P1 = 3.33 * 3.33 / 1000 = 0.0110Вт -->
+				<span id="idcalculationsize_y17"><img class="icon" src="images-calcdivr2/Calculation P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт P2, P2 = Uout2 * Uout2 / R2, P2 = 6.66 * 6.66 / 2000 = 0.0221Вт -->
+				<span id="idcalculationsize_y18"><img class="icon" src="images-calcdivr2/Calculation P2 - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<span class="calcdivpagebgh3">
+				───[ Ток <b>I</b> ]───
+				</span>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calcdivpagebgfc"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт I (var1), I = Uout1 / R1, I = 3.33 / 1000 = 0.00333А -->
+				<span id="idcalculationsize_y19"><img class="icon" src="images-calcdivr2/Calculation I (var1) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт I (var2), I = Uout2 / R2, I = 6.66 / 2000 = 0.00333А -->
+				<span id="idcalculationsize_y20"><img class="icon" src="images-calcdivr2/Calculation I (var2) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				<!-- Расчёт I (var3), I = Uin / (R1 + R2), I = 10 / (1000 + 2000) = 0.00333А -->
+				<span id="idcalculationsize_y21"><img class="icon" src="images-calcdivr2/Calculation I (var3) - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Расчёт I (var4), I = Uin / Rtotal, I = 10 / 3000 = 0.00333А -->
+				<span id="idcalculationsize_y22"><img class="icon" src="images-calcdivr2/Calculation I (var4) - 150dpi.png"></span>
+
+				<br>
+				<hr class="calcdivpagefchr">
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+		</div>
+
+	</td>
+	</tr>
+
+	<!-- Сссылки -->
+
+	<tr>
+	<td align="center">
+
+	<hr>
+
+		<br>
+		<a href="https://github.com/drilnet/electronics/blob/master/Divider%20by%20R1%20and%20R2%20(formulas%2C%20calculations%2C%20HTML%20%2B%20JavaScript%20calculator)/Resistor%20Divider%20(2%20Resistors).pdf"
+		target="blank_" title="Откроется в новой вкладке (качество 300dpi)">Формулы и Расчёты в pdf-формате</a>
+		<br>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 1 (__1) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		1
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uin</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z1_input_1" value="10"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="z1_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z1_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z1_input_1', 'z1_input_2', 'z1_input_3'])"
+						title="Очистить все поля (Uin, R1, R2)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z1()"
+						title="Установить поля Uin, R1, R2 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z1_input_2" value="1000"
+				title="Сопротивление R1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z1_option_2">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z1_input_2')"
+				title="Очистить поле R1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z1_input_3" value="2000"
+				title="Сопротивление R2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z1_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z1_input_3')"
+				title="Очистить поле R2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z1()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout1"><b>Uout1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z1_result_Uout1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout2"><b>Uout2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z1_result_Uout2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z1_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z1_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z1_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z1sp').style.display = (document.getElementById('z1sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z1sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc1DivFormulasSize" id="calc_1_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_1_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc1DivFormulasSize" id="calc_1_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_1_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc1DivFormulasSize" id="calc_1_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_1_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_1_uout1">
+
+					<!-- Формула находим Uout1, Uout1 = R1 / (R1 + R2) * Uin -->
+					<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_1_uout2">
+
+					<!-- Формула находим Uout2, Uout2 = R2 / (R1 + R2) * Uin -->
+					<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_1_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_1_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_1_i"><img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 2 (__2) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		2
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z2_input_1" value="3.3"
+				title="Выходное напряжение Uout1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z2_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z2_input_1')"
+				title="Очистить поле Uout1">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z2_input_1', 'z2_input_2', 'z2_input_3'])"
+						title="Очистить все поля (Uout1, R1, R2)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z2()"
+						title="Установить поля Uout1, R1, R2 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z2_input_2" value="1000"
+				title="Сопротивление R1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z2_option_2">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z2_input_2')"
+				title="Очистить поле R1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z2_input_3" value="2000"
+				title="Сопротивление R2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z2_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z2_input_3')"
+				title="Очистить поле R2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z2()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Входное напряжение Uin"><b>Uin</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z2_result_Uin"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout2"><b>Uout2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z2_result_Uout2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z2_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z2_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z2_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z2sp').style.display = (document.getElementById('z2sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z2sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc2DivFormulasSize" id="calc_2_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_2_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc2DivFormulasSize" id="calc_2_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_2_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc2DivFormulasSize" id="calc_2_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_2_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_2_uin_1">
+
+					<!-- Формула находим Uin (Uout1), Uin = (R1 + R2) / R1 * Uout1 -->
+					<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout2 (Uin - Uout1) -->
+				<span id="idcfs_2_uin-uout1"><img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_2_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_2_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_2_i"><img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 3 (__3) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		3
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z3_input_1" value="6.6"
+				title="Выходное напряжение Uout2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z3_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z3_input_1')"
+				title="Очистить поле Uout2">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z3_input_1', 'z3_input_2', 'z3_input_3'])"
+						title="Очистить все поля (Uout2, R1, R2)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z3()"
+						title="Установить поля Uout2, R1, R2 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z3_input_2" value="1000"
+				title="Сопротивление R1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z3_option_2">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z3_input_2')"
+				title="Очистить поле R1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z3_input_3" value="2000"
+				title="Сопротивление R2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z3_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z3_input_3')"
+				title="Очистить поле R2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z3()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Входное напряжение Uin"><b>Uin</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z3_result_Uin"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout1"><b>Uout1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z3_result_Uout1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z3_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z3_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z3_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z3sp').style.display = (document.getElementById('z3sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z3sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc3DivFormulasSize" id="calc_3_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_3_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc3DivFormulasSize" id="calc_3_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_3_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc3DivFormulasSize" id="calc_3_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_3_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_3_uin_2">
+
+					<!-- Формула находим Uin (Uout2), Uin = (R1 + R2) / R2 * Uout2 -->
+					<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout1 (Uin - Uout2) -->
+				<span id="idcfs_3_uin-uout2"><img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_3_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_3_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_3_i"><img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 4 (__4) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		4
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z4_input_1" value="3.3"
+				title="Выходное напряжение Uout1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z4_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z4_input_1')"
+				title="Очистить поле Uout1">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="2" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z4_input_1', 'z4_input_2'])"
+						title="Очистить все поля (Uout1, Uout2)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z4()"
+						title="Установить поля Uout1, Uout2, по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z4_input_2" value="6.6"
+				title="Выходное напряжение Uout2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z4_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z4_input_2')"
+				title="Очистить поле Uout2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z4()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Входное напряжение Uin"><b>Uin</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z4_result_Uin"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td>
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center" colspan="2">
+				<div id="z4_result_R1R2">
+				Во сколько раз cопротивление одного резистора больше другого (или может <b>R1</b> = <b>R2</b>)<span class="calcdivcolorquestions">?</span>
+				</div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемая формула -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z4sp').style.display = (document.getElementById('z4sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемая формула</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z4sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc4DivFormulasSize" id="calc_4_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_4_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc4DivFormulasSize" id="calc_4_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_4_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc4DivFormulasSize" id="calc_4_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_4_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формула -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_4_uout1uout2">
+
+					<!-- Формула находим Uin (Uout1 + Uout2) -->
+					<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 5 (__5) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		5
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uin</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z5_input_1" value="10"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="z5_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z5_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z5_input_1', 'z5_input_2', 'z5_input_3'])"
+						title="Очистить все поля (Uin, Uout2, R2)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z5()"
+						title="Установить поля Uin, Uout2, R2 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z5_input_2" value="6.6"
+				title="Выходное напряжение Uout2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z5_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z5_input_2')"
+				title="Очистить поле Uout2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z5_input_3" value="2000"
+				title="Сопротивление R2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z5_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z5_input_3')"
+				title="Очистить поле R2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z5()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout1"><b>Uout1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z5_result_Uout1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R1"><b>R1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z5_result_R1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z5_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z5_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z5_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z5sp').style.display = (document.getElementById('z5sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z5sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc5DivFormulasSize" id="calc_5_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_5_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc5DivFormulasSize" id="calc_5_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_5_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc5DivFormulasSize" id="calc_5_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_5_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout1 (Uin - Uout2) -->
+				<span id="idcfs_5_uin-uout2"><img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_5_r1">
+
+					<!-- Формула находим R1, R1 = Uin * R2 / Uout2 - R2 -->
+					<img class="icon" src="images-calcdivr2/Find R1 (var1) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_5_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_5_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_5_i"><img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 6 (__6) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		6
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uin</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z6_input_1" value="10"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="z6_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z6_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z6_input_1', 'z6_input_2', 'z6_input_3'])"
+						title="Очистить все поля (Uin, Uout1, R1)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z6()"
+						title="Установить поля Uin, Uout1, R1 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z6_input_2" value="3.3"
+				title="Выходное напряжение Uout1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z6_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z6_input_2')"
+				title="Очистить поле Uout1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>R1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z6_input_3" value="1000"
+				title="Сопротивление R1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z6_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z6_input_3')"
+				title="Очистить поле R1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z6()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout2"><b>Uout2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z6_result_Uout2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R2"><b>R2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z6_result_R2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z6_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z6_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z6_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемая формула -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z6sp').style.display = (document.getElementById('z6sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z6sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc6DivFormulasSize" id="calc_6_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_6_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc6DivFormulasSize" id="calc_6_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_6_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc6DivFormulasSize" id="calc_6_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_6_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout2 (Uin - Uout1) -->
+				<span id="idcfs_6_uin-uout1"><img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_6_r2">
+
+					<!-- Формула находим R2, R2 = Uin * R1 / Uout1 - R1 -->
+					<img class="icon" src="images-calcdivr2/Find R2 (var1) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_6_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_6_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_6_i"><img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 7 (__7) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		7
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uin</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z7_input_1" value="10"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="z7_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z7_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z7_input_1', 'z7_input_2', 'z7_input_3'])"
+						title="Очистить все поля (Uin, Uout1, Rtotal)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z7()"
+						title="Установить поля Uin, Uout1, Rtotal по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uout1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z7_input_2" value="3.3"
+				title="Выходное напряжение Uout1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z7_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z7_input_2')"
+				title="Очистить поле Uout1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Rtotal</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z7_input_3" value="3000"
+				title="Сопротивление Rtotal (суммарное значение резисторов R1 и R2)">
+				</td>
+
+				<td>
+				&nbsp;<select id="z7_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z7_input_3')"
+				title="Очистить поле Rtotal">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z7()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout2"><b>Uout2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z7_result_Uout2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R1"><b>R1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z7_result_R1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R2"><b>R2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z7_result_R2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z7_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z7_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z7_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z7sp').style.display = (document.getElementById('z7sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z7sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc7DivFormulasSize" id="calc_7_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_7_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc7DivFormulasSize" id="calc_7_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_7_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc7DivFormulasSize" id="calc_7_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_7_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout2 (Uin - Uout1) -->
+				<span id="idcfs_7_uin-uout1"><img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_7_uru1">
+
+				<!-- Формула находим R1, R1 = Uout1 * Rtotal / Uin -->
+				<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Формула находим R2 -->
+				<span id="idcfs_7_rtotal-r1"><img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_7_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_7_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_7_i"><img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 8 (__8) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		8
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uin</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z8_input_1" value="10"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="z8_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z8_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z8_input_1', 'z8_input_2', 'z8_input_3'])"
+						title="Очистить все поля (Uin, Uout2, Rtotal)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z8()"
+						title="Установить поля Uin, Uout2, Rtotal по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uout2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z8_input_2" value="6.6"
+				title="Выходное напряжение Uout2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z8_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z8_input_2')"
+				title="Очистить поле Uout2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Rtotal</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z8_input_3" value="3000"
+				title="Сопротивление Rtotal (суммарное значение резисторов R1 и R2)">
+				</td>
+
+				<td>
+				&nbsp;<select id="z8_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z8_input_3')"
+				title="Очистить поле Rtotal">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z8()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout1"><b>Uout1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z8_result_Uout1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R1"><b>R1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z8_result_R1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R2"><b>R2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z8_result_R2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z8_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z8_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z8_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z8sp').style.display = (document.getElementById('z8sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z8sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc8DivFormulasSize" id="calc_8_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_8_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc8DivFormulasSize" id="calc_8_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_8_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc8DivFormulasSize" id="calc_8_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_8_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout1 (Uin - Uout2) -->
+				<span id="idcfs_8_uin-uout2"><img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_8_uru2">
+
+					<!-- Формула находим R2, R2 = Uout2 * Rtotal / Uin -->
+					<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Формула находим R1 -->
+				<span id="idcfs_8_rtotal-r2"><img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_8_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_8_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_8_i"><img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-------------------------------->
+		<!-- Онлайн калькулятор 9 (__9) -->
+		<!-------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		9
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uout1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z9_input_1" value="3.3"
+				title="Выходное напряжение Uout1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z9_option_1">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z9_input_1')"
+				title="Очистить поле Uout1">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z9_input_1', 'z9_input_2', 'z9_input_3'])"
+						title="Очистить все поля (Uout1, Uout2, Rtotal)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z9()"
+						title="Установить поля Uout1, Uout2, Rtotal по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uout2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z9_input_2" value="6.6"
+				title="Выходное напряжение Uout2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z9_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z9_input_2')"
+				title="Очистить поле Uout2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Rtotal</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z9_input_3" value="3000"
+				title="Сопротивление Rtotal (суммарное значение резисторов R1 и R2)">
+				</td>
+
+				<td>
+				&nbsp;<select id="z9_option_3">
+					<option select value="Ом">Ом</option>
+					<option select value="кОм">кОм</option>
+					<option select value="мОм">мОм</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z9_input_3')"
+				title="Очистить поле Rtotal">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z9()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Входное напряжение Uin"><b>Uin</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z9_result_Uin"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R1"><b>R1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z9_result_R1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R2"><b>R2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z9_result_R2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z9_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z9_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Ток в цепи R1, R2"><b>I</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z9_result_I"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z9sp').style.display = (document.getElementById('z9sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z9sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc9DivFormulasSize" id="calc_9_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_9_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc9DivFormulasSize" id="calc_9_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_9_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc9DivFormulasSize" id="calc_9_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_9_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uin (Uout1 + Uout2) -->
+				<span id="idcfs_9_uout1uout2"><img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_9_uruu1">
+
+					<!-- Формула находим R1, R1 = Uout1 * Rtotal / (Uout1 + Uout2) -->
+					<img class="icon" src="images-calcdivr2/Find R1 (var3) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_9_uruu2">
+
+					<!-- Формула находим R2, R2 = Uout2 * Rtotal / (Uout1 + Uout2) -->
+					<img class="icon" src="images-calcdivr2/Find R2 (var3) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_9_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_9_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим I -->
+				<span id="idcfs_9_i"><img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!---------------------------------->
+		<!-- Онлайн калькулятор 10 (__10) -->
+		<!---------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		10
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>I</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.001" min="-2147483648" max="2147483647" id="z10_input_1" value="3.333"
+				title="Ток в цепи R1, R2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z10_option_1">
+					<option select value="А">А</option>
+					<option select value="мА" selected>мА</option>
+					<option select value="мкА">мкА</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z10_input_1')"
+				title="Очистить поле I">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z10_input_1', 'z10_input_2', 'z10_input_3'])"
+						title="Очистить все поля (I, Uin, Uout1)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z10()"
+						title="Установить поля I, Uin, Uout1 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uin</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z10_input_2" value="10"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="z10_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z10_input_2')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout1</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z10_input_3" value="3.3"
+				title="Выходное напряжение Uout1">
+				</td>
+
+				<td>
+				&nbsp;<select id="z10_option_3">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z10_input_3')"
+				title="Очистить поле Uout1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z10()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout2"><b>Uout2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z10_result_Uout2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R1"><b>R1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z10_result_R1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R2"><b>R2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z10_result_R2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z10_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z10_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z10sp').style.display = (document.getElementById('z10sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z10sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc10DivFormulasSize" id="calc_10_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_10_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc10DivFormulasSize" id="calc_10_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_10_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc10DivFormulasSize" id="calc_10_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_10_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout2 (Uin - Uout1) -->
+				<span id="idcfs_10_uin-uout1"><img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_10_rtotalui">
+
+				<!-- Формула находим Rtotal, Rtotal = Uin / I -->
+				<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_10_uru1">
+
+					<!-- Формула находим R1, R1 = Uout1 * Rtotal / Uin -->
+					<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Формула находим R2 -->
+				<span id="idcfs_10_rtotal-r1"><img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_10_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_10_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!---------------------------------->
+		<!-- Онлайн калькулятор 11 (__11) -->
+		<!---------------------------------->
+
+		<table align="center" class="calcdivn" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="calcdivnvalign">
+		11
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" class="calcdivbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCDIVR2</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<table align="center" class="calcdivbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема делителя -->
+
+		<tr>
+		<td align="center" class="calcdivtdpaddingbottom">
+
+		<b>Схема делителя на 2-х резисторах</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calcdivbgscheme" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<img class="icon" src="images-calcdivr2/Scheme/SchemeDivR2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>I</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.001" min="-2147483648" max="2147483647" id="z11_input_1" value="3.333"
+				title="Ток в цепи R1, R2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z11_option_1">
+					<option select value="А">А</option>
+					<option select value="мА" selected>мА</option>
+					<option select value="мкА">мкА</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z11_input_1')"
+				title="Очистить поле I">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcdivtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['z11_input_1', 'z11_input_2', 'z11_input_3'])"
+						title="Очистить все поля (I, Uin, Uout2)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка -->
+
+						<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputR2Z11()"
+						title="Установить поля I, Uin, Uout2 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">Введите <b>Uin</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z11_input_2" value="10"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="z11_option_2">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z11_input_2')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
+				<span class="calcdivinputcolortext">&nbsp;Введите <b>Uout2</b>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="1" max="4294967295" id="z11_input_3" value="6.6"
+				title="Выходное напряжение Uout2">
+				</td>
+
+				<td>
+				&nbsp;<select id="z11_option_3">
+					<option select value="В">В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<td class="calcdivtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('z11_input_3')"
+				title="Очистить поле Uout2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCDIVR2_Z11()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Результат счёта -->
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Выходное напряжение Uout1"><b>Uout1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z11_result_Uout1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R1"><b>R1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z11_result_R1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Сопротивление R2"><b>R2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z11_result_R2"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R1 (P1)"><b>P1</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z11_result_P1"><span class="calcdivcolorquestions">?</span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right">
+				<span title="Рассеиваемая мощность на R2 (P2)"><b>P2</b></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left">
+				<div id="z11_result_P2"><span class="calcdivcolorquestions">?<span></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calcdivhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calcdivspoiler"
+			onclick="document.getElementById('z11sp').style.display = (document.getElementById('z11sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="z11sp" style="display: none; width: 100%;">
+
+			<!-- Radio Buttons -->
+			<table class="calcdivbgradiobutton calcdivrbmargint" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<span title="Изменяет размер всем формулам во всех калькуляторах!">Размер формулам:</span>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc11DivFormulasSize" id="calc_11_1" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_1()">
+			<label for="calc_11_1" class="calcdiv_label_radio" title="Размер: +"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb calcdivrbpaddingr">
+
+			<input name="Calc11DivFormulasSize" id="calc_11_2" class="calcdivradiobutton" type="radio" value=""
+			onchange="CALCDIVFORMULASSIZE_2()">
+			<label for="calc_11_2" class="calcdiv_label_radio" title="Размер: ++"></label>
+
+			</td>
+
+			<td class="calcdivrbpaddingb">
+
+			<input name="Calc11DivFormulasSize" id="calc_11_3" class="calcdivradiobutton" type="radio" value="" checked
+			onchange="CALCDIVFORMULASSIZE_3()">
+			<label for="calc_11_3" class="calcdiv_label_radio" title="Размер: +++"></label>
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим Uout1 (Uin - Uout2) -->
+				<span id="idcfs_11_uin-uout2"><img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_11_rtotalui">
+
+				<!-- Формула находим Rtotal, Rtotal = Uin / I -->
+				<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calcdivbgformulasbasis"  cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="idcfs_11_uru2">
+
+					<!-- Формула находим R2, R2 = Uout2 * Rtotal / Uin -->
+					<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Формула находим R1 -->
+				<span id="idcfs_11_rtotal-r2"><img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calcdivbgformulas"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула находим P1 -->
+				<span id="idcfs_11_p1"><img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png"></span>
+
+				<br>
+
+				<!-- Формула находим P2 -->
+				<span id="idcfs_11_p2"><img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png"></span>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+		</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcdivhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+	</tr>
+	</td>
+
+<!--
+
+	<tr>
+	<td align="center">
+
+-->
+
+		<!-- Кнопка: Вернуться на главную страницу. -->
+
+<!--
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td>
+			<a href="https://drilnet.github.io" title="https://drilnet.github.io">Вернуться на главную страницу</a>
+			</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+-->
+
+	<!-- Подвал -->
+
+	<tr style="font-size: 0.8em;">
+	<td align="center">
+
+	<b>Никогда не сдавайся!</b>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr style="font-size: 0.8em;">
+		<td align="center">
+
+		Написать мне можно на (замечания, предложения): <b>stdls[ухо]mail.ru</b> или <b>bbarsinov[ухо]gmail.com</b>
+
+		<br>
+
+		<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (<b>Украина</b>). <b>(C) Демидов С.В.</b>
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td align="center">
+
+	<img src="icons/Disabled_Person_(mini).gif" title="Человек с ограниченными возможностями">
+
+	</td>
+	</tr>
+
+	</table>
+
+</body>
+</html>
