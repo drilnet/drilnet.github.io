@@ -1,0 +1,6 @@
+
+Файл:     file_3.png (disk)
+Формат:   24x24px.
+Набор:    Gnome Icon Theme.
+Дизайнер: Gnome Project.
+Лицензия: GPL.
