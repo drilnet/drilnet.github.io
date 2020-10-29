@@ -96,6 +96,15 @@
 	margin-bottom: 4px;
 	}
 
+	/* Подложка для флагов */
+
+	.USCNRU {
+	background: #eeeeee;
+	border: 1px solid #eeeeee;
+	border-radius: 0px;
+	padding: 0px 6px 0px 6px;
+	}
+
 	/* Шрифт для перечня репозиторий */
 
 	.textrepo {
@@ -126,7 +135,6 @@
 	/* Кнопка с текстом */
 
 	.txtbutton {
-	background: #f6f8fa;
 	background: linear-gradient(to top, #f6f8fa, #ffffff);
 	border: 1px solid #bfd1e5;
 	border-radius: 2px;
@@ -136,7 +144,6 @@
 	/* Иконки поиска */
 
 	.iconsearch {
-	background: #f6f8fa;
 	background: linear-gradient(to top, #f6f8fa, #ffffff);
 	border: 1px solid #bfd1e5;
 	border-radius: 2px;
@@ -146,7 +153,6 @@
 	/* Иконки бесплатное ПО */
 
 	.iconfreeurl {
-	background: #f6f8fa;
 	background: linear-gradient(to top, #f6f8fa, #ffffff);
 	border: 1px solid #bfd1e5;
 	border-radius: 2px;
@@ -162,7 +168,30 @@
 	}
 
 	.spoilerbook:hover {
-	color: #0144b4;
+	color: #006699;
+	text-decoration: underline;
+	}
+
+	/* Фон и бордюр для спойлера, игра Game-15 */
+
+	.g15_title {
+	background: #f0f2f4;
+	border: 1px solid #f0f2f4;
+	border-radius: 0px;
+	padding: 4px 0px 4px 0px;
+	width: 720px;
+	}
+
+	/* Заголовок спойлера в виде ссылки для игры Game-15 */
+
+	.g15_link_spoiler {
+	color: #006699;
+	text-decoration: none;
+	cursor: pointer;
+	}
+
+	.g15_link_spoiler:hover {
+	color: #006699;
 	text-decoration: underline;
 	}
 
@@ -389,7 +418,6 @@
 	/* Номер калькулятора CALCDIV (фон и бордюр) */
 
 	.calcdivn {
-	background: #f0f4f7;
 	background: linear-gradient(to top, #f0f4f7, #ffffff);
 	border: 1px solid #bfd1e5;
 	font-size: 24px;

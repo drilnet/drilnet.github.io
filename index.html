@@ -91,6 +91,17 @@
 	<meta name="keywords" content="rle декодирование">
 	<meta name="keywords" content="rle">
 
+	<meta name="keywords" content="puzle15, puzzle 15, game15, game 15">
+	<meta name="keywords" content="puzle15 js, puzzle 15 js, game15 js, game 15 js">
+	<meta name="keywords" content="puzle15 javascript, puzzle 15 javascript, game15 javascript, game 15 javascript">
+	<meta name="keywords" content="puzle15 html js, puzzle 15 html js, game15 html js, game 15 html js">
+	<meta name="keywords" content="puzle15 html javascript, puzzle 15 html javascript, game15 html javascript, game 15 html javascript">
+	<meta name="keywords" content="пятнашки">
+	<meta name="keywords" content="пятнашки js, пятнашки javascript ">
+	<meta name="keywords" content="пятнашки html js, пятнашки html javascript ">
+	<meta name="keywords" content="пятнашки на js, пятнашки на javascript ">
+	<meta name="keywords" content="пятнашки на html js, пятнашки на html javascript ">
+
 	<meta name="keywords" content="усилитель звука на микросхеме tea2025b">
 	<meta name="keywords" content="усилитель звука tea2025b">
 	<meta name="keywords" content="усилитель tea2025b">
@@ -144,28 +155,77 @@
 	<meta name="keywords" content="ремонт genius sp-g06 что было и что стало">
 
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="game-15/game-15.css">
 
 	<script language="javascript" src="js/javascript.js"></script>
 	<script language="javascript" src="js/javascript-literatura.js"></script>
+	<script language="javascript" src="game-15/js/game-15.js"></script>
 
 	</head>
 
-<body onload="LoadBook();">
+<!-- Подгружаем литературу -->
+<!-- LoadBook();           -->
+
+<!-- Инициализация Game-15. -->
+<!-- G15_Init();            -->
+
+<body onload="LoadBook(); G15_Init();">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
 	<tr>
 	<td>
 
-		<table cellspacing="0" cellpadding="0" border="0">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
 		<tr>
 
-			<td class="texthobby">
+			<td width="1%" class="texthobby">
 			<b>Hobby</b>
 			</td>
 
-			<td  style="font-size: 0.8em; vertical-align: bottom; padding-left: 4px;">
+			<td width="1%" style="font-size: 0.8em; vertical-align: bottom; padding-left: 4px;">
 			<a href="https://drilnet.github.io" title="https://drilnet.github.io">https://drilnet.github.io</a>
+			</td>
+
+			<td align="right" style="font-size: 0.8em; vertical-align: bottom;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td align="right" style="padding-left: 8px;">
+					<i><b>Благодарность</b> (флаги расположены в алфавитном порядке):</i>
+				</td>
+
+				<td style="padding-left: 4px;">
+					<!-- Флаги -->
+					<table class="USCNRU" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons-flags/US_24x24.png" title="Благодарность за GITHUB">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/CN_24x24.png" title="Благодарность за радиодетали и измерительные приборы">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/RU_24x24.png" title="Благодарность за сайт https://zx-pk.ru">
+					</td>
+
+					</tr>
+					</table>
+				</td>
+
+				<td>
+					<td style="padding-left: 4px;">
+					<i><b>Успехов Вам!</b></i>
+					</td>
+				</td>
+
+				</tr>
+				</table>
+
 			</td>
 
 		</tr>
@@ -197,7 +257,7 @@
 				<td>
 
 				<a href="https://google.com" target="_blank">
-				<div class="icon"><img src="icons/googlesearch_20x20.png" title="Поисковая система Google"></div>
+				<img class="icon" src="icons/googlesearch_20x20.png" title="Поисковая система Google">
 				</a>
 
 				</td>
@@ -215,7 +275,7 @@
 				<td>
 
 				<a href="https://meta.ua" target="_blank">
-				<div class="icon"><img src="icons/metasearch_20x20.png" title="Украинская поисковая система Meta"></div>
+				<img class="icon" src="icons/metasearch_20x20.png" title="Украинская поисковая система Meta">
 				</a>
 
 				</td>
@@ -233,7 +293,7 @@
 				<td>
 
 				<a href="https://yandex.ru" target="_blank">
-				<div class="icon"><img src="icons/yandexsearch_20x20.png" title="Поисковая система Yandex"></div>
+				<img class="icon" src="icons/yandexsearch_20x20.png" title="Поисковая система Yandex">
 				</a>
 
 				</td>
@@ -794,10 +854,82 @@
 		<tr>
 		<td class="tdrepo">
 
-		&nbsp;&nbsp;
-		<b>Репозиторий:</b>
-		<a href="https://github.com/drilnet/rle">
-		RLE кодирование/декодирование своими руками (VRLE8, VRLE16)</a>
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/rle">
+			RLE кодирование/декодирование своими руками (VRLE8, VRLE16)</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/puzzle15" title="Игра для вашего сайта!">
+			Игра Пятнашки (Puzzle 15, Game 15), игра написана на JavaScript</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_1')" title="Нажмите, чтобы увидеть скриншот игры Game 15 (версия 3.0.a, вариант 1)">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 9px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_1_2')" title="Нажмите, чтобы увидеть скриншот 1 игры Game 15 (версия 3.0.a, вариант 2)">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_2_2')" title="Нажмите, чтобы увидеть скриншот 2 игры Game 15 (версия 3.0.a, вариант 2)">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_3_2')" title="Нажмите, чтобы увидеть скриншот 3 игры Game 15 (версия 3.0.a, вариант 2)">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 9px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_SamLoydS')" title="Иллюстрация о неразрешимой вариации в Пятнашки (взято с https://en.wikipedia.org/wiki/15_puzzle)">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/drilnet.github.io" title="Репозиторий сайта https://drilnet.github.io">
+			Мой сайт (репозиторий моего сайта)</a>
 
 		</td>
 		</tr>
@@ -1325,6 +1457,497 @@
 	</td>
 	</tr>
 
+	<!-- Game-15 - Ver. 3.0.a -->
+
+	<tr>
+	<td align="center">
+
+	<br>
+
+		<!-- Спойлер -->
+
+		<table align="center" class="g15_title" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Игра Пятнашки: <a href="javascript:SpoilerB('contentSpoiler', 'linkSpoiler');" class="g15_link_spoiler" id="linkSpoiler" title="Нажмите">Развернуть/Свернуть</a>
+
+		</td>
+		</tr>
+		</table>
+
+	<br>
+
+	<!-- <div id="contentSpoiler" style="display: none;">  -->
+	<!-- или                                               -->
+	<!-- <div id="contentSpoiler" style="display: block;"> -->
+
+	<div id="contentSpoiler" style="display: none;">
+
+	<!-- Game-15 - Ver. 3.0.a -->
+	<!-- С добавками !!!      -->
+
+	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+	<tr>
+	<td align="center">
+
+		<!-- Подсчёт перемещений -->
+
+		<table class="g15_table_bginfo" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+			Перемещений:
+			</td>
+
+			<td id="transfer_cur">
+			&nbsp;<b>0</b>
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+
+		<!-- Костяшки -->
+
+		<table align="center" class="g15_table_bg" cellspacing="0" cellpadding="0" border="0">
+
+			<!-- 0, 1, 2, 3 -->
+			<tr>
+
+				<!-- 0 -->
+				<td id="g15_idcell_0" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_0">
+				<img class="g15_image" src="game-15/Cat_01/Image-00.png">
+				</a>
+				</td>
+
+				<!-- 1 -->
+				<td id="g15_idcell_1" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_1">
+				<img class="g15_image" src="game-15/Cat_01/Image-05.png">
+				</a>
+				</td>
+
+				<!-- 2 -->
+				<td id="g15_idcell_2" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_2">
+				<img class="g15_image" src="game-15/Cat_01/Image-10.png">
+				</a>
+				</td>
+
+				<!-- 3 -->
+				<td id="g15_idcell_3" align="center" valign="middle" class="g15_size_cell g15_padding-bottom">
+				<a id="g15_idhref_3">
+				<img class="g15_image" src="game-15/Cat_01/Image-15.png">
+				</a>
+				</td>
+
+			</tr>
+
+			<!-- 4, 5, 6, 7 -->
+			<tr>
+
+				<!-- 4 -->
+				<td id="g15_idcell_4" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_4">
+				<img class="g15_image" src="game-15/Cat_01/Image-20.png">
+				</a>
+				</td>
+
+				<!-- 5 -->
+				<td id="g15_idcell_5" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_5">
+				<img class="g15_image" src="game-15/Cat_01/Image-25.png">
+				</a>
+				</td>
+
+				<!-- 6 -->
+				<td id="g15_idcell_6" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_6">
+				<img class="g15_image" src="game-15/Cat_01/Image-30.png">
+				</a>
+				</td>
+
+				<!-- 7 -->
+				<td id="g15_idcell_7" align="center" valign="middle" class="g15_size_cell g15_padding-bottom">
+				<a id="g15_idhref_7">
+				<img class="g15_image" src="game-15/Cat_01/Image-35.png">
+				</a>
+				</td>
+
+			</tr>
+
+			<!-- 8, 9, 10, 11 -->
+			<tr>
+
+				<!-- 8 -->
+				<td id="g15_idcell_8" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_8">
+				<img class="g15_image" src="game-15/Cat_01/Image-40.png">
+				</a>
+				</td>
+
+				<!-- 9 -->
+				<td id="g15_idcell_9" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_9">
+				<img class="g15_image" src="game-15/Cat_01/Image-45.png">
+				</a>
+				</td>
+
+				<!-- 10 -->
+				<td id="g15_idcell_10" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+				<a id="g15_idhref_10">
+				<img class="g15_image" src="game-15/Cat_01/Image-50.png">
+				</a>
+				</td>
+
+				<!-- 11 -->
+				<td id="g15_idcell_11" align="center" valign="middle" class="g15_size_cell g15_padding-bottom">
+				<a id="g15_idhref_11">
+				<img class="g15_image" src="game-15/Cat_01/Image-55.png">
+				</a>
+				</td>
+
+			</tr>
+
+			<!-- 12, 13, 14, 15 -->
+			<tr>
+
+				<!-- 12 -->
+				<td id="g15_idcell_12" align="center" valign="middle" class="g15_size_cell g15_padding-right">
+				<a id="g15_idhref_12">
+				<img class="g15_image" src="game-15/Cat_01/Image-60.png">
+				</a>
+				</td>
+
+				<!-- 13 -->
+				<td id="g15_idcell_13" align="center" valign="middle" class="g15_size_cell g15_padding-right">
+				<a id="g15_idhref_13">
+				<img class="g15_image" src="game-15/Cat_01/Image-65.png">
+				</a>
+				</td>
+
+				<!-- 14 -->
+				<td id="g15_idcell_14" align="center" valign="middle" class="g15_size_cell g15_padding-right">
+				<a id="g15_idhref_14">
+				<img class="g15_image" src="game-15/Cat_01/Image-70.png">
+				</a>
+				</td>
+
+				<!-- 15 -->
+				<td id="g15_idcell_15" align="center" valign="middle" class="g15_size_cell">
+				<img id="g15_idimage_15" class="g15_image" src="game-15/Cat_01/Image-75.png" style="opacity: 1.0; filter: alpha(opacity=100);">
+				</td>
+
+			</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+
+		<!-- МЕНЮ -->
+
+		<table align="center" class="g15_table_bgmenu" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+			<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_stir">
+
+		</td>
+		</tr>
+
+		<!-- Меню: [ Перемешать стандартно ], [ Перемешать нестандартно ], [ Поменять 14 и 15 ]. -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Radio Buttons -->
+			<!-- Здесь выбирается как перемешать костяшки -->
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="g15_rbpaddingb g15_rbpaddingr">
+			<span title="Рекомендуется">Перемешать стандартно:</span>
+			</td>
+
+			<!-- Стандартно -->
+			<td class="g15_rbpaddingb">
+			<input name="g15_mix" id="g15_mix_1" class="g15_radiobutton" type="radio" value="" checked>
+			<label for="g15_mix_1" class="g15_label_radio" title="Стандартно!"></label>
+			</td>
+
+			<td class="g15_rbpaddingb">
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td class="g15_rbpaddingb g15_rbpaddingr">
+			<span title="Не рекомендуется (вероятность 1/2)">Перемешать нестандартно:</span>
+			</td>
+
+			<!-- Нестандартно -->
+			<td class="g15_rbpaddingb">
+			<input name="g15_mix" id="g15_mix_2" class="g15_radiobutton" type="radio" value="">
+			<label for="g15_mix_2" class="g15_label_radio" title="Нестандартно!"></label>
+			</td>
+
+			<td class="g15_rbpaddingb">
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td class="g15_rbpaddingb g15_rbpaddingr">
+			<span title="Не рекомендуется">Поменять 14 и 15:</span>
+			</td>
+
+			<!-- Поменять местами 14 и 15 -->
+			<td class="g15_rbpaddingb">
+			<input name="g15_mix" id="g15_mix_3" class="g15_radiobutton" type="radio" value="">
+			<label for="g15_mix_3" class="g15_label_radio" title="Поменять местами 14 и 15!"></label>
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+			<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_stir">
+
+		</td>
+		</tr>
+
+		<!-- Меню: [ включить анимацию ], [ выключить анимацию ]. -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Radio Buttons -->
+			<!-- Здесь выбирается включить/выключить анимацию -->
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td class="g15_rbpaddingb g15_rbpaddingr">
+			<span title="Анимацию можно включить во время игры!">Включить анимацию:</span>
+			</td>
+
+			<!-- Вкл. -->
+			<td class="g15_rbpaddingb">
+			<input name="g15_anim" id="g15_anim_1" class="g15_radiobutton" type="radio" value="">
+			<label for="g15_anim_1" class="g15_label_radio" title="Включить!"></label>
+			</td>
+
+			<td class="g15_rbpaddingb">
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td class="g15_rbpaddingb g15_rbpaddingr">
+			<span title="Анимацию можно выключить во время игры!">Выключить анимацию:</span>
+			</td>
+
+			<!-- Выкл. -->
+			<td class="g15_rbpaddingb">
+			<input name="g15_anim" id="g15_anim_2" class="g15_radiobutton" type="radio" value="" checked>
+			<label for="g15_anim_2" class="g15_label_radio" title="Выключить!"></label>
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_anim">
+
+		</td>
+		</tr>
+
+		<!-- Какие изображения доступны -->
+
+		<tr>
+		<td>
+
+			<table align="center" class="g15_table_bg_img_title" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+			<font class="g15_img_title">Доступные изображения:</font>
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<!-- Выбор изображения -->
+
+			<table align="center" class="g15_table_bgmenu_img" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td align="right" style="padding-top: 8px; padding-bottom: 1px; padding-left: 16px;">
+				Цифры (480x252px)
+				</td>
+
+				<td class="g15_rbpaddingb" style="padding-top: 8px; padding-bottom: 1px; padding-left: 8px; padding-right: 16px;">
+				<input name="g15_img" id="g15_img_1" class="g15_radiobutton" type="radio" value="" onchange="G15_SetImage()">
+				<label for="g15_img_1" class="g15_label_radio" title="Цифры"></label>
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" style="padding-top: 1px; padding-bottom: 1px; padding-left: 16px;">
+				LogoVRLE8, ver.7b (480x252px)
+				</td>
+
+				<td class="g15_rbpaddingb" style="padding-top: 1px; padding-bottom: 1px; padding-left: 8px; padding-right: 16px;">
+				<input name="g15_img" id="g15_img_2" class="g15_radiobutton" type="radio" value="" onchange="G15_SetImage()" checked>
+				<label for="g15_img_2" class="g15_label_radio" title="LogoVRLE8"></label>
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right" style="padding-top: 1px; padding-bottom: 8px; padding-left: 16px;">
+				LogoVRLE16, ver.7a (480x252px)
+				</td>
+
+				<td class="g15_rbpaddingb" style="padding-top: 1px; padding-bottom: 8px; padding-left: 8px; padding-right: 16px;">
+				<input name="g15_img" id="g15_img_3" class="g15_radiobutton" type="radio" value="" onchange="G15_SetImage()">
+				<label for="g15_img_3" class="g15_label_radio" title="LogoVRLE16"></label>
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Установить настройки по умолчанию" -->
+
+		<tr>
+		<td align="center" style="padding-bottom: 8px;">
+
+			<!-- Кнопка -->
+			<table id="g15_set_table" class="g15_txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td id="g15_set">
+
+			<a href="javascript:G15_SetDefault()" title="Нажмите">Установить настройки по умолчанию</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Начать игру" -->
+
+		<tr>
+		<td align="center" style="padding-bottom: 8px;">
+
+			<!-- Кнопка -->
+			<table id="g15_start_table" class="g15_txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td id="g15_start">
+
+			<a href="javascript:G15_Start()" title="Нажмите">Начать игру</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+
+	</td>
+	</tr>
+
+	<tr>
+	<td align="center">
+
+		<br>
+		Лицензия (License): <b>GNU GPL V3</b>.
+		Репозиторий игры Пятнашки
+		<a href="https://github.com/drilnet/puzzle15">здесь</a>.
+		<br>
+		Игра написана на <b>JavaScript</b>.
+		<br>
+		(C) Демидов С.В.
+		<br>
+		<br>
+
+		<!-- Сссылки на Вики -->
+
+		<a href="https://ru.wikipedia.org/wiki/Игра_в_15" title="Откроется в новой вкладке" target="_blank">Пятнашки в русской Вики</a>
+		<br>
+		<a href="https://uk.wikipedia.org/wiki/П%27ятнашки" title="Откроется в новой вкладке" target="_blank">Пятнашки в украинской Вики</a>
+		<br>
+
+	</td>
+	</tr>
+
+	<tr>
+	<td align="center">
+
+		<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_enwiki">
+		<a href="https://en.wikipedia.org/wiki/15_puzzle" title="Откроется в новой вкладке" target="_blank">https://en.wikipedia.org/wiki/15_puzzle</a>
+		<hr class="g15_hr2 g15_hr2_margint g15_hr2_width_enwiki" style="margin-bottom: 0px;">
+
+	</td>
+	</tr>
+
+	</table>
+
+	<br>
+
+	</div> <!-- Конец Game-15 -->
+
+	<hr>
+
+	</td>
+	</tr>
+
 	<!-- Сссылки на интернет магазины  (электронные компоненты) -->
 
 	<tr>
@@ -1346,6 +1969,18 @@
 				<img src="images-store-logos/logo_kosmodrom.png" title="Откроется в новой вкладке (http://www.kosmodrom.com.ua)">
 				</a>
 			</td>
+
+			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+				<a href="https://aliexpress.com" target="_blank">
+				<img src="images-store-logos/aliexpress.png" title="Откроется в новой вкладке (http://aliexpress.com)">
+				</a>
+			</td>
+
+			<td rowspan="2" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+				<img src="icons/help.png" title="Спасибо за радиодетали: ВОРОН! КОСМОДРОМ! AliExpress!">
+			</td>
+
+
 		</tr>
 
 		<tr>
@@ -1356,6 +1991,11 @@
 			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
 			Электронные компоненты
 			</td>
+
+			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+			Найдётся всё! :)
+			</td>
+
 		</tr>
 
 		</table>
@@ -2593,6 +3233,318 @@
 			<tr>
 			<td>
 			<a href="javascript:CloseModalWin('ModalWinVColor256')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                          -->
+	<!-- Модальные окна Puzzle 15 -->
+	<!--                          -->
+
+	<!-- Скриншот 1, вариант 1 -->
+
+	<div id="ModalWinPuzzle15_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншот игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 1</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_1.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 1, вариант 2 -->
+
+	<div id="ModalWinPuzzle15_1_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншот 1 игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 2</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_1_2.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_1_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 2, вариант 2 -->
+
+	<div id="ModalWinPuzzle15_2_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншот 2 игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 2</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_2_2.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_2_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 3, вариант 2 -->
+
+	<div id="ModalWinPuzzle15_3_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншот 3 игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 2</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_3_2.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_3_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Иллюстрация о неразрешимой вариации в Пятнашки (взято с https://en.wikipedia.org/wiki/15_puzzle) -->
+
+	<div id="ModalWinPuzzle15_SamLoydS" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Иллюстрация о неразрешимой вариации в Пятнашки!
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="game-15/images-SamLoydS/SamLoydS_400x248.png" title="Взято с https://en.wikipedia.org/wiki/15_puzzle">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align ="center">
+
+		<br>
+		Взято с <a href="https://en.wikipedia.org/wiki/15_puzzle" title="Откроется в новой вкладке" target="_blank">https://en.wikipedia.org/wiki/15_puzzle</a>
+		<br>
+		Thank you very much!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" style="font-size: 0.8em;">
+
+		<br>
+		<b>Примечание.</b>
+		<br>
+		Размеры изображения были изменены!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_SamLoydS')">закрыть</a>
 			</td>
 			</tr>
 
