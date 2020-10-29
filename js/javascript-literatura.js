@@ -382,7 +382,7 @@ function LoadBook()
 	temp += "<br>";
 	temp += "<a href=\"https://drilnet.github.io/lit.html\" title=\"Откроется в новой вкладке\" target=\"_blank\">Просмотр подробной информации о литературе</a>";
 	temp += "<br>";
-	temp += "<a href=\"https://drive.google.com/file/d/1GDuum4CpNBLcw9cC98o2SK1mAxjKhkRJ/view?usp=sharing\" title=\"Скачать c google-диска (откроется в новой вкладке). Объём: 78.534.757 байт.\" target=\"_blank\">Скачать всю литературу одним файлом</a>";
+	temp += "<a href=\"https://drive.google.com/file/d/15ZuTy5JsxOJtxzPfTPKI1id6YkUH2UcI/view?usp=sharing\" title=\"Скачать c google-диска (откроется в новой вкладке). Объём: 78.534.767 байт.\" target=\"_blank\">Скачать всю литературу одним файлом</a>";
 	temp += "<br>";
 
 	temp += "<span style=\"font-size: 0.8em;\">";
