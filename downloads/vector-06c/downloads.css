@@ -79,6 +79,15 @@
 	color: #333333;
 	}
 
+	/* Подложка для флагов */
+
+	.USCNRU {
+	background: #eeeeee;
+	border: 1px solid #eeeeee;
+	border-radius: 0px;
+	padding: 0px 6px 0px 6px;
+	}
+
 	/* Горизонтальная линия для Hobby */
 
 	.hrwhite {
