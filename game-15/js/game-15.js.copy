@@ -41,7 +41,9 @@ function G15_Start()
 	// Установить перемещений 0.
 	document.getElementById('transfer_cur').innerHTML = '&nbsp;<b>' + $g15_transfer_cur + '</b>';
 
-	// Отключить кнопку: [ Начать игру ].
+	// Отключаем кнопку [ Начать игру ].
+	// Отключаем кнопку [ Установить настройки по умолчанию ].
+	// Отключаем Radio Buttons [ Установить изображение ].
 	G15_DisableButtons();
 
 	if ($G15 == 1)
@@ -111,6 +113,7 @@ function G15_Init()
 {
 	$G15 = 0;
 	G15_SetDefaultRadioButton();
+	G15_EnableButtons();
 
 	$g15_catalog = '01';
 }
