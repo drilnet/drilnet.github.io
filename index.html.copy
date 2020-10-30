@@ -7,6 +7,11 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 
+	<!-- Документ кэшируется во всех доступных кэшах -->
+	<meta http-equiv="Cache-Control" content="public">
+	<!-- Указывает браузеру сколько секунд хранить документ в кэше (2678400 = 31 суток) -->
+	<meta http-equiv="Cache-Control" content="max-age=2678400, must-revalidate">
+
 	<meta name="keywords" content="hobby, hobby github, hobby github demidov, hobby github demidov s">
 	<meta name="keywords" content="hobby github demidov s.v, hobby github demidov s.v.">
 	<meta name="keywords" content="demidov github, demidov s github, demidov s.v github">
