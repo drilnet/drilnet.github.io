@@ -173,12 +173,24 @@
 	}
 
 	/* Фон и бордюр для спойлера, игра Game-15 */
+	/* Без clock.gif */
 
 	.g15_title {
 	background: #f0f2f4;
 	border: 1px solid #f0f2f4;
 	border-radius: 0px;
 	padding: 4px 0px 4px 0px;
+	width: 720px;
+	}
+
+	/* Фон и бордюр для спойлера, игра Game-15 */
+	/* С clock.gif */
+
+	.g15_title_2 {
+	background: #f0f2f4;
+	border: 1px solid #f0f2f4;
+	border-radius: 0px;
+	padding: 3px 0px 3px 0px;
 	width: 720px;
 	}
 
