@@ -51,7 +51,7 @@ function CloseModalWin(x)
 // | Может быть так: Развернуть/Свернуть.
 // | И может быть вот так: Свернуть/Развернуть.
 // ---
-function SpoilerB(id_1, id_2)
+function Spoiler(id_1, id_2)
 {
 	var ele = document.getElementById(id_1);
 	var text = document.getElementById(id_2);
@@ -66,4 +66,25 @@ function SpoilerB(id_1, id_2)
 		ele.style.display = "block";
 //		text.innerHTML = "Скрыть";
 		}
+}
+
+// ---
+// | Для Game-15.
+// | Установить спойлер (Развернуть/Свернуть) без clock.gif
+// | Т.е. изображения загружены, clock.gif не нужен.
+// --
+function G15_SetSpoiler()
+{
+	// Убрать иконку clock.gif (загрузка изображений).
+	document.getElementById('g15_loader').innerHTML =
+
+	"<table class=\"g15_title\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">"
+	+
+	"<tr><td align=\"center\">"
+	+
+	"Игра Пятнашки: <a href=\"javascript:Spoiler('contentSpoiler', 'linkSpoiler');\" class=\"g15_link_spoiler\" id=\"linkSpoiler\" title=\"Нажмите\">Развернуть/Свернуть</a>"
+	+
+	"</td></td>"
+	+
+	"</table>";
 }
