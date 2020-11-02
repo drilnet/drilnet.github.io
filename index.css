@@ -65,6 +65,11 @@
 	background: #ffffff;
 	}
 
+	/* Маленький шрифт */
+	.smalltxt {
+	font-size: 0.8em;
+	}
+
 	/* Горизонтальная линия */
 
 	hr {
