@@ -66,8 +66,21 @@
 	}
 
 	/* Маленький шрифт */
+
 	.smalltxt {
+	font-size: 0.9em;
+	}
+
+	/* Маленький шрифт для iframe */
+
+	.smalltxtiframe {
 	font-size: 0.8em;
+	}
+
+	/* Маленький шрифт для подвала */
+
+	.smalltxtfooter {
+	font-size: 0.9em;
 	}
 
 	/* Горизонтальная линия */
@@ -87,6 +100,12 @@
 	.texthobby {
 	font-size: 300%;
 	color: #333333;
+	}
+
+	/* Маленький шрифт для Hobby */
+
+	.smalltxthobby {
+	font-size: 0.9em;
 	}
 
 	/* Горизонтальная линия для Hobby */
