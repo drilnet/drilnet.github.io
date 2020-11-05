@@ -309,7 +309,7 @@ function LoadBook()
 	// Подготовка к вставке.
 	var temp = "<br>";
 
-	temp += "<span style=\"font-size: 0.8em;\">";
+	temp += "<span class=\"smalltxt\">";
 	temp += "Если я, нарушаю чьи-либо права, напишите мне, и я удалю нужную Вам литературу.";
 
 	temp += "<br>";
@@ -385,7 +385,7 @@ function LoadBook()
 	temp += "<a href=\"https://drive.google.com/file/d/15ZuTy5JsxOJtxzPfTPKI1id6YkUH2UcI/view?usp=sharing\" title=\"Скачать c google-диска (откроется в новой вкладке). Объём: 78.534.767 байт.\" target=\"_blank\">Скачать всю литературу одним файлом</a>";
 	temp += "<br>";
 
-	temp += "<span style=\"font-size: 0.8em;\">";
+	temp += "<span class=\"smalltxt\">";
 
 		// Спасибо за литературу.
 
