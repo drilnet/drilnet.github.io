@@ -60,6 +60,12 @@
 	text-decoration: underline;
 	}
 
+	/* Маленький шрифт для подвала */
+
+	.smalltxtfooter {
+	font-size: 0.9em;
+	}
+
 	/* Горизонтальная линия */
 
 	hr {
@@ -77,6 +83,12 @@
 	.texthobby {
 	font-size: 300%;
 	color: #333333;
+	}
+
+	/* Маленький шрифт для Hobby */
+
+	.smalltxthobby {
+	font-size: 0.9em;
 	}
 
 	/* Подложка для флагов */
