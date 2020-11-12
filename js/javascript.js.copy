@@ -70,10 +70,10 @@ function Spoiler(id_1, id_2)
 
 // ---
 // | Для Game-15.
-// | Установить спойлер (Развернуть/Свернуть) без clock.gif
+// | Убрать clock.gif (заменить заголовок)
 // | Т.е. изображения загружены, clock.gif не нужен.
 // --
-function G15_SetSpoiler()
+function G15_RemoveClock()
 {
 	// Убрать иконку clock.gif (загрузка изображений).
 	document.getElementById('g15_loader').innerHTML =
@@ -82,9 +82,9 @@ function G15_SetSpoiler()
 	+
 	"<tr><td align=\"center\">"
 	+
-	"Игра Пятнашки: <a href=\"javascript:Spoiler('contentSpoiler', 'linkSpoiler');\" class=\"g15_link_spoiler\" id=\"linkSpoiler\" title=\"Нажмите\">Развернуть/Свернуть</a>"
+	"Игра Пятнашки (версия 3.0.a, вариант 2)"
 	+
-	"</td></td>"
+	"</td></tr>"
 	+
 	"</table>";
 }
