@@ -263,9 +263,7 @@
 		<!-- Иконка GITHUB'а -->
 
 		<td width="1%" style="padding-right: 6px;">
-		<a href="https://github.com">
-		<img class="icon" src="icons/github_32x30.png" title="https://github.com">
-		</a>
+		<img class="icon" src="icons/github-logo.png" title="Лицензия на иконку: CC 3.0 BY. Автор: Dave Gandy">
 		</td>
 
 		<td>
