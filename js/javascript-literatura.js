@@ -33,7 +33,9 @@ function LoadBook()
 		+ "Для широкого круга радиолюбителей.",
 
 		// Обложка (имя image).
-		"Nachinayushemu radiolyubitelyu. V.I. Galkin. 2-e izdanie. 1989g.png"
+		"Nachinayushemu radiolyubitelyu. V.I. Galkin. 2-e izdanie. 1989g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -1-
@@ -62,7 +64,9 @@ function LoadBook()
 		+ "Для широкого круга радиолюбителей.",
 
 		// Обложка (имя image).
-		"Nachinayushemu radiolyubitelyu. V.I. Galkin. 2-e izdanie. 1989g.png"
+		"Nachinayushemu radiolyubitelyu. V.I. Galkin. 2-e izdanie. 1989g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -2-
@@ -82,7 +86,9 @@ function LoadBook()
 		+ "(C) В.И. Галкин, 1995г.",
 
 		// Обложка (имя image).
-		"Nachinayushemu radiolyubitelyu. V.I. Galkin. 3-e izdanie. 1995g.png"
+		"Nachinayushemu radiolyubitelyu. V.I. Galkin. 3-e izdanie. 1995g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -3-
@@ -112,7 +118,9 @@ function LoadBook()
 		+ "а также для саммообразования.",
 
 		// Обложка, (имя image).
-		"Pervye shagi v radioelektronike. Atanas Shishkov. 2-e izdanie. 1986g.png"
+		"Pervye shagi v radioelektronike. Atanas Shishkov. 2-e izdanie. 1986g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -4-
@@ -142,7 +150,9 @@ function LoadBook()
 		+ "Предназначена брошюра для широкого круга радиолюбителей.",
 
 		// Обложка (имя image).
-		"Sbornik formul dlya Radiolyubitelya. O. Kroneger. 1964g.png"
+		"Sbornik formul dlya Radiolyubitelya. O. Kroneger. 1964g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -5-
@@ -172,7 +182,9 @@ function LoadBook()
 		+ "Для любителей-конструкторов, занимающихся бытовой электроникой и электротехникой.",
 
 		// Обложка (имя image).
-		"44 istochnika elektropitaniya. Trejster R. Mejo Dzh. 1990g.png"
+		"44 istochnika elektropitaniya. Trejster R. Mejo Dzh. 1990g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -6-
@@ -202,7 +214,9 @@ function LoadBook()
 		+ "эксплуатацией и обслуживанием РЭА.",
 
 		// Обложка (имя image).
-		"Analogovye integralnye shemy. A.L.Bulychev i dr. 2-e izdanie 1994g.png"
+		"Analogovye integralnye shemy. A.L.Bulychev i dr. 2-e izdanie 1994g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -7-
@@ -231,7 +245,9 @@ function LoadBook()
 		+ "занимающихся разработкой, эксплуатацией и ремонтом радиоэлектронной аппаратуры.",
 
 		// Обложка (имя image).
-		"Integralnye shemy dlya bytovoj radioapparatury. Spravochnik. Novachenko i dr. 1995g.png"
+		"Integralnye shemy dlya bytovoj radioapparatury. Spravochnik. Novachenko i dr. 1995g.png",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -8-
@@ -268,7 +284,9 @@ function LoadBook()
 		+ "а также подготовленных радиолюбителей.",
 
 		// Обложка (имя image).
-		""
+		"",
+		// Скачать с google-диска.
+		"google"
 		],
 
 		// -9-
@@ -298,9 +316,157 @@ function LoadBook()
 		+ "Для подготовленных радиолюбителей.",
 
 		// Обложка (имя image).
-		"Mikroshemy pamyati i ih primenenie. O.N. Lebedev. 1990g.png"
-		]
+		"Mikroshemy pamyati i ih primenenie. O.N. Lebedev. 1990g.png",
+		// Скачать с google-диска.
+		"google"
+		],
 
+		// -10-
+		[
+		"Микросхемы памяти. Микросхемы ЦАП и АЦП. О.Н. Лебедев и др. 2-е издание. 1996г.pdf",
+		"https://cloud.mail.ru/public/PetS/QDvdALjBa",
+		"88.261.861 байт",
+		"ModalWinBook_10",
+
+		"МИКРОСХЕМЫ ПАМЯТИ. МИКРОСХЕМЫ ЦАП и АЦП"
+		+ "<br>"
+		+ "Издание 2-е, стереотипное"
+		+ "<br>"
+		+ "<br>"
+		+ "Москва \"Кубк-а\" 1996г."
+		+ "<br>"
+		+ "ISBN 5-855554-102-9"
+		+ "<br>"
+		+ "<br>"
+		+ "В первой части данного издания рассмотрены устройство, режим работы, функциональные возможности"
+		+ "<br>"
+		+ "и электрические характеристики микросхем оперативных и постоянных запоминающих устройств."
+		+ "<br>"
+		+ "<br>"
+		+ "Во второй части рассматриваются особенности схем построения, параметры и электрические характеристики"
+		+ "<br>"
+		+ "быстродействующих интегральных цифро-аналоговых и аналого-цифровых преобразователей.",
+
+		// Обложка (имя image).
+		"Mikroshemy pamyati. Mikroshemy CAP i ACP. O.N. Lebedev i dr. 2-e izdanie. 1996g.png",
+		// Скачать с mail-диска.
+		"mail"
+		],
+
+		// -11-
+		[
+		"Популярные цифровые микросхемы. В.Л. Шило. 1987г.djvu",
+		"https://cloud.mail.ru/public/WiAX/pNdKQLHhx",
+		"4.569.407 байт",
+		"ModalWinBook_11",
+
+		"ПОПУЛЯРНЫЕ ЦИФРОВЫЕ МИКРОСХЕМЫ"
+		+ "<br>"
+		+ "Справочник"
+		+ "<br>"
+		+ "Москва \"Радио и Связь\" 1987г."
+		+ "<br>"
+		+ "<br>"
+		+ "Приведены сведения о трёх самых распространённых в радиолюбительской практике видах цифровых"
+		+ "<br>"
+		+ "микросхем: ТТЛ, КМОП и ЭСЛ. Кратко рассмотрены основы их схемотехники, показаны структуры,"
+		+ "<br>"
+		+ "цоколёвки и дано описание работы более 300 типов массовых цифровых микросхем:"
+		+ "<br>"
+		+ "логических элементов, триггеров, регистров, счётчиков, мультиплексоров,"
+		+ "<br>"
+		+ "арифметических и др. Даны рекомендации по их применению."
+		+ "<br>"
+		+ "<br>"
+		+ "Для подготовленных радиолюбителей и специалистов народного хозяйства, разрабатывающих"
+		+ "<br>"
+		+ "и применяющих импульсно-цифровую аппаратуру.",
+
+		// Обложка (имя image).
+		"",
+		// Скачать с mail-диска.
+		"mail"
+		],
+
+		// -12-
+		[
+		"Популярные микросхемы ТТЛ (1533, 1531, 531, 555, 155). МОСКВА, АРГУС. 1993г.pdf",
+		"https://cloud.mail.ru/public/JRt2/5TYFTA7xH",
+		"19.369.320 байт",
+		"ModalWinBook_12",
+
+		"ПОПУЛЯРНЫЕ МИКРОСХЕМЫ ТТЛ"
+		+ "<br>"
+		+ "Серии: КР1533, КР1531, К531, К555, К155"
+		+ "<br>"
+		+ "МОСКВА \"АРГУС\" 1993г.",
+
+		// Обложка (имя image).
+		"Populyarnye mikroskhemy TTL (1533, 1531, 531, 555, 155). MOSKVA, ARGUS. 1993g.png",
+		// Скачать с mail-диска.
+		"mail"
+		],
+
+		// -13-
+		[
+		"Справочник радиолюбителя. Терещук Р. М., Терещук К. М., Седов С. А.  3-е издание. 1987г.djvu",
+		"https://cloud.mail.ru/public/iuVZ/Zz2f8B9iN",
+		"16.148.022 байт",
+		"ModalWinBook_13",
+
+		"Р.М. ТЕРЕЩУК, К.М. ТЕРЕЩУК, С.А. СЕДОВ"
+		+ "<br>"
+		+ "ПОЛУПРОВОДНИКОВЫЕ ПРИЁМНО-УСИЛИТЕЛЬНЫЕ УСТРОЙСТВА"
+		+ "<br>"
+		+ "СПРАВОЧНИК РАДИОЛЮБИТЕЛЯ"
+		+ "<br>"
+		+ "<br>"
+		+ "Издание третье, переработанное и дополненное"
+		+ "<br>"
+		+ "<br>"
+		+ "КИЕВ, НУКОВА ДУМКА, 1987г.",
+
+		// Обложка (имя image).
+		"Spravochnik radiolyubitelya. Tereshchuk R. M., Tereshchuk K. M., Sedov S. A.  3-e izdanie. 1987g.png",
+		// Скачать с mail-диска.
+		"mail"
+		],
+
+		// -14-
+		[
+		"Усилители мощности низкой частоты - интегральные микросхемы. Справочник. 1997г. Турута Е.Ф.djvu",
+		"https://cloud.mail.ru/public/wJ9Y/YuXqK8jZk",
+		"1.995.549 байт",
+		"ModalWinBook_14",
+
+		"TURUTA"
+		+ "<br>"
+		+ "УСИЛИТЕЛИ МОЩНОСТИ НИЗКОЙ ЧАСТАТЫ - ИНТЕГРАЛЬНЫЕ МИКРОСХЕМЫ"
+		+ "<br>"
+		+ "СПРАВОЧНИК. МОСКВА, ИЗДАТЕЛЬСТВО \"ПАТРИОТ\", 1997г."
+		+ "<br>"
+		+ "ISBN 5-7030-0846-8"
+		+ "<br>"
+		+ "<br>"
+		+ "Настоящий справочник является вторым изданием выпуска \"Усилители мощности низкой частоты -"
+		+ "<br>"
+		+ "интегральные микросхемы\". В справочнике приведены основные электрические параметры,"
+		+ "<br>"
+		+ "базовые и модифицированные схемы подключения интегральных микросхем - усилителей"
+		+ "<br>"
+		+ " мощности НЧ. По сравнению с первым изданием, значительно расширена номенклатура"
+		+ "<br>"
+		+ " описываемых микросхем, в частности УНЧ последнего поколения серии TDA фирм"
+		+ "<br>"
+		+ " Philips и SGS-Thomson. Даны более подробные описания модификаций"
+		+ "<br>"
+		+ "и функциональных возможностей подключения описываемых микросхем.",
+
+		// Обложка (имя image).
+		"Usiliteli moshchnosti nizkoj chastoty - integral'nye mikroskhemy. Spravochnik. 1997g. Turuta E.F.png",
+		// Скачать с mail-диска.
+		"mail"
+		]
 		];
 
 	// Сортировка.
@@ -357,7 +523,17 @@ function LoadBook()
 			}
 
 		temp += z + 1 + ". " + "<a href=\"" + ArrayBook[z][1] + "\" target=\"_blank\" ";
-		temp += "title=\"Скачать с google-диска (откроется в новой вкладке). Объём: " + ArrayBook[z][2] + "\">";
+
+		if (ArrayBook[z][6] == 'google')
+			{
+			temp += "title=\"Скачать с google-диска (откроется в новой вкладке). Объём: " + ArrayBook[z][2] + "\">";
+			}
+
+		if (ArrayBook[z][6] == 'mail')
+			{
+			temp += "title=\"Скачать с mail-диска (откроется в новой вкладке). Объём: " + ArrayBook[z][2] + "\">";
+			}
+
 		temp += ArrayBook[z][0] + "</a><br>";
 		temp += "</td>";
 
@@ -382,7 +558,7 @@ function LoadBook()
 	temp += "<br>";
 	temp += "<a href=\"https://drilnet.github.io/lit.html\" title=\"Откроется в новой вкладке\" target=\"_blank\">Просмотр подробной информации о литературе</a>";
 	temp += "<br>";
-	temp += "<a href=\"https://drive.google.com/file/d/15ZuTy5JsxOJtxzPfTPKI1id6YkUH2UcI/view?usp=sharing\" title=\"Скачать c google-диска (откроется в новой вкладке). Объём: 78.534.767 байт.\" target=\"_blank\">Скачать всю литературу одним файлом</a>";
+	temp += "<a href=\"https://cloud.mail.ru/public/77Eo/ksvpFYS9j\" title=\"Скачать c mail-диска (откроется в новой вкладке). Объём: 201.827.997 байт.\" target=\"_blank\">Скачать всю литературу одним файлом</a>";
 	temp += "<br>";
 
 	temp += "<span class=\"smalltxt\">";
