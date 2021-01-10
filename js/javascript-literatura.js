@@ -424,7 +424,7 @@ function LoadBook()
 		+ "Издание третье, переработанное и дополненное"
 		+ "<br>"
 		+ "<br>"
-		+ "КИЕВ, НУКОВА ДУМКА, 1987г.",
+		+ "КИЕВ, НАУКОВА ДУМКА, 1987г.",
 
 		// Обложка (имя image).
 		"Spravochnik radiolyubitelya. Tereshchuk R. M., Tereshchuk K. M., Sedov S. A.  3-e izdanie. 1987g.png",
