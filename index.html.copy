@@ -1587,6 +1587,23 @@
 
 		<td style="padding-left: 8px;">
 
+			<!-- DesignSpark -->
+
+			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.rs-online.com/designspark/pcb-software" target="_blank">
+			<div class="icon"><img src="icons/DesignSpark_20x20.png" title="Редактор схем и Разводка плат (DesignSpark)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		<td style="padding-left: 4px;">
+
 			<!-- ExpressPCB -->
 
 			<table class="iconfreeurl"  cellspacing="0" cellpadding="0" border="0">
