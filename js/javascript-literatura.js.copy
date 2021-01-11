@@ -475,9 +475,16 @@ function LoadBook()
 	// Подготовка к вставке.
 	var temp = "<br>";
 
-	temp += "<span class=\"smalltxt\">";
-	temp += "Если я, нарушаю чьи-либо права, напишите мне, и я удалю нужную Вам литературу.";
+	temp += "<hr style=\"width: 296px;\">"
+	temp += "Небольшая коллекция литературы!"
+	temp += "<br>"
+	temp += "Вся литература до 2000 года!"
+	temp += "<hr style=\"width: 296px;\">"
 
+	temp += "<span class=\"smalltxt\">";
+
+	temp += "<br>"
+	temp += "Если я, нарушаю чьи-либо права, напишите мне, и я удалю нужную Вам литературу.";
 	temp += "<br>";
 	temp += "<b>bbarsinov[ухо]gmail.com</b>";
 	temp += "<br><br>";
