@@ -2186,9 +2186,20 @@
 
 			<!-- Сссылки на Вики -->
 
-			<a href="https://ru.wikipedia.org/wiki/Игра_в_15" title="Откроется в новой вкладке" target="_blank">Пятнашки в русской Вики</a>
+			<a href="https://ru.wikipedia.org/wiki/Игра_в_15" title="Откроется в новой вкладке" target="_blank">Пятнашки в Русской Вики</a>
 			<br>
-			<a href="https://uk.wikipedia.org/wiki/П%27ятнашки" title="Откроется в новой вкладке" target="_blank">Пятнашки в украинской Вики</a>
+			<a href="https://uk.wikipedia.org/wiki/П%27ятнашки" title="Откроется в новой вкладке" target="_blank">Пятнашки в Украинской Вики</a>
+			<br>
+
+			<br>
+
+			<span class="smalltxt">
+			<b>Примечание.</b>
+			<br>
+			Ссылки на <b>Вики</b> написаны в алфавитном порядке!
+			</span>
+
+			<br>
 			<br>
 
 		</td>
