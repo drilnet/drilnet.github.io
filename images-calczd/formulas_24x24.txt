@@ -1,0 +1,4 @@
+
+	   Набор: Gnome Icon Theme
+	Дизайнер: Gnome Project
+	Лицензия: GPL
