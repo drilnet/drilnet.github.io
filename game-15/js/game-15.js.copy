@@ -1,7 +1,7 @@
 
 //
 // Лицензия (License): GNU GPL V3.
-// (C) Demidov S.V.
+// Ukraine. (C) Demidov S.V.
 //
 
 //
