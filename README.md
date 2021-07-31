@@ -6,7 +6,7 @@
 ## Мой сайт (репозиторий моего сайта)
 
 ![](https://github.com/drilnet/drilnet.github.io/blob/master/UA.png)
-
+<br>
 ![](https://github.com/drilnet/drilnet.github.io/blob/master/SplashScreen.png)
 
 [Ukraine](https://en.wikipedia.org/wiki/Ukraine) (Украина). (**C**) Демидов С.В.
