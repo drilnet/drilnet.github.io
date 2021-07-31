@@ -9,6 +9,8 @@
 <br>
 ![](https://github.com/drilnet/drilnet.github.io/blob/master/SplashScreen.png)
 
+Надпись (**HTML**, **JavaScript**) сделал на этом сайте: [ссылка](https://gfto.ru/index/konstruktor_3d_teksta/0-37)
+
 [Ukraine](https://en.wikipedia.org/wiki/Ukraine) (Украина). (**C**) Демидов С.В.
 
 <hr>
