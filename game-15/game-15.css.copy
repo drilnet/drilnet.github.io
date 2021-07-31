@@ -1,4 +1,7 @@
 
+/* Написано в FreeBSD, Midnight Commander. */
+/* Ukraine. (C) Demidov S.V. */
+
 	/* Горизонтальная разделяющая линия 2 */
 
 	.g15_hr2 {
