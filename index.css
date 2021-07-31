@@ -1,4 +1,7 @@
 
+/* Написано в FreeBSD, Midnight Commander. */
+/* Ukraine. (C) Demidov S.V. */
+
 	/* Шрифты взяты с: https://github.com/maxwell-k/dejavu-sans-mono-web-font */
 
 	@font-face {
@@ -29,7 +32,7 @@
 	src: url(fonts/DejaVuSansMono-Oblique.woff) format("woff");
 	}
 
-	/* Шрифт и цвет символов на всех страницах */
+	/* Шрифт и цвет символам */
 
 	body {
 	font-family: DejaVu Sans Mono_;
@@ -65,75 +68,111 @@
 	background: #ffffff;
 	}
 
-	/* Маленький шрифт */
+		/* Маленький шрифт */
 
-	.smalltxt {
-	font-size: 0.9em;
+		.smalltxt {
+		font-size: 0.9em;
+		}
+
+		/* Маленький шрифт для iframe */
+
+		.smalltxtiframe {
+		font-size: 0.8em;
+		}
+
+		/* Маленький шрифт для подвала */
+
+		.smalltxtfooter {
+		font-size: 0.9em;
+		}
+
+		/* Раасстояние между строками для подвала */
+
+		.footer_p {
+		line-height: 14px;
+		}
+
+		/* Горизонтальная линия */
+
+		hr {
+		border: none;              /* Убираем границу для браузера Firefox    */
+		background-color: #aaaaaa; /* Цвет линии для браузера Firefox и Opera */
+		color: #aaaaaa;            /* Цвет линии для остальных браузеров      */
+		height: 1px;               /* Толщина линии                           */
+		width: 100%;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		}
+
+	/* Фоновое изображение */
+
+	.bg {
+	/* background: url(images/x.png) no-repeat; */
+
+	/* Firefox 3.6+ */
+	/* -moz-background-size: auto; */
+
+	/* Safari 3.1+ и Chrome 4.0+ */
+	/* -webkit-background-size: auto; */
+
+	/* Opera 9.6+ */
+	/* -o-background-size: auto; */
+
+	/* Современные браузеры */
+	/* background-size: auto; */
+
+	/* background-position: center; */
+
+	/* border: 1px solid #000000; */
 	}
 
-	/* Маленький шрифт для iframe */
+		/* Шапка */
+		/* Размер шрифта для Hobby */
 
-	.smalltxtiframe {
-	font-size: 0.8em;
-	}
+		.texthobby {
+		font-size: 300%;
+		color: #333333;
+		}
 
-	/* Маленький шрифт для подвала */
+		/* Шапка */
+		/* Маленький шрифт для Hobby */
 
-	.smalltxtfooter {
-	font-size: 0.9em;
-	}
+		.smalltxthobby {
+		font-size: 0.9em;
+		}
 
-	/* Раасстояние между строк для подвала */
+		/* Шапка */
+		/* Горизонтальная линия для Hobby */
 
-	.footer_p {
-	line-height: 14px;
-	}
+		.hrwhite {
+		border: none;              /* Убираем границу для браузера Firefox    */
+		background-color: #dcdcdc; /* Цвет линии для браузера Firefox и Opera */
+		color: #dcdcdc;            /* Цвет линии для остальных браузеров      */
+		height: 1px;               /* Толщина линии                           */
+		width: 100%;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		}
 
-	/* Горизонтальная линия */
+		/* Шапка */
+		/* Подложка для флагов */
 
-	hr {
-	border: none;              /* Убираем границу для браузера Firefox    */
-	background-color: #aaaaaa; /* Цвет линии для браузера Firefox и Opera */
-	color: #aaaaaa;            /* Цвет линии для остальных браузеров      */
-	height: 1px;               /* Толщина линии                           */
-	width: 100%;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	}
+		.USCNRU {
+		background: #eeeeee;
+		border: 1px solid #eeeeee;
+		border-radius: 0px;
+		padding: 0px 6px 0px 6px;
+		}
 
-	/* Размер шрифта для Hobby */
+		/* Шапка */
+		/* Иконки поиска */
 
-	.texthobby {
-	font-size: 300%;
-	color: #333333;
-	}
-
-	/* Маленький шрифт для Hobby */
-
-	.smalltxthobby {
-	font-size: 0.9em;
-	}
-
-	/* Горизонтальная линия для Hobby */
-
-	.hrwhite {
-	border: none;              /* Убираем границу для браузера Firefox    */
-	background-color: #dcdcdc; /* Цвет линии для браузера Firefox и Opera */
-	color: #dcdcdc;            /* Цвет линии для остальных браузеров      */
-	height: 1px;               /* Толщина линии                           */
-	width: 100%;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	}
-
-	/* Подложка для флагов */
-
-	.USCNRU {
-	background: #eeeeee;
-	border: 1px solid #eeeeee;
-	border-radius: 0px;
-	padding: 0px 6px 0px 6px;
-	}
+		.iconsearch {
+		background: linear-gradient(to top, #f6f8fa, #ffffff);
+		border: 1px solid #bfd1e5;
+		border-radius: 2px;
+		padding: 4px 10px 4px 10px;
+		}
 
 	/* Шрифт для перечня репозиторий */
 
@@ -171,13 +210,14 @@
 	padding: 4px 10px 4px 10px;
 	}
 
-	/* Иконки поиска */
+	/* Кнопка с текстом (маленькая) */
 
-	.iconsearch {
+	.txtbuttonsmall {
 	background: linear-gradient(to top, #f6f8fa, #ffffff);
 	border: 1px solid #bfd1e5;
 	border-radius: 2px;
-	padding: 4px 10px 4px 10px;
+	padding: 3px 8px 3px 8px;
+	font-size: 11px;
 	}
 
 	/* Иконки бесплатное ПО */
@@ -189,6 +229,53 @@
 	padding: 4px 10px 4px 10px;
 	}
 
+		/* Фон и бордюр для логотипа SMF, в модальном окне */
+		/* Оригинал */
+
+		.smfbglogooriginal {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		border-radius: 0px;
+		padding: 4px 8px 4px 8px;
+		}
+
+		/* Фон и бордюр для логотипа SMF, в модальном окне */
+		/* Как сделал Я */
+
+		.smfbglogoi {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		border-radius: 0px;
+		padding: 4px 8px 4px 8px;
+		}
+
+		/* Фон и бордюр для xcf-файлов (скачивание), в модальном окне. */
+
+		.smfxcf {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		border-radius: 0px;
+		padding: 6px 10px 6px 10px;
+		}
+
+		/* Цвет надписи для Simple */
+
+		.smfcolor1 {
+		color: #f3703c;
+		}
+
+		/* Цвет надписи для Machines Forum */
+
+		.smfcolor2 {
+		color: #394a56;
+		}
+
+		/* Подсветка ссылки для SMF */
+
+		.smfurl:hover {
+		color: #f3703c;
+		}
+
 	/* Заголовок спойлера в виде ссылки, для литературы */
 
 	.spoilerbook {
@@ -197,45 +284,47 @@
 	cursor: pointer;
 	}
 
+	/* При наведении на спойлер литературы */
+
 	.spoilerbook:hover {
 	color: #006699;
 	text-decoration: underline;
 	}
 
-	/* Фон и бордюр для заголовка, игра Game-15 */
-	/* Без clock.gif */
+		/* Фон и бордюр для заголовка, игра Game-15 */
+		/* Без clock.gif */
 
-	.g15_title {
-	background: #f0f2f4;
-	border: 1px solid #f0f2f4;
-	border-radius: 0px;
-	padding: 4px 0px 4px 0px;
-	width: 720px;
-	}
+		.g15_title {
+		background: #f0f2f4;
+		border: 1px solid #f0f2f4;
+		border-radius: 0px;
+		padding: 4px 0px 4px 0px;
+		width: 720px;
+		}
 
-	/* Фон и бордюр для заголовка, игра Game-15 */
-	/* С clock.gif */
+		/* Фон и бордюр для заголовка, игра Game-15 */
+		/* С clock.gif */
 
-	.g15_title_2 {
-	background: #f0f2f4;
-	border: 1px solid #f0f2f4;
-	border-radius: 0px;
-	padding: 3px 0px 3px 0px;
-	width: 720px;
-	}
+		.g15_title_2 {
+		background: #f0f2f4;
+		border: 1px solid #f0f2f4;
+		border-radius: 0px;
+		padding: 3px 0px 3px 0px;
+		width: 720px;
+		}
 
-	/* Заголовок спойлера в виде ссылки, для игры Game-15 */
+		/* Заголовок спойлера в виде ссылки, для игры Game-15 */
 
-	.g15_link_spoiler {
-	color: #006699;
-	text-decoration: none;
-	cursor: pointer;
-	}
+		.g15_link_spoiler {
+		color: #006699;
+		text-decoration: none;
+		cursor: pointer;
+		}
 
-	.g15_link_spoiler:hover {
-	color: #006699;
-	text-decoration: underline;
-	}
+		.g15_link_spoiler:hover {
+		color: #006699;
+		text-decoration: underline;
+		}
 
 	/* Заголовок спойлера в виде ссылки, для почтового адреса */
 
@@ -246,14 +335,16 @@
 	}
 
 	/* Модальное окно для репозиторий */
+	/* Модальное окно SMF */
 
 	.modalwin {
-	height: auto;  /* Высота окна */
-	width: 800px;  /* Ширина окна */
-	border: 3px solid #999999;  /* Тощина и цвет рамки */
-	border-radius: 4px;         /* Закругленные края   */
-	background: #ffffff;        /* Фон окна            */
-	padding: 12px 12px 12px 12px; /* Внутренние отступы покраям */
+	height: auto; /* Высота окна */
+	width: 800px; /* Ширина окна */
+	border: 3px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
 
 	top: 64px; /* Сверху до окна */
 	right: 0;  /* Справа до окна */
@@ -267,24 +358,24 @@
 	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
 	}
 
-	/* При выводе модального окна, затемнение страницы */
-	/* Для репозиторий */
+		/* При выводе модального окна, затемнение страницы */
+		/* Для репозиториев и SMF */
 
-	#shadow {
-	position: fixed;
+		#shadow {
+		position: fixed;
 
-	left: 0; /* Затемнение слева  */
-	top: 0;  /* Затемнение сверху */
+		left: 0; /* Затемнение слева  */
+		top: 0;  /* Затемнение сверху */
 
-	width: 100%;  /* По ширине растянуть на весь экран */
-	height: 100%; /* По высоте растянуть на весь экран */
+		width: 100%;  /* По ширине растянуть на весь экран */
+		height: 100%; /* По высоте растянуть на весь экран */
 
-	z-index: 1;          /* Поверх всех кроме окна */
-	background: #000000; /* Цвет затемнения        */
-	opacity: 0.2;        /* Прозрачность           */
-	}
+		z-index: 1;          /* Поверх всех кроме окна */
+		background: #000000; /* Цвет затемнения        */
+		opacity: 0.2;        /* Прозрачность           */
+		}
 
-	/* Дополнительный размер шрифта (модальные окна репозиторий) */
+	/* Дополнительный размер шрифта (модальные окна репозиториев и SMF) */
 
 	.modalwintxtsize2 {
 	font-size: 12px;
@@ -293,12 +384,13 @@
 	/* Модальное окно для литературы */
 
 	.modalwinbook {
-	height: auto;  /* Высота окна */
-	width: 800px;  /* Ширина окна */
-	border: 3px solid #999999;  /* Тощина и цвет рамки */
-	border-radius: 4px;         /* Закругленные края   */
-	background: #ffffff;        /* Фон окна            */
-	padding: 12px 12px 12px 12px; /* Внутренние отступы покраям */
+	height: auto; /* Высота окна */
+	width: 800px; /* Ширина окна */
+	border: 3px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
 
 	top: 64px; /* Сверху до окна */
 	right: 0;  /* Справа до окна */
@@ -312,24 +404,34 @@
 	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
 	}
 
-	/* При выводе модального окна, затемнение страницы */
-	/* Для литературы */
+		/* При выводе модального окна, затемнение страницы */
+		/* Для литературы */
 
-	#shadowbook {
-	position: fixed;
+		#shadowbook {
+		position: fixed;
 
-	left: 0; /* Затемнение слева  */
-	top: 0;  /* Затемнение сверху */
+		left: 0; /* Затемнение слева  */
+		top: 0;  /* Затемнение сверху */
 
-	width: 100%;  /* По ширине растянуть на весь экран */
-	height: 100%; /* По высоте растянуть на весь экран */
+		width: 100%;  /* По ширине растянуть на весь экран */
+		height: 100%; /* По высоте растянуть на весь экран */
 
-	z-index: 1;          /* Поверх всех кроме окна */
-	background: #000000; /* Цвет затемнения        */
-	opacity: 0.2;        /* Прозрачность           */
+		z-index: 1;          /* Поверх всех кроме окна */
+		background: #000000; /* Цвет затемнения        */
+		opacity: 0.2;        /* Прозрачность           */
+		}
+
+	/* ------- */
+	/* CALCDIV */
+	/* ------- */
+
+	/* Маленький шрифт */
+
+	.calcdivsmalltxt {
+	font-size: 11px;
 	}
 
-	/* Фон и бордюр для radio buttons в CALCDIV */
+	/* Фон и бордюр для Radio Button в CALCDIV */
 
 	.calcdivbgradiobutton {
 	background: #ffffff;
@@ -337,19 +439,19 @@
 	padding: 4px;
 	}
 
-	/* Наружный отступ сверху для radio buttons в CALCDIV */
+	/* Наружный отступ сверху для Radio Button в CALCDIV */
 
 	.calcdivrbmargint {
 	margin-top: 8px;
 	}
 
-	/* Не показывать стандартный radio button в CALCDIV */
+	/* Не показывать стандартный Radio Button в CALCDIV */
 
 	.calcdivradiobutton {
 	display: none;
 	}
 
-	/* Неактивный radio button в CALCDIV */
+	/* Неактивный Radio Button в CALCDIV */
 
 	.calcdivradiobutton + label {
 	background: url("images-calcdivr2-rb/radio-false.png") no-repeat scroll 0 0;
@@ -357,32 +459,32 @@
 	padding: 0px 0px 1px 15px;
 	}
 
-	/* Активный radio button в CALCDIV */
+	/* Активный Radio Button в CALCDIV */
 
 	.calcdivradiobutton:checked + label {
 	background: url("images-calcdivr2-rb/radio-true.png") no-repeat scroll 0 0;
 	}
 
-	/* Цвет тексту radio button в CALCDIV */
+	/* Цвет тексту Radio Button в CALCDIV */
 
 	.calcdiv_label_radio {
 	color: #006699;
 	}
 
-	/* При наведении на radio button в CALCDIV */
+	/* При наведении на Radio Button в CALCDIV */
 
 	.calcdiv_label_radio:hover{
 	color: #006699;
 	text-decoration: underline;
 	}
 
-	/* Внутренний нижний отступ для radio button в CALCDIV */
+	/* Внутренний нижний отступ для Radio Button в CALCDIV */
 
 	.calcdivrbpaddingb {
 	padding-bottom: 1px;
 	}
 
-	/* Внутренний правый отступ для radio button в CALCDIV */
+	/* Внутренний правый отступ для Radio Button в CALCDIV */
 
 	.calcdivrbpaddingr {
 	padding-right: 4px;
@@ -453,7 +555,7 @@
 	width: 612px;
 	}
 
-	/* Горизонтальная разделяющая линия для формул и расчётов на странице CALCDIV */
+	/* Горизонтальная линия для формул и расчётов на странице CALCDIV */
 
 	.calcdivpagefchr {
 	border: none;              /* Убираем границу для браузера Firefox    */
@@ -508,14 +610,14 @@
 	}
 
 	/* Отступы в калькуляторе CALCDIV */
-	/* Ввод данных                    */
+	/* Ввод данных */
 
 	.calcdivtdpadding {
 	padding: 2px 0px 2px 0px;
 	}
 
 	/* Цвет текста в калькуляторе CALCDIV */
-	/* Вввод данных                       */
+	/* Вввод данных */
 
 	.calcdivinputcolortext {
 	color: #333333;
@@ -539,6 +641,17 @@
 	padding-bottom: 6px;
 	}
 
+	/* CALCDIV */
+	/* Цвет примечанию. Наведите курсор мыши на поле ввода (будет подсказка)! */
+	/* Цвет примечанию. Наведите курсор мыши на переменные (будет подсказка)! */
+
+	.calcdivcolorprompt1 {
+	/* color: #005f00; */
+	/* color: #0052aa; */
+	/* color: #ad33d0; */
+	color: #333333;
+	}
+
 	/* Цвет вопросов в калькуляторе CALCDIV */
 
 	.calcdivcolorquestions {
@@ -557,7 +670,7 @@
 	color: #b0b2b4;
 	}
 
-	/* Заголовок спойлера для калькулятора CALCDIV2 */
+	/* Заголовок спойлера для калькулятора CALCDIV */
 
 	.calcdivspoiler { /* Без наведения */
 	color: #006699;
@@ -573,6 +686,14 @@
 	.calcdivspoiler:visited { /* Визит */
 	color: #006699;
 	text-decoration: none;
+	}
+
+	/* CALCDIV */
+	/* Цвет примечанию. Наведите курсор мыши на формулу (будет подсказка)! */
+
+	.calcdivcolorpromptf {
+	/* color: #004f00; */
+	color: #333333;
 	}
 
 	/* Фон и Бордюр для формул в калькуляторе CALCDIV */
@@ -598,3 +719,1608 @@
 	.calcdivnumber {
 	width: 128px;
 	}
+
+	/* -------------- */
+	/* CALCZENERDIODE */
+	/* -------------- */
+
+	/* CALCZENERDIODE */
+	/* Уважаемый соискатель! */
+
+	.calczdperson {
+	color: #006f00;
+	}
+
+	/* CALCZENERDIODE */
+	/* Предоставляется как есть! */
+
+	.calczd_warning {
+	color: #d00000;
+	font-size: 14px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Маленький шрифт */
+
+	.calczdsmalltxt {
+	font-size: 11px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Не показывать стандартный Radio Button */
+
+	.calczdradiobutton {
+	display: none;
+	}
+
+	/* CALCZENERDIODE */
+	/* Неактивный Radio Button */
+
+	.calczdradiobutton + label {
+	background: url("images-calczd-rb/radio-false.png") no-repeat scroll 0 0;
+	cursor: pointer;
+	padding: 0px 0px 1px 15px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Активный Radio Button */
+
+	.calczdradiobutton:checked + label {
+	background: url("images-calczd-rb/radio-true.png") no-repeat scroll 0 0;
+	}
+
+	/* CALCZENERDIODE */
+	/* Цвет тексту Radio Button */
+
+	.calczd_label_radio {
+	color: #006699;
+	}
+
+	/* CALCZENERDIODE */
+	/* При наведении на Radio Button */
+
+	.calczd_label_radio:hover{
+	color: #006699;
+	text-decoration: underline;
+	}
+
+	/* CALCZENERDIODE */
+	/* Внутренний нижний отступ для Radio Button */
+
+	.calczdrbpaddingb {
+	padding-bottom: 1px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Внутренний правый отступ для Radio Button */
+
+	.calczdrbpaddingr {
+	padding-right: 4px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Заголовок 1 на странице (фон и бордюр) */
+
+	.calczdpagebgh1 {
+	background: #f1f8ff;
+	border: 1px solid #f1f8ff;
+	padding: 4px 4px 4px 4px;
+	color: #022169;
+	width: 100%;
+	font-size: 19px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Номер калькулятора (фон и бордюр) */
+
+	.calczdn {
+	background: linear-gradient(to top, #f0f4f7, #ffffff);
+	border: 1px solid #bfd1e5;
+	font-size: 24px;
+	padding: 0px 8px 0px 8px;
+	height: 32px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Загаловок калькулятора (фон и бордюр) */
+
+	.calczdbgtitle {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	height: 28px;
+	color: #022169;
+	width: 720px;
+	font-size: 15px;
+	margin-bottom: 4px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и Бордюр самого калькулятора */
+
+	.calczdbg {
+	background: #f5f7f9;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 720px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и Бордюр для схемы 1, в калькуляторе */
+
+	.calczdbgscheme1 {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 250px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и Бордюр для схемы 2, в калькуляторе */
+
+	.calczdbgscheme2 {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 300px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и Бордюр для схемы 3, в калькуляторе */
+
+	.calczdbgscheme3 {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 400px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и Бордюр для схемы 4, в калькуляторе */
+
+	.calczdbgscheme4 {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 500px;
+	}
+
+	/* Отступы в калькуляторе CALCZENERDIODE */
+	/* Ввод данных                           */
+
+	.calczdtdpadding {
+	padding: 2px 0px 2px 0px;
+	}
+
+	/* Цвет текста в калькуляторе CALCZENERDIODE */
+	/* Вввод данных                              */
+
+	.calczdinputcolortext {
+	color: #333333;
+	}
+
+	/* Горизонтальная линия в калькуляторе CALCZENERDIODE */
+	/* Линия 1 */
+
+	.calczdhr {
+	border: none;              /* Убираем границу для браузера Firefox    */
+	background-color: #c0c2c4; /* Цвет линии для браузера Firefox и Opera */
+	color: #c0c2c4;            /* Цвет линии для остальных браузеров      */
+	height: 1px;               /* Толщина линии                           */
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	}
+
+	/* Горизонтальная линия в калькуляторе CALCZENERDIODE */
+	/* Линия 2 (короткая) */
+
+	.calczdhr2 {
+	border: none;              /* Убираем границу для браузера Firefox    */
+	background-color: #c0c2c4; /* Цвет линии для браузера Firefox и Opera */
+	color: #c0c2c4;            /* Цвет линии для остальных браузеров      */
+	height: 1px;               /* Толщина линии                           */
+	width: 460px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Верхний отступ (схема, пример) */
+
+	.calczdtdpaddingtop {
+	padding-top: 8px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Нижний отступ (схема, пример) */
+
+	.calczdtdpaddingbottom {
+	padding-bottom: 6px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Цвет примечанию. Наведите курсор мыши на поле ввода (будет подсказка)! */
+	/* Цвет примечанию. Наведите курсор мыши на переменные (будет подсказка)! */
+
+	.calczdcolorprompt1 {
+	color: #333333;
+	}
+
+	/* CALCZENERDIODE */
+	/* Цвет вопросов в калькуляторе */
+
+	.calczdcolorquestions {
+	color: #ff0000;
+	}
+
+	/* CALCZENERDIODE */
+	/* Цвет результата в калькуляторе */
+
+	.calczdcolorresult {
+	color: #007f00;
+	}
+
+	/* Цвет вертикальным линиям в калькуляторе CALCZENERDIODE */
+
+	.calczdtdcolorline {
+	color: #b0b2b4;
+	}
+
+/* --- */
+
+		/* CALCZENERDIODE */
+		/* Заголовок спойлера 1 */
+
+		.calczdspoiler { /* Без наведения */
+		color: #006699;
+		text-decoration: none;
+		cursor: pointer;
+		}
+
+		/* CALCZENERDIODE */
+		/* Заголовок спойлера 1 */
+
+		.calczdspoiler:hover{ /* При наведении */
+		color: #006699;
+		text-decoration: underline;
+		}
+
+		/* CALCZENERDIODE */
+		/* Заголовок спойлера 1 */
+
+		.calczdspoiler:visited { /* Визит */
+		color: #006699;
+		text-decoration: none;
+		}
+
+/* --- */
+
+		/* CALCZENERDIODE */
+		/* Заголовок спойлера 2 */
+
+		.calczdspoiler2 { /* Без наведения */
+		color: #006699;
+		text-decoration: none;
+		cursor: pointer;
+		}
+
+		/* CALCZENERDIODE */
+		/* Заголовок спойлера 2 */
+
+		.calczdspoiler2:hover{ /* При наведении */
+		color: #006699;
+		text-decoration: none;
+		}
+
+		/* CALCZENERDIODE */
+		/* Заголовок спойлера 2 */
+
+		.calczdspoiler2:visited { /* Визит */
+		color: #006699;
+		text-decoration: none;
+		}
+
+/* --- */
+
+	/* CALCZENERDIODE */
+	/* Цвет примечанию. Наведите курсор мыши на формулу (будет подсказка)! */
+
+	.calczdcolorpromptf {
+	color: #333333;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и Бордюр для формул */
+
+	.calczdbgformulas {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	margin-top: 8px;
+	padding: 4px;
+	width: 612px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и бордюр для основной формулы */
+
+	.calczdbgformulasbasis {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 6px 4px 6px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и бордюр для дополнения (дополнительные формулы) */
+
+	.calczdbgformulasadd {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 6px 4px 6px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Примечание для формул */
+
+	.calczdremark {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	margin-top: 8px;
+	padding: 4px;
+	width: 612px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Размер поля (длина) ввода чисел */
+
+	.calczdinputpx {
+	width: 128px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Размер поля (длина) для ввода чисел */
+	/* [ Настройки для таблиц 1, 2 ] */
+
+	.calczdtableinputpx {
+	width: 80px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Описание, что можно ввести в поля ввода (фон и бордюр) */
+	/* Калькулятор 1. Калькулятор 2. Калькулятор 3. Калькулятор 4. */
+
+	.calczdbgwarning {
+	background: #f5f7f9;
+	border: 1px solid #e0e2e4;
+	padding: 4px 8px 4px 8px;
+	margin-top: 6px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Описание, что можно ввести в поля ввода (фон и бордюр) */
+	/* [ Настройки для таблиц 1, 2 ] */
+
+	.calczdbgwarning2 {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 8px 4px 8px;
+	margin-top: 6px;
+	}
+
+	/* Предупреждение! */
+	/* Цвет надписи: Не рекомендуется генерировать слишком большие таблицы! */
+	/* [ Настройки для таблиц 1, 2 ] */
+
+	.calczdcolorgen {
+	color: #007f00;
+	}
+
+	/* CALCZENERDIODE */
+	/* Описание, что можно ввести в поля ввода */
+	/* Калькулятор 1, 2, 3, 4 и [ Настройки таблиц 1, 2] */
+	/* Цвет надписи: "красная рамка" */
+
+	.calczdtxtinputframe {
+	color: #c00000;
+	}
+
+	/* CALCZENERDIODE */
+	/* Фон и бордюр для UR1 */
+	/* Для примечания */
+
+	.calczdbgur1 {
+	background: #f5f7f9;
+	border: 1px solid #e0e2e4;
+	padding: 4px 8px 4px 8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	}
+
+	/* Заголовок для таблиц с расчётами в калькуляторе CALCZENERDIODE */
+
+	.calczdcalculation_title {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 800px;
+	font-size: 1.2em;
+	}
+
+	/* CALCZENERDIODE */
+	/* Таблица с расчётами 1 (таблицы n1) */
+
+	.calczdcalculation_zebra {
+	width: 640px;
+	border-collapse: collapse;
+	}
+
+	/* CALCZENERDIODE */
+	/* Таблица с расчётами 2 (таблицы n2) */
+
+	.calczdcalculation_zebra2 {
+	width: 900px;
+	border-collapse: collapse;
+	}
+
+	/* CALCZENERDIODE */
+	/* Зебра 1, для таблиц с расчётами */
+
+	.calczdcalculation_z_bg_a {
+	background: #f0f2f4;
+	border: 1px solid #d0d2d4;
+	padding: 0px 4px 0px 4px;
+	text-align: center;
+	}
+
+	/* CALCZENERDIODE */
+	/* Зебра 2, для таблиц с расчётами */
+
+	.calczdcalculation_z_bg_b {
+	background: #ffffff;
+	border: 1px solid #d0d2d4;
+	padding: 0px 4px 0px 4px;
+	text-align: center;
+	}
+
+	/* CALCZENERDIODE */
+	/* Зебра 1 и Зебра 2, отступ, используется в таблице n2 */
+
+	.calczdcalculation_z_bg_ab {
+	padding-right: 4px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Подсветка для Зебры, для таблиц с расчётами */
+
+	.calczdcalculation_z_bg_c:hover { /* При наведении */
+	color: #007f00;
+	text-decoration: none;
+	}
+
+/* --- */
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 1 (Шаг) */
+
+		.wtn1_1 {
+		width: 10%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 2 (Uin) */
+
+		.wtn1_2 {
+		width: 12%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 3 (Uout) */
+
+		.wtn1_3 {
+		width: 12%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 4 (I) */
+
+		.wtn1_4 {
+		width: 12%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 5 (R1) */
+
+		.wtn1_5 {
+		width: 18%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 6 (P1) */
+
+		.wtn1_6 {
+		width: 12%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 7 (P2) */
+
+		.wtn1_7 {
+		width: 12%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 8 (UR1) */
+
+		.wtn1_8 {
+		width: 12%;
+		}
+
+/* --- */
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 1 (Шаг) */
+
+		.wtn2_1 {
+		width: 5%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 2 (Uin) */
+
+		.wtn2_2 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 3 (Uout) */
+
+		.wtn2_3 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 4 (I1) */
+
+		.wtn2_4 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 5 (I2) */
+
+		.wtn2_5 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 6 (I3) */
+
+		.wtn2_6 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 7 (R1) */
+
+		.wtn2_7 {
+		width: 16%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n2. Ширина колонки 8 (Pn) */
+
+		.wtn2_8 {
+		width: 9%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 9 (P1) */
+
+		.wtn2_9 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 10 (P2) */
+
+		.wtn2_10 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 11 (P3) */
+
+		.wtn2_11 {
+		width: 8%;
+		}
+
+		/* CALCZENERDIODE */
+		/* Таблицы n1. Ширина колонки 12 (UR1) */
+
+		.wtn2_12 {
+		width: 6%;
+		}
+
+/* --- */
+
+	/* CALCZENERDIODE */
+	/* Горизонтальная линия для таблиц с расчётами */
+	/* Таблицы n1 */
+
+	.calczdcalculation_hr {
+	width: 640px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Горизонтальная линия для таблиц с расчётами */
+	/* Таблицы n2 */
+
+	.calczdcalculation_hr2 {
+	width: 900px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Цвет надписи: Таблица 1, Таблица 2, Таблица 3 */
+
+	.calczdcolortabletxt {
+	color: #007f00;
+	}
+
+	/* CALCZENERDIODE */
+	/* Для таблиц с расчётами */
+	/* Фон и бордюр для Ввода данных */
+
+	.calczdbgtableinput {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 6px 4px 6px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Цвет для 1,2 (ближайшее стандартное) */
+
+	.color12 {
+	color: #0144b4;
+	}
+
+	/* CALCZENERDIODE */
+	/* Маленький шрифт для пояснения */
+	/* Текст после [ Настройки для таблиц n1 ] и [ Настройки для таблиц n2 ] */
+	
+	.calczdsmalltxtclarif {
+	font-size: 11px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Маленький шрифт для 1,2 в таблицах n2 */
+
+	.calczdsmalltxt12t {
+	font-size: 9px;
+	}
+
+	/* CALCZENERDIODE */
+	/* При наведении на 1,2 */
+
+	.calczdsmalltxt12t:hover{
+	text-decoration: none;
+	cursor: default;
+	}
+
+	/* CALCZENERDIODE */
+	/* Настройки для td, для 1,2 в таблицах n2 */
+
+	.calczdtd12 {
+	text-align: center;
+	width: 28px;
+	border-left: 1px solid #d0d2d4;
+	padding-left: 4px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Настройки для td, открыть модальное окно в таблицах n1 и таблицах n2 */
+
+	.calczdtdmwin {
+	width: 9px;
+	border-left: 1px solid #d0d2d4;
+	padding-left: 4px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Заголовок 2 */
+	/* Приложение. Набор используемых формул */
+
+	.calczddlformulas_title {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 800px;
+	font-size: 1.2em; /* 14px */
+	}
+
+	/* CALCZENERDIODE */
+	/* Заголовок 2. */
+	/* Приложение. Даташиты */
+
+	.calczddatasheet_title {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 800px;
+	font-size: 1.2em; /* 14px */
+	}
+
+	/* CALCZENERDIODE */
+	/* Заголовок для даташит (под спойлером) */
+	/* Технические характеристики стабилитронов */
+
+	.calczddatasheet_title2 {
+	font-size: 13px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Таблица для даташит */
+
+	.calczddatasheet_zebra {
+	width: 800px;
+	border-collapse: collapse;
+	}
+
+	/* CALCZENERDIODE */
+	/* Зебра 1, для даташит. */
+
+	.calczddatasheet_z_bg_a {
+	background: #f0f2f4;
+	border: 1px solid #d0d2d4;
+	padding: 0px 4px 0px 4px;
+	text-align: center;
+	}
+
+	/* CALCZENERDIODE */
+	/* Зебра 2, для даташит */
+
+	.calczddatasheet_z_bg_b {
+	background: #ffffff;
+	border: 1px solid #d0d2d4;
+	padding: 0px 4px 0px 4px;
+	text-align: center;
+	}
+
+	/* CALCZENERDIODE */
+	/* Подсветка для Зебры (для даташит) */
+
+	.calczddatasheet_z_bg_c:hover {
+	color: #007f00;
+	text-decoration: none;
+	}
+
+	/* CALCZENERDIODE */
+	/* Предоставляется как есть (цвет надписи) */
+
+	.calczddatasheet_warning {
+	color: #d00000;
+	}
+
+	/* CALCZENERDIODE */
+	/* Условные обозначения электрических параметров стабилитронов: */
+	/* Фон и бордюр */
+
+	.calczddatasheet_par {
+	background: #ffffff;
+	border: 1px solid #d0d2d4;
+	padding: 8px 12px 8px 12px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Названия столбцов в таблице (шапка) */
+	/* Фон и бордюр */
+
+	.calczddatasheet_sh {
+	background: #ffffff;
+	border: 1px solid #d0d2d4;
+	padding: 8px 12px 8px 12px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Горизонтальная линия для даташитов (короткая) */
+
+	.calczddatasheethr {
+	border: none;              /* Убираем границу для браузера Firefox    */
+	background-color: #d0d2d4; /* Цвет линии для браузера Firefox и Opera */
+	color: #d0d2d4;            /* Цвет линии для остальных браузеров      */
+	height: 1px;               /* Толщина линии                           */
+	width: 480px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Модальное окно */
+
+	.calczdmodalwin {
+	height: auto; /* Высота окна */
+	width: 800px; /* Ширина окна */
+	border: 3px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
+
+	top: 64px; /* Сверху до окна */
+	right: 0;  /* Справа до окна */
+	left: 0;   /* Слева до окна  */
+
+	font-size: 14px; /* Размер шрифта */
+	margin: 0 auto;
+
+	z-index: 2;      /* Поверх всех     */
+	display: none;   /* Сначала невидим */
+	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+	}
+
+		/* CALCZENERDIODE */
+		/* При выводе модального окна, затемнение страницы */
+
+		#shadowzd {
+		position: fixed;
+
+		left: 0; /* Затемнение слева  */
+		top: 0;  /* Затемнение сверху */
+
+		width: 100%;  /* По ширине растянуть на весь экран */
+		height: 100%; /* По высоте растянуть на весь экран */
+
+		z-index: 1;          /* Поверх всех кроме окна */
+		background: #000000; /* Цвет затемнения        */
+		opacity: 0.2;        /* Прозрачность           */
+		}
+
+	/* CALCZENERDIODE */
+	/* Дополнительное окно в модальном окне */
+	/* Окно 1 (таблицы сопротивлений E24, E48, E96) */
+
+	.calczdmodalwin_window {
+	overflow: scroll; /* полоса прокрутки */
+	width: 740px;
+	height: 56px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Дополнительное окно в модальном окне */
+	/* Окно 2 (таблицы n1, вывод ближайшего стандартного) */
+
+	.calczdmodalwin_window2 {
+	overflow: scroll; /* полоса прокрутки */
+	width: 740px;
+	height: 260px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Дополнительное окно в модальном окне */
+	/* Окно 2 (таблицы n2, вывод ближайшего стандартного) */
+
+	.calczdmodalwin_window3 {
+	overflow: scroll; /* полоса прокрутки */
+	width: 740px;
+	height: 320px;
+	}
+
+	/* CALCZENERDIODE */
+	/* Дополнительный размер шрифта в модальном окне */
+
+	.calczdmodalwin_txtsize2 {
+	font-size: 12px;
+	}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Заголовок 2 */
+
+		.calczdattbs_title {
+		background: #f0f4f7;
+		border: 1px solid #f0f4f7;
+		padding: 0px 4px 0px 4px;
+		height: 16px;
+		color: #022169;
+		width: 900px;
+		font-size: 1.2em; /* 14px */
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Заголовок 2_ */
+
+		.calczdattbs_title2 {
+		background: #f0f4f7;
+		border: 1px solid #f0f4f7;
+		padding: 0px 4px 0px 4px;
+		height: 16px;
+		color: #022169;
+		width: 800px;
+		font-size: 1.2em; /* 14px */
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Дополнительное окно на странице */
+
+		.calczdattbs_window {
+		overflow: scroll; /* полоса прокрутки */
+		width: 900px;
+		height: 400px;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Фон и бордюр для дополнительного окна на странице */
+
+		.calczdattbsbg {
+		background: #f3f4f4;
+		border: 1px solid #c3c6c6;
+		padding: 6px;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Дополнительное окно на странице */
+
+		.calczdprg_window {
+		overflow: scroll; /* полоса прокрутки */
+		width: 800px;
+		height: 400px;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Таблица для программы на JavaScript */
+		.calczdprg_zebra {
+		width: 720px;
+		border-collapse: collapse;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Зебра 1, для программы на JavaScript */
+
+		.calczdprg_bg_a {
+		background: #f3f4f4;
+		border: 1px solid #f3f3f4;
+		padding: 0px 4px 0px 4px;
+		text-align: left;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Зебра 2, для программы на JavaScript */
+
+		.calczdprg_bg_b {
+		background: #ffffff;
+		border: 1px solid #ffffff;
+		padding: 0px 4px 0px 4px;
+		text-align: left;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Программа на JavaScript. Цвет комментариям */
+		.calczdjsrem {
+		color: #006600;
+		font-style: italic;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Программа на JavaScript. Цвет операторам */
+		.calczdjsoper {
+		color: #6666ee;
+		font-weight: bold;
+		}
+
+		/* CALCZENERDIODE */
+		/* Приложение. Ближайшей стандартный */
+		/* Программа на JavaScript. Цвет function и var */
+		.calczdjsfv {
+		color: #009999;
+		font-weight: bold;
+		}
+
+	/* CALCZENERDIODE */
+	/* Дополнительные ссылки */
+	/* Заголовок 2 */
+
+	.calczdprg_title {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 800px;
+	font-size: 1.2em; /* 14px */
+	}
+
+		/* -------- */
+		/* ADDITION */
+		/* ---------*/
+
+		/* Заголовок 1 */
+
+		.add_pagebgh1 {
+		background: #f1f8ff;
+		border: 1px solid #f1f8ff;
+		padding: 4px 4px 4px 4px;
+		color: #022169;
+		width: 100%;
+		font-size: 19px;
+		}
+
+		/* Заголовок 2 */
+
+		.add_pagebgh2 {
+		background: #f0f4f7;
+		border: 1px solid #f0f4f7;
+		padding: 0px 4px 0px 4px;
+		height: 16px;
+		color: #022169;
+		width: 800px;
+		font-size: 1.2em; /* 14px */
+		}
+
+		/* Дополнительное окно на странице */
+
+		.add_window {
+		overflow: scroll; /* полоса прокрутки */
+		width: 900px;
+		height: 400px;
+		}
+
+	/* ----------------- */
+	/* CALCTRANSISTORKEY */
+	/* ----------------- */
+
+	/* CALCTRANSISTORKEY */
+	/* Уважаемый соискатель! */
+
+	.calctkperson {
+	color: #006f00;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Предоставляется как есть! */
+
+	.calctk_warning {
+	color: #d00000;
+	font-size: 14px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Маленький шрифт */
+
+	.calctksmalltxt {
+	font-size: 11px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Заголовок 1 на странице (фон и бордюр) */
+
+	.calctkpagebgh1 {
+	background: #f1f8ff;
+	border: 1px solid #f1f8ff;
+	padding: 4px 4px 4px 4px;
+	color: #022169;
+	width: 100%;
+	font-size: 19px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Номер калькулятора (фон и бордюр) */
+
+	.calctkn {
+	background: linear-gradient(to top, #f0f4f7, #ffffff);
+	border: 1px solid #bfd1e5;
+	font-size: 24px;
+	padding: 0px 8px 0px 8px;
+	height: 32px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Загаловок калькулятора (фон и бордюр) */
+
+	.calctkbgtitle {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	height: 28px;
+	color: #022169;
+	width: 800px;
+	font-size: 15px;
+	margin-bottom: 4px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Фон и Бордюр самого калькулятора */
+
+	.calctkbg {
+	background: #f5f7f9;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 800px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Фон и Бордюр для схемы 1a (в калькуляторе Calc 1, Calc 4) */
+
+	.calctkbgscheme1a {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 300px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Фон и Бордюр для схемы 1b (в калькуляторе Calc 1, Calc 4) */
+
+	.calctkbgscheme1b {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 370px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Фон и Бордюр для схемы 2a, 2b (в калькуляторе Calc 4, пример использования) */
+
+	.calctkbgschemeex4 {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 640px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Фон и Бордюр для примечания (в калькуляторе Calc 4, пример использования) */
+
+	.calctkbgschemeex4rem {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 512px;
+	margin-top: 4px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Верхний отступ (схема, пример использования) */
+
+	.calctktdpaddingtop {
+	padding-top: 8px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Нижний отступ (схема, пример использования) */
+
+	.calctktdpaddingbottom {
+	padding-bottom: 6px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Отступы в калькуляторе */
+	/* Ввод данных            */
+
+	.calctktdpadding {
+	padding: 2px 0px 2px 0px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Цвет текста в калькуляторе */
+	/* Вввод данных               */
+
+	.calctkinputcolortext {
+	color: #333333;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Горизонтальная линия в калькуляторе */
+	/* Линия 1 */
+
+	.calctkhr {
+	border: none;              /* Убираем границу для браузера Firefox    */
+	background-color: #c0c2c4; /* Цвет линии для браузера Firefox и Opera */
+	color: #c0c2c4;            /* Цвет линии для остальных браузеров      */
+	height: 1px;               /* Толщина линии                           */
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Нижний отступ. Схема (схема подключения транзистора) */
+
+	.calctktdpaddingbottom {
+	padding-bottom: 6px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Цвет примечанию. Наведите курсор мыши на поле ввода (будет подсказка)! */
+	/* Цвет примечанию. Наведите курсор мыши на переменные (будет подсказка)! */
+
+	.calctkcolorprompt1 {
+	color: #333333;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Цвет вертикальным линиям в калькуляторе */
+
+	.calctktdcolorline {
+	color: #b0b2b4;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Размер поля (длина) ввода чисел в калькуляторе */
+
+	.calctkinputsizepx {
+	width: 128px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Цвет примечанию. Сопротивление резистора R1 должно быть... */
+
+	.calctkcolorremr1 {
+	color: #005f00;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Описание, что можно ввести в поля ввода (фон и бордюр) */
+
+	.calctkbgwarning {
+	background: #f5f7f9;
+	border: 1px solid #e0e2e4;
+	padding: 4px 8px 4px 8px;
+	margin-top: 6px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Описание, что можно ввести в поля ввода */
+	/* Цвет надписи: "красная рамка" */
+
+	.calctktxtinputframe {
+	color: #c00000;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Цвет вопросов в калькуляторе */
+
+	.calctkcolorquestions {
+	color: #ff0000;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Цвет результата в калькуляторе */
+
+	.calctkcolorresult {
+	color: #007f00;
+	}
+
+/* --- */
+
+	/* CALCTRANSISTORKEY */
+	/* Заголовок спойлера */
+
+	.calctkspoiler { /* Без наведения */
+	color: #006699;
+	text-decoration: none;
+	cursor: pointer;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Заголовок спойлера */
+
+	.calctkspoiler:hover{ /* При наведении */
+	color: #006699;
+	text-decoration: underline;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Заголовок спойлера */
+
+	.calctkspoiler:visited { /* Визит */
+	color: #006699;
+	text-decoration: none;
+	}
+
+/* --- */
+
+	/* CALCTRANSISTORKEY */
+	/* Цвет примечанию. Наведите курсор мыши на формулу (будет подсказка)! */
+
+	.calctkcolorpromptf {
+	color: #333333;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Фон и Бордюр для формул */
+
+	.calctkbgformulas {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	margin-top: 8px;
+	padding: 4px;
+	width: 612px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Фон и бордюр для основной формулы */
+
+	.calctkbgformulasbasis {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 6px 4px 6px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Примечание для формул */
+
+	.calctkformulasremark {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	margin-top: 8px;
+	padding: 4px;
+	width: 612px;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Вертикальная линия для формул */
+	/* Линия слева */
+
+	.calctkvlineleft {
+	border-left: 1px solid #d0d2d4;
+	}
+
+	/* CALCTRANSISTORKEY */
+	/* Вертикальная линия для формул */
+	/* Линия справа */
+
+	.calctkvlineright {
+	border-right: 1px solid #d0d2d4;
+	}
+
+		/* --- */
+		/* BSS */
+		/* --- */
+
+		/* Ближайшее стандартное сопротивление (БСС) */
+
+		/* BSS */
+		/* Отцентровать */
+
+		.bscenteriframe {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+
+		/* BSS */
+		/* Заголовок */
+
+		.bstitle {
+		background: #f0f4f7;
+		border: 1px solid #f0f4f7;
+		padding: 0px 4px 0px 4px;
+		height: 16px;
+		color: #022169;
+		width: 800px;
+		font-size: 1.2em; /* 14px */
+		}
+
+		/* BSS */
+		/* Горизонтальная линия, для онлайн калькулятора БСС */
+
+		.bs_hr {
+		width: 800px;
+		}
+
+		/* BSS */
+		/* Фон и бордюр, для онлайн калькулятора БСС */
+
+		.bsbg1 {
+		background: #ffffff;
+		border: 1px solid #c3c6c6;
+		padding: 12px 12px 6px 12px;
+		}
+
+		/* BSS */
+		/* Фон и бордюр, для онлайн калькулятора БСС */
+		/* Выбор E24, E48, E96 */
+
+		.bsbg2 {
+		background: #ffffff;
+		border: 1px solid #c3c6c6;
+		padding: 6px;
+		}
+
+		/* BSS */
+		/* Фон и бордюр, для: Введите сопротивление */
+
+		.bsbg3 {
+		/* background: #ffffff; */
+		/* border: 1px solid #c3c6c6; */
+		padding: 6px;
+		}
+
+		/* BSS */
+		/* Размер поля ввода в px (ввод сопротивления) */
+
+		.bsinputpx {
+		width: 96px;
+		}
+
+		/* BSS */
+		/* Отступы для расчёта (ответа) */
+
+		.bsr {
+		padding-top: 6px;
+		padding-bottom: 6px;
+		}
+
+		/* BSS */
+		/* Цвет вопроса */
+
+		.bsrquestion {
+		color: #ff0000;
+		}
+
+		/* BSS */
+		/* Цвет результата (ответа) */
+
+		.bsranswer {
+		color: #007f00;
+		}
+
+		/* --- */
+
+		/* BSS */
+		/* Не показывать стандартный Radio Button */
+
+		.bsradiobutton {
+		display: none;
+		}
+
+		/* BSS */
+		/* Неактивный Radio Button */
+
+		.bsradiobutton + label {
+		background: url("images-calcbs-rb/radio-false.png") no-repeat scroll 0 0;
+		cursor: pointer;
+		padding: 0px 0px 1px 15px;
+		}
+
+		/* BSS */
+		/* Активный Radio Button */
+
+		.bsradiobutton:checked + label {
+		background: url("images-calcbs-rb/radio-true.png") no-repeat scroll 0 0;
+		}
+
+		/* BSS */
+		/* Цвет тексту Radio Button */
+
+		.bs_label_radio {
+		color: #006699;
+		}
+
+		/* BSS */
+		/* При наведении на Radio Button */
+
+		.bs_label_radio:hover{
+		color: #006699;
+		text-decoration: underline;
+		}
+
+		/* BSS */
+		/* Внутренний нижний отступ для Radio Button */
+
+		.bsrbpaddingb {
+		padding-bottom: 1px;
+		}
+
+		/* BSS */
+		/* Внутренний правый отступ для Radio Button */
+
+		.bsrbpaddingr {
+		padding-right: 4px;
+		}
+
+		/* --- */
+
+		/* BSS */
+		/* Модальное окно */
+
+		.bsmodalwin {
+		height: auto; /* Высота окна */
+		width: 860px; /* Ширина окна */
+		border: 3px solid #999999; /* Тощина и цвет рамки */
+		border-radius: 4px;        /* Закругленные края   */
+		background: #ffffff;       /* Фон окна            */
+
+		padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
+
+		top: 64px; /* Сверху до окна */
+		right: 0;  /* Справа до окна */
+		left: 0;   /* Слева до окна  */
+
+		font-size: 12px; /* Размер шрифта */
+		margin: 0 auto;
+
+		z-index: 2;      /* Поверх всех     */
+		display: none;   /* Сначала невидим */
+		position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+		}
+
+			/* BSS */
+			/* При выводе модального окна, затемнение страницы */
+
+			#shadowbs {
+			position: fixed;
+
+			left: 0; /* Затемнение слева  */
+			top: 0;  /* Затемнение сверху */
+
+			width: 100%;  /* По ширине растянуть на весь экран */
+			height: 100%; /* По высоте растянуть на весь экран */
+
+			z-index: 1;          /* Поверх всех кроме окна */
+			background: #000000; /* Цвет затемнения        */
+			opacity: 0.2;        /* Прозрачность           */
+			}
+
+	/* -------------- */
+	/* Окно закон Ома */
+	/* -------------- */
+
+	/* ZOm */
+	/* Заголовок: Формулы */
+
+	.zomtitle {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 100%;
+	font-size: 14px;
+	}
+
+	/* ZOm */
+	/* Всплывающее окно с формулами */
+
+	.pop-up-window_zom {
+	width: auto;   /* Ширина окна */
+	height: auto;  /* Высота окна */
+	border: 2px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы покраям */
+
+	/* Окно в правом верхнем углу */
+	top: 16px;    /* Сверху до окна */
+	right: 16px;  /* Справа до окна */
+
+	margin: auto 0 auto auto;
+	font-size: 12px; /* Размер шрифта */
+
+	z-index: 1;      /* Поверх всех     */
+	display: none;   /* Сначала невидим */
+	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+	}
+
+		/* ------ */
+		/* RusUrl */
+		/* ------ */
+
+		.PROMT {
+		color: #006fb1;
+		}
+
+		.One {
+		color: #009d44;
+		}

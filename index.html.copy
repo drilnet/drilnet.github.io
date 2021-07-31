@@ -459,20 +459,27 @@
 		</tr>
 		</table>
 
-	<br>
-
 	</td>
 	</tr> <!-- Конец шапки -->
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
 
 	<!-- Репозитории автора -->
 
 	<tr>
 	<td>
 
-	<hr>
-	<br>
-
-		<div class="textrepo">
+		<div class="bg textrepo">
 
 		<table align="center" cellspacing="0" cellpadding="0" border="0">
 
@@ -975,15 +982,11 @@
 			</td>
 
 			<td>
-
-				<a href="https://drilnet.github.io/downloads/vector-06c/downloads.html">
-				<div class="icon"><img src="icons/file_2.png" title="Перейти в архив Вектор'а-06Ц"></div>
-				</a>
-
+			<img class="icon" src="icons/file_2.png" title="Иконка из набора Silk 2. (C) Mark James. License: Creative Commons (Attr. 2.5 Generic)">
 			</td>
 
 			<td style="padding-left: 8px;">
-			<a href="https://drilnet.github.io/downloads/vector-06c/downloads.html" title="Системный диск Вектор'а-06Ц. Скриншоты CO. Библиотека ПК">Перейти в архив Вектор'а-06Ц</a>
+			<a href="downloads/vector-06c/downloads.html" title="Системный диск Вектор'а-06Ц. Скриншоты CO. Библиотека ПК">Перейти в архив Вектор'а-06Ц</a>
 			</td>
 
 			</tr>
@@ -1216,6 +1219,27 @@
 			<td>
 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="https://github.com/drilnet/electronics/tree/master/Bipolar transistor in key mode"
+			title="Формат файлов: LibreOffice (odt), pdf, TinyCAD (dsn), png, LTspice XVII (asc)">
+			Биполярный транзистор в ключевом режиме (формулы, расчёты)</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
 			<a href="https://github.com/drilnet/electronics/tree/master/Box%20For%20Exposure%20Photoresist"
 			title="Ящик из подручного материала">
 			Ящик для экспонирования фоторезиста</a>
@@ -1246,7 +1270,7 @@
 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
 			<a href="https://github.com/drilnet/electronics/tree/master/Divider%20by%20R1%20and%20R2%20(formulas%2C%20calculations%2C%20HTML%20+%20JavaScript%20calculator)"
-			title="Формулы, расчёты, калькулятор на HTML + JavaScript">
+			title="Формат файлов: LibreOffice (odt), pdf, TinyCAD (dsn), png, html, js">
 			Делитель напряжения на двух резисторах (формулы, расчёты, калькулятор на HTML + JS)</a>
 
 			</td>
@@ -1405,8 +1429,176 @@
 
 		</div>
 
-	<br>
-	<hr>
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Выборка pdf-файлов -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+		<b>Выборка pdf-файлов из моих репозиториев:</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td style="padding-top: 6px;">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>&nbsp;&nbsp;&nbsp;</td>
+				<td><img class="icon" src="icons/pdf_26x31.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL"></td>
+
+				<td>
+
+				<!-- TEA2025B -->
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 3/TEA2025B. Схема, печатная плата, собранная плата.pdf" title="Откроется в новой вкладке" target="_blank">TEA2025B. Ver.3. Схема, печатная плата, собранная плата</a>
+
+				<br>
+
+				<!-- TEA2025B -->
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 4/TEA2025B. Схема, печатная плата.pdf" title="Откроется в новой вкладке" target="_blank">TEA2025B. Ver.4. Схема, печатная плата</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 1) -->
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 1 (draft).pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 1)</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 2) -->
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 2 (draft).pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 2)</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 3) -->
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 3 (draft). Transistor & Svetodiod.pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 3)</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 4) -->
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 4 (draft). Transistor & Svetodiod.pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 4)</a>
+
+				<br>
+
+				<!-- Делитель напряжения на двух резисторах (формулы, расчёты) -->
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Divider by R1 and R2 (formulas, calculations, HTML + JavaScript calculator)/Resistor Divider (2 Resistors).pdf" title="Откроется в новой вкладке" target="_blank">Делитель напряжения на двух резисторах (формулы, расчёты)</a>
+
+				<!-- Стабилизированный блок питания +5В/1А, -5В/0.3A, +12В/0.5А, -12В/0.5А -->
+				<br>
+				&nbsp;&nbsp;&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Power Supply +5V, -5V, +12V, -12V/PS_512.pdf" title="Откроется в новой вкладке" target="_blank">Стабилизированный блок питания +5В/1А, -5В/0.3A, +12В/0.5А, -12В/0.5А</a>
+
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Онлайн калькуляторы -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+		<b>Онлайн калькуляторы:</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td style="padding-top: 4px;">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>&nbsp;&nbsp;&nbsp;</td>
+				<td><img class="icon" src="icons/calculator_16x16.png" title="Иконка из набора FatCow. (C) FatCow Web Hosting. License: Creative Commons (Attrbution 3.0 United States)"></td>
+
+				<td>
+
+				&nbsp;&bull;
+				<a href="calcdivr2.html" title="Откроется в новой вкладке" target="_blank">Делитель напряжения на двух резисторах</a>
+
+				<br>
+
+				&nbsp;&bull;
+				<a href="calczenerdiode.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для стабилитрона</a>
+
+				<br>
+
+				&nbsp;&bull;
+				<a href="calctransistorkey.html" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме</a>
+
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
 
 	</td>
 	</tr>
@@ -1644,24 +1836,130 @@
 		</tr>
 		</table>
 
-	<hr>
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<hr>
+		<br>
 
 	</td>
 	</tr>
+
+	<!-- SMF -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<a class="smfurl" href="https://www.simplemachines.org" title="Откроется в новой вкладке" target="_blank">
+		<b><span class="smfcolor1">Simple</span> <span class="smfcolor2">Machines Forum</span></b></a> - Форум для Вашего сайта (бесплатный)!
+		<br>
+		Есть поддержка Украинского Языка!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" style="padding-top: 8px; padding-bottom: 8px;">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+				<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+				<td>
+
+				<a href="https://www.simplemachines.org" title="" target="_blank"><img class="icon" src="icons/SMF_3.png" title="Откроется в новой вкладке"></a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 8px;">
+
+				<!-- Модальное окно 1 -->
+				<a href="javascript:OpenShowModalWin('ModalWinSMF')" title="Нажмите">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td style="padding-left: 3px;">
+
+				<!-- Модальное окно 2 -->
+				<a href="javascript:OpenShowModalWin('ModalWinSMF2')" title="Нажмите (ссылка на русскоязычное сообщество)">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		Некоторые моменты по программированию я подсмотрел у
+		<a class="smfurl" href="https://www.simplemachines.org" title="Откроется в новой вкладке" target="_blank">
+		<b><span class="smfcolor1">Simple</span> <span class="smfcolor2">Machines Forum</span></b></a>! :)
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		Спасибо!
+
+		</td>
+		</tr>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tR>
 
 	<!-- Литература -->
 
 	<tr>
 	<td align="center">
 
-	<br>
-
 		<table cellspacing="0" cellpadding="0" border="0">
 		<tr>
 
 		<td>
 		<!-- Иконка книга -->
-		<div class="icon"><img src="icons/book_32x32.png" title="Иконка из набора Glaze. (C) Everaldo Coelho. License: GPL"></div>
+		<img class="icon" src="icons/book_32x32.png" title="Иконка из набора Glaze. (C) Everaldo Coelho. License: GPL">
 		</td>
 
 		<td>
@@ -1686,8 +1984,17 @@
 		<div id="book_lit" style="display: none;">
 		</div>
 
-	<br>
-	<hr>
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
 
 	</td>
 	</tr>
@@ -1696,8 +2003,6 @@
 
 	<tr>
 	<td align="center">
-
-	<br>
 
 		<!-- Заголовок -->
 		<!-- g15_loader - Замена на без clock.gif -->
@@ -2194,6 +2499,8 @@
 			<a href="https://uk.wikipedia.org/wiki/П%27ятнашки" title="Откроется в новой вкладке" target="_blank">Пятнашки в Украинской Вики</a>
 			<br>
 
+<!--
+
 			<br>
 
 			<span class="smalltxt">
@@ -2204,6 +2511,8 @@
 
 			<br>
 			<br>
+
+-->
 
 		</td>
 		</tr>
@@ -2463,17 +2772,25 @@
 
 		</div> <!-- Конец Game-15 -->
 
-	<hr>
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<hr>
+		<br>
 
 	</td>
 	</tr>
+
 
 	<!-- Сссылки на интернет магазины  (электронные компоненты) -->
 
 	<tr>
 	<td align="center">
-
-	<br>
 
 		<table cellspacing="0" cellpadding="0" border="0">
 
@@ -2520,40 +2837,133 @@
 
 		</table>
 
-	<br>
-	<hr>
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
 
 	</td>
 	</tr>
 
+	<!-- GitHub. РусЯз. -->
+
 	<tr>
 	<td align="center">
 
-		<p>
+		<table style="line-height: 16px;" cellspacing="0" cellpadding="0" border="0">
 
-		<!-- README.MD -->
+		<tr>
+		<td align="center">
 
-		<a href="https://github.com/OlgaVlasova/markdown-doc/blob/master/README.md#SpecialSymbol"
-		target="_blank" title="(C) Olga Vlasova (в новой вкладке)">
-		Правила оформления файла README.MD на GitHub</a>
+			<!-- README.MD -->
+
+			<a href="https://github.com/OlgaVlasova/markdown-doc/blob/master/README.md#SpecialSymbol"
+			target="_blank" title="(C) Olga Vlasova. Откроется в новой вкладке">
+			Правила оформления файла README.MD на GitHub</a>
+
+			<br>
+
+			<!-- Шпаргалка по Markdown -->
+
+			<a href="https://github.com/sandino/Markdown-Cheatsheet"
+			target="_blank" title="(C) Sandino. Откроется в новой вкладке">
+			Шпаргалка по Markdown</a>
+
+			<br>
+
+			<!-- Свой сайт на GITHUB -->
+
+			<a href="https://www.youtube.com/watch?v=05nLdIVfSRU"
+			target="_blank" title="(С) Анна Блок. Откроется в новой вкладке">
+			Создаём свой сайт на GitHub</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" style="padding-top: 6px;">
+
+			<!-- РУСЯЗ -->
+
+			<a href="rusurl.html"
+			target="_blank" title="Ссылки на ресурсы (откроется в новой вкладке)">
+			Ох уж этот Русский Язык</a>
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
 
 		<br>
-
-		<!-- Свой сайт на GITHUB -->
-
-		<a href="https://www.youtube.com/watch?v=05nLdIVfSRU"
-		target="_blank" title="Типичный Верстальщик &bull; Анна Блок (в новой вкладке)">
-		Создаем свой сайт на GitHub</a>
-
+		<hr>
 		<br>
 
-		<!-- РУСЯЗ -->
+	</td>
+	</tr>
 
-		<a href="https://drilnet.github.io/rusurl.html"
-		target="_blank" title="Ссылки на ресурсы (в новой вкладке)">
-		Ох уж этот Русский Язык</a>
+	<!-- OOPS! -->
 
-		</p>
+	<tr>
+	<td align="center" class="smalltxt">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Логика основа интеллекта!
+		<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				Ukraine (Украина), 2013г. (C) Демидов С.В.
+				</td>
+
+				<!-- OOPS 2! -->
+				<td style="padding-left: 8px;">
+				<img class="icon" src="images/warning (info).png"
+				title="Мне это далось нелегко (в мучениях)!">
+				</td>
+
+			</tr>
+			</table>
+
+		<br>
+		Уважаемый соискатель! Зачем я это написал? Чтобы Вы знали откуда ноги растут! У меня плохая логика!
+		<br>
+		Успехов Вам!
+
+		</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
 
 	</td>
 	</tr>
@@ -2562,9 +2972,6 @@
 
 	<tr>
 	<td>
-
-	<hr>
-	<br>
 
 		<table align="center" width="320px" cellspacing="0" cellpadding="0" border="0">
 		<tr>
@@ -2650,8 +3057,17 @@
 		</tr>
 		</table>
 
-	<br>
-	<hr>
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
 
 	</td>
 	</tr>
@@ -2661,7 +3077,6 @@
 	<tr>
 	<td align="center" class="smalltxtfooter footer_p">
 
-	<br>
 	<b>Никогда не сдавайся!</b>
 	<br>
 	Написать мне можно на (замечания, предложения): stdls[ухо]mail.ru или bbarsinov[ухо]gmail.com
@@ -5024,7 +5439,7 @@
 		<tr>
 		<td align="center">
 
-		<img width="50%" height="50%" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%94%D0%BE%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png">
+		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%94%D0%BE%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png">
 
 		</td>
 		</tr>
@@ -5043,7 +5458,7 @@
 		<tr>
 		<td align="center">
 
-		<img width="50%" height="50%" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png"
+		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png"
 		title="Ремонт колонок: Демидов С.В.">
 
 		</td>
@@ -5099,6 +5514,207 @@
 			<tr>
 			<td>
 			<a href="javascript:CloseModalWin('ModalWinIntelligence')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--->
+
+	<!--                                            -->
+	<!-- Модальное окно SMF (Simple Machines Forum) -->
+	<!--                                            -->
+
+	<!-- 1 -->
+
+	<div id="ModalWinSMF" class="modalwin modalwintxtsize2">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Оригинал (лого) -->
+		<tr>
+		<td align="center">
+
+		<hr>
+
+		Оригинальное изображение было взято с сайта: <a href="https://prowebber.ru" title="Откроется в новой вкладке" target="_blank">https://prowebber.ru</a>
+		<br>
+		<br>
+		Вот оно:
+		<br>
+		<br>
+
+			<!-- Лого SMF (оригинал) -->
+
+			<table class="smfbglogooriginal" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<img class="icon" src="icons/SMF_Original.png" title="Логотип">
+
+			</td>
+			</tr>
+			</table>
+
+			<br>
+
+			Лицензия на изображение не указана! Автор не указан!
+
+		<hr>
+
+		</td>
+		</tr>
+
+		<!-- Как сделал Я -->
+		<tr>
+		<td align="center">
+
+		<br>
+
+			<!-- Лого SMF -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				Я себе для сайта сделал так:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+
+					<table class="smfbglogoi" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons/SMF_2.png" title="Логотип">
+					<td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+			</table>
+
+		<br>
+
+			<!-- Ссылки на (лого) на png-файлы -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<a href="icons/SMF_1.png" title="Откроется в новой вкладке" target="_blank">SMF_1.png</a> (562 x 66 px)
+				</td>
+
+				<td>&nbsp;&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_2.png" title="Откроется в новой вкладке" target="_blank">SMF_2.png</a> (285 x 33 px)
+				</td>
+
+				<td>&nbsp;&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_3.png" title="Откроется в новой вкладке" target="_blank">SMF_3.png</a> (204 x 24 px)
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Ссылки на (лого) на xcf-файлы -->
+
+			<table class="smfxcf" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				Исходники в формате графического редактора <a href="https://www.gimp.org" title="Откроется в новой вкладке">Gimp</a>:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_1.xcf" title="Скачать">SMF_1.xcf</a>,
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_2.xcf" title="Скачать">SMF_2.xcf</a>,
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_3.xcf" title="Скачать">SMF_3.xcf</a>.
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSMF')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2 -->
+
+	<div id="ModalWinSMF2" class="modalwin modalwintxtsize2">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="left">
+
+		Русскоязычное сообщество <a href="https://www.simplemachines.ru" title="Откроется в новой вкладке" target="_blank">здесь</a>.
+		<br>
+		Спасибо!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSMF2')">закрыть</a>
 			</td>
 			</tr>
 

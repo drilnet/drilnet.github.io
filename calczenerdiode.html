@@ -1,0 +1,8512 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Написано в FreeBSD, Midnight Commander. -->
+<!-- Ukraine. (C) Demidov S.V. -->
+
+	<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
+
+	<script language="javascript" src="js/javascript-calczenerdiode.js"></script>
+	<script language="javascript" src="js/javascript-bs.js"></script>
+	<script language="javascript" src="js/javascript-pop-up.js"></script>
+
+	</head>
+
+<body onload="SETRadioButtons(); PrintZDCalculationTable_1(); PrintZDCalculationTable_2(); PrintZDDatasheet_1(); PrintZDDatasheet_2(); AlgorithmRBS(); SetScreenWidth(); BuildBS2('zdbsif');">
+
+	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+	<tr> <!-- Шапка -->
+	<td>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td width="1%" class="texthobby">
+			<b>Hobby</b>
+			</td>
+
+			<td width="1%" class="smalltxthobby" style="vertical-align: bottom; padding-left: 4px;">
+			<a href="https://drilnet.github.io" title="https://drilnet.github.io">https://drilnet.github.io</a>
+			</td>
+
+			<td align="right" class="smalltxthobby" style="vertical-align: bottom;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td align="right" style="padding-left: 8px;">
+					<i><b>Благодарность</b> (флаги расположены в алфавитном порядке):</i>
+				</td>
+
+				<td style="padding-left: 4px;">
+					<!-- Флаги -->
+					<table class="USCNRU" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons-flags/US_24x24.png"
+					title="Благодарность за GITHUB">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/CN_24x24.png"
+					title="Благодарность за радиодетали и измерительные приборы">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/RU_24x24.png"
+					title="Благодарность за сайт https://zx-pk.ru и за другие ресурсы">
+					</td>
+
+					</tr>
+					</table>
+				</td>
+
+				<td>
+					<td style="padding-left: 4px;">
+					<i><b>Успехов Вам!</b></i>
+					</td>
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+	<hr class="hrwhite">
+
+	<br>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<!-- Иконка GITHUB'а -->
+		<td width="1%" style="padding-right: 6px;">
+		<img class="icon" src="icons/github-logo.png" title="Лицензия на иконку: CC 3.0 BY. Автор: Dave Gandy">
+		</td>
+
+		<td>
+		<a href="https://github.com" title="https://github.com">GITHUB</a>
+		- Моя записная книжка (наброски, заметки и т.д. и т.п.)!
+		</td>
+
+		<td style="padding-right: 16px;">
+
+			<table align="right" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td style="padding: 0px 8px 0px 8px;">
+
+				<!-- Google поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://google.com" target="_blank">
+				<img class="icon" src="icons/googlesearch_20x20.png" title="Поисковая система Google">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 8px 0px 0px">
+
+				<!-- Meta поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://meta.ua" target="_blank">
+				<img class="icon" src="icons/metasearch_20x20.png" title="Украинская поисковая система Meta">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 0px 0px 0px">
+
+				<!-- Yandex поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://yandex.ru" target="_blank">
+				<img class="icon" src="icons/yandexsearch_20x20.png" title="Поисковая система Yandex">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr> <!-- Конец шапки -->
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Предоставляется как есть! -->
+
+<!--
+	<tr>
+	<td align="center" class="calczd_warning">
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+				<img src="images-calczd/WarningBig.png" title="">
+			</td>
+
+			<td style="padding-left: 8px;">
+			Предоставляется как есть! 
+			</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+-->
+
+	<!-- Горизонтальная линия -->
+
+<!--
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+-->
+
+	<!-- Уважаемый соискатель! -->
+
+<!--
+	<tr>
+	<td align="center">
+
+		<span class="calczdperson">
+		<b>Уважаемый соискатель!</b>
+		<br>
+		Нашли ошибку (ошибки) - напишите мне!
+		<br>
+		E-mail внизу странице!
+		<br>
+		Спасибо!
+		<br>
+		<br>
+		</span>
+
+	</td>
+	</tr>
+-->
+
+	<!-- Горизонтальная линия -->
+
+<!--
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+-->
+
+	<!-- Заголовок -->
+
+	<tr>
+	<td>
+
+		<table class="calczdpagebgh1" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+		Расчёт резистора для стабилитрона
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Calc 1 -->
+
+	<tr>
+	<td align="center">
+
+		<!-------------------------->
+		<!-- Онлайн калькулятор 1 -->
+		<!-------------------------->
+
+		<!-- Номер -->
+
+		<table align="center" class="calczdn" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center" class="calczdnvalign">
+		1
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table align="center" class="calczdbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCZENERDIODE</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Начало калькулятора 1 -->
+
+		<table align="center" class="calczdbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема -->
+
+		<tr>
+		<td align="center" class="calczdtdpaddingbottom">
+
+		<b>Схема подключения стабилитрона</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calczdbgscheme1" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 1 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Переменные -->
+
+			<table style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Ток <b>I</b> (ток стабилизации), переменная: <i><b>I</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Резистор <b>R1</b>, переменные: <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i>.
+					<br>
+					<i><b>UR1</b></i> - На схеме не показан.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Стабилитрон <b>VD1</b>, переменные: <i><b>P2</b></i>, <i><b>Uout</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Ещё переменная: <i><b>Uin</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на поле ввода (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Ввод -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<!--------->
+				<!-- Uin -->
+				<!--------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd1_input_1" value="15"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" selected title="Невозможно изменить">В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uin ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd1_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calczdtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка: [ Очистить все поля ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['zd1_input_1', 'zd1_input_2', 'zd1_input_3'])"
+						title="Очистить все поля (Uin, Uout, I)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка: [ Установить поля по умолчанию ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputZD_1()"
+						title="Установить поля Uin, Uout, I по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				<td rowspan="3" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!---------->
+				<!-- Uout -->
+				<!---------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uout</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd1_input_2" value="12"
+				title="Выходное напряжение Uout (напряжение стабилизации)">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uout ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd1_input_2')"
+				title="Очистить поле Uout">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!------->
+				<!-- I -->
+				<!------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">Введите <i><b>I</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="3000" id="zd1_input_3" value="10"
+				title="Ток I (ток стабилизации)">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле I ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd1_input_3')"
+				title="Очистить поле I">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Примечание. -->
+		<!-- Как настроены поля ввода (описание) -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td colspan="3" align="left" style="padding-bottom: 3px;">
+				Настройки полей ввода:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Uin</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				&nbsp;&nbsp;&nbsp;<i><b>Uout</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>I</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 мА и до 3000 мА, с шагом 0.1 мА.
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Можно ввести и другие числа... -->
+
+			<table class="calczdbgwarning" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<!-- Warning -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+					<td align="left">
+					Внимание!
+					<br>
+					В поля ввода можно ввести и другие числа!
+					<br>
+					Количество знаков после точки (запятой), можно ввести больше одного знака!
+					</td>
+				</tr>
+
+				<tr>
+					<td align="left">
+					При этом <font class="calczdtxtinputframe">красная рамка</font> вокруг поля ввода не считается ошибкой!
+					</td>
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCZD_1()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Результаты счёта -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на переменную (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Счёт  --->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- R1 -->
+				<td align="right">
+				<i><b title="Сопротивление резистора R1">R1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd1_result_R1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P1 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на резисторе R1 (P1)">P1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd1_result_P1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P2 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на стабилитроне VD1 (P2)">P2</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd1_result_P2">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- UR1 -->
+				<td align="right">
+				<span title="Напряжение на резисторе R1"><i><b>UR1</b></i></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd1_result_UR1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			</table>
+
+			<!-- Примечание UR1 -->
+
+			<table class="calczdbgur1" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left">
+				<i><b>UR1</b></i> - это напряжение на резисторе <b>R1</b>.
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;На схеме данное напряжение не показано!
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия (короткая) -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr2">
+
+		</td>
+		</tr>
+
+		<!-- Ближайшее стандартное -->
+
+		<tr>
+		<td align="center">
+
+			<!-- E24, E48, E96 -->
+
+			<div style="padding-bottom: 8px;">
+			Выберите нужный набор резисторов
+			<br>
+			и нажмите кнопку "<b>Посчитать</b>"
+			</div>
+
+			<!-- Выбор: E24 или E48 или E96. -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- E24 -->
+				<td>
+				<span title="Всех резисторов: 216. Точность резисторов: ±5%">Набор резисторов <b>E24</b>:</span>&nbsp;
+				</td>
+
+				<td class="calczdrbpaddingb calczdrbpaddingr">
+
+					<!-- [ x ] -->
+					<input name="ZDEcn1" id="rbcn1_E_1" class="calczdradiobutton" type="radio" value="" checked>
+					<label for="rbcn1_E_1" class="calczd_label_radio" title="Всех резисторов: 216. Точность резисторов: ±5%"></label>
+
+				</td>
+
+				<!-- E48 -->
+				<td>
+				&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 384. Точность резисторов: ±2%">Набор резисторов <b>E48</b>:</span>&nbsp;
+				</td>
+
+				<td class="calczdrbpaddingb calczdrbpaddingr">
+
+					<!-- [   ] -->
+					<input name="ZDEcn1" id="rbcn1_E_2" class="calczdradiobutton" type="radio" value="">
+					<label for="rbcn1_E_2" class="calczd_label_radio" title="Всех резисторов: 384. Точность резисторов: ±2%"></label>
+
+				</td>
+
+				<!-- E96 -->
+				<td>
+				&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 768. Точность резисторов: ±1%">Набор резисторов <b>E96</b>:</span>&nbsp;
+				</td>
+
+				<td class="calczdrbpaddingb">
+
+					<!-- [   ] -->
+					<input name="ZDEcn1" id="rbcn1_E_3" class="calczdradiobutton" type="radio" value="">
+					<label for="rbcn1_E_3" class="calczd_label_radio" title="Всех резисторов: 768. Точность резисторов: ±1%"></label>
+
+				</td>
+
+			</tr>
+			</table>
+
+			<!-- Здесь какой ряд выбран (E24, E48 или E96) -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<img src="images-calczd/warning.png" title="Ближайшее стандартное! Округление до двух знаков после точки!">
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td id="CALCZDBS_1a">
+				<span title="Ближайшее стандартное сопротивление">Ближайшее стандартное (<b>E24</b>):</span>
+				</td>
+
+			</tr>
+			</table>
+
+			<!-- Здесь расчёты ближайшего стандартного -->
+
+			<div id="CALCZDBS_1b" style="margin-top: 6px;" >
+			<span class="calczdcolorquestions">?</span>
+			</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия (короткая) -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr2">
+
+		</td>
+		</tr>
+
+		<!-- Где можно проверить результаты расчётов -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<b>Уважаемый соискатель!</b>
+			<br>
+			Проверить результаты расчётов можно в программе <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" title="Откроется в новой вкладке" target="_blank">LTspice XVII</a>!
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd1sp').style.display = (document.getElementById('zd1sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd1sp" style="display: none; width: 100%;">
+
+			<!-- Ссылки на Вики -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+				<a href="https://ru.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Русской Вики</a>
+				<br>
+				<a href="https://uk.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Украинской Вики</a>
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Наведите курсор мыши на формулу! -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center" class="calczdcolorpromptf">
+
+				<br>
+				Наведите курсор мыши на формулу (будет подсказка)!
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим UR1, UR1 = Uin - Uout -->
+				<img class="icon" title="Находим напряжение на резисторе R1" src="images-calczd/1. Formula 1. Find UR1.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим R1, R1 = UR1 / I -->
+				<img class="icon" title="Находим сопротивление резистора R1" src="images-calczd/1. Formula 2. Find R1.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим P1, P1 = UR1 * I -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1" src="images-calczd/1. Formula 4. Find P1.png">
+
+				<br>
+
+				<!-- Формула, находим P2, P2 = Uout * I -->
+				<img class="icon" title="Рассеиваемая мощность на стабилитроне VD1" src="images-calczd/1. Formula 5. Find P2.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			<br>
+			Формулы по которым делаются дополнительные расчёты (см. ниже),
+			<br>
+			ближайшее стандартное (без <span title="Напряжение на резисторе R1"><b>UR1<b></span>):
+			<br>
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим I, I = (Uin - Uout) / R1 -->
+				<img class="icon" title="Находим ток I (ток стабилизации)" src="images-calczd/1. Formula 3a. Find I.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим P1, P1 = (Uin - Uout) * I -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1" src="images-calczd/1. Formula 4a. Find P1.png">
+
+				<br>
+
+				<!-- Формула, находим P2, P2 = Uout * I -->
+				<img class="icon" title="Рассеиваемая мощность на стабилитроне VD1" src="images-calczd/1. Formula 5. Find P2.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Примечание -->
+
+			<table class="calczdremark" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="center" style="padding-bottom: 2px;">
+				<br>
+				<b>Примечание.</b>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+				Формулы сделаны с помощью <a href="http://primat.org/mathred/mathred.html" title="WEB-редактор формул (откроется в новой вкладке)" target="_blank">редактора формул</a> (<b>LaTex</b>)
+				<br>
+				с последующими правками в графическом редакторе <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>.
+				<br>
+				Спасибо <a href="http://primat.org" title="Откроется в новой вкладке" target="_blank">http://primat.org</a>
+				<br>
+				<br>
+				</td>
+			</tr>
+
+			</table>
+
+			<!-- Дополнение -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+				<br>
+				<b>Дополнение:</b>
+				</td>
+			<tr>
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Милливольты (мВ) </i> в <i>Вольты (В)</i>: <i>В = мВ / 1000</i>.
+					<br>
+					Перевести <i>Вольты (В)</i> в <i>Милливольты (мВ)</i>: <i>мВ = В * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Миллиамперы (мА) </i> в <i>Амперы (А)</i>: <i>А = мА / 1000</i>.
+					<br>
+					Перевести <i>Амперы (А)</i> в <i>Миллиамперы (мА)</i>: <i>мА = А * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				<br>
+
+				</td>
+			</tr>
+
+			</table>
+
+		</div> <!-- Конец спойлера -->
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Пример использования -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd1examplesp').style.display = (document.getElementById('zd1examplesp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Где всё это можно использовать</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd1examplesp" style="display: none; width: 100%;">
+
+		<!-- Схемы -->
+
+			<!-- 1 -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdtdpaddingtop calczdtdpaddingbottom">
+
+			<b>Схема (пример 1)</b>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgscheme3" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 3 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<!-- 2 -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdtdpaddingtop calczdtdpaddingbottom">
+
+			<b>Схема (пример 2)</b>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgscheme4" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 5 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+			<!-- Литература -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+				<b>Схема (пример 2)</b>.
+				<br>
+				<br>
+				&nbsp;&nbsp;&nbsp;Литература:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Книга Начинающему радиолюбителю. В.И. Галкин. 2-е издание. 1989г. Стр. 289.
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Книга Начинающему радиолюбителю. В.И. Галкин. 3-е издание. 1995г. Стр. 402.
+				<br>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Спасибо!
+
+			</td>
+			</tr>
+
+			<tr>
+			<td class="calczdsmalltxt">
+
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Скачать книги можно у меня на <a href="https://drilnet.github.io" title="Перейти на главную страницу (откроется в новой вкладке)" target="_blank">главной странице!</a>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Спойлер: <b>Некоторые ответы на некоторые вопросы!<b>
+
+			</td>
+			</tr>
+
+			</table>
+
+		</div> <!-- Конец спойлера -->
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		</table> <!-- Конец калькулятора 1 -->
+
+	</td>
+	</tr>
+
+	<!-- Таблицы с готовыми расчётами, n1 -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="calczdcalculation_title" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Таблицы с готовыми расчётами, таблицы n1
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Спойлер -->
+		<!-- Настройки для таблиц n1 -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd1setsp').style.display = (document.getElementById('zd1setsp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Настройки для таблиц n1</b>
+
+			</span>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd1setsp" style="display: none; width: 100%;">
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- ---------------------------- -->
+		<!-- Ввод данных для таблице n1.1 -->
+		<!-- ---------------------------- -->
+
+		<span class="calczdcolortabletxt">Таблица n1.1</span>
+
+		<br>
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Uin -->
+
+		<tr>
+		<td>
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- 1 -->
+			<td>
+			&nbsp;<i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 2 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_1_input_1" value="14"
+			title="Начальное">
+			</td>
+
+			<!-- 3 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 4 -->
+			<td>
+			&nbsp;Шаг для <i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 5 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_1_input_2" value="1"
+			title="Шаг для Uin">
+			</td>
+
+			<!-- 6 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 7 -->
+			<td>
+			&nbsp;Сколько шагов:&nbsp;
+			</td>
+
+			<!-- 8 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="1" min="1" max="1000" id="zdtable1_1_input_3" value="5"
+			title="Сколько шагов сделать">&nbsp;
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Uout -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				&nbsp;<img src="images-calczd/warning.png"
+				title="Выходное напряжение (напряжение стабилизации)">
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<span class="calczdinputcolortext" title="Напряжение стабилизации">&nbsp;Выходное напряжение <i><b>Uout</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 3 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_1_input_4" value="12"
+				title="Напряжение стабилизации">
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- I -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calcdivinputcolortext">&nbsp;Ток стабилизации <i><b>I</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable1_1_input_5" value="5"
+				title="Ток I">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;Шаг для <i><b>I</b></i>:&nbsp;
+				</td>
+
+				<!-- 5 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable1_1_input_6" value="5"
+				title="Шаг для I">
+				</td>
+
+				<!-- 6 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- ---------------------------- -->
+		<!-- Ввод данных для таблице n1.2 -->
+		<!-- ---------------------------- -->
+
+		<span class="calczdcolortabletxt">Таблица n1.2</span>
+
+		<br>
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Uin -->
+
+		<tr>
+		<td>
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- 1 -->
+			<td>
+			&nbsp;<i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 2 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_2_input_1" value="11"
+			title="Начальное">
+			</td>
+
+			<!-- 3 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 4 -->
+			<td>
+			&nbsp;Шаг для <i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 5 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_2_input_2" value="1"
+			title="Шаг для Uin">
+			</td>
+
+			<!-- 6 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 7 -->
+			<td>
+			&nbsp;Сколько шагов:&nbsp;
+			</td>
+
+			<!-- 8 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="1" min="1" max="1000" id="zdtable1_2_input_3" value="5"
+			title="Сколько шагов сделать">&nbsp;
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Uout -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				&nbsp;<img src="images-calczd/warning.png"
+				title="Выходное напряжение (напряжение стабилизации)">
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<span class="calczdinputcolortext" title="Напряжение стабилизации">&nbsp;Выходное напряжение <i><b>Uout</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 3 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_2_input_4" value="9.1"
+				title="Напряжение стабилизации">
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- I -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calcdivinputcolortext">&nbsp;Ток стабилизации <i><b>I</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable1_2_input_5" value="5"
+				title="Ток I">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;Шаг для <i><b>I</b></i>:&nbsp;
+				</td>
+
+				<!-- 5 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable1_2_input_6" value="5"
+				title="Шаг для I">
+				</td>
+
+				<!-- 6 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- ---------------------------- -->
+		<!-- Ввод данных для таблице n1.3 -->
+		<!-- ---------------------------- -->
+
+		<span class="calczdcolortabletxt">Таблица n1.3</span>
+
+		<br>
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Uin -->
+
+		<tr>
+		<td>
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- 1 -->
+			<td>
+			&nbsp;<i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 2 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_3_input_1" value="7"
+			title="Начальное">
+			</td>
+
+			<!-- 3 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 4 -->
+			<td>
+			&nbsp;Шаг для <i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 5 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_3_input_2" value="1"
+			title="Шаг для Uin">
+			</td>
+
+			<!-- 6 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 7 -->
+			<td>
+			&nbsp;Сколько шагов:&nbsp;
+			</td>
+
+			<!-- 8 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="1" min="1" max="1000" id="zdtable1_3_input_3" value="5"
+			title="Сколько шагов сделать">&nbsp;
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Uout -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				&nbsp;<img src="images-calczd/warning.png"
+				title="Выходное напряжение (напряжение стабилизации)">
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<span class="calczdinputcolortext" title="Напряжение стабилизации">&nbsp;Выходное напряжение <i><b>Uout</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 3 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable1_3_input_4" value="5.1"
+				title="Напряжение стабилизации">
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- I -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calcdivinputcolortext">&nbsp;Ток стабилизации <i><b>I</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable1_3_input_5" value="5"
+				title="Ток I">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;Шаг для <i><b>I</b></i>:&nbsp;
+				</td>
+
+				<!-- 5 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable1_3_input_6" value="5"
+				title="Шаг для I">
+				</td>
+
+				<!-- 6 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- Примечание. -->
+		<!-- Как настроены поля ввода (описание) -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td colspan="3" align="left" style="padding-bottom: 3px;">
+				Настройки полей ввода:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				&nbsp;&nbsp;&nbsp;<i><b>Uin</b></i> и Шаг для <i><b>Uin</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В (<b>Сколько шагов</b> - с шагом 1).
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Uout</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>I</b></i> и Шаг для <i><b>I</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 мА и до 3000 мА, с шагом 0.1 мА.
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Можно ввести и другие числа... -->
+
+			<table class="calczdbgwarning2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<!-- Warning -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+					<td colspan="2" align="left">
+					Внимание!
+					<br>
+					В поля ввода можно ввести и другие числа!
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+					<span title="Если больше 3-х знаков! Будет округлено до 3-х знаков!">
+					Количество знаков после точки (запятой), можно ввести больше одного знака!
+					</span>
+					</td>
+
+					<td valign="bottom" style="padding-left: 6px;">
+					<img src="images-calczd/warning.png"
+					title="Если больше 3-х знаков! Будет округлено до 3-х знаков!">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="left">
+					При этом <font class="calczdtxtinputframe">красная рамка</font> вокруг поля ввода не считается ошибкой!
+					</td>
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<a href="javascript:ZDCalculationTableInputDefault_1()"
+			title="Установить настройки по умолчанию">По умолчанию</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- Warning -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="left">
+			Сначало измените входные данные!
+			<br>
+			После чего нажмите кнопку "Построить таблицы"!
+			<br>
+			При этом раскройте Таблицы n1!
+			</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<font class="calczdcolorgen">Не рекомендуется генерировать слишком большие таблицы!</font>
+
+		<br>
+		<br>
+
+		<!-- Кнопка "Построить таблицы n1" -->
+		<input type="submit" onclick="PrintZDCalculationTable_1()" value="Построить таблицы n1">
+		<br>
+
+		</div> <!-- Конец спойлера -->
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- E24, E48, E96 -->
+
+			<!-- Пояснение -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left">
+				Выберите нужный набор резисторов и наведите курсор
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left">
+				мыши на сопротивление резистора <b>R1</b> (в таблицах n1)!
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left">
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					Также Вы можете нажать на такой квадратик:
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td>
+					<img class="icon" src="images-calczd/numeric_1.png"
+					title="В таблицах n1, открывает модальное окно с ближайшем стандартным сопротивлением">
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td>
+					(в таблицах n1)!
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			</table>
+
+		<br>
+
+		<font class="calczdsmalltxtclarif">
+
+			<!-- Продолжение Пояснения -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td align="right">
+				<img class="icon" src="images-calczd/numeric_1.png"
+				title="В таблицах n1, открывает модальное окно с ближайшем стандартным сопротивлением">
+				</td>
+
+				<td>&nbsp;-&nbsp;</td>
+
+				<td align="left">
+				для удобства (открывает модальное окно с ближайшем стандартным сопротивлением)!
+				</td>
+
+			</tr>
+
+			</table>
+
+		</font>
+
+		<br>
+
+		<!-- Выбор: E24 или E48 или E96. -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- E24 -->
+			<td>
+			<span title="Всех резисторов: 216. Точность резисторов: ±5%">Набор резисторов <b>E24</b>:</span>&nbsp;
+			</td>
+
+			<td class="calczdrbpaddingb calczdrbpaddingr">
+
+				<!-- [ x ] -->
+				<input name="ZDET1" id="rb_Etable_1_1" class="calczdradiobutton" type="radio" value="" checked
+				onchange="PrintZDCalculationTable_1()">
+				<label for="rb_Etable_1_1" class="calczd_label_radio" title="Всех резисторов: 216. Точность резисторов: ±5%"></label>
+
+			</td>
+
+			<!-- E48 -->
+			<td>
+			&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 384. Точность резисторов: ±2%">Набор резисторов <b>E48</b>:</span>&nbsp;
+			</td>
+
+			<td class="calczdrbpaddingb calczdrbpaddingr">
+
+				<!-- [  ] -->
+				<input name="ZDET1" id="rb_Etable_1_2" class="calczdradiobutton" type="radio" value=""
+				onchange="PrintZDCalculationTable_1()">
+				<label for="rb_Etable_1_2" class="calczd_label_radio" title="Всех резисторов: 384. Точность резисторов: ±2%"></label>
+
+			</td>
+
+			<!-- E96 -->
+			<td>
+			&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 768. Точность резисторов: ±1%">Набор резисторов <b>E96</b>:</span>&nbsp;
+			</td>
+
+			<td class="calczdrbpaddingb">
+
+				<!-- [   ] -->
+				<input name="ZDET1" id="rb_Etable_1_3" class="calczdradiobutton" type="radio" value=""
+				onchange="PrintZDCalculationTable_1()">
+				<label for="rb_Etable_1_3" class="calczd_label_radio" title="Всех резисторов: 768. Точность резисторов: ±1%"></label>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- Спойлер -->
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('calczdtablen1').style.display = (document.getElementById('calczdtablen1').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Таблицы n1</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="calczdtablen1" style="display: none; width: 100%;">
+
+			<!-- Расчёты (здесь таблицы n1) -->
+
+			<div id="ZenerDiodes_Calculation_1">
+			</div>
+
+		</div>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Calc 2 -->
+
+	<tr>
+	<td align="center">
+
+		<!-------------------------->
+		<!-- Онлайн калькулятор 2 -->
+		<!-------------------------->
+
+		<!-- Номер -->
+
+		<table align="center" class="calczdn" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center" class="calczdnvalign">
+		2
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table align="center" class="calczdbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCZENERDIODE</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Начало калькулятора 2 -->
+
+		<table align="center" class="calczdbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема -->
+
+		<tr>
+		<td align="center" class="calczdtdpaddingbottom">
+
+		<b>Схема подключения стабилитрона</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table class="calczdbgscheme2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Переменные -->
+
+			<table style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Токи, переменные: <i><b>I1</b></i>, <i><b>I2</b></i>, <i><b>I3</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Резистор <b>R1</b>, переменные: <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i>.
+					<br>
+					<i><b>UR1</b></i> - На схеме не показан.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Стабилитрон <b>VD1</b>, переменные: <i><b>P2</b></i>, <i><b>Uout</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Сопротивление нагрузки <b>Rн</b>, переменные: <i><b>Rн</b></i>, <i><b>P3</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Ещё переменная: <i><b>Uin</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на поле ввода (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Ввод -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<!--------->
+				<!-- Uin -->
+				<!--------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd2_input_1" value="15"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uin ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd2_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="4" class="calczdtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка: [ Очистить все поля ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['zd2_input_1', 'zd2_input_2', 'zd2_input_3', 'zd2_input_4'])"
+						title="Очистить все поля (Uin, Uout, I2, Rн)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка: [ Установить поля по умолчанию ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputZD_2()"
+						title="Установить поля Uin, Uout, I2, Rн по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				<td rowspan="4" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!---------->
+				<!-- Uout -->
+				<!---------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uout</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd2_input_2" value="12"
+				title="Выходное напряжение Uout (напряжение стабилизации)">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uout ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd2_input_2')"
+				title="Очистить поле Uout">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!-------->
+				<!-- I2 -->
+				<!-------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">Введите <i><b>I2</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="3000" id="zd2_input_3" value="10"
+				title="Ток I2 (ток стабилизации)">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле I2 ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd2_input_3')"
+				title="Очистить поле I2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!-------->
+				<!-- Rн -->
+				<!-------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">Введите <i><b>Rн</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="100000000" id="zd2_input_4" value="5000"
+				title="Сопротивление нагрузки Rн">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="Ом" title="Невозможно изменить" selected>Ом</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Rн ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd2_input_4')"
+				title="Очистить поле Rн">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Примечание. -->
+		<!-- Как настроены поля ввода (описание) -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td colspan="3" align="left" style="padding-bottom: 3px;">
+				Настройки полей ввода:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Uin</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				&nbsp;&nbsp;&nbsp;<i><b>Uout</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>I2</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 мА и до 3000 мА, с шагом 0.1 мА.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Rн</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 Ом и до 100 000 000 Ом, с шагом 0.1 Ом.
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Можно ввести и другие числа... -->
+
+			<table class="calczdbgwarning" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<!-- Warning -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+					<td align="left">
+					Внимание!
+					<br>
+					В поля ввода можно ввести и другие числа!
+					<br>
+					Количество знаков после точки (запятой), можно ввести больше одного знака!
+					</td>
+				</tr>
+
+				<tr>
+					<td align="left">
+					При этом <font class="calczdtxtinputframe">красная рамка</font> вокруг поля ввода не считается ошибкой!
+					</td>
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCZD_2()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Результаты счёта -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на переменную (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Счёт  --->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- R1 -->
+				<td align="right">
+				<i><b title="Сопротивление резистора R1">R1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd2_result_R1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- I1 -->
+				<td align="right">
+				<i><b title="Ток I1">I1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd2_result_I1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- I3 -->
+				<td align="right">
+				<i><b title="Ток I3">I3</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd2_result_I3">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P1 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на резисторе R1 (P1)">P1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd2_result_P1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P2 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на стабилитроне VD1 (P2)">P2</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd2_result_P2">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P3 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на нагрузке Rн (P3)">P3</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd2_result_P3">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- UR1 -->
+				<td align="right">
+				<span title="Напряжение на резисторе R1"><i><b>UR1</b></i></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd2_result_UR1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			</table>
+
+			<!-- Примечание UR1 -->
+
+			<table align="center" class="calczdbgur1" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left">
+				<i><b>UR1</b></i> - это напряжение на резисторе <b>R1</b>.
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;На схеме данное напряжение не показано!
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия (короткая) -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr2">
+
+		</td>
+		</tr>
+
+		<!-- Ближайшее стандартное -->
+
+		<tr>
+		<td align="center">
+
+			<!-- E24, E48, E96 -->
+
+			<div style="padding-bottom: 8px;">
+			Выберите нужный набор резисторов
+			<br>
+			и нажмите кнопку "<b>Посчитать</b>"
+			</div>
+
+			<!-- Выбор: E24 или E48 или E96. -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- E24 -->
+				<td>
+				<span title="Всех резисторов: 216. Точность резисторов: ±5%">Набор резисторов <b>E24</b>:</span>&nbsp;
+				</td>
+
+				<td class="calczdrbpaddingb calczdrbpaddingr">
+
+					<!-- [ x ] -->
+					<input name="ZDEcn2" id="rbcn2_E_1" class="calczdradiobutton" type="radio" value="" checked>
+					<label for="rbcn2_E_1" class="calczd_label_radio" title="Всех резисторов: 216. Точность резисторов: ±5%"></label>
+
+				</td>
+
+				<!-- E48 -->
+				<td>
+				&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 384. Точность резисторов: ±2%">Набор резисторов <b>E48</b>:</span>&nbsp;
+				</td>
+
+				<td class="calczdrbpaddingb calczdrbpaddingr">
+
+					<!-- [   ] -->
+					<input name="ZDEcn2" id="rbcn2_E_2" class="calczdradiobutton" type="radio" value="">
+					<label for="rbcn2_E_2" class="calczd_label_radio" title="Всех резисторов: 384. Точность резисторов: ±2%"></label>
+
+				</td>
+
+				<!-- E96 -->
+				<td>
+				&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 768. Точность резисторов: ±1%">Набор резисторов <b>E96</b>:</span>&nbsp;
+				</td>
+
+				<td class="calczdrbpaddingb">
+
+					<!-- [   ] -->
+					<input name="ZDEcn2" id="rbcn2_E_3" class="calczdradiobutton" type="radio" value="">
+					<label for="rbcn2_E_3" class="calczd_label_radio" title="Всех резисторов: 768. Точность резисторов: ±1%"></label>
+
+				</td>
+
+			</tr>
+			</table>
+
+			<!-- Здесь какой ряд выбран (E24, E48 или E96) -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<img src="images-calczd/warning.png" title="Ближайшее стандартное! Округление до двух знаков после точки!">
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td id="CALCZDBS_2a">
+				<span title="Ближайшее стандартное сопротивление">Ближайшее стандартное (<b>E24</b>):</span>
+				</td>
+
+			</tr>
+			</table>
+
+			<!-- Здесь расчёты ближайшего стандартного -->
+
+			<div id="CALCZDBS_2b" style="margin-top: 6px;">
+			<span class="calczdcolorquestions">?</span>
+			</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия (короткая) -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr2">
+
+		</td>
+		</tr>
+
+		<!-- Где можно проверить результаты расчётов -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<b>Уважаемый соискатель!</b>
+			<br>
+			Проверить результаты расчётов можно в программе <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" title="Откроется в новой вкладке" target="_blank">LTspice XVII</a>!
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd2sp').style.display = (document.getElementById('zd2sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd2sp" style="display: none; width: 100%;">
+
+			<!-- Ссылки на Вики -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+				<a href="https://ru.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Русской Вики</a>
+				<br>
+				<a href="https://uk.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Украинской Вики</a>
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Наведите курсор мыши на формулу! -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center" class="calczdcolorpromptf">
+
+				<br>
+				Наведите курсор мыши на формулу (будет подсказка)!
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим I3 = Uout / Rн. -->
+				<img class="icon" title="Находим ток I3" src="images-calczd/2. Formula 1. Find I3.png">
+
+				<br>
+
+				<!-- Формула, находим I1 = I2 + I3. -->
+				<img class="icon" title="Находим ток I1" src="images-calczd/2. Formula 2. Find I1.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим UR1, UR1 = Uin - Uout -->
+				<img class="icon" title="Находим напряжение на резисторе R1" src="images-calczd/2. Formula 3. Find UR1.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим R1, R1 = UR1 / I1 -->
+				<img class="icon" title="Находим сопротивление резистора R1" src="images-calczd/2. Formula 4. Find R1.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формулы в один ряд -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P1, P1 = UR1 * I1 -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1" src="images-calczd/2. Formula 5. Find P1.png">
+				</td>
+
+				<td valign="bottom" style="padding-right: 16px; font-size: 20px;">,</td>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P2, P2 = Uout * I2 -->
+				<img class="icon" title="Рассеиваемая мощность на стабилитроне VD1" src="images-calczd/2. Formula 6. Find P2.png">
+				</td>
+
+				<td valign="bottom" style="padding-right: 16px; font-size: 20px;">,</td>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P3, P3 = Uout * I3 -->
+				<img class="icon" title="Рассеиваемая мощность на Rн" src="images-calczd/2. Formula 7. Find P3.png">
+				</td>
+
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			<br>
+			Формулы по которым делаются дополнительные расчёты (см. ниже),
+			<br>
+			ближайшее стандартное:
+			<br>
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим UR1, UR1 = Uin - Uout -->
+				<img class="icon" title="Находим напряжение на резисторе R1" src="images-calczd/3. Formula 1. Find UR1.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим I1, I1 = UR1 / R1 -->
+				<img class="icon" title="Находим ток I1" src="images-calczd/3. Formula 2. Find I1.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Формула, находим I3 = Uout / Rн. -->
+				<img class="icon" title="Находим ток I3" src="images-calczd/3. Formula 3. Find I3.png">
+
+				<br>
+
+				<!-- Формула, находим I2 = I1 - I3. -->
+				<img class="icon" title="Находим ток I2 (ток стабилизации)" src="images-calczd/3. Formula 4. Find I2.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формулы в один ряд -->
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P1, P1 = UR1 * I1 -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1" src="images-calczd/2. Formula 5. Find P1.png">
+				</td>
+
+				<td valign="bottom" style="padding-right: 16px; font-size: 20px;">,</td>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P2, P2 = Uout * I2 -->
+				<img class="icon" title="Рассеиваемая мощность на стабилитроне VD1" src="images-calczd/2. Formula 6. Find P2.png">
+				</td>
+
+				<td valign="bottom" style="padding-right: 16px; font-size: 20px;">,</td>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P3, P3 = Uout * I3 -->
+				<img class="icon" title="Рассеиваемая мощность на Rн" src="images-calczd/2. Formula 7. Find P3.png">
+				</td>
+
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Примечание -->
+
+			<table class="calczdremark" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			<br>
+
+			<b>Примечание.</b>
+			<br>
+			Формулы сделаны с помощью <a href="http://primat.org/mathred/mathred.html" title="WEB-редактор формул (откроется в новой вкладке)" target="_blank">редактора формул</a> (<b>LaTex</b>)
+			<br>
+			с последующими правками в графическом редакторе <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>.
+			<br>
+			Спасибо <a href="http://primat.org" title="Откроется в новой вкладке" target="_blank">http://primat.org</a>
+
+			<br>
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Дополнение -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+				<br>
+				<b>Дополнение:</b>
+				</td>
+			<tr>
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Милливольты (мВ) </i> в <i>Вольты (В)</i>: <i>В = мВ / 1000</i>.
+					<br>
+					Перевести <i>Вольты (В)</i> в <i>Милливольты (мВ)</i>: <i>мВ = В * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Миллиамперы (мА) </i> в <i>Амперы (А)</i>: <i>А = мА / 1000</i>.
+					<br>
+					Перевести <i>Амперы (А)</i> в <i>Миллиамперы (мА)</i>: <i>мА = А * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Омы (Ом) </i> в <i>Килоомы (кОм)</i>: <i>кОм = Ом / 1000</i>.
+					<br>
+					Перевести <i>Килоомы (кОм)</i> в <i>Омы (Ом)</i>: <i>Ом = кОм * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				<br>
+
+				</td>
+			</tr>
+
+			</table>
+
+		</div> <!-- Конец спойлера -->
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Пример использования -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd2examplesp').style.display = (document.getElementById('zd2examplesp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Где всё это можно использовать</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd2examplesp" style="display: none; width: 100%;">
+
+		<!-- Схема -->
+
+			<!-- 1 -->
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdtdpaddingtop calczdtdpaddingbottom">
+
+			<b>Схема (пример 1)</b>
+
+			</td>
+			</tr>
+			</table>
+
+			<table align="center" class="calczdbgscheme3" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 4 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<!-- 2 -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdtdpaddingtop calczdtdpaddingbottom">
+
+			<b>Схема (пример 2)</b>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgscheme4" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 6 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+			<!-- Литература -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+				<b>Схема (пример 2)</b>.
+				<br>
+				<br>
+				&nbsp;&nbsp;&nbsp;Литература:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Книга Начинающему радиолюбителю. В.И. Галкин. 2-е издание. 1989г. Стр. 289.
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Книга Начинающему радиолюбителю. В.И. Галкин. 3-е издание. 1995г. Стр. 402.
+				<br>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Спасибо!
+
+			</td>
+			</tr>
+
+			<tr>
+			<td class="calczdsmalltxt">
+
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Скачать книги можно у меня на <a href="https://drilnet.github.io" title="Перейти на главную страницу (откроется в новой вкладке)" target="_blank">главной странице!</a>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Спойлер: <b>Некоторые ответы на некоторые вопросы!<b>
+
+			</td>
+			</tr>
+
+			</table>
+
+		</div> <!-- Конец спойлера -->
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		</table> <!-- Конец калькулятора 2 -->
+
+	</td>
+	</tr>
+
+	<!-- Таблицы с готовыми расчётами, n2 -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="calczdcalculation_title" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Таблицы с готовыми расчётами, таблицы n2
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Спойлер -->
+		<!-- Настройки для таблиц n2 -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd2setsp').style.display = (document.getElementById('zd2setsp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Настройки для таблиц n2</b>
+
+			</span>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd2setsp" style="display: none; width: 100%;">
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- ---------------------------- -->
+		<!-- Ввод данных для таблице n2.1 -->
+		<!-- ---------------------------- -->
+
+		<span class="calczdcolortabletxt">Таблица n2.1</span>
+
+		<br>
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Uin -->
+
+		<tr>
+		<td>
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- 1 -->
+			<td>
+			&nbsp;<i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 2 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_1_input_1" value="14"
+			title="Начальное">
+			</td>
+
+			<!-- 3 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 4 -->
+			<td>
+			&nbsp;Шаг для <i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 5 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_1_input_2" value="1"
+			title="Шаг для Uin">
+			</td>
+
+			<!-- 6 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 7 -->
+			<td>
+			&nbsp;Сколько шагов:&nbsp;
+			</td>
+
+			<!-- 8 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="1" min="1" max="1000" id="zdtable2_1_input_3" value="5"
+			title="Сколько шагов сделать">&nbsp;
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Uout -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				&nbsp;<img src="images-calczd/warning.png"
+				title="Выходное напряжение (напряжение стабилизации)">
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<span class="calczdinputcolortext" title="Напряжение стабилизации">&nbsp;Выходное напряжение <i><b>Uout</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 3 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_1_input_4" value="12"
+				title="Напряжение стабилизации">
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- I -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calcdivinputcolortext">&nbsp;Ток стабилизации <i><b>I</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable2_1_input_5" value="5"
+				title="Ток I">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;Шаг для <i><b>I</b></i>:&nbsp;
+				</td>
+
+				<!-- 5 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable2_1_input_6" value="5"
+				title="Шаг для I">
+				</td>
+
+				<!-- 6 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Rн -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calczdinputcolortext">&nbsp;Сопротивление нагрузки <i><b>Rн</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="100000000" id="zdtable2_1_input_7" value="5000"
+				title="Сопротивление нагрузки Rн">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="Ом" title="Невозможно изменить" selected>Ом</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- ---------------------------- -->
+		<!-- Ввод данных для таблице n2.2 -->
+		<!-- ---------------------------- -->
+
+		<span class="calczdcolortabletxt">Таблица n2.2</span>
+
+		<br>
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Uin -->
+
+		<tr>
+		<td>
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- 1 -->
+			<td>
+			&nbsp;<i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 2 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_2_input_1" value="11"
+			title="Начальное">
+			</td>
+
+			<!-- 3 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 4 -->
+			<td>
+			&nbsp;Шаг для <i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 5 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_2_input_2" value="1"
+			title="Шаг для Uin">
+			</td>
+
+			<!-- 6 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 7 -->
+			<td>
+			&nbsp;Сколько шагов:&nbsp;
+			</td>
+
+			<!-- 8 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="1" min="1" max="1000" id="zdtable2_2_input_3" value="5"
+			title="Сколько шагов сделать">&nbsp;
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Uout -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				&nbsp;<img src="images-calczd/warning.png"
+				title="Выходное напряжение (напряжение стабилизации)">
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<span class="calczdinputcolortext" title="Напряжение стабилизации">&nbsp;Выходное напряжение <i><b>Uout</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 3 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_2_input_4" value="9.1"
+				title="Напряжение стабилизации">
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- I -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calcdivinputcolortext">&nbsp;Ток стабилизации <i><b>I</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable2_2_input_5" value="5"
+				title="Ток I">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;Шаг для <i><b>I</b></i>:&nbsp;
+				</td>
+
+				<!-- 5 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable2_2_input_6" value="5"
+				title="Шаг для I">
+				</td>
+
+				<!-- 6 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Rн -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calczdinputcolortext">&nbsp;Сопротивление нагрузки <i><b>Rн</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="100000000" id="zdtable2_2_input_7" value="5000"
+				title="Сопротивление нагрузки Rн">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="Ом" title="Невозможно изменить" selected>Ом</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- ---------------------------- -->
+		<!-- Ввод данных для таблице n2.3 -->
+		<!-- ---------------------------- -->
+
+		<span class="calczdcolortabletxt">Таблица n2.3</span>
+
+		<br>
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Uin -->
+
+		<tr>
+		<td>
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- 1 -->
+			<td>
+			&nbsp;<i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 2 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_3_input_1" value="7"
+			title="Начальное">
+			</td>
+
+			<!-- 3 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 4 -->
+			<td>
+			&nbsp;Шаг для <i><b>Uin</b></i>:&nbsp;
+			</td>
+
+			<!-- 5 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_3_input_2" value="1"
+			title="Шаг для Uin">
+			</td>
+
+			<!-- 6 -->
+			<td>
+			&nbsp;<select title="Невозможно изменить">
+				<option select value="В" title="Невозможно изменить" selected>В</option>
+			</select>
+			</td>
+
+			<!-- 7 -->
+			<td>
+			&nbsp;Сколько шагов:&nbsp;
+			</td>
+
+			<!-- 8 -->
+			<td>
+			<input type="number" class="calczdtableinputpx" step="1" min="1" max="1000" id="zdtable2_3_input_3" value="5"
+			title="Сколько шагов сделать">&nbsp;
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Uout -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				&nbsp;<img src="images-calczd/warning.png"
+				title="Выходное напряжение (напряжение стабилизации)">
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<span class="calczdinputcolortext" title="Напряжение стабилизации">&nbsp;Выходное напряжение <i><b>Uout</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 3 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="1000" id="zdtable2_3_input_4" value="5.1"
+				title="Напряжение стабилизации">
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- I -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calcdivinputcolortext">&nbsp;Ток стабилизации <i><b>I</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable2_3_input_5" value="5"
+				title="Ток I">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>
+				</td>
+
+				<!-- 4 -->
+				<td>
+				&nbsp;Шаг для <i><b>I</b></i>:&nbsp;
+				</td>
+
+				<!-- 5 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="3000" id="zdtable2_3_input_6" value="5"
+				title="Шаг для I">
+				</td>
+
+				<!-- 6 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="мА" title="Невозможно изменить" selected>мА</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Rн -->
+
+		<tr>
+		<td style="padding-top:8px;">
+
+			<table align="center" class="calczdbgtableinput" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- 1 -->
+				<td>
+				<span class="calczdinputcolortext">&nbsp;Сопротивление нагрузки <i><b>Rн</b></i>:&nbsp;</span>
+				</td>
+
+				<!-- 2 -->
+				<td>
+				<input type="number" class="calczdtableinputpx" step="0.1" min="0.1" max="100000000" id="zdtable2_3_input_7" value="5000"
+				title="Сопротивление нагрузки Rн">
+				</td>
+
+				<!-- 3 -->
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="Ом" title="Невозможно изменить" selected>Ом</option>
+				</select>&nbsp;
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- Примечание. -->
+		<!-- Как настроены поля ввода (описание) -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td colspan="3" align="left" style="padding-bottom: 3px;">
+				Настройки полей ввода:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				&nbsp;&nbsp;&nbsp;<i><b>Uin</b></i> и Шаг для <i><b>Uin</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В (<b>Сколько шагов</b> - с шагом 1).
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Uout</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>I</b></i> и Шаг для <i><b>I</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 мА и до 3000 мА, с шагом 0.1 мА.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Rн</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td>
+				от 0.1 Ом и до 100 000 000 Ом, с шагом 0.1 Ом.
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Можно ввести и другие числа... -->
+
+			<table class="calczdbgwarning2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+					<td colspan="2" align="left">
+					Внимание!
+					<br>
+					В поля ввода можно ввести и другие числа!
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+					<span title="Если больше 3-х знаков! Будет округлено до 3-х знаков!">
+					Количество знаков после точки (запятой), можно ввести больше одного знака!
+					</span>
+					</td>
+
+					<td valign="bottom" style="padding-left: 6px;">
+					<img src="images-calczd/warning.png"
+					title="Если больше 3-х знаков! Будет округлено до 3-х знаков!">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="left">
+					При этом <font class="calczdtxtinputframe">красная рамка</font> вокруг поля ввода не считается ошибкой!
+					</td>
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<a href="javascript:ZDCalculationTableInputDefault_2()"
+			title="Установить настройки по умолчанию">По умолчанию</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- Warning -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="left">
+			Сначало измените входные данные!
+			<br>
+			После чего нажмите кнопку "Построить таблицы"!
+			<br>
+			При этом раскройте Таблицы n2!
+			</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<font class="calczdcolorgen">Не рекомендуется генерировать слишком большие таблицы!</font>
+
+		<br>
+		<br>
+
+		<!-- Кнопка "Построить таблицы n2" -->
+		<input type="submit" onclick="PrintZDCalculationTable_2()" value="Построить таблицы n2">
+		<br>
+
+		</div> <!-- Конец спойлера -->
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- E24, E48, E96 -->
+
+			<!-- Пояснение -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left">
+				Выберите нужный набор резисторов и наведите курсор мыши на сопротивление
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left">
+				резистора <b>R1</b> (в таблицах n2) или наведите курсор мыши на <font class="color12" title="В таблицах n2, показывает ближайшее стандартное сопротивление"><b>1</b></font>,<font class="color12" title="В таблицах n2, показывает ближайшее стандартное сопротивление"><b>2</b></font> (в таблицах n2)!
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left">
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					Также Вы можете нажать на такой квадратик:
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td>
+					<img class="icon" src="images-calczd/numeric_1.png"
+					title="В таблицах n2, открывает модальное окно с ближайшем стандартным сопротивлением">
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td>
+					(в таблицах n2)!
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			</table>
+
+		<br>
+
+		<font class="calczdsmalltxtclarif">
+
+			<!-- Продолжение Пояснения -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<font class="color12" title="В таблицах n2, показывает ближайшее стандартное сопротивление"><b>1</b></font>,<font class="color12" title="В таблицах n2, показывает ближайшее стандартное сопротивление"><b>2</b></font>
+				</td>
+
+				<td>&nbsp;-&nbsp;</td>
+
+				<td align="left">
+				для удобства (показывает ближайшее стандартное сопротивление)!
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<img class="icon" src="images-calczd/numeric_1.png"
+				title="В таблицах n2, открывает модальное окно с ближайшем стандартным сопротивлением">
+				</td>
+
+				<td>&nbsp;-&nbsp;</td>
+
+				<td align="left">
+				для удобства (открывает модальное окно с ближайшем стандартным сопротивлением)!
+				</td>
+
+			</tr>
+
+			</table>
+
+		</font>
+
+		<br>
+
+		<!-- Выбор: E24 или E48 или E96. -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- E24 -->
+			<td>
+			<span title="Всех резисторов: 216. Точность резисторов: ±5%">Набор резисторов <b>E24</b>:</span>&nbsp;
+			</td>
+
+			<td class="calczdrbpaddingb calczdrbpaddingr">
+
+				<!-- [ x ] -->
+				<input name="ZDET2" id="rb_Etable_2_1" class="calczdradiobutton" type="radio" value="" checked
+				onchange="PrintZDCalculationTable_2()">
+				<label for="rb_Etable_2_1" class="calczd_label_radio" title="Всех резисторов: 216. Точность резисторов: ±5%"></label>
+
+			</td>
+
+			<!-- E48 -->
+			<td>
+			&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 384. Точность резисторов: ±2%">Набор резисторов <b>E48</b>:</span>&nbsp;
+			</td>
+
+			<td class="calczdrbpaddingb calczdrbpaddingr">
+
+				<!-- [   ] -->
+				<input name="ZDET2" id="rb_Etable_2_2" class="calczdradiobutton" type="radio" value=""
+				onchange="PrintZDCalculationTable_2()">
+				<label for="rb_Etable_2_2" class="calczd_label_radio" title="Всех резисторов: 384. Точность резисторов: ±2%"></label>
+
+			</td>
+
+			<!-- E96 -->
+			<td>
+			&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 768. Точность резисторов: ±1%">Набор резисторов <b>E96</b>:</span>&nbsp;
+			</td>
+
+			<td class="calczdrbpaddingb">
+
+				<!-- [   ] -->
+				<input name="ZDET2" id="rb_Etable_2_3" class="calczdradiobutton" type="radio" value=""
+				onchange="PrintZDCalculationTable_2()">
+				<label for="rb_Etable_2_3" class="calczd_label_radio" title="Всех резисторов: 768. Точность резисторов: ±1%"></label>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- Горизонтальная линия -->
+
+		<br>
+		<hr class="calczdcalculation_hr">
+		<br>
+
+		<!-- Спойлер -->
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('calczdtablen2').style.display = (document.getElementById('calczdtablen2').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Таблицы n2</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="calczdtablen2" style="display: none; width: 100%;">
+
+			<!-- Расчёты (здесь таблицы n2) -->
+
+			<div id="ZenerDiodes_Calculation_2">
+			</div>
+
+		</div>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Calc 3 -->
+	<!-- Есть резистор R1 и нужно быстро найти I, P1, P2. -->
+
+	<tr>
+	<td align="center">
+
+		<!-------------------------->
+		<!-- Онлайн калькулятор 3 -->
+		<!-------------------------->
+
+		<!-- Номер -->
+
+		<table align="center" class="calczdn" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center" class="calczdnvalign">
+		3
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table align="center" class="calczdbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCZENERDIODE</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Начало калькулятора 3 -->
+
+		<table align="center" class="calczdbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема -->
+
+		<tr>
+		<td align="center" class="calczdtdpaddingbottom">
+
+		<b>Схема подключения стабилитрона</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calczdbgscheme1" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 1 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Переменные -->
+
+			<table style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Ток <b>I</b> (ток стабилизации), переменная: <i><b>I</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Резистор <b>R1</b>, переменные: <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i>.
+					<br>
+					<i><b>UR1</b></i> - На схеме не показан.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Стабилитрон <b>VD1</b>, переменные: <i><b>P2</b></i>, <i><b>Uout</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Ещё переменная: <i><b>Uin</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на поле ввода (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Ввод -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<!--------->
+				<!-- Uin -->
+				<!--------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd3_input_1" value="15"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" selected title="Невозможно изменить">В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uin ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd3_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calczdtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка: [ Очистить все поля ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['zd3_input_1', 'zd3_input_2', 'zd3_input_3'])"
+						title="Очистить все поля (Uin, Uout, R1)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка: [ Установить поля по умолчанию ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputZD_3()"
+						title="Установить поля Uin, Uout, R1 по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				<td rowspan="3" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!---------->
+				<!-- Uout -->
+				<!---------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uout</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd3_input_2" value="12"
+				title="Выходное напряжение Uout (напряжение стабилизации)">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uout ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd3_input_2')"
+				title="Очистить поле Uout">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!-------->
+				<!-- R1 -->
+				<!-------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">Введите <i><b>R1</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="100000000" id="zd3_input_3" value="300"
+				title="Сопротивление резистора R1">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="Ом" title="Невозможно изменить" selected>Ом</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле R1 ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd3_input_3')"
+				title="Очистить поле I">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Примечание. -->
+		<!-- Как настроены поля ввода (описание) -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td colspan="3" align="left" style="padding-bottom: 3px;">
+				Настройки полей ввода:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Uin</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				&nbsp;&nbsp;&nbsp;<i><b>Uout</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>R1</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 Ом и до 100 000 000 Ом, с шагом 0.1 Ом.
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Можно ввести и другие числа... -->
+
+			<table class="calczdbgwarning" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<!-- Warning -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+					<td align="left">
+					Внимание!
+					<br>
+					В поля ввода можно ввести и другие числа!
+					<br>
+					Количество знаков после точки (запятой), можно ввести больше одного знака!
+					</td>
+				</tr>
+
+				<tr>
+					<td align="left">
+					При этом <font class="calczdtxtinputframe">красная рамка</font> вокруг поля ввода не считается ошибкой!
+					</td>
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCZD_3()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Результаты счёта -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на переменную (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Счёт  --->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- I -->
+				<td align="right">
+				<i><b title="Ток I (ток стабилизации)">I</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd3_result_I">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P1 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на резисторе R1 (P1)">P1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd3_result_P1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P2 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на стабилитроне VD1 (P2)">P2</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd3_result_P2">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr2">
+
+		</td>
+		</tr>
+
+		<!-- Где можно проверить результаты расчётов -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<b>Уважаемый соискатель!</b>
+			<br>
+			Проверить результаты расчётов можно в программе <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" title="Откроется в новой вкладке" target="_blank">LTspice XVII</a>!
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd3sp').style.display = (document.getElementById('zd3sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd3sp" style="display: none; width: 100%;">
+
+			<!-- Ссылки на Вики -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+				<a href="https://ru.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Русской Вики</a>
+				<br>
+				<a href="https://uk.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Украинской Вики</a>
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Наведите курсор мыши на формулу! -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center" class="calczdcolorpromptf">
+
+				<br>
+				Наведите курсор мыши на формулу (будет подсказка)!
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим I, I = (Uin - Uout) / R1 -->
+				<img class="icon" title="Находим ток I (ток стабилизации)" src="images-calczd/1. Formula 3a. Find I.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим P1, P1 = (Uin - Uout) * I -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1" src="images-calczd/1. Formula 4a. Find P1.png">
+
+				<br>
+
+				<!-- Формула, находим P2, P2 = Uout * I -->
+				<img class="icon" title="Рассеиваемая мощность на стабилитроне VD1" src="images-calczd/1. Formula 5. Find P2.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Примечание -->
+
+			<table class="calczdremark" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="center" style="padding-bottom: 2px;">
+				<br>
+				<b>Примечание.</b>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+				Формулы сделаны с помощью <a href="http://primat.org/mathred/mathred.html" title="WEB-редактор формул (откроется в новой вкладке)" target="_blank">редактора формул</a> (<b>LaTex</b>)
+				<br>
+				с последующими правками в графическом редакторе <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>.
+				<br>
+				Спасибо <a href="http://primat.org" title="Откроется в новой вкладке" target="_blank">http://primat.org</a>
+				<br>
+				<br>
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Дополнение -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+				<br>
+				<b>Дополнение:</b>
+				</td>
+			<tr>
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Милливольты (мВ) </i> в <i>Вольты (В)</i>: <i>В = мВ / 1000</i>.
+					<br>
+					Перевести <i>Вольты (В)</i> в <i>Милливольты (мВ)</i>: <i>мВ = В * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Омы (Ом) </i> в <i>Килоомы (кОм)</i>: <i>кОм = Ом / 1000</i>.
+					<br>
+					Перевести <i>Килоомы (кОм)</i> в <i>Омы (Ом)</i>: <i>Ом = кОм * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				<br>
+
+				</td>
+			</tr>
+
+			</table>
+
+		</div> <!-- Конец спойлера -->
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Calc 4 -->
+	<!-- Есть резистор R1, есть сопротивление Rн, и нужно быстро найти I1, I2, I3, P1, P2, P3. -->
+
+	<tr>
+	<td align="center">
+
+		<!-------------------------->
+		<!-- Онлайн калькулятор 4 -->
+		<!-------------------------->
+
+		<!-- Номер -->
+
+		<table align="center" class="calczdn" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center" class="calczdnvalign">
+		4
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table align="center" class="calczdbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн калькулятор CALCZENERDIODE</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Начало калькулятора 4 -->
+
+		<table align="center" class="calczdbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Схема -->
+
+		<tr>
+		<td align="center" class="calczdtdpaddingbottom">
+
+		<b>Схема подключения стабилитрона</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table align="center" class="calczdbgscheme2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<br>
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+					<!-- Схема -->
+					<img class="icon" src="images-calczd/Schemes/Zener diode 2 - 150dpi.png"
+					title="Нарисовано в TinyCAD">
+
+				</td>
+
+				<td valign="bottom" style="padding-left: 8px;">
+
+					<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<!-- Ссылка на TinyCAD -->
+					<a href="https://www.tinycad.net" target="_blank">
+					<img class="icon" src="icons/TinyCAD_20x20.png"
+					title="Редактор схем TinyCAD (откроется в новой вкладке)">
+					</a>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Переменные -->
+
+			<table style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Токи, переменные: <i><b>I1</b></i>, <i><b>I2</b></i>, <i><b>I3</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Резистор <b>R1</b>, переменные: <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i>.
+					<br>
+					<i><b>UR1</b></i> - На схеме не показан.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Стабилитрон <b>VD1</b>, переменные: <i><b>P2</b></i>, <i><b>Uout</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Сопротивление нагрузки <b>Rн</b>, переменные: <i><b>Rн</b></i>, <i><b>P3</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calczdsmalltxt">
+
+					Ещё переменная: <i><b>Uin</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на поле ввода (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Ввод -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<!--------->
+				<!-- Uin -->
+				<!--------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd4_input_1" value="15"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uin ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd4_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="4" class="calczdtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка: [ Очистить все поля ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['zd4_input_1', 'zd4_input_2', 'zd4_input_3', 'zd4_input_4'])"
+						title="Очистить все поля (Uin, Uout, R1, Rн)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка: [ Установить поля по умолчанию ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputZD_4()"
+						title="Установить поля Uin, Uout, R1, Rн по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				<td rowspan="4" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!---------->
+				<!-- Uout -->
+				<!---------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">&nbsp;Введите <i><b>Uout</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="1000" id="zd4_input_2" value="12"
+				title="Выходное напряжение Uout (напряжение стабилизации)">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="В" title="Невозможно изменить" selected>В</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uout ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd4_input_2')"
+				title="Очистить поле Uout">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!-------->
+				<!-- R1 -->
+				<!-------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">Введите <i><b>R1</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="100000000" id="zd4_input_3" value="240"
+				title="Сопротивление резистора R1">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="Ом" title="Невозможно изменить" selected>Ом</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле R1 ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd4_input_3')"
+				title="Очистить поле I2">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!-------->
+				<!-- Rн -->
+				<!-------->
+				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
+				<span class="calczdinputcolortext">Введите <i><b>Rн</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="100000000" id="zd4_input_4" value="5000"
+				title="Сопротивление нагрузки Rн">
+				</td>
+
+				<td>
+				&nbsp;<select title="Невозможно изменить">
+					<option select value="Ом" title="Невозможно изменить" selected>Ом</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Rн ] -->
+				<td class="calczdtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('zd4_input_4')"
+				title="Очистить поле Rн">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Примечание. -->
+		<!-- Как настроены поля ввода (описание) -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td colspan="3" align="left" style="padding-bottom: 3px;">
+				Настройки полей ввода:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Uin</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				&nbsp;&nbsp;&nbsp;<i><b>Uout</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 В и до 1000 В, с шагом 0.1 В.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>R1</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 Ом и до 100 000 000 Ом, с шагом 0.1 Ом.
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Rн</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от 0.1 Ом и до 100 000 000 Ом, с шагом 0.1 Ом.
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Можно ввести и другие числа... -->
+
+			<table class="calczdbgwarning" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<!-- Warning -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+					<td align="left">
+					Внимание!
+					<br>
+					В поля ввода можно ввести и другие числа!
+					<br>
+					Количество знаков после точки (запятой), можно ввести больше одного знака!
+					</td>
+				</tr>
+
+				<tr>
+					<td align="left">
+					При этом <font class="calczdtxtinputframe">красная рамка</font> вокруг поля ввода не считается ошибкой!
+					</td>
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCZD_4()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Результаты счёта -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calczdsmalltxt calczdcolorprompt1">
+
+			Наведите курсор мыши на переменную (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Счёт  --->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- I1 -->
+				<td align="right">
+				<i><b title="Ток I1">I1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd4_result_I1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- I2 -->
+				<td align="right">
+				<i><b title="Ток I2 (ток стабилизации)">I2</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd4_result_I2">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- I3 -->
+				<td align="right">
+				<i><b title="Ток I3">I3</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd4_result_I3">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P1 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на резисторе R1 (P1)">P1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd4_result_P1">
+				<span class="calczdcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P2 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на стабилитроне VD1 (P2)">P2</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd4_result_P2">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P3 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на нагрузке Rн (P3)">P3</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="zd4_result_P3">
+				<span class="calczdcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<hr class="calczdhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr2">
+
+		</td>
+		</tr>
+
+		<!-- Где можно проверить результаты расчётов -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<b>Уважаемый соискатель!</b>
+			<br>
+			Проверить результаты расчётов можно в программе <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" title="Откроется в новой вкладке" target="_blank">LTspice XVII</a>!
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zd4sp').style.display = (document.getElementById('zd4sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zd4sp" style="display: none; width: 100%;">
+
+			<!-- Ссылки на Вики -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+				<a href="https://ru.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Русской Вики</a>
+				<br>
+				<a href="https://uk.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Украинской Вики</a>
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Наведите курсор мыши на формулу! -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center" class="calczdcolorpromptf">
+
+				<br>
+				Наведите курсор мыши на формулу (будет подсказка)!
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим UR1, UR1 = Uin - Uout -->
+				<img class="icon" title="Находим напряжение на резисторе R1" src="images-calczd/3. Formula 1. Find UR1.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим I1, I1 = UR1 / R1 -->
+				<img class="icon" title="Находим ток I1" src="images-calczd/3. Formula 2. Find I1.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Формула, находим I3 = Uout / Rн. -->
+				<img class="icon" title="Находим ток I3" src="images-calczd/3. Formula 3. Find I3.png">
+
+				<br>
+
+				<!-- Формула, находим I2 = I1 - I3. -->
+				<img class="icon" title="Находим ток I2 (ток стабилизации)" src="images-calczd/3. Formula 4. Find I2.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формулы в один ряд -->
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P1, P1 = UR1 * I1 -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1" src="images-calczd/2. Formula 5. Find P1.png">
+				</td>
+
+				<td valign="bottom" style="padding-right: 16px; font-size: 20px;">,</td>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P2, P2 = Uout * I2 -->
+				<img class="icon" title="Рассеиваемая мощность на стабилитроне VD1" src="images-calczd/2. Formula 6. Find P2.png">
+				</td>
+
+				<td valign="bottom" style="padding-right: 16px; font-size: 20px;">,</td>
+
+				<td style="padding-bottom: 3px;">
+				<!-- Формула, находим P3, P3 = Uout * I3 -->
+				<img class="icon" title="Рассеиваемая мощность на Rн" src="images-calczd/2. Formula 7. Find P3.png">
+				</td>
+
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Примечание -->
+
+			<table class="calczdremark" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			<br>
+
+			<b>Примечание.</b>
+			<br>
+			Формулы сделаны с помощью <a href="http://primat.org/mathred/mathred.html" title="WEB-редактор формул (откроется в новой вкладке)" target="_blank">редактора формул</a> (<b>LaTex</b>)
+			<br>
+			с последующими правками в графическом редакторе <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>.
+			<br>
+			Спасибо <a href="http://primat.org" title="Откроется в новой вкладке" target="_blank">http://primat.org</a>
+
+			<br>
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Дополнение -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+				<br>
+				<b>Дополнение:</b>
+				</td>
+			<tr>
+
+			<tr>
+				<td align="center" style="padding-bottom: 6px;">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Милливольты (мВ) </i> в <i>Вольты (В)</i>: <i>В = мВ / 1000</i>.
+					<br>
+					Перевести <i>Вольты (В)</i> в <i>Милливольты (мВ)</i>: <i>мВ = В * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+
+					<table class="calczdbgformulasadd" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					Перевести <i>Омы (Ом) </i> в <i>Килоомы (кОм)</i>: <i>кОм = Ом / 1000</i>.
+					<br>
+					Перевести <i>Килоомы (кОм)</i> в <i>Омы (Ом)</i>: <i>Ом = кОм * 1000</i>.
+
+					</td>
+					</tr>
+					</table>
+
+				<br>
+
+				</td>
+			</tr>
+
+			</table>
+
+		</div> <!-- Конец спойлера -->
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calczdhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Приложение 1 -->
+	<!-- Набор формул для скачивания -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 1 -->
+
+		<table class="calczdpagebgh1" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Приложение 1
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+			<!-- Заголовок 2 -->
+
+			<table class="calczddlformulas_title" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+			Набор используемых формул
+
+			</td>
+			</tr>
+
+			</table>
+
+		<br>
+
+		Набор png-файлов и набор макрорасширений <b>LaTex</b>
+
+		<br>
+		<br>
+
+		<!-- Ссылка на скачивание файла -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Иконка -->
+			<td style="padding-right: 12px;">
+			<img class="icon" src="images-calczd/formulas_24x24.png" title="Иконка (Gnome Icon Theme, Gnome Project, GPL). Спасибо.">
+			</td>
+
+			<td>
+			<a href="downloads/calczd/Formulas.7z" title="Набор png-файлов и набор макрорасширений LaTex">скачать</a>
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- В чём сделаны формулы -->
+
+		Формулы сделаны с помощью <a href="http://primat.org/mathred/mathred.html" title="WEB-редактор формул (откроется в новой вкладке)" target="_blank">редактора формул</a> (<b>LaTex</b>)
+		с последующими правками в графическом редакторе <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>.
+		<br>
+		Спасибо сайту <a href="http://primat.org" title="Откроется в новой вкладке" target="_blank">http://primat.org</a>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Приложение 2 -->
+	<!-- Даташиты -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 1 -->
+
+		<table class="calczdpagebgh1" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Приложение 2
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Даташит 1 -->
+
+			<!-- Заголовок 2 -->
+
+			<table class="calczddatasheet_title" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+			Стабилитроны серии BZX55_ (BZX55C2V4 ... BZX55C39)
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td align="center">
+
+			Даташит производителя DC COMPONENTS CO., LTD.
+			<br>
+			Тайвань, Китай (Taiwan, China)
+
+				<!-- Кнопка -->
+
+				<table class="txtbutton" style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<span class="calczdspoiler"
+				onclick="document.getElementById('zddatasheet1').style.display = (document.getElementById('zddatasheet1').style.display=='none'?'inline':'none');"
+				title="Нажмите">
+
+				<b>Даташит 1</b>
+
+				</span>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zddatasheet1" style="display: none; width: 100%;">
+
+			<br>
+
+			<hr class="calczddatasheethr">
+
+			<br>
+
+			<span class="calczddatasheet_warning">Даташит предоставляется как есть!</span>
+
+			<br>
+			<br>
+
+			<font class="calczddatasheet_title2">Технические характеристики стабилитронов серии BZX55_</font>
+
+			<br>
+			<br>
+
+			<div id="ZenerDiodes_BZX55_1">
+			<!-- Здесь даташит по BZX55_ -->
+			</div>
+
+			<br>
+
+			<!-- Названия столбцов в таблице -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+				<b>Названия столбцов в таблице:</b>
+
+				<br>
+				<br>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calczddatasheet_sh" cellspacing="0" cellpadding="0" border="0">
+
+				<!-- 1 -->
+				<tr>
+
+					<td align="right">
+					TYPE
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Тип стабилитрона.
+					</td>
+
+				</tr>
+
+				<!-- 2 -->
+				<tr>
+
+					<td align="right">
+					Nominal Zener Voltage
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Напряжение стабилизации (от и до).
+					</td>
+
+				</tr>
+
+				<!-- 3 -->
+				<tr>
+
+					<td align="right">
+					Zener Test Current
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Испытательный ток стабилитрона, ток 1.
+					</td>
+
+				</tr>
+
+				<!-- 4 -->
+				<tr>
+
+					<td align="right">
+					Maximum Zener Impedance
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальное сопротивление стабилитрона.
+					</td>
+
+				</tr>
+
+				<!-- 5 -->
+				<tr>
+
+					<td align="right">
+					IZK
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Испытательный ток стабилитрона, ток 2.
+					</td>
+
+				</tr>
+
+				<!-- 6 -->
+				<tr>
+
+					<td align="right">
+					Maximum Reverse Leakage Current
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальный обратный ток утечки.
+					</td>
+
+				</tr>
+
+				<!-- 7 -->
+				<tr>
+
+					<td align="right">
+					Typical Temperature Coefficient
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Температурный коэффициент.
+					</td>
+
+				</tr>
+
+				<!-- 8 -->
+				<tr>
+
+					<td align="right">
+					Maximum Regulator Current
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Испытательный (максимальный) ток стабилитрона.
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+			<!-- Условные обозначения -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+				<b>Условные обозначения электрических параметров стабилитронов:</b>
+
+				<br>
+				<br>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<table class="calczddatasheet_par" cellspacing="0" cellpadding="0" border="0">
+
+				<!-- 1 -->
+				<tr>
+
+					<td align="right">
+					<b>VZ</b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Напряжение стабилизации стабилитрона (<b>VZ</b> при <b>IZT</b>).
+					</td>
+
+				</tr>
+
+				<!-- 2 -->
+				<tr>
+
+					<td align="right">
+					<b>IZT</b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Ток стабилизации стабилитрона.
+					</td>
+
+				</tr>
+
+				<!-- 3 -->
+				<tr>
+
+					<td align="right">
+					<b>ZZT @ IZT</b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальное сопротивление при испытательном токе <b>IZT</b> (ток 1).
+					</td>
+
+				</tr>
+
+				<!-- 4 -->
+				<tr>
+
+					<td align="right">
+					<b>ZZT @ IZK</b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальное сопротивление при испытательном токе <b>IZK</b> (ток 2).
+					</td>
+
+				</tr>
+
+				<!-- 5 -->
+				<tr>
+					<td align="right">
+					<b>IR</b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальный обратный ток утечки (<b>IR</b> при <b>VR</b>).
+					</tD>
+
+				</tr>
+
+				<!-- 6 -->
+				<tr>
+
+					<td align="right">
+					<b>VR</b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Обратное напряжение.
+					</td>
+
+				</tr>
+
+				<!-- 7 -->
+				<tr>
+
+					<td align="right">
+					<b>IZM</b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальный ток через стабилитрон.
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+				<span class="calczdsmalltxt">
+
+				<b>Примечание.</b>
+				<br>
+				Условные обозначения электрических параметров стабилитронов подсмотрел <a href="https://eandc.ru/news/detail.php?ID=27564" target="_blank" title="Откроется в новой вкладке">здесь</a>.
+
+<!--
+
+				<br>
+				<br>
+
+				<b>Примечание 2.</b>
+				<br>
+				<i>Динамическое сопротивление = Дифференциальное сопротивление.</i>
+
+-->
+
+				</span>
+
+			<br>
+			<br>
+
+			<!-- Логотип производителя -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td>
+				Логотип производителя:
+				</td>
+
+				<td style="padding-left: 12px;">
+				<img class="icon" src="images-calczd/LogoDCC.png" title="Логотип">
+				</td>
+
+			</tr>
+
+			</table>
+
+			<br>
+
+			<!-- Ссылка на производителя -->
+
+			Сайт производителя: <a href="http://www.dccomponents.com" target="_blank" title="Откроется в новой вкладке">http://www.dccomponents.com</a>
+
+			<br>
+			<br>
+
+			<hr class="calczddatasheethr">
+
+			<br>
+
+			<!-- Спойлер. -->
+			<!-- Где можно купить стабилитроны серии BZX55 -->
+
+			<b>Стабилитроны серии BZX55C_ были в интернет-магазинах:</b>
+
+				<!-- Кнопка -->
+
+				<table class="txtbutton" align="center" style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<span class="calczdspoiler"
+				onclick="document.getElementById('zdsale1').style.display = (document.getElementById('zdsale1').style.display=='none'?'inline':'none');"
+				title="Нажмите">
+
+				<b>Ссылки на интернет-магазины</b>
+
+				</span>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<!-- То, что под спойлером -->
+
+			<div id="zdsale1" style="display: none; width: 100%;">
+
+				<br>
+				Украина:
+				<br>
+				<a href="https://voron.ua" target="_blank" title="Откроется в новой вкладке">https://voron.ua</a>
+				<br>
+				<a href="http://www.kosmodrom.com.ua" target="_blank" title="Откроется в новой вкладке">http://www.kosmodrom.com.ua</a>
+				<br>
+				<br>
+				Беларусь и Россия:
+				<br>
+				<a href="https://www.chipdip.by" target="_blank" title="Откроется в новой вкладке">https://www.chipdip.by</a>
+				<br>
+				<a href="https://www.chipdip.ru" target="_blank" title="Откроется в новой вкладке">https://www.chipdip.ru</a>
+				<br>
+				<br>
+				Китай (China):
+				<br>
+				<a href="https://www.aliexpress.com" target="_blank" title="Откроется в новой вкладке">https://www.aliexpress.com</a>
+
+				<br>
+
+			</div> <!-- Конец спойлера -->
+
+			<br>
+
+			<hr class="calczddatasheethr">
+
+			<br>
+
+			Справочник по Российским стабилитронам <a href="https://www.radiolibrary.ru/reference/zenerdiod-page1.html" target="_blank" title="Откроется в новой вкладке">здесь</a>.
+
+		</div> <!-- Конец спойлера -->
+
+	</td>
+	</tr>
+
+	<!-- Продолжение Приложения 2 -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Даташит 2 -->
+
+			<!-- Заголовок 2 -->
+
+			<table class="calczddatasheet_title" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			Стабилитроны серии BZX55_ (BZX55C2V4 ... BZX55C75)
+
+			</td>
+			</tr>
+			</table>
+
+		<br>
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td align="center">
+
+			Даташит производителя Vishay Semiconductors
+
+				<!-- Кнопка -->
+
+				<table class="txtbutton" style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<span class="calczdspoiler"
+				onclick="document.getElementById('zddatasheet2').style.display = (document.getElementById('zddatasheet2').style.display=='none'?'inline':'none');"
+				title="Нажмите">
+
+				<b>Даташит 2</b>
+
+				</span>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zddatasheet2" style="display: none; width: 100%;">
+
+			<br>
+
+			<hr class="calczddatasheethr">
+
+			<br>
+
+			<span class="calczddatasheet_warning">Даташит предоставляется как есть!</span>
+
+			<br>
+			<br>
+
+			<font class="calczddatasheet_title2">Технические характеристики стабилитронов серии BZX55_</font>
+
+			<br>
+			<br>
+
+			<div id="ZenerDiodes_BZX55_2">
+			<!-- Здесь даташит по BZX55_ -->
+			</div>
+
+			<br>
+
+			<!-- Названия столбцов в таблице -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+				<b>Названия столбцов в таблице:</b>
+
+				<br>
+				<br>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+
+				<table class="calczddatasheet_sh" cellspacing="0" cellpadding="0" border="0">
+
+				<!-- 1 -->
+				<tr>
+
+					<td align="right">
+					PART NUMBER
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Тип стабилитрона.
+					</td>
+
+				</tr>
+
+				<!-- 2 -->
+				<tr>
+
+					<td align="right">
+					ZENER VOLTAGE RANGE
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Напряжение стабилизации и его разброс.
+					</td>
+
+				</tr>
+
+				<!-- 3 -->
+				<tr>
+
+					<td align="right">
+					TEST CURRENT
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Испытательный ток стабилитрона.
+					</td>
+
+				</tr>
+
+				<!-- 4 -->
+				<tr>
+
+					<td align="right">
+					REVERSE LEAKAGE CURRENT
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Обратный ток утечки.
+					</td>
+
+				</tr>
+
+				<!-- 5 -->
+				<tr>
+
+					<td align="right">
+					DYNAMIC RESISTANGE
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Динамическое сопротивление.
+					</td>
+
+				</tr>
+
+				<!-- 6 -->
+				<tr>
+
+					<td align="right">
+					TEMPERATURE COEFFICIENT
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Температурный коэффициент.
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+			<!-- Условные обозначения -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+				<b>Условные обозначения электрических параметров стабилитронов:</b>
+
+				<br>
+				<br>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<table class="calczddatasheet_par" cellspacing="0" cellpadding="0" border="0">
+
+				<!-- 1 -->
+				<tr>
+					<td align="right">
+					<b>V<sub>Z</sub></b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Напряжение стабилизации стабилитрона (<b>V<sub>Z</sub></b> при <b>I<sub>ZT1</sub></b>).
+					</td>
+
+				</tr>
+
+				<!-- 2 -->
+				<tr>
+
+					<td align="right">
+					<b>I<sub>ZT1</sub></b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Испытательный ток стабилитрона (ток 1).
+					</td>
+
+				</tr>
+
+				<!-- 3 -->
+				<tr>
+
+					<td align="right">
+					<b>I<sub>R</sub></b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Обратный ток утечки (<b>I<sub>R</sub></b> при <b>V<sub>R</sub></b>).
+					</td>
+
+				</tr>
+
+				<!-- 4 -->
+				<tr>
+
+					<td align="right">
+					<b>V<sub>R</sub></b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Обратное напряжение.
+					</td>
+
+				</tr>
+
+				<!-- 5 -->
+				<tr>
+
+					<td align="right">
+					<b>Z<sub>ZT</sub></b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальное динамическое сопротивление при испытательном токе <b>I<sub>ZT1</sub></b> (ток 1).
+					</td>
+
+				</tr>
+
+				<!-- 6 -->
+				<tr>
+
+					<td align="right">
+					<b>Z<sub>ZK</sub></b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Максимальное динамическое сопротивление при испытательном токе <b>I<sub>ZT2</sub></b> (ток 2).
+					</td>
+
+				</tr>
+
+				<!-- 7 -->
+				<tr>
+
+					<td align="right">
+					<b>TK<sub>VZ</sub></b>
+					</td>
+
+					<td>&nbsp;-&nbsp;</td>
+
+					<td>
+					Температурный коэффициент.
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+
+			</table>
+
+			<br>
+
+				<span class="calczdsmalltxt">
+
+				<b>Примечание.</b>
+				<br>
+				Условные обозначения электрических параметров стабилитронов подсмотрел <a href="https://eandc.ru/news/detail.php?ID=27564" target="_blank" title="Откроется в новой вкладке">здесь</a>.
+
+				<br>
+				<br>
+
+				<b>Примечание 2.</b>
+				<br>
+				<i>Динамическое сопротивление = Дифференциальное сопротивление.</i>
+
+				</span>
+
+			<br>
+			<br>
+
+			<!-- Логотип производителя -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td>
+				Логотип производителя:
+				</td>
+
+				<td style="padding-left: 12px;">
+				<img class="icon" src="images-calczd/LogoVishay.png" title="Логотип">
+				</td>
+
+
+			</tr>
+
+			</table>
+
+			<br>
+
+			<!-- Ссылки на Вики -->
+
+			Vishay Intertechnology: <a href="https://en.wikipedia.org/wiki/Vishay_Intertechnology" title="Откроется в новой вкладке" target="_blank">Wiki</a>
+			<br>
+			Vishay Intertechnology: <a href="https://ru.wikipedia.org/wiki/Vishay_Intertechnology" title="Откроется в новой вкладке" target="_blank">Вики</a>
+
+			<br>
+			<br>
+
+			<!-- Ссылка на производителя -->
+
+			Сайт производителя: <a href="https://www.vishay.com" target="_blank" title="Откроется в новой вкладке">https://www.vishay.com</a>
+
+			<br>
+			<br>
+
+			<hr class="calczddatasheethr">
+
+			<br>
+
+			<!-- Спойлер. -->
+			<!-- Где можно купить стабилитроны серии BZX55 -->
+
+			<b>Стабилитроны серии BZX55C_ были в интернет-магазинах:</b>
+
+				<!-- Кнопка -->
+
+				<table class="txtbutton" align="center" style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<span class="calczdspoiler"
+				onclick="document.getElementById('zdsale2').style.display = (document.getElementById('zdsale2').style.display=='none'?'inline':'none');"
+				title="Нажмите">
+
+				<b>Ссылки на интернет-магазины</b>
+
+				</span>
+
+				</td>
+
+				</tr>
+				</table>
+
+			<!-- То, что под спойлером -->
+
+			<div id="zdsale2" style="display: none; width: 100%;">
+
+				<br>
+				Украина:
+				<br>
+				<a href="https://voron.ua" target="_blank" title="Откроется в новой вкладке">https://voron.ua</a>
+				<br>
+				<a href="http://www.kosmodrom.com.ua" target="_blank" title="Откроется в новой вкладке">http://www.kosmodrom.com.ua</a>
+				<br>
+				<br>
+				Беларусь и Россия:
+				<br>
+				<a href="https://www.chipdip.by" target="_blank" title="Откроется в новой вкладке">https://www.chipdip.by</a>
+				<br>
+				<a href="https://www.chipdip.ru" target="_blank" title="Откроется в новой вкладке">https://www.chipdip.ru</a>
+				<br>
+				<br>
+				Китай (China):
+				<br>
+				<a href="https://www.aliexpress.com" target="_blank" title="Откроется в новой вкладке">https://www.aliexpress.com</a>
+
+				<br>
+
+			</div> <!-- Конец спойлера -->
+
+			<br>
+
+			<hr class="calczddatasheethr">
+
+			<br>
+
+			Справочник по Российским стабилитронам <a href="https://www.radiolibrary.ru/reference/zenerdiod-page1.html" target="_blank" title="Откроется в новой вкладке">здесь</a>.
+
+		</div> <!-- Конец спойлера -->
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Приложение 3 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 1 -->
+
+		<table class="calczdpagebgh1" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Приложение 3
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Заголовок 2 -->
+
+		<table id="nabroski1" class="calczdattbs_title" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Находим ближайшее стандартное сопротивление
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Спойлер -->
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zdnabroskisp').style.display = (document.getElementById('zdnabroskisp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Наброски</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zdnabroskisp" style="display: none;">
+
+			<br>
+
+			<div id="nabroski2" align="center" class="calczdattbs_window">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+
+					&nbsp;&nbsp;&nbsp;Лицензия (License): <b>Free</b>.
+
+					<br>
+					<br>
+
+					<table class="calczdattbsbg" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td id="rBS_1">
+					<!-- Сюда вставка -->
+					</td>
+					</tr>
+					</table>
+
+					<br>
+					&nbsp;&nbsp;&nbsp;<a href="downloads/calczd/javascript-calczenerdiode.bs.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)">Текстовый файл</a> (в UTF-8)
+
+				</td>
+				</tr>
+				</table>
+
+			</div>
+
+		</div> <!-- Конец спойлера -->
+
+	<br>
+
+	</td>
+	</tr>
+
+	<!-- Продолжение Приложения 3 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 2 -->
+
+		<table id="nabroski1" class="calczdattbs_title" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Находим ближайшее стандартное сопротивление
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Спойлер -->
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('zdJSsp').style.display = (document.getElementById('zdJSsp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Реализация на JavaScript</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="zdJSsp" style="display: none;">
+
+			<br>
+
+			<div id="zdJSbs" align="center" class="calczdprg_window">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+
+					Лицензия (License): <b>Free</b>.
+
+					<br>
+					<br>
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td id="rBS_2">
+					<!-- Сюда вставка -->
+					</td>
+					</tr>
+					</table>
+
+					<br>
+
+					<a href="downloads/calczd/e24.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)">e24.js</a> (в UTF-8)
+
+					<br>
+					<br>
+					Уважаемый соискатель!
+					<br>
+					Если Вы будете использовать этот код у себя на сайте!
+					<br>
+					Сделайте ссылку на <a href="https://drilnet.github.io" title="Откроется в новой вкладке" target="_blank">GITHUB</a> и сделайте ссылку на мой сайт!
+					<br>
+					Спасибо.
+
+					<br>
+					<br>
+					Ukraine. (C) Демидов С.В.
+
+				</td>
+				</tr>
+				</table>
+
+			</div>
+
+		</div> <!-- Конец спойлера -->
+
+	</td>
+	</tr>
+
+	<!-- Продолжение Приложения 3 -->
+	<!-- Калькулятор ближайшее стандартное (БСС)-->
+
+	<tr>
+	<td id="zdbsif" align="center">
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Таблицы сопротивлений: E24, E48, E96 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- При нажатии на ссылку, открываем модальное окно -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td>
+			<!-- Сначало вставить в модальное окно, а потом его открыть. -->
+			<a href="javascript:BuildTableE24(); javascript:OpenShowModalWin('ModalWinE24');" title="Одной строкой (вывод через модальное окно)">Таблица сопротивлений E24</a>
+			</td>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td>
+			<!-- Сначало вставить в модальное окно, а потом его открыть. -->
+			<a href="javascript:BuildTableE48(); javascript:OpenShowModalWin('ModalWinE48');" title="Одной строкой (вывод через модальное окно)">Таблица сопротивлений E48</a>
+			</td>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td>
+			<!-- Сначало вставить в модальное окно, а потом его открыть. -->
+			<a href="javascript:BuildTableE96(); javascript:OpenShowModalWin('ModalWinE96');" title="Одной строкой (вывод через модальное окно)">Таблица сопротивлений E96</a>
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td colspan="5" align="center">
+
+				<br>
+
+				<!-- Ссылки на текстовые файлы -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+					<td>
+					Текстовый файл: <a href="downloads/calczd/calczenerdiode.resistor.readme_1251.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)">Таблица сопротивлений E24, E48, E96 (1251)</a>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td>
+					Текстовый файл: <a href="downloads/calczd/calczenerdiode.resistor.readme_UTF8.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)">Таблица сопротивлений E24, E48, E96 (UTF8)</a>
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- RadioLibrary -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 1 -->
+
+		<table class="calczdpagebgh1" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		RadioLibrary
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+		<img class="icon" src="images-calczd/RadioLibrary_Logo_112x77.png" title="Логотип">
+		<br>
+
+		Ряды резисторов на сайте <a href="https://www.radiolibrary.ru" title="Откроется в новой вкладке" target="_blank">RadioLibrary</a>:
+
+		<br>
+		<br>
+
+		<!-- Ссылки на ряды: E6, E12, E24, E48, E96, E192 -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- E6, E12, E24 -->
+		<tr>
+
+			<td>
+			<a href="https://www.radiolibrary.ru/reference/resistorseries/e6.html" title="Откроется в новой вкладке" target="_blank">Ряд резисторов E6</a>
+			</td>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td>
+			<a href="https://www.radiolibrary.ru/reference/resistorseries/e12.html" title="Откроется в новой вкладке" target="_blank">Ряд резисторов E12</a>
+			</td>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td>
+			<a href="https://www.radiolibrary.ru/reference/resistorseries/e24.html" title="Откроется в новой вкладке" target="_blank">Ряд резисторов E24</a>
+			</td>
+
+		</tr>
+
+		<!-- E48, E96, E192 -->
+		<tr>
+
+			<td>
+			<a href="https://www.radiolibrary.ru/reference/resistorseries/e48.html" title="Откроется в новой вкладке" target="_blank">Ряд резисторов E48</a>
+			</td>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td>
+			<a href="https://www.radiolibrary.ru/reference/resistorseries/e96.html" title="Откроется в новой вкладке" target="_blank">Ряд резисторов E96</a>
+			</td>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td>
+			<a href="https://www.radiolibrary.ru/reference/resistorseries/e192.html" title="Откроется в новой вкладке" target="_blank">Ряд резисторов E192</a>
+			</td>
+
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Спасибо -->
+		<span class="calczdsmalltxt">
+		Благодарность за сайт <a href="https://www.radiolibrary.ru" title="Откроется в новой вкладке" target="_blank">RadioLibrary</a>: Россия, г. Магнитогорск, <b>Мусин Марат</b>.
+		</span>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Ссылки -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 1 -->
+
+		<table class="calczdpagebgh1" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Дополнительные ссылки
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Заголовок 2 -->
+
+		<table class="calczdprg_title" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Бесплатное программное обеспечение
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Теперь ссылки -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<!-- 1 -->
+		<tr>
+
+			<td align="right">
+			<a href="https://www.rs-online.com/designspark/pcb-software" title="Откроется в новой вкладке" target="_blank">DesignSpark</a>
+			</td>
+
+			<td>&nbsp;-&nbsp;</td>
+			<td align="left">Редактор схем и разводка плат.</td>
+
+		</tr>
+
+		<!-- 2 -->
+		<tr>
+
+			<td align="right">
+			<a href="https://www.expresspcb.com" title="Откроется в новой вкладке" target="_blank">ExpressPCB</a>
+			</td>
+
+			<td>&nbsp;-&nbsp;</td>
+			<td align="left">Редактор схем и разводка плат.</td>
+
+		</tr>
+
+		<!-- 3 -->
+		<tr>
+
+			<td align="right">
+			<a href="https://www.analog.com/ru/design-center/design-tools-and-calculators/ltspice-simulator.html" title="Откроется в новой вкладке" target="_blank">LTspice XVII</a>
+			</td>
+
+			<td>&nbsp;-&nbsp;</td>
+			<td align="left">SPICE-симулятор.</td>
+
+		</tr>
+
+		<!-- 4 -->
+		<tr>
+
+			<td align="right">
+			<a href="https://www.ti.com/tool/TINA-TI" title="Откроется в новой вкладке" target="_blank">TINA-TI</a>
+			</td>
+
+			<td>&nbsp;-&nbsp;</td>
+			<td align="left">SPICE-симулятор (<a href="http://designsoftware.com/home/Russian" title="Откроется в новой вкладке" target="_blank">DesignSoft</a> и <a href="https://www.ti.com" title="Откроется в новой вкладке" target="_blank">Texas Instruments</a>).</td>
+
+		</tr>
+
+		<!-- 5 -->
+		<tr>
+
+			<td align="right">
+			<a href="https://www.tinycad.net" title="Откроется в новой вкладке" target="_blank">TinyCAD</a>
+			</td>
+
+			<td>&nbsp;-&nbsp;</td>
+			<td align="left">Редактор схем.</td>
+
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Примечание -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left">
+
+		<b>Примечание.</b>
+		<br>
+		У <a href="https://www.ti.com/tool/TINA-TI" title="Откроется в новой вкладке" target="_blank">TINA-TI</a> есть поддержка Русского Языка!
+
+		</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Подвал -->
+
+	<tr>
+	<td align="center" class="smalltxtfooter footer_p">
+
+	<b>Никогда не сдавайся!</b>
+	<br>
+	Написать мне можно на (замечания, предложения): stdls[ухо]mail.ru или bbarsinov[ухо]gmail.com
+	<br>
+	<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+
+	</td>
+	</tr>
+
+	<!-- Иконка -->
+
+	<tr>
+	<td align="center">
+
+	<img src="icons/Disabled_Person_(mini).gif" title="Человек с ограниченными возможностями">
+
+	</td>
+	</tr>
+
+	</table>
+
+	<!--                              -->
+	<!-- Модальные окна E24, E48, E96 -->
+	<!--                              -->
+
+	<!-- 1. E24 -->
+
+	<div id="ModalWinE24" class="calczdmodalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+			<div class="calczdmodalwin_window calczdmodalwin_txtsize2">
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+					<td nowrap>E24 (в Омах, через запятую):</td>
+					<td>&nbsp;</td>
+					<td id="ModalWinE24_a"></td>
+
+				</tr>
+
+				</table>
+
+				Всех резисторов: <span id="ModalWinE24_b"></span>
+
+			</div>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<!-- Кнопка -->
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinE24')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2. E48 -->
+
+	<div id="ModalWinE48" class="calczdmodalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+			<div class="calczdmodalwin_window calczdmodalwin_txtsize2">
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+					<td nowrap>E48 (в Омах, через запятую):</td>
+					<td>&nbsp;</td>
+					<td id="ModalWinE48_a"></td>
+
+				</tr>
+
+				</table>
+
+				Всех резисторов: <span id="ModalWinE48_b"></span>
+
+			</div>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<!-- Кнопка -->
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinE48')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 3. E96 -->
+
+	<div id="ModalWinE96" class="calczdmodalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+			<div class="calczdmodalwin_window calczdmodalwin_txtsize2">
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+					<td nowrap>E96 (в Омах, через запятую):</td>
+					<td>&nbsp;</td>
+					<td id="ModalWinE96_a"></td>
+
+				</tr>
+
+				</table>
+
+				Всех резисторов: <span id="ModalWinE96_b"></span>
+
+			</div>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<!-- Кнопка -->
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinE96')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                        -->
+	<!-- Модальное окно ближайшего стандартного -->
+	<!-- Таблицы n1.                            -->
+	<!--                                        -->
+
+	<div id="TableModalWinBS1" class="calczdmodalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+			<div class="calczdmodalwin_window2 calczdmodalwin_txtsize2">
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+					<td id="MWT2BS1">
+					<!-- Здесь вставка -->
+					</td>
+
+					<!-- Отступ справа -->
+					<td>
+					&nbsp;&nbsp;
+					</td>
+
+				</tr>
+				</table>
+
+			</div>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<!-- Кнопка -->
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('TableModalWinBS1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                        -->
+	<!-- Модальное окно ближайшего стандартного -->
+	<!-- Таблицы n2.                            -->
+	<!--                                        -->
+
+	<div id="TableModalWinBS2" class="calczdmodalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+			<div class="calczdmodalwin_window3 calczdmodalwin_txtsize2">
+
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+					<td id="MWT2BS2">
+					<!-- Здесь вставка -->
+					</td>
+
+					<!-- Отступ справа -->
+					<td>
+					&nbsp;&nbsp;
+					</td>
+
+				</tr>
+				</table>
+
+			</div>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<!-- Кнопка -->
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('TableModalWinBS2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--           -->
+	<!-- Окно      -->
+	<!-- Закон Ома -->
+	<!--           -->
+
+	<div id="ZOm" align="center" class="pop-up-window_zom">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+				Формулы
+				</td>
+				</tr>
+				</table>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td style="padding-top: 6px;">
+
+			<!-- Изображение (формулы) -->
+			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
+			<img class="icon" src="images-ohm/formulas-zom_080%.png"
+			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
+			</a>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
+
+				<!-- Инфо -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<b>U</b> - Напряжение
+					<br>
+					<b>I</b> - Сила тока
+					<br>
+					<b>P</b> - Мощность
+					<br>
+					<b>R</b> - Сопротивление
+
+					</td>
+					</tr>
+
+				</table>
+
+			</td>
+		</tr>
+
+		</table>
+
+		<!-- Кнопка -->
+
+		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
+		</td>
+		</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
