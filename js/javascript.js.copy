@@ -1,6 +1,10 @@
 
+// Написано в FreeBSD, Midnight Commander.
+// Ukraine. (C) Demidov S.V.
+
 // ---
-// | Показать модальное окно (РЕПОЗИТОРИЙ).
+// | Показать модальное окно.
+// | РЕПОЗИТОРИИ.
 // ---
 function OpenShowModalWin(x)
 {
@@ -46,27 +50,35 @@ function CloseModalWin(x)
 	modalWin.style.display = "none"; // "Выключаем" окно.
 }
 
-// ---
-// | Спойлер.
-// | Может быть так: Развернуть/Свернуть.
-// | И может быть вот так: Свернуть/Развернуть.
-// ---
-function Spoiler(id_1, id_2)
-{
-	var ele = document.getElementById(id_1);
-	var text = document.getElementById(id_2);
+// ----------
+// ---------------
+// --------------------
 
-	if(ele.style.display == "block")
-		{
-		ele.style.display = "none";
-//		text.innerHTML = "Показать";
-		}
-		else
-		{
-		ele.style.display = "block";
-//		text.innerHTML = "Скрыть";
-		}
+	// ---
+	// | Спойлер.
+	// | Может быть так: Развернуть/Свернуть.
+	// | И может быть вот так: Свернуть/Развернуть.
+	// ---
+	function Spoiler(id_1, id_2)
+	{
+		var ele = document.getElementById(id_1);
+		var text = document.getElementById(id_2);
+
+		if(ele.style.display == "block")
+			{
+			ele.style.display = "none";
+//			text.innerHTML = "Показать";
+			}
+			else
+			{
+			ele.style.display = "block";
+//			text.innerHTML = "Скрыть";
+			}
 }
+
+// --------------------
+// ---------------
+// ----------
 
 // ---
 // | Для Game-15.

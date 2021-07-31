@@ -1,4 +1,7 @@
 
+// Написано в FreeBSD, Midnight Commander.
+// Ukraine. (C) Demidov S.V.
+
 // ---
 // Вставить список литературы с ссылками.
 // ---

@@ -1,4 +1,7 @@
 
+// Написано в FreeBSD, Midnight Commander.
+// Ukraine. (C) Demidov S.V.
+
 // ---
 // | Размер формул: +
 // ---
@@ -7,78 +10,78 @@ function CALCDIVPAGEFORMULASSIZE_1()
 	// Выходное напряжение Uout1, Uout2
 
 	document.getElementById('idformulassize_x1').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idformulassize_x2').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 	document.getElementById('idformulassize_x3').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idformulassize_x4').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 	// Входное напряжение Uin
 
 	document.getElementById('idformulassize_x5').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idformulassize_x6').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idformulassize_x7').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 	// Резисторы R1, R2, и их Rtotal
 
 	document.getElementById('idformulassize_x8').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x9').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x10').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x11').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x12').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x13').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x14').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x15').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x16').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 100dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 	// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 	document.getElementById('idformulassize_x17').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 	document.getElementById('idformulassize_x18').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Ток I
 
 	document.getElementById('idformulassize_x19').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var1) - 100dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x20').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var2) - 100dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x21').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x22').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png" title="Ток цепи (I)">';
 }
 
 // ---
@@ -89,78 +92,78 @@ function CALCDIVPAGEFORMULASSIZE_2()
 	// Выходное напряжение Uout1, Uout2
 
 	document.getElementById('idformulassize_x1').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idformulassize_x2').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 	document.getElementById('idformulassize_x3').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idformulassize_x4').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 	// Входное напряжение Uin
 
 	document.getElementById('idformulassize_x5').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idformulassize_x6').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idformulassize_x7').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 	// Резисторы R1, R2, и их Rtotal
 
 	document.getElementById('idformulassize_x8').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x9').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x10').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x11').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x12').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x13').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x14').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x15').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x16').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 125dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 	// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 	document.getElementById('idformulassize_x17').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 	document.getElementById('idformulassize_x18').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Ток I
 
 	document.getElementById('idformulassize_x19').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var1) - 125dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x20').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var2) - 125dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x21').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x22').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png" title="Ток цепи (I)">';
 }
 
 // ---
@@ -171,78 +174,78 @@ function CALCDIVPAGEFORMULASSIZE_3()
 	// Выходное напряжение Uout1, Uout2
 
 	document.getElementById('idformulassize_x1').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idformulassize_x2').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 	document.getElementById('idformulassize_x3').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idformulassize_x4').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 	// Входное напряжение Uin
 
 	document.getElementById('idformulassize_x5').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idformulassize_x6').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idformulassize_x7').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 	// Резисторы R1, R2, и их Rtotal
 
 	document.getElementById('idformulassize_x8').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x9').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x10').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x11').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x12').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x13').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x14').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idformulassize_x15').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idformulassize_x16').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 	// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 	document.getElementById('idformulassize_x17').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 	document.getElementById('idformulassize_x18').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Ток I
 
 	document.getElementById('idformulassize_x19').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var1) - 150dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x20').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var2) - 150dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x21').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png" title="Ток цепи (I)">';
 
 	document.getElementById('idformulassize_x22').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png" title="Ток цепи (I)">';
 }
 
 // ---
@@ -263,78 +266,78 @@ function CALCDIVPAGECALCULATIONSIZE_1()
 	// Выходное напряжение Uout1, Uout2
 
 	document.getElementById('idcalculationsize_y1').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (RU) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (RU) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idcalculationsize_y2').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (RU) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (RU) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 	document.getElementById('idcalculationsize_y3').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (Uin - Uout2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (Uin - Uout2) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idcalculationsize_y4').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (Uin - Uout1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (Uin - Uout1) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 	// Входное напряжение Uin
 
 	document.getElementById('idcalculationsize_y5').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idcalculationsize_y6').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout2) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idcalculationsize_y7').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1 + Uout2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1 + Uout2) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 	// Резисторы R1, R2, и их Rtotal
 
 	document.getElementById('idcalculationsize_y8').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var1) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y9').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var1) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y10').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var2) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y11').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var2) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y12').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var3) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var3) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y13').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var3) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var3) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y14').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var4) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var4) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y15').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var4) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var4) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y16').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Rtotal (Uin div I) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Rtotal (Uin div I) - 100dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 	// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 	document.getElementById('idcalculationsize_y17').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation P1 - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 	document.getElementById('idcalculationsize_y18').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation P2 - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Ток I
 
 	document.getElementById('idcalculationsize_y19').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var1) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var1) - 100dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y20').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var2) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var2) - 100dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y21').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var3) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var3) - 100dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y22').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var4) - 100dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var4) - 100dpi.png" title="Ток в цепи (I)">';
 }
 
 // ---
@@ -345,78 +348,78 @@ function CALCDIVPAGECALCULATIONSIZE_2()
 	// Выходное напряжение Uout1, Uout2
 
 	document.getElementById('idcalculationsize_y1').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (RU) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (RU) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idcalculationsize_y2').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (RU) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (RU) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 	document.getElementById('idcalculationsize_y3').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (Uin - Uout2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (Uin - Uout2) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idcalculationsize_y4').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (Uin - Uout1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (Uin - Uout1) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 	// Входное напряжение Uin
 
 	document.getElementById('idcalculationsize_y5').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idcalculationsize_y6').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout2) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idcalculationsize_y7').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1 + Uout2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1 + Uout2) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 	// Резисторы R1, R2, и их Rtotal
 
 	document.getElementById('idcalculationsize_y8').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var1) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y9').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var1) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y10').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var2) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y11').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var2) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y12').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var3) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var3) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y13').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var3) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var3) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y14').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var4) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var4) - 125dpi.png" title="Находим сопротивление резистора R1"';
 
 	document.getElementById('idcalculationsize_y15').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var4) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var4) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y16').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Rtotal (Uin div I) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Rtotal (Uin div I) - 125dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 	// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 	document.getElementById('idcalculationsize_y17').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation P1 - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 	document.getElementById('idcalculationsize_y18').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation P2 - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Ток I
 
 	document.getElementById('idcalculationsize_y19').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var1) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var1) - 125dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y20').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var2) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var2) - 125dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y21').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var3) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var3) - 125dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y22').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var4) - 125dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var4) - 125dpi.png" title="Ток в цепи (I)">';
 }
 
 // ---
@@ -427,78 +430,78 @@ function CALCDIVPAGECALCULATIONSIZE_3()
 	// Выходное напряжение Uout1, Uout2
 
 	document.getElementById('idcalculationsize_y1').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (RU) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (RU) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idcalculationsize_y2').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (RU) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (RU) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 	document.getElementById('idcalculationsize_y3').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (Uin - Uout2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout1 (Uin - Uout2) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 	document.getElementById('idcalculationsize_y4').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (Uin - Uout1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uout2 (Uin - Uout1) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 	// Входное напряжение Uin
 
 	document.getElementById('idcalculationsize_y5').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idcalculationsize_y6').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout2) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 	document.getElementById('idcalculationsize_y7').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1 + Uout2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Uin (Uout1 + Uout2) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 	// Резисторы R1, R2, и их Rtotal
 
 	document.getElementById('idcalculationsize_y8').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var1) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y9').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var1) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y10').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var2) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y11').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var2) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y12').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var3) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var3) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y13').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var3) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var3) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y14').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R1 (var4) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R1 (var4) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 	document.getElementById('idcalculationsize_y15').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation R2 (var4) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation R2 (var4) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 	document.getElementById('idcalculationsize_y16').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation Rtotal (Uin div I) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation Rtotal (Uin div I) - 150dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 	// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 	document.getElementById('idcalculationsize_y17').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation P1 - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 	document.getElementById('idcalculationsize_y18').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation P2 - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Ток I
 
 	document.getElementById('idcalculationsize_y19').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var1) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var1) - 150dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y20').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var2) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var2) - 150dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y21').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var3) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var3) - 150dpi.png" title="Ток в цепи (I)">';
 
 	document.getElementById('idcalculationsize_y22').innerHTML =
-	'<img class="icon" src="images-calcdivr2/Calculation I (var4) - 150dpi.png">';
+	'<img class="icon" src="images-calcdivr2/Calculation I (var4) - 150dpi.png" title="Ток в цепи (I)">';
 }
 
 // ---
@@ -524,27 +527,27 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uout1 = R1 / (R1 + R2) * Uin
 		document.getElementById('idcfs_1_uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Uout2 = R2 / (R1 + R2) * Uin
 		document.getElementById('idcfs_1_uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_1_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_1_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_1_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 2.
@@ -554,27 +557,27 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uin = (R1 + R2) / R1 * Uout1
 		document.getElementById('idcfs_2_uin_1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_2_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_2_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_2_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_2_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 3.
@@ -584,27 +587,27 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uin = (R1 + R2) / R2 * Uout2
 		document.getElementById('idcfs_3_uin_2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_3_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_3_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_3_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_3_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 4.
@@ -614,7 +617,7 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uin = Uout1 + Uout2
 		document.getElementById('idcfs_4_uout1uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 	//
 	// Calc 5.
@@ -624,29 +627,29 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_5_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Находим R1
 
 		// R1 = Uin * R2 / Uout2 - R2
 		document.getElementById('idcfs_5_r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_5_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_5_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_5_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 6.
@@ -656,29 +659,29 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_6_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Находим R2
 
-		// R1 = Uin * R1 / Uout1 - R1
+		// R2 = Uin * R1 / Uout1 - R1
 		document.getElementById('idcfs_6_r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_6_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_6_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_6_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 7.
@@ -688,35 +691,35 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_7_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / Uin
 		document.getElementById('idcfs_7_uru1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Rtotal - R1
 		document.getElementById('idcfs_7_rtotal-r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_7_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_7_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_7_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 8.
@@ -726,35 +729,35 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_8_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / Uin
 		document.getElementById('idcfs_8_uru2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Находим R1
 
 		// R1 = Rtotal - R2
 		document.getElementById('idcfs_8_rtotal-r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_8_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_8_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2" (P2)>';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_8_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 9.
@@ -764,35 +767,35 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uin = Uout1 + Uout2
 		document.getElementById('idcfs_9_uout1uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 100dpi.png" title="Находим входное напряжение Uin">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / (Uout1 + Uout2)
 		document.getElementById('idcfs_9_uruu1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / (Uout1 + Uout2)
 		document.getElementById('idcfs_9_uruu2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_9_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_9_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_9_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 100dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 10.
@@ -802,35 +805,35 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_10_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 100dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Сопротивление Rtotal
 
 		// Rtotal = Uin / I
 		document.getElementById('idcfs_10_rtotalui').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 100dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / Uin
 		document.getElementById('idcfs_10_uru1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Rtotal - R1
 		document.getElementById('idcfs_10_rtotal-r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_10_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_10_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	//
 	// Calc 11.
@@ -840,35 +843,35 @@ function CALCDIVFORMULASSIZE_1()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_11_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 100dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Сопротивление Rtotal
 
 		// Rtotal = Uin / I
 		document.getElementById('idcfs_11_rtotalui').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 100dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / Uin
 		document.getElementById('idcfs_11_uru2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 100dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Находим R1
 
 		// R1 = Rtotal - R2
 		document.getElementById('idcfs_11_rtotal-r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 100dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_11_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 100dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_11_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 100dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Установить переключатели.
 	CALCDIVFormulas_SetRadioButton_100DPI();
@@ -937,27 +940,27 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uout1 = R1 / (R1 + R2) * Uin
 		document.getElementById('idcfs_1_uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Uout2 = R2 / (R1 + R2) * Uin
 		document.getElementById('idcfs_1_uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_1_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_1_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_1_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 2.
@@ -967,27 +970,27 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uin = (R1 + R2) / R1 * Uout1
 		document.getElementById('idcfs_2_uin_1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_2_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_2_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_2_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_2_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 3.
@@ -997,27 +1000,27 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uin = (R1 + R2) / R2 * Uout2
 		document.getElementById('idcfs_3_uin_2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_3_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_3_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_3_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_3_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 4.
@@ -1027,7 +1030,7 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uin = Uout1 + Uout2
 		document.getElementById('idcfs_4_uout1uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 	//
 	// Calc 5.
@@ -1037,29 +1040,29 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_5_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Находим R1
 
 		// R1 = Uin * R2 / Uout2 - R2
 		document.getElementById('idcfs_5_r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_5_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_5_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_5_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 6.
@@ -1069,29 +1072,29 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_6_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Находим R2
 
-		// R1 = Uin * R1 / Uout1 - R1
+		// R2 = Uin * R1 / Uout1 - R1
 		document.getElementById('idcfs_6_r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_6_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_6_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_6_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 7.
@@ -1101,35 +1104,35 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_7_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / Uin
 		document.getElementById('idcfs_7_uru1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Rtotal - R1
 		document.getElementById('idcfs_7_rtotal-r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_7_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_7_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_7_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 8.
@@ -1139,35 +1142,35 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_8_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / Uin
 		document.getElementById('idcfs_8_uru2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Находим R1
 
 		// R1 = Rtotal - R2
 		document.getElementById('idcfs_8_rtotal-r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_8_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_8_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_8_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 9.
@@ -1177,35 +1180,35 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uin = Uout1 + Uout2
 		document.getElementById('idcfs_9_uout1uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 125dpi.png" title="Находим входное напряжение Uin">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / (Uout1 + Uout2)
 		document.getElementById('idcfs_9_uruu1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / (Uout1 + Uout2)
 		document.getElementById('idcfs_9_uruu2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_9_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_9_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_9_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 125dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 10.
@@ -1215,35 +1218,35 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_10_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 125dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Сопротивление Rtotal
 
 		// Rtotal = Uin / I
 		document.getElementById('idcfs_10_rtotalui').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 125dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / Uin
 		document.getElementById('idcfs_10_uru1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Rtotal - R1
 		document.getElementById('idcfs_10_rtotal-r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_10_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_10_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	//
 	// Calc 11.
@@ -1253,35 +1256,35 @@ function CALCDIVFORMULASSIZE_2()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_11_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 125dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Сопротивление Rtotal
 
 		// Rtotal = Uin / I
 		document.getElementById('idcfs_11_rtotalui').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 125dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / Uin
 		document.getElementById('idcfs_11_uru2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 125dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Находим R1
 
 		// R1 = Rtotal - R2
 		document.getElementById('idcfs_11_rtotal-r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 125dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_11_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 125dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_11_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 125dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Установить переключатели.
 	CALCDIVFormulas_SetRadioButton_125DPI();
@@ -1350,27 +1353,27 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uout1 = R1 / (R1 + R2) * Uin
 		document.getElementById('idcfs_1_uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (RU) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Uout2 = R2 / (R1 + R2) * Uin
 		document.getElementById('idcfs_1_uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (RU) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_1_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_1_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_1_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 2.
@@ -1380,27 +1383,27 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uin = (R1 + R2) / R1 * Uout1
 		document.getElementById('idcfs_2_uin_1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_2_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_2_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_2_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_2_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 3.
@@ -1410,27 +1413,27 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uin = (R1 + R2) / R2 * Uout2
 		document.getElementById('idcfs_3_uin_2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout2) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_3_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_3_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_3_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_3_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 4.
@@ -1440,7 +1443,7 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uin = Uout1 + Uout2
 		document.getElementById('idcfs_4_uout1uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 	//
 	// Calc 5.
@@ -1450,29 +1453,29 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_5_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Находим R1
 
 		// R1 = Uin * R2 / Uout2 - R2
 		document.getElementById('idcfs_5_r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var1) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_5_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_5_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_5_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 6.
@@ -1482,29 +1485,29 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_6_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Находим R2
 
-		// R1 = Uin * R1 / Uout1 - R1
+		// R2 = Uin * R1 / Uout1 - R1
 		document.getElementById('idcfs_6_r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var1) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_6_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_6_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / (R1 + R2)
 		document.getElementById('idcfs_6_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var3) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 7.
@@ -1514,35 +1517,35 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_7_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / Uin
 		document.getElementById('idcfs_7_uru1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Rtotal - R1
 		document.getElementById('idcfs_7_rtotal-r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_7_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_7_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_7_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 8.
@@ -1552,35 +1555,35 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_8_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / Uin
 		document.getElementById('idcfs_8_uru2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Находим R1
 
 		// R1 = Rtotal - R2
 		document.getElementById('idcfs_8_rtotal-r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_8_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_8_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_8_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 9.
@@ -1590,35 +1593,35 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uin = Uout1 + Uout2
 		document.getElementById('idcfs_9_uout1uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uin (Uout1 + Uout2) - 150dpi.png" title="Находим входное напряжение Uin">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / (Uout1 + Uout2)
 		document.getElementById('idcfs_9_uruu1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var3) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / (Uout1 + Uout2)
 		document.getElementById('idcfs_9_uruu2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var3) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_9_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_9_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 		// Ток I
 
 		// I = Uin / Rtotal
 		document.getElementById('idcfs_9_i').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find I (var4) - 150dpi.png" title="Ток в цепи (I)">';
 
 	//
 	// Calc 10.
@@ -1628,35 +1631,35 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uout2 = Uin - Uout1
 		document.getElementById('idcfs_10_uin-uout1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout2 (Uin - Uout1) - 150dpi.png" title="Находим выходное напряжение Uout2">';
 
 		// Сопротивление Rtotal
 
 		// Rtotal = Uin / I
 		document.getElementById('idcfs_10_rtotalui').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 		// Находим R1
 
 		// R1 = Uout1 * Rtotal / Uin
 		document.getElementById('idcfs_10_uru1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var2) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Находим R2
 
 		// R2 = Rtotal - R1
 		document.getElementById('idcfs_10_rtotal-r1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var4) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_10_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_10_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	//
 	// Calc 11.
@@ -1666,35 +1669,35 @@ function CALCDIVFORMULASSIZE_3()
 
 		// Uout1 = Uin - Uout2
 		document.getElementById('idcfs_11_uin-uout2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Uout1 (Uin - Uout2) - 150dpi.png" title="Находим выходное напряжение Uout1">';
 
 		// Сопротивление Rtotal
 
 		// Rtotal = Uin / I
 		document.getElementById('idcfs_11_rtotalui').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find Rtotal (Uin div I) - 150dpi.png" title="Суммарное сопротивление резисторов R1 + R2">';
 
 		// Находим R2
 
 		// R2 = Uout2 * Rtotal / Uin
 		document.getElementById('idcfs_11_uru2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R2 (var2) - 150dpi.png" title="Находим сопротивление резистора R2">';
 
 		// Находим R1
 
 		// R1 = Rtotal - R2
 		document.getElementById('idcfs_11_rtotal-r2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find R1 (var4) - 150dpi.png" title="Находим сопротивление резистора R1">';
 
 		// Рассеиваемая мощность на R1, R2 (P1, P2)
 
 		// P1 = Uout1 * Uout1 / R1
 		document.getElementById('idcfs_11_p1').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P1 - 150dpi.png" title="Рассеиваемая мощность на резисторе R1 (P1)">';
 
 		// P2 = Uout2 * Uout2 / R2
 		document.getElementById('idcfs_11_p2').innerHTML =
-		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png">';
+		'<img class="icon" src="images-calcdivr2/Find P2 - 150dpi.png" title="Рассеиваемая мощность на резисторе R2 (P2)">';
 
 	// Установить переключатели.
 	CALCDIVFormulas_SetRadioButton_150DPI();
@@ -2903,12 +2906,12 @@ function CALCDIVR2_Z10()
 
 	if (Option1 == 'мА')
 		{
-		I = I / 1000; // мВ в В.
+		I = I / 1000; // мА в А.
 		}
 
 	if (Option1 == 'мкА')
 		{
-		I = I / 1000 / 1000; // мкВ в В.
+		I = I / 1000 / 1000; // мкА в А.
 		}
 
 	if (Option2 == 'мВ')
@@ -3028,12 +3031,12 @@ function CALCDIVR2_Z11()
 
 	if (Option1 == 'мА')
 		{
-		I = I / 1000; // мВ в В.
+		I = I / 1000; // мА в А.
 		}
 
 	if (Option1 == 'мкА')
 		{
-		I = I / 1000 / 1000; // мкВ в В.
+		I = I / 1000 / 1000; // мкА в А.
 		}
 
 	if (Option2 == 'мВ')
