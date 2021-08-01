@@ -310,6 +310,9 @@
 	<script language="javascript" src="js/javascript-literatura.js"></script>
 	<script language="javascript" src="game-15/js/game-15.js"></script>
 
+	<script language="javascript" src="js/javascript-bs.js"></script>
+	<script language="javascript" src="js/javascript-pop-up.js"></script>
+
 	</head>
 
 <!-- Подгружаем литературу -->
@@ -1566,7 +1569,7 @@
 	</td>
 	</tr>
 
-	<!-- Онлайн калькуляторы -->
+	<!-- Онлайн-калькуляторы -->
 
 	<tr>
 	<td align="center">
@@ -1576,7 +1579,7 @@
 		<tr>
 		<td>
 
-		<b>Онлайн калькуляторы:</b>
+		<b>Онлайн-калькуляторы:</b>
 
 		</td>
 		</tr>
@@ -1587,25 +1590,79 @@
 			<table cellspacing="0" cellpadding="0" border="0">
 			<tr>
 
-				<td>&nbsp;&nbsp;&nbsp;</td>
-				<td><img class="icon" src="icons/calculator_16x16.png" title="Иконка из набора FatCow. (C) FatCow Web Hosting. License: Creative Commons (Attrbution 3.0 United States)"></td>
+			<td>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+					<td>&nbsp;&nbsp;&nbsp;</td>
+					<td><img class="icon" src="icons/calculator_16x16.png" title="Иконка из набора FatCow. (C) FatCow Web Hosting. License: Creative Commons (Attrbution 3.0 United States)"></td>
+
+					<td>
+
+					&nbsp;&bull;
+					<a href="calcdivr2.html" title="Откроется в новой вкладке" target="_blank">Делитель напряжения на двух резисторах</a>
+
+					<br>
+
+					&nbsp;&bull;
+					<a href="calczenerdiode.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для стабилитрона</a>
+
+					<br>
+
+					&nbsp;&bull;
+					<a href="calctransistorkey.html" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме</a>
+
+					</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<!-- Отступ слева -->
+			<td>&nbsp;&nbsp;&nbsp;</td>
+
+			<td>
+
+				<!-- Ближайшее стандартное -->
+				<!-- Кнопка (открытие модального окна) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
 
 				<td>
 
-				&nbsp;&bull;
-				<a href="calcdivr2.html" title="Откроется в новой вкладке" target="_blank">Делитель напряжения на двух резисторах</a>
-
-				<br>
-
-				&nbsp;&bull;
-				<a href="calczenerdiode.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для стабилитрона</a>
-
-				<br>
-
-				&nbsp;&bull;
-				<a href="calctransistorkey.html" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме</a>
+				<!-- Сначало вставить, потом показать! -->
+				<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+				title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
+
+				<!-- Формулы закон Ома -->
+				<!-- Кнопка (открыть окно с формулами) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<a href="javascript:OpenPopUpWindow('ZOm');"
+				title="Формулы (нажмите)">Закон Ома</a>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
 
 			</tr>
 			</table>
@@ -5788,6 +5845,86 @@
 	<div id="ModalWinBook_13" class="modalwinbook"></div>
 	<div id="ModalWinBook_14" class="modalwinbook"></div>
 	<div id="ModalWinBook_15" class="modalwinbook"></div>
+
+	<!--                       -->
+	<!-- Модальное окно        -->
+	<!-- Ближайшее стандартное -->
+	<!--                       -->
+
+	<div id="ModalWinBS" class="bsmodalwin">
+	</div>
+
+	<!--           -->
+	<!-- Окно      -->
+	<!-- Закон Ома -->
+	<!--           -->
+
+	<div id="ZOm" align="center" class="pop-up-window_zom">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="center">
+
+				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+				Формулы
+				</td>
+				</tr>
+				</table>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td style="padding-top: 6px;">
+
+			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
+			<img class="icon" src="images-ohm/formulas-zom_080_percent.png"
+			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
+			</a>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<b>U</b> - Напряжение
+					<br>
+					<b>I</b> - Сила тока
+					<br>
+					<b>P</b> - Мощность
+					<br>
+					<b>R</b> - Сопротивление
+
+					</td>
+					</tr>
+
+				</table>
+
+			</td>
+		</tr>
+
+		</table>
+
+		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
+		</td>
+		</tr>
+
+		</table>
+
+	</div>
 
 </body>
 </html>
