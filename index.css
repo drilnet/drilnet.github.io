@@ -220,6 +220,18 @@
 	font-size: 11px;
 	}
 
+		/* Фон и бордюр для заголовка, игра Game-15 */
+		/* Без clock.gif */
+
+		.g15_title {
+		background: #f0f2f4;
+		border: 1px solid #f0f2f4;
+		border-radius: 0px;
+		padding: 4px 0px 4px 0px;
+		width: 720px;
+		}
+
+
 	/* Иконки бесплатное ПО */
 
 	.iconfreeurl {
@@ -276,6 +288,23 @@
 		color: #f3703c;
 		}
 
+	/* Выборка pdf-файлов из моих репозиториев */
+	/* Заголовок спойлера в виде ссылки */
+
+	.spoilerpdf {
+	color: #006699;
+	text-decoration: none;
+	cursor: pointer;
+	}
+
+	/* При наведении на спойлер pdf-файлы */
+
+	.spoilerpdf:hover {
+	color: #006699;
+	text-decoration: underline;
+	}
+
+	/* Некоторые ответы на некоторые вопросы */
 	/* Заголовок спойлера в виде ссылки, для литературы */
 
 	.spoilerbook {
