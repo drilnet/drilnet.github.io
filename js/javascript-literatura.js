@@ -479,7 +479,7 @@ function LoadBook()
 	var temp = "<br>";
 
 	temp += "<hr style=\"width: 296px;\">"
-	temp += "Небольшая коллекция литературы!"
+	temp += "<font style=\"font-size: 14px;\">Небольшая коллекция литературы!</font>"
 	temp += "<br>"
 	temp += "Вся литература до 2000 года!"
 	temp += "<hr style=\"width: 296px;\">"
