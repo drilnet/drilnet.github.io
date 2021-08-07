@@ -597,7 +597,7 @@
 				<!------->
 				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
 				<span class="calczdinputcolortext">Введите <i><b>I</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="3000" id="zd1_input_3" value="10"
-				title="Ток I (ток стабилизации)">
+				title="Ток стабилизации (ток I)">
 				</td>
 
 				<td>
@@ -2495,7 +2495,7 @@
 			<tr>
 				<td align="left" class="calczdsmalltxt">
 
-					Токи, переменные: <i><b>I1</b></i>, <i><b>I2</b></i>, <i><b>I3</b></i>.
+					Резистор <b>R1</b>, переменные: <i><b>I1</b></i>, <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i> (<i><b>UR1</b></i> - на схеме не показан).
 
 				</td>
 			</tr>
@@ -2507,7 +2507,7 @@
 			<tr>
 				<td align="left" class="calczdsmalltxt">
 
-					Резистор <b>R1</b>, переменные: <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i> (<i><b>UR1</b></i> - на схеме не показан).
+					Стабилитрон <b>VD1</b>, переменные: <i><b>I2</b></i>, <i><b>P2</b></i>, <i><b>Uout</b></i>.
 
 				</td>
 			</tr>
@@ -2519,19 +2519,7 @@
 			<tr>
 				<td align="left" class="calczdsmalltxt">
 
-					Стабилитрон <b>VD1</b>, переменные: <i><b>P2</b></i>, <i><b>Uout</b></i>.
-
-				</td>
-			</tr>
-
-			</table>
-
-			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-				<td align="left" class="calczdsmalltxt">
-
-					Нагрузка <b>Rн</b>, переменные: <i><b>Rн</b></i>, <i><b>P3</b></i>.
+					Нагрузка <b>Rн</b>, переменные: <i><b>I3</b>, </i><i><b>Rн</b></i>, <i><b>P3</b></i>.
 
 				</td>
 			</tr>
@@ -2709,7 +2697,7 @@
 				<!-------->
 				<td align="right" class="calczdtdpadding calczdtdcolorline" style="border-left: 1px solid;">
 				<span class="calczdinputcolortext">Введите <i><b>I2</b></i>:&nbsp;</span><input type="number" class="calczdinputpx" step="0.1" min="0.1" max="3000" id="zd2_input_3" value="10"
-				title="Ток I2 (ток стабилизации)">
+				title="Ток стабилизации (ток I2)">
 				</td>
 
 				<td>
@@ -2952,7 +2940,7 @@
 			<tr>
 				<!-- I1 -->
 				<td align="right">
-				<i><b title="Ток I1">I1</b></i>&nbsp;=&nbsp;
+				<i><b title="Ток протекающий через резистор R1 (ток I1)">I1</b></i>&nbsp;=&nbsp;
 				</td>
 
 				<td align="left" id="zd2_result_I1">
@@ -2963,7 +2951,7 @@
 			<tr>
 				<!-- I3 -->
 				<td align="right">
-				<i><b title="Ток I3">I3</b></i>&nbsp;=&nbsp;
+				<i><b title="Ток протекающий через нагрузку (ток I3)">I3</b></i>&nbsp;=&nbsp;
 				</td>
 
 				<td align="left" id="zd2_result_I3">
@@ -5292,7 +5280,7 @@
 			<tr>
 				<!-- I -->
 				<td align="right">
-				<i><b title="Ток I (ток стабилизации)">I</b></i>&nbsp;=&nbsp;
+				<i><b title="Ток стабилизации (ток I)">I</b></i>&nbsp;=&nbsp;
 				</td>
 
 				<td align="left" id="zd3_result_I">
@@ -5712,7 +5700,7 @@
 			<tr>
 				<td align="left" class="calczdsmalltxt">
 
-					Токи, переменные: <i><b>I1</b></i>, <i><b>I2</b></i>, <i><b>I3</b></i>.
+					Резистор <b>R1</b>, переменные: <i><b>I1</b>, </i><i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i> (<i><b>UR1</b></i> - на схеме не показан).
 
 				</td>
 			</tr>
@@ -5724,7 +5712,7 @@
 			<tr>
 				<td align="left" class="calczdsmalltxt">
 
-					Резистор <b>R1</b>, переменные: <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i> (<i><b>UR1</b></i> - на схеме не показан).
+					Стабилитрон <b>VD1</b>, переменные: <i><b>I2</b></i>, <i><b>P2</b></i>, <i><b>Uout</b></i>.
 
 				</td>
 			</tr>
@@ -5736,19 +5724,7 @@
 			<tr>
 				<td align="left" class="calczdsmalltxt">
 
-					Стабилитрон <b>VD1</b>, переменные: <i><b>P2</b></i>, <i><b>Uout</b></i>.
-
-				</td>
-			</tr>
-
-			</table>
-
-			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-				<td align="left" class="calczdsmalltxt">
-
-					Нагрузка <b>Rн</b>, переменные: <i><b>Rн</b></i>, <i><b>P3</b></i>.
+					Нагрузка <b>Rн</b>, переменные: <i><b>I3</b></i>, <i><b>Rн</b></i>, <i><b>P3</b></i>.
 
 				</td>
 			</tr>
@@ -6151,7 +6127,7 @@
 			<tr>
 				<!-- I1 -->
 				<td align="right">
-				<i><b title="Ток I1">I1</b></i>&nbsp;=&nbsp;
+				<i><b title="Ток протекающий через резистор R1 (ток I1)">I1</b></i>&nbsp;=&nbsp;
 				</td>
 
 				<td align="left" id="zd4_result_I1">
@@ -6162,7 +6138,7 @@
 			<tr>
 				<!-- I2 -->
 				<td align="right">
-				<i><b title="Ток I2 (ток стабилизации)">I2</b></i>&nbsp;=&nbsp;
+				<i><b title="Ток стабилизации (ток I2)">I2</b></i>&nbsp;=&nbsp;
 				</td>
 
 				<td align="left" id="zd4_result_I2">
@@ -6173,7 +6149,7 @@
 			<tr>
 				<!-- I3 -->
 				<td align="right">
-				<i><b title="Ток I3">I3</b></i>&nbsp;=&nbsp;
+				<i><b title="Ток протекающий через нагрузку (ток I3)">I3</b></i>&nbsp;=&nbsp;
 				</td>
 
 				<td align="left" id="zd4_result_I3">
