@@ -293,7 +293,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 
 			rstring = "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + El + " <b>Ом</b> </span>";
-			rstring += "(<i><b title=\"Ток I (ток стабилизации)\">I</b></i> = ";
+			rstring += "(<i><b title=\"Ток стабилизации (ток I)\">I</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I + " <b>мА</b></span>, ";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + P1 + " <b>мВт</b></span>, ";
@@ -315,7 +315,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 
 			rstring = "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + Er + " <b>Ом</b> </span>";
-			rstring += "(<i><b title=\"Ток I (ток стабилизации)\">I</b></i> = ";
+			rstring += "(<i><b title=\"Ток стабилизации (ток I)\">I</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I + " <b>мА</b></span>, ";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + P1 + " <b>мВт</b></span>, ";
@@ -337,7 +337,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 
 			rstring = "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + E + " <b>Ом</b> </span>";
-			rstring += "(<i><b title=\"Ток I (ток стабилизации)\">I</b></i> = ";
+			rstring += "(<i><b title=\"Ток стабилизации (ток I)\">I</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I + " <b>мА</b></span>, ";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + P1 + " <b>мВт</b></span>, ";
@@ -359,7 +359,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 
 			rstring = "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + El + " <b>Ом</b> </span>";
-			rstring += "(<i><b title=\"Ток I (ток стабилизации)\">I</b></i> = ";
+			rstring += "(<i><b title=\"Ток стабилизации (ток I)\">I</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + Il + " <b>мА</b></span>, ";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + P1 + " <b>мВт</b></span>, ";
@@ -378,7 +378,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 
 			rstring += "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + Er + " <b>Ом</b> </span>";
-			rstring += "(<i><b title=\"Ток I (ток стабилизации)\">I</b></i> = ";
+			rstring += "(<i><b title=\"Ток стабилизации (ток I)\">I</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + Ir + " <b>мА</b></span>, ";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + P1 + " <b>мВт</b></span>, ";
@@ -623,11 +623,11 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 			rstring += "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + El + " <b>Ом</b> </span>";
 			rstring += "<br>";
-			rstring += "<i><b title=\"Ток I1\">I1</b></i> = ";
+			rstring += "<i><b title=\"Ток протекающий через резистор R1 (ток I1)\">I1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I1 + " <b>мА</b></span>, ";
-			rstring += "<i><b title=\"Ток I2 (ток стабилизации)\">I2</b></i> = ";
+			rstring += "<i><b title=\"Ток стабилизации (ток I2)\">I2</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I2 + " <b>мА</b></span>, ";
-			rstring += "<i><b title=\"Ток I3\">I3</b></i> = ";
+			rstring += "<i><b title=\"Ток протекающий через нагрузку (ток I3)\">I3</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I3 + " <b>мА</b></span>, ";
 			rstring += "<br>";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
@@ -671,11 +671,11 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 			rstring += "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + Er + " <b>Ом</b> </span>";
 			rstring += "<br>";
-			rstring += "<i><b title=\"Ток I1\">I1</b></i> = ";
+			rstring += "<i><b title=\"Ток протекающий через резистор R1 (ток I1)\">I1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I1 + " <b>мА</b></span>, ";
-			rstring += "<i><b title=\"Ток I2 (ток стабилизации)\">I2</b></i> = ";
+			rstring += "<i><b title=\"Ток стабилизации (ток I2)\">I2</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I2 + " <b>мА</b></span>, ";
-			rstring += "<i><b title=\"Ток I3\">I3</b></i> = ";
+			rstring += "<i><b title=\"Ток протекающий через нагрузку (ток I3)\">I3</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I3 + " <b>мА</b></span>, ";
 			rstring += "<br>";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
@@ -719,11 +719,11 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 			rstring += "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + E + " <b>Ом</b> </span>";
 			rstring += "<br>";
-			rstring += "<i><b title=\"Ток I1\">I1</b></i> = ";
+			rstring += "<i><b title=\"Ток протекающий через резистор R1 (ток I1)\">I1</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I1 + " <b>мА</b></span>, ";
-			rstring += "<i><b title=\"Ток I2 (ток стабилизации)\">I2</b></i> = ";
+			rstring += "<i><b title=\"Ток стабилизации (ток I2)\">I2</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I2 + " <b>мА</b></span>, ";
-			rstring += "<i><b title=\"Ток I3\">I3</b></i> = ";
+			rstring += "<i><b title=\"Ток протекающи1 через нагрузку (ток I3)\">I3</b></i> = ";
 			rstring += "<span class=\"calczdcolorresult\">" + I3 + " <b>мА</b></span>, ";
 			rstring += "<br>";
 			rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
@@ -771,11 +771,11 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 				rstring += "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + El + " <b>Ом</b> </span>";
 				rstring += "<br>";
-				rstring += "<i><b title=\"Ток I1\">I1</b></i> = ";
+				rstring += "<i><b title=\"Ток протекающий через резистор R1 (ток I1)\">I1</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + Il_I1 + " <b>мА</b></span>, ";
-				rstring += "<i><b title=\"Ток I2 (ток стабилизации)\">I2</b></i> = ";
+				rstring += "<i><b title=\"Ток стабилизации (ток I2)\">I2</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + Il_I2 + " <b>мА</b></span>, ";
-				rstring += "<i><b title=\"Ток I3\">I3</b></i> = ";
+				rstring += "<i><b title=\"Ток протекающий через нагрузку (ток I3)\">I3</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + Il_I3 + " <b>мА</b></span>";
 				rstring += "<br>";
 				rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
@@ -814,11 +814,11 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 				rstring += "<i><b title=\"Сопротивление резистора R1\">R1</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + Er + " <b>Ом</b> </span>";
 				rstring += "<br>";
-				rstring += "<i><b title=\"Ток I1\">I1</b></i> = ";
+				rstring += "<i><b title=\"Ток протекающий через резистор R1 (ток I1)\">I1</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + Ir_I1 + " <b>мА</b></span>, ";
-				rstring += "<i><b title=\"Ток I2 (ток стабилизации)\">I2</b></i> = ";
+				rstring += "<i><b title=\"Ток стабилизации (ток I2)\">I2</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + Ir_I2 + " <b>мА</b></span>, ";
-				rstring += "<i><b title=\"Ток I3\">I3</b></i> = ";
+				rstring += "<i><b title=\"Ток протекающий через нагрузку (ток I3)\">I3</b></i> = ";
 				rstring += "<span class=\"calczdcolorresult\">" + Ir_I3 + " <b>мА</b></span>";
 				rstring += "<br>";
 				rstring += "<i><b title=\"Рассеиваемая мощность на резисторе R1 (P1)\">P1</b></i> = ";
@@ -1235,7 +1235,7 @@ function PrintZDCalculationTable_1()
 
 			// I.
 			temp += "<td class=\"wtn1_4 calczdcalculation_z_bg_a\">";
-			temp += "<span title=\"Ток I (ток стабилизации)\"><i>I</i>, мА</span>";
+			temp += "<span title=\"Ток стабилизации (ток I)\"><i>I</i>, мА</span>";
 			temp += "</td>";
 
 			// R1.
@@ -1289,7 +1289,7 @@ function PrintZDCalculationTable_1()
 
 				// I.
 				temp += "<td class=\"wtn1_4 calczdcalculation_z_bg_b\">";
-				temp += "<span title=\"Ток I (ток стабилизации)\">" + I + "</span>";
+				temp += "<span title=\"Ток стабилизации (ток I)\">" + I + "</span>";
 				temp += "</td>";
 
 				// Находим UR1.
@@ -1386,7 +1386,7 @@ function PrintZDCalculationTable_1()
 
 				// I.
 				temp += "<td class=\"wtn1_4 calczdcalculation_z_bg_a\">";
-				temp += "<span title=\"Ток I (ток стабилизации)\">" + I + "</span>";
+				temp += "<span title=\"Ток стабилизации (ток I)\">" + I + "</span>";
 				temp += "</td>";
 
 				// Находим UR1.
@@ -1569,7 +1569,7 @@ function InsertToModalWin1(Step, Uin, Uout, I, R1, P1, P2, UR1, TableNumber)
 
 		// I (ток стабилизации).
 		temp += "<td class=\"calczdcalculation_z_bg_a\">";
-		temp += "<b title=\"Ток I (ток стабилизации)\"><i>I</i>, мА</b>";
+		temp += "<b title=\"Ток стабилизации (ток I)\"><i>I</i>, мА</b>";
 		temp += "</td>";
 
 		// R1.
@@ -1615,7 +1615,7 @@ function InsertToModalWin1(Step, Uin, Uout, I, R1, P1, P2, UR1, TableNumber)
 
 		// I (ток стабилизации).
 		temp += "<td class=\"calczdcalculation_z_bg_b\">";
-		temp += "<span title=\"Ток I (ток стабилизации)\">" + I + "</span>";
+		temp += "<span title=\"Ток стабилизации (ток I)\">" + I + "</span>";
 		temp += "</td>";
 
 		// R1.
@@ -1894,17 +1894,17 @@ function PrintZDCalculationTable_2()
 
 			// I1.
 			temp += "<td class=\"wtn2_4 calczdcalculation_z_bg_a\">";
-			temp += "<b title=\"Ток I1\"><i>I1</i>, мА</b>";
+			temp += "<b title=\"Ток протекающий через резистор R1 (ток I1)\"><i>I1</i>, мА</b>";
 			temp += "</td>";
 
 			// I2 (ток стабилизации).
 			temp += "<td class=\"wtn2_5 calczdcalculation_z_bg_a\">";
-			temp += "<span title=\"Ток I2 (ток стабилизации)\"><i>I2</i>, мА</span>";
+			temp += "<span title=\"Ток стабилизации (ток I2)\"><i>I2</i>, мА</span>";
 			temp += "</td>";
 
 			// I3.
 			temp += "<td class=\"wtn2_6 calczdcalculation_z_bg_a\">";
-			temp += "<b title=\"Ток I3\"><i>I3</i>, мА</b>";
+			temp += "<b title=\"Ток протекающий через нагрузку (ток I3)\"><i>I3</i>, мА</b>";
 			temp += "</td>";
 
 			// R1.
@@ -1996,17 +1996,17 @@ function PrintZDCalculationTable_2()
 
 				// I1.
 				temp += "<td class=\"wtn2_4 calczdcalculation_z_bg_b\">";
-				temp += "<span title=\"Ток I1\">" + I1 + "</span>";
+				temp += "<span title=\"Ток протекающий через резистор R1 (ток I1)\">" + I1 + "</span>";
 				temp += "</td>";
 
 				// I2 (ток стабилизации).
 				temp += "<td class=\"wtn2_5 calczdcalculation_z_bg_b\">";
-				temp += "<span title=\"Ток I2 (ток стабилизации)\">" + I2 + "</span>";
+				temp += "<span title=\"Ток стабилизации (ток I2)\">" + I2 + "</span>";
 				temp += "</td>";
 
 				// I3.
 				temp += "<td class=\"wtn2_6 calczdcalculation_z_bg_b\">";
-				temp += "<span title=\"Ток I3\">" + I3 + "</span>";
+				temp += "<span title=\"Ток протекающий через нагрузку (ток I3)\">" + I3 + "</span>";
 				temp += "</td>";
 
 				if (array_rtitle[1] == '0' && array_rtitle[2] == '0')
@@ -2181,17 +2181,17 @@ function PrintZDCalculationTable_2()
 
 				// I1.
 				temp += "<td class=\"wtn2_4 calczdcalculation_z_bg_a\">";
-				temp += "<span title=\"Ток I1\">" + I1 + "</span>";
+				temp += "<span title=\"Ток протекающий через резистор R1 (ток I1)\">" + I1 + "</span>";
 				temp += "</td>";
 
 				// I2 (ток стабилизации).
 				temp += "<td class=\"wtn2_5 calczdcalculation_z_bg_a\">";
-				temp += "<span title=\"Ток I2 (ток стабилизации)\">" + I2 + "</span>";
+				temp += "<span title=\"Ток стабилизации (ток I2)\">" + I2 + "</span>";
 				temp += "</td>";
 
 				// I3.
 				temp += "<td class=\"wtn2_6 calczdcalculation_z_bg_a\">";
-				temp += "<span title=\"Ток I3\">" + I3 + "</span>";
+				temp += "<span title=\"Ток протекающий через нагрузку (ток I3)\">" + I3 + "</span>";
 				temp += "</td>";
 
 				if (array_rtitle[1] == '0' && array_rtitle[2] == '0')
@@ -2429,17 +2429,17 @@ function InsertToModalWin2(Step, Uin, Uout, I1, I2, I3, R1, Rn, P1, P2, P3, UR1,
 
 		// I1.
 		temp += "<td class=\"calczdcalculation_z_bg_a\">";
-		temp += "<b title=\"Ток I1\"><i>I1</i>, мА</b>";
+		temp += "<b title=\"Ток протекающий через резистор R1 (ток I1)\"><i>I1</i>, мА</b>";
 		temp += "</td>";
 
 		// I2 (ток стабилизации).
 		temp += "<td class=\"calczdcalculation_z_bg_a\">";
-		temp += "<span title=\"Ток I2 (ток стабилизации)\"><i>I2</i>, мА</span>";
+		temp += "<span title=\"Ток стабилизации (ток I2)\"><i>I2</i>, мА</span>";
 		temp += "</td>";
 
 		// I3.
 		temp += "<td class=\"calczdcalculation_z_bg_a\">";
-		temp += "<b title=\"Ток I3\"><i>I3</i>, мА</b>";
+		temp += "<b title=\"Ток протекающий через нагрузку (ток I3)\"><i>I3</i>, мА</b>";
 		temp += "</td>";
 
 		// R1.
@@ -2495,17 +2495,17 @@ function InsertToModalWin2(Step, Uin, Uout, I1, I2, I3, R1, Rn, P1, P2, P3, UR1,
 
 		// I1.
 		temp += "<td class=\"calczdcalculation_z_bg_b\">";
-		temp += "<span title=\"Ток I1\">" + I1 + "</span>";
+		temp += "<span title=\"Ток протекающий через резистор R1 (ток I1)\">" + I1 + "</span>";
 		temp += "</td>";
 
 		// I2 (ток стабилизации).
 		temp += "<td class=\"calczdcalculation_z_bg_b\">";
-		temp += "<span title=\"Ток I2 (ток стабилизации)\">" + I2 + "</span>";
+		temp += "<span title=\"Ток стабилизации (ток I2)\">" + I2 + "</span>";
 		temp += "</td>";
 
 		// I3.
 		temp += "<td class=\"calczdcalculation_z_bg_b\">";
-		temp += "<span title=\"Ток I3\">" + I3 + "</span>";
+		temp += "<span title=\"Ток протекающий через нагрузку (ток I3)\">" + I3 + "</span>";
 		temp += "</td>";
 
 		// R1.
