@@ -6,7 +6,7 @@
 // | Показать модальное окно.
 // | РЕПОЗИТОРИИ.
 // ---
-function OpenShowModalWin(x)
+function OpenShowModalWin(id)
 {
 	// Слой затемнения.
 	var darkLayer = document.createElement("div");
@@ -15,7 +15,7 @@ function OpenShowModalWin(x)
 			// Включаем затемнение.
 			document.body.appendChild(darkLayer);
 
-	var modalWin = document.getElementById(x); // Находим наше "окно".
+	var modalWin = document.getElementById(id); // Находим наше "окно".
 	modalWin.style.display = "block"; // "Включаем" его.
 
 	darkLayer.onclick = function ()
@@ -38,15 +38,65 @@ function OpenShowModalWin(x)
 }
 
 // ---
-// | Закрыть модальное окно (РЕПОЗИТОРИЙ).
+// | Закрыть модальное окно.
+// | РЕПОЗИТОРИЙ.
 // ---
-function CloseModalWin(x)
+function CloseModalWin(id)
 {
 	// Удаляем затемнение.
 	var darkLayer = document.getElementById("shadow");
 	darkLayer.parentNode.removeChild(darkLayer);
 
-	var modalWin = document.getElementById(x); // Находим наше "окно".
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "none"; // "Выключаем" окно.
+}
+
+// ---
+// | Показать модальное окно.
+// | СПРАВОЧНАЯ ИНФОРМАЦИЯ ПО ПОЧТОВОМУ АДРЕСУ.
+// ---
+function OpenShowModalWinInfMailingAddres(id)
+{
+	// Слой затемнения.
+	var darkLayer = document.createElement("div");
+		// id чтобы подхватить стиль.
+		darkLayer.id = "shadowma";
+			// Включаем затемнение.
+			document.body.appendChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "block"; // "Включаем" его.
+
+	darkLayer.onclick = function ()
+		{
+		// При клике на слой затемнения, всё исчезает.
+		darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+		modalWin.style.display = "none"; // "Выключаем" окно.
+		return false;
+		}
+
+	document.addEventListener("keydown", function(e){
+		if (e.which == 27)
+			{
+			// Код, который должен быть выполнен после нажатия на кнопку ESC.
+			darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+			modalWin.style.display = "none"; // "Выключаем" окно.
+			return false;
+			}
+	});
+}
+
+// ---
+// | Закрыть модальное окно.
+// | СПРАВОЧНАЯ ИНФОРМАЦИЯ ПО ПОЧТОВОМУ АДРЕСУ.
+// ---
+function CloseModalWinInfMailingAddres(id)
+{
+	// Удаляем затемнение.
+	var darkLayer = document.getElementById("shadowma");
+	darkLayer.parentNode.removeChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
 	modalWin.style.display = "none"; // "Выключаем" окно.
 }
 
