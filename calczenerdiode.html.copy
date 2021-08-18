@@ -544,7 +544,23 @@
 
 				</td>
 
-				<td rowspan="3" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+				<td rowspan="3" align="center" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Ближайшее стандартное -->
+					<!-- Переход к калькулятору БСС (в конец странице) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="#1"
+					title="Калькулятор ближайшее стандартное сопротивление (БСС) находится в конце этой странице (нажмите)">БСС</a>
+
+					</td>
+
+					</tr>
+					</table>
 
 					<!-- Формулы закон Ома -->
 					<!-- Кнопка (открыть окно с формулами) -->
@@ -2644,7 +2660,23 @@
 
 				</td>
 
-				<td rowspan="4" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+				<td rowspan="4" align="center" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Ближайшее стандартное -->
+					<!-- Переход к калькулятору БСС (в конец странице) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="#1"
+					title="Калькулятор ближайшее стандартное сопротивление (БСС) находится в конце этой странице (нажмите)">БСС</a>
+
+					</td>
+
+					</tr>
+					</table>
 
 					<!-- Формулы закон Ома -->
 					<!-- Кнопка (открыть окно с формулами) -->
@@ -5042,7 +5074,23 @@
 
 				</td>
 
-				<td rowspan="3" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+				<td rowspan="3" align="center" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Ближайшее стандартное -->
+					<!-- Переход к калькулятору БСС (в конец странице) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="#1"
+					title="Калькулятор ближайшее стандартное сопротивление (БСС) находится в конце этой странице (нажмите)">БСС</a>
+
+					</td>
+
+					</tr>
+					</table>
 
 					<!-- Формулы закон Ома -->
 					<!-- Кнопка (открыть окно с формулами) -->
@@ -5849,7 +5897,23 @@
 
 				</td>
 
-				<td rowspan="4" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+				<td rowspan="4" align="center" class="calczdtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Ближайшее стандартное -->
+					<!-- Переход к калькулятору БСС (в конец странице) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="#1"
+					title="Калькулятор ближайшее стандартное сопротивление (БСС) находится в конце этой странице (нажмите)">БСС</a>
+
+					</td>
+
+					</tr>
+					</table>
 
 					<!-- Формулы закон Ома -->
 					<!-- Кнопка (открыть окно с формулами) -->
@@ -7749,11 +7813,22 @@
 	</td>
 	</tr>
 
+	<!-- Сюда перейти (перейти к калькулятору) -->
+
+	<tr>
+	<td>
+
+	<a name="1"></a>
+
+	</td>
+	</tr>
+
 	<!-- Продолжение Приложения 3 -->
 	<!-- Калькулятор ближайшее стандартное (БСС)-->
 
 	<tr>
 	<td id="zdbsif" align="center">
+	<!-- Сюда вставка калькулятора -->
 	</td>
 	</tr>
 
