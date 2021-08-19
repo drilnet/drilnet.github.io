@@ -8127,7 +8127,7 @@
 
 			<table cellspacing="0" cellpadding="0" border="0">
 			<tr>
-			<td class="calctktdpaddingtop calctktdpaddingbottom">
+			<td class="calctktdpaddingtopscheme calctktdpaddingbottomscheme">
 
 			<b>Схема с использованием транзистора N-P-N</b>
 
@@ -8226,7 +8226,7 @@
 
 			<table cellspacing="0" cellpadding="0" border="0">
 			<tr>
-			<td class="calctktdpaddingtop calctktdpaddingbottom">
+			<td class="calctktdpaddingtopscheme calctktdpaddingbottomscheme">
 
 			<b>Схема с использованием транзистора P-N-P</b>
 

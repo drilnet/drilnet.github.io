@@ -796,14 +796,14 @@
 	/* CALCZENERDIODE */
 	/* Уважаемый соискатель! */
 
-	.calczdperson {
+	.calczdperson { /* !!! */
 	color: #006f00;
 	}
 
 	/* CALCZENERDIODE */
 	/* Предоставляется как есть! */
 
-	.calczd_warning {
+	.calczd_warning { /* !!! */
 	color: #d00000;
 	font-size: 14px;
 	}
@@ -1966,16 +1966,24 @@
 	}
 
 	/* CALCTRANSISTORKEY */
-	/* Верхний отступ (схема, пример использования) */
+	/* Верхний отступ для надписи: */
+	/*    Схема с использованием транзистора N-P-N */
+	/*    Схема с использованием транзистора P-N-P */
 
-	.calctktdpaddingtop {
+	/* См. схема, пример использования */
+
+	.calctktdpaddingtopscheme {
 	padding-top: 8px;
 	}
 
 	/* CALCTRANSISTORKEY */
-	/* Нижний отступ (схема, пример использования) */
+	/* Нижний отступ для надписи: */
+	/*    Схема с использованием транзистора N-P-N */
+	/*    Схема с использованием транзистора P-N-P */
 
-	.calctktdpaddingbottom {
+	/* См. схема, пример использования */
+
+	.calctktdpaddingbottomscheme {
 	padding-bottom: 6px;
 	}
 
@@ -2434,4 +2442,72 @@
 	font-size: 24px;
 	padding: 0px 8px 0px 8px;
 	height: 32px;
+	}
+
+	.calclednvalign {
+	vertical-align: bottom;
+	}
+
+	/* CALCLED */
+	/* Загаловок калькулятора (фон и бордюр) */
+
+	.calcledbgtitle {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	height: 28px;
+	color: #022169;
+	width: 720px;
+	font-size: 15px;
+	margin-bottom: 4px;
+	}
+
+	/* CALCLED */
+	/* Фон и Бордюр самого калькулятора */
+
+	.calcledbg {
+	background: #f5f7f9;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 720px;
+	}
+
+	/* CALCLED */
+	/* Фон и Бордюр для схемы 1a (в калькуляторе Calc 1, Calc 2) */
+
+	.calcledbgscheme1a {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 200px;
+	}
+
+	/* CALCLED */
+	/* Фон и Бордюр для схемы 1b (в калькуляторе Calc 1, Calc 2) */
+
+	.calcledbgscheme1b {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	width: 260px;
+	}
+
+	/* CALCLED */
+	/* Горизонтальная линия в калькуляторе */
+	/* Линия 1 */
+
+	.calcledhr {
+	border: none;              /* Убираем границу для браузера Firefox    */
+	background-color: #c0c2c4; /* Цвет линии для браузера Firefox и Opera */
+	color: #c0c2c4;            /* Цвет линии для остальных браузеров      */
+	height: 1px;               /* Толщина линии                           */
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	}
+
+	/* CALCLED */
+	/* Нижний отступ. Схема (схема подключения транзистора) */
+
+	.calcledtdpaddingbottom {
+	padding-bottom: 6px;
 	}
