@@ -890,6 +890,10 @@
 	height: 32px;
 	}
 
+	.calczdnvalign {
+	vertical-align: bottom;
+	}
+
 	/* CALCZENERDIODE */
 	/* Загаловок калькулятора (фон и бордюр) */
 
@@ -1893,6 +1897,10 @@
 	height: 32px;
 	}
 
+	.calctknvalign {
+	vertical-align: bottom;
+	}
+
 	/* CALCTRANSISTORKEY */
 	/* Загаловок калькулятора (фон и бордюр) */
 
@@ -2393,3 +2401,37 @@
 		.One {
 		color: #009d44;
 		}
+
+	/* ------- */
+	/* CALCLED */
+	/* ------- */
+
+	/* CALCLED */
+	/* Маленький шрифт */
+
+	.calcledsmalltxt {
+	font-size: 11px;
+	}
+
+	/* CALCLED */
+	/* Заголовок 1 на странице (фон и бордюр) */
+
+	.calcledpagebgh1 {
+	background: #f1f8ff;
+	border: 1px solid #f1f8ff;
+	padding: 4px 4px 4px 4px;
+	color: #022169;
+	width: 100%;
+	font-size: 19px;
+	}
+
+	/* CALCLED */
+	/* Номер калькулятора (фон и бордюр) */
+
+	.calcledn {
+	background: linear-gradient(to top, #f0f4f7, #ffffff);
+	border: 1px solid #bfd1e5;
+	font-size: 24px;
+	padding: 0px 8px 0px 8px;
+	height: 32px;
+	}
