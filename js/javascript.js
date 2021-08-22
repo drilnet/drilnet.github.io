@@ -137,7 +137,7 @@ function CloseModalWinInfMailingAddres(id)
 // --
 function G15_RemoveClock()
 {
-	// Убрать иконку clock.gif (загрузка изображений).
+	// Убрать иконку clock.gif (загрузка изображений завершена).
 	document.getElementById('g15_loader').innerHTML =
 
 	"<table class=\"g15_title\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">"
