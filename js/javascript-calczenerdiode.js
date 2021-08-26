@@ -227,7 +227,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 			document.getElementById('CALCZDBS_1a').innerHTML =
 			"<span title=\"Ближайшее стандартное сопротивление\">Ближайшее стандартное (<b>E24</b>):</span>";
 
-			ArrayResistor = SearchE24(R1)
+			ArrayResistor = SearchE24(R1);
 			}
 
 		// Если набор резисторов E48.
@@ -237,7 +237,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 			document.getElementById('CALCZDBS_1a').innerHTML =
 			"<span title=\"Ближайшее стандартное сопротивление\">Ближайшее стандартное (<b>E48</b>):</span>";
 
-			ArrayResistor = SearchE48(R1)
+			ArrayResistor = SearchE48(R1);
 			}
 
 		// Если набор резисторов E96.
@@ -247,7 +247,7 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 			document.getElementById('CALCZDBS_1a').innerHTML =
 			"<span title=\"Ближайшее стандартное сопротивление\">Ближайшее стандартное (<b>E96</b>):</span>";
 
-			ArrayResistor = SearchE96(R1)
+			ArrayResistor = SearchE96(R1);
 			}
 		}
 
@@ -260,19 +260,19 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 		// Если набор резисторов E24.
 		if (document.getElementById('rb_Etable_1_1').checked)
 			{
-			ArrayResistor = SearchE24(R1)
+			ArrayResistor = SearchE24(R1);
 			}
 
 		// Если набор резисторов E48.
 		if (document.getElementById('rb_Etable_1_2').checked)
 			{
-			ArrayResistor = SearchE48(R1)
+			ArrayResistor = SearchE48(R1);
 			}
 
 		// Если набор резисторов E96.
 		if (document.getElementById('rb_Etable_1_3').checked)
 			{
-			ArrayResistor = SearchE96(R1)
+			ArrayResistor = SearchE96(R1);
 			}
 		}
 
@@ -540,7 +540,7 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 			document.getElementById('CALCZDBS_2a').innerHTML =
 			"<span title=\"Ближайшее стандартное сопротивление\">Ближайшее стандартное (<b>E24</b>):</span>";
 
-			ArrayResistor = SearchE24(R1)
+			ArrayResistor = SearchE24(R1);
 			}
 
 		// Если набор резисторов E48.
@@ -550,7 +550,7 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 			document.getElementById('CALCZDBS_2a').innerHTML =
 			"<span title=\"Ближайшее стандартное сопротивление\">Ближайшее стандартное (<b>E48</b>):</span>";
 
-			ArrayResistor = SearchE48(R1)
+			ArrayResistor = SearchE48(R1);
 			}
 
 		// Если набор резисторов E96.
@@ -560,7 +560,7 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 			document.getElementById('CALCZDBS_2a').innerHTML =
 			"<span title=\"Ближайшее стандартное сопротивление\">Ближайшее стандартное (<b>E96</b>):</span>";
 
-			ArrayResistor = SearchE96(R1)
+			ArrayResistor = SearchE96(R1);
 			}
 		}
 
@@ -575,19 +575,19 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 		// Если набор резисторов E24.
 		if (document.getElementById('rb_Etable_2_1').checked)
 			{
-			ArrayResistor = SearchE24(R1)
+			ArrayResistor = SearchE24(R1);
 			}
 
 		// Если набор резисторов E48.
 		if (document.getElementById('rb_Etable_2_2').checked)
 			{
-			ArrayResistor = SearchE48(R1)
+			ArrayResistor = SearchE48(R1);
 			}
 
 		// Если набор резисторов E96.
 		if (document.getElementById('rb_Etable_2_3').checked)
 			{
-			ArrayResistor = SearchE96(R1)
+			ArrayResistor = SearchE96(R1);
 			}
 		}
 
