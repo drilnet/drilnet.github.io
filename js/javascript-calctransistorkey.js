@@ -32,6 +32,85 @@
 // ----------
 
 // ---
+// | После загрузки страницы сделать это:
+// |   1. Установить поля ввода во всех калькуляторах.
+// |   2. Установить Option во всех калькуляторах.
+// ---
+function SetDefaultAllTK()
+{
+	// Поля ввода. Calc 1.
+
+	document.getElementById("tk1_input_1").value = 15;  // Ucc
+	document.getElementById("tk1_input_2").value = 12;  // Uin
+	document.getElementById("tk1_input_3").value = 0.3; // Uce
+	document.getElementById("tk1_input_4").value = 1;   // Ube
+	document.getElementById("tk1_input_5").value = 70;  // hFE
+	document.getElementById("tk1_input_6").value = 200; // R2
+
+	// Option. Calc 1.
+
+	document.getElementById("tk1_option_Ucc").value = 'В';
+	document.getElementById("tk1_option_Uin").value = 'В';
+	document.getElementById("tk1_option_Uce").value = 'В';
+	document.getElementById("tk1_option_Ube").value = 'В';
+	document.getElementById("tk1_option_R2").value = 'Ом';
+
+	// Поля ввода. Calc 2.
+
+	document.getElementById("tk2_input_1").value = 15;   // Ucc
+	document.getElementById("tk2_input_2").value = 12;   // Uin
+	document.getElementById("tk2_input_3").value = 0.3;  // Uce
+	document.getElementById("tk2_input_4").value = 1;    // Ube
+	document.getElementById("tk2_input_5").value = 70;   // hFE
+	document.getElementById("tk2_input_6").value = 73.5; // Ic
+
+	// Option. Calc 2.
+
+	document.getElementById("tk2_option_Ucc").value = 'В';
+	document.getElementById("tk2_option_Uin").value = 'В';
+	document.getElementById("tk2_option_Uce").value = 'В';
+	document.getElementById("tk2_option_Ube").value = 'В';
+	document.getElementById("tk2_option_Ic").value = 'мА';
+
+	// Поля ввода. Calc 3.
+
+	document.getElementById("tk2_input_1").value = 15;   // Ucc
+	document.getElementById("tk2_input_2").value = 12;   // Uin
+	document.getElementById("tk2_input_3").value = 0.3;  // Uce
+	document.getElementById("tk2_input_4").value = 1;    // Ube
+	document.getElementById("tk2_input_5").value = 70;   // hFE
+	document.getElementById("tk2_input_6").value = 73.5; // Ic
+
+	// Option. Calc 3.
+
+	document.getElementById("tk2_option_Ucc").value = 'В';
+	document.getElementById("tk2_option_Uin").value = 'В';
+	document.getElementById("tk2_option_Uce").value = 'В';
+	document.getElementById("tk2_option_Ube").value = 'В';
+	document.getElementById("tk2_option_Ic").value = 'мА';
+
+	// Поля ввода. Calc 4.
+
+	document.getElementById("tk4_input_1").value = 5;    // Ucc
+	document.getElementById("tk4_input_2").value = 2.5;  // Uin
+	document.getElementById("tk4_input_3").value = 0.1;  // Uce
+	document.getElementById("tk4_input_4").value = 0.7;  // Ube
+	document.getElementById("tk4_input_5").value = 2;    // UHL1
+	document.getElementById("tk4_input_6").value = 2000; // R1
+	document.getElementById("tk4_input_7").value = 270;  // R2
+
+	// Option. Calc 4.
+
+	document.getElementById("tk4_option_Ucc").value = 'В';
+	document.getElementById("tk4_option_Uin").value = 'В';
+	document.getElementById("tk4_option_Uce").value = 'В';
+	document.getElementById("tk4_option_Ube").value = 'В';
+	document.getElementById("tk4_option_UHL1").value = 'В';
+	document.getElementById("tk4_option_R1").value = 'Ом';
+	document.getElementById("tk4_option_R2").value = 'Ом';
+}
+
+// ---
 // | Онлайн калькулятор CALCTK_1 (Calc 1).
 // | Считаем!
 // ---
@@ -217,11 +296,14 @@ function CALCTK_1()
 }
 
 // ---
-// | Установить поля по умолчанию для CALCTK_1 (Calc 1)
+// | При нажатии на кнопку [ По умолчанию ] (для CALCTK_1, Calc 1):
+// |    1. Установить поля ввода.
+// |    2. Установить Option.
+// |    3. Сбросить вычисления.
 // ---
 function SetInputTK_1()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("tk1_input_1").value = 15;  // Ucc
 	document.getElementById("tk1_input_2").value = 12;  // Uin
@@ -229,6 +311,8 @@ function SetInputTK_1()
 	document.getElementById("tk1_input_4").value = 1;   // Ube
 	document.getElementById("tk1_input_5").value = 70;  // hFE
 	document.getElementById("tk1_input_6").value = 200; // R2
+
+	// Option.
 
 	document.getElementById("tk1_option_Ucc").value = 'В';
 	document.getElementById("tk1_option_Uin").value = 'В';
@@ -469,11 +553,14 @@ function CALCTK_2()
 }
 
 // ---
-// | Установить поля по умолчанию для CALCTK_2 (Calc 2)
+// | При нажатии на кнопку [ По умолчанию ] (для CALCTK_2, Calc 2):
+// |    1. Установить поля ввода.
+// |    2. Установить Option.
+// |    3. Сбросить вычисления.
 // ---
 function SetInputTK_2()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("tk2_input_1").value = 15;   // Ucc
 	document.getElementById("tk2_input_2").value = 12;   // Uin
@@ -481,6 +568,8 @@ function SetInputTK_2()
 	document.getElementById("tk2_input_4").value = 1;    // Ube
 	document.getElementById("tk2_input_5").value = 70;   // hFE
 	document.getElementById("tk2_input_6").value = 73.5; // Ic
+
+	// Option.
 
 	document.getElementById("tk2_option_Ucc").value = 'В';
 	document.getElementById("tk2_option_Uin").value = 'В';
@@ -749,11 +838,14 @@ function CALCTK_3()
 }
 
 // ---
-// | Установить поля по умолчанию для CALCTK_3 (Calc 3)
+// | При нажатии на кнопку [ По умолчанию ] (для CALCTK_3, Calc 3):
+// |    1. Установить поля ввода.
+// |    2. Установить Option.
+// |    3. Сбросить вычисления.
 // ---
 function SetInputTK_3()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("tk3_input_1").value = 5;   // Ucc
 	document.getElementById("tk3_input_2").value = 2.5; // Uin
@@ -762,6 +854,8 @@ function SetInputTK_3()
 	document.getElementById("tk3_input_5").value = 12;  // hFE
 	document.getElementById("tk3_input_6").value = 2;   // UHL1
 	document.getElementById("tk3_input_7").value = 10;  // Ic
+
+	// Option.
 
 	document.getElementById("tk3_option_Ucc").value = 'В';
 	document.getElementById("tk3_option_Uin").value = 'В';
@@ -1055,11 +1149,14 @@ function CALCTK_4()
 }
 
 // ---
-// | Установить поля по умолчанию для CALCTK_4 (Calc 4)
+// | При нажатии на кнопку [ По умолчанию ] (для CALCTK_4, Calc 4):
+// |    1. Установить поля ввода.
+// |    2. Установить Option.
+// |    3. Сбросить вычисления.
 // ---
 function SetInputTK_4()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("tk4_input_1").value = 5;    // Ucc
 	document.getElementById("tk4_input_2").value = 2.5;  // Uin
@@ -1068,6 +1165,8 @@ function SetInputTK_4()
 	document.getElementById("tk4_input_5").value = 2;    // UHL1
 	document.getElementById("tk4_input_6").value = 2000; // R1
 	document.getElementById("tk4_input_7").value = 270;  // R2
+
+	// Option.
 
 	document.getElementById("tk4_option_Ucc").value = 'В';
 	document.getElementById("tk4_option_Uin").value = 'В';
