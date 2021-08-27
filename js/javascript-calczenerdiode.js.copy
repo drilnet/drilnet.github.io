@@ -390,11 +390,13 @@ function CALCZDBS_1(R1, Uin, Uout, Switch)
 }
 
 // ---
-// | Установить поля по умолчанию для CALCZD_1 (калькулятор 1).
+// | Установить поля ввода по умолчанию для CALCZD_1 (калькулятор 1).
+// | Сбросить вычисления.
+// | Установить Radio Buttons на E24.
 // ---
 function SetInputZD_1()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("zd1_input_1").value = 15;
 	document.getElementById("zd1_input_2").value = 12;
@@ -841,11 +843,13 @@ function CALCZDBS_2(R1, Uin, Uout, Rn, Switch)
 }
 
 // ---
-// | Установить поля по умолчанию для CALCZD_2 (калькулятор 2).
+// | Установить поля ввода по умолчанию для CALCZD_2 (калькулятор 2).
+// | Сбросить вычисления.
+// | Установить Radio Buttons на E24.
 // ---
 function SetInputZD_2()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("zd2_input_1").value = 15;
 	document.getElementById("zd2_input_2").value = 12;
@@ -931,11 +935,12 @@ function CALCZD_3()
 }
 
 // ---
-// | Установить поля по умолчанию для CALCZD_3 (калькулятор 3).
+// | Установить поля ввода по умолчанию для CALCZD_3 (калькулятор 3).
+// | Сбросить вычисления.
 // ---
 function SetInputZD_3()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("zd3_input_1").value = 15;
 	document.getElementById("zd3_input_2").value = 12;
@@ -1019,11 +1024,12 @@ function CALCZD_4()
 }
 
 // ---
-// | Установить поля по умолчанию для CALCZD_4 (калькулятор 4).
+// | Установить поля ввода по умолчанию для CALCZD_4 (калькулятор 4).
+// | Сбросить вычисления.
 // ---
 function SetInputZD_4()
 {
-	// Поля.
+	// Поля ввода.
 
 	document.getElementById("zd4_input_1").value = 15;
 	document.getElementById("zd4_input_2").value = 12;
