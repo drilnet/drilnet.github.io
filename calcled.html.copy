@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Написано в FreeBSD, Midnight Commander. -->
+<!-- Ukraine. (C) Demidov S.V. -->
+
+	<head> 
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
+
+	<script language="javascript" src="js/javascript-calcled.js"></script>
+	<script language="javascript" src="js/javascript-bs.js"></script>
+	<script language="javascript" src="js/javascript-pop-up.js"></script>
+
+	</head>
+
+<!-- ---                                     -->
+<!-- | После загрузки страницы сделать это:  -->
+<!-- |   1. Установить поля ввода.           -->
+<!-- |   2. Установить Option.               -->
+<!-- |   3. Установить набор резисторов E24. -->
+<!-- ---                                     -->
+<body onload="SETDefaultLED();">
+
+	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+	<tr> <!-- Шапка -->
+	<td>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td width="1%" class="texthobby">
+			<b>Hobby</b>
+			</td>
+
+			<td width="1%" class="smalltxthobby" style="vertical-align: bottom; padding-left: 4px;">
+			<a href="https://drilnet.github.io" title="https://drilnet.github.io">https://drilnet.github.io</a>
+			</td>
+
+			<td align="right" class="smalltxthobby" style="vertical-align: bottom;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td align="right" style="padding-left: 8px;">
+					<i><b>Благодарность</b> (флаги расположены в алфавитном порядке):</i>
+				</td>
+
+				<td style="padding-left: 4px;">
+					<!-- Флаги -->
+					<table class="USCNRU" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons-flags/US_24x24.png"
+					title="Благодарность за GITHUB">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/CN_24x24.png"
+					title="Благодарность за радиодетали и измерительные приборы">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/RU_24x24.png"
+					title="Благодарность за сайт https://zx-pk.ru и за другие ресурсы">
+					</td>
+
+					</tr>
+					</table>
+				</td>
+
+				<td>
+					<td style="padding-left: 4px;">
+					<i><b>Успехов Вам!</b></i>
+					</td>
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+	<hr class="hrwhite">
+
+	<br>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<!-- Иконка GITHUB'а -->
+
+		<td width="1%" style="padding-right: 6px;">
+		<img class="icon" src="icons/github-logo.png" title="Лицензия на иконку: CC 3.0 BY. Автор: Dave Gandy">
+		</td>
+
+		<td>
+		<a href="https://github.com" title="https://github.com">GITHUB</a>
+		- Моя записная книжка (наброски, заметки и т.д. и т.п.)!
+		</td>
+
+		<td style="padding-right: 16px;">
+
+			<table align="right" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td style="padding: 0px 8px 0px 8px;">
+
+				<!-- Google поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://google.com" target="_blank">
+				<img class="icon" src="icons/googlesearch_20x20.png" title="Поисковая система Google">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 8px 0px 0px">
+
+				<!-- Meta поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://meta.ua" target="_blank">
+				<img class="icon" src="icons/metasearch_20x20.png" title="Украинская поисковая система Meta">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 0px 0px 0px">
+
+				<!-- Yandex поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://yandex.ru" target="_blank">
+				<img class="icon" src="icons/yandexsearch_20x20.png" title="Поисковая система Yandex">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr> <!-- Конец шапки -->
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Заголовок -->
+
+	<tr>
+	<td>
+
+		<table class="calcledpagebgh1" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+		Расчёт резистора для светодиода
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Calc 1 -->
+
+	<tr>
+	<td align="center">
+
+		<!-------------------------->
+		<!-- Онлайн-калькулятор 1 -->
+		<!-------------------------->
+
+		<!-- Номер -->
+
+		<table align="center" class="calcledn" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center" class="calclednvalign">
+		1
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table align="center" class="calcledbgtitle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Онлайн-калькулятор CALCLED</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Начало калькулятора 1 -->
+
+		<table align="center" class="calcledbg" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr">
+
+		</td>
+		</tr>
+
+		<!-- Схемы -->
+
+		<tr>
+		<td align="center" class="calcledtdpaddingbottom">
+
+		<b>Схема подключения светодиода</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td align="center">
+
+				<!-- [ 1 ] -->
+
+				<table class="calcledbgscheme1a" style="margin-bottom: 6px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<br>
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+						<!-- Схема 1 (без вольтметров) -->
+						<img class="icon" src="images-calcled/Schemes/Scheme LED 150dpi - 1.png"
+						title="Нарисовано в TinyCAD">
+
+					</td>
+
+					<td valign="bottom" style="padding-left: 8px;">
+
+						<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+						<tr>
+						<td>
+
+						<!-- Ссылка на TinyCAD -->
+						<a href="https://www.tinycad.net" target="_blank">
+						<img class="icon" src="icons/TinyCAD_20x20.png"
+						title="Редактор схем TinyCAD (откроется в новой вкладке)">
+						</a>
+
+						</td>
+						</tr>
+
+						</table>
+
+					</td>
+
+					</tr>
+					</table>
+
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			Схема без вольтметров
+
+			</td>
+
+			<td align="center" style="padding-left: 16px; padding-bottom: 0px;">
+
+				<!-- [ 2 ] -->
+
+				<table class="calcledbgscheme1b" style="margin-bottom: 6px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<br>
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+						<!-- Схема 2 (с вольтметрами) -->
+						<img class="icon" src="images-calcled/Schemes/Scheme LED 150dpi - 2.png"
+						title="Нарисовано в TinyCAD">
+
+					</td>
+
+					<td valign="bottom" style="padding-left: 8px;">
+
+						<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+						<tr>
+						<td>
+
+						<!-- Ссылка на TinyCAD -->
+						<a href="https://www.tinycad.net" target="_blank">
+						<img class="icon" src="icons/TinyCAD_20x20.png"
+						title="Редактор схем TinyCAD (откроется в новой вкладке)">
+						</a>
+
+						</td>
+						</tr>
+
+						</table>
+
+					</td>
+
+					</tr>
+					</table>
+
+				<br>
+
+				</td>
+				</tr>
+				</table>
+
+			Схема с вольтметрами
+
+			</td>
+
+			</tr>
+			</table>
+
+			<!-- Переменные -->
+
+			<table style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calcledsmalltxt">
+
+					Ток светодиода (ток цепи), переменная: <i><b>I</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calcledsmalltxt">
+
+					Резистор <b>R1</b>, переменные: <i><b>R1</b></i>, <i><b>P1</b></i>, <i><b>UR1</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calcledsmalltxt">
+
+					Светодиод <b>HL1</b>, переменные: <i><b>RHL1</b></i>, <i><b>P2</b></i>, <i><b>UHL1</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="left" class="calcledsmalltxt">
+
+					Ещё переменная: <i><b>Uin</b></i>.
+
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr">
+
+		</td>
+		</tr>
+
+		<!-- Ввод данных -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calcledsmalltxt calcledcolorprompt1">
+
+			Наведите курсор мыши на поле ввода (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Ввод -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<!--------->
+				<!-- Uin -->
+				<!--------->
+				<td align="right" class="calcledtdpadding calcledtdcolorline" style="border-left: 1px solid;">
+				<span class="calcledinputcolortext">&nbsp;Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calcledinputpx" step="0.1" min="-2147483647" max="2147483647" id="led1_input_1" value="5"
+				title="Входное напряжение Uin">
+				</td>
+
+				<td>
+				&nbsp;<select id="led1_option_Uin">
+					<option select value="В" selected>В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле Uin ] -->
+				<td class="calcledtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('led1_input_1')"
+				title="Очистить поле Uin">Очистить</a>&nbsp;
+				</td>
+
+				<td rowspan="3" class="calcledtdcolorline" style="border-right: 1px solid;">
+
+					<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td style="padding: 0px 6px 3px 6px;">
+
+						<!-- Кнопка: [ Очистить все поля ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:ClearInputArray(idElementArray=['led1_input_1', 'led1_input_2', 'led1_input_3'])"
+						title="Очистить все поля (Uin, UHL1, I)">Очистить все</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					<tr>
+					<td style="padding: 3px 6px 0px 6px;">
+
+						<!-- Кнопка: [ Установить поля по умолчанию ] -->
+
+						<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+
+						<td>
+
+						<a href="javascript:SetInputLED_1()"
+						title="Установить поля Uin, UHL1, I по умолчанию, плюс сбросить вычисления">По умолчанию</a>
+
+						</td>
+
+						</tr>
+						</table>
+
+					</td>
+					</tr>
+
+					</table>
+
+				</td>
+
+				<td rowspan="3" align="center" class="calcledtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Ближайшее стандартное -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Сначало вставить, потом показать! -->
+					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!---------->
+				<!-- UHL1 -->
+				<!---------->
+				<td align="right" class="calcledtdpadding calcledtdcolorline" style="border-left: 1px solid;">
+				<span class="calcledinputcolortext">&nbsp;Введите <i><b>UHL1</b></i>:&nbsp;</span><input type="number" class="calcledinputpx" step="0.1" min="-2147483647" max="2147483647" id="led1_input_2" value="2"
+				title="Падение напряжения на светодиоде HL1 (UHL1)">
+				</td>
+
+				<td>
+				&nbsp;<select id="led1_option_UHL1">
+					<option select value="В" selected>В</option>
+					<option select value="мВ">мВ</option>
+					<option select value="мкВ">мкВ</option>
+				</select>&nbsp;
+				</td>
+
+				<!-- Кнопка: [ Очистить поле UHL1 ] -->
+				<td class="calcledtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('led1_input_2')"
+				title="Очистить поле UHL1">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<!------->
+				<!-- I -->
+				<!------->
+				<td align="right" class="calcledtdpadding calcledtdcolorline" style="border-left: 1px solid;">
+				<span class="calcledinputcolortext">Введите <i><b>I</b></i>:&nbsp;</span><input type="number" class="calcledinputpx" step="0.1" min="-2147483647" max="2147483647" id="led1_input_3" value="10"
+				title="Ток светодиода (ток цепи)">
+				</td>
+
+				<td>
+				&nbsp;<select id="led1_option_I">
+					<option select value="А">А</option>
+					<option select value="мА" selected>мА</option>
+					<option select value="мкА">мкА</option>
+				</select>&nbsp;
+				</td>
+
+
+				<!-- Кнопка: [ Очистить поле I ] -->
+				<td class="calcledtdcolorline" style="border-left: 1px solid; border-right: 1px solid;">
+				&nbsp;<a href="javascript:ClearInput('led1_input_3')"
+				title="Очистить поле I">Очистить</a>&nbsp;
+				</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr">
+
+		</td>
+		</tr>
+
+		<!-- Кнопка "Посчитать" -->
+
+		<tr>
+		<td align="center">
+
+		<input type="submit" onclick="CALCLED_1()" value="Посчитать">
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr">
+
+		</td>
+		</tr>
+
+		<!-- Примечание. -->
+		<!-- Как настроены поля ввода (описание) -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td colspan="3" align="left" style="padding-bottom: 3px;">
+				Настройки полей ввода:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="right">
+				<i><b>Uin</b></i>, <i><b>UHL1</b></i>, <i><b>I</b></i>
+				</td>
+
+				<td style="padding-left: 6px; padding-right: 6px;">-</td>
+
+				<td align="left">
+				от -2147483647 и до 2147483647, с шагом 0.1.
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Можно ввести и другие числа... -->
+
+			<table class="calctkbgwarning" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<!-- Warning -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+					<td align="left">
+					Внимание!
+					<br>
+					В поля ввода можно ввести и другие числа!
+					<br>
+					Количество знаков после точки (запятой), можно ввести больше одного знака!
+					</td>
+				</tr>
+
+				<tr>
+					<td align="left">
+					При этом <font class="calctktxtinputframe">красная рамка</font> вокруг поля ввода не считается ошибкой!
+					</td>
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calctkhr">
+
+		</td>
+		</tr>
+
+		<!-- Результаты счёта -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td class="calcledsmalltxt calcledcolorprompt1">
+
+			Наведите курсор мыши на переменную (будет подсказка)!
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Счёт  --->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<!-- Line -->
+				<td colspan="2">
+				<hr class="calcledhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- UR1 -->
+				<td align="right">
+				<span title="Напряжение на резисторе R1"><i><b>UR1</b></i></span>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="led1_result_UR1">
+				<span class="calcledcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- Line -->
+				<td colspan="2">
+				<hr class="calcledhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- R1 -->
+				<td align="right">
+				<i><b title="Сопротивление резистора R1">R1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="led1_result_R1">
+				<span class="calcledcolorquestions">?</span>
+				</td>
+
+			</tr>
+
+			<tr>
+				<!-- RHL1 -->
+				<td align="right">
+				<i><b title="Сопротивление светодиода HL1">RHL1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="led1_result_RHL1">
+				<span class="calcledcolorquestions">?</span>
+				</td>
+
+			</tr>
+
+			<tr>
+				<!-- Line -->
+				<td colspan="2">
+				<hr class="calcledhr">
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P1 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на резисторе R1 (P1)">P1</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="led1_result_P1">
+				<span class="calcledcolorquestions">?</span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- P2 -->
+				<td align="right">
+				<i><b title="Рассеиваемая мощность на светодиоде HL1 (P2)">P2</b></i>&nbsp;=&nbsp;
+				</td>
+
+				<td align="left" id="led1_result_P2">
+				<span class="calcledcolorquestions">?<span>
+				</td>
+			</tr>
+
+			<tr>
+				<!-- Line -->
+				<td colspan="2">
+				<hr class="calcledhr">
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr2">
+
+		</td>
+		</tr>
+
+		<!-- Ближайшее стандартное -->
+
+		<tr>
+		<td align="center">
+
+			<!-- E24, E48, E96 -->
+
+			<div style="padding-bottom: 8px;">
+			Выберите нужный набор резисторов
+			<br>
+			и нажмите кнопку "<b>Посчитать</b>"
+			</div>
+
+			<!-- Выбор: E24 или E48 или E96. -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- E24 -->
+				<td>
+				<span title="Всех резисторов: 216. Точность резисторов: ±5%">Набор резисторов <b>E24</b>:</span>&nbsp;
+				</td>
+
+				<td class="calcledrbpaddingb calcledrbpaddingr">
+
+					<!-- [ x ] -->
+					<input name="LEDRB1" id="rbled_1" class="calcledradiobutton" type="radio" value="" checked>
+					<label for="rbled_1" class="calcled_label_radio" title="Всех резисторов: 216. Точность резисторов: ±5%"></label>
+
+				</td>
+
+				<!-- E48 -->
+				<td>
+				&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 384. Точность резисторов: ±2%">Набор резисторов <b>E48</b>:</span>&nbsp;
+				</td>
+
+				<td class="calcledrbpaddingb calcleddrbpaddingr">
+
+					<!-- [   ] -->
+					<input name="LEDRB1" id="rbled_2" class="calcledradiobutton" type="radio" value="">
+					<label for="rbled_2" class="calcled_label_radio" title="Всех резисторов: 384. Точность резисторов: ±2%"></label>
+
+				</td>
+
+				<!-- E96 -->
+				<td>
+				&nbsp;&nbsp;&nbsp;<span title="Всех резисторов: 768. Точность резисторов: ±1%">Набор резисторов <b>E96</b>:</span>&nbsp;
+				</td>
+
+				<td class="calcledrbpaddingb">
+
+					<!-- [   ] -->
+					<input name="LEDRB1" id="rbled_3" class="calcledradiobutton" type="radio" value="">
+					<label for="rbled_3" class="calcled_label_radio" title="Всех резисторов: 768. Точность резисторов: ±1%"></label>
+
+				</td>
+
+			</tr>
+			</table>
+
+			<!-- Здесь какой ряд выбран (E24, E48 или E96) -->
+
+			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<img src="images-calczd/warning.png" title="Ближайшее стандартное! Округление до двух знаков после точки!">
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td id="CALCLEDBS_1a">
+				<span title="Ближайшее стандартное сопротивление">Ближайшее стандартное (<b>E24</b>):</span>
+				</td>
+
+			</tr>
+			</table>
+
+			<!-- Здесь расчёты ближайшего стандартного -->
+
+			<div id="CALCLEDBS_1b" style="margin-top: 6px;" >
+			<span class="calcledcolorquestions">?</span>
+			</div>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия (короткая) -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr2">
+
+		</td>
+		</tr>
+
+		<!-- Где можно проверить результаты расчётов -->
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<b>Уважаемый соискатель!</b>
+			<br>
+			Проверить результаты расчётов можно в программе <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" title="Откроется в новой вкладке" target="_blank">LTspice XVII</a>!
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr">
+
+		</td>
+		</tr>
+
+		<!-- Спойлер. Используемые формулы -->
+
+		<tr>
+		<td align="center">
+
+			<!-- Кнопка -->
+
+			<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			<span class="calczdspoiler"
+			onclick="document.getElementById('led1sp').style.display = (document.getElementById('led1sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<b>Используемые формулы</b>
+
+			</span>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<!-- То, что под спойлером -->
+
+		<div id="led1sp" style="display: none; width: 100%;">
+
+			<!-- Ссылки на Вики -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+				<a href="https://ru.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Русской Вики</a>
+				<br>
+				<a href="https://uk.wikipedia.org/wiki/Закон_Ома" title="Откроется в новой вкладке" target="_blank">Закон Ома в Украинской Вики</a>
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Наведите курсор мыши на формулу! -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center" class="calczdcolorpromptf">
+
+				<br>
+				Наведите курсор мыши на формулу (будет подсказка)!
+				<br>
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Формулы -->
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим UR1, UR1 = Uin - UHL1 -->
+				<img class="icon" title="Находим напряжение на резисторе R1" src="images-calcled/1. Formula 1. Find UR1.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим R1, R1 = UR1 / I -->
+				<img class="icon" title="Находим сопротивление резистора R1" src="images-calcled/1. Formula 2. Find R1.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим RHL1, RHL1 = Uin / I - R1 -->
+				<img class="icon" title="Находим сопротивление светодиода HL1" src="images-calcled/1. Formula 3. Find RHL1.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим P1, P1 = UR1 * I -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1 (P1)" src="images-calcled/1. Formula 4. Find P1.png">
+
+				<br>
+
+				<!-- Формула, находим P2, P2 = UHL1 * I -->
+				<img class="icon" title="Рассеиваемая мощность на светодиоде HL1 (P2)" src="images-calcled/1. Formula 5. Find P2.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			<br>
+			Формулы по которым делаются дополнительные расчёты (см. ниже),
+			<br>
+			ближайшее стандартное (без <span title="Напряжение на резисторе R1"><b>UR1<b></span>):
+			<br>
+			<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Рамка для основной формулы -->
+
+				<table class="calczdbgformulasbasis" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Формула, находим I, I = (Uin - UHL1) / R1 -->
+				<img class="icon" title="Находим ток светодиода (ток цепи)" src="images-calcled/3. Formula 1. Find I.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<table class="calczdbgformulas" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<br>
+
+				<!-- Формула, находим P1, P1 = (Uin - UHL1) * I -->
+				<img class="icon" title="Рассеиваемая мощность на резисторе R1 (P1)" src="images-calcled/3. Formula 2. Find P1.png">
+
+				<br>
+
+				<!-- Формула, находим P2, P2 = UHL1 * I -->
+				<img class="icon" title="Рассеиваемая мощность на светодиоде HL1 (P1)" src="images-calcled/3. Formula 3. Find P2.png">
+
+				<br>
+
+			</td>
+			</tr>
+			</table>
+
+			<!-- Примечание -->
+
+			<table class="calczdremark" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td align="center" style="padding-bottom: 2px;">
+				<br>
+				<b>Примечание.</b>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+				Формулы сделаны с помощью <a href="http://primat.org/mathred/mathred.html" title="WEB-редактор формул (откроется в новой вкладке)" target="_blank">редактора формул</a> (<b>LaTex</b>)
+				<br>
+				с последующими правками в графическом редакторе <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>.
+				<br>
+				Спасибо <a href="http://primat.org" title="Откроется в новой вкладке" target="_blank">http://primat.org</a>
+				<br>
+				<br>
+				</td>
+			</tr>
+
+			</table>
+
+		</div> <!-- Конец спойлера -->
+
+		</td>
+		</tr>
+
+		<!-- Горизонтальная линия -->
+
+		<tr>
+		<td>
+
+		<hr class="calcledhr">
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Подвал -->
+
+	<tr>
+	<td align="center" class="smalltxtfooter footer_p">
+
+	<b>Никогда не сдавайся!</b>
+	<br>
+	Написать мне можно на (замечания, предложения): stdls[ухо]mail.ru или bbarsinov[ухо]gmail.com
+	<br>
+	<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+
+	</td>
+	</tr>
+
+	<!-- Иконка -->
+
+	<tr>
+	<td align="center">
+
+	<img src="icons/Disabled_Person_(mini).gif" title="Человек с ограниченными возможностями">
+
+	</td>
+	</tr>
+
+	</table>
+
+	<!--                       -->
+	<!-- Модальное окно        -->
+	<!-- Ближайшее стандартное -->
+	<!--                       -->
+
+	<div id="ModalWinBS" class="bsmodalwin">
+	</div>
+
+	<!--           -->
+	<!-- Окно      -->
+	<!-- Закон Ома -->
+	<!--           -->
+
+	<div id="ZOm" align="center" class="pop-up-window_zom">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+				Формулы
+				</td>
+				</tr>
+				</table>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td style="padding-top: 6px;">
+
+			<!-- Изображение (формулы) -->
+			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
+			<img class="icon" src="images-ohm/formulas-zom_080_percent.png"
+			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
+			</a>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
+
+				<!-- Инфо -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<b>U</b> - Напряжение
+					<br>
+					<b>I</b> - Сила тока
+					<br>
+					<b>P</b> - Мощность
+					<br>
+					<b>R</b> - Сопротивление
+
+					</td>
+					</tr>
+
+				</table>
+
+			</td>
+		</tr>
+
+		</table>
+
+		<!-- Кнопка -->
+
+		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
+		</td>
+		</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
