@@ -53,9 +53,9 @@ function SETDefaultLED()
 
 	// Набор резисторов (E24, E48, E96).
 
-	document.getElementById('rbled_1').checked = true;  // E24.
-	document.getElementById('rbled_2').checked = false; // E48.
-	document.getElementById('rbled_3').checked = false; // E96.
+	document.getElementById('rbled_1').checked = true;  // E24. [ x ]
+	document.getElementById('rbled_2').checked = false; // E48. [   ]
+	document.getElementById('rbled_3').checked = false; // E96. [   ]
 }
 
 // ---
@@ -360,9 +360,9 @@ function SetInputLED_1()
 	// Radio Buttons.
 	// Набор резисторов (E24, E48, E96).
 
-	document.getElementById('rbled_1').checked = true;  // E24.
-	document.getElementById('rbled_2').checked = false; // E48.
-	document.getElementById('rbled_3').checked = false; // E96.
+	document.getElementById('rbled_1').checked = true;  // E24. [ x ]
+	document.getElementById('rbled_2').checked = false; // E48. [   ]
+	document.getElementById('rbled_3').checked = false; // E96. [   ]
 
 	// Установить на странице E24.
 
