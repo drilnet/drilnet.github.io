@@ -241,7 +241,7 @@ function BShtmlcode()
 		string += "<!-- Результат сюда -->";
 
 		string += "<tr>";
-		string += "<td id=\"CALCZDBSR\" align=\"center\" class=\"calczdbsr\">";
+		string += "<td id=\"CALCZDBSR\" align=\"center\" class=\"calczdbsr\" style=\"padding-top: 3px; padding-bottom: 3px;\">";
 
 			string += "Ближайшее стандартное (<b>E24<b>): <span class=\"bsrquestion\">?</span>";
 
