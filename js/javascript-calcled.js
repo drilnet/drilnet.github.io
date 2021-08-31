@@ -39,23 +39,40 @@
 // ---
 function SETDefaultLED()
 {
+	// Calc 1.
 	// Поля ввода.
 
 	document.getElementById("led1_input_1").value = 5;
 	document.getElementById("led1_input_2").value = 2;
 	document.getElementById("led1_input_3").value = 10;
 
+	// Calc 1.
 	// Option.
 
 	document.getElementById("led1_option_Uin").value = 'В';
 	document.getElementById("led1_option_UHL1").value = 'В';
 	document.getElementById("led1_option_I").value = 'мА';
 
+	// Calc 1.
 	// Набор резисторов (E24, E48, E96).
 
 	document.getElementById('rbled_1').checked = true;  // E24. [ x ]
 	document.getElementById('rbled_2').checked = false; // E48. [   ]
 	document.getElementById('rbled_3').checked = false; // E96. [   ]
+
+	// Calc 2.
+	// Поля ввода.
+
+	document.getElementById("led2_input_1").value = 5;
+	document.getElementById("led2_input_2").value = 2;
+	document.getElementById("led2_input_3").value = 300;
+
+	// Calc 2.
+	// Option.
+
+	document.getElementById("led2_option_Uin").value = 'В';
+	document.getElementById("led2_option_UHL1").value = 'В';
+	document.getElementById("led2_option_R1").value = 'Ом';
 }
 
 // ---
@@ -372,4 +389,139 @@ function SetInputLED_1()
 	// Ближайшее стандартное.
 
 	document.getElementById('CALCLEDBS_1b').innerHTML = "<span class=\"calczdcolorquestions\">?</span>";
+}
+
+// ---
+// | Онлайн калькулятор CALCLED_2 (Calc 2).
+// | Считаем!
+// ---
+function CALCLED_2()
+{
+	var Uin = Number(document.getElementById("led2_input_1").value);
+		var UHL1 = Number(document.getElementById("led2_input_2").value);
+			var R1 = Number(document.getElementById("led2_input_3").value);
+
+	var Option_Uin = document.getElementById("led2_option_Uin").value;
+		var Option_UHL1 = document.getElementById("led2_option_UHL1").value;
+			var Option_R1 = document.getElementById("led2_option_R1").value;
+
+	// ---
+
+	if (Option_Uin == 'мВ')
+		{
+		Uin = Uin / 1000; // мВ в В.
+		}
+
+	if (Option_UHL1 == 'мВ')
+		{
+		Uin = Uin / 1000; // мВ в В.
+		}
+
+	// ---
+
+	if (Option_Uin == 'мкВ')
+		{
+		Uin = Uin / 1000 / 1000; // мкВ в В.
+		}
+
+	if (Option_UHL1 == 'мкВ')
+		{
+		Uin = Uin / 1000 / 1000; // мкВ в В.
+		}
+
+	// ---
+
+	if (Option_R1 == "кОм")
+		{
+		I = I / 1000; // мА в А.
+		}
+
+	if (Option_R1 == "мОм")
+		{
+		I = I / 1000 / 1000; // мкА в A.
+		}
+
+	// ---
+
+	// Вычисления.
+
+	var UR1 = Uin - UHL1;
+		var I = UR1 / R1;
+			var RHL1 = Uin / I - R1;
+				var P1 = UR1 * I;
+					var P2 = UHL1 * I;
+
+	// Результат на HTML-страницу.
+
+	document.getElementById('led2_result_UR1').innerHTML =
+		'<span class="calcledcolorresult">'
+		+ UR1 * 1000 * 1000 + '&nbsp;<b>мкВ</b>,&nbsp;'
+			+ UR1 * 1000 + '&nbsp;<b>мВ</b>,&nbsp;'
+				+ UR1 + '&nbsp;<b>В</b>.'
+					+ '</span>';
+
+	document.getElementById('led2_result_I').innerHTML =
+	'<span class="calcledcolorresult">'
+		+ I * 1000 * 1000 + '&nbsp;<b>мкА</b>,&nbsp;'
+			+ I * 1000 + '&nbsp;<b>мА</b>,&nbsp;'
+				+ I + '&nbsp;<b>А</b>.'
+					+ '</span>';
+
+	document.getElementById('led2_result_RHL1').innerHTML =
+		'<span class="calcledcolorresult">'
+		+ RHL1 + '&nbsp;<b>Ом</b>,&nbsp;'
+			+ RHL1 / 1000 + '&nbsp;<b>кОм</b>,&nbsp;'
+				 + RHL1 / 1000 / 1000 + '&nbsp;<b>мОм</b>.'
+					+ '</span>';
+
+	document.getElementById('led2_result_P1').innerHTML =
+		'<span class="calcledcolorresult">'
+		+ P1 * 1000 + '&nbsp;<b>мВт</b>,&nbsp;'
+			+ P1 + '&nbsp;<b>Вт</b>.'
+				 + '</span>';
+
+	document.getElementById('led2_result_P2').innerHTML =
+	'<span class="calcledcolorresult">'
+		+ P2 * 1000 + '&nbsp;<b>мВт</b>,&nbsp;'
+			+ P2 + '&nbsp;<b>Вт</b>.'
+				 + '</span>';
+}
+
+// ---
+// | При нажатии на кнопку [ По умолчанию ] (для CALCLED_2, Calc 2):
+// |    1. Установить поля ввода.
+// |    2. Установить Option.
+// |    3. Сбросить вычисления.
+// ---
+function SetInputLED_2()
+{
+
+	// Поля ввода.
+
+	document.getElementById("led2_input_1").value = 5;
+	document.getElementById("led2_input_2").value = 2;
+	document.getElementById("led2_input_3").value = 300;
+
+	// Option.
+
+	document.getElementById("led2_option_Uin").value = 'В';
+	document.getElementById("led2_option_UHL1").value = 'В';
+	document.getElementById("led2_option_R1").value = 'Ом';
+
+	// Сбросить вычисления.
+
+	document.getElementById('led2_result_UR1').innerHTML =
+		'<span class="calcledcolorquestions">?</span>';
+
+	document.getElementById('led2_result_I').innerHTML =
+		'<span class="calcledcolorquestions">?</span>';
+
+	document.getElementById('led2_result_RHL1').innerHTML =
+		'<span class="calcledcolorquestions">?</span>';
+
+	document.getElementById('led2_result_P1').innerHTML =
+		'<span class="calcledcolorquestions">?</span>';
+
+	document.getElementById('led2_result_P2').innerHTML =
+		'<span class="calcledcolorquestions">?</span>';
 }
