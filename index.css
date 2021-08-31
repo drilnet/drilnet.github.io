@@ -2625,6 +2625,73 @@
 	color: #b0b2b4;
 	}
 
+/* --- */
+
+		/* CALCLED */
+		/* Заголовок спойлера */
+
+		.calcledspoiler { /* Без наведения */
+		color: #006699;
+		text-decoration: none;
+		cursor: pointer;
+		}
+
+		/* CALCLED */
+		/* Заголовок спойлера */
+
+		.calcledspoiler:hover{ /* При наведении */
+		color: #006699;
+		text-decoration: underline;
+		}
+
+		/* CALCLED */
+		/* Заголовок спойлера */
+
+		.calcledspoiler:visited { /* Визит */
+		color: #006699;
+		text-decoration: none;
+		}
+
+/* --- */
+
+	/* CALCLED */
+	/* Цвет примечанию. Наведите курсор мыши на формулу (будет подсказка)! */
+
+	.calcledcolorpromptf {
+	color: #333333;
+	}
+
+	/* CALCLED */
+	/* Фон и Бордюр для формул */
+
+	.calcledbgformulas {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	margin-top: 8px;
+	padding: 4px;
+	width: 612px;
+	}
+
+	/* CALCLED */
+	/* Фон и бордюр для основной формулы */
+
+	.calcledbgformulasbasis {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 6px 4px 6px;
+	}
+
+	/* CALCLED */
+	/* Примечание для формул */
+
+	.calcledremark {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	margin-top: 8px;
+	padding: 4px;
+	width: 612px;
+	}
+
 	/* CALCLED */
 	/* Размер поля (длина) ввода чисел */
 
