@@ -1,0 +1,6179 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Написано в FreeBSD, Midnight Commander. -->
+<!-- Ukraine. (C) Demidov S.V. -->
+
+	<head> 
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+
+	<!-- Документ кэшируется во всех доступных кэшах -->
+<!--	<meta http-equiv="Cache-Control" content="public"> -->
+
+        <!--                           -->
+	<!-- Примечание:               -->
+	<!--                           -->
+	<!--    86400 сек. - 1 сутки   -->
+	<!--   604800 сек. - 7 суток   -->
+	<!--  2678400 сек. - 31 суток  -->
+	<!--  8035200 сек. - 93 суток  -->
+	<!-- 16070400 сек. - 186 суток -->
+
+	<!-- Указывает браузеру сколько секунд хранить документ в кэше (8035200 = 93 суток) -->
+<!--	<meta http-equiv="Cache-Control" content="max-age=8035200, must-revalidate"> -->
+
+<!-- -->
+
+	<meta name="keywords" content="hobby, hobby github, hobby github demidov, hobby github demidov s">
+	<meta name="keywords" content="hobby github demidov s.v, hobby github demidov s.v.">
+	<meta name="keywords" content="demidov github, demidov s github, demidov s.v github">
+	<meta name="keywords" content="demidov s.v. github, demidov stanislav github">
+
+	<meta name="keywords" content="demidov, demidov s, demidov s.v, demidov s.v., demidov stanislav">
+
+<!-- -->
+
+	<meta name="keywords" content="модель игральной кости, игральная кость">
+	<meta name="keywords" content="игральная кость blender, игральная кость blender3d, игральная кость blender-3d">
+	<meta name="keywords" content="dice blender, dice blender3d, dice blender-3d">
+	<meta name="keywords" content="dice2 blender, dice2 blender3d, dice2 blender-3d">
+	<meta name="keywords" content="кубик blender, кубик blender3d, кубик blender-3d">
+
+	<meta name="keywords" content="анимированный кубик, анимированный dice, анимированный dice2">
+	<meta name="keywords" content="анимированная игральная кость">
+
+<!-- -->
+
+	<meta name="keywords" content="модель мотора">
+	<meta name="keywords" content="мотор blender, мотор blender3d, мотор blender-3d">
+	<meta name="keywords" content="motor blender, motor blender3d, motor blender-3d">
+
+<!-- -->
+
+	<meta name="keywords" content="государственная символика украины">
+	<meta name="keywords" content="флаг blender, флаг blender3d, флаг blender-3d">
+	<meta name="keywords" content="герб blender, герб blender3d, герб blender-3d">
+	<meta name="keywords" content="флаг украины, герб украины">
+
+<!-- -->
+
+	<meta name="keywords" content="disabled person blender, disabled person blender3d, disabled person blender-3d">
+	<meta name="keywords" content="анимированная иконка, анимированная иконка blender">
+	<meta name="keywords" content="анимированная иконка blender3d, анимированная иконка blender-3d">
+	<meta name="keywords" content="инвалид blender, инвалид blender3d, инвалид blender-3d">
+
+<!-- -->
+
+	<meta name="keywords" content="флоппи диск, флоппи диск 3.5">
+	<meta name="keywords" content="флоппи blender, флоппи blender3d, флоппи blender-3d">
+	<meta name="keywords" content="диск blender, диск blender3d, диск blender-3d">
+	<meta name="keywords" content="флоппи диск blender, флоппи диск blender3d, флоппи диск blender-3d">
+
+<!-- -->
+
+	<meta name="keywords" content="логотип vrLE8, логотип vrLE16, logo vrle8, logo vrle16, логотип rle, logo rle">
+	<meta name="keywords" content="логотип vrLE8 blender, логотип vrLE16 blender, logo vrle8 blender, logo vrle16 blender, логотип rle blender, logo rle blender">
+	<meta name="keywords" content="логотип vrLE8 blender3d, логотип vrLE16 blender3d, logo vrle8 blender3d, logo vrle16 blender3d, логотип rle blender3d, logo rle blender3d">
+	<meta name="keywords" content="логотип vrLE8 blender-3d, логотип vrLE16 blender-3d, logo vrle8 blender-3d, logo vrle16 blender-3d, логотип rle blender-3d, logo rle blender-3d">
+
+<!-- -->
+
+	<meta name="keywords" content="tea2025b, tea2025b blender, tea2025b blender3d, tea2025b blender-3d">
+	<meta name="keywords" content="tea2025b в 3d">
+
+<!-- -->
+
+	<meta name="keywords" content="подписываем цифровые фотографии, скрипт цифровые фотографии">
+	<meta name="keywords" content="подписываем цифровые фото, скрипт цифровые фото">
+	<meta name="keywords" content="подписываем фотографии">
+	<meta name="keywords" content="подписываем фото">
+
+<!-- -->
+
+	<meta name="keywords" content="вектор, вектор-06ц, вектор06ц, вектор06">
+
+	<meta name="keywords" content="вектор украина">
+	<meta name="keywords" content="вектор-06ц украина, вектор-06 украина">
+	<meta name="keywords" content="вектор06ц украина, вектор06 украина">
+
+<!-- -->
+
+	<meta name="keywords" content="ожившее кино">
+	<meta name="keywords" content="вектор-06ц ожившее кино, вектор-06 ожившее кино, вектор ожившее кино">
+	<meta name="keywords" content="вектор06ц ожившее кино, вектор06 ожившее кино">
+	<meta name="keywords" content="вектор-06ц кино, вектор-06 кино, вектор кино">
+	<meta name="keywords" content="вектор06ц кино, вектор06 кино">
+
+<!-- -->
+
+	<meta name="keywords" content="конвертер графических файлов spr в bmp, spr в bmp, spr2bmp">
+	<meta name="keywords" content="spr, spr вектор-06ц, spr вектор-06, spr вектор">
+	<meta name="keywords" content="spr вектор06ц, spr вектор06">
+	<meta name="keywords" content="spr, spr vector-06c, spr vector-06, spr vector">
+
+<!-- -->
+
+	<meta name="keywords" content="конвертер графических файлов grf в bmp, grf в bmp, grf2bmp">
+	<meta name="keywords" content="grf, grf вектор-06ц, grf вектор-06, grf вектор">
+	<meta name="keywords" content="grf вектор06ц, grf вектор06">
+	<meta name="keywords" content="grf, grf vector-06c, grf vector-06, grf vector">
+
+<!-- -->
+
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор'а-06Ц">
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор'а-06">
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор'а">
+	<meta name="keywords" content="Скрипт, который показывает все цвета Вектор">
+	<meta name="keywords" content="perl фото, perl фотографии">
+	<meta name="keywords" content="perl скрипт фото, perl скрипт фотографии">
+	<meta name="keywords" content="perl photo, perl photos">
+	<meta name="keywords" content="perl script photo, perl script photos">
+
+<!-- -->
+
+	<meta name="keywords" content="rle кодирование/декодирование своими руками">
+	<meta name="keywords" content="rle кодирование">
+	<meta name="keywords" content="rle декодирование">
+	<meta name="keywords" content="rle">
+
+<!-- -->
+
+	<meta name="keywords" content="puzle15, puzzle 15, game15, game 15">
+	<meta name="keywords" content="puzle15 js, puzzle 15 js, game15 js, game 15 js">
+	<meta name="keywords" content="puzle15 javascript, puzzle 15 javascript, game15 javascript, game 15 javascript">
+	<meta name="keywords" content="puzle15 html js, puzzle 15 html js, game15 html js, game 15 html js">
+	<meta name="keywords" content="puzle15 html javascript, puzzle 15 html javascript, game15 html javascript, game 15 html javascript">
+	<meta name="keywords" content="пятнашки">
+	<meta name="keywords" content="пятнашки js, пятнашки javascript ">
+	<meta name="keywords" content="пятнашки html js, пятнашки html javascript ">
+	<meta name="keywords" content="пятнашки на js, пятнашки на javascript ">
+	<meta name="keywords" content="пятнашки на html js, пятнашки на html javascript ">
+
+<!-- -->
+
+	<meta name="keywords" content="усилитель звука на микросхеме tea2025b">
+	<meta name="keywords" content="усилитель звука tea2025b">
+	<meta name="keywords" content="усилитель tea2025b">
+
+	<meta name="keywords" content="усилитель звука на микросхеме tea2025">
+	<meta name="keywords" content="усилитель звука tea2025">
+	<meta name="keywords" content="усилитель tea2025">
+
+	<meta name="keywords" content="схема tea2025b">
+	<meta name="keywords" content="печатная плата tea2025b">
+	<meta name="keywords" content="собранная плата tea2025b">
+
+	<meta name="keywords" content="схема tea2025">
+	<meta name="keywords" content="печатная плата tea2025">
+	<meta name="keywords" content="собранная плата tea2025">
+
+<!-- -->
+
+	<meta name="keywords" content="Transistor key mode">
+	<meta name="keywords" content="Transistor key mode formulas">
+	<meta name="keywords" content="Transistor key mode formulas github">
+	<meta name="keywords" content="Transistor key mode pdf">
+	<meta name="keywords" content="Transistor key mode dithub">
+	<meta name="keywords" content="Transistor key mode pdf github">
+	<meta name="keywords" content="Биполярный транзистор в ключевом режиме">
+	<meta name="keywords" content="Биполярный транзистор в ключевом режиме github">
+	<meta name="keywords" content="Биполярный транзистор">
+	<meta name="keywords" content="Биполярный транзистор github">
+
+<!-- -->
+
+	<meta name="keywords" content="ящик для экспонирования фоторезиста">
+	<meta name="keywords" content="ящик для экспонирования фоторезиста своими руками">
+	<meta name="keywords" content="коробка для экспонирования фоторезиста">
+	<meta name="keywords" content="коробка для экспонирования фоторезиста своими руками">
+
+<!-- -->
+
+	<meta name="keywords" content="делитель напряжения">
+	<meta name="keywords" content="делитель напряжения на двух резисторах">
+	<meta name="keywords" content="делитель напряжения формулы расчёты">
+	<meta name="keywords" content="делитель напряжения формулы расчеты">
+	<meta name="keywords" content="делитель напряжения формулы">
+	<meta name="keywords" content="делитель напряжения расчёты">
+	<meta name="keywords" content="делитель напряжения расчеты">
+	<meta name="keywords" content="калькулятор на html + js">
+	<meta name="keywords" content="калькулятор на html + javascript">
+	<meta name="keywords" content="калькулятор на html+js">
+	<meta name="keywords" content="калькулятор на html+javascript">
+
+	<meta name="keywords" content="делитель напряжения калькулятор на html + javascript">
+	<meta name="keywords" content="делитель напряжения калькулятор на html+javascript">
+	<meta name="keywords" content="делитель напряжения калькулятор на html javascript">
+	<meta name="keywords" content="делитель напряжения калькулятор html javascript">
+
+<!-- -->
+
+	<meta name="keywords" content="power supply">
+	<meta name="keywords" content="power supply 512">
+	<meta name="keywords" content="power supply +5v -5v +12v -12v">
+	<meta name="keywords" content="power supply +5v +12v -12v">
+	<meta name="keywords" content="power supply +5v, power supply -5v">
+	<meta name="keywords" content="power supply +12v, power supply -12v">
+	<meta name="keywords" content="power supply +5v +12v, power supply +12v -12v">
+	<meta name="keywords" content="power supply +5v -5v, power supply 5v 12v"
+	<meta name="keywords" content="power supply 5v, power supply 12v"
+	<meta name="keywords" content="+5v -5v +12v -12v">
+	<meta name="keywords" content="+5v +12v">
+	<meta name="keywords" content="+12v -12v">
+
+	<meta name="keywords" content="блок питания">
+	<meta name="keywords" content="блок питания 512">
+	<meta name="keywords" content="блок питания +5в -5в +12в -12в">
+	<meta name="keywords" content="блок питания +5в +12в -12в">
+	<meta name="keywords" content="блок питания +5в, блок питания -5в">
+	<meta name="keywords" content="блок питания +12в, блок питания -12в">
+	<meta name="keywords" content="блок питания +5в +12в, блок питания +12в -12в">
+	<meta name="keywords" content="блок питания +5в -5в, блок питания 5в 12в"
+	<meta name="keywords" content="блок питания 5в, блок питания 12в">
+	<meta name="keywords" content="блок питания 5 вольт">
+	<meta name="keywords" content="блок питания 12 вольт">
+	<meta name="keywords" content="+5в -5в +12в -12в">
+	<meta name="keywords" content="+5в +12в">
+	<meta name="keywords" content="+12в -12в">
+
+	<meta name="keywords" content="блок питания на +5в -5в +12в -12в">
+	<meta name="keywords" content="блок питания на +5в +12в -12в">
+	<meta name="keywords" content="блок питания на +5в, блок питания на -5в">
+	<meta name="keywords" content="блок питания на +12в, блок питания на -12в">
+	<meta name="keywords" content="блок питания на +5в +12в, блок питания на +12в -12в">
+	<meta name="keywords" content="блок питания на +5в -5в, блок питания на 5в 12в"
+	<meta name="keywords" content="блок питания на 5в, блок питания на 12в">
+	<meta name="keywords" content="блок питания на 5 вольт">
+	<meta name="keywords" content="блок питания на 12 вольт">
+
+	<meta name="keywords" content="источник питания">
+	<meta name="keywords" content="источник питания 512">
+	<meta name="keywords" content="источник питания +5в -5в +12в -12в">
+	<meta name="keywords" content="источник питания +5в +12в -12в">
+	<meta name="keywords" content="источник питания +5в, источник питания -5в">
+	<meta name="keywords" content="источник питания +12в, источник питания -12в">
+	<meta name="keywords" content="источник питания +5в +12в, источник питания +12в -12в">
+	<meta name="keywords" content="источник питания +5в -5в, источник питания 5в 12в"
+	<meta name="keywords" content="источник питания 5в, источник питания 12в">
+	<meta name="keywords" content="источник питания 5 вольт">
+	<meta name="keywords" content="источник питания 12 вольт">
+
+	<meta name="keywords" content="источник питания на +5в -5в +12в -12в">
+	<meta name="keywords" content="источник питания на +5в +12в -12в">
+	<meta name="keywords" content="источник питания на +5в, источник питания на -5в">
+	<meta name="keywords" content="источник питания на +12в, источник питания на -12в">
+	<meta name="keywords" content="источник питания на +5в +12в, источник питания на +12в -12в">
+	<meta name="keywords" content="источник питания на +5в -5в, источник питания на 5в 12в"
+	<meta name="keywords" content="источник питания на 5в, источник питания на 12в">
+	<meta name="keywords" content="источник питания на 5 вольт">
+	<meta name="keywords" content="источник питания на 12 вольт">
+
+	<meta name="keywords" content="стабилизированный блок питания">
+	<meta name="keywords" content="трансформаторный стабилизированный блок питания">
+	<meta name="keywords" content="трансформаторный блок питания">
+
+	<meta name="keywords" content="трансформаторный блок питания своими руками">
+	<meta name="keywords" content="блок питания своими руками">
+
+	<meta name="keywords" content="блок питания схема">
+	<meta name="keywords" content="блок питания схема печатная плата">
+	<meta name="keywords" content="трансформаторный блок питания схема">
+	<meta name="keywords" content="трансформаторный блок питания схема печатная плата">
+
+<!-- -->
+
+	<meta name="keywords" content="genius">
+	<meta name="keywords" content="genius sp-g06">
+	<meta name="keywords" content="компьютерные колонки genius">
+	<meta name="keywords" content="компьютерные колонки genius sp-g06">
+	<meta name="keywords" content="ремонт компьютерных колонок genius">
+	<meta name="keywords" content="ремонт компьютерных колонок genius sp-g06">
+	<meta name="keywords" content="ремонт колонок genius">
+	<meta name="keywords" content="ремонт колонок genius sp-g06">
+	<meta name="keywords" content="ремонт genius sp-g06">
+
+	<meta name="keywords" content="genius sp-g06 что было и что стало">
+	<meta name="keywords" content="компьютерные колонки genius sp-g06 что было и что стало">
+	<meta name="keywords" content="ремонт компьютерных колонок genius sp-g06 что было и что стало">
+	<meta name="keywords" content="ремонт колонок genius sp-g06 что было и что стало">
+	<meta name="keywords" content="ремонт genius sp-g06 что было и что стало">
+
+<!-- -->
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="game-15/game-15.css">
+
+	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
+
+	<script language="javascript" src="js/javascript.js"></script>
+	<script language="javascript" src="js/javascript-literatura.js"></script>
+	<script language="javascript" src="game-15/js/game-15.js"></script>
+
+	<script language="javascript" src="js/javascript-bs.js"></script>
+	<script language="javascript" src="js/javascript-nss.js"></script>
+	<script language="javascript" src="js/javascript-pop-up.js"></script>
+
+	</head>
+
+<!-- Подгружаем литературу -->
+<!-- LoadBook();           -->
+
+<!-- Для Game-15. Убрать clock.gif -->
+<!-- G15_RemoveClock();            -->
+
+<!-- Инициализация Game-15. -->
+<!-- G15_Init();            -->
+
+<!-- onload будет выполнен после загрузки страницы -->
+<body id="indexbodyid" onload="LoadBook(); G15_RemoveClock(); G15_Init();">
+
+	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+	<tr> <!-- Шапка -->
+	<td>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td width="1%" class="texthobby">
+			<b>Hobby</b>
+			</td>
+
+			<td width="1%" style="vertical-align: bottom; padding-left: 4px;">
+			<a class="smalltxthobby" href="https://drilnet.github.io" title="https://drilnet.github.io">https://drilnet.github.io</a>
+			</td>
+
+			<td align="right" class="smalltxthobby" style="vertical-align: bottom;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td align="right" style="padding-left: 8px;">
+					<i><b>Благодарность</b> (флаги расположены в алфавитном порядке):</i>
+				</td>
+
+				<td style="padding-left: 4px;">
+					<!-- Флаги -->
+					<table class="USCNRU" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons-flags/US_24x24.png"
+					title="Благодарность за GITHUB">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/CN_24x24.png"
+					title="Благодарность за радиодетали и измерительные приборы">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/RU_24x24.png"
+					title="Благодарность за сайт https://zx-pk.ru и за другие ресурсы">
+					</td>
+
+					</tr>
+					</table>
+				</td>
+
+				<td>
+					<td style="padding-left: 4px;">
+					<i><b>Успехов Вам!</b></i>
+					</td>
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+	<hr class="hrwhite">
+
+	<br>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<!-- Иконка GITHUB'а -->
+
+		<td width="1%" style="padding-right: 6px;">
+		<img class="icon" src="icons/github-logo.png" title="Лицензия на иконку: CC 3.0 BY. Автор: Dave Gandy">
+		</td>
+
+		<td>
+		<a href="https://github.com" title="https://github.com">GITHUB</a>
+		- Моя записная книжка (наброски, заметки и т.д. и т.п.)!
+		</td>
+
+		<td style="padding-right: 16px;">
+
+			<table align="right" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td style="padding: 0px 8px 0px 8px;">
+
+				<!-- Google поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://google.com" target="_blank">
+				<img class="icon" src="icons/googlesearch_20x20.png" title="Поисковая система Google">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 8px 0px 0px">
+
+				<!-- Meta поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://meta.ua" target="_blank">
+				<img class="icon" src="icons/metasearch_20x20.png" title="Украинская поисковая система Meta">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 0px 0px 0px">
+
+				<!-- Yandex поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://yandex.ru" target="_blank">
+				<img class="icon" src="icons/yandexsearch_20x20.png" title="Поисковая система Yandex">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr> <!-- Конец шапки -->
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Репозитории автора -->
+
+	<tr>
+	<td>
+
+		<div class="bg textrepo">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td class="tdrepo">
+
+			<b>Все репозитории автора:</b>
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+				&nbsp;&nbsp;
+				<b>Репозиторий:</b>
+				<a href="https://github.com/drilnet/blender3d-dice2">
+				Blender 3D. Модель игральной кости (dice)</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinDice1')" title="Нажмите, чтобы увидеть анимированный кубик">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinDice2')" title="Нажмите, чтобы увидеть неанимированный кубик">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/blender3d-motor">
+			Blender 3D. Модель мотора (motor)</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinMotor')" title="Нажмите, чтобы увидеть анимированный мотор">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/blender3d-ukrainian-symbols" title="Blend-файл утерян!">
+			Blender 3D. Государственная символика Украины (Флаг, Герб)</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinFlagGerb')" title="Нажмите, чтобы увидеть Флаг и Герб Украины">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/blender3d-disabled-person">
+			Blender 3D. Disabled Person (анимированная иконка)</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinDisabledPerson')" title="Нажмите, чтобы увидеть анимированную иконку Disabled Person">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/blender3d-floppy-disk-35">
+			Blender 3D. Флоппи диск 3.5"</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/blender3d-logovrle8-logovrle16">
+			Blender 3D. Логотип VRLE8 и Логотип VRLE16</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinLogoVRLE8')" title="Нажмите, чтобы увидеть логотип VRLE8">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinLogoVRLE16')" title="Нажмите, чтобы увидеть логотип VRLE16">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/blender3d-tea2025b">
+			Blender 3D. Микросхема TEA2025B в 3D</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/programming-perl-signature-images" title="Скрипт написан на Perl">
+			Скрипт, который подписывает цифровые фотографии</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPhoto1')" title="Нажмите, чтобы увидеть пример подписанной фотографии (пример 1)">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPhoto2')" title="Нажмите, чтобы увидеть пример подписанной фотографии (пример 2)">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/vector-06c-kino" title="Ковертирующие скрипты написаны на Perl">
+			Вектор-06Ц. Ожившее кино</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinVKino')" title="Нажмите, чтобы увидеть видео">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/vector-06c-spr2bmp" title="Конвертер SPR в BMP написан на Си (и есть версия на Perl)">
+			Вектор-06Ц. Конвертер графических файлов SPR в BMP</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinSPR2BMP_1')" title="Нажмите, чтобы увидеть скриншот программы (скриншот 1)">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinSPR2BMP_2')" title="Нажмите, чтобы увидеть скриншот программы (скриншот 2)">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinSPR2BMP_3')" title="Нажмите, чтобы увидеть результат работы программы">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinSPR2BMP_4')" title="Карикатуры на Харьковское сообщество программистов (XX век, 90-е годы)">
+				<img src="images/numeric_4.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/vector-06c-grf2bmp" title="Конвертер GRF в BMP написан на Си (и есть версия на Perl)">
+			Вектор-06Ц. Конвертер графических файлов GRF в BMP</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinGRF2BMP_1')" title="Нажмите, чтобы увидеть скриншот программы (скриншот 1)">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinGRF2BMP_2')" title="Нажмите, чтобы увидеть скриншот программы (скриншот 2)">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinGRF2BMP_3')" title="Нажмите, чтобы увидеть результат работы программы">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinGRF2BMP_4')" title="Oops! Анимация (XX век, 90-е годы)">
+				<img src="images/numeric_4.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/vector-06c-color256" title="Скрипт написан на Perl">
+			Скрипт, который показывает все цвета Вектор'а-06Ц</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinVColor256')" title="Нажмите, чтобы увидеть все цвета Вектор'а-06Ц">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Файловый архив Вектор'а-06Ц:</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			Системный диск Вектор'а-06Ц с МикроДОС Т-34 (Харьковский вариант), системный диск 1
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			Скриншоты файлового менеджера CO (Шишатский Коммандер)
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<span title="50 файлов формата PNG, 200dpi">Библиотека ПК (Харьков 1993г.). Выпуск 1. ВЕКТОР-06Ц ИЗНУТРИ. Руководство для начинающих специалистов</span>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<span title="54 файла формата PNG, 200dpi">Библиотека ПК (Харьков 1993г.). Выпуск 2. Системные программы МикроДОС ПК Вектор-06Ц</span>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<span title="62 файла формата PNG, 200dpi">Библиотека ПК (Харьков 1993г.). Выпуск 3. Язык программирования ЛС-ПАСКАЛЬ</span>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td style="padding: 4px 0px 1px 0px;">
+
+			<br>
+
+			<table align="left" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
+
+			<td>
+			<img class="icon" src="icons/file_2.png" title="Иконка из набора Silk 2. (C) Mark James. License: Creative Commons (Attr. 2.5 Generic)">
+			</td>
+
+			<td style="padding-left: 8px;">
+			<a href="downloads/vector-06c/downloads.html" title="Системный диск Вектор'а-06Ц. Скриншоты CO. Библиотека ПК">Перейти в архив Вектор'а-06Ц</a>
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/rle">
+			RLE кодирование/декодирование своими руками (VRLE8, VRLE16)</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/puzzle15" title="Игра для вашего сайта!">
+			Игра Пятнашки (Puzzle 15, Game 15), игра написана на JavaScript</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_1')" title="Нажмите, чтобы увидеть скриншоты игры Пятнашки (Puzzle 15, Game 15), версия 3.0.a, вариант 1">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 9px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_1_2')" title="Нажмите, чтобы увидеть скриншот 1 и скриншот 2 игры Пятнашки (Puzzle 15, Game 15), версия 3.0.a, вариант 2">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_2_2')" title="Нажмите, чтобы увидеть скриншот 3 и скриншот 4 игры Пятнашки (Puzzle 15, Game 15), версия 3.0.a, вариант 2">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_3_2')" title="Нажмите, чтобы увидеть скриншот 5 и скриншот 6 игры Пятнашки (Puzzle 15, Game 15), версия 3.0.a, вариант 2">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 9px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPuzzle15_SamLoydS')" title="Иллюстрация о неразрешимой вариации в Пятнашки (взято с https://en.wikipedia.org/wiki/15_puzzle)">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/drilnet.github.io" title="Репозиторий сайта https://drilnet.github.io">
+			Мой сайт (репозиторий моего сайта)</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/electronics">
+			Электроника (всё в одном репозитории)</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B"
+			title="Схема, печатная плата, собранная плата">
+			Усилитель звука на микросхеме TEA2025B</a>
+
+			</td>
+
+			<!-- TEA2025B. Ver. 3 -->
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver3_1')" title="Схема TEA2025B (стерео) с нестабилизированным источником питания">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver3_2')" title="Расположение радиодеталей на печатной плате">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver3_3')" title="Печатная плата (позитив)">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver3_4')" title="Печатная плата (негатив)">
+				<img src="images/numeric_4.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver3_5')" title="Собранная плата">
+				<img src="images/numeric_5.png">
+				</a>
+
+			</td>
+
+			<!-- TEA2025B. Ver. 4 -->
+
+			<td width="1%" style="padding-left: 9px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver4_1')" title="Схема TEA2025B (стерео) без источника питания">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver4_2')" title="Расположение радиодеталей на печатной плате">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver4_3')" title="Печатная плата (позитив)">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver4_4')" title="Печатная плата (негатив)">
+				<img src="images/numeric_4.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="https://github.com/drilnet/electronics/tree/master/Bipolar transistor in key mode"
+			title="Формат файлов: LibreOffice (odt), pdf, TinyCAD (dsn), png, LTspice XVII (asc)">
+			Биполярный транзистор в ключевом режиме (формулы, расчёты)</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="https://github.com/drilnet/electronics/tree/master/Box%20For%20Exposure%20Photoresist"
+			title="Ящик из подручного материала">
+			Ящик для экспонирования фоторезиста</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinBoxPhotorezist')" title="Нажмите, чтобы увидеть ящик для экспонирования фоторезиста">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="(https://github.com/drilnet/electronics/tree/master/Calculator nearest standard resistance"
+			title="Набор резисторов: E24, E48, E96">
+			Калькулятор ближайшее стандартное сопротивление (HTML + JS)</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');" title="Нажмите, чтобы увидеть калькулятор">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="https://github.com/drilnet/electronics/tree/master/Divider%20by%20R1%20and%20R2%20(formulas%2C%20calculations%2C%20HTML%20+%20JavaScript%20calculator)"
+			title="Формат файлов: LibreOffice (odt), pdf, TinyCAD (dsn), png, html, js">
+			Делитель напряжения на двух резисторах (формулы, расчёты, калькулятор на HTML + JS)</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinDividerR1R2')" title="Нажмите, чтобы уведить: формулы, расчёты, калькулятор на HTML + JavaScript">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V"
+			title="Трансформаторный (используемые микросхемы: L7805CV, L7905CV, L7812CV, L7912CV)">
+			Стабилизированный блок питания +5В/1А, -5В/0.3A, +12В/0.5А, -12В/0.5А</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPS512_1')" title="Схема блока питания">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPS512_2')" title="Расположение радиодеталей на печатной плате">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPS512_3')" title="Печатная плата (позитив)">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPS512_4')" title="Печатная плата (негатив)">
+				<img src="images/numeric_4.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPS512_5')" title="Собранный блок питания">
+				<img src="images/numeric_5.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 9px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinPS512_R')" title="Где заказать тороидальный трансформатор в Украине?">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="https://github.com/drilnet/electronics/tree/master/Speakers%20Genius%20SP-G06"
+			title="Что было и Что стало">
+			Ремонт компьютерных колонок Genius SP-G06</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinGeniusSP-G06')" title="Нажмите, чтобы уведить Что было и Что стало">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+			&nbsp;&nbsp;
+			<b>Репозиторий:</b>
+			<a href="https://github.com/drilnet/Intelligence"
+			title="Intelligence. Artificial Intelligence">
+			Интеллект. Искусственный интеллект</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinIntelligence')" title="Нажмите">
+				<img src="images/numeric_1_g.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		</div>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Выборка pdf-файлов -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+				<img class="icon" src="icons/pdf_26x31.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td>&nbsp;&nbsp;</td>
+
+			<td>
+
+				<!-- Спойлер -->
+				<span class="spoilerpdf"
+				onclick="document.getElementById('files_pdf').style.display = (document.getElementById('files_pdf').style.display=='none'?'inline':'none');"
+				title="Нажмите">
+
+				Выборка pdf-файлов из моих репозиториев:
+
+				<span>
+
+			</td>
+
+		</tr>
+
+		</table>
+
+		<!-- То, что под спойлером -->
+		<!-- Здесь pdf-файлы -->
+		<div id="files_pdf" style="display: none;">
+
+		<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+
+				<!-- TEA2025B -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 3/TEA2025B. Схема, печатная плата, собранная плата.pdf" title="Откроется в новой вкладке" target="_blank">TEA2025B. Ver.3. Схема, печатная плата, собранная плата</a>
+
+				<br>
+
+				<!-- TEA2025B -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 4/TEA2025B. Схема, печатная плата.pdf" title="Откроется в новой вкладке" target="_blank">TEA2025B. Ver.4. Схема, печатная плата</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 1) -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 1 (draft).pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 1)</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 2) -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 2 (draft).pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 2)</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 3) -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 3 (draft). Transistor & Svetodiod.pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 3)</a>
+
+				<br>
+
+				<!-- Бип. транзистор в ключевом режиме (формулы, расчёты, вариант 4) -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Bipolar transistor in key mode/Calculations 4 (draft). Transistor & Svetodiod.pdf" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме (формулы, расчёты, вариант 4)</a>
+
+				<br>
+
+				<!-- Делитель напряжения на двух резисторах (формулы, расчёты) -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Divider by R1 and R2 (formulas, calculations, HTML + JavaScript calculator)/Resistor Divider (2 Resistors).pdf" title="Откроется в новой вкладке" target="_blank">Делитель напряжения на двух резисторах (формулы, расчёты)</a>
+
+				<!-- Стабилизированный блок питания +5В/1А, -5В/0.3A, +12В/0.5А, -12В/0.5А -->
+				<br>
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/Power Supply +5V, -5V, +12V, -12V/PS_512.pdf" title="Откроется в новой вкладке" target="_blank">Стабилизированный блок питания +5В/1А, -5В/0.3A, +12В/0.5А, -12В/0.5А</a>
+
+				</td>
+
+			</tr>
+			</table>
+
+		</div> <!-- Конец спойлера pdf-файлы -->
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Онлайн-калькуляторы -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+		<td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Онлайн-калькуляторы:</b>
+		</td>
+
+		</tr>
+
+		<tr>
+		<td style="padding-top: 4px;">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+				<!-- Номиналы стандартных сопротивлений -->
+				<!-- Кнопка (открытие модального окна) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<!-- Сначало вставить, потом показать! -->
+				<a href="javascript:BuildNSS('ModalWinNSS'); NSSOpenShowModalWin('ModalWinNSS');"
+				title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<td>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+					<td>&nbsp;&nbsp;&nbsp;</td>
+					<td><img class="icon" src="icons/calculator_16x16.png" title="Иконка из набора FatCow. (C) FatCow Web Hosting. License: Creative Commons (Attrbution 3.0 United States)"></td>
+
+					<td>
+
+					&nbsp;&bull;
+					<a href="calcdivr2.html" title="Откроется в новой вкладке" target="_blank">Делитель напряжения на двух резисторах</a>
+
+					<br>
+
+					&nbsp;&bull;
+					<a href="calczenerdiode.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для стабилитрона</a>
+
+					<br>
+
+					&nbsp;&bull;
+					<a href="calctransistorkey.html" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме</a>
+
+					<br>
+
+					&nbsp;&bull;
+					<a href="calcled.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для светодиода</a>
+
+					</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<!-- Отступ слева -->
+			<td>&nbsp;&nbsp;&nbsp;</td>
+
+			<td>
+
+				<!-- Ближайшее стандартное -->
+				<!-- Кнопка (открытие модального окна) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<!-- Сначало вставить, потом показать! -->
+				<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+				title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
+
+				<!-- Формулы закон Ома -->
+				<!-- Кнопка (открыть окно с формулами) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<a href="javascript:OpenPopUpWindow('ZOm');"
+				title="Формулы (нажмите)">Закон Ома</a>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+
+	</td>
+	</tr>
+
+	<!-- Ссылки на сайты -->
+	<!-- Бесплатное программное обеспечение -->
+
+	<tr>
+	<td>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+
+		<b><span title="Бесплатное программное обеспечение">Бесплатное ПО:</span></b>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- 7z -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.7-zip.org/download.html" target="_blank">
+			<div class="icon"><img src="icons/7z_20x20.png" title="Файловый архиватор с высокой степенью сжатия данных"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- FreeBSD -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://freebsd.org" target="_blank">
+			<div class="icon"><img src="icons/FreeBSD_20x20.png" title="Операционная система FreeBSD (Berkeley Software Distribution)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- Linux -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://linux.org" target="_blank">
+			<div class="icon"><img src="icons/Linux_20x20.png" title="Операционная система Linux"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- FreeCAD -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.freecadweb.org/?lang=ru" target="_blank">
+			<div class="icon"><img src="icons/FreeCAD_20x20.png" title="FreeCAD (САПР)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- Blender 3D -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.blender.org" target="_blank">
+			<div class="icon"><img src="icons/Blender_20x20.png" title="3D-редактор Blender"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- Gimp -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.gimp.org" target="_blank">
+			<div class="icon"><img src="icons/Gimp_20x20.png" title="Графический редактор Gimp (2D)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- AbiWord -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.abisource.com" target="_blank">
+			<div class="icon"><img src="icons/AbiWord_20x20.png" title="Текстовый процессор (редактор) AbiWord"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- LibreOffice -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.libreoffice.org" target="_blank">
+			<div class="icon"><img src="icons/LibreOffice_20x20.png" title="Офисный пакет LibreOffice (Writer, Calc, Impress, Draw, Math, Base)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- LTspice -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" target="_blank">
+			<div class="icon"><img src="icons/LTspice_20x20.png" title="Симулятор электронных схем LTspice"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 8px;">
+
+			<!-- DesignSpark -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.rs-online.com/designspark/pcb-software" target="_blank">
+			<div class="icon"><img src="icons/DesignSpark_20x20.png" title="Редактор схем и Разводка плат (DesignSpark)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		<td style="padding-left: 4px;">
+
+			<!-- ExpressPCB -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.expresspcb.com" target="_blank">
+			<div class="icon"><img src="icons/ExpressPCB_20x20.png" title="Редактор схем и Разводка плат (ExpressPCB)"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		<td style="padding-left: 4px;">
+
+			<!-- TinyCAD -->
+
+			<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			<a href="https://www.tinycad.net" target="_blank">
+			<div class="icon"><img src="icons/TinyCAD_20x20.png" title="Редактор схем TinyCAD"></div>
+			</a>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- SMF -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<a class="smfurl" href="https://www.simplemachines.org" title="Откроется в новой вкладке" target="_blank">
+		<b><span class="smfcolor1">Simple</span> <span class="smfcolor2">Machines Forum</span></b></a> - Форум для Вашего сайта (бесплатный)!
+		<br>
+		Есть поддержка Украинского Языка!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" style="padding-top: 8px; padding-bottom: 8px;">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+				<table class="iconfreeurl" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+				<td>
+
+				<a href="https://www.simplemachines.org" title="" target="_blank"><img class="icon" src="icons/SMF_3.png" title="Откроется в новой вкладке"></a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 8px;">
+
+				<!-- Модальное окно 1 -->
+				<a href="javascript:OpenShowModalWin('ModalWinSMF')" title="Нажмите">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td style="padding-left: 3px;">
+
+				<!-- Модальное окно 2 -->
+				<a href="javascript:OpenShowModalWin('ModalWinSMF2')" title="Нажмите (ссылка на русскоязычное сообщество)">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		Некоторые моменты по программированию я подсмотрел у
+		<a class="smfurl" href="https://www.simplemachines.org" title="Откроется в новой вкладке" target="_blank">
+		<b><span class="smfcolor1">Simple</span> <span class="smfcolor2">Machines Forum</span></b></a>! :)
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		Спасибо!
+
+		</td>
+		</tr>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tR>
+
+	<!-- Литература -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+		<!-- Иконка книга -->
+		<img class="icon" src="icons/book_32x32.png" title="Иконка из набора Glaze. (C) Everaldo Coelho. License: GPL">
+		</td>
+
+		<td>
+		&nbsp;
+
+			<!-- Спойлер -->
+			<span class="spoilerbook"
+			onclick="document.getElementById('book_lit').style.display = (document.getElementById('book_lit').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<span title="Электроника и всё что с ней связано! Небольшая коллекция литературы! Вся литература до 2000 года!">
+			Некоторые ответы на некоторые вопросы
+			</span>
+
+			</span>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером -->
+		<div id="book_lit" style="display: none;">
+		<!-- Здесь список литературы и ссылки для скачивания -->
+		</div>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Game-15 - Ver. 3.0.a, вариант 2 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок -->
+		<!-- g15_loader - Замена на без clock.gif -->
+		<div id="g15_loader">
+
+		<table align="center" class="g15_title_2" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+			<table align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+			Игра Пятнашки (версия 3.0.a, вариант 2)
+			</td>
+
+			<td>
+			&nbsp;
+			</td>
+
+			<!-- Иконка часов (загрузка) -->
+
+			<td>
+			<img class="icon" src="icons/clock.gif" title="Идёт загрузка изображений!">
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		</div>
+
+		<!-- Спойлер -->
+		<!-- Развернуть/Свернуть -->
+
+		<br>
+		<a href="javascript:Spoiler('contentSpoiler', 'linkSpoiler');" class="g15_link_spoiler" id="linkSpoiler" title="Нажмите">Развернуть/Свернуть</a>
+		<br>
+		<br>
+
+		<!-- <div id="contentSpoiler" style="display: none;">  -->
+		<!-- или                                               -->
+		<!-- <div id="contentSpoiler" style="display: block;"> -->
+
+		<div id="contentSpoiler" style="display: none;">
+
+		<!-- Game-15 - Ver. 3.0.a, вариант 2 -->
+		<!-- С добавками !!!                 -->
+
+		<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+			<!-- Подсчёт перемещений -->
+
+			<table class="g15_table_bginfo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+				Перемещений:
+				</td>
+
+				<td id="transfer_cur">
+				&nbsp;<b>0</b>
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<!-- Костяшки -->
+
+			<table align="center" class="g15_table_bg" cellspacing="0" cellpadding="0" border="0">
+
+				<!-- 0, 1, 2, 3 -->
+				<tr>
+
+					<!-- 0 -->
+					<td id="g15_idcell_0" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_0">
+					<img class="g15_image" src="game-15/Cat_01/Image-00.png">
+					</a>
+					</td>
+
+					<!-- 1 -->
+					<td id="g15_idcell_1" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_1">
+					<img class="g15_image" src="game-15/Cat_01/Image-05.png">
+					</a>
+					</td>
+
+					<!-- 2 -->
+					<td id="g15_idcell_2" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_2">
+					<img class="g15_image" src="game-15/Cat_01/Image-10.png">
+					</a>
+					</td>
+
+					<!-- 3 -->
+					<td id="g15_idcell_3" align="center" valign="middle" class="g15_size_cell g15_padding-bottom">
+					<a id="g15_idhref_3">
+					<img class="g15_image" src="game-15/Cat_01/Image-15.png">
+					</a>
+					</td>
+
+				</tr>
+
+				<!-- 4, 5, 6, 7 -->
+				<tr>
+
+					<!-- 4 -->
+					<td id="g15_idcell_4" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_4">
+					<img class="g15_image" src="game-15/Cat_01/Image-20.png">
+					</a>
+					</td>
+
+					<!-- 5 -->
+					<td id="g15_idcell_5" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_5">
+					<img class="g15_image" src="game-15/Cat_01/Image-25.png">
+					</a>
+					</td>
+
+					<!-- 6 -->
+					<td id="g15_idcell_6" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_6">
+					<img class="g15_image" src="game-15/Cat_01/Image-30.png">
+					</a>
+					</td>
+
+					<!-- 7 -->
+					<td id="g15_idcell_7" align="center" valign="middle" class="g15_size_cell g15_padding-bottom">
+					<a id="g15_idhref_7">
+					<img class="g15_image" src="game-15/Cat_01/Image-35.png">
+					</a>
+					</td>
+
+				</tr>
+
+				<!-- 8, 9, 10, 11 -->
+				<tr>
+
+					<!-- 8 -->
+					<td id="g15_idcell_8" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_8">
+					<img class="g15_image" src="game-15/Cat_01/Image-40.png">
+					</a>
+					</td>
+
+					<!-- 9 -->
+					<td id="g15_idcell_9" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_9">
+					<img class="g15_image" src="game-15/Cat_01/Image-45.png">
+					</a>
+					</td>
+
+					<!-- 10 -->
+					<td id="g15_idcell_10" align="center" valign="middle" class="g15_size_cell g15_padding-bottom g15_padding-right">
+					<a id="g15_idhref_10">
+					<img class="g15_image" src="game-15/Cat_01/Image-50.png">
+					</a>
+					</td>
+
+					<!-- 11 -->
+					<td id="g15_idcell_11" align="center" valign="middle" class="g15_size_cell g15_padding-bottom">
+					<a id="g15_idhref_11">
+					<img class="g15_image" src="game-15/Cat_01/Image-55.png">
+					</a>
+					</td>
+
+				</tr>
+
+				<!-- 12, 13, 14, 15 -->
+				<tr>
+
+					<!-- 12 -->
+					<td id="g15_idcell_12" align="center" valign="middle" class="g15_size_cell g15_padding-right">
+					<a id="g15_idhref_12">
+					<img class="g15_image" src="game-15/Cat_01/Image-60.png">
+					</a>
+					</td>
+
+					<!-- 13 -->
+					<td id="g15_idcell_13" align="center" valign="middle" class="g15_size_cell g15_padding-right">
+					<a id="g15_idhref_13">
+					<img class="g15_image" src="game-15/Cat_01/Image-65.png">
+					</a>
+					</td>
+
+					<!-- 14 -->
+					<td id="g15_idcell_14" align="center" valign="middle" class="g15_size_cell g15_padding-right">
+					<a id="g15_idhref_14">
+					<img class="g15_image" src="game-15/Cat_01/Image-70.png">
+					</a>
+					</td>
+
+					<!-- 15 -->
+					<td id="g15_idcell_15" align="center" valign="middle" class="g15_size_cell">
+					<img id="g15_idimage_15" class="g15_image" src="game-15/Cat_01/Image-75.png" style="opacity: 1.0; filter: alpha(opacity=100);">
+					</td>
+
+				</tr>
+
+			</table> <!-- Конец костяшкам -->
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<!-- МЕНЮ -->
+
+			<table align="center" class="g15_table_bgmenu" cellspacing="0" cellpadding="0" border="0">
+
+			<!-- Горизонтальная линия -->
+
+			<tr>
+			<td>
+
+				<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_stir">
+
+			</td>
+			</tr>
+
+			<!-- Меню: [ Перемешать стандартно ], [ Перемешать нестандартно ], [ Поменять 14 и 15 ]. -->
+
+			<tr>
+			<td align="center">
+
+				<!-- Radio Buttons -->
+				<!-- Здесь выбирается как перемешать костяшки -->
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td class="g15_rbpaddingb g15_rbpaddingr">
+				<span title="Рекомендуется">Перемешать стандартно:</span>
+				</td>
+
+				<!-- Стандартно -->
+				<td class="g15_rbpaddingb">
+				<input name="g15_mix" id="g15_mix_1" class="g15_radiobutton" type="radio" value="" checked>
+				<label for="g15_mix_1" class="g15_label_radio" title="Стандартно!"></label>
+				</td>
+
+				<td class="g15_rbpaddingb">
+				&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td class="g15_rbpaddingb g15_rbpaddingr">
+				<span title="Не рекомендуется (вероятность 1/2)">Перемешать нестандартно:</span>
+				</td>
+
+				<!-- Нестандартно -->
+				<td class="g15_rbpaddingb">
+				<input name="g15_mix" id="g15_mix_2" class="g15_radiobutton" type="radio" value="">
+				<label for="g15_mix_2" class="g15_label_radio" title="Нестандартно!"></label>
+				</td>
+
+				<td class="g15_rbpaddingb">
+				&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td class="g15_rbpaddingb g15_rbpaddingr">
+				<span title="Не рекомендуется">Поменять 14 и 15:</span>
+				</td>
+
+				<!-- Поменять местами 14 и 15 -->
+				<td class="g15_rbpaddingb">
+				<input name="g15_mix" id="g15_mix_3" class="g15_radiobutton" type="radio" value="">
+				<label for="g15_mix_3" class="g15_label_radio" title="Поменять местами 14 и 15!"></label>
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<!-- Горизонтальная линия -->
+
+			<tr>
+			<td>
+
+				<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_stir">
+
+			</td>
+			</tr>
+
+			<!-- Меню: [ включить анимацию ], [ выключить анимацию ]. -->
+
+			<tr>
+			<td align="center">
+
+				<!-- Radio Buttons -->
+				<!-- Здесь выбирается включить/выключить анимацию -->
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td class="g15_rbpaddingb g15_rbpaddingr">
+				<span title="Анимацию можно включить во время игры!">Включить анимацию:</span>
+				</td>
+
+				<!-- Вкл. -->
+				<td class="g15_rbpaddingb">
+				<input name="g15_anim" id="g15_anim_1" class="g15_radiobutton" type="radio" value="">
+				<label for="g15_anim_1" class="g15_label_radio" title="Включить!"></label>
+				</td>
+
+				<td class="g15_rbpaddingb">
+				&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td class="g15_rbpaddingb g15_rbpaddingr">
+				<span title="Анимацию можно выключить во время игры!">Выключить анимацию:</span>
+				</td>
+
+				<!-- Выкл. -->
+				<td class="g15_rbpaddingb">
+				<input name="g15_anim" id="g15_anim_2" class="g15_radiobutton" type="radio" value="" checked>
+				<label for="g15_anim_2" class="g15_label_radio" title="Выключить!"></label>
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<!-- Горизонтальная линия -->
+
+			<tr>
+			<td>
+
+			<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_anim">
+
+			</td>
+			</tr>
+
+			<!-- Какие изображения доступны -->
+
+			<tr>
+			<td>
+
+				<table align="center" class="g15_table_bg_img_title" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+				<font class="g15_img_title">Доступные изображения:</font>
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<!-- Выбор изображения -->
+
+			<tr>
+			<td>
+
+				<table align="center" class="g15_table_bgmenu_img" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+					<td align="right" style="padding-top: 8px; padding-bottom: 1px; padding-left: 16px;">
+					Цифры (480x252px)
+					</td>
+
+					<td style="padding-top: 8px; padding-bottom: 1px; padding-left: 8px; padding-right: 16px;">
+					<input name="g15_img" id="g15_img_1" class="g15_radiobutton" type="radio" value="" onchange="G15_SetImage()">
+					<label id="g15_img_1_label" for="g15_img_1" class="g15_label_radio" title="Цифры" style="pointer-events: none;"></label>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td align="right" style="padding-top: 1px; padding-bottom: 1px; padding-left: 16px;">
+					LogoVRLE8, ver.7b (480x252px)
+					</td>
+
+					<td style="padding-top: 1px; padding-bottom: 1px; padding-left: 8px; padding-right: 16px;">
+					<input name="g15_img" id="g15_img_2" class="g15_radiobutton" type="radio" value="" onchange="G15_SetImage()" checked>
+					<label id="g15_img_2_label" for="g15_img_2" class="g15_label_radio" title="LogoVRLE8" style="pointer-events: none;"></label>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td align="right" style="padding-top: 1px; padding-bottom: 8px; padding-left: 16px;">
+					LogoVRLE16, ver.7a (480x252px)
+					</td>
+
+					<td style="padding-top: 1px; padding-bottom: 8px; padding-left: 8px; padding-right: 16px;">
+					<input name="g15_img" id="g15_img_3" class="g15_radiobutton" type="radio" value="" onchange="G15_SetImage()">
+					<label id="g15_img_3_label" for="g15_img_3" class="g15_label_radio" title="LogoVRLE16" style="pointer-events: none;"></label>
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+			</tr>
+
+			<!-- Кнопка "Установить настройки по умолчанию" -->
+
+			<tr>
+			<td align="center" style="padding-bottom: 8px;">
+
+				<!-- Кнопка -->
+				<table id="g15_set_table" class="g15_txtbutton_gray" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="g15_set">
+
+				Установить настройки по умолчанию
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<!-- Кнопка "Начать игру" -->
+
+			<tr>
+			<td align="center" style="padding-bottom: 8px;">
+
+				<!-- Кнопка -->
+				<table id="g15_start_table" class="g15_txtbutton_gray" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="g15_start">
+
+				Начать игру
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+			Лицензия (License): <b>GNU GPL V3</b>.
+			Репозиторий игры Пятнашки
+			<a href="https://github.com/drilnet/puzzle15">здесь</a>.
+			<br>
+			Игра написана на <b>JavaScript</b>.
+			<br>
+			(C) Демидов С.В.
+			<br>
+			<br>
+			<b>Что можно улучшить?</b>
+			<br>
+			Перемешать - оставить <b>40</b> мс.
+			<br>
+			Анимацию хода - сделать с задержкой <b>20</b> мс.
+			<br>
+			<br>
+
+			<!-- Сссылки на Вики -->
+
+			<a href="https://ru.wikipedia.org/wiki/Игра_в_15" title="Откроется в новой вкладке" target="_blank">Пятнашки в Русской Вики</a>
+			<br>
+			<a href="https://uk.wikipedia.org/wiki/П%27ятнашки" title="Откроется в новой вкладке" target="_blank">Пятнашки в Украинской Вики</a>
+			<br>
+
+<!--
+
+			<br>
+
+			<span class="smalltxt">
+			<b>Примечание.</b>
+			<br>
+			Ссылки на <b>Вики</b> написаны в алфавитном порядке!
+			</span>
+
+			<br>
+			<br>
+
+-->
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<!-- Ссылка на английский Вики -->
+
+			<hr class="g15_hr2 g15_hr2_margint g15_hr2_marginb g15_hr2_width_enwiki">
+			<a href="https://en.wikipedia.org/wiki/15_puzzle" title="Откроется в новой вкладке" target="_blank">https://en.wikipedia.org/wiki/15_puzzle</a>
+			<hr class="g15_hr2 g15_hr2_margint g15_hr2_width_enwiki" style="margin-bottom: 0px;">
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Cat_00 --->
+
+		<img style="display: none" src="game-15/Cat_00/Image-00.png">
+		<img style="display: none" src="game-15/Cat_00/Image-01.png">
+		<img style="display: none" src="game-15/Cat_00/Image-02.png">
+		<img style="display: none" src="game-15/Cat_00/Image-03.png">
+		<img style="display: none" src="game-15/Cat_00/Image-04.png">
+		<img style="display: none" src="game-15/Cat_00/Image-05.png">
+		<img style="display: none" src="game-15/Cat_00/Image-06.png">
+		<img style="display: none" src="game-15/Cat_00/Image-07.png">
+		<img style="display: none" src="game-15/Cat_00/Image-08.png">
+		<img style="display: none" src="game-15/Cat_00/Image-09.png">
+		<img style="display: none" src="game-15/Cat_00/Image-10.png">
+		<img style="display: none" src="game-15/Cat_00/Image-11.png">
+		<img style="display: none" src="game-15/Cat_00/Image-12.png">
+		<img style="display: none" src="game-15/Cat_00/Image-13.png">
+		<img style="display: none" src="game-15/Cat_00/Image-14.png">
+		<img style="display: none" src="game-15/Cat_00/Image-15.png">
+		<img style="display: none" src="game-15/Cat_00/Image-16.png">
+		<img style="display: none" src="game-15/Cat_00/Image-17.png">
+		<img style="display: none" src="game-15/Cat_00/Image-18.png">
+		<img style="display: none" src="game-15/Cat_00/Image-19.png">
+		<img style="display: none" src="game-15/Cat_00/Image-20.png">
+		<img style="display: none" src="game-15/Cat_00/Image-21.png">
+		<img style="display: none" src="game-15/Cat_00/Image-22.png">
+		<img style="display: none" src="game-15/Cat_00/Image-23.png">
+		<img style="display: none" src="game-15/Cat_00/Image-24.png">
+		<img style="display: none" src="game-15/Cat_00/Image-25.png">
+		<img style="display: none" src="game-15/Cat_00/Image-26.png">
+		<img style="display: none" src="game-15/Cat_00/Image-27.png">
+		<img style="display: none" src="game-15/Cat_00/Image-28.png">
+		<img style="display: none" src="game-15/Cat_00/Image-29.png">
+		<img style="display: none" src="game-15/Cat_00/Image-30.png">
+		<img style="display: none" src="game-15/Cat_00/Image-31.png">
+		<img style="display: none" src="game-15/Cat_00/Image-32.png">
+		<img style="display: none" src="game-15/Cat_00/Image-33.png">
+		<img style="display: none" src="game-15/Cat_00/Image-34.png">
+		<img style="display: none" src="game-15/Cat_00/Image-35.png">
+		<img style="display: none" src="game-15/Cat_00/Image-36.png">
+		<img style="display: none" src="game-15/Cat_00/Image-37.png">
+		<img style="display: none" src="game-15/Cat_00/Image-38.png">
+		<img style="display: none" src="game-15/Cat_00/Image-39.png">
+		<img style="display: none" src="game-15/Cat_00/Image-40.png">
+		<img style="display: none" src="game-15/Cat_00/Image-41.png">
+		<img style="display: none" src="game-15/Cat_00/Image-42.png">
+		<img style="display: none" src="game-15/Cat_00/Image-43.png">
+		<img style="display: none" src="game-15/Cat_00/Image-44.png">
+		<img style="display: none" src="game-15/Cat_00/Image-45.png">
+		<img style="display: none" src="game-15/Cat_00/Image-46.png">
+		<img style="display: none" src="game-15/Cat_00/Image-47.png">
+		<img style="display: none" src="game-15/Cat_00/Image-48.png">
+		<img style="display: none" src="game-15/Cat_00/Image-49.png">
+		<img style="display: none" src="game-15/Cat_00/Image-50.png">
+		<img style="display: none" src="game-15/Cat_00/Image-51.png">
+		<img style="display: none" src="game-15/Cat_00/Image-52.png">
+		<img style="display: none" src="game-15/Cat_00/Image-53.png">
+		<img style="display: none" src="game-15/Cat_00/Image-54.png">
+		<img style="display: none" src="game-15/Cat_00/Image-55.png">
+		<img style="display: none" src="game-15/Cat_00/Image-56.png">
+		<img style="display: none" src="game-15/Cat_00/Image-57.png">
+		<img style="display: none" src="game-15/Cat_00/Image-58.png">
+		<img style="display: none" src="game-15/Cat_00/Image-59.png">
+		<img style="display: none" src="game-15/Cat_00/Image-60.png">
+		<img style="display: none" src="game-15/Cat_00/Image-61.png">
+		<img style="display: none" src="game-15/Cat_00/Image-62.png">
+		<img style="display: none" src="game-15/Cat_00/Image-63.png">
+		<img style="display: none" src="game-15/Cat_00/Image-64.png">
+		<img style="display: none" src="game-15/Cat_00/Image-65.png">
+		<img style="display: none" src="game-15/Cat_00/Image-66.png">
+		<img style="display: none" src="game-15/Cat_00/Image-67.png">
+		<img style="display: none" src="game-15/Cat_00/Image-68.png">
+		<img style="display: none" src="game-15/Cat_00/Image-69.png">
+		<img style="display: none" src="game-15/Cat_00/Image-70.png">
+		<img style="display: none" src="game-15/Cat_00/Image-71.png">
+		<img style="display: none" src="game-15/Cat_00/Image-72.png">
+		<img style="display: none" src="game-15/Cat_00/Image-73.png">
+		<img style="display: none" src="game-15/Cat_00/Image-74.png">
+		<img style="display: none" src="game-15/Cat_00/Image-75.png">
+
+		<!-- Cat_01 --->
+
+		<img style="display: none" src="game-15/Cat_01/Image-00.png">
+		<img style="display: none" src="game-15/Cat_01/Image-01.png">
+		<img style="display: none" src="game-15/Cat_01/Image-02.png">
+		<img style="display: none" src="game-15/Cat_01/Image-03.png">
+		<img style="display: none" src="game-15/Cat_01/Image-04.png">
+		<img style="display: none" src="game-15/Cat_01/Image-05.png">
+		<img style="display: none" src="game-15/Cat_01/Image-06.png">
+		<img style="display: none" src="game-15/Cat_01/Image-07.png">
+		<img style="display: none" src="game-15/Cat_01/Image-08.png">
+		<img style="display: none" src="game-15/Cat_01/Image-09.png">
+		<img style="display: none" src="game-15/Cat_01/Image-10.png">
+		<img style="display: none" src="game-15/Cat_01/Image-11.png">
+		<img style="display: none" src="game-15/Cat_01/Image-12.png">
+		<img style="display: none" src="game-15/Cat_01/Image-13.png">
+		<img style="display: none" src="game-15/Cat_01/Image-14.png">
+		<img style="display: none" src="game-15/Cat_01/Image-15.png">
+		<img style="display: none" src="game-15/Cat_01/Image-16.png">
+		<img style="display: none" src="game-15/Cat_01/Image-17.png">
+		<img style="display: none" src="game-15/Cat_01/Image-18.png">
+		<img style="display: none" src="game-15/Cat_01/Image-19.png">
+		<img style="display: none" src="game-15/Cat_01/Image-20.png">
+		<img style="display: none" src="game-15/Cat_01/Image-21.png">
+		<img style="display: none" src="game-15/Cat_01/Image-22.png">
+		<img style="display: none" src="game-15/Cat_01/Image-23.png">
+		<img style="display: none" src="game-15/Cat_01/Image-24.png">
+		<img style="display: none" src="game-15/Cat_01/Image-25.png">
+		<img style="display: none" src="game-15/Cat_01/Image-26.png">
+		<img style="display: none" src="game-15/Cat_01/Image-27.png">
+		<img style="display: none" src="game-15/Cat_01/Image-28.png">
+		<img style="display: none" src="game-15/Cat_01/Image-29.png">
+		<img style="display: none" src="game-15/Cat_01/Image-30.png">
+		<img style="display: none" src="game-15/Cat_01/Image-31.png">
+		<img style="display: none" src="game-15/Cat_01/Image-32.png">
+		<img style="display: none" src="game-15/Cat_01/Image-33.png">
+		<img style="display: none" src="game-15/Cat_01/Image-34.png">
+		<img style="display: none" src="game-15/Cat_01/Image-35.png">
+		<img style="display: none" src="game-15/Cat_01/Image-36.png">
+		<img style="display: none" src="game-15/Cat_01/Image-37.png">
+		<img style="display: none" src="game-15/Cat_01/Image-38.png">
+		<img style="display: none" src="game-15/Cat_01/Image-39.png">
+		<img style="display: none" src="game-15/Cat_01/Image-40.png">
+		<img style="display: none" src="game-15/Cat_01/Image-41.png">
+		<img style="display: none" src="game-15/Cat_01/Image-42.png">
+		<img style="display: none" src="game-15/Cat_01/Image-43.png">
+		<img style="display: none" src="game-15/Cat_01/Image-44.png">
+		<img style="display: none" src="game-15/Cat_01/Image-45.png">
+		<img style="display: none" src="game-15/Cat_01/Image-46.png">
+		<img style="display: none" src="game-15/Cat_01/Image-47.png">
+		<img style="display: none" src="game-15/Cat_01/Image-48.png">
+		<img style="display: none" src="game-15/Cat_01/Image-49.png">
+		<img style="display: none" src="game-15/Cat_01/Image-50.png">
+		<img style="display: none" src="game-15/Cat_01/Image-51.png">
+		<img style="display: none" src="game-15/Cat_01/Image-52.png">
+		<img style="display: none" src="game-15/Cat_01/Image-53.png">
+		<img style="display: none" src="game-15/Cat_01/Image-54.png">
+		<img style="display: none" src="game-15/Cat_01/Image-55.png">
+		<img style="display: none" src="game-15/Cat_01/Image-56.png">
+		<img style="display: none" src="game-15/Cat_01/Image-57.png">
+		<img style="display: none" src="game-15/Cat_01/Image-58.png">
+		<img style="display: none" src="game-15/Cat_01/Image-59.png">
+		<img style="display: none" src="game-15/Cat_01/Image-60.png">
+		<img style="display: none" src="game-15/Cat_01/Image-61.png">
+		<img style="display: none" src="game-15/Cat_01/Image-62.png">
+		<img style="display: none" src="game-15/Cat_01/Image-63.png">
+		<img style="display: none" src="game-15/Cat_01/Image-64.png">
+		<img style="display: none" src="game-15/Cat_01/Image-65.png">
+		<img style="display: none" src="game-15/Cat_01/Image-66.png">
+		<img style="display: none" src="game-15/Cat_01/Image-67.png">
+		<img style="display: none" src="game-15/Cat_01/Image-68.png">
+		<img style="display: none" src="game-15/Cat_01/Image-69.png">
+		<img style="display: none" src="game-15/Cat_01/Image-70.png">
+		<img style="display: none" src="game-15/Cat_01/Image-71.png">
+		<img style="display: none" src="game-15/Cat_01/Image-72.png">
+		<img style="display: none" src="game-15/Cat_01/Image-73.png">
+		<img style="display: none" src="game-15/Cat_01/Image-74.png">
+		<img style="display: none" src="game-15/Cat_01/Image-75.png">
+
+		<!-- Cat_02 --->
+
+		<img style="display: none" src="game-15/Cat_02/Image-00.png">
+		<img style="display: none" src="game-15/Cat_02/Image-01.png">
+		<img style="display: none" src="game-15/Cat_02/Image-02.png">
+		<img style="display: none" src="game-15/Cat_02/Image-03.png">
+		<img style="display: none" src="game-15/Cat_02/Image-04.png">
+		<img style="display: none" src="game-15/Cat_02/Image-05.png">
+		<img style="display: none" src="game-15/Cat_02/Image-06.png">
+		<img style="display: none" src="game-15/Cat_02/Image-07.png">
+		<img style="display: none" src="game-15/Cat_02/Image-08.png">
+		<img style="display: none" src="game-15/Cat_02/Image-09.png">
+		<img style="display: none" src="game-15/Cat_02/Image-10.png">
+		<img style="display: none" src="game-15/Cat_02/Image-11.png">
+		<img style="display: none" src="game-15/Cat_02/Image-12.png">
+		<img style="display: none" src="game-15/Cat_02/Image-13.png">
+		<img style="display: none" src="game-15/Cat_02/Image-14.png">
+		<img style="display: none" src="game-15/Cat_02/Image-15.png">
+		<img style="display: none" src="game-15/Cat_02/Image-16.png">
+		<img style="display: none" src="game-15/Cat_02/Image-17.png">
+		<img style="display: none" src="game-15/Cat_02/Image-18.png">
+		<img style="display: none" src="game-15/Cat_02/Image-19.png">
+		<img style="display: none" src="game-15/Cat_02/Image-20.png">
+		<img style="display: none" src="game-15/Cat_02/Image-21.png">
+		<img style="display: none" src="game-15/Cat_02/Image-22.png">
+		<img style="display: none" src="game-15/Cat_02/Image-23.png">
+		<img style="display: none" src="game-15/Cat_02/Image-24.png">
+		<img style="display: none" src="game-15/Cat_02/Image-25.png">
+		<img style="display: none" src="game-15/Cat_02/Image-26.png">
+		<img style="display: none" src="game-15/Cat_02/Image-27.png">
+		<img style="display: none" src="game-15/Cat_02/Image-28.png">
+		<img style="display: none" src="game-15/Cat_02/Image-29.png">
+		<img style="display: none" src="game-15/Cat_02/Image-30.png">
+		<img style="display: none" src="game-15/Cat_02/Image-31.png">
+		<img style="display: none" src="game-15/Cat_02/Image-32.png">
+		<img style="display: none" src="game-15/Cat_02/Image-33.png">
+		<img style="display: none" src="game-15/Cat_02/Image-34.png">
+		<img style="display: none" src="game-15/Cat_02/Image-35.png">
+		<img style="display: none" src="game-15/Cat_02/Image-36.png">
+		<img style="display: none" src="game-15/Cat_02/Image-37.png">
+		<img style="display: none" src="game-15/Cat_02/Image-38.png">
+		<img style="display: none" src="game-15/Cat_02/Image-39.png">
+		<img style="display: none" src="game-15/Cat_02/Image-40.png">
+		<img style="display: none" src="game-15/Cat_02/Image-41.png">
+		<img style="display: none" src="game-15/Cat_02/Image-42.png">
+		<img style="display: none" src="game-15/Cat_02/Image-43.png">
+		<img style="display: none" src="game-15/Cat_02/Image-44.png">
+		<img style="display: none" src="game-15/Cat_02/Image-45.png">
+		<img style="display: none" src="game-15/Cat_02/Image-46.png">
+		<img style="display: none" src="game-15/Cat_02/Image-47.png">
+		<img style="display: none" src="game-15/Cat_02/Image-48.png">
+		<img style="display: none" src="game-15/Cat_02/Image-49.png">
+		<img style="display: none" src="game-15/Cat_02/Image-50.png">
+		<img style="display: none" src="game-15/Cat_02/Image-51.png">
+		<img style="display: none" src="game-15/Cat_02/Image-52.png">
+		<img style="display: none" src="game-15/Cat_02/Image-53.png">
+		<img style="display: none" src="game-15/Cat_02/Image-54.png">
+		<img style="display: none" src="game-15/Cat_02/Image-55.png">
+		<img style="display: none" src="game-15/Cat_02/Image-56.png">
+		<img style="display: none" src="game-15/Cat_02/Image-57.png">
+		<img style="display: none" src="game-15/Cat_02/Image-58.png">
+		<img style="display: none" src="game-15/Cat_02/Image-59.png">
+		<img style="display: none" src="game-15/Cat_02/Image-60.png">
+		<img style="display: none" src="game-15/Cat_02/Image-61.png">
+		<img style="display: none" src="game-15/Cat_02/Image-62.png">
+		<img style="display: none" src="game-15/Cat_02/Image-63.png">
+		<img style="display: none" src="game-15/Cat_02/Image-64.png">
+		<img style="display: none" src="game-15/Cat_02/Image-65.png">
+		<img style="display: none" src="game-15/Cat_02/Image-66.png">
+		<img style="display: none" src="game-15/Cat_02/Image-67.png">
+		<img style="display: none" src="game-15/Cat_02/Image-68.png">
+		<img style="display: none" src="game-15/Cat_02/Image-69.png">
+		<img style="display: none" src="game-15/Cat_02/Image-70.png">
+		<img style="display: none" src="game-15/Cat_02/Image-71.png">
+		<img style="display: none" src="game-15/Cat_02/Image-72.png">
+		<img style="display: none" src="game-15/Cat_02/Image-73.png">
+		<img style="display: none" src="game-15/Cat_02/Image-74.png">
+		<img style="display: none" src="game-15/Cat_02/Image-75.png">
+
+		</div> <!-- Конец Game-15 -->
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+
+	<!-- Сссылки на интернет магазины  (электронные компоненты) -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="center" style="border-right: 1px solid; border-left: 1px solid; padding-right: 16px; padding-left: 16px;">
+				<a href="https://voron.ua" target="_blank">
+				<img src="images-store-logos/logo_voron.png" title="Откроется в новой вкладке (https://voron.ua)">
+				</a>
+			</td>
+
+			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+				<a href="http://www.kosmodrom.com.ua" target="_blank">
+				<img src="images-store-logos/logo_kosmodrom.png" title="Откроется в новой вкладке (http://www.kosmodrom.com.ua)">
+				</a>
+			</td>
+
+			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+				<a href="https://aliexpress.com" target="_blank">
+				<img src="images-store-logos/aliexpress.png" title="Откроется в новой вкладке (http://aliexpress.com)">
+				</a>
+			</td>
+
+			<td rowspan="2" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+				<img src="icons/help.png" title="ВОРОН! КОСМОДРОМ! AliExpress! Спасибо за радиодетали!">
+			</td>
+
+
+		</tr>
+
+		<tr>
+			<td align="center" style="border-right: 1px solid; border-left: 1px solid; padding-right: 16px; padding-left: 16px;">
+			Электронные компоненты и оборудование
+			</td>
+
+			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+			Электронные компоненты
+			</td>
+
+			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+			Найдётся всё! :)
+			</td>
+
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- GitHub. РусЯз. -->
+
+	<tr>
+	<td align="center">
+
+		<table style="line-height: 16px;" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+			<!-- README.MD -->
+
+			<a href="https://github.com/OlgaVlasova/markdown-doc/blob/master/README.md#SpecialSymbol"
+			target="_blank" title="(C) Olga Vlasova. Откроется в новой вкладке">
+			Правила оформления файла README.MD на GitHub</a>
+
+			<br>
+
+			<!-- Шпаргалка по Markdown -->
+
+			<a href="https://github.com/sandino/Markdown-Cheatsheet"
+			target="_blank" title="(C) Sandino. Откроется в новой вкладке">
+			Шпаргалка по Markdown</a>
+
+			<br>
+
+			<!-- Свой сайт на GITHUB -->
+
+			<a href="https://www.youtube.com/watch?v=05nLdIVfSRU"
+			target="_blank" title="(С) Анна Блок. Откроется в новой вкладке">
+			Создаём свой сайт на GitHub</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" style="padding-top: 6px;">
+
+			<!-- РУСЯЗ -->
+
+			<a href="rusurl.html"
+			target="_blank" title="Ссылки на ресурсы (откроется в новой вкладке)">
+			Ох уж этот Русский Язык</a>
+
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+<!--
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+-->
+
+	<!-- OOPS! -->
+
+	<!-- Хотел как лучше, а получилось как всегда! -->
+	<!-- См. ниже -->
+
+<!--
+
+	<tr>
+	<td align="center" class="smalltxt">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Логика основа интеллекта!
+		<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				Ukraine (Украина), 2013г. (C) Демидов С.В.
+				</td>
+
+				<td style="padding-left: 8px;">
+				<img class="icon" src="images/warning (info).png"
+				title="Мне это далось нелегко (в мучениях)!">
+				</td>
+
+			</tr>
+			</table>
+
+		<br>
+		Уважаемый соискатель! Зачем я это написал? Чтобы Вы знали откуда ноги растут!
+		<br>
+		У меня плохая логика!
+		<br>
+		Успехов Вам!
+
+		</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+-->
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Почтовый адрес -->
+
+	<tr>
+	<td>
+
+		<table align="center" width="320px" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<img src="icons/mail_20x20.png">
+
+		<br>
+
+		<span class="spoilerurl"
+		onclick="document.getElementById('mail_s1').style.display = (document.getElementById('mail_s1').style.display=='none'?'inline':'none');"
+		title="Нажмите">
+
+		<b>Почтовый адрес:</b>
+
+		</span>
+
+		<div id="mail_s1" style="display: none; width: 100%;">
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		<b>Был:</b>
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		Станислав Владимирович Демидов,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		ул. Стадионная, дом 1-Б, кв. 20,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		пос. Донец, Балаклейский р-н,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		Харьковская обл., 64250, Украина
+
+			<br>
+			<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				&nbsp;&nbsp;&nbsp;
+				<b>Стал (<u>новый адрес</u>):</b>
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+					<a href="javascript:OpenShowModalWinInfMailingAddres('ModalWinInfMAr')"
+					title="Справочная информация по почтовому адресу (нажмите)">
+					<img src="images/numeric_1.png">
+					</a>
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			&nbsp;&nbsp;&nbsp;
+			Станислав Владимирович Демидов,
+			<br>
+			&nbsp;&nbsp;&nbsp;
+			ул. Стадионная, дом 1-Б, кв. 20,
+			<br>
+			&nbsp;&nbsp;&nbsp;
+			пос. Донец, Изюмский р-н,
+			<br>
+			&nbsp;&nbsp;&nbsp;
+			Харьковская обл., 64250, Украина
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		<b><i>Любая помощь приветствуется!</i></b>
+
+		</div>
+
+		<br>
+		<br>
+
+		<img src="icons/mail_20x20.png">
+
+		<br>
+
+		<span class="spoilerurl"
+		onclick="document.getElementById('mail_s2').style.display = (document.getElementById('mail_s2').style.display=='none'?'inline':'none');"
+		title="Click">
+
+		<b>Mailing addres:</b>
+
+		</span>
+
+		<div id="mail_s2" style="display: none; width: 100%;">
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		<b>Was:</b>
+
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		Stanislav Vladimirovich Demidov,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		ul. Stadionnaya, dom 1, korp. B, kv. 20,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		g. Donets, Balakleyskiy r-n,
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		obl. Khar`kovskaya, 64250, Ukraine
+
+			<br>
+			<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				&nbsp;&nbsp;&nbsp;
+				<b>Became (<u>new address</u>):</b>
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+					<a href="javascript:OpenShowModalWinInfMailingAddres('ModalWinInfMAe')"
+					title="Help information on the postal address (click)">
+					<img src="images/numeric_1.png">
+					</a>
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			&nbsp;&nbsp;&nbsp;
+			Stanislav Vladimirovich Demidov,
+			<br>
+			&nbsp;&nbsp;&nbsp;
+			ul. Stadionnaya, dom 1, korp. B, kv. 20,
+			<br>
+			&nbsp;&nbsp;&nbsp;
+			g. Donets, Izyumskij r-n,
+			<br>
+			&nbsp;&nbsp;&nbsp;
+			obl. Khar`kovskaya, 64250, Ukraine
+
+		<br>
+		<br>
+
+		&nbsp;&nbsp;&nbsp;
+		<b><i>Any help is appreciated!</i></b>
+
+		</div>
+
+		</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Подвал -->
+
+	<tr>
+	<td align="center" class="smalltxtfooter footer_p">
+
+	<b>Никогда не сдавайся!</b>
+	<br>
+	Написать мне можно на (замечания, предложения): stdls[ухо]mail.ru или bbarsinov[ухо]gmail.com
+	<br>
+	<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+
+	</td>
+	</tr>
+
+	<!-- Иконка -->
+
+	<tr>
+	<td align="center">
+
+	<img src="icons/Disabled_Person_(mini).gif" title="Человек с ограниченными возможностями">
+
+	</td>
+	</tr>
+
+	</table>
+
+	<!--->
+
+	<!--                     -->
+	<!-- Модальные окна Dice -->
+	<!--                     -->
+
+	<!-- 1 -->
+
+	<div id="ModalWinDice1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/blender3d-dice2/blob/master/Preview_1.gif?raw=true"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinDice1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2 -->
+
+	<div id="ModalWinDice2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/blender3d-dice2/blob/master/Preview_1.png?raw=true"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinDice2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                      -->
+	<!-- Модальное окно Motor -->
+	<!--                      -->
+
+	<div id="ModalWinMotor" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/blender3d-motor/blob/master/Motor%20(preview).gif?raw=true">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinMotor')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                   -->
+	<!-- Модальное окно Флаг, Герб Украины -->
+	<!--                                   -->
+
+	<div id="ModalWinFlagGerb" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/blender3d-ukrainian-symbols/blob/master/St%20-%20FlagGerbUA%20(330x361px).png?raw=true">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		blend-файл утерян!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinFlagGerb')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                   -->
+	<!-- Модальное окно Disabled Person -->
+	<!--                                   -->
+
+	<div id="ModalWinDisabledPerson" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/blender3d-disabled-person/blob/master/Preview%20GIF/Disabled%20Person%20(099%20frames)%2015%25,%20optimization.gif?raw=true"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			Разные варианты иконки (размер, скорость анимации)
+			смотрите в <a href="https://github.com/drilnet/blender3d-disabled-person" title="Репозиторий: Blender 3D. Disabled Person (анимированная иконка)">репозитории</a>!
+
+			<br>
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinDisabledPerson')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                       -->
+	<!-- Модальные окна LogoVRLE8 и LogoVRLE16 -->
+	<!--                                       -->
+
+	<!-- LogoVRLE8 -->
+
+	<div id="ModalWinLogoVRLE8" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<b>Логотипы алгоритма VRLE8 (неанимационный и анимационный)</b>
+		<br>
+		<br>
+
+		<img src="https://github.com/drilnet/blender3d-logovrle8-logovrle16/raw/master/LogoVRLE8%2C%20ver.%2007b/LogoVRLE8%2C%2055%25%20(352x187).png"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" style="padding-top: 8px;">
+
+		<img src="https://github.com/drilnet/blender3d-logovrle8-logovrle16/raw/master/LogoVRLE8%2C%20ver.%2007b/LogoVRLE8%2C%2055%25%20(352x187)%20HQ.webp"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinLogoVRLE8')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- LogoVRLE16 -->
+
+	<div id="ModalWinLogoVRLE16" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<b>Логотипы алгоритма VRLE16 (неанимационный и анимационный)</b>
+		<br>
+		<br>
+
+		<img src="https://github.com/drilnet/blender3d-logovrle8-logovrle16/raw/master/LogoVRLE16%2C%20ver.%2007a/LogoVRLE16.blend%2C%2055%25%20(352x187).png"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" style="padding-top: 8px;">
+
+		<img src="https://github.com/drilnet/blender3d-logovrle8-logovrle16/raw/master/LogoVRLE16%2C%20ver.%2007a/LogoVRLE16.Animation.blend%2C%2055%25%20(352x187)%20HQ.webp"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinLogoVRLE16')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                       -->
+	<!-- Модальные окна Подписанные фотографии -->
+	<!--                                       -->
+
+	<!-- Photo 1 -->
+
+	<div id="ModalWinPhoto1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License) на скрипт: <b>Free</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<b>Пример подписанной фотографии (пример 1)</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img width="75%" height="75%" src="https://github.com/drilnet/programming-perl-signature-images/raw/master/Example%201.png"
+		title="(C) Демидов С.В.">
+
+		<br>
+		<br>
+		<a href="https://github.com/drilnet/programming-perl-signature-images/raw/master/Example%201%20(High%20Quality).jpg" title="Откроется в новой вкладке" target="_blank">
+		В высоком разрешении</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPhoto1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Photo 2 -->
+
+	<div id="ModalWinPhoto2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License) на скрипт: <b>Free</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<b>Пример подписанной фотографии (пример 2)</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img width="75%" height="75%" src="https://github.com/drilnet/programming-perl-signature-images/raw/master/Example%202.png"
+		title="(C) Демидов С.В.">
+
+		<br>
+		<br>
+		<a href="https://github.com/drilnet/programming-perl-signature-images/raw/master/Example%202%20(High%20Quality).jpg" title="Откроется в новой вкладке" target="_blank">
+		В высоком разрешении</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPhoto2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                             -->
+	<!-- Модальное окно Ожившее кино -->
+	<!--                             -->
+
+	<div id="ModalWinVKino" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center" colspan="3">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+
+		<b>Снято в 90-х годах XX века!</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+
+		<td align="center">
+		<img src="https://github.com/drilnet/vector-06c-kino/raw/master/GIF%20Animation/Gray.%20Rykov%20V.gif"
+		title="Перекодировка: Демидов С.В.">
+
+		<br>
+		<b>Рыков Виталик</b>
+
+		</td>
+
+		<td align="center" style="padding-left: 6px;">
+		<img src="https://github.com/drilnet/vector-06c-kino/raw/master/GIF%20Animation/Gray.%20Tretyakov%20A.gif"
+		title="Перекодировка: Демидов С.В.">
+
+		<br>
+		<b>Третьяков Андрей</b>
+
+		</td>
+
+		<td align="center" style="padding-left: 6px;">
+		<img src="https://github.com/drilnet/vector-06c-kino/raw/master/GIF%20Animation/Gray.%20Demidov%20S.%201.gif"
+		title="Перекодировка: Демидов С.В.">
+
+		<br>
+		<b>Демидов Станислав</b>
+
+		</td>
+
+		</tr>
+
+		<tr>
+		<td align="center" colspan="3">
+
+		<br>
+		Наша маленькая история!
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td colspan="3">
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinVKino')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                        -->
+	<!-- Модальные окна SPR2BMP -->
+	<!--                        -->
+
+	<!-- Скриншот 1 -->
+
+	<div id="ModalWinSPR2BMP_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+		<b>Скриншот программы (скриншот 1)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/vector-06c-spr2bmp/raw/master/spr2bmp_Screenshot_1.png">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSPR2BMP_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 2 -->
+
+	<div id="ModalWinSPR2BMP_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+		<b>Скриншот программы (скриншот 2, уменьшен на 15%)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img width="85%" height="85%" src="https://github.com/drilnet/vector-06c-spr2bmp/raw/master/spr2bmp_Screenshot_2.png">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSPR2BMP_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Результат работы программы SPR2BMP -->
+
+	<div id="ModalWinSPR2BMP_3" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Результат работы программы (SPR в BMP)</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/vector-06c-spr2bmp/raw/master/SRC%20C%20-%20FreeBSD%2C%20Linux/Test/TEST2.bmp" title="Sorayama Hajime">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSPR2BMP_3')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Бонус -->
+
+	<div id="ModalWinSPR2BMP_4" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Карикатуры на Харьковское сообщество программистов (XX век, 90-е годы)</b>
+
+		<br>
+		<br>
+		Анимация:
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/vector-06c-spr2bmp/raw/master/GIF%20-%20Bonus/Karikatury.gif">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSPR2BMP_4')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                        -->
+	<!-- Модальные окна GRF2BMP -->
+	<!--                        -->
+
+	<!-- Скриншот 1 -->
+
+	<div id="ModalWinGRF2BMP_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+		<b>Скриншот программы (скриншот 1)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/vector-06c-grf2bmp/raw/master/grf2bmp_Screenshot_1.png">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinGRF2BMP_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 2 -->
+
+	<div id="ModalWinGRF2BMP_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+		<b>Скриншот программы (скриншот 2, уменьшен на 15%)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img width="85%" height="85%" src="https://github.com/drilnet/vector-06c-grf2bmp/raw/master/grf2bmp_Screenshot_2.png">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinGRF2BMP_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Результат работы программы GRF2BMP -->
+
+	<div id="ModalWinGRF2BMP_3" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Результат работы программы (GRF в BMP)</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/vector-06c-grf2bmp/raw/master/SRC%20C%20-%20FreeBSD%2C%20Linux/Test/TEST.bmp">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinGRF2BMP_3')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Бонус -->
+
+	<div id="ModalWinGRF2BMP_4" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Oops! (XX век, 90-е годы)</b>
+
+		<br>
+		<br>
+		Анимация:
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/vector-06c-grf2bmp/raw/master/GIF%20-%20Bonus/Kharkov%20(People).gif">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinGRF2BMP_4')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                           -->
+	<!-- Модальное окно VColor256  -->
+	<!--                           -->
+
+	<div id="ModalWinVColor256" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+		<b>Все 256 цветов Вектор'а-06Ц:</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/vector-06c-color256/raw/master/Images%20PNG/Vector-06C_Color_256.4.png"
+		title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinVColor256')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                          -->
+	<!-- Модальные окна Puzzle 15 -->
+	<!--                          -->
+
+	<!-- Скриншот 1, вариант 1 -->
+
+	<div id="ModalWinPuzzle15_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншоты игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 1</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_1.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 1, вариант 2 -->
+
+	<div id="ModalWinPuzzle15_1_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншоты игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 2</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_1_2.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_1_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 2, вариант 2 -->
+
+	<div id="ModalWinPuzzle15_2_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншоты игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 2</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_2_2.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_2_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Скриншот 3, вариант 2 -->
+
+	<div id="ModalWinPuzzle15_3_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+		<br>
+		<br>
+		Скриншоты игры <b>Пятнашки</b> (Puzzle 15, Game 15)</b>
+		<br>
+		Версия 3.0.а, <b>вариант 2</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="game-15/iframe/puzzle15_screen_3_2.html" width="780" height="240" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		Репозиторий игры <a href="https://github.com/drilnet/puzzle15">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_3_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Иллюстрация о неразрешимой вариации в Пятнашки (взято с https://en.wikipedia.org/wiki/15_puzzle) -->
+
+	<div id="ModalWinPuzzle15_SamLoydS" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Иллюстрация о неразрешимой вариации в Пятнашки!
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="game-15/images-SamLoydS/SamLoydS_400x248.png" title="Взято с https://en.wikipedia.org/wiki/15_puzzle">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align ="center">
+
+		<br>
+		Взято с <a href="https://en.wikipedia.org/wiki/15_puzzle" title="Откроется в новой вкладке" target="_blank">https://en.wikipedia.org/wiki/15_puzzle</a>
+		<br>
+		<font class="smalltxtiframe" title="Спасибо за иллюстрацию!">Thank you very much!</font>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center" class="smalltxtiframe">
+
+		<br>
+		<b>Примечание.</b>
+		<br>
+		Размеры изображения были изменены!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPuzzle15_SamLoydS')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                         -->
+	<!-- Модальные окна TEA2025B -->
+	<!--                         -->
+
+	<!-- TEA2025B. Ver. 3 -->
+
+	<!-- 1 -->
+
+	<div id="ModalWinTEA2025B_Ver3_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Схема TEA2025B (стерео) с нестабилизированным источником питания</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%A1%D1%85%D0%B5%D0%BC%D0%B0.png"
+		title="Схему начертил: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 300dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 3">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver3_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2 -->
+
+	<div id="ModalWinTEA2025B_Ver3_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Расположение радиодеталей на печатной плате</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%A0%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2.png"
+		title="Расстановка компонентов: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 300dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 3">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver3_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 3 -->
+
+	<div id="ModalWinTEA2025B_Ver3_3" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Печатная плата (позитив)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%20(%D0%9F).png"
+		title="Разводка платы: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 300dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 3">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver3_3')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 4 -->
+
+	<div id="ModalWinTEA2025B_Ver3_4" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Печатная плата (негатив)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%20(%D0%9D).png"
+		title="Разводка платы: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 300dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 3">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver3_4')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 5 -->
+
+	<div id="ModalWinTEA2025B_Ver3_5" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Собранная плата</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%84%D0%BE%D1%82%D0%BE%20%D0%BF%D0%BB%D0%B0%D1%82%D1%8B%2072dpi/top.png"
+		title="Собранная плата: Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver3_5')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- TEA2025B. Ver. 4 -->
+
+	<!-- 1 -->
+
+	<div id="ModalWinTEA2025B_Ver4_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Схема TEA2025B (стерео) без источника питания</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%A1%D1%85%D0%B5%D0%BC%D0%B0.png"
+		title="Схему начертил: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 4">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2 -->
+
+	<div id="ModalWinTEA2025B_Ver4_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Расположение радиодеталей на печатной плате</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%A0%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2.png"
+		title="Расстановка компонентов: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 4">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 3 -->
+
+	<div id="ModalWinTEA2025B_Ver4_3" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Печатная плата (позитив)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%20(%D0%9F).png"
+		title="Разводка платы: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 4">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_3')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 4 -->
+
+	<div id="ModalWinTEA2025B_Ver4_4" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Печатная плата (негатив)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%20(%D0%9D).png"
+		title="Разводка платы: Демидов С.В.">
+
+		<br>
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 4">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_4')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                               -->
+	<!-- Модальное окно BoxPhotorezist -->
+	<!--                               -->
+
+	<div id="ModalWinBoxPhotorezist" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Результат:</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Box%20For%20Exposure%20Photoresist/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%97%D0%B0%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B/Preview%20(512x402).png">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/Box%20For%20Exposure%20Photoresist/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%97%D0%B0%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B/Preview%20(451x130).png">
+
+		<br>
+		<br>
+		Сделано из бумажного ящика!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinBoxPhotorezist')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                -->
+	<!-- Модальное окно Divider R1 и R2 -->
+	<!--                                -->
+
+	<div id="ModalWinDividerR1R2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<iframe src="calcdivr2.html" width="780" height="320" scrolling="yes"></iframe>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		<a href="calcdivr2.html" target="_blank" title="Формулы, расчёты, калькулятор на HTML + JavaScript">Открыть в новой вкладке</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinDividerR1R2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                 -->
+	<!-- Модальное окно Power Supply 512 -->
+	<!--                                 -->
+
+	<!-- 1 -->
+
+	<div id="ModalWinPS512_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+		<br>
+		<br>
+		<b>Схема блока питания</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<div class="modalwintxtsize2" style="overflow: scroll; width: 740px; height: 280px;">
+				Уважаемый соискатель! Обратите своё внимание на результаты тестов!
+				<br>
+				Смотрите <a href="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PS_512.pdf" title="Скачать">pdf-файл</a> (смотрите в конце).
+
+				<br>
+				<br>
+
+				<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/SCH%20-%20Images/PS_512_720x471.png"
+				title="Схему начертил: Демидов С.В.">
+			</div>
+
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Репозиторий: Электроника -> Стабилизированный блок питания... -> Power Supply +5V, -5V, +12V, -12V">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPS512_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2 -->
+
+	<div id="ModalWinPS512_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+		<br>
+		<br>
+		<b>Расположение радиодеталей на печатной плате</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PCB%20-%20Images/PS_512_(DIN5_Inside)_1_640x.png"
+		title="Расстановка компонентов: Демидов С.В.">
+		<br>
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Репозиторий: Электроника -> Стабилизированный блок питания... -> Power Supply +5V, -5V, +12V, -12V">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPS512_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 3 -->
+
+	<div id="ModalWinPS512_3" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+		<br>
+		<br>
+		<b>Печатная плата (позитив)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PCB%20-%20Images/PS_512_(DIN5_Inside)_2_640x.png"
+		title="Разводка платы: Демидов С.В.">
+		<br>
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Репозиторий: Электроника -> Стабилизированный блок питания... -> Power Supply +5V, -5V, +12V, -12V">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPS512_3')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 4 -->
+
+	<div id="ModalWinPS512_4" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+		<br>
+		<br>
+		<b>Печатная плата (негатив)</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PCB%20-%20Images/PS_512_(DIN5_Inside)_3_640x.png"
+		title="Разводка платы: Демидов С.В.">
+		<br>
+		<br>
+		Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Репозиторий: Электроника -> Стабилизированный блок питания... -> Power Supply +5V, -5V, +12V, -12V">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPS512_4')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 5 -->
+
+	<div id="ModalWinPS512_5" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Собранный блок питания</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/Images%20-%20Photo/ImagePS_512_3.png"
+		title="(С) Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPS512_5')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- Reklama -->
+
+	<div id="ModalWinPS512_R" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+			<h3>Где заказать тороидальный трансформатор в Украине?</h3>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+			Я заказывал здесь: <a href="https://mibox.com.ua" title="Откроется в новой вкладке" target="_blank">https://mibox.com.ua</a>
+			<br>
+			E-mail: <a href="mailto:mibox2005@gmail.com">mibox2005@gmail.com</a>
+			<br>
+			Копчинский Леонид Станиславович
+
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinPS512_R')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                              -->
+	<!-- Модальное окно Genius SP-G06 -->
+	<!--                              -->
+
+	<div id="ModalWinGeniusSP-G06" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>До ремонта (колонки приблизительно 2002 года):</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%94%D0%BE%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<br>
+		<b>После ремонта:</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png"
+		title="Ремонт колонок: Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinGeniusSP-G06')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                          -->
+	<!-- Модальное окно Интеллект -->
+	<!--                          -->
+
+	<div id="ModalWinIntelligence" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<hr>
+		Вам <a href="https://github.com/drilnet/Intelligence" title="Репозиторий: Интеллект. Искусственный интеллект">сюда</a>
+		<hr>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinIntelligence')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--->
+
+	<!--                                            -->
+	<!-- Модальное окно SMF (Simple Machines Forum) -->
+	<!--                                            -->
+
+	<!-- 1 -->
+
+	<div id="ModalWinSMF" class="modalwin modalwintxtsize2">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<!-- Оригинал (лого) -->
+		<tr>
+		<td align="center">
+
+		<hr>
+
+		Оригинальное изображение было взято с сайта: <a href="https://prowebber.ru" title="Откроется в новой вкладке" target="_blank">https://prowebber.ru</a>
+		<br>
+		<br>
+		Вот оно:
+		<br>
+		<br>
+
+			<!-- Лого SMF (оригинал) -->
+
+			<table class="smfbglogooriginal" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+
+				<img class="icon" src="icons/SMF_Original.png" title="Логотип">
+
+			</td>
+			</tr>
+			</table>
+
+			<br>
+
+			Лицензия на изображение не указана! Автор не указан!
+
+		<hr>
+
+		</td>
+		</tr>
+
+		<!-- Как сделал Я -->
+		<tr>
+		<td align="center">
+
+		<br>
+
+			<!-- Лого SMF -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				Я себе для сайта сделал так:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+
+					<table class="smfbglogoi" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons/SMF_2.png" title="Логотип">
+					<td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+			</table>
+
+		<br>
+
+			<!-- Ссылки на (лого) на png-файлы -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<a href="icons/SMF_1.png" title="Откроется в новой вкладке" target="_blank">SMF_1.png</a> (562 x 66 px)
+				</td>
+
+				<td>&nbsp;&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_2.png" title="Откроется в новой вкладке" target="_blank">SMF_2.png</a> (285 x 33 px)
+				</td>
+
+				<td>&nbsp;&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_3.png" title="Откроется в новой вкладке" target="_blank">SMF_3.png</a> (204 x 24 px)
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Ссылки на (лого) на xcf-файлы -->
+
+			<table class="smfxcf" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				Исходники в формате графического редактора <a href="https://www.gimp.org" title="Откроется в новой вкладке">Gimp</a>:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_1.xcf" title="Скачать">SMF_1.xcf</a>,
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_2.xcf" title="Скачать">SMF_2.xcf</a>,
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+				<a href="icons/SMF_3.xcf" title="Скачать">SMF_3.xcf</a>.
+				</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSMF')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2 -->
+
+	<div id="ModalWinSMF2" class="modalwin modalwintxtsize2">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="left">
+
+		Русскоязычное сообщество <a href="https://www.simplemachines.ru" title="Откроется в новой вкладке" target="_blank">здесь</a>.
+		<br>
+		Спасибо!
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinSMF2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--->
+
+	<!--                                -->
+	<!-- Модальные окна для литературы  -->
+	<!--                                -->
+
+	<!-- Добавить в массив (в javascript): ModalWinBook_1, ModalWinBook_2 и т.д. -->
+
+	<div id="ModalWinBook_0" class="modalwinbook"></div>
+	<div id="ModalWinBook_1" class="modalwinbook"></div>
+	<div id="ModalWinBook_2" class="modalwinbook"></div>
+	<div id="ModalWinBook_3" class="modalwinbook"></div>
+	<div id="ModalWinBook_4" class="modalwinbook"></div>
+	<div id="ModalWinBook_5" class="modalwinbook"></div>
+	<div id="ModalWinBook_6" class="modalwinbook"></div>
+	<div id="ModalWinBook_7" class="modalwinbook"></div>
+	<div id="ModalWinBook_8" class="modalwinbook"></div>
+	<div id="ModalWinBook_9" class="modalwinbook"></div>
+	<div id="ModalWinBook_10" class="modalwinbook"></div>
+	<div id="ModalWinBook_11" class="modalwinbook"></div>
+	<div id="ModalWinBook_12" class="modalwinbook"></div>
+	<div id="ModalWinBook_13" class="modalwinbook"></div>
+	<div id="ModalWinBook_14" class="modalwinbook"></div>
+	<div id="ModalWinBook_15" class="modalwinbook"></div>
+
+	<!--                                    -->
+	<!-- Модальное окно                     -->
+	<!-- Номиналы стандартных сопротивлений -->
+	<!--                                    -->
+
+	<div id="ModalWinNSS" align="center" class="nssmodalwin">
+	</div>
+
+	<!--                       -->
+	<!-- Модальное окно        -->
+	<!-- Ближайшее стандартное -->
+	<!--                       -->
+
+	<div id="ModalWinBS" class="bsmodalwin">
+	</div>
+
+	<!--           -->
+	<!-- Окно      -->
+	<!-- Закон Ома -->
+	<!--           -->
+
+	<div id="ZOm" align="center" class="pop-up-window_zom">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="center">
+
+				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+				Формулы
+				</td>
+				</tr>
+				</table>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td style="padding-top: 6px;">
+
+			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
+			<img class="icon" src="images-ohm/formulas-zom_080_percent.png"
+			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
+			</a>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+					<td>
+
+					<b>U</b> - Напряжение
+					<br>
+					<b>I</b> - Сила тока
+					<br>
+					<b>P</b> - Мощность
+					<br>
+					<b>R</b> - Сопротивление
+
+					</td>
+					</tr>
+
+				</table>
+
+			</td>
+		</tr>
+
+		</table>
+
+		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
+		</td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                                 -->
+	<!-- Модальное окно                                  -->
+	<!-- Справочная информация по почтовому адресу (RUS) -->
+	<!--                                                 -->
+
+	<div id="ModalWinInfMAr" class="modalwininfmailingaddres">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<hr>
+
+			7 июля 2020 года <b>Балаклейский район</b> был ликвидирован в рамках административно-территориальной
+			<br>
+			реформы по новому делению Харьковской области, территория вошла в состав <b>Изюмского района</b>!
+
+			<br>
+			<br>
+
+			<a href="https://zakon.rada.gov.ua/laws/show/807-IX#Text" title="Откроется в новой вкладке" target="_blank">Постанова Верховної Ради України "Про утворення та ліквідацію районів"</a>
+
+		<hr>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWinInfMailingAddres('ModalWinInfMAr')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                                 -->
+	<!-- Модальное окно                                  -->
+	<!-- Справочная информация по почтовому адресу (ENG) -->
+	<!--                                                 -->
+
+	<div id="ModalWinInfMAe" class="modalwininfmailingaddres">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<hr>
+
+			On July 7, 2020, the <b>Balakley district</b> was liquidated as part of the administrative-territorial reform
+			<br>
+			for the new division of the Kharkiv region, the territory became part of the <b>Izyum district</b>!
+
+		<hr>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWinInfMailingAddres('ModalWinInfMAe')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
