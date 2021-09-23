@@ -648,47 +648,44 @@
 					</td>
 					</tr>
 
+					</table>
+
+				</td>
+
+				<td rowspan="6" align="center" class="calctktdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
 					<tr>
-					<td align="center" style="padding: 12px 6px 0px 6px;">
 
-						<!-- Ближайшее стандартное -->
-						<!-- Кнопка (открытие модального окна) -->
+					<td>
 
-						<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<!-- Показать модальное окно! -->
-						<!-- Калькулятор ближайшее стандартное сопротивление -->
-
-						<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
-						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
-
-						</td>
-
-						</tr>
-						</table>
-
-						<!-- Формулы закон Ома -->
-						<!-- Кнопка (открыть окно с формулами) -->
-
-						<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<a href="javascript:OpenPopUpWindow('ZOm');"
-						title="Формулы (нажмите)">Закон Ома</a>
-
-						</td>
-
-						</tr>
-						</table>
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
+					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
-					</tr>
 
+					</tr>
+					</table>
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
 					</table>
 
 				</td>
@@ -2455,47 +2452,44 @@
 					</td>
 					</tr>
 
+					</table>
+
+				</td>
+
+				<td rowspan="6" align="center" class="calctktdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
 					<tr>
-					<td align="center" style="padding: 12px 6px 0px 6px;">
 
-						<!-- Ближайшее стандартное -->
-						<!-- Кнопка (открытие модального окна) -->
+					<td>
 
-						<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<!-- Показать модальное окно! -->
-						<!-- Калькулятор ближайшее стандартное сопротивление -->
-
-						<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
-						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
-
-						</td>
-
-						</tr>
-						</table>
-
-						<!-- Формулы закон Ома -->
-						<!-- Кнопка (открыть окно с формулами) -->
-
-						<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<a href="javascript:OpenPopUpWindow('ZOm');"
-						title="Формулы (нажмите)">Закон Ома</a>
-
-						</td>
-
-						</tr>
-						</table>
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
+					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
-					</tr>
 
+					</tr>
+					</table>
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показатть окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
 					</table>
 
 				</td>
@@ -4297,47 +4291,44 @@
 					</td>
 					</tr>
 
+					</table>
+
+				</td>
+
+				<td rowspan="7" align="center" class="calctktdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
 					<tr>
-					<td align="center" style="padding: 12px 6px 0px 6px;">
 
-						<!-- Ближайшее стандартное -->
-						<!-- Кнопка (открытие модального окна) -->
+					<td>
 
-						<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<!-- Показать модальное окно! -->
-						<!-- Калькулятор ближайшее стандартное сопротивление -->
-
-						<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
-						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
-
-						</td>
-
-						</tr>
-						</table>
-
-						<!-- Формулы закон Ома -->
-						<!-- Кнопка (открыть окно с формулами) -->
-
-						<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<a href="javascript:OpenPopUpWindow('ZOm');"
-						title="Формулы (нажмите)">Закон Ома</a>
-
-						</td>
-
-						</tr>
-						</table>
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
+					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
-					</tr>
 
+					</tr>
+					</table>
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
 					</table>
 
 				</td>
@@ -6255,47 +6246,44 @@
 					</td>
 					</tr>
 
+					</table>
+
+				</td>
+
+				<td rowspan="7" align="center" class="calctktdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
 					<tr>
-					<td align="center" style="padding: 12px 6px 0px 6px;">
 
-						<!-- Ближайшее стандартное -->
-						<!-- Кнопка (открытие модального окна) -->
+					<td>
 
-						<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<!-- Показать модальное окно! -->
-						<!-- Калькулятор ближайшее стандартное сопротивление -->
-
-						<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
-						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
-
-						</td>
-
-						</tr>
-						</table>
-
-						<!-- Формулы закон Ома -->
-						<!-- Кнопка (открыть окно с формулами) -->
-
-						<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
-						<tr>
-
-						<td>
-
-						<a href="javascript:OpenPopUpWindow('ZOm');"
-						title="Формулы (нажмите)">Закон Ома</a>
-
-						</td>
-
-						</tr>
-						</table>
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
+					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
-					</tr>
 
+					</tr>
+					</table>
+
+					<!-- Формулы закон Ома -->
+					<!-- Кнопка (открыть окно с формулами) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('ZOm');"
+					title="Формулы (нажмите)">Закон Ома</a>
+
+					</td>
+
+					</tr>
 					</table>
 
 				</td>
