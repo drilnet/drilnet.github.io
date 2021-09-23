@@ -581,7 +581,7 @@ function LoadBook()
 
 	temp += "Не работает ссылка!";
 	temp += "<br>"
-	temp += "Напишите мне, e-mail внизу страницы!";
+	temp += "Напишите мне, e-mail: <b>bbarsinov[ухо]gmail.com</b>";
 	temp += "<br>";
 
 		// Спасибо за литературу.
