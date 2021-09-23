@@ -322,12 +322,22 @@
 
 	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
 
+	<!-- -->
 	<script language="javascript" src="js/javascript.js"></script>
+	<!-- Литература -->
 	<script language="javascript" src="js/javascript-literatura.js"></script>
+	<!-- Игра Пятнашки -->
 	<script language="javascript" src="game-15/js/game-15.js"></script>
 
+	<!-- Законы Кирхгофа -->
+	<script language="javascript" src="js/javascript-kirchhoff.js"></script>
+	<!-- Калькулято ближайшее стандартное сопротивление -->
 	<script language="javascript" src="js/javascript-bs.js"></script>
+	<!-- Номиналы стандартных сопротивлений -->
 	<script language="javascript" src="js/javascript-nss.js"></script>
+	<!-- Закон Ома -->
+	<script language="javascript" src="js/javascript-ohm.js"></script>
+	<!-- Показать/закрыть окно (не модальное) -->
 	<script language="javascript" src="js/javascript-pop-up.js"></script>
 
 	</head>
@@ -341,8 +351,22 @@
 <!-- Инициализация Game-15. -->
 <!-- G15_Init();            -->
 
+<!-- Вставить в страницу законы Кирхгофа -->
+<!-- BuildKirchhoffLaws();               -->
+
+<!-- Вставить в страницу номиналы стандартных сопротивлений (НСС) -->
+<!-- BuildNSS('ModalWinNSS');                                     -->
+
+<!-- Калькулятор ближайшее стандартное сопротивление -->
+<!-- BuildBS1('ModalWinBS'); -->
+
+<!-- Вставит в сраницу закон Ома -->
+<!-- BuildOhm();                 -->
+
 <!-- onload будет выполнен после загрузки страницы -->
-<body id="indexbodyid" onload="LoadBook(); G15_RemoveClock(); G15_Init();">
+<body id="indexbodyid"
+	onload="LoadBook(); G15_RemoveClock(); G15_Init();
+		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -1636,7 +1660,27 @@
 			<table cellspacing="0" cellpadding="0" border="0">
 			<tr>
 
-			<td>
+			<td style="padding-left: 6px;">
+
+				<!-- Первый и Второй закон Кирхгофа -->
+				<!-- Кнопка (открыть окно с законами) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<a href="javascript:OpenPopUpWindow('Kirchhoff');"
+				title="Нажмите">Законы Кирхгофа</a>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
 
 				<!-- Номиналы стандартных сопротивлений -->
 				<!-- Кнопка (открытие модального окна) -->
@@ -1646,8 +1690,8 @@
 
 				<td>
 
-				<!-- Сначало вставить, потом показать! -->
-				<a href="javascript:BuildNSS('ModalWinNSS'); NSSOpenShowModalWin('ModalWinNSS');"
+				<!-- Показать модальное окно! -->
+				<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
 				title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
 
 
@@ -1706,8 +1750,8 @@
 
 				<td>
 
-				<!-- Сначало вставить, потом показать! -->
-				<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+				<!--  Показать калькулятор ближайшее стандартное сопротивление -->
+				<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 				title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 				</td>
@@ -6008,6 +6052,14 @@
 	<div id="ModalWinBook_14" class="modalwinbook"></div>
 	<div id="ModalWinBook_15" class="modalwinbook"></div>
 
+	<!--                 -->
+	<!-- Окно            -->
+	<!-- Законы Кирхгофа -->
+	<!--                 -->
+
+	<div id="Kirchhoff" align="center" class="pop-up-window_kirchhoff">
+	</div>
+
 	<!--                                    -->
 	<!-- Модальное окно                     -->
 	<!-- Номиналы стандартных сопротивлений -->
@@ -6030,70 +6082,6 @@
 	<!--           -->
 
 	<div id="ZOm" align="center" class="pop-up-window_zom">
-
-		<table cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-			<td align="center">
-
-				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
-				<tr>
-				<td align="center">
-				Формулы
-				</td>
-				</tr>
-				</table>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 6px;">
-
-			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
-			<img class="icon" src="images-ohm/formulas-zom_080_percent.png"
-			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
-			</a>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
-
-				<table cellspacing="0" cellpadding="0" border="0">
-
-					<tr>
-					<td>
-
-					<b>U</b> - Напряжение
-					<br>
-					<b>I</b> - Сила тока
-					<br>
-					<b>P</b> - Мощность
-					<br>
-					<b>R</b> - Сопротивление
-
-					</td>
-					</tr>
-
-				</table>
-
-			</td>
-		</tr>
-
-		</table>
-
-		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td>
-		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
-		</td>
-		</tr>
-
-		</table>
-
 	</div>
 
 	<!--                                                 -->
