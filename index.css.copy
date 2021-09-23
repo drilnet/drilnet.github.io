@@ -2357,6 +2357,58 @@
 			opacity: 0.2;        /* Прозрачность            */
 			}
 
+	/* -------------------- */
+	/* Окно законы Кирхгофа */
+	/* -------------------- */
+
+	/* Kirchhoff */
+	/* Заголовок: Первый закон Кирхгофа */
+	/* Заголовок: Второй закон Кирхгофа */
+
+	.kirchhofftitle {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 100%;
+	font-size: 14px;
+	}
+
+	/* Kirchhoff */
+	/* Фон и бордюр для формул */
+
+	.kirchhoffformulas {
+	background: #ffffff;
+	border: 1px solid #cdd0d5;
+	border-radius: 0px;
+	padding: 4px 4px 4px 4px;
+	}
+
+	/* Kirchhoff */
+	/* Всплывающее окно с законами */
+
+	.pop-up-window_kirchhoff {
+	width: auto;   /* Ширина окна */
+	height: auto;  /* Высота окна */
+	border: 2px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы покраям */
+
+	/* Окно в правом верхнем углу */
+	top: 16px;  /* Сверху до окна */
+	left: 16px; /* Слева до окна */
+
+	margin: auto 0 auto auto;
+	font-size: 12px; /* Размер шрифта */
+
+	z-index: 1;      /* Поверх всех     */
+	display: none;   /* Сначала невидим */
+	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+	}
+
 	/* -------------- */
 	/* Окно закон Ома */
 	/* -------------- */
@@ -2387,8 +2439,8 @@
 	padding: 12px 12px 12px 12px; /* Внутренние отступы покраям */
 
 	/* Окно в правом верхнем углу */
-	top: 16px;    /* Сверху до окна */
-	right: 16px;  /* Справа до окна */
+	top: 16px;   /* Сверху до окна */
+	right: 16px; /* Справа до окна */
 
 	margin: auto 0 auto auto;
 	font-size: 12px; /* Размер шрифта */
