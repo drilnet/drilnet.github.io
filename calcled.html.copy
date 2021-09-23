@@ -11,19 +11,27 @@
 
 	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
 
+	<!-- -->
 	<script language="javascript" src="js/javascript-calcled.js"></script>
+	<!-- Номиналы стандартных сопротивлений -->
+	<script language="javascript" src="js/javascript-nss.js"></script>
+	<!-- Калькулято ближайшее стандартное сопротивление -->
 	<script language="javascript" src="js/javascript-bs.js"></script>
+	<!-- Закон Ома -->
+	<script language="javascript" src="js/javascript-ohm.js"></script>
+	<!-- Открыть/закрыть окно (не модальное) -->
 	<script language="javascript" src="js/javascript-pop-up.js"></script>
 
 	</head>
 
-<!-- ---                                     -->
-<!-- | После загрузки страницы сделать это:  -->
-<!-- |   1. Установить поля ввода.           -->
-<!-- |   2. Установить Option.               -->
-<!-- |   3. Установить набор резисторов E24. -->
-<!-- ---                                     -->
-<body onload="SETDefaultLED();">
+<!-- ---                                        -->
+<!-- | SETDefaultLED();                         -->
+<!-- |    После загрузки страницы сделать это:  -->
+<!-- |      1. Установить поля ввода.           -->
+<!-- |      2. Установить Option.               -->
+<!-- |      3. Установить набор резисторов E24. -->
+<!-- ---                                        -->
+<body onload="SETDefaultLED(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -479,6 +487,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<!--------->
 				<!-- Uin -->
 				<!--------->
@@ -561,8 +590,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -1519,6 +1548,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<!--------->
 				<!-- Uin -->
 				<!--------->
@@ -1601,8 +1651,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -2196,6 +2246,14 @@
 
 	</table>
 
+	<!--                                    -->
+	<!-- Модальное окно                     -->
+	<!-- Номиналы стандартных сопротивлений -->
+	<!--                                    -->
+
+	<div id="ModalWinNSS" align="center" class="nssmodalwin">
+	</div>
+
 	<!--                       -->
 	<!-- Модальное окно        -->
 	<!-- Ближайшее стандартное -->
@@ -2210,77 +2268,6 @@
 	<!--           -->
 
 	<div id="ZOm" align="center" class="pop-up-window_zom">
-
-		<table cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-			<td align="center">
-
-				<!-- Заголовок -->
-
-				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
-				<tr>
-				<td align="center">
-				Формулы
-				</td>
-				</tr>
-				</table>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 6px;">
-
-			<!-- Изображение (формулы) -->
-			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
-			<img class="icon" src="images-ohm/formulas-zom_080_percent.png"
-			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
-			</a>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
-
-				<!-- Инфо -->
-
-				<table cellspacing="0" cellpadding="0" border="0">
-
-					<tr>
-					<td>
-
-					<b>U</b> - Напряжение
-					<br>
-					<b>I</b> - Сила тока
-					<br>
-					<b>P</b> - Мощность
-					<br>
-					<b>R</b> - Сопротивление
-
-					</td>
-					</tr>
-
-				</table>
-
-			</td>
-		</tr>
-
-		</table>
-
-		<!-- Кнопка -->
-
-		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td>
-		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
-		</td>
-		</tr>
-
-		</table>
-
 	</div>
 
 </body>

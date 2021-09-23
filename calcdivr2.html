@@ -11,14 +11,38 @@
 
 	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
 
+	<!-- -->
 	<script language="javascript" src="js/javascript-calcdivr2.js"></script>
+	<!-- Номиналы стандартных сопротивлений -->
+	<script language="javascript" src="js/javascript-nss.js"></script>
+	<!-- Калькулято ближайшее стандартное сопротивление -->
 	<script language="javascript" src="js/javascript-bs.js"></script>
+	<!-- Закон Ома -->
+	<script language="javascript" src="js/javascript-ohm.js"></script>
+	<!-- Открыть/закрыть окно (не модальное) -->
 	<script language="javascript" src="js/javascript-pop-up.js"></script>
 
 	</head>
 
-<!-- Установить переключатель в 150dpi (для FireFox) -->
-<body onload="CALCDIVPageFormulas_SetRadioButton_150DPI(); CALCDIVPageCalculation_SetRadioButton_150DPI(); CALCDIVFormulas_SetRadioButton_150DPI();">
+<!-- Установить переключатель в 150dpi (для FireFox)    -->
+<!--    CALCDIVPageFormulas_SetRadioButton_150DPI();    -->
+<!--    CALCDIVPageCalculation_SetRadioButton_150DPI(); -->
+<!--    CALCDIVFormulas_SetRadioButton_150DPI();        -->
+
+<!-- Вставить в станицу номиналы стандартных сопротивлений -->
+<!-- BuildNSS('ModalWinNSS');                              -->
+
+<!-- Вставить в страницу калькулятор с ближайшем стандартным сопротивлением -->
+<!-- BuildBS1('ModalWinBS');                                                -->
+
+<!-- Вставит в сраницу закон Ома -->
+<!-- BuildOhm();                 -->
+
+<!-- onload будет выполнен после загрузки страницы -->
+<body onload="CALCDIVPageFormulas_SetRadioButton_150DPI();
+		CALCDIVPageCalculation_SetRadioButton_150DPI();
+			CALCDIVFormulas_SetRadioButton_150DPI();
+			BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -1459,6 +1483,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">&nbsp;Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z1_input_1" value="10"
 				title="Входное напряжение Uin">
@@ -1529,7 +1574,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -1537,8 +1582,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -1554,6 +1599,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -2087,6 +2133,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">&nbsp;Введите <i><b>Uout1</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z2_input_1" value="3.3"
 				title="Выходное напряжение Uout1">
@@ -2157,7 +2224,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -2165,8 +2232,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -2182,6 +2249,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -2722,6 +2790,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">&nbsp;Введите <i><b>Uout2</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z3_input_1" value="6.6"
 				title="Выходное напряжение Uout2">
@@ -2792,7 +2881,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -2800,8 +2889,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -2817,6 +2906,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -3435,6 +3525,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -3862,6 +3953,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z5_input_1" value="10"
 				title="Входное напряжение Uin">
@@ -3932,7 +4044,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -3940,8 +4052,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -3957,6 +4069,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -4497,6 +4610,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z6_input_1" value="10"
 				title="Входное напряжение Uin">
@@ -4567,7 +4701,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -4575,8 +4709,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -4592,6 +4726,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -5132,6 +5267,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z7_input_1" value="10"
 				title="Входное напряжение Uin">
@@ -5202,7 +5358,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -5210,8 +5366,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -5227,6 +5383,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -5783,6 +5940,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">Введите <i><b>Uin</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z8_input_1" value="10"
 				title="Входное напряжение Uin">
@@ -5853,7 +6031,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -5861,8 +6039,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -5878,6 +6056,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -6434,6 +6613,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">Введите <i><b>Uout1</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.1" min="-2147483648" max="2147483647" id="z9_input_1" value="3.3"
 				title="Выходное напряжение Uout1">
@@ -6504,7 +6704,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -6512,8 +6712,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -6529,6 +6729,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -7097,6 +7298,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">Введите <i><b>I</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.001" min="-2147483648" max="2147483647" id="z10_input_1" value="3.333"
 				title="Ток в цепи R1, R2">
@@ -7167,7 +7389,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -7175,8 +7397,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -7192,6 +7414,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -7750,6 +7973,27 @@
 
 			<tr>
 
+				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<td align="right" class="calcdivtdpadding calcdivtdcolorline" style="border-left: 1px solid;">
 				<span class="calcdivinputcolortext">Введите <i><b>I</b></i>:&nbsp;</span><input type="number" class="calcdivnumber" step="0.001" min="-2147483648" max="2147483647" id="z11_input_1" value="3.333"
 				title="Ток в цепи R1, R2">
@@ -7820,7 +8064,7 @@
 
 				<td rowspan="3" align="center" class="calcdivtdcolorline" style="border-right: 1px solid; padding: 0px 6px 0px 6px;">
 
-					<!-- Ближайшее стандартное -->
+					<!-- Калькулятор ближайшее стандартное сопротивление -->
 					<!-- Кнопка (открытие модального окна) -->
 
 					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -7828,8 +8072,8 @@
 
 					<td>
 
-					<!-- Сначало вставить, потом показать! -->
-					<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+					<!-- Показать модальное окно -->
+					<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 					title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 					</td>
@@ -7845,6 +8089,7 @@
 
 					<td>
 
+					<!-- Показать окно (не модальное) -->
 					<a href="javascript:OpenPopUpWindow('ZOm');"
 					title="Формулы (нажмите)">Закон Ома</a>
 
@@ -8323,6 +8568,14 @@
 
 	</table>
 
+	<!--                                    -->
+	<!-- Модальное окно                     -->
+	<!-- Номиналы стандартных сопротивлений -->
+	<!--                                    -->
+
+	<div id="ModalWinNSS" align="center" class="nssmodalwin">
+	</div>
+
 	<!--                       -->
 	<!-- Модальное окно        -->
 	<!-- Ближайшее стандартное -->
@@ -8337,70 +8590,6 @@
 	<!--           -->
 
 	<div id="ZOm" align="center" class="pop-up-window_zom">
-
-		<table cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-			<td align="center">
-
-				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
-				<tr>
-				<td align="center">
-				Формулы
-				</td>
-				</tr>
-				</table>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 6px;">
-
-			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
-			<img class="icon" src="images-ohm/formulas-zom_080_percent.png"
-			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
-			</a>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
-
-				<table cellspacing="0" cellpadding="0" border="0">
-
-					<tr>
-					<td>
-
-					<b>U</b> - Напряжение
-					<br>
-					<b>I</b> - Сила тока
-					<br>
-					<b>P</b> - Мощность
-					<br>
-					<b>R</b> - Сопротивление
-
-					</td>
-					</tr>
-
-				</table>
-
-			</td>
-		</tr>
-
-		</table>
-
-		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td>
-		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
-		</td>
-		</tr>
-
-		</table>
-
 	</div>
 
 </body>

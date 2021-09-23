@@ -11,18 +11,29 @@
 
 	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
 
+	<!-- -->
 	<script language="javascript" src="js/javascript-calctransistorkey.js"></script>
+	<!-- Законы Кирхгофа -->
+	<script language="javascript" src="js/javascript-kirchhoff.js"></script>
+	<!-- Номиналы стандартных сопротивлений -->
+	<script language="javascript" src="js/javascript-nss.js"></script>
+	<!-- Калькулято ближайшее стандартное сопротивление -->
 	<script language="javascript" src="js/javascript-bs.js"></script>
+	<!-- Закон Ома -->
+	<script language="javascript" src="js/javascript-ohm.js"></script>
+	<!-- Открыть/закрыть окно (не модальное) -->
 	<script language="javascript" src="js/javascript-pop-up.js"></script>
 
 	</head>
 
-<!-- ---                                                 -->
-<!-- | После загрузки страницы сделать это:              -->
-<!-- |   1. Установить поля ввода во всех калькуляторах. -->
-<!-- |   2. Установить Option во всех калькуляторах.     -->
-<!-- ---                                                 -->
-<body onload="SetDefaultAllTK();">
+<!-- ---                                                    -->
+<!-- | SetDefaultAllTK();                                   -->
+<!-- |    После загрузки страницы сделать это:              -->
+<!-- |      1. Установить поля ввода во всех калькуляторах. -->
+<!-- |      2. Установить Option во всех калькуляторах.     -->
+<!-- ---                                                    -->
+<body onload="SetDefaultAllTK();
+		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -512,7 +523,7 @@
 		</td>
 		</tr>
 
-		<!-- Ввод данных -->
+		<!-- Ввод данных: Ucc, Uin, Uce, Ube, hFE, R2 -->
 
 		<tr>
 		<td align="center">
@@ -530,6 +541,44 @@
 			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
 
 			<tr>
+
+				<td rowspan="6" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Первый и Второй закон Кирхгофа -->
+					<!-- Кнопка (открыть окно с законами) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('Kirchhoff');"
+					title="Нажмите">Законы Кирхгофа</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
 
 				<!--------->
 				<!-- Ucc -->
@@ -610,8 +659,10 @@
 
 						<td>
 
-						<!-- Сначало вставить, потом показать! -->
-						<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+						<!-- Показать модальное окно! -->
+						<!-- Калькулятор ближайшее стандартное сопротивление -->
+
+						<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 						</td>
@@ -2279,7 +2330,7 @@
 		</td>
 		</tr>
 
-		<!-- Ввод данных -->
+		<!-- Ввод данных: Ucc, Uin, Uce, Ube, hFE, Ic -->
 
 		<tr>
 		<td align="center">
@@ -2297,6 +2348,44 @@
 			<table style="margin-top: 8px;" cellspacing="0" cellpadding="0" border="0">
 
 			<tr>
+
+				<td rowspan="6" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Первый и Второй закон Кирхгофа -->
+					<!-- Кнопка (открыть окно с законами) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('Kirchhoff');"
+					title="Нажмите">Законы Кирхгофа</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
 
 				<!--------->
 				<!-- Ucc -->
@@ -2377,8 +2466,10 @@
 
 						<td>
 
-						<!-- Сначало вставить, потом показать! -->
-						<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+						<!-- Показать модальное окно! -->
+						<!-- Калькулятор ближайшее стандартное сопротивление -->
+
+						<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 						</td>
@@ -4100,6 +4191,44 @@
 
 			<tr>
 
+				<td rowspan="7" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Первый и Второй закон Кирхгофа -->
+					<!-- Кнопка (открыть окно с законами) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('Kirchhoff');"
+					title="Нажмите">Законы Кирхгофа</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<!--------->
 				<!-- Ucc -->
 				<!--------->
@@ -4122,7 +4251,7 @@
 				title="Очистить поле Ucc">Очистить</a>&nbsp;
 				</td>
 
-				<td rowspan="8" class="calctktdcolorline" style="border-right: 1px solid;">
+				<td rowspan="7" class="calctktdcolorline" style="border-right: 1px solid;">
 
 					<table align="center" cellspacing="0" cellpadding="0" border="0">
 
@@ -4179,8 +4308,10 @@
 
 						<td>
 
-						<!-- Сначало вставить, потом показать! -->
-						<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
+						<!-- Показать модальное окно! -->
+						<!-- Калькулятор ближайшее стандартное сопротивление -->
+
+						<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
 						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 						</td>
@@ -4290,8 +4421,6 @@
 				</td>
 
 			</tr>
-
-			<tr>
 
 			<tr>
 
@@ -6020,6 +6149,44 @@
 
 			<tr>
 
+				<td rowspan="7" align="center" class="calcdivtdcolorline" style="border-left: 1px solid; padding: 0px 6px 0px 6px;">
+
+					<!-- Первый и Второй закон Кирхгофа -->
+					<!-- Кнопка (открыть окно с законами) -->
+
+					<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать окно (не модальное) -->
+					<a href="javascript:OpenPopUpWindow('Kirchhoff');"
+					title="Нажмите">Законы Кирхгофа</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+					<!-- Номиналы стандартных сопротивлений -->
+					<!-- Кнопка (открытие модального окна) -->
+
+					<table class="txtbuttonsmall" style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+
+					<!-- Показать модальное окно -->
+					<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+					title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
+
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
 				<!--------->
 				<!-- Ucc -->
 				<!--------->
@@ -6042,7 +6209,7 @@
 				title="Очистить поле Ucc">Очистить</a>&nbsp;
 				</td>
 
-				<td rowspan="8" class="calctktdcolorline" style="border-right: 1px solid;">
+				<td rowspan="7" class="calctktdcolorline" style="border-right: 1px solid;">
 
 					<table align="center" cellspacing="0" cellpadding="0" border="0">
 
@@ -6099,7 +6266,9 @@
 
 						<td>
 
-						<!-- Сначало вставить, потом показать! -->
+						<!-- Показать модальное окно! -->
+						<!-- Калькулятор ближайшее стандартное сопротивление -->
+
 						<a href="javascript:BuildBS1('ModalWinBS'); BSOpenShowModalWin('ModalWinBS');"
 						title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
@@ -6210,8 +6379,6 @@
 				</td>
 
 			</tr>
-
-			<tr>
 
 			<tr>
 
@@ -8132,6 +8299,21 @@
 
 	</table>
 
+	<!--                 -->
+	<!-- Окно            -->
+	<!-- Законы Кирхгофа -->
+	<!--                 -->
+
+	<div id="Kirchhoff" align="center" class="pop-up-window_kirchhoff">
+	</div>
+
+	<!--                                    -->
+	<!-- Модальное окно                     -->
+	<!-- Номиналы стандартных сопротивлений -->
+	<!--                                    -->
+
+	<div id="ModalWinNSS" align="center" class="nssmodalwin">
+	</div>
 	<!--                       -->
 	<!-- Модальное окно        -->
 	<!-- Ближайшее стандартное -->
@@ -8146,70 +8328,6 @@
 	<!--           -->
 
 	<div id="ZOm" align="center" class="pop-up-window_zom">
-
-		<table cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-			<td align="center">
-
-				<table class="zomtitle" cellspacing="0" cellpadding="0" border="0">
-				<tr>
-				<td align="center">
-				Формулы
-				</td>
-				</tr>
-				</table>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 6px;">
-
-			<a href="https://ru.wikipedia.org/wiki/Закон_Ома" target="_blank">
-			<img class="icon" src="images-ohm/formulas-zom_080_percent.png"
-			title="Взято с https://ru.wikipedia.org/wiki/Закон_Ома (нажмите, откроется в новой вкладке)">
-			</a>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td align="center" style="padding-top: 6px; padding-bottom: 6px;">
-
-				<table cellspacing="0" cellpadding="0" border="0">
-
-					<tr>
-					<td>
-
-					<b>U</b> - Напряжение
-					<br>
-					<b>I</b> - Сила тока
-					<br>
-					<b>P</b> - Мощность
-					<br>
-					<b>R</b> - Сопротивление
-
-					</td>
-					</tr>
-
-				</table>
-
-			</td>
-		</tr>
-
-		</table>
-
-		<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td>
-		<a href="javascript:ClosePopUpWindow('ZOm')">закрыть</a>
-		</td>
-		</tr>
-
-		</table>
-
 	</div>
 
 </body>
