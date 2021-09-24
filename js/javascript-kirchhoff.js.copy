@@ -57,7 +57,7 @@ function BuildKirchhoffLaws()
 				string += "<i>";
 				string += "I1 = I2 + I3, I1 - I2 - I3 = 0,";
 				string += "<br>";
-				string += "I2 = I1 - I3, I3 = I1 - I2";
+				string += "I2 = I1 - I3, I3 = I1 - I2.";
 				string += "</i>";
 				string += "</td>";
 
