@@ -354,19 +354,23 @@
 <!-- Вставить в страницу законы Кирхгофа -->
 <!-- BuildKirchhoffLaws();               -->
 
-<!-- Встаить в страницу калькулятор ближайшее стандартное сопротивление -->
-<!-- BuildBS1('ModalWinBS'); -->
-
 <!-- Вставить в страницу номиналы стандартных сопротивлений (НСС) -->
 <!-- BuildNSS('ModalWinNSS');                                     -->
+
+<!-- Встаить в страницу калькулятор ближайшее стандартное сопротивление -->
+<!-- BuildBS1('ModalWinBS'); -->
 
 <!-- Вставит в сраницу закон Ома -->
 <!-- BuildOhm();                 -->
 
+<!-- Страница загружена полностью, убрать анимированную иконку -->
+<!-- RemoveIndexLoader(); -->
+
 <!-- onload будет выполнен после загрузки страницы -->
 <body id="indexbodyid"
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
-		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();">
+		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
+		RemoveIndexLoader()">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -382,6 +386,11 @@
 
 			<td width="1%" style="vertical-align: bottom; padding-left: 4px;">
 			<a class="smalltxthobby" href="https://drilnet.github.io" title="https://drilnet.github.io">https://drilnet.github.io</a>
+			</td>
+
+			<!-- Анимированная иконка идёт загрузка -->
+			<td width="1%" id="indexloader" style="vertical-align: bottom; padding-left: 4px;">
+			<img class="icon" src="icons/clock.gif" title="Идёт загрузка страницы!">
 			</td>
 
 			<td align="right" class="smalltxthobby" style="vertical-align: bottom;">
@@ -1647,15 +1656,7 @@
 		<table cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
-
 		<td>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Онлайн-калькуляторы:</b>
-		</td>
-
-		</tr>
-
-		<tr>
-		<td style="padding-top: 4px;">
 
 			<table cellspacing="0" cellpadding="0" border="0">
 			<tr>
@@ -1703,43 +1704,59 @@
 
 			</td>
 
+			<!-- Calc 1, 2, 3, 4 -->
+
 			<td>
 
 				<table cellspacing="0" cellpadding="0" border="0">
-				<tr>
 
+				<tr>
+					<td colspan="4" style="padding-bottom: 4px;">
+					&nbsp;<b>Онлайн-калькуляторы:</b>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- Отступ слева -->
 					<td>&nbsp;&nbsp;&nbsp;</td>
+
+					<!-- Иконка -->
 					<td><img class="icon" src="icons/calculator_16x16.png" title="Иконка из набора FatCow. (C) FatCow Web Hosting. License: Creative Commons (Attrbution 3.0 United States)"></td>
 
 					<td>
 
 					&nbsp;&bull;
+					<!-- 1 -->
 					<a href="calcdivr2.html" title="Откроется в новой вкладке" target="_blank">Делитель напряжения на двух резисторах</a>
 
 					<br>
 
 					&nbsp;&bull;
+					<!-- 2 -->
 					<a href="calczenerdiode.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для стабилитрона</a>
 
 					<br>
 
 					&nbsp;&bull;
+					<!-- 3 -->
 					<a href="calctransistorkey.html" title="Откроется в новой вкладке" target="_blank">Биполярный транзистор в ключевом режиме</a>
 
 					<br>
 
 					&nbsp;&bull;
+					<!-- 4 -->
 					<a href="calcled.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для светодиода</a>
 
 					</td>
 
+					<!-- Отступ справа -->
+					<td>&nbsp;&nbsp;&nbsp;</td>
+
 				</tr>
+
 				</table>
 
 			</td>
-
-			<!-- Отступ слева -->
-			<td>&nbsp;&nbsp;&nbsp;</td>
 
 			<td>
 
