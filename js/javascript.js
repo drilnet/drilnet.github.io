@@ -150,3 +150,12 @@ function G15_RemoveClock()
 	+
 	"</table>";
 }
+
+// ---
+// | Страница (index.html) загружена полностью, убрать анимированную иконку
+// ---
+function RemoveIndexLoader()
+{
+	// Убрать иконку clock.gif (загрузка завершена).
+	document.getElementById('indexloader').innerHTML = "";
+}
