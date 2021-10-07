@@ -68,7 +68,7 @@ function BuildBS1(id)
 
 	string += "<tr>";
 	string += "<td>";
-	string += "<a href=\"javascript:BSCloseModalWin('ModalWinBS')\">закрыть</a>";
+	string += "<a href=\"javascript:BSCloseModalWin(\'" + id + "\')\">закрыть</a>";
 	string += "</td>";
 	string += "</tr>";
 
@@ -232,8 +232,8 @@ function BShtmlcode()
 		string += "<tr>";
 		string += "<td align=\"center\" style=\"padding-top: 6px; padding-bottom: 6px;\">";
 
-			string += "<!-- Кнопка \"Посчитать\" -->";
-			string += "<input type=\"submit\" onclick=\"CALCBSR()\" value=\"Найти ближайшее стандартное\">";
+			string += "<!-- Кнопка \"Найти\" -->";
+			string += "<input type=\"submit\" onclick=\"CALCBSR();\" value=\"Найти ближайшее стандартное\">";
 
 		string += "</td>";
 		string += "</tr>";
@@ -241,7 +241,7 @@ function BShtmlcode()
 		string += "<!-- Результат сюда -->";
 
 		string += "<tr>";
-		string += "<td id=\"CALCZDBSR\" align=\"center\" class=\"calczdbsr\" style=\"padding-top: 3px; padding-bottom: 3px;\">";
+		string += "<td id=\"CALCIDBSR\" align=\"center\" style=\"padding-top: 3px; padding-bottom: 3px;\">";
 
 			string += "Ближайшее стандартное (<b>E24<b>): <span class=\"bsrquestion\">?</span>";
 
@@ -297,14 +297,14 @@ function CALCBSR()
 	// Если набор резисторов E48.
 	if (document.getElementById('bsrb_2').checked)
 		{
-		ArrayResistor = SearchE48(R); // Ближайшее стандартное. Ряд 48.
+		ArrayResistor = SearchE48(R); // Ближайшее стандартное. Ряд E48.
 		Eline = "(<b>E48</b>)";
 		}
 
 	// Если набор резисторов E96.
 	if (document.getElementById('bsrb_3').checked)
 		{
-		ArrayResistor = SearchE96(R); // Ближайшее стандартное. Ряд 96.
+		ArrayResistor = SearchE96(R); // Ближайшее стандартное. Ряд E96.
 		Eline = "(<b>E96</b>)";
 		}
 
@@ -314,8 +314,8 @@ function CALCBSR()
 	string = "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
 
 	string += "<tr>";
-	string += "<td align=\"left\" style=\"padding-bottom: 4px;\">";
-		string += "Ближайшее стандартное " + Eline + ": ";
+	string += "<td align=\"center\" style=\"padding-bottom: 4px;\">";
+		string += "Ближайшее стандартное " + Eline + ":";
 	string += "</td>";
 	string += "</tr>";
 
@@ -328,7 +328,7 @@ function CALCBSR()
 
 			string += "<tr>";
 			string += "<td align=\"left\">";
-				string += "&nbsp;&nbsp;&nbsp;<b>R</b> = <span class=\"bsranswer\">" + El + " <b>Ом</b>" + "</span>, ";
+				string += "<b>R</b> = <span class=\"bsranswer\">" + El + " <b>Ом</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Elk + " <b>кОм</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Elm + " <b>мОм</b>" + "</span>";
 			string += "</td>";
@@ -344,7 +344,7 @@ function CALCBSR()
 
 			string += "<tr>";
 			string += "<td align=\"left\">";
-				string += "&nbsp;&nbsp;&nbsp;<b>R</b> = <span class=\"bsranswer\">" + Er + " <b>Ом</b>" + "</span>, ";
+				string += "<b>R</b> = <span class=\"bsranswer\">" + Er + " <b>Ом</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Erk + " <b>кОм</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Erm + " <b>мОм</b>" + "</span>";
 			string += "</td>";
@@ -360,7 +360,7 @@ function CALCBSR()
 
 			string += "<tr>";
 			string += "<td align=\"left\">";
-				string += "&nbsp;&nbsp;&nbsp;<b>R</b> = <span class=\"bsranswer\">" + E + " <b>Ом</b>" + "</span>, ";
+				string += "<b>R</b> = <span class=\"bsranswer\">" + E + " <b>Ом</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Ek + " <b>кОм</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Em + " <b>мОм</b>" + "</span>";
 			string += "</td>";
@@ -380,7 +380,7 @@ function CALCBSR()
 			// Сопротивление резистора слева.
 			string += "<tr>";
 			string += "<td align=\"left\">";
-				string += "&nbsp;&nbsp;&nbsp;<b>R</b> = <span class=\"bsranswer\">" + El + " <b>Ом</b>" + "</span>, ";
+				string += "<b>R</b> = <span class=\"bsranswer\">" + El + " <b>Ом</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Elk + " <b>кОм</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Elm + " <b>мОм</b>" + "</span>";
 			string += "</td>";
@@ -389,14 +389,14 @@ function CALCBSR()
 			// или
 			string += "<tr>";
 			string += "<td align=\"left\">";
-			string += "&nbsp;&nbsp;&nbsp;<b>или</b>";
+			string += "или";
 			string += "</td>";
 			string += "</tr>";
 
 			// Сопротивление резистора справа.
 			string += "<tr>";
 			string += "<td align=\"left\">";
-				string += "&nbsp;&nbsp;&nbsp;<b>R</b> = <span class=\"bsranswer\">" + Er + " <b>Ом</b>" + "</span>, ";
+				string += "<b>R</b> = <span class=\"bsranswer\">" + Er + " <b>Ом</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Erk + " <b>кОм</b>" + "</span>, ";
 				string += "<span class=\"bsranswer\">" + Erm + " <b>мОм</b>" + "</span>";
 			string += "</td>";
@@ -406,7 +406,7 @@ function CALCBSR()
 	string += "</table>";
 
 	// вставить в страницу.
-	document.getElementById('CALCZDBSR').innerHTML = string;
+	document.getElementById('CALCIDBSR').innerHTML = string;
 }
 
 // ---
@@ -429,7 +429,7 @@ function CALCBSRSetInput()
 	document.getElementById('bsr_option').value = "Ом";
 
 	// Вставить в калькулятор БСС знак вопроса.
-	document.getElementById('CALCZDBSR').innerHTML = "Ближайшее стандартное (<b>E24<b>): <span class=\"bsrquestion\">?</span>";
+	document.getElementById('CALCIDBSR').innerHTML = "Ближайшее стандартное (<b>E24<b>): <span class=\"bsrquestion\">?</span>";
 
 	// Установиить Radio Buttons.
 	document.getElementById('bsrb_1').checked = true;  // E24.

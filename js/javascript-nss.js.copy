@@ -72,11 +72,11 @@ function BuildNSS(id)
 	string += "<br>";
 
 	// Кнопка закрыть.
-	string += "<table align=\"center\" class=\"txtbutton\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+	string += "<table class=\"txtbutton\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
 
 	string += "<tr>";
 	string += "<td>";
-	string += "<a href=\"javascript:NSSCloseModalWin('ModalWinNSS')\">закрыть</a>";
+	string += "<a href=\"javascript:NSSCloseModalWin(\'" + id + "\')\">закрыть</a>";
 	string += "</td>";
 	string += "</tr>";
 
@@ -179,7 +179,7 @@ function E24()
 	string += "<tr>";
 	string += "<td>";
 
-		// Бордюр вокруг таблице E24.
+		// Бордюр вокруг таблицы E24.
 
 		string += "<table class=\"nss_bg\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
 		string += "<tr>";
@@ -248,8 +248,9 @@ function E24()
 	string += "&nbsp;&nbsp;Всех: " + index;
 	string += "<br>";
 
+		string += "&nbsp;&nbsp;";
 		string += "<span class=\"smalltxt\">";
-		string += "&nbsp;&nbsp;Взято с: ";
+		string += "Взято с: ";
 
 			string += "<a href=\"https://www.radiolibrary.ru/reference/resistorseries/e24.html\" title=\"Откроется в новой вкладке\" target=\"_blank\">";
 			string += "https://www.radiolibrary.ru/reference/resistorseries/e24.html";
@@ -405,8 +406,9 @@ function E48()
 	string += "&nbsp;&nbsp;Всех: " + index;
 	string += "<br>";
 
+		string += "&nbsp;&nbsp;";
 		string += "<span class=\"smalltxt\">";
-		string += "&nbsp;&nbsp;Взято с: ";
+		string += "Взято с: ";
 
 			string += "<a href=\"https://www.radiolibrary.ru/reference/resistorseries/e48.html\" title=\"Откроется в новой вкладке\" target=\"_blank\">";
 			string += "https://www.radiolibrary.ru/reference/resistorseries/e48.html";
@@ -610,8 +612,9 @@ function E96()
 	string += "&nbsp;&nbsp;Всех: " + index;
 	string += "<br>";
 
+		string += "&nbsp;&nbsp;";
 		string += "<span class=\"smalltxt\">";
-		string += "&nbsp;&nbsp;Взято с: ";
+		string += "Взято с: ";
 
 			string += "<a href=\"https://www.radiolibrary.ru/reference/resistorseries/e24.html\" title=\"Откроется в новой вкладке\" target=\"_blank\">";
 			string += "https://www.radiolibrary.ru/reference/resistorseries/e96.html";
