@@ -174,6 +174,14 @@
 		padding: 4px 10px 4px 10px;
 		}
 
+	/* Дополнительная разделяющая линия на странице */
+
+	.addhr {
+	background-color: #d7d7d7; /* Цвет линии для браузера Firefox и Opera */
+	color: #d7d7d7;            /* Цвет линии для остальных браузеров      */
+	width: 480px;
+	}
+
 	/* Шрифт для перечня репозиторий */
 
 	.textrepo {
@@ -2172,7 +2180,7 @@
 		/* BSS */
 		/* --- */
 
-		/* Ближайшее стандартное сопротивление (БСС) */
+		/* Калькулятор ближайшее стандартное сопротивление (БСС) */
 
 		/* BSS */
 		/* Отцентровать */
@@ -2769,48 +2777,9 @@
 	color: #c00000;
 	}
 
+		/* ------------------------------------------------ */
 		/* Номиналы стандартных сопротивлений (НСС или NSS) */
-
-		/* NSS */
-		/* Модальное окно */
-
-		.nssmodalwin {
-		height: auto; /* Высота окна */
-		width: 860px; /* Ширина окна */
-		border: 3px solid #999999; /* Тощина и цвет рамки */
-		border-radius: 4px;        /* Закругленные края   */
-		background: #ffffff;       /* Фон окна            */
-
-		padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
-
-		top: 64px; /* Сверху до окна */
-		right: 0;  /* Справа до окна */
-		left: 0;   /* Слева до окна  */
-
-		font-size: 12px; /* Размер шрифта */
-		margin: 0 auto;
-
-		z-index: 2;      /* Поверх всех     */
-		display: none;   /* Сначала невидим */
-		position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
-		}
-
-			/* NSS */
-			/* При выводе модального окна, затемнение страницы */
-
-			#shadownss {
-			position: fixed;
-
-			left: 0; /* Затемнение слева  */
-			top: 0;  /* Затемнение сверху */
-
-			width: 100%;  /* По ширине растянуть на весь экран */
-			height: 100%; /* По высоте растянуть на весь экран */
-
-			z-index: 1;          /* Поверх всех, кроме окна */
-			background: #000000; /* Цвет затемнения         */
-			opacity: 0.2;        /* Прозрачность            */
-			}
+		/* ------------------------------------------------ */
 
 		/* NSS */
 		/* Горизонтальная линия */
@@ -2878,3 +2847,332 @@
 		padding: 0px 8px 0px 8px;
 		text-align: right;
 		}
+
+		/* NSS */
+		/* Модальное окно */
+
+		.nssmodalwin {
+		height: auto; /* Высота окна */
+		width: 860px; /* Ширина окна */
+		border: 3px solid #999999; /* Тощина и цвет рамки */
+		border-radius: 4px;        /* Закругленные края   */
+		background: #ffffff;       /* Фон окна            */
+
+		padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
+
+		top: 64px; /* Сверху до окна */
+		right: 0;  /* Справа до окна */
+		left: 0;   /* Слева до окна  */
+
+		font-size: 12px; /* Размер шрифта */
+		margin: 0 auto;
+
+		z-index: 2;      /* Поверх всех     */
+		display: none;   /* Сначала невидим */
+		position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+		}
+
+			/* NSS */
+			/* При выводе модального окна, затемнение страницы */
+
+			#shadownss {
+			position: fixed;
+
+			left: 0; /* Затемнение слева  */
+			top: 0;  /* Затемнение сверху */
+
+			width: 100%;  /* По ширине растянуть на весь экран */
+			height: 100%; /* По высоте растянуть на весь экран */
+
+			z-index: 1;          /* Поверх всех, кроме окна */
+			background: #000000; /* Цвет затемнения         */
+			opacity: 0.2;        /* Прозрачность            */
+			}
+
+	/* ---------------------------------------------------- */
+	/* Номиналы стандартных электролитических конденсаторов */
+	/* ---------------------------------------------------- */
+
+	/* NSEK */
+	/* Горизонтальная линия */
+
+	.nsek_hr {
+	width: 800px;
+	}
+
+	/* NSEK */
+	/* Заголовок */
+
+	.nsektitle {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 800px;
+	font-size: 1.2em; /* 14px */
+	}
+
+	/* NSEK */
+	/* Дополнительное окно (прокрутка) в модальном окне */
+
+	.nsek_window {
+	overflow: scroll; /* полоса прокрутки */
+	/* Размер дополнительного окна */
+	width: 800px;
+	height: 320px;
+	}
+
+	/* NSEK */
+	/* Дополнительный Бордюр для таблиц: E6, E12 */
+
+	.nsek_bg {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 6px 6px 6px 6px;
+	}
+
+	/* NSEK */
+	/* В таблице E6 и E12 убирает двойные линии */
+
+	.nsek_zebra {
+	width: 600px;
+	border-collapse: collapse;
+	}
+
+	/* NSEK */
+	/* Зебра 1, для таблиц: E6, E12 */
+
+	.nsek_bg_a {
+	background: #f0f2f4;
+	border: 1px solid #d0d2d4;
+	padding: 0px 8px 0px 8px;
+	text-align: right;
+	}
+
+	/* NSEK */
+	/* Зебра 2, для таблиц: E6, E12 */
+
+	.nsek_bg_b {
+	background: #ffffff;
+	border: 1px solid #d0d2d4;
+	padding: 0px 8px 0px 8px;
+	text-align: right;
+	}
+
+	/* NSEK */
+	/* Модальное окно */
+
+	.nsekmodalwin {
+	height: auto; /* Высота окна */
+	width: 860px; /* Ширина окна */
+	border: 3px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
+
+	top: 64px; /* Сверху до окна */
+	right: 0;  /* Справа до окна */
+	left: 0;   /* Слева до окна  */
+
+	font-size: 12px; /* Размер шрифта */
+	margin: 0 auto;
+
+	z-index: 2;      /* Поверх всех     */
+	display: none;   /* Сначала невидим */
+	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+	}
+
+		/* NSEK */
+		/* При выводе модального окна, затемнение страницы */
+
+		#shadownsek {
+		position: fixed;
+
+		left: 0; /* Затемнение слева  */
+		top: 0;  /* Затемнение сверху */
+
+		width: 100%;  /* По ширине растянуть на весь экран */
+		height: 100%; /* По высоте растянуть на весь экран */
+
+		z-index: 1;          /* Поверх всех, кроме окна */
+		background: #000000; /* Цвет затемнения         */
+		opacity: 0.2;        /* Прозрачность            */
+		}
+
+		/* ---------------------------------------------------------- */
+		/* Калькулятор ближайшая стандатная электролитическая ёмкость */
+		/* ---------------------------------------------------------- */
+
+		/* CALCBSEE */
+		/* Заголовок */
+
+		.calcbsee_title {
+		background: #f0f4f7;
+		border: 1px solid #f0f4f7;
+		padding: 0px 4px 0px 4px;
+		height: 16px;
+		color: #022169;
+		width: 800px;
+		font-size: 1.2em; /* 14px */
+		}
+
+		/* CALCBSEE */
+		/* Горизонтальная линия, для онлайн калькулятора */
+
+		.calcbsee_hr {
+		width: 800px;
+		}
+
+		/* CALCBSEE */
+		/* Фон и бордюр, для онлайн калькулятора */
+
+		.calcbsee_bg1 {
+		background: #ffffff;
+		border: 1px solid #c3c6c6;
+		padding: 12px 12px 6px 12px;
+		}
+
+		/* CALCBSEE */
+		/* Фон и бордюр, для онлайн калькулятора */
+		/* Выбор E6, E12 */
+
+		.calcbsee_bg2 {
+		background: #ffffff;
+		border: 1px solid #c3c6c6;
+		padding: 6px;
+		}
+
+		/* CALCBSEE */
+		/* Фон и бордюр, для: Введите ёмкость */
+
+		.calcbsee_bg3 {
+		/* background: #ffffff; */
+		/* border: 1px solid #c3c6c6; */
+		padding: 6px;
+		}
+
+		/* CALCBSEE */
+		/* Размер поля ввода в px (ввод ёмкости) */
+
+		.calcbsee_inputpx {
+		width: 96px;
+		}
+
+		/* CALCBSEE */
+		/* Отступы для расчёта (ответа) */
+
+		.calcbsee_c {
+		padding-top: 6px;
+		padding-bottom: 6px;
+		}
+
+		/* CALCBSEE */
+		/* Цвет вопроса */
+
+		.calcbsee_cquestion {
+		color: #ff0000;
+		}
+
+		/* CALCBSEE */
+		/* Цвет результата (ответа) */
+
+		.calcbsee_canswer {
+		color: #007f00;
+		}
+
+		/* --- */
+
+		/* CALCBSEE */
+		/* Не показывать стандартный Radio Button */
+
+		.calcbsee_radiobutton {
+		display: none;
+		}
+
+		/* CALCBSEE */
+		/* Неактивный Radio Button */
+
+		.calcbsee_radiobutton + label {
+		background: url("images-calcbsee-rb/radio-false.png") no-repeat scroll 0 0;
+		cursor: pointer;
+		padding: 0px 0px 1px 15px;
+		}
+
+		/* CALCBSEE */
+		/* Активный Radio Button */
+
+		.calcbsee_radiobutton:checked + label {
+		background: url("images-calcbsee-rb/radio-true.png") no-repeat scroll 0 0;
+		}
+
+		/* CALCBSEE */
+		/* Цвет тексту Radio Button */
+
+		.calcbsee_label_radio {
+		color: #006699;
+		}
+
+		/* CALCBSEE */
+		/* При наведении на Radio Button */
+
+		.calcbsee_label_radio:hover{
+		color: #006699;
+		text-decoration: underline;
+		}
+
+		/* CALCBSEE */
+		/* Внутренний нижний отступ для Radio Button */
+
+		.calcbsee_rbpaddingb {
+		padding-bottom: 1px;
+		}
+
+		/* CALCBSEE */
+		/* Внутренний правый отступ для Radio Button */
+
+		.calcbsee_rbpaddingr {
+		padding-right: 4px;
+		}
+
+		/* CALCBSEE */
+		/* Модальное окно */
+
+		.calcbsee_modalwin {
+		height: auto; /* Высота окна */
+		width: 860px; /* Ширина окна */
+		border: 3px solid #999999; /* Тощина и цвет рамки */
+		border-radius: 4px;        /* Закругленные края   */
+		background: #ffffff;       /* Фон окна            */
+
+		padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
+
+		top: 64px; /* Сверху до окна */
+		right: 0;  /* Справа до окна */
+		left: 0;   /* Слева до окна  */
+
+		font-size: 12px; /* Размер шрифта */
+		margin: 0 auto;
+
+		z-index: 2;      /* Поверх всех     */
+		display: none;   /* Сначала невидим */
+		position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+		}
+
+			/* CALCBSEE */
+			/* При выводе модального окна, затемнение страницы */
+
+			#shadowcalcbsee {
+			position: fixed;
+
+			left: 0; /* Затемнение слева  */
+			top: 0;  /* Затемнение сверху */
+
+			width: 100%;  /* По ширине растянуть на весь экран */
+			height: 100%; /* По высоте растянуть на весь экран */
+
+			z-index: 1;          /* Поверх всех, кроме окна */
+			background: #000000; /* Цвет затемнения         */
+			opacity: 0.2;        /* Прозрачность            */
+			}

@@ -340,28 +340,39 @@
 	<!-- Показать/закрыть окно (не модальное) -->
 	<script language="javascript" src="js/javascript-pop-up.js"></script>
 
+	<!-- Номиналы стандартных электролитических конденсаторов -->
+	<script language="javascript" src="js/javascript-nsek.js"></script>
+	<!-- Калькулятор ближайшая стандартная электролитическая ёмкость -->
+	<script language="javascript" src="js/javascript-calc-bsee.js"></script>
+
 	</head>
 
 <!-- Подгружаем литературу -->
-<!-- LoadBook();           -->
+<!-- LoadBook(); -->
 
 <!-- Для Game-15. Убрать clock.gif -->
-<!-- G15_RemoveClock();            -->
+<!-- G15_RemoveClock(); -->
 
 <!-- Инициализация Game-15. -->
-<!-- G15_Init();            -->
+<!-- G15_Init(); -->
 
 <!-- Вставить в страницу законы Кирхгофа -->
-<!-- BuildKirchhoffLaws();               -->
+<!-- BuildKirchhoffLaws(); -->
 
 <!-- Вставить в страницу номиналы стандартных сопротивлений (НСС) -->
-<!-- BuildNSS('ModalWinNSS');                                     -->
+<!-- BuildNSS('ModalWinNSS'); -->
 
 <!-- Встаить в страницу калькулятор ближайшее стандартное сопротивление -->
 <!-- BuildBS1('ModalWinBS'); -->
 
-<!-- Вставит в сраницу закон Ома -->
-<!-- BuildOhm();                 -->
+<!-- Вставить в сраницу закон Ома -->
+<!-- BuildOhm(); -->
+
+<!-- Вставить в страницу номиналы стандартных электролитических конденсаторов -->
+<!-- BuildNSEK('ModalWinNSEK') -->
+
+<!-- Вставить в страницу калькулятор ближайшая стандартная электролитическая ёмкость -->
+<!-- BuildBSEE('ModalWinCalcBSEE') -->
 
 <!-- Страница загружена полностью, убрать анимированную иконку -->
 <!-- RemoveIndexLoader(); -->
@@ -370,7 +381,7 @@
 <body id="indexbodyid"
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
-		RemoveIndexLoader()">
+		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader()">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -390,7 +401,7 @@
 
 			<!-- Анимированная иконка идёт загрузка -->
 			<td width="1%" id="indexloader" style="vertical-align: bottom; padding-left: 4px;">
-			<img class="icon" src="icons/clock.gif" title="Идёт загрузка страницы!">
+			<img class="icon" src="icons/clock2_white.gif" title="Идёт загрузка страницы!">
 			</td>
 
 			<td align="right" class="smalltxthobby" style="vertical-align: bottom;">
@@ -1770,7 +1781,7 @@
 
 				<!--  Показать калькулятор ближайшее стандартное сопротивление -->
 				<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
-				title="Ближайшее стандартное сопротивление (нажмите)">БСС</a>
+				title="Калькулятор ближайшее стандартное сопротивление (нажмите)">БСС</a>
 
 				</td>
 
@@ -1806,6 +1817,98 @@
 		</td>
 		</tr>
 
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Продолжение раздела Онлайн-калькуляторы -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+		<hr class="addhr">
+
+			<table style="margin-top: 6px; margin-bottom: 6px;" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
+				<!-- Номиналы стандартных электролитических конденсаторов -->
+				<!-- Кнопка (открытие модального окна) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<!-- Показать модальное окно! -->
+				<a href="javascript:NSEKOpenShowModalWin('ModalWinNSEK');"
+				title="Номиналы стандартных электролитических конденсаторов (нажмите)">НСЭК</a>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
+
+				<!-- Калькулятор ближайшая стандартная ёмкость -->
+				<!-- Электролитические конденсаторы -->
+				<!-- Кнопка (открытие модального окна) -->
+
+				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+
+				<!-- Показать модальное окно! -->
+				<a href="javascript:CalcBSEEOpenShowModalWin('ModalWinCalcBSEE');"
+				title="Калькулятор ближайшая стандартная электролитическая ёмкость (нажмите)">БСЭЁ</a>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		<hr class="addhr">
+
+		<br>
+
+		<!-- Расшифровка -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left" class="smalltxt">
+
+		&nbsp;[&nbsp;<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+		title="Номиналы стандартных сопротивлений (нажмите)">НСС</a> ] - Номиналы стандартных сопротивлений (таблицы)
+
+		<br>
+
+		&nbsp;[&nbsp;<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
+		title="Калькулятор ближайшее стандартное сопротивление (нажмите)">БСС</a> ] - Калькулятор ближайшее стандартное сопротивление
+
+		<br>
+
+		[&nbsp;<a href="javascript:NSEKOpenShowModalWin('ModalWinNSEK');"
+		title="Номиналы стандартных электролитических конденсаторов (нажмите)">НСЭК</a> ] - Номиналы стандартных электролитических конденсаторов (таблицы)
+
+		<br>
+
+		[&nbsp;<a href="javascript:CalcBSEEOpenShowModalWin('ModalWinCalcBSEE');"
+		title="Калькулятор ближайшая стандартная электролитическая ёмкость (нажмите)">БСЭЁ</a> ] - Калькулятор ближайшая стандартная электролитическая ёмкость
+
+		</td>
+		</tr>
 		</table>
 
 	</td>
@@ -6079,18 +6182,18 @@
 	<div id="Kirchhoff" align="center" class="pop-up-window_kirchhoff">
 	</div>
 
-	<!--                                    -->
-	<!-- Модальное окно                     -->
-	<!-- Номиналы стандартных сопротивлений -->
-	<!--                                    -->
+	<!--                                              -->
+	<!-- Модальное окно                               -->
+	<!-- Номиналы стандартных сопротивлений (таблицы) -->
+	<!--                                              -->
 
 	<div id="ModalWinNSS" align="center" class="nssmodalwin">
 	</div>
 
-	<!--                       -->
-	<!-- Модальное окно        -->
-	<!-- Ближайшее стандартное -->
-	<!--                       -->
+	<!--                                                 -->
+	<!-- Модальное окно                                  -->
+	<!-- Калькулятор ближайшее стандартное сопротивление -->
+	<!--                                                 -->
 
 	<div id="ModalWinBS" class="bsmodalwin">
 	</div>
@@ -6101,6 +6204,23 @@
 	<!--           -->
 
 	<div id="ZOm" align="center" class="pop-up-window_zom">
+	</div>
+
+	<!--                                                                -->
+	<!-- Модальное окно                                                 -->
+	<!-- Номиналы стандартных электролитических конденсаторов (таблицы) -->
+	<!--                                                                -->
+
+	<div id="ModalWinNSEK" align="center" class="nsekmodalwin">
+	</div>
+
+	<!--                                           -->
+	<!-- Модальное окно                            -->
+	<!-- Калькулятор ближайшая стандартная ёмкость -->
+	<!-- Электролитические конденсаторы            -->
+	<!--                                           -->
+
+	<div id="ModalWinCalcBSEE" align="center" class="calcbsee_modalwin">
 	</div>
 
 	<!--                                                 -->
