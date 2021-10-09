@@ -8,6 +8,20 @@
 // ---
 function NSEKOpenShowModalWin(x)
 {
+
+	var h = document.documentElement.clientHeight;
+
+	// 64 и 64 - отступ сверху и снизу (до модального окна, наружный отступ).
+	h = h - 64 - 64;
+
+	// - отступ сверху и снизу (в модальном окне, внутренний отступ, примерно).
+	// h = h - 89 - 94;
+	// h = h - 99 - 104; // Снизу отступ чуть-чуть больше.
+	h = h - 99 - 104;
+
+	// Растянуть...
+	document.getElementsByClassName('nsek_window')[0].style.height = h + 'px';
+
 	// Слой затемнения.
 	var darkLayer = document.createElement("div");
 		// id чтобы подхватить стиль.
