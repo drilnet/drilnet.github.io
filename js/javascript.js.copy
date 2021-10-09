@@ -8,6 +8,24 @@
 // ---
 function OpenShowModalWin(id)
 {
+
+	// Перед открытием окна (делитель напряжения на двух резисторах):
+	if (id == "ModalWinDividerR1R2")
+		{
+		var h = document.documentElement.clientHeight;
+
+		// 64 и 64 - отступ сверху и снизу (до модального окна, наружный отступ).
+		h = h - 64 - 64;
+
+		// - отступ сверху и снизу (в модальном окне, внутренний отступ, приблизительно).
+		// h = h - 49 - 97;
+		// h = h - 59 - 107; // Снизу отступ чуть-чуть больше.
+		h = h - 59 - 107;
+
+		// Растянуть...
+		document.getElementById("repodividerr1r2").style.height = h + "px";
+		}
+
 	// Перед окрытием окна (схема Power Supply 512):
 	if (id == "ModalWinPS512_1");
 		{
@@ -22,7 +40,7 @@ function OpenShowModalWin(id)
 		h = h - 93 - 104;
 
 		// Растянуть...
-		document.getElementById("ps512sceheme").style.height = h + "px";
+		document.getElementById("repops512sceheme").style.height = h + "px";
 		}
 
 	// Слой затемнения.
