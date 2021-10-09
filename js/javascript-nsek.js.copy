@@ -62,6 +62,23 @@ function BuildNSEK(id)
 	string += "<hr class=\"nsek_hr\">";
 	string += "<br>";
 
+	string += "<!-- Заголовок -->";
+
+		// Заголовок.
+
+		string += "<table class=\"nsektitle\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+		string += "<tr>";
+		string += "<td align=\"center\">";
+
+		string += "Номиналы стандартных электролитических конденсаторов (НСЭК)";
+
+		string += "</td>";
+		string += "</tr>";
+		string += "</table>";
+
+		string += "<br>";
+
+	// Таблицы.
 	string += NSEKTableE6();
 
 	// Горизонтальная линия.
@@ -94,24 +111,8 @@ function NSEKTableE6()
 {
 	var string;
 
-	string = "<!-- Заголовок -->";
-
-		// Заголовок.
-
-		string += "<table class=\"nsektitle\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
-		string += "<tr>";
-		string += "<td align=\"center\">";
-
-		string += "Номиналы стандартных электролитических конденсаторов (НСЭК)";
-
-		string += "</td>";
-		string += "</tr>";
-		string += "</table>";
-
-		string += "<br>";
-
 	// Окно с прокруткой.
-	string += "<div class=\"nsek_window\">";
+	string = "<div class=\"nsek_window\">";
 
 	string += E6();
 		string += "<br>";

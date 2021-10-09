@@ -63,6 +63,22 @@ function BuildNSS(id)
 	string += "<hr class=\"nss_hr\">";
 	string += "<br>";
 
+	string += "<!-- Заголовок -->";
+
+		// Заголовок.
+
+		string += "<table class=\"nsstitle\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+		string += "<tr>";
+		string += "<td align=\"center\">";
+
+		string += "Номиналы стандартных сопротивлений (НСС)";
+
+		string += "</td>";
+		string += "</tr>";
+		string += "</table>";
+
+		string += "<br>";
+
 	// Таблицы НСС.
 	string += NSSTableE24E48E96();
 
@@ -96,24 +112,8 @@ function NSSTableE24E48E96()
 {
 	var string;
 
-	string = "<!-- Заголовок -->";
-
-		// Заголовок.
-
-		string += "<table class=\"nsstitle\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
-		string += "<tr>";
-		string += "<td align=\"center\">";
-
-		string += "Номиналы стандартных сопротивлений (НСС)";
-
-		string += "</td>";
-		string += "</tr>";
-		string += "</table>";
-
-		string += "<br>";
-
 	// Окно с прокруткой.
-	string += "<div class=\"nss_window\">";
+	string = "<div class=\"nss_window\">";
 
 		string += E24();
 
