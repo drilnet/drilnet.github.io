@@ -1336,7 +1336,7 @@ function PrintZDCalculationTable_1()
 					temp += "<td class=\"calczdtdmwin\">";
 
 						// Сначало вставить в модальное окно, а потом его открыть.
-						temp += "<a href=\"javascript:InsertToModalWin1(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I + "," + R1 + "," +  P1 + "," + P2 + "," + UR1 + "," + "'" + "Выборка из Таблице n1." + TableNumber + "'" + "); ";
+						temp += "<a href=\"javascript:InsertToModalWin1(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I + "," + R1 + "," +  P1 + "," + P2 + "," + UR1 + "," + "'" + "Выборка из Таблицы n1." + TableNumber + "'" + "); ";
 						temp += "javascript:OpenShowModalWin('TableModalWinBS1');\" title=\"\">";
 
 					temp += "<img src=\"images-calczd/numeric_1.png\" title=\"Открыть модальное окно с ближайшем стандартным сопротивлением\">";
@@ -1433,7 +1433,7 @@ function PrintZDCalculationTable_1()
 					temp += "<td class=\"calczdtdmwin\">";
 
 						// Сначало вставить в модальное окно, а потом его открыть.
-						temp += "<a href=\"javascript:InsertToModalWin1(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I + "," + R1 + "," +  P1 + "," + P2 + "," + UR1 + "," + "'" + "Выборка из Таблице n1." + TableNumber + "'" + "); ";
+						temp += "<a href=\"javascript:InsertToModalWin1(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I + "," + R1 + "," +  P1 + "," + P2 + "," + UR1 + "," + "'" + "Выборка из Таблицы n1." + TableNumber + "'" + "); ";
 						temp += "javascript:OpenShowModalWin('TableModalWinBS1');\" title=\"\">";
 
 					temp += "<img src=\"images-calczd/numeric_1.png\" title=\"Открыть модальное окно с ближайшем стандартным сопротивлением\">";
@@ -2043,7 +2043,7 @@ function PrintZDCalculationTable_2()
 						temp += "<td class=\"calczdtdmwin\">";
 
 							// Сначало вставить в модальное окно, а потом его открыть.
-							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблице n2." + TableNumber + "'" + "); ";
+							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблицы n2." + TableNumber + "'" + "); ";
 							temp += "javascript:OpenShowModalWin('TableModalWinBS2');\" title=\"\">";
 
 						temp += "<img src=\"images-calczd/numeric_1.png\" title=\"Открыть модальное окно с ближайшем стандартным сопротивлением\">";
@@ -2089,7 +2089,7 @@ function PrintZDCalculationTable_2()
 						temp += "<td class=\"calczdtdmwin\">";
 
 							// Сначало вставить в модальное окно, а потом его открыть.
-							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблице n2." + TableNumber + "'" + "); ";
+							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблицы n2." + TableNumber + "'" + "); ";
 							temp += "javascript:OpenShowModalWin('TableModalWinBS2');\" title=\"\">";
 
 						temp += "<img src=\"images-calczd/numeric_1.png\" title=\"Открыть модальное окно с ближайшем стандартным сопротивлением\">";
@@ -2228,7 +2228,7 @@ function PrintZDCalculationTable_2()
 						temp += "<td class=\"calczdtdmwin\">";
 
 							// Сначало вставить в модальное окно, а потом его открыть.
-							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблице n2." + TableNumber + "'" + "); ";
+							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблицы n2." + TableNumber + "'" + "); ";
 							temp += "javascript:OpenShowModalWin('TableModalWinBS2');\" title=\"\">";
 
 						temp += "<img src=\"images-calczd/numeric_1.png\" title=\"Открыть модальное окно с ближайшем стандартным сопротивлением\">";
@@ -2274,7 +2274,7 @@ function PrintZDCalculationTable_2()
 						temp += "<td class=\"calczdtdmwin\">";
 
 							// Сначало вставить в модальное окно, а потом его открыть.
-							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблице n2." + TableNumber + "'" + "); ";
+							temp += "<a href=\"javascript:InsertToModalWin2(" + (z2 + 1) + "," + Uin + "," + Uout + "," + I1 + "," + I2 + "," + I3 + "," + R1 + "," + Rn + "," +  P1 + "," + P2 + "," + P3 + "," + UR1 + "," + "'" + "Выборка из Таблицы n2." + TableNumber + "'" + "); ";
 							temp += "javascript:OpenShowModalWin('TableModalWinBS2');\" title=\"\">";
 
 						temp += "<img src=\"images-calczd/numeric_1.png\" title=\"Открыть модальное окно с ближайшем стандартным сопротивлением\">";
