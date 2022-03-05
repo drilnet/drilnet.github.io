@@ -391,6 +391,26 @@
 		<table width="100%" cellspacing="0" cellpadding="0" border="0">
 		<tr>
 
+		<!-- Герб Украины -->
+
+<!--
+
+		<td width="1%" style="padding-right: 6px; color: #dcdcdc; border-right: 1px solid;">
+
+		<img class="icon" src="images/GerbUA_2.png"
+		title="Сделано в Blender 3D. Ukraine. (C) Демидов С.В. License: Free">
+
+		</td>
+
+-->
+
+		<!-- Остальное -->
+
+		<td width="99%" style="padding-left: 6px;">
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
 			<td width="1%" class="texthobby">
 			<b>Hobby</b>
 			</td>
@@ -429,7 +449,7 @@
 					</td>
 
 					<td style="padding-left: 4px;">
-					<img class="icon" src="icons-flags/RU_24x24.png"
+					<img class="icon" src="icons-flags/RU_24x24.gif"
 					title="Благодарность за сайт https://zx-pk.ru и за другие ресурсы">
 					</td>
 
@@ -530,6 +550,11 @@
 
 			</tr>
 			</table>
+
+		</td>
+
+		</tr>
+		</table>
 
 		</td>
 
@@ -1695,7 +1720,8 @@
 
 			<td style="padding-left: 6px;">
 
-				<!-- Номиналы стандартных сопротивлений -->
+				<!-- Калькулятор ближайшая стандартная ёмкость -->
+				<!-- Электролитические конденсаторы -->
 				<!-- Кнопка (открытие модального окна) -->
 
 				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
@@ -1704,9 +1730,8 @@
 				<td>
 
 				<!-- Показать модальное окно! -->
-				<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
-				title="Номиналы стандартных сопротивлений (нажмите)">НСС</a>
-
+				<a href="javascript:CalcBSEEOpenShowModalWin('ModalWinCalcBSEE');"
+				title="Калькулятор ближайшая стандартная электролитическая ёмкость (нажмите)">БСЭЁ</a>
 
 				</td>
 
@@ -1829,83 +1854,21 @@
 
 		<br>
 		<hr class="addhr">
-
-			<table style="margin-top: 6px; margin-bottom: 6px;" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-
-			<td>
-
-				<!-- Номиналы стандартных электролитических конденсаторов -->
-				<!-- Кнопка (открытие модального окна) -->
-
-				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-				<tr>
-
-				<td>
-
-				<!-- Показать модальное окно! -->
-				<a href="javascript:NSEKOpenShowModalWin('ModalWinNSEK');"
-				title="Номиналы стандартных электролитических конденсаторов (нажмите)">НСЭК</a>
-
-				</td>
-
-				</tr>
-				</table>
-
-			</td>
-
-			<td style="padding-left: 6px;">
-
-				<!-- Калькулятор ближайшая стандартная ёмкость -->
-				<!-- Электролитические конденсаторы -->
-				<!-- Кнопка (открытие модального окна) -->
-
-				<table class="txtbuttonsmall" cellspacing="0" cellpadding="0" border="0">
-				<tr>
-
-				<td>
-
-				<!-- Показать модальное окно! -->
-				<a href="javascript:CalcBSEEOpenShowModalWin('ModalWinCalcBSEE');"
-				title="Калькулятор ближайшая стандартная электролитическая ёмкость (нажмите)">БСЭЁ</a>
-
-				</td>
-
-				</tr>
-				</table>
-
-			</td>
-
-			</tr>
-			</table>
-
-		<hr class="addhr">
-
 		<br>
 
-		<!-- Расшифровка -->
+		<!-- Таблицы -->
 
 		<table cellspacing="0" cellpadding="0" border="0">
 		<tr>
 		<td align="left" class="smalltxt">
-
-		&nbsp;[&nbsp;<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
-		title="Номиналы стандартных сопротивлений (нажмите)">НСС</a> ] - Номиналы стандартных сопротивлений (таблицы).
-
-		<br>
-
-		&nbsp;[&nbsp;<a href="javascript:BSOpenShowModalWin('ModalWinBS');"
-		title="Калькулятор ближайшее стандартное сопротивление (нажмите)">БСС</a> ] - Калькулятор ближайшее стандартное сопротивление.
-
-		<br>
 
 		[&nbsp;<a href="javascript:NSEKOpenShowModalWin('ModalWinNSEK');"
 		title="Номиналы стандартных электролитических конденсаторов (нажмите)">НСЭК</a> ] - Номиналы стандартных электролитических конденсаторов (таблицы).
 
 		<br>
 
-		[&nbsp;<a href="javascript:CalcBSEEOpenShowModalWin('ModalWinCalcBSEE');"
-		title="Калькулятор ближайшая стандартная электролитическая ёмкость (нажмите)">БСЭЁ</a> ] - Калькулятор ближайшая стандартная электролитическая ёмкость.
+		&nbsp;[&nbsp;<a href="javascript:NSSOpenShowModalWin('ModalWinNSS');"
+		title="Номиналы стандартных сопротивлений (нажмите)">НСС</a> ] - Номиналы стандартных сопротивлений (таблицы).
 
 		</td>
 		</tr>
@@ -2269,7 +2232,47 @@
 		<br>
 
 	</td>
-	</tR>
+	</tr>
+
+	<!-- FreeBSD -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td style="padding-right: 4px;">
+
+				<!-- Иконка FreeBSD -->
+				<img class="icon" src="icons/FreeBSD_32x32.png"
+				title="Иконка из набора: Vista Inspirate 1.0. (C) Alexander Moore. License: GPL">
+
+			</td>
+
+			<td>
+				<a href="freebsd-samba.html" title="Откроется в новой вкладке" target="_blank">
+				Сеть между двумя компьютерами, между Windows и FreeBSD (Samba)
+				</a>
+			</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
 
 	<!-- Литература -->
 
