@@ -4616,7 +4616,7 @@
 		<tr>
 		<td align="center">
 
-		<iframe src="game-15/iframe/puzzle15_screen_1.html" width="780" height="240" scrolling="yes"></iframe>
+		<iframe id="repopuzzle15_1" src="game-15/iframe/puzzle15_screen_1.html" width="780" height="240" scrolling="yes"></iframe>
 
 		</td>
 		</tr>
@@ -4676,7 +4676,7 @@
 		<tr>
 		<td align="center">
 
-		<iframe src="game-15/iframe/puzzle15_screen_1_2.html" width="780" height="240" scrolling="yes"></iframe>
+		<iframe id="repopuzzle15_1_2" src="game-15/iframe/puzzle15_screen_1_2.html" width="780" height="240" scrolling="yes"></iframe>
 
 		</td>
 		</tr>
@@ -4736,7 +4736,7 @@
 		<tr>
 		<td align="center">
 
-		<iframe src="game-15/iframe/puzzle15_screen_2_2.html" width="780" height="240" scrolling="yes"></iframe>
+		<iframe id="repopuzzle15_2_2" src="game-15/iframe/puzzle15_screen_2_2.html" width="780" height="240" scrolling="yes"></iframe>
 
 		</td>
 		</tr>
@@ -4796,7 +4796,7 @@
 		<tr>
 		<td align="center">
 
-		<iframe src="game-15/iframe/puzzle15_screen_3_2.html" width="780" height="240" scrolling="yes"></iframe>
+		<iframe id="repopuzzle15_3_2" src="game-15/iframe/puzzle15_screen_3_2.html" width="780" height="240" scrolling="yes"></iframe>
 
 		</td>
 		</tr>
