@@ -9,6 +9,29 @@
 function OpenShowModalWin(id)
 {
 
+	// Перед открытием окна (Игра Пятнашки):
+	if (id == "ModalWinPuzzle15_1" ||
+		id == "ModalWinPuzzle15_1_2" ||
+			id == "ModalWinPuzzle15_2_2" ||
+				id == "ModalWinPuzzle15_3_2")
+		{
+		var h = document.documentElement.clientHeight;
+
+		// 64 и 64 - отступ сверху и снизу (до модального окна, наружный отступ).
+		h = h - 64 - 64;
+
+		// - отступ сверху и снизу (в модальном окне, внутренний отступ, приблизительно).
+		// h = h - 100 - 97;
+		// h = h - 110 - 107; // Снизу отступ чуть-чуть больше.
+		h = h - 110 - 107;
+
+		// Растянуть...
+		if (id == "ModalWinPuzzle15_1") { document.getElementById("repopuzzle15_1").style.height = h + "px"; }
+			if (id == "ModalWinPuzzle15_1_2") { document.getElementById("repopuzzle15_1_2").style.height = h + "px"; }
+				if (id == "ModalWinPuzzle15_2_2") { document.getElementById("repopuzzle15_2_2").style.height = h + "px"; }
+					if (id == "ModalWinPuzzle15_3_2") { document.getElementById("repopuzzle15_3_2").style.height = h + "px"; }
+		}
+
 	// Перед открытием окна (делитель напряжения на двух резисторах):
 	if (id == "ModalWinDividerR1R2")
 		{
