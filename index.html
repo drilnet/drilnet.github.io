@@ -345,6 +345,9 @@
 	<!-- Калькулятор ближайшая стандартная электролитическая ёмкость -->
 	<script language="javascript" src="js/javascript-calc-bsee.js"></script>
 
+	<!-- VCSPR конвертер -->
+	<script language="javascript" src="js/javascript-vcspr.js"></script>
+
 	</head>
 
 <!-- Подгружаем литературу -->
@@ -355,6 +358,12 @@
 
 <!-- Инициализация Game-15. -->
 <!-- G15_Init(); -->
+
+<!-- Сбросить input file (конвертер SPR to BMP) -->
+<!-- VCSPRResetInputFile(); -->
+
+<!-- Сделать кнопку Сохранить BMP-файл неактивной (конвертер SPR to BMP) -->
+<!-- VCSPRResetBMPFileSave(); -->
 
 <!-- Вставить в страницу законы Кирхгофа -->
 <!-- BuildKirchhoffLaws(); -->
@@ -369,17 +378,19 @@
 <!-- BuildOhm(); -->
 
 <!-- Вставить в страницу номиналы стандартных электролитических конденсаторов -->
-<!-- BuildNSEK('ModalWinNSEK') -->
+<!-- BuildNSEK('ModalWinNSEK'); -->
 
 <!-- Вставить в страницу калькулятор ближайшая стандартная электролитическая ёмкость -->
-<!-- BuildBSEE('ModalWinCalcBSEE') -->
+<!-- BuildBSEE('ModalWinCalcBSEE'); -->
 
 <!-- Страница загружена полностью, убрать анимированную иконку -->
-<!-- RemoveIndexLoader(); -->
+<!-- RemoveIndexLoader() -->
 
 <!-- onload будет выполнен после загрузки страницы -->
 <body id="indexbodyid"
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
+		VCSPRResetInputFile();
+		VCSPRResetBMPFileSave();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
 		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader()">
 
@@ -563,6 +574,46 @@
 
 	</td>
 	</tr> <!-- Конец шапки -->
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Дорогая Ураина -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+			<img class="icon" src="icons-flags/UA_24x20.png">
+			</td>
+
+			<td>&nbsp;</td>
+
+			<td align="left">
+
+				Дорогая Украина!
+				<br>
+				Храни тебя Господь!
+
+			</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr>
 
 	<!-- Горизонтальная линия -->
 
@@ -1093,6 +1144,39 @@
 
 			</tr>
 			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<b>Конвертация файлов:</b>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td style="padding-top: 4px;">
+
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите">
+			SPR to BMP</a> <span class="smalltxt">(Ресурсоёмкая операция!)</span>
+
+			<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			GRF to BMP <span class="smalltxt">(Ресурсоёмкая операция!)</span>
 
 		</td>
 		</tr>
@@ -1759,7 +1843,7 @@
 					<!-- Иконка -->
 					<td><img class="icon" src="icons/calculator_16x16.png" title="Иконка из набора FatCow. (C) FatCow Web Hosting. License: Creative Commons (Attrbution 3.0 United States)"></td>
 
-					<td>
+					<td align="left">
 
 					&nbsp;&bull;
 					<!-- 1 -->
@@ -4582,6 +4666,878 @@
 			</table>
 
                 </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                                     -->
+	<!-- Модальное окно конвертер SPR to BMP -->
+	<!--                                     -->
+
+	<div id="ModalWinSPRtoBMP" class="modalwinconvertsprgrf">
+
+		<!-- Заголовок -->
+
+		<table class="sprgrfbgh1" align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+			Конвертер SPR-файл в BMP-файл
+
+		</td>
+		</tr>
+
+		</table>
+
+	<br>
+
+	<!-- Окно с прокруткой -->
+	<div id="winsprscroll" style="overflow: scroll; width: 940px; height: 320px;">
+
+		<!-- Предупреждение -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td class="smalltxt sprgrfwarning" align="center">
+
+			Загрузить SPR-файл и подаждать n-секунд!
+			<br>
+			Ресурсоёмкая операция!
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Выбор SPR-файла -->
+
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+
+			<table class="sprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+				<!-- Выбор файла -->
+				<input id="id_filespr" type="file" onchange="VCSPR('id_filespr');" accept=".spr" style="display: none;">
+				<label for="id_filespr">
+
+				<span class="sprgrf_inputfile" title="Нажмите">
+				Загрузить SPR-файл
+				</span>
+
+				</label>
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+
+		<td>&nbsp;</td>
+
+		<td>
+
+			<!-- Сброс -->
+			<table class="sprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+			<a href="javascript:VCSPRReset()" title="Сброс с задержкой (зависит от производительности компьютера)">Сброс</a>
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<!-- Некоторая справочная информация -->
+
+		<br>
+
+		<table class="sprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="right">Файл:</td><td>&nbsp;</td><td id="id_sprfilename">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Размер SPR-файла:</td><td>&nbsp;</td><td id="id_sprsizeall">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Размер SPR-данных (минус цвета, минус нулевые байты):</td><td>&nbsp;</td><td id="id_sprsizedata">Нет данных</td>
+			<tr>
+
+			<tr>
+			<td align="right">Цвета SPR-файла (в hex):</td><td>&nbsp;</td><td id="id_sprcolor">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Ошибка при распаковке:</td><td>&nbsp;</td><td id="id_errorspr">Нет данных</td>
+			</tr>
+
+		</table>
+
+		<!-- Экранная область Вектор'а в браузере -->
+
+		<br>
+
+		<table class="sprgrf_8000-FFFF" align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Вставить сюда: -->
+			<td id="region_1_256x256" width="256" height="256">
+
+			<!-- Заставка -->
+			<a href="https://gfto.ru/index/konstruktor_3d_teksta/0-37" title="Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)" target="_blank">
+			<img class="icon" src="images-sprgrftobmp/imageSPR.png" >
+			</a>
+
+			</td>
+
+		</table>
+
+		<!-- Что означает "Ошибка при распаковке: Да" -->
+
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center" class="smalltxt">
+
+			Что означает "Ошибка при распаковке: Да"
+			<br>
+			Это когда экранная область Вектор'а полностью заполнена - но остались ещё SPR-данные!
+			<br>
+			Это неправильный SPR-файл! :)
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Сохранить в BMP-файл -->
+
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Имя BMP-файла -->
+
+			<td>
+
+				<table class="sprgrf_file" width="320" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="id_filenamebmp_s" align="center" style="color: #cccccc;">
+
+				Пусто
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<!-- Кнопка сохранить BMP-файл -->
+
+			<td>
+
+				<table class="sprgrf_file" style="margin-left: 8px;" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+				<td>
+
+					<!-- Сохранить BMP-файл (сама кнопка) -->
+					<span id="id_filebmp_save_s" style="color: #cccccc;">Сохранить BMP-файл</span>
+
+				</td>
+				</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- Небольшая галерея SPR-файлов -->
+
+		<br>
+
+		<table align="center" class="sprgrfbgh2" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Небольшая галерея SPR-файлов
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Изображения -->
+
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 1 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/ACHILL04.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">ACHILL04.SPR</a> (16256 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 2 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/CAT.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">CAT.SPR</a> (13312 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 3 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/COUGAR.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">COUGAR.SPR</a> (21760 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 4 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/FISH.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">FISH.SPR</a> (20992 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 5 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">HAJ.SPR</a> (25728 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 6 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ005.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">HAJ005.SPR</a> (26496 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 7 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ007.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">HAJ007.SPR</a> (27136 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 8 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ008.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">HAJ008.SPR</a> (27136 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 9 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ009.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">HAJ009.SPR</a> (23552 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 10 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ011.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">HAJ011.SPR</a> (15360 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 11 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ012.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">HAJ012.SPR</a> (25728 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 12 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ017.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">HAJ017.SPR</a> (24576 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 13 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ021.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">HAJ021.SPR</a> (19968 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 14 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ026.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">HAJ026.SPR</a> (12288 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 15 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ032.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">HAJ032.SPR</a> (25600 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 16 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ036.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">HAJ036.SPR</a> (24704 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 17 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/HAJ038.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">HAJ038.SPR</a> (22784 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Hajime Sorayama
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 18 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/ILLUSION.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">ILLUSION.SPR</a> (22784 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 19 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/MONSTERS.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">MONSTERS.SPR</a> (23296 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 20 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/NIGHTLY.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">NIGHTLY.SPR</a> (24576 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 21 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/PIC011.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">PIC011.SPR</a> (26496 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 22 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/STDOGS.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/ACHILL04.SPR">STDOGS.SPR</a> (12544 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 23 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/STTOOTH.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/CAT.SPR">STTOOTH.SPR</a> (18560 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 24 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-spr/STTOPTEN.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-spr/COUGAR.SPR">STTOPTEN.SPR</a> (12672 байт)
+				<br>
+				20 век, 90-е года
+				<br>
+				Автор: Неизвестен
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<!-- VPCX.COM -->
+
+		<tr>
+
+			<td align="center" colspan="3">
+
+			Как попали эти изображеня в Вектор-06Ц?
+			<br>
+			Программа <b>VPCX.COM</b> (PCX-файл в SPR-файл)!
+			<br>
+			Данную программу см. <a href="downloads/vector-06c/downloads.html" title="Откроется в новой вкладке" target="_blank">здесь</a>
+			<br>
+
+			</td>
+
+		</tr>
+
+		</table>
+
+	<br>
+
+	<!-- Оф. сайт Sorayama Hajime -->
+
+	<div align="center">
+	Официальный сайт <b>Hajime Sorayama</b>: <a href="http://sorayama.jp" title="Откроется в новой вкладке" target="_blank">http://sorayama.jp</a>
+	</div>
+
+	<br>
+
+	<!-- SV -->
+
+	<div align="center" class="smalltxt">
+	<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+	</div>
+
+	<br>
+
+	</div> <!-- Конец окну с прокруткой -->
+
+		<!-- Закрыть модальное окно -->
+
+		<br>
+
+		<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+		<a href="javascript:CloseModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')">закрыть</a>
+		</td>
 		</tr>
 
 		</table>
