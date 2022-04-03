@@ -111,6 +111,80 @@ function CloseModalWin(id)
 
 // ---
 // | Показать модальное окно.
+// | SPR to BMP и GRF to BMP.
+// ---
+function OpenShowModalWinSPRGRFtoBMP(id)
+{
+	// Перед открытием модального окна конвертер SPR to BMP.
+	if (id == 'ModalWinSPRtoBMP')
+		{
+		var h = document.documentElement.clientHeight;
+
+		// 64 и 64 - отступ сверху и снизу (до модального окна, наружный отступ).
+		h = h - 64 - 64;
+
+		// - отступ сверху и снизу (в модальном окне, внутренний отступ, приблизительно).
+		// h = h - 63 - 56;
+		// h = h - 73 - 66; // Снизу отступ чуть-чуть больше.
+		h = h - 73 - 66;
+
+		// Растянуть...
+		document.getElementById("winsprscroll").style.height = h + "px";
+		}
+
+	// Слой затемнения.
+	var darkLayer = document.createElement("div");
+		// id чтобы подхватить стиль.
+		darkLayer.id = "shadowsprgrf";
+			// Включаем затемнение.
+			document.body.appendChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "block"; // "Включаем" его.
+
+	darkLayer.onclick = function ()
+		{
+		// При клике на слой затемнения, всё исчезает.
+		darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+		modalWin.style.display = "none"; // "Выключаем" окно.
+
+		if (id == 'ModalWinSPRtoBMP') { VCSPRReset(); }
+
+		return false;
+		}
+
+	document.addEventListener("keydown", function(e){
+		if (e.which == 27)
+			{
+			// Код, который должен быть выполнен после нажатия на кнопку ESC.
+			darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+			modalWin.style.display = "none"; // "Выключаем" окно.
+
+			if (id == 'ModalWinSPRtoBMP') { VCSPRReset(); }
+
+			return false;
+			}
+	});
+}
+
+// ---
+// | Закрыть модальное окно.
+// | SPR to BMP и GRF to BMP.
+// ---
+function CloseModalWinSPRGRFtoBMP(id)
+{
+	// Удаляем затемнение.
+	var darkLayer = document.getElementById("shadowsprgrf");
+	darkLayer.parentNode.removeChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "none"; // "Выключаем" окно.
+
+	if (id == 'ModalWinSPRtoBMP') { VCSPRReset(); }
+}
+
+// ---
+// | Показать модальное окно.
 // | СПРАВОЧНАЯ ИНФОРМАЦИЯ ПО ПОЧТОВОМУ АДРЕСУ.
 // ---
 function OpenShowModalWinInfMailingAddres(id)
