@@ -587,29 +587,26 @@
 	</td>
 	</tr>
 
-	<!-- Дорогая Ураина -->
+	<!-- Дорогая Украина! -->
 
 	<tr>
 	<td align="center">
 
-		<table cellspacing="0" cellpadding="0" border="0">
+		<table width="900px" cellspacing="0" cellpadding="0" border="0">
+
 		<tr>
+		<td height="16px" style="background: #1919fa; color: #ffffff;" class="smalltxt">
 
-			<td>
-			<img class="icon" src="icons-flags/UA_24x20.png">
-			</td>
+		&nbsp;&nbsp;&nbsp;<b>Дорогая Украина! Храни тебя Господь!</b>
 
-			<td>&nbsp;</td>
-
-			<td align="left">
-
-				Дорогая Украина!
-				<br>
-				Храни тебя Господь!
-
-			</td>
-
+		</td>
 		</tr>
+
+		<tr>
+		<td height="16px" style="background: #f5f516;">
+		</td>
+		</tr>
+
 		</table>
 
 	</td>
@@ -1962,7 +1959,7 @@
 		<hr class="addhr">
 		<br>
 
-		<!-- ! -->
+		<!-- Ещё добавка -->
 
 		<table cellspacing="0" cellpadding="0" border="0">
 		<tr>
