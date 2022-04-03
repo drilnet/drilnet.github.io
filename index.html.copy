@@ -4711,6 +4711,18 @@
 		</tr>
 		</table>
 
+		<!-- Поддержка браузеров -->
+
+		<table align="center" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td class="smalltxt">
+
+		Поддержка браузеров: FireFox, Google Chrome, Internet Explorer 11, Opera.
+
+		</td>
+		</tr>
+		</table>
+
 		<!-- Выбор SPR-файла -->
 
 		<br>
