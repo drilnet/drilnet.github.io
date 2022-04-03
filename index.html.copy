@@ -1171,12 +1171,12 @@
 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите">
-			SPR to BMP</a> <span class="smalltxt">(Ресурсоёмкая операция!)</span>
+			SPR to BMP</a> <span class="smalltxt">(Ресурсоёмкая операция!). <b>SPR</b> - это графический файл Вектор'а-06Ц.</span>
 
 			<br>
 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			GRF to BMP <span class="smalltxt">(Ресурсоёмкая операция!)</span>
+			GRF to BMP <span class="smalltxt">(Ресурсоёмкая операция!). <b>GRF</b> - это графический файл Вектор'а-06Ц.</span>
 
 		</td>
 		</tr>
