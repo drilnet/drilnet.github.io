@@ -1969,7 +1969,9 @@
 		<br>
 		Нужен алгоритм ближайшее стандартное сопротивление?
 		<br>
-		См. <a href="calczenerdiode.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для стабилитрона</a> (в конце страницы, Приложение 3)
+		См. <a href="calczenerdiode.html" title="Откроется в новой вкладке" target="_blank">Расчёт резистора для стабилитрона</a> (в конце страницы, Приложение 3),
+		<br>
+		также см. этот <a href="https://github.com/drilnet/electronics/tree/master/Calculator nearest standard resistance">репозиторий</a>.
 
 		</td>
 		</tr>
