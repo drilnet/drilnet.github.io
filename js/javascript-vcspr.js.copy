@@ -82,8 +82,6 @@ function VCSPR(id)
 				reader.onload = function()
 					{
 
-	var starttime = performance.now();
-
 	bufferspr = new Uint8Array(reader.result);
 
 	// Получить имя файла с расширением.
@@ -298,11 +296,6 @@ function VCSPR(id)
 			document.getElementById('id_filebmp_save_s').title = "Нажмите"; // Установить title.
 				id_filebmp_save_s.setAttribute('onclick', 'VCBMP();'); // Установить onClick (FireFox, Google Chrome).
 				id_filebmp_save_s.onclick = function(){VCBMP();}; // Установить onClick (Internet Explorer).
-
-		var endtime = performance.now();
-
-		// Вставить в страницу время выполнения скрипта.
-		document.getElementById('id_leadtime_s').innerHTML = (endtime - starttime) / 1000;
 		}
 		else
 		{
