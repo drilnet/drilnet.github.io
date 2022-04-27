@@ -1793,60 +1793,6 @@
 		height: 400px;
 		}
 
-		/* CALCZENERDIODE */
-		/* Приложение. Ближайшей стандартный */
-		/* Таблица для программы на JavaScript */
-		.calczdprg_zebra {
-		width: 720px;
-		border-collapse: collapse;
-		}
-
-		/* CALCZENERDIODE */
-		/* Приложение. Ближайшей стандартный */
-		/* Зебра 1, для программы на JavaScript */
-
-		.calczdprg_bg_a {
-		background: #f3f4f4;
-		border: 1px solid #f3f3f4;
-		padding: 0px 4px 0px 4px;
-		text-align: left;
-		}
-
-		/* CALCZENERDIODE */
-		/* Приложение. Ближайшей стандартный */
-		/* Зебра 2, для программы на JavaScript */
-
-		.calczdprg_bg_b {
-		background: #ffffff;
-		border: 1px solid #ffffff;
-		padding: 0px 4px 0px 4px;
-		text-align: left;
-		}
-
-		/* CALCZENERDIODE */
-		/* Приложение. Ближайшей стандартный */
-		/* Программа на JavaScript. Цвет комментариям */
-		.calczdjsrem {
-		color: #006600;
-		font-style: italic;
-		}
-
-		/* CALCZENERDIODE */
-		/* Приложение. Ближайшей стандартный */
-		/* Программа на JavaScript. Цвет операторам */
-		.calczdjsoper {
-		color: #6666ee;
-		font-weight: bold;
-		}
-
-		/* CALCZENERDIODE */
-		/* Приложение. Ближайшей стандартный */
-		/* Программа на JavaScript. Цвет function и var */
-		.calczdjsfv {
-		color: #009999;
-		font-weight: bold;
-		}
-
 	/* CALCZENERDIODE */
 	/* Дополнительные ссылки */
 	/* Заголовок 2 */
@@ -3336,7 +3282,7 @@
 		}
 
 		/* SPRGRF to BMP */
-		/* Фон и Бордюр для выбора файла */
+		/* Фон и Бордюр для: Выбор файла, Сохранить BMP-файл */
 
 		.sprgrf_file {
 		background: #ffffff;
@@ -3392,4 +3338,297 @@
 		background: #ffffff;
 		border: 1px solid #e0e2e4;
 		padding: 4px 4px 4px 4px;
+		}
+
+	/* ----------------------********--*/
+	/* Кодирование/Декодирование VRLEx */
+	/* ----------------------********--*/
+
+	/* RLE кодирование/декодирование своими руками */
+	/* Заголовок спойлера в виде ссылки */
+
+	.spoilervrle {
+	color: #006699;
+	text-decoration: none;
+	cursor: pointer;
+	}
+
+	/* При наведении на спойлер */
+
+	.spoilervrle:hover {
+	color: #006699;
+	text-decoration: underline;
+	}
+
+	/* Дополнительная разделяющая линия на странице */
+
+	.vrle_addhr {
+	background-color: #d7d7d7; /* Цвет линии для браузера Firefox и Opera */
+	color: #d7d7d7;            /* Цвет линии для остальных браузеров      */
+	}
+
+	/* Размер для линии (размер 1) */
+
+	.vrle_addhrsize {
+	width: 720px;
+	}
+
+	/* Размер для линия (размер 2) */
+
+	.vrle_addhrsize2 {
+	width: 460px;
+	}
+
+	/* Размер для линия (размер 3) */
+
+	.vrle_addhrsize3 {
+	width: 700px;
+	}
+
+	/* Размер для линия (размер 4) */
+
+	.vrle_addhrsize4 {
+	width: 900px;
+	}
+
+	/* VRLEx */
+	/* Заголовок 2 (фон, бордюр, цвет тексту) */
+
+	.vrlebgh2 {
+	background: #f0f4f7;
+	border: 1px solid #f0f4f7;
+	padding: 0px 4px 0px 4px;
+	height: 16px;
+	color: #022169;
+	width: 720px;
+	font-size: 1.2em; /* 14px */
+	}
+
+	/* VRLEx */
+	/* Ширина таблицы для [ развернуть/свернуть ] */
+	/* Это: Онлайн-кодирование VRLE8, Онлайн-декодирование VRLE8 */
+
+	.vrletablewidth {
+	width: 640px;
+	}
+
+	/* VRLEx */
+	/* Ширина отступа */
+	/* Это: Онлайн-кодирование VRLE8, Онлайн-декодирование VRLE8 */
+
+	.vrletdwidth {
+	padding-right: 126px;
+	}
+
+	/* VRLEx */
+	/* Фон и Бордюр для некоторая справочная информация */
+
+	.vrle_reference {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 10px 4px 10px;
+	}
+
+	/* VRLEx */
+	/* Цвет предупреждению */
+
+	.vrlewarning {
+	color: #006000;
+	}
+
+	/* VRLEx */
+	/* Фон и Бордюр для: Выбор файла, Сохранить файл-VRLE8 */
+
+	.vrle_file {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 10px 4px 10px;
+	}
+
+	/* VRLEx */
+	/* Цвет текста выбор файла */
+
+	.vrle_inputfile {
+	color: #0144b4;
+	}
+
+	/* VRLEx */
+	/* При наведении на выбор файла */
+
+	.vrle_inputfile:hover {
+	color: #0144b4;
+	cursor: pointer;
+	text-decoration: underline;
+	}
+
+	/* VRLEx */
+	/* Подсвечивание строки с hex-данными (при наведении) */
+
+	.vrlestringbg:hover {
+	background: #e7e7e7;
+	}
+
+	/* VRLEx */
+	/* Цвет тексту Сохранить VRLE8-файл */
+
+	.vrle_save {
+	color: #0144b4;
+	}
+
+	/* VRLEx */
+	/* При наведении на Сохранить VRLE8-файл */
+
+	.vrle_save:hover {
+	color: #0144b4;
+	cursor: pointer;
+	text-decoration: underline;
+	}
+
+	/* VRLEx */
+	/* Подсветка hex-данным, подсветка информационного байта */
+	/* Неповтор */
+
+	.vrle_infobyte1 {
+	color: #0000e0;
+	}
+
+	/* VRLEx */
+	/* Подсветка hex-данным, подсветка информационного байта */
+	/* Повтор */
+
+	.vrle_infobyte2 {
+	color: #008000;
+	}
+
+	/* VRLEx */
+	/* Фон и Бордюр для: Кнопка [ Оценить ] */
+
+	.vrle_estimate {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 10px 4px 10px;
+	}
+
+	/* VRLEx */
+	/* Цвет тексту: Кнопка [ Оценить ] */
+
+	.vrle_estimate2 {
+	color: #0144b4;
+	}
+
+	/* VRLEx */
+	/* При наведении на [ Оценить ] */
+
+	.vrle_estimate2:hover {
+	color: #0144b4;
+	cursor: pointer;
+	text-decoration: underline;
+	}
+
+	/* VRLEx */
+	/* Фон и Бордюр (Правила) */
+
+	.vrle_regulations {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 10px 4px 10px;
+	}
+
+	/* VRLEx */
+	/* Фон и Бордюр Расшифровка VRLE8 */
+
+	.vrle_description {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 10px 4px 10px;
+	}
+
+	/* VRLEx */
+	/* Дополнительное окно на странице (декодер JavaScript) */
+
+	.vrleprg_window {
+	overflow: scroll; /* полоса прокрутки */
+	width: 700px;
+	height: 320px;
+	}
+
+	/* VRLEx */
+	/* Дополнительное окно на странице (Структура данных VRLE8) */
+
+	.vrledst_window {
+	overflow: scroll; /* полоса прокрутки */
+	width: 900px;
+	height: 440px;
+	}
+
+	/* VRLEx  */
+	/* Структура данных VRLE8 */
+	/* Фон и бордюр для размещаемого текста */
+
+	.vrledst_window_bg {
+	background: #f3f4f4;
+	border: 1px solid #c3c6c6;
+	padding: 6px;
+	}
+
+	/* VRLEx */
+	/* Фон и Бордюр для: Предлагаемые файлы для кодирования */
+
+	.vrle_example {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 10px 4px 10px;
+	}
+
+		/* PrgJS */
+		/* Размещение программы JS на странице html */
+
+		/* PrgJS */
+		/* Таблица для программы на JavaScript */
+		.prgjs_zebra {
+		border-collapse: collapse;
+		}
+
+		/* PrgJS */
+		/* Зебра 1, для программы на JavaScript */
+
+		.prgjs_bg_a {
+		background: #f3f4f4;
+		border: 1px solid #f3f3f4;
+		padding: 0px 4px 0px 4px;
+		text-align: left;
+		}
+
+		/* PrgJS */
+		/* Зебра 2, для программы на JavaScript */
+
+		.prgjs_bg_b {
+		background: #ffffff;
+		border: 1px solid #ffffff;
+		padding: 0px 4px 0px 4px;
+		text-align: left;
+		}
+
+		/* PrgJS */
+		/* Программа на JavaScript. Цвет комментариям */
+
+		.prgjsrem {
+		color: #006600;
+		font-style: italic;
+		}
+
+		/* PrgJS */
+		/* Программа на JavaScript. Цвет операторам */
+
+		.prgjsoper {
+		color: #6666ee;
+		font-weight: bold;
+		}
+
+		/* PrgJS */
+		/* Программа на JavaScript. Цвет function и var */
+
+		.prgjsfv {
+		color: #009999;
+		font-weight: bold;
 		}
