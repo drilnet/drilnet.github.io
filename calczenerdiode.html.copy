@@ -13,6 +13,8 @@
 
 	<!-- -->
 	<script language="javascript" src="js/javascript-calczenerdiode.js"></script>
+	<!-- Размещение программы JS на странице html -->
+	<script language="javascript" src="js/javascript-prgjs.js"></script>
 	<!-- Номиналы стандартных сопротивлений -->
 	<script language="javascript" src="js/javascript-nss.js"></script>
 	<!-- Калькулято ближайшее стандартное сопротивление -->
@@ -69,7 +71,7 @@
 					</td>
 
 					<td style="padding-left: 4px;">
-					<img class="icon" src="icons-flags/RU_24x24.png"
+					<img class="icon" src="icons-flags/RU_24x24.gif"
 					title="Благодарность за сайт https://zx-pk.ru и за другие ресурсы">
 					</td>
 
@@ -104,8 +106,7 @@
 		</td>
 
 		<td>
-		<a href="https://github.com" title="https://github.com">GITHUB</a>
-		- Моя записная книжка (наброски, заметки и т.д. и т.п.)!
+			<a href="https://github.com" title="https://github.com">GITHUB</a> - Моя записная книжка (наброски, заметки и т.д. и т.п.)!
 		</td>
 
 		<td style="padding-right: 16px;">
@@ -7815,6 +7816,7 @@
 
 			<br>
 
+			<!-- Полоса прокрутки -->
 			<div id="nabroski2" align="center" class="calczdattbs_window">
 
 				<table cellspacing="0" cellpadding="0" border="0">
