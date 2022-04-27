@@ -11,6 +11,9 @@
 //
 function VRLE8dReset()
 {
+	// Сбросить input file.
+	VRLE8dResetInputFile();
+
 	// Сбросить справочную информацию.
 	VRLE8dResetReference();
 
@@ -22,6 +25,17 @@ function VRLE8dReset()
 
 	// Сделать кнопку Сохранить файл неактивной.
 	VRLE8dResetFileSave()
+}
+
+//
+// Сбросить input file (выбор файла для раскодирования).
+// Если этого не сделать - Chrom, Opera отказываются
+// после Сброса повторно грузить тот же самый файл! (!)
+//
+function VRLE8dResetInputFile()
+{
+	// Сбросить input file.
+	document.getElementById('id_vrle8_f2').value="";
 }
 
 //

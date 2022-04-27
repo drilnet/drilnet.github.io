@@ -12,6 +12,9 @@
 //
 function VRLE8Reset()
 {
+	// Сбросить input file.
+	VRLE8ResetInputFile();
+
 	// Сбросить справочную информацию.
 	VRLE8ResetReference();
 
@@ -29,6 +32,17 @@ function VRLE8Reset()
 
 	// Сделать кнопку Сохранить VRLE8-файл неактивной.
 	VRLE8ResetFileSave();
+}
+
+//
+// Сбросить input file (выбор файла для кодирования).
+// Если этого не сделать - Chrom, Opera отказываются
+// после Сброса повторно грузить тот же самый файл! (!)
+//
+function VRLE8ResetInputFile()
+{
+	// Сбросить input file.
+	document.getElementById('id_vrle8_f').value="";
 }
 
 //
