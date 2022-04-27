@@ -569,7 +569,7 @@ function LoadBook()
 	// 2. Скачать всю литературу одним файлом.
 
 	temp += "<br>";
-	temp += "<a href=\"https://drilnet.github.io/lit.html\" title=\"Откроется в новой вкладке\" target=\"_blank\">Просмотр подробной информации о литературе</a>";
+	temp += "<a href=\"lit.html\" title=\"Откроется в новой вкладке\" target=\"_blank\">Просмотр подробной информации о литературе</a>";
 	temp += "<br>";
 	temp += "<a href=\"https://cloud.mail.ru/public/77Eo/ksvpFYS9j\" title=\"Скачать c mail-диска (откроется в новой вкладке). Объём: 201.827.997 байт.\" target=\"_blank\">Скачать всю литературу одним файлом</a>";
 	temp += "<br>";
