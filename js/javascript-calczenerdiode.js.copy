@@ -3755,19 +3755,19 @@ function AlgorithmRBS()
 		string_1 += temp2;
 		}
 
-		// Заменить обычный пробел на неразрывный.
-		string_1 = string_1.replace(/ /g, "&nbsp;");
+	// Заменить обычный пробел на неразрывный.
+	string_1 = string_1.replace(/ /g, "&nbsp;");
 
-		// Жирным шрифтом.
-		string_1 = string_1.replace(/E24/g, "<b>E24</b>");
-		string_1 = string_1.replace(/&nbsp;216&nbsp;/g, "<b>&nbsp;216&nbsp;</b>");
-		string_1 = string_1.replace(/(Шаг&nbsp;1|Шаг&nbsp;2|Шаг&nbsp;3|Шаг&nbsp;4)/g, "<b>$1</b>");
-		string_1 = string_1.replace(/Конец/g, "<b>Конец</b>");
+	// Жирным шрифтом.
+	string_1 = string_1.replace(/E24/g, "<b>E24</b>");
+	string_1 = string_1.replace(/&nbsp;216&nbsp;/g, "<b>&nbsp;216&nbsp;</b>");
+	string_1 = string_1.replace(/(Шаг&nbsp;1|Шаг&nbsp;2|Шаг&nbsp;3|Шаг&nbsp;4)/g, "<b>$1</b>");
+	string_1 = string_1.replace(/Конец/g, "<b>Конец</b>");
 
-		// Вместо жирного, темнее сделаем.
-		string_1 = string_1.replace(/Примечание./g, "<span style=\"color: #101010;\">Примечание.</span>");
+	// Вместо жирного, темнее сделаем.
+	string_1 = string_1.replace(/Примечание./g, "<span style=\"color: #101010;\">Примечание.</span>");
 
-	// вставить в страницу.
+	// вставить в страницу текстовый файл.
 	document.getElementById('rBS_1').innerHTML = string_1;
 
 // ---
@@ -3970,125 +3970,12 @@ function AlgorithmRBS()
 
 		];
 
-	var Array_3 = [];
+	var temp;
 
-	var string_2, z2, x;
+	temp = PrgJS(Array_2, "720px");
 
-	string_1 = "";
-	string_2 = "";
-
-	z2 = 0;
-
-	// Раскодировать текст.
-	for(z = 0; z < Array_2.length; z++)
-		{
-		temp1 = Number("0x" + Array_2[z]);
-		temp2 = String.fromCharCode(temp1); // Возвращает символ из кода.
-
-		if (temp2 == '\n')
-			{
-			temp2 = "<br>";
-
-			if(string_2 == "")
-				{
-				// Записать только <br>.
-				Array_3[z2++] = temp2;
-				}
-				else
-				{
-				// Записать строку без <br>.
-				Array_3[z2++] = string_2;
-
-				string_2 = "";
-				}
-			}
-			else
-			{
-			string_2 += temp2;
-			}
-
-			// string_1 - Не используется (но я оставил)!
-			// Ещё string_1 см. чуть ниже.
-			string_1 += temp2;
-		}
-
-		// Получить остаток.
-		// Эта концовка сработает тогда! Если в конце массива Array_2 не будет кода 0xa.
-		if (temp2 != "<br>")
-			{
-			if (string_2 != "")
-				{
-				Array_3[z2] = string_2;
-				}
-			}
-
-	// Заменить обычный пробел на неразрывный.
-//	string_1 = string_1.replace(/ /g, "&nbsp;");
-
-	// Заменить табуляцию на пробелы.
-//	string_1 = string_1.replace(/\t/g, "&nbsp;&nbsp;&nbsp;");
-
-	string_2 = "<table class=\"calczdprg_zebra\" cellspacing=\"0\" cellpadding=\"0\">";
-
-	x = 1;
-
-	for(z = 0; z < Array_3.length; z++)
-		{
-		string_2 += "<tr>";
-
-		// Здесь можно вставить код, который будет определять сколько \t в начале строки!
-		// Далее нужно сделать необходимый "padding-left" для каждой строки!
-		// ...
-		// ...
-		// ...
-
-		if (x == 1)
-			{
-			// Формируем строку B.
-			// ---
-			string_2 += "<td class=\"calczdprg_bg_b\">";
-
-			x = 0;
-			}
-			else
-			{
-			// Формируем строку A.
-			// ---
-			string_2 += "<td class=\"calczdprg_bg_a\">";
-
-			x = 1;
-			}
-
-			// ---
-
-			// Заменить обычный пробел на неразрывный.
-			temp1 = Array_3[z].replace(/ /g, "&nbsp;");
-
-			// Заменить табуляцию на неразрывные пробелы.
-			temp1 = temp1.replace(/\t/g, "&nbsp;&nbsp;&nbsp;");
-
-			// ---
-
-			// Раскрасить все комментарии.
-			temp1 = temp1.replace(/(\/\/[^]+)/g,'<span class="calczdjsrem">$1</span>');
-
-			// Раскрасить все операторы.
-			temp1 = temp1.replace(/(if|else|for|break|return)/g, "<span class=\"calczdjsoper\">$1</span>");
-
-			// Раскрасить все function и var.
-			string_2 += temp1.replace(/(function|var)/g, "<span class=\"calczdjsfv\">$1</span>");
-
-			// ---
-
-			string_2 += "</td>";
-
-		string_2 += "</tr>";
-		}
-
-	string_2 += "</table>";
-
-	// вставить в страницу.
-	document.getElementById('rBS_2').innerHTML = string_2;
+	// вставить в страницу программу на JavaScript.
+	document.getElementById('rBS_2').innerHTML = temp;
 }
 
 // ---
