@@ -1,0 +1,4 @@
+
+	Набор   : Humano 2
+	Дизайнер: Oliver Scholtz (and others)
+	Лицензия: GPL
