@@ -82,7 +82,7 @@ function VCSPR(id)
 				reader.onload = function()
 					{
 
-	bufferspr = new Uint8Array(reader.result);
+	var bufferspr = new Uint8Array(reader.result);
 
 	// Получить имя файла с расширением.
 	temp = file.name;
@@ -177,7 +177,7 @@ function VCSPR(id)
 			//   | 0 | 0 | 0 |
 			//   | 0 | 1 | 0 |
 			//   | 1 | 0 | 0 |
-			//   | 1 | 1 | 0 |
+			//   | 1 | 1 | 1 |
 			//   -------------
 
 			// 128D = 80H.
@@ -350,6 +350,7 @@ function VCSPRBuildRegeon256x256px()
 
 	temp += "</table>";
 
+	// Вставить в страницу.
 	document.getElementById('region_1_256x256').innerHTML = temp;
 }
 
@@ -834,7 +835,7 @@ function VCSPRResetBMPName()
 	// Вставить в страницу Пусто.
 	document.getElementById('id_filenamebmp_s').innerHTML = "Пусто";
 
-	// Изменить цвет BMP-файлу.
+	// Изменить цвет.
 	document.getElementById('id_filenamebmp_s').style.color = "#cccccc";
 }
 
