@@ -159,10 +159,7 @@ function VRLE8dLoadFile(id)
 			z = z + 16;
 
 			// На последнем адресе не вставлять <br>.
-			if (z < bl)
-				{
-				temp1 += "<br>";
-				}
+			if (z < bl) { temp1 += "<br>"; }
 			}
 
 		x = 15; temp2 = "";
@@ -182,16 +179,10 @@ function VRLE8dLoadFile(id)
 			hex = b1.toString(16);
 
 			// Если нужно, дополнить нулём.
-			if (hex.length == 1)
-				{
-				hex = "0" + hex;
-				}
+			if (hex.length == 1) { hex = "0" + hex; }
 
 			// Начало строки (подсвечиваем при наведении).
-			if (x == 15)
-				{
-				temp2 += "<span class=\"vrlestringbg\">";
-				}
+			if (x == 15) { temp2 += "<span class=\"vrlestringbg\">"; }
 
 			// Подсветка информационного байта.
 			if (z == y)
@@ -205,10 +196,11 @@ function VRLE8dLoadFile(id)
 					// В y адрес следующего информационного байта.
 					y = z + b1 + 1;
 
-					// Делаем title с информационным байтом.
-					temp2 += "<span class=\"vrle_infobyte1\" title=\"Информационный байт, неповторяющихся: " + b1 + " байт(а)! Данные в Dec: " + b1 + ". " + "Адрес в Hex: " + z.toString(16) + ". Адрес в Dec: " + z + ".\">";
-					temp2 += hex;
-					temp2 += "</span>";
+					// Делаем title для информационного байта.
+					temp2 += "<span class=\"vrle_infobyte1\" ";
+					temp2 += "title=\"Информационный байт, неповторяющихся: ";
+					temp2 += b1 + " байт(а)! Данные в Dec: " + b1 + ". " + "Адрес в Hex: ";
+					temp2 += z.toString(16) + ". Адрес в Dec: " + z + ".\">" + hex + "</span>";
 
 					// Сколько всех неповтор. байт.
 					tb2 = tb2 + b1;
@@ -223,10 +215,11 @@ function VRLE8dLoadFile(id)
 					// В y адрес следующего информационного байта.
 					y = z + 2;
 
-					// Делаем title с информационным байтом.
-					temp2 += "<span class=\"vrle_infobyte2\" title=\"Информационный байт, повторяющихся: " + tb + " байт(а)! Данные в Dec: " + b1 + ". " + "Адрес в Hex: " + z.toString(16) + ". Адрес в Dec: " + z + ".\">";
-					temp2 += hex;
-					temp2 += "</span>";
+					// Делаем title для информационного байта.
+					temp2 += "<span class=\"vrle_infobyte2\" ";
+					temp2 += "title=\"Информационный байт, повторяющихся: ";
+					temp2 += tb + " байт(а)! Данные в Dec: " + b1 + ". " + "Адрес в Hex: ";
+					temp2 += z.toString(16) + ". Адрес в Dec: " + z + ".\">" + hex + "</span>";
 
 					// Сколько всех повтор. (разных) байт.
 					tb1 = tb1 + tb;
@@ -235,9 +228,9 @@ function VRLE8dLoadFile(id)
 				else
 				{
 				// Делаем title.
-				temp2 += "<span title=\"Данные в Dec: " + b1 + ". " + "Адрес в Hex: " + z.toString(16) + ". Адрес в Dec: " + z + ".\">";
-				temp2 += hex;
-				temp2 += "</span>";
+				temp2 += "<span title=\"Данные в Dec: " + b1 + ". ";
+				temp2 += "Адрес в Hex: " + z.toString(16) + ". Адрес в Dec: ";
+				temp2 += z + ".\">" + hex + "</span>";
 				}
 
 			if (x == 0)
@@ -246,10 +239,8 @@ function VRLE8dLoadFile(id)
 				temp2 += "</span>";
 
 				// На последнем байте не вставлять <br>.
-				if (z != bl - 1)
-					{
-					temp2 += "<br>";
-					}
+				if (z != bl - 1) { temp2 += "<br>"; }
+
 				x = 16;
 				}
 				else
@@ -265,7 +256,6 @@ function VRLE8dLoadFile(id)
 					temp2 += "</span>";
 					}
 				}
-
 			x--;
 			z++;
 			}
@@ -287,10 +277,7 @@ function VRLE8dLoadFile(id)
 				if (x == 0)
 					{
 					// На последнем sym не вставлять <br>.
-					if (z != bl - 1)
-						{
-						temp3 += "<br>";
-						}
+					if (z != bl - 1) { temp3 += "<br>"; }
 
 					x = 16;
 					}
@@ -307,10 +294,7 @@ function VRLE8dLoadFile(id)
 				if (x == 0)
 					{
 					// На последнем sym не вставлять <br>.
-					if (z != bl - 1)
-						{
-						temp3 += "<br>";
-						}
+					if (z != bl - 1) { temp3 += "<br>"; }
 
 					x = 16;
 					}
@@ -318,7 +302,7 @@ function VRLE8dLoadFile(id)
 
 			else
 
-			// Остальное: ~!@#$%^&*()_+=[]{},.?/\"'пробел
+			// Остальное: ~!@#$%^&*()_+=[]{},.?/\"'
 			if (
 				b1 == 0x7e || b1 == 0x21 || b1 == 0x40 || b1 == 0x23 || b1 == 0x24 ||
 				b1 == 0x25 || b1 == 0x5e || b1 == 0x26 || b1 == 0x2a || b1 == 0x28 ||
@@ -333,10 +317,7 @@ function VRLE8dLoadFile(id)
 				if (x == 0)
 					{
 					// На последнем sym не вставлять <br>.
-					if (z != bl - 1)
-						{
-						temp3 += "<br>";
-						}
+					if (z != bl - 1) { temp3 += "<br>" };
 
 					x = 16;
 					}
@@ -352,17 +333,12 @@ function VRLE8dLoadFile(id)
 				if (x == 0)
 					{
 					// На последнем sym не вставлять <br>.
-					if (z != bl - 1)
-						{
-						temp3 += "<br>";
-						}
+					if (z != bl - 1) { temp3 += "<br>"; }
 
 					x = 16;
 					}
 				}
-
 				else
-
 				{
 				// Иначе точка.
 				temp3 += ".";
@@ -370,15 +346,11 @@ function VRLE8dLoadFile(id)
 				if (x == 0)
 					{
 					// На последнем sym не вставлять <br>.
-					if (z != bl - 1)
-						{
-						temp3 += "<br>";
-						}
+					if (z != bl - 1) { temp3 += "<br>"; }
 
 					x = 16;
 					}
 				}
-
 			x--;
 			z++;
 			}
@@ -402,8 +374,8 @@ function VRLE8dLoadFile(id)
 		document.getElementById('id_vrle8dhex_3').innerHTML = temp3;
 
 		temp1 = "";
-		temp2 = "";
-		temp3 = "";
+			temp2 = "";
+				temp3 = "";
 
 		// Удалить у файла расширение .VRLE8
 		if (ext.length == 5)
@@ -970,5 +942,4 @@ function VRLE8StructureData()
 
 	// вставить в страницу текстовый файл.
 	document.getElementById('id_vrle8dst').innerHTML = string;
-
 }

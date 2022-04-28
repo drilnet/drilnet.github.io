@@ -182,10 +182,7 @@ function VRLE8LoadFile(id)
 		z = z + 16;
 
 		// На последнем адресе не вставлять <br>.
-		if (z < bl)
-			{
-			temp1 += "<br>";
-			}
+		if (z < bl) { temp1 += "<br>"; }
 		}
 
 	x = 15; temp2 = "";
@@ -196,19 +193,15 @@ function VRLE8LoadFile(id)
 		hex = buffer[z].toString(16);
 
 		// Если нужно, дополнить нулём.
-		if (hex.length == 1)
-			{
-			hex = "0" + hex;
-			}
+		if (hex.length == 1) { hex = "0" + hex; }
 
-		// Начало строки (подсвечиваем).
-		if (x == 15)
-			{
-			temp2 += "<span class=\"vrlestringbg\">";
-			}
+		// Начало строки (подсвечиваем при наведении).
+		if (x == 15) { temp2 += "<span class=\"vrlestringbg\">"; }
 
 		// Делаем title.
-		temp2 += "<span title=\"Данные в Dec: " + buffer[z] + ". " + "Адрес в Hex: " + z.toString(16) + ". Адрес в Dec: " + z + ".\">" + hex + "</span>";
+		temp2 += "<span title=\"Данные в Dec: " + buffer[z] + ". ";
+		temp2 += "Адрес в Hex: " + z.toString(16) + ". Адрес в Dec: " + z + ".\">";
+		temp2 += hex + "</span>";
 
 		if (x == 0)
 			{
@@ -216,10 +209,8 @@ function VRLE8LoadFile(id)
 			temp2 += "</span>";
 
 			// На последнем байте не вставлять <br>.
-			if (z != bl - 1)
-				{
-				temp2 += "<br>";
-				}
+			if (z != bl - 1) { temp2 += "<br>"; }
+
 			x = 16;
 			}
 			else
@@ -235,7 +226,6 @@ function VRLE8LoadFile(id)
 				temp2 += "</span>";
 				}
 			}
-
 		x--;
 		z++;
 		}
@@ -253,17 +243,13 @@ function VRLE8LoadFile(id)
 		// Буквы: abcdefghijklmnopqrstuvwxyz.
 		if ( (byte >= 0x41 && byte <= 0x5a) || (byte >= 0x61 && byte <= 0x7a) )
 			{
-
 			// Получаем символ по коду.
 			temp3 += String.fromCharCode(byte);
 
 			if (x == 0)
 				{
 				// На последнем sym не вставлять <br>.
-				if (z != bl - 1)
-					{
-					temp3 += "<br>";
-					}
+				if (z != bl - 1) { temp3 += "<br>"; }
 
 				x = 16;
 				}
@@ -280,10 +266,7 @@ function VRLE8LoadFile(id)
 			if (x == 0)
 				{
 				// На последнем sym не вставлять <br>.
-				if (z != bl - 1)
-					{
-					temp3 += "<br>";
-					}
+				if (z != bl - 1) { temp3 += "<br>"; }
 
 				x = 16;
 				}
@@ -291,7 +274,7 @@ function VRLE8LoadFile(id)
 
 		else
 
-		// Остальное: ~!@#$%^&*()_+=[]{},.?/\"'пробел
+		// Остальное: ~!@#$%^&*()_+=[]{},.?/\"'
 		if (
 			byte == 0x7e || byte == 0x21 || byte == 0x40 || byte == 0x23 || byte == 0x24 ||
 			byte == 0x25 || byte == 0x5e || byte == 0x26 || byte == 0x2a || byte == 0x28 ||
@@ -306,10 +289,7 @@ function VRLE8LoadFile(id)
 			if (x == 0)
 				{
 				// На последнем sym не вставлять <br>.
-				if (z != bl - 1)
-					{
-					temp3 += "<br>";
-					}
+				if (z != bl - 1) { temp3 += "<br>"; }
 
 				x = 16;
 				}
@@ -325,34 +305,24 @@ function VRLE8LoadFile(id)
 			if (x == 0)
 				{
 				// На последнем sym не вставлять <br>.
-				if (z != bl - 1)
-					{
-					temp3 += "<br>";
-					}
+				if (z != bl - 1) { temp3 += "<br>"; }
 
 				x = 16;
 				}
 			}
-
 			else
-
 			{
-
 			// Иначе точка.
 			temp3 += ".";
 
 			if (x == 0)
 				{
 				// На последнем sym не вставлять <br>.
-				if (z != bl - 1)
-					{
-					temp3 += "<br>";
-					}
+				if (z != bl - 1) { temp3 += "<br>"; }
 
 				x = 16;
 				}
 			}
-
 		x--;
 		z++;
 		}
@@ -367,8 +337,8 @@ function VRLE8LoadFile(id)
 	document.getElementById('id_vrle8hex_3').innerHTML = temp3;
 
 	temp1 = "";
-	temp2 = "";
-	temp3 = "";
+		temp2 = "";
+			temp3 = "";
 
 	// Вставить в страницу имя VRLE8-файла.
 	document.getElementById('id_vrle8_filename').innerHTML = file.name + '.vrle8';
@@ -542,6 +512,7 @@ function BuildArrayAddr8(buffer)
 
 	var x, z, z1, zz, bl, aaddr1;
 
+	// Размер.
 	bl = buffer.length;
 
 	aaddr1 = 0;
@@ -594,6 +565,8 @@ function BuildArrayAddr8(buffer)
 				break;
 				}
 
+			// Один раз можно выполнить if, а потом сделать через switch.
+			// Надо подумать!
 			if (buffer[z] == buffer[z + 1])
 				{
 				// Повторяющиеся.
@@ -738,7 +711,6 @@ function VRLE8Coding(array1, array2)
 
 	for (addr2 = 0; addr2 < array2.length;)
 		{
-
 		// Кодирование.
 		switch (array2[addr2])
 			{
@@ -868,9 +840,7 @@ function VRLE8Coding(array1, array2)
 //			alert(arraycoding8);
 
 			break;
-
 			}
-
 		addr2 = addr2 + 4;
 		}
 
@@ -984,7 +954,6 @@ function VRLE8CodingEstimate(array1, array2)
 
 	for (addr2 = 0; addr2 < array2.length;)
 		{
-
 		// Кодирование.
 		switch (array2[addr2])
 			{
@@ -1086,11 +1055,9 @@ function VRLE8CodingEstimate(array1, array2)
 //			alert(arraycoding8);
 
 			break;
-
 			}
 
 		addr2 = addr2 + 4;
 		}
-
 	return tcb;
 }
