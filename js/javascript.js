@@ -25,6 +25,9 @@ function OpenShowModalWin(id)
 		// h = h - 110 - 107; // Снизу отступ чуть-чуть больше.
 		h = h - 110 - 107;
 
+		// Подтянуть окно (подтянуть снизу). Это iframe.
+		if (h > 778) { h = 778; } // 778 - максимальная высота окна.
+ 
 		// Растянуть...
 		if (id == "ModalWinPuzzle15_1") { document.getElementById("repopuzzle15_1").style.height = h + "px"; }
 			if (id == "ModalWinPuzzle15_1_2") { document.getElementById("repopuzzle15_1_2").style.height = h + "px"; }
@@ -61,6 +64,9 @@ function OpenShowModalWin(id)
 		// h = h - 83 - 94;
 		// h = h - 93 - 104; // Снизу отступ чуть-чуть больше.
 		h = h - 93 - 104;
+
+		// Подтянуть окно с полосой прокрутки (подтянуть снизу).
+		if (h > 481) { h = 481}; // 481 - максимальная высота окна с полосой прокрутки.
 
 		// Растянуть...
 		document.getElementById("repops512sceheme").style.height = h + "px";
