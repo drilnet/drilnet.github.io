@@ -372,12 +372,6 @@
 <!-- Сделать кнопку Сохранить BMP-файл неактивной (конвертер SPR to BMP) -->
 <!-- VCSPRResetBMPFileSave(); -->
 
-<!-- Вставить программу на JavaScript (vrle8 Decoding) в страницу index.html -->
-<!-- VRLE8dPrgJS(); -->
-
-<!-- Вставить текст (структура данных VRLE8) в страницу index.html -->
-<!-- VRLE8StructureData() -->
-
 <!-- Вставить в страницу законы Кирхгофа -->
 <!-- BuildKirchhoffLaws(); -->
 
@@ -404,8 +398,6 @@
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
 		VCSPRResetInputFile();
 		VCSPRResetBMPFileSave();
-		VRLE8dPrgJS();
-		VRLE8StructureData();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
 		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader()">
 
@@ -3155,30 +3147,51 @@
 				</tr>
 
 				<!-- Структура данных VRLE8 -->
+				<!-- ---------------------- -->
 
 				<tr>
 				<td align="center">
 
-				<!------------->
+					<!-- Гор. линия 1 -->
+					<hr class="vrle_addhr vrle_addhrsize5">
 
 					<!-- Спойлер -->
 
-					<table cellspacing="0" cellpadding="0" border="0">
+					<table width="240px" cellspacing="0" cellpadding="0" border="0">
 			    		<tr>
 
-					<td>
+					<td width="1%">
 					<img class="icon" src="icons/txt.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
 					</td>
 
-					<td style="padding-left: 6px;">
+					<td align="left" style="padding-left: 6px;">
 
 					<!-- ! -->
 					<span class="spoilervrle"
-					onclick="document.getElementById('vrle8spoilerdst').style.display = (document.getElementById('vrle8spoilerdst').style.display=='none'?'inline':'none');"
+					onclick="javascript:vrle8spoilerdstJS();"
 					title="Нажмите">
 
-					Структура данных VRLE8
+<script>
+function vrle8spoilerdstJS()
+{
+if (document.getElementById('vrle8spoilerdst').style.display == 'none')
+	{
+	// Вставить текст структура данных VRLE8 в страницу (в index.html).
+	VRLE8StructureData();
+	// Открыть спойлер.
+	document.getElementById('vrle8spoilerdst').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('vrle8spoilerdst').style.display = 'none';
+	// Удалить структуру данных VRLE8 из страницы (из index.html).
+	document.getElementById('id_vrle8dst').innerHTML = '';
+	}
+}
+</script>
 
+					Структура данных VRLE8
 					</span>
 
 					</td>
@@ -3186,15 +3199,15 @@
 					</tr>
 					</table>
 
-					<br>
-
 					<!-- То, что под спойлером -->
 					<div id="vrle8spoilerdst" style="display: none;">
 
+						<!-- Гор. линия 2 -->
+						<hr class="vrle_addhr vrle_addhrsize5">
+						<br>
+
 						<!-- Гор. линия -->
-
 						<hr class="vrle_addhr vrle_addhrsize4">
-
 						<br>
 
 						<!-- Дополнительное окно с прокруткой -->
@@ -3218,10 +3231,10 @@
 							</tr>
 							</table>
 
+							<!-- Концовка для структура данных VRLE8 -->
+
 							<br>
-
 							<a href="downloads/vrlex/vrle8-data-structure.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-data-structure.txt</a> (в UTF-8)
-
 							<br>
 							<br>
 							Уважаемый соискатель!
@@ -3231,12 +3244,12 @@
 							Сделайте ссылку на <a href="https://drilnet.github.io" title="Откроется в новой вкладке" target="_blank">GITHUB</a> и сделайте ссылку на мой сайт!
 							<br>
 							Спасибо.
-
 							<br>
 							<br>
 
-							Репозиторий <a href="https://github.com/drilnet/rle" title="Откроется в новой вкладке" target="_blank">здесь</a>.
+							<!-- ! -->
 
+							Репозиторий VRLE8 <a href="https://github.com/drilnet/rle" title="Откроется в новой вкладке" target="_blank">здесь</a>.
 							<br>
 							<br>
 							Ukraine. (C) Демидов С.В.
@@ -3247,44 +3260,62 @@
 
 						</div> <!-- Конец дополнительному окну с прокруткой -->
 
-						<!-- Гор. линия -->
-
 						<br>
+						<!-- Гор. линия -->
 						<hr class="vrle_addhr vrle_addhrsize4">
 						<br>
 
 					</div> <!-- Конец спойлера Структура данных VRLE8 -->
 
-				<!------------->
-
 				</td>
 				</tr>
 
 				<!-- Декодер на JavaScript -->
+				<!-- --------------------- -->
 
 				<tr>
 				<td align="center">
 
-				<!------------->
+					<!-- Гор. линия 3 -->
+					<hr class="vrle_addhr vrle_addhrsize5">
 
 					<!-- Спойлер -->
 
-					<table cellspacing="0" cellpadding="0" border="0">
+					<table width="240px;" cellspacing="0" cellpadding="0" border="0">
 					<tr>
 
-					<td>
+					<td width="1%">
 					<img class="icon" src="icons/js.png" title="Иконка из набора: Humano 2. (C) Oliver Scholtz (and others). License: GPL">
 					</td>
 
-					<td style="padding-left: 6px;">
+					<td align="left" style="padding-left: 6px;">
 
 					<!-- ! -->
 					<span class="spoilervrle"
-					onclick="document.getElementById('vrle8spoilerjs').style.display = (document.getElementById('vrle8spoilerjs').style.display=='none'?'inline':'none');"
+					onclick="javascript:vrle8spoilerJSd();"
 					title="Нажмите">
 
-					Декодирование на JavaScript
+<script>
+function vrle8spoilerJSd()
+{
+if (document.getElementById('vrle8spoilerjs').style.display == 'none')
+	{
+	// Вставить функцию на JavaScript (vrle8 Decoding) в страницу (в index.html).
+	VRLE8dPrgJS();
+	// Открыть спойлер.
+	document.getElementById('vrle8spoilerjs').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('vrle8spoilerjs').style.display = 'none';
+	// Удалить функцию на JavaScript из страницы (из index.html).
+	document.getElementById('id_vrle8js').innerHTML = '';
+	}
+}
+</script>
 
+					Декодирование на JavaScript
 					</span>
 
 					</td>
@@ -3292,15 +3323,15 @@
 					</tr>
 					</table>
 
-					<br>
+					<!-- Гор. линия 4 -->
+					<hr class="vrle_addhr vrle_addhrsize5">
 
 					<!-- То, что под спойлером -->
 					<div id="vrle8spoilerjs" style="display: none;">
 
+						<br>
 						<!-- Гор. линия -->
-
 						<hr class="vrle_addhr vrle_addhrsize3">
-
 						<br>
 
 						<!-- Дополнительное окно с прокруткой -->
@@ -3324,10 +3355,18 @@
 							</tr>
 							</table>
 
+							<!-- Концовка для декодирования -->
+
 							<br>
-
 							<a href="downloads/vrlex/vrle8-decoding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-decoding.js</a> (в UTF-8)
-
+							<br>
+							<br>
+							Как работает декодирование?
+							Вот <a href="https://www.youtube.com/watch?v=XjKZniIU32g&t=20s&ab_channel=dinsky" title="Откроется в новой вкладке" target="_blank">ссылка</a> на YouTube!
+							<span class="smalltxt">
+							<br>
+							Видео от 20 февраля 2011г. Спасибо Человеку!
+							</span>
 							<br>
 							<br>
 							Уважаемый соискатель!
@@ -3337,12 +3376,12 @@
 							Сделайте ссылку на <a href="https://drilnet.github.io" title="Откроется в новой вкладке" target="_blank">GITHUB</a> и сделайте ссылку на мой сайт!
 							<br>
 							Спасибо.
-
 							<br>
 							<br>
 
-							Репозиторий <a href="https://github.com/drilnet/rle" title="Откроется в новой вкладке" target="_blank">здесь</a>.
+							<!-- ! -->
 
+							Репозиторий VRLE8 <a href="https://github.com/drilnet/rle" title="Откроется в новой вкладке" target="_blank">здесь</a>.
 							<br>
 							<br>
 							Ukraine. (C) Демидов С.В.
@@ -3353,20 +3392,210 @@
 
 						</div> <!-- Конец дополнительному окну с прокруткой -->
 
-						<!-- Гор. линия -->
-
 						<br>
+						<!-- Гор. линия -->
 						<hr class="vrle_addhr vrle_addhrsize3">
 						<br>
 
-					</div> <!-- Конец спойлера Декодирование на JavaScript -->
+						<!-- Гор. линия 5 -->
+						<hr class="vrle_addhr vrle_addhrsize5">
 
-				<!------------->
+					</div> <!-- Конец спойлера Декодирование на JavaScript -->
 
 				</td>
 				</tr>
 
-				<!-- ! -->
+				<!-- Кодирование на JavaScript (две функции) -->
+				<!-- --------------------------------------- -->
+
+				<tr>
+				<td align="center">
+
+					<!-- Спойлер -->
+
+					<table width="240px" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td width="1%">
+					<img class="icon" src="icons/js.png" title="Иконка из набора: Humano 2. (C) Oliver Scholtz (and others). License: GPL">
+					</td>
+
+					<td align="left" style="padding-left: 6px;">
+
+					<!-- ! -->
+					<span class="spoilervrle"
+					onclick="javascript:vrle8spoilerJSc();"
+					title="Нажмите">
+
+<script>
+function vrle8spoilerJSc()
+{
+if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
+	{
+	// Вставить две функции на JavaScript (build array, coding VRLE8) в страницу (в index.html).
+	VRLE8cPrgJS();
+	// Открыть спойлер.
+	document.getElementById('vrle8spoilerjs2').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('vrle8spoilerjs2').style.display = 'none';
+	// Удалить функцию 1 на JavaScript из страницы (из index.html).
+	document.getElementById('id_vrle8js2').innerHTML = '';
+	// Удалить функцию 2 на JavaScript из страницы (из index.html).
+	document.getElementById('id_vrle8js3').innerHTML = '';
+	}
+}
+</script>
+
+					Кодирование на JavaScript
+					</span>
+
+					</td>
+
+					</tr>
+					</table>
+
+					<!-- Гор. линия 6 -->
+					<hr class="vrle_addhr vrle_addhrsize5">
+					<br>
+
+					<!-- То, что под спойлером -->
+					<div id="vrle8spoilerjs2" style="display: none;">
+
+						<!-- Гор. линия -->
+						<hr class="vrle_addhr vrle_addhrsize3">
+
+						<br>
+
+						<!-- Дополнительное окно с прокруткой -->
+
+						<div align="center" class="vrleprg_window">
+
+							<!-- Лицензия -->
+
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+
+							Лицензия (License): <b>Free</b>.
+
+							<br>
+							<br>
+
+							Если этот код перенести на восьмибитный компьютер, то Функцию 1 и Функцию 2
+							<br>
+							нужно объединить (нужно избавиться от массива с адресами)!
+							<br>
+							<br>
+
+							<!-- Заголовок для функции 1 -->
+
+							<table class="vrlebgh3" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td>
+
+							Функция 1
+
+							</td>
+							</tr>
+							</table>
+
+							<br>
+
+							<!-- Здесь функция, которая создаёт массив с адресами -->
+
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td id="id_vrle8js2">
+							<!-- Сюда вставка -->
+							</td>
+							</tr>
+							</table>
+
+							<!-- Концовка для функции 1 -->
+
+							<br>
+							<a href="downloads/vrlex/vrle8-buildarrayaddr8.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-buildarrayaddr8.js</a> (в UTF-8)
+							<br>
+							<br>
+							Уважаемый соискатель!
+							<br>
+							Если Вы будете использовать этот код у себя на сайте!
+							<br>
+							Сделайте ссылку на <a href="https://drilnet.github.io" title="Откроется в новой вкладке" target="_blank">GITHUB</a> и сделайте ссылку на мой сайт!
+							<br>
+							Спасибо.
+							<br>
+							<br>
+							Этот код (Функция 1) в репозитории моего сайта, файл: <a href="https://github.com/drilnet/drilnet.github.io/blob/master/js/javascript-vrle8-coding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">javascript-vrle8-coding.js</a>
+							<br>
+							<br>
+
+							<!-- Заголовок для функции 2 -->
+
+							<table class="vrlebgh3" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td>
+
+							Функция 2
+
+							</td>
+							</tr>
+							</table>
+
+							<br>
+
+							<!-- Здесь функция, которая кодирует -->
+
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td id="id_vrle8js3">
+							<!-- Сюда вставка -->
+							</td>
+							</tr>
+							</table>
+
+							<!-- Концовка для функции 2 -->
+
+							<br>
+							<a href="downloads/vrlex/vrle8-coding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-coding.js</a> (в UTF-8)
+							<br>
+							<br>
+							Уважаемый соискатель!
+							<br>
+							Если Вы будете использовать этот код у себя на сайте!
+							<br>
+							Сделайте ссылку на <a href="https://drilnet.github.io" title="Откроется в новой вкладке" target="_blank">GITHUB</a> и сделайте ссылку на мой сайт!
+							<br>
+							Спасибо.
+							<br>
+							<br>
+							Этот код (Функция 2) в репозитории моего сайта, файл: <a href="https://github.com/drilnet/drilnet.github.io/blob/master/js/javascript-vrle8-coding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">javascript-vrle8-coding.js</a>
+							<br>
+							<br>
+
+							<!-- ! -->
+
+							Ukraine. (C) Демидов С.В.
+							</td>
+							</tr>
+							</table>
+
+						</div> <!-- Конец дополнительному окну с прокруткой -->
+
+						<br>
+						<!-- Гор. линия -->
+						<hr class="vrle_addhr vrle_addhrsize3">
+						<br>
+
+					</div> <!-- Конец спойлера Кодирование на JavaScript -->
+
+				</td>
+				</tr>
+
+				<!-- Logo VRLE8 -->
 
 				<tr>
 				<td align="center">
@@ -3507,7 +3736,7 @@
 				<td align="center">
 
 					<br>
-					Репозиторий <a href="https://github.com/drilnet/rle" title="Откроется в новой вкладке" target="_blank">здесь</a>
+					Репозиторий VRLE8 <a href="https://github.com/drilnet/rle" title="Откроется в новой вкладке" target="_blank">здесь</a>
 
 				</td>
 				</tr>

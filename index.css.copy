@@ -3391,6 +3391,12 @@
 	width: 900px;
 	}
 
+	/* Размер для линия (размер 5) */
+
+	.vrle_addhrsize5 {
+	width: 480px;
+	}
+
 	/* VRLEx */
 	/* Заголовок 2 (фон, бордюр, цвет тексту) */
 
@@ -3402,6 +3408,17 @@
 	color: #022169;
 	width: 720px;
 	font-size: 1.2em; /* 14px */
+	}
+
+	/* VRLEx  */
+	/* Заголовок для: 1. Функция создаёт массив с адресами. 2. Функция кодировщика */
+	/* Это дополнительная информация */
+	/* Фон и бордюр */
+
+	.vrlebgh3{
+	background: #f3f4f4;
+	border: 1px solid #c3c6c6;
+	padding: 6px;
 	}
 
 	/* VRLEx */
@@ -3544,7 +3561,7 @@
 	}
 
 	/* VRLEx */
-	/* Дополнительное окно на странице (декодер JavaScript) */
+	/* Дополнительное окно на странице (декодер/кодер JavaScript) */
 
 	.vrleprg_window {
 	overflow: scroll; /* полоса прокрутки */
@@ -3578,6 +3595,13 @@
 	background: #ffffff;
 	border: 1px solid #e0e2e4;
 	padding: 4px 10px 4px 10px;
+	}
+
+	/* VRLEx */
+	/* Файл ноль байт. Ошибка! */
+
+	.vrle_fzeroerror {
+	color: #c00000;
 	}
 
 		/* PrgJS */
