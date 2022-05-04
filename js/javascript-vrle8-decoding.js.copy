@@ -140,10 +140,19 @@ function VRLE8dLoadFile(id)
 
 	if (sw == 1)
 		{
+		var bl = buffer.length;
+
 		// Вставить в страницу имя файла (с расширением).
 		document.getElementById('id_vrle8d_info_filename').innerHTML = "<b>" + file.name + "</b>";
 
-		var bl = buffer.length;
+		// Если нулевой файл то:
+		if (bl == 0)
+			{
+			// вставить в страницу размер файла, вставить в страницу Ошибка!.
+			document.getElementById('id_vrle8d_info_filesize').innerHTML = bl + " байт(а). <span class=\"vrle_fzeroerror\">Ошибка!</span>";
+			// Прервать Функцию.
+			return;
+			}
 
 		// вставить в страницу размер файла.
 		document.getElementById('id_vrle8d_info_filesize').innerHTML = bl + " байт(а)";
@@ -525,7 +534,7 @@ function VRLE8dSave()
 }
 
 //
-// Программа декодирования (на JS), для вставки в страницу!
+// Функция декодирования (написана на JS), для вставки в страницу (в index.html)!
 //
 function VRLE8dPrgJS()
 {
@@ -642,12 +651,12 @@ var ArrayPRG =
 
 	temp = PrgJS(ArrayPRG, "640px");
 
-	// вставить в страницу программу на JavaScript.
+	// вставить в страницу функцию декодирования написаную на JavaScript.
 	document.getElementById('id_vrle8js').innerHTML = temp;
 }
 
 //
-// Структура данных VRLE8.
+// Структура данных VRLE8 (текстовый файл, вставка в index.html).
 //
 function VRLE8StructureData()
 {
