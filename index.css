@@ -3656,3 +3656,12 @@
 		color: #009999;
 		font-weight: bold;
 		}
+
+		/* PrgJS */
+		/* Программа на JavaScript. Цвет фигурным скобкам */
+		.prgjsbraces {
+		/* color: #4d7bc7; */
+		/* color: #4444cc; */
+		color: #555555;
+		font-weight: bold;
+		}
