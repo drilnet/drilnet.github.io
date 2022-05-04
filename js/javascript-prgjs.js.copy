@@ -117,7 +117,10 @@ function PrgJS(Array_2, width)
 				}
 
 			// Раскрасить оператор(ы).
-			temp1 = temp1.replace(/(if|else|for|break|return)/g, "<span class=\"prgjsoper\">$1</span>");
+			temp1 = temp1.replace(/(if|else|for|break|return|switch|case)/g, "<span class=\"prgjsoper\">$1</span>");
+
+			// Раскрасить фигурные скобки.
+			// temp1 = temp1.replace(/(\{|\})/g, "<span class=\"prgjsbraces\">$1</span>");
 
 			// Раскрасить function и var.
 			string_2 += temp1.replace(/(function|var)/g, "<span class=\"prgjsfv\">$1</span>");
