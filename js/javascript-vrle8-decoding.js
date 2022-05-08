@@ -658,7 +658,7 @@ var ArrayPRG =
 //
 // Структура данных VRLE8 (текстовый файл, вставка в index.html).
 //
-function VRLE8StructureData()
+function VRLE8DataStructure()
 {
 	var Array_1 =
 
@@ -951,4 +951,26 @@ function VRLE8StructureData()
 
 	// вставить в страницу текстовый файл.
 	document.getElementById('id_vrle8dst').innerHTML = string;
+}
+
+//
+// Пересчитать горизонталь для Структура данных (горизонталь для окна).
+//
+function VRLE8WidthDataStructure()
+{
+
+	var w1 = document.documentElement.clientWidth;
+	var w2 = w1 - 20 - 20; // 20px и 20px - Отступы по краям.
+
+	if (w2 > 1395) // 1395px - Это максимальный размер окна по горизонтали.
+		{
+		w2 = 1395;
+		}
+
+	// Width для горизонтальной линии.
+	document.getElementById('id_vrle8_widthdst1').style.width = w2 + "px";
+	// Растянуть окно по горизонтали.
+	document.getElementById('id_vrle8_widthdst2').style.width = w2 + "px";
+	// Width для горизонтальной линии.
+	document.getElementById('id_vrle8_widthdst3').style.width = w2 + "px";
 }
