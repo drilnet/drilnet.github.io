@@ -372,6 +372,9 @@
 <!-- Сделать кнопку Сохранить BMP-файл неактивной (конвертер SPR to BMP) -->
 <!-- VCSPRResetBMPFileSave(); -->
 
+<!-- Пересчитать горизонталь для Структура данных (горизонталь для окна) -->
+<!-- VRLE8WidthDataStructure(); -->
+
 <!-- Вставить в страницу законы Кирхгофа -->
 <!-- BuildKirchhoffLaws(); -->
 
@@ -398,6 +401,7 @@
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
 		VCSPRResetInputFile();
 		VCSPRResetBMPFileSave();
+		VRLE8WidthDataStructure();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
 		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader()">
 
@@ -3177,7 +3181,7 @@ function vrle8spoilerdstJS()
 if (document.getElementById('vrle8spoilerdst').style.display == 'none')
 	{
 	// Вставить текст структура данных VRLE8 в страницу (в index.html).
-	VRLE8StructureData();
+	VRLE8DataStructure();
 	// Открыть спойлер.
 	document.getElementById('vrle8spoilerdst').style.display = 'inline';
 	}
@@ -3207,12 +3211,12 @@ if (document.getElementById('vrle8spoilerdst').style.display == 'none')
 						<br>
 
 						<!-- Гор. линия -->
-						<hr class="vrle_addhr vrle_addhrsize4">
+						<hr id="id_vrle8_widthdst1" class="vrle_addhr vrle_addhrsize4">
 						<br>
 
 						<!-- Дополнительное окно с прокруткой -->
 
-						<div align="center" class="vrledst_window">
+						<div id="id_vrle8_widthdst2" align="center" class="vrledst_window">
 
 							<table cellspacing="0" cellpadding="0" border="0">
 							<tr>
@@ -3262,7 +3266,7 @@ if (document.getElementById('vrle8spoilerdst').style.display == 'none')
 
 						<br>
 						<!-- Гор. линия -->
-						<hr class="vrle_addhr vrle_addhrsize4">
+						<hr id="id_vrle8_widthdst3" class="vrle_addhr vrle_addhrsize4">
 						<br>
 
 					</div> <!-- Конец спойлера Структура данных VRLE8 -->
@@ -3496,7 +3500,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 							<tr>
 							<td>
 
-							Функция 1
+							Функция 1 (см. ниже)
 
 							</td>
 							</tr>
@@ -3539,7 +3543,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 							<tr>
 							<td>
 
-							Функция 2
+							Функция 2 (см. ниже)
 
 							</td>
 							</tr>

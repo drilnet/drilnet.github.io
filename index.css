@@ -3561,10 +3561,10 @@
 	}
 
 	/* VRLEx */
-	/* Дополнительное окно на странице (декодер/кодер JavaScript) */
+	/* Дополнительное окно на странице (Декодер/Кодер JavaScript) */
 
 	.vrleprg_window {
-	overflow: scroll; /* полоса прокрутки */
+	overflow: scroll; /* Полоса прокрутки */
 	width: 700px;
 	height: 320px;
 	}
@@ -3573,8 +3573,8 @@
 	/* Дополнительное окно на странице (Структура данных VRLE8) */
 
 	.vrledst_window {
-	overflow: scroll; /* полоса прокрутки */
-	width: 900px;
+	overflow: scroll; /* Полоса прокрутки */
+	width: 900px; /* Устанавливается скриптом на JS */
 	height: 440px;
 	}
 
