@@ -68,9 +68,26 @@
 
 	<link rel="stylesheet" type="text/css" href="downloads.css">
 	<link rel="SHORTCUT ICON" href="../../favicon.ico" type="image/x-icon">
+
+	<!-- JavaScript -->
+	<script language="javascript" src="js/javascript-vc.js"></script>
+
 	</head>
 
-<body>
+	<!-- Пересчитать горизонталь окна (таблица команд микропроцессора i8080 -->
+	<!-- VCWidthTableCommandl8080(); -->
+
+	<!-- Установить Radio Buttons по умолчанию  (таблица команд микропроцессора i8080) -->
+	<!-- VCResetRadioButtons() -->
+
+<body onload="
+
+	VCWidthTableCommand8080();
+	VCResetRadioButtons();
+
+">
+
+<a name="255"></a>
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -343,11 +360,17 @@
 		<a href="#3" title="Перейти">
 		БИБЛИОТЕКА ПК Вектор-06Ц. Выпуск 3. Язык программирования ЛС-ПАСКАЛЬ</a>
 
+		<br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+
+		<a href="#4" title="Перейти">
+		Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)</a>
+
 		</p>
 
 	</td>
 	</tr>
-
 
 	<!-- Горизонтальная линия -->
 
@@ -2874,21 +2897,31 @@
 		Описание к системному диску 1 в формате TXT (1251):
 		<a href="system-disk-1-arc/system-disk-1-1251.txt">здесь</a>
 
-	</td>
-	</tr>
-
-	<!-- Примечание. -->
-
-	<tr>
-	<td align="center">
-
 		<br>
+		<br>
+
+		<!-- Примечание. -->
 
 		<a href="system-disk-1-fls/MAS.COM"><b>MAS.COM</b></a>
 		и
 		<a href="system-disk-1-fls/L80.COM"><b>L80.COM</b></a>
 		-
 		были основными средствами при написании программ для Вектор'а-06Ц!
+
+		<br>
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+
+		</table>
 
 	</td>
 	</tr>
@@ -2912,6 +2945,8 @@
 
 		<br>
 
+		<!-- Заголовок -->
+
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
@@ -2922,11 +2957,9 @@
 
 		</table>
 
-	</td>
-	</tr>
+		<br>
 
-	<tr>
-	<td>
+		<!-- Скриншоты -->
 
 		<table align="center" cellspacing="0" cellpadding="0" border="0">
 
@@ -2948,9 +2981,22 @@
 
 		</table>
 
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+
+		</table>
+
 	</td>
 	</tr>
-
 
 	<!-- Горизонтальная линия -->
 
@@ -2971,6 +3017,8 @@
 
 		<br>
 
+		<!-- Заголовок -->
+
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
@@ -2981,13 +3029,9 @@
 
 		</table>
 
-	</td>
-	</tr>
-
-	<tr>
-	<td>
-
 		<br>
+
+		<!-- Скриншоты брошюр -->
 
 		<table align="center" cellspacing="1" cellpadding="0" border="0">
 
@@ -3009,15 +3053,9 @@
 
 		</table>
 
-	</td>
-	</tr>
-
-	<!-- Скачать -->
-
-	<tr>
-	<td>
-
 		<br>
+
+		<!-- Скачать -->
 
 		<table align="center" cellspacing="0" cellpadding="0" border="0">
 
@@ -3046,9 +3084,246 @@
 		<tr>
 		<td align="center">
 
+			<!-- Автор -->
 			(<b>C</b>) Терентьев С.В., г. Харьков, 1993г., фирма "<b>Тетрис</b>".
 
 		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<a name="4"></a>
+
+	</td>
+	</tr>
+
+	<!-- Таблица команд КР580ИК80 -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td class="table_bg_a" align="center">
+			 Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, 8080)
+			</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Изображение процессора -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+			<!-- Изображение процессора -->
+			<img class="icon" src="images/NTE8080A.png" title="">
+			</td>
+
+			<td style="padding-left: 8px;">
+			Изображение процессора слева:
+			<br>
+			2 MHz, 40-pin, plastik DIP, Remarked National Semiconductor 8080 processor
+			<br>
+			Взято с: <a href="https://www.cpu-world.com/CPUs/8080/" title="Откроется в новой вкладке" target="_blank">ссылка</a>
+			<br>
+			<br>
+			[ <a href="https://en.wikipedia.org/wiki/Intel_8080" title="Откроется в новой вкладке" target="_blank">Процессор 8080 в ENG Wiki</a> ]
+			<br>
+			[ <a href="https://ru.wikipedia.org/wiki/КР580ВМ80А" title="Откроется в новой вкладке" target="_blank">Процессор 8080 в RUS Wiki</a> ]
+
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Гор. линия 1 -->
+		<hr class="vc_addhr vc_size_tc_1">
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+		<!-- Иконка Chip -->
+		<img class="icon" src="icons/chip.png" title="Иконка из набора Kids. (C) Everaldo Coelho. License: GPL">
+		</td>
+
+		<td align="left" style="padding-left: 6px;">
+
+		<!-- ! -->
+		<span class="vc_spoiler"
+		onclick="javascript:vccommandcpuspoiler();"
+		title="Нажмите">
+
+<script>
+function vccommandcpuspoiler()
+{
+if (document.getElementById('id_cpucomsp').style.display == 'none')
+	{
+	// Вставить текстовый файл (команды микропроцессора 8080) в страницу (в downloads.html).
+	VCTableCommand8080();
+	// Открыть спойлер.
+	document.getElementById('id_cpucomsp').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('id_cpucomsp').style.display = 'none';
+	// Удалить текстовый файл (команды процессора 8080) из страницы (из downloads.html);
+	document.getElementById('id_vc_tablecommand8080').innerHTML = '';
+	}
+}
+</script>
+
+		Развернуть/Свернуть
+		</span>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<!-- Гор. линия 1 -->
+		<hr class="vc_addhr vc_size_tc_1">
+
+		<!-- То, что под спойлером -->
+		<div id="id_cpucomsp" style="display: none;">
+
+			<br>
+
+			<!-- Дополнительное окно с прокруткой -->
+
+			<div id="id_vc_command8080_window" align="center" class="vc_command8080_window">
+
+				<!-- Здесь Radio Buttons -->
+				<!-- Растянуть по вертикали -->
+
+				<table class="vc_rb_bg" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+				<td>
+				Окно в исходном состояние:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td class="vc_rbpaddingb">
+
+				<!-- Вернуть таблицу в исходное состояние -->
+				<input name="i8080table" id="id_vcrb_8080_1" class="vc_radiobutton" type="radio" value="" checked
+				onchange="VCHeightTableCommand8080_1();">
+				<label for="id_vcrb_8080_1" class="vc_label_radio" title=""></label>
+
+				</td>
+
+				</tr>
+
+				<tr>
+
+				<td>
+				Растянуть окно по вертикали:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td class="vc_rbpaddingb">
+
+				<!-- Растянуть таблицу по вертикали -->
+				<input name="i8080table" id="id_vcrb_8080_2" class="vc_radiobutton" type="radio" value=""
+				onchange="VCHeightTableCommand8080_2();">
+				<label for="id_vcrb_8080_2" class="vc_label_radio" title=""></label>
+
+				</td>
+
+				</tr>
+
+				</table> <!-- Конец Radio Buttons -->
+
+				<br>
+
+				<!-- Здесь текстовый файл для скачивания -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+				<!-- Иконка -->
+				<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+				</td>
+
+				<!-- txt-файл -->
+				<td style="padding-left: 6px;">
+				<a href="dl/I8080.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">I8080.txt</a> (в UTF-8)
+				</td>
+
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Здесь таблица команд -->
+
+				<table class="vc_command8080_window_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="id_vc_tablecommand8080">
+				<!-- Сюда вставка -->
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</div> <!-- Конец дополнительному окну с прокруткой -->
+
+		</div> <!-- Конец спойлера Таблица команды CPU 8080 -->
+
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
 		</tr>
 
 		</table>
