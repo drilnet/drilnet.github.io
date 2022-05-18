@@ -3231,84 +3231,90 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 
 			<div id="id_vc_command8080_window" align="center" class="vc_command8080_window">
 
-				<!-- Здесь Radio Buttons -->
-				<!-- Растянуть по вертикали -->
-
-				<table class="vc_rb_bg" cellspacing="0" cellpadding="0" border="0">
-
-				<tr>
-
-				<td>
-				Окно в исходном состояние:
-				</td>
-
-				<td>&nbsp;</td>
-
-				<td class="vc_rbpaddingb">
-
-				<!-- Вернуть таблицу в исходное состояние -->
-				<input name="i8080table" id="id_vcrb_8080_1" class="vc_radiobutton" type="radio" value="" checked
-				onchange="VCHeightTableCommand8080_1();">
-				<label for="id_vcrb_8080_1" class="vc_label_radio" title=""></label>
-
-				</td>
-
-				</tr>
-
-				<tr>
-
-				<td>
-				Растянуть окно по вертикали:
-				</td>
-
-				<td>&nbsp;</td>
-
-				<td class="vc_rbpaddingb">
-
-				<!-- Растянуть таблицу по вертикали -->
-				<input name="i8080table" id="id_vcrb_8080_2" class="vc_radiobutton" type="radio" value=""
-				onchange="VCHeightTableCommand8080_2();">
-				<label for="id_vcrb_8080_2" class="vc_label_radio" title=""></label>
-
-				</td>
-
-				</tr>
-
-				</table> <!-- Конец Radio Buttons -->
-
-				<br>
-
-				<!-- Здесь текстовый файл для скачивания -->
-
 				<table cellspacing="0" cellpadding="0" border="0">
 				<tr>
+				<td align="center" style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
 
-				<td>
-				<!-- Иконка -->
-				<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+					<!-- Здесь Radio Buttons -->
+					<!-- Растянуть по вертикали -->
+
+					<table class="vc_rb_bg" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+					<td>
+					Вернуть окно в исходном состояние:
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td class="vc_rbpaddingb">
+
+					<!-- Вернуть окно в исходное состояние -->
+					<input name="i8080table" id="id_vcrb_8080_1" class="vc_radiobutton" type="radio" value="" checked
+					onchange="VCHeightTableCommand8080_1();">
+					<label for="id_vcrb_8080_1" class="vc_label_radio" title=""></label>
+
+					</td>
+
+					</tr>
+
+					<tr>
+
+					<td>
+					Растянуть окно по вертикали:
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td class="vc_rbpaddingb">
+
+					<!-- Растянуть окно по вертикали -->
+					<input name="i8080table" id="id_vcrb_8080_2" class="vc_radiobutton" type="radio" value=""
+					onchange="VCHeightTableCommand8080_2();">
+					<label for="id_vcrb_8080_2" class="vc_label_radio" title=""></label>
+
+					</td>
+
+					</tr>
+
+					</table> <!-- Конец Radio Buttons -->
+
+					<br>
+
+					<!-- Здесь текстовый файл для скачивания -->
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<!-- Иконка -->
+					<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+					</td>
+
+					<!-- txt-файл -->
+					<td style="padding-left: 6px;">
+					<a href="dl/I8080.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">I8080.txt</a> (в UTF-8)
+					</td>
+
+					</tr>
+					</table>
+
+					<br>
+
+					<!-- Здесь таблица команд -->
+
+					<table class="vc_command8080_window_bg" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td id="id_vc_tablecommand8080">
+					<!-- Сюда вставка -->
+					</td>
+					</tr>
+					</table>
+
 				</td>
-
-				<!-- txt-файл -->
-				<td style="padding-left: 6px;">
-				<a href="dl/I8080.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">I8080.txt</a> (в UTF-8)
-				</td>
-
 				</tr>
 				</table>
-
-				<br>
-
-				<!-- Здесь таблица команд -->
-
-				<table class="vc_command8080_window_bg" cellspacing="0" cellpadding="0" border="0">
-				<tr>
-				<td id="id_vc_tablecommand8080">
-				<!-- Сюда вставка -->
-				</td>
-				</tr>
-				</table>
-
-				<br>
 
 			</div> <!-- Конец дополнительному окну с прокруткой -->
 
