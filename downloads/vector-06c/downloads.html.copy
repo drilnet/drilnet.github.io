@@ -3294,7 +3294,7 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 
 					<!-- txt-файл -->
 					<td style="padding-left: 6px;">
-					<a href="dl/I8080.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">I8080.txt</a> (в UTF-8)
+					<a href="dl/I8080.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">I8080.txt</a> (таблица команд в UTF-8)
 					</td>
 
 					</tr>
