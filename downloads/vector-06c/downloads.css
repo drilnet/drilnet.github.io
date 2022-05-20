@@ -69,6 +69,11 @@
 	font-size: 0.9em;
 	}
 
+	/* Маленький шрифт для Ассемблера */
+	.vcsmalltxtasm {
+	font-size: 0.8em;
+	}
+
 	/* Маленький шрифт для подвала */
 
 	.smalltxtfooter {
