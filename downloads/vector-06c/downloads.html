@@ -3188,7 +3188,7 @@
 		<!-- ! -->
 		<span class="vc_spoiler"
 		onclick="javascript:vccommandcpuspoiler();"
-		title="Нажмите">
+		title="Нажмите (таблица команд)">
 
 <script>
 function vccommandcpuspoiler()
@@ -3253,12 +3253,10 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 					<td>&nbsp;</td>
 
 					<td class="vc_rbpaddingb">
-
 					<!-- Вернуть окно в исходное состояние -->
 					<input name="i8080table" id="id_vcrb_8080_1" class="vc_radiobutton" type="radio" value="" checked
 					onchange="VCHeightTableCommand8080_1();">
 					<label for="id_vcrb_8080_1" class="vc_label_radio" title=""></label>
-
 					</td>
 
 					</tr>
@@ -3272,12 +3270,10 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 					<td>&nbsp;</td>
 
 					<td class="vc_rbpaddingb">
-
 					<!-- Растянуть окно по вертикали -->
 					<input name="i8080table" id="id_vcrb_8080_2" class="vc_radiobutton" type="radio" value=""
 					onchange="VCHeightTableCommand8080_2();">
 					<label for="id_vcrb_8080_2" class="vc_label_radio" title=""></label>
-
 					</td>
 
 					</tr>
@@ -3359,6 +3355,103 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 
 		</div> <!-- Конец спойлера Таблица команды CPU 8080 -->
 
+		<!-- Миниатюры -->
+
+		<br>
+		Миниатюры:
+		<br>
+		<br>
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- Миниатюра 1 -->
+			<td>
+			<img class="icon" src="images/miniature_8080_1.png" title="Миниатюра 1">
+			</td>
+
+			<!-- Миниатюра 2 -->
+			<td>
+			<img class="icon" src="images/miniature_8080_2.png" title="Миниатюра 2">
+			</td>
+
+			<!-- Миниатюра 3 -->
+			<td>
+			<img class="icon" src="images/miniature_8080_3.png" title="Миниатюра 3">
+			</td>
+
+			<!-- Миниатюра 4 -->
+			<td>
+			<img class="icon" src="images/miniature_8080_4.png" title="Миниатюра 4">
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<!-- Миниатюра 5 -->
+			<td>
+			<img class="icon" src="images/miniature_8080_5.png" title="Миниатюра 5">
+			</td>
+
+			<!-- Миниатюра 6 -->
+			<td>
+			<img class="icon" src="images/miniature_8080_6.png" title="Миниатюра 6">
+			</td>
+
+			<!-- Миниатюра 7 -->
+			<td>
+			<img class="icon" src="images/miniature_8080_7.png" title="Миниатюра 7">
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Скачать pdf-файл -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/I8080.pdf" title="Таблица команд (откроется в новой вкладке)" target="_blank">pdf-файл для печати</a>
+			<br>
+			<!-- Подстрочный текст -->
+			<span class="vcsmalltxtasm">MOV A,B&nbsp;&nbsp;MOV E,M&nbsp;&nbsp;MVI H,20H&nbsp;&nbsp;LDAX D&nbsp;&nbsp;ADD A&nbsp;...</span>
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		По следам ЮТ-88!
+		<br>
 		<br>
 
 		<!-- Кнопка наверх -->
@@ -3372,6 +3465,8 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 		</tr>
 
 		</table>
+
+	
 
 	</td>
 	</tr>
