@@ -3439,7 +3439,7 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 
 			<td style="padding-left: 6px;">
 			<!-- Ссылка -->
-			<a href="dl/I8080.pdf" title="Таблица команд (откроется в новой вкладке)" target="_blank">pdf-файл для печати</a>
+			<a href="dl/I8080.pdf" title="Откроется в новой вкладке" target="_blank">Таблица команд</a> (pdf-файл для печати)
 			<br>
 			<!-- Подстрочный текст -->
 			<span class="vcsmalltxtasm">MOV A,B&nbsp;&nbsp;MOV E,M&nbsp;&nbsp;MVI H,20H&nbsp;&nbsp;LDAX D&nbsp;&nbsp;ADD A&nbsp;...</span>
@@ -3450,7 +3450,7 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 
 		<br>
 
-		По следам ЮТ-88!
+		По следам ЮТ-88 (исправлены некоторые ошибки)!
 		<br>
 		<br>
 
