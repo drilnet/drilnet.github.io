@@ -268,6 +268,41 @@ function CloseModalWinInfMailingAddres(id)
 // ---------------
 // ----------
 
+// ----------
+// ---------------
+// --------------------
+
+	// ---
+	// | Спойлер с изменяющийся иконкой.
+	// --
+
+	function SpoilerICOSmall(id_1, id_2)
+	{
+
+	if (document.getElementById(id_1).style.display == 'none')
+		{
+		// Сменить иконку на sp2.png.
+		document.getElementById(id_2).innerHTML = "<img class=\"icon\" src=\"icons/sp2.png\""
+		+ " title=\"Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)\">";
+
+		// Открыть спойлер.
+		document.getElementById(id_1).style.display = 'inline';
+		}
+		else
+		{
+		// Сменить иконку на sp1.png.
+		document.getElementById(id_2).innerHTML = "<img class=\"icon\" src=\"icons/sp1.png\""
+		+ " title=\"Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)\">";
+
+		// Закрыть спойлер.
+		document.getElementById(id_1).style.display = 'none';
+		}
+	}
+
+// --------------------
+// ---------------
+// ----------
+
 // ---
 // | Для Game-15.
 // | Убрать clock.gif (заменить заголовок)
