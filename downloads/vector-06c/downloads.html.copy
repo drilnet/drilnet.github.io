@@ -66,6 +66,19 @@
 	<meta name="keywords" content="вектор-06ц язык лс-паскаль, вектор06ц язык лс-паскаль">
 	<meta name="keywords" content="вектор-06 язык лс-паскаль, вектор06 язык лс-паскаль">
 
+	<meta name="keywords" content="ay-3-8910, ay 3 8910, вектор-06ц, вектор 06ц">
+	<meta name="keywords" content="центр тень, covox, covox-d, covox d">
+	<meta name="keywords" content="харьковский вариант, ay-3-8910 харьковский вариант">
+	<meta name="keywords" content="ay 3 8910 харьковский вариант, ay 3 8910 харьковский вариант схема">
+
+	<meta name="keywords" content="таблица команд кр580ик80, таблица команд кр580вм80а">
+	<meta name="keywords" content="таблица команд intel 8080, таблица команд 8080">
+	<meta name="keywords" content="таблица команд кр580ик80 github, таблица команд кр580вм80а github">
+	<meta name="keywords" content="таблица команд intel 8080 github, таблица команд 8080 github">
+	<meta name="keywords" content="кр580ик80, кр580вм80а, intel 8080, 8080">
+	<meta name="keywords" content="кр580ик80 github, кр580вм80а github, intel 8080 github, 8080 github">
+	<meta name="keywords" content="ют-88, ют 88, по следам ют-88, по следам ют 88">
+
 	<link rel="stylesheet" type="text/css" href="downloads.css">
 	<link rel="SHORTCUT ICON" href="../../favicon.ico" type="image/x-icon">
 
@@ -362,6 +375,12 @@
 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
 			<a href="#4" title="Перейти">
+			ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"</a>
+
+			<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="#254" title="Перейти">
 			Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)</a>
 
 			</p>
@@ -392,13 +411,11 @@
 		<br>
 
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td class="table_bg_a" align="center">
 			Системный диск Вектор'а-06Ц с МикроДОС Т-34 (Харьковский вариант), системный диск 1
 			</td>
 		</tr>
-
 		</table>
 
 	</td>
@@ -2915,13 +2932,11 @@
 		<!-- Кнопка наверх -->
 
 		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td>
 			<a href="#255" title="Нажмите">Вернуться наверх</a>
 			</td>
 		</tr>
-
 		</table>
 
 	</td>
@@ -2949,25 +2964,22 @@
 		<!-- Заголовок -->
 
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td class="table_bg_a" align="center">
 			Скриншоты файлового менеджера <b>CO</b> (Шишатский Коммандер)
 			</td>
 		</tr>
-
 		</table>
 
 		<br>
 
 		<!-- Скриншоты -->
 
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<table cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
 		<td>
-			<br>
-			<img src="images/screenshot_CO_wb_2.png">
+			<img class="icon" src="images/screenshot_CO_wb_2.png">
 		</td>
 		</tr>
 
@@ -2975,7 +2987,7 @@
 		<td>
 
 			<br>
-			<img src="images/screenshot_CO_wb_3.png">
+			<img class="icon" src="images/screenshot_CO_wb_3.png">
 
 		</td>
 		</tr>
@@ -2987,13 +2999,11 @@
 		<!-- Кнопка наверх -->
 
 		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td>
 			<a href="#255" title="Нажмите">Вернуться наверх</a>
 			</td>
 		</tr>
-
 		</table>
 
 	</td>
@@ -3021,20 +3031,18 @@
 		<!-- Заголовок -->
 
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td class="table_bg_a" align="center">
 			БИБЛИОТЕКА ПК Вектор-06Ц
 			</td>
 		</tr>
-
 		</table>
 
 		<br>
 
 		<!-- Скриншоты брошюр -->
 
-		<table align="center" cellspacing="1" cellpadding="0" border="0">
+		<table cellspacing="1" cellpadding="0" border="0">
 
 		<tr>
 
@@ -3058,7 +3066,7 @@
 
 		<!-- Скачать -->
 
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<table cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
 		<td>
@@ -3098,13 +3106,11 @@
 		<!-- Кнопка наверх -->
 
 		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td>
 			<a href="#255" title="Нажмите">Вернуться наверх</a>
 			</td>
 		</tr>
-
 		</table>
 
 	</td>
@@ -3122,6 +3128,159 @@
 	</td>
 	</tr>
 
+	<!-- ГЕНЕРАТОР ЗВУКА AY-3-8910 -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td class="table_bg_a" align="center">
+			ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"</a>
+			</td>
+		</tr>
+		</table>
+
+		<br>
+		Незаконченная работа (черновой вариант, как есть)!
+		<br>
+
+		<!-- Миниатюры -->
+
+		<br>
+		Миниатюры:
+		<br>
+		<br>
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Миниатюра 1 -->
+			<td>
+			<img class="icon" src="images/miniature_Kharkov-AY-1_1.png" title="Миниатюра 1">
+			</td>
+
+			<!-- Миниатюра 2 -->
+			<td>
+			<img class="icon" src="images/miniature_Kharkov-AY-1_2.png" title="Миниатюра 2">
+			</td>
+
+			<!-- Миниатюра 3 -->
+			<td>
+			<img class="icon" src="images/miniature_Kharkov-AY-1_3.png" title="Миниатюра 3">
+			</td>
+
+			<!-- Миниатюра 4 -->
+			<td>
+			<img class="icon" src="images/miniature_Kharkov-AY-2_1.png" title="Миниатюра 4">
+			</td>
+
+			<!-- Миниатюра 5 -->
+			<td>
+			<img class="icon" src="images/miniature_Kharkov-AY-2_2.png" title="Миниатюра 5">
+			</td>
+
+			<!-- Миниатюра 6 -->
+			<td>
+			<img class="icon" src="images/miniature_Kharkov-AY-2_3.png" title="Миниатюра 6">
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Скриншот -->
+
+		Скриншот:
+		<br>
+		<br>
+
+		<img src="images/screenshot-ay.png" title="(C) Демидов С.В.">
+
+		<br>
+		<br>
+
+		<!-- Скачать pdf-файлы -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Файл 1 -->
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/Kharkov-AY-1.pdf" title="Откроется в новой вкладке" target="_blank">Kharkov-AY-1.pdf</a>
+			</td>
+
+			<!-- Отступ -->
+
+			<td>&nbsp;&nbsp;&nbsp;</td>
+
+			<!-- Файл 2 -->
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/Kharkov-AY-2.pdf" title="Откроется в новой вкладке" target="_blank">Kharkov-AY-2.pdf</a>
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- Спасибо -->
+
+		<br>
+		Спасибо <a href="https://zx-pk.ru" title="Откроется в новой вкладе" target="_blank">https://zx.pk.ru</a> и <a href="http://www.sensi.org/scalar/" title="Откроется в новой вкладке" target="_blank">http://www.sensi.org/scalar/</a> за сохранённую работу!
+		<br>
+		<span class="vcsmalltxt">Ссылка на эту работу: <a href="http://www.sensi.org/scalar/ware/858/" title="Откроется в новой вкладке" target="_blank">http://www.sensi.org/scalar/ware/858/</a></span>
+		<br>
+		<br>
+
+		<!-- (C) -->
+
+		<span class="vcsmalltxt">Украина. (C) Демидов С.В.</span>
+		<br>
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<a name="254"></a>
+
+	</td>
+	</tr>
+
 	<!-- Таблица команд КР580ИК80 -->
 
 	<tr>
@@ -3132,13 +3291,11 @@
 		<!-- Заголовок -->
 
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td class="table_bg_a" align="center">
 			Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)
 			</td>
 		</tr>
-
 		</table>
 
 		<br>
@@ -3365,7 +3522,7 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 		<table cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
-		<td align="center">
+		<td>
 
 			<table cellspacing="0" cellpadding="0" border="0">
 			<tr>
@@ -3439,7 +3596,7 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 
 			<td style="padding-left: 6px;">
 			<!-- Ссылка -->
-			<a href="dl/I8080.pdf" title="Откроется в новой вкладке" target="_blank">Таблица команд</a> (pdf-файл для печати)
+			<a href="dl/I8080.pdf" title="Откроется в новой вкладке" target="_blank">Таблица команд</a> (pdf-файл, для печати)
 			<br>
 			<!-- Подстрочный текст -->
 			<span class="vcsmalltxtasm">MOV A,B&nbsp;&nbsp;MOV E,M&nbsp;&nbsp;MVI H,20H&nbsp;&nbsp;LDAX D&nbsp;&nbsp;ADD A&nbsp;...</span>
@@ -3457,13 +3614,11 @@ if (document.getElementById('id_cpucomsp').style.display == 'none')
 		<!-- Кнопка наверх -->
 
 		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
 		<tr>
 			<td>
 			<a href="#255" title="Нажмите">Вернуться наверх</a>
 			</td>
 		</tr>
-
 		</table>
 
 	
