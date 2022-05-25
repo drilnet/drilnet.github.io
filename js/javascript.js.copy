@@ -282,7 +282,7 @@ function CloseModalWinInfMailingAddres(id)
 	if (document.getElementById(id_1).style.display == 'none')
 		{
 		// Сменить иконку на sp2.png.
-		document.getElementById(id_2).innerHTML = "<img class=\"icon\" src=\"icons/sp2.png\""
+		document.getElementById(id_2).innerHTML = "<img width=\"14px\" height=\"14px\" class=\"icon\" src=\"icons/sp2.png\""
 		+ " title=\"Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)\">";
 
 		// Открыть спойлер.
@@ -291,7 +291,7 @@ function CloseModalWinInfMailingAddres(id)
 		else
 		{
 		// Сменить иконку на sp1.png.
-		document.getElementById(id_2).innerHTML = "<img class=\"icon\" src=\"icons/sp1.png\""
+		document.getElementById(id_2).innerHTML = "<img width=\"14px\" height=\"14px\" class=\"icon\" src=\"icons/sp1.png\""
 		+ " title=\"Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)\">";
 
 		// Закрыть спойлер.
