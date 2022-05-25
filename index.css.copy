@@ -68,6 +68,21 @@
 	background: #ffffff;
 	}
 
+	/* Спойлер, один для всех */
+
+	.spoiler {
+	color: #006699;
+	text-decoration: none;
+	cursor: pointer;
+	}
+
+	/* При наведении на спойлер */
+
+	.spoiler:hover {
+	color: #006699;
+	text-decoration: underline;
+	}
+
 		/* Маленький шрифт */
 
 		.smalltxt {
@@ -182,7 +197,7 @@
 	width: 512px;
 	}
 
-	/* Шрифт для перечня репозиторий */
+	/* Шрифт для перечня, репозитории */
 
 	.textrepo {
 	font-size: 105%;
@@ -195,7 +210,7 @@
 	padding-bottom: 2px;
 	}
 
-	/* Ширина для строки названия репозитория */
+	/* Ширина для строки, название репозитория */
 
 	.widthrepo {
 	width: 720px;
@@ -228,6 +243,12 @@
 	font-size: 11px;
 	}
 
+	/* При наведении на строки: Библиотека ПК1, Библиотека ПК2, Библиотека ПК3 */
+
+	.bibliotekapk:hover {
+	font-weight: bold;
+	}
+
 		/* Фон и бордюр для заголовка, игра Game-15 */
 		/* Без clock.gif */
 
@@ -238,7 +259,6 @@
 		padding: 4px 0px 4px 0px;
 		width: 720px;
 		}
-
 
 	/* Иконки бесплатное ПО */
 
