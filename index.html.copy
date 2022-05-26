@@ -2020,8 +2020,9 @@
 		<table cellspacing="0" cellpadding="0" border="0">
 		<tr>
 
-			<td id="id_spoilerico">
-			<img width="14px" height="14px" class="icon" src="icons/sp1.png" title="Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)">
+			<td>
+			<!-- Иконка для спойлера -->
+			<img id="id_spoilerico" width="14px" height="14px" class="icon" src="icons/sp1.png" title="Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)">
 			</td>
 
 			<td style="padding-left: 6px;">
