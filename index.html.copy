@@ -5031,11 +5031,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			Анимацию хода - сделать с задержкой <b>20</b> мс.
 			<br>
 			<br>
-<!--
-			<span style="color: #c00000;">Из недостатков - хромает немного анимация! :)</span>
-			<br>
-			<br>
--->
+
 			<!-- Сссылки на Вики -->
 
 			<a href="https://ru.wikipedia.org/wiki/Игра_в_15" title="Откроется в новой вкладке" target="_blank">Пятнашки в Русской Вики</a>
