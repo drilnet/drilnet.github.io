@@ -186,5 +186,5 @@
 	/* preload */
 
 	.preloadg15 {
-	display: block;
+	display: none; /* block */
 	}
