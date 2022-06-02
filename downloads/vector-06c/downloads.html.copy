@@ -93,10 +93,16 @@
 	<!-- Установить Radio Buttons по умолчанию  (таблица команд микропроцессора i8080) -->
 	<!-- VCResetRadioButtons() -->
 
+	<!-- Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910 -->
+	<!-- Вситавить текст в страницу -->
+	<!-- VCAY() -->
+
 <body onload="
 
 	VCWidthTableCommand8080();
 	VCResetRadioButtons();
+
+	VCAY();
 
 ">
 
@@ -376,6 +382,12 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
 			<a href="#4" title="Перейти">
 			ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"</a>
+
+			<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="#5" title="Перейти">
+			Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910</a>
 
 			<br>
 
@@ -3238,6 +3250,22 @@
 			<a href="dl/Kharkov-AY-2.pdf" title="Откроется в новой вкладке" target="_blank">Kharkov-AY-2.pdf</a>
 			</td>
 
+			<!-- Отступ -->
+
+			<td>&nbsp;&nbsp;&nbsp;</td>
+
+			<!-- Файл 3 -->
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/Programmable_Sound_Generator_AY-3-8910_AY-3-8912_AY-3-8913.pdf" title="Откроется в новой вкладке" target="_blank">Datasheet AY-3-8910, AY-3-8912, AY-3-8913</a>
+			</td>
+
 		</tr>
 		</table>
 
@@ -3267,6 +3295,228 @@
 		</table>
 
 	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<a name="5"></a>
+
+	</td>
+
+	<!-- Ещё AY -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td class="table_bg_a" align="center">
+			Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910</a>
+			</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Здесь Radio Buttons -->
+		<!-- Растянуть по вертикали -->
+
+		<table class="vc_rb_bg" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+		<td>
+		Вернуть окно в исходное состояние:
+		</td>
+
+		<td>&nbsp;</td>
+
+		<td class="vc_rbpaddingb">
+		<!-- Вернуть окно в исходное состояние -->
+		<input name="aytxt" id="id_ay_txt_1" class="vc_radiobutton" type="radio" value="" checked
+		onchange="VCAYHeight_1();">
+		<label for="id_ay_txt_1" class="vc_label_radio" title=""></label>
+		</td>
+
+		</tr>
+
+		<tr>
+
+		<td>
+		Растянуть окно по вертикали:
+		</td>
+
+		<td>&nbsp;</td>
+
+		<td class="vc_rbpaddingb">
+		<!-- Растянуть окно по вертикали -->
+		<input name="aytxt" id="id_ay_txt_2" class="vc_radiobutton" type="radio" value=""
+		onchange="VCAYHeight_2();">
+		<label for="id_ay_txt_2" class="vc_label_radio" title=""></label>
+		</td>
+
+		</tr>
+
+		</table> <!-- Конец Radio Buttons -->
+
+		<br>
+
+		<!-- Дополнительное окно с прокруткой -->
+
+		<div id="id_vc_ay_window" align="center" class="vc_ay_window">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center" style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+
+				<!-- ссылка на автора -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="left">
+
+				Автор: Неизвестен!
+				<br>
+				Приблизительно 20 век, 90-е года!
+				<br>
+				Предоставляется как есть!
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Здесь текстовый файл для скачивания -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td>
+				<!-- Иконка -->
+				<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+				</td>
+
+				<!-- txt-файл -->
+				<td style="padding-left: 6px;">
+				<a href="dl/AY38912.TXT" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">AY38912.TXT</a> (в UTF-8)
+				</td>
+
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Здесь текст -->
+
+				<table class="vc_ay_window_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="id_vc_ay_txt">
+				<!-- Сюда вставка -->
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+			</table>
+
+		</div> <!-- Конец дополнительному окну с прокруткой -->
+
+		<br>
+
+		<!-- Миниатюры -->
+
+		Миниатюры:
+		<br>
+		<br>
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Миниатюра 1 -->
+			<td>
+			<img class="icon" src="images/miniature_AY38912_1.png" title="Миниатюра 1">
+			</td>
+
+			<!-- Миниатюра 2 -->
+			<td>
+			<img class="icon" src="images/miniature_AY38912_2.png" title="Миниатюра 2">
+			</td>
+
+			<!-- Миниатюра 3 -->
+			<td>
+			<img class="icon" src="images/miniature_AY38912_3.png" title="Миниатюра 3">
+			</td>
+
+			<!-- Миниатюра 4 -->
+			<td>
+			<img class="icon" src="images/miniature_AY38912_4.png" title="Миниатюра 4">
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Скачать pdf-файлы -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/AY38912.pdf" title="Откроется в новой вкладке" target="_blank">AY38912.pdf</a> (для печати)
+			</td>
+
+			<!-- Отступ -->
+
+			<td>&nbsp;&nbsp;&nbsp;</td>
+
+			<!-- Файл 2 -->
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/Programmable_Sound_Generator_AY-3-8910_AY-3-8912_AY-3-8913.pdf" title="Откроется в новой вкладке" target="_blank">Datasheet AY-3-8910, AY-3-8912, AY-3-8913</a>
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
 	</tr>
 
 	<!-- Горизонтальная линия -->
