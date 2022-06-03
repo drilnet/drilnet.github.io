@@ -3438,23 +3438,7 @@ if (document.getElementById('id_aysp').style.display == 'none')
 
 				<table cellspacing="0" cellpadding="0" border="0">
 				<tr>
-				<td align="center" style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
-
-					<!-- ссылка на автора -->
-
-					<table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-					<td align="left">
-
-					Автор неизвестен!
-					<br>
-					Приблизительно 20 век, 90-е года! Как есть!
-
-					</td>
-					</tr>
-					</table>
-
-					<br>
+				<td align="center" style="padding-left: 20px; padding-right: 20px;">
 
 					<!-- Здесь текстовый файл для скачивания -->
 
@@ -3489,6 +3473,24 @@ if (document.getElementById('id_aysp').style.display == 'none')
 				</td>
 				</tr>
 				</table>
+
+				<br>
+
+				<!-- Cсылка на автора -->
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="left">
+
+				Автор неизвестен!
+				<br>
+				Приблизительно 20 век, 90-е года! Как есть!
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
 
 			</div> <!-- Конец дополнительному окну с прокруткой -->
 
