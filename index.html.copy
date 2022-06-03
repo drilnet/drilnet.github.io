@@ -1194,20 +1194,54 @@
 		</td>
 		</tr>
 
-		<tr>
-		<td class="tdrepo">
-
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910 (БИС AY-3-8912 и AY-3-8910)
-
-		</td>
-		</tr>
+		<!-- Здесь остальной перечень файлового архива Вектор'а -->
+		<!-- То, что под спойлером -->
 
 		<tr>
 		<td class="tdrepo">
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)
+			<table style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<!-- Отступ -->
+				<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td>
+				<!-- Иконка для спойлера -->
+				<img id="id_vc_spoilerico" width="14px" height="14px" class="icon" src="icons/sp1.png" title="Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)">
+				</td>
+
+				<td style="padding-left: 6px;">
+				<!-- Спойлер -->
+				<span class="spoiler smalltxt" onclick="SpoilerICOSmall('vc_filearchive', 'id_vc_spoilerico');"
+				title="Нажмите (продолжение перечня)">Ещё</span>
+				</td>
+
+			</tr>
+			</table>
+
+			<!-- То, что под спойлером -->
+			<div id="vc_filearchive" style="display: none;">
+
+				<!-- Продолжение перечня -->
+
+				<table style="margin-top: 6px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910 (БИС AY-3-8912 и AY-3-8910)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)
+
+				</td>
+				</tr>
+				</table>
+
+			</div> <!-- Конец спойлера (конец остального перечня) -->
 
 		</td>
 		</tr>
@@ -1217,13 +1251,11 @@
 		<tr>
 		<td style="padding: 4px 0px 1px 0px;">
 
-			<br>
-
-			<table align="left" cellspacing="0" cellpadding="0" border="0">
+			<table style="margin-top: 4px;" align="left" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 
 			<td>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 
 			<td>
@@ -1231,7 +1263,10 @@
 			</td>
 
 			<td style="padding-left: 8px;">
-			<a href="downloads/vector-06c/downloads.html" title="Системный диск Вектор'а-06Ц. Скриншоты CO. Библиотека ПК и др.">Перейти в архив Вектор'а-06Ц</a>
+			<a href="downloads/vector-06c/downloads.html" title="Откроется в новой вкладке (Системный диск Вектор'а-06Ц. Скриншоты CO. Библиотека ПК и др.)" target="_blank">Перейти в архив Вектор'а-06Ц</a>
+			<br>
+			<!-- Подстрочный текст -->
+			<span class="smalltxt">Загляните сюда пожалуйста!</span>
 			</td>
 
 			</tr>
