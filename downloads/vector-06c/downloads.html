@@ -90,7 +90,7 @@
 	<!-- Пересчитать горизонталь окна (таблица команд микропроцессора i8080 -->
 	<!-- VCWidthTableCommandl8080(); -->
 
-	<!-- Установить Radio Buttons по умолчанию  (таблица команд микропроцессора i8080) -->
+	<!-- Установить Radio Buttons по умолчанию (AY, ВГ93, 8080) -->
 	<!-- VCResetRadioButtons() -->
 
 <body onload="
@@ -282,7 +282,8 @@
 			<tr>
 
 			<td style="padding-right: 8px;">
-			<div class="icon"><img src="icons/file_1.png"></div>
+			<!-- Иконка -->
+			<img class="icon" src="icons/file_1.png">
 			</td>
 
 			<td>
@@ -382,6 +383,12 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
 			<a href="#5" title="Перейти">
 			Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910</a>
+
+			<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+			<a href="#6" title="Перейти">
+			БИС КОНТРОЛЛЕРА КР1818ВГ93 ДЛЯ НАКОПИТЕЛЯ НА ГИБКОМ ДИСКЕ</a>
 
 			<br>
 
@@ -3355,7 +3362,7 @@ function vc_ay_spoiler()
 if (document.getElementById('id_aysp').style.display == 'none')
 	{
 	// Вставить текст в страницу (БИС AY-3-8912 и AY-3-8910).
-	VCAY();
+	VCAYTXT();
 	// Открыть спойлер.
 	document.getElementById('id_aysp').style.display = 'inline';
 	}
@@ -3478,18 +3485,8 @@ if (document.getElementById('id_aysp').style.display == 'none')
 
 				<!-- Cсылка на автора -->
 
-				<table cellspacing="0" cellpadding="0" border="0">
-				<tr>
-				<td align="left">
-
 				Автор неизвестен!
 				<br>
-				Приблизительно 20 век, 90-е года! Как есть!
-
-				</td>
-				</tr>
-				</table>
-
 				<br>
 
 			</div> <!-- Конец дополнительному окну с прокруткой -->
@@ -3589,6 +3586,252 @@ if (document.getElementById('id_aysp').style.display == 'none')
 	</td>
 	</tr>
 
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<a name="6"></a>
+
+	</td>
+	</tr>
+
+	<!-- БИС КОНТРОЛЛЕРА КР1818ВГ93 ДЛЯ НАКОПИТЕЛЯ НА ГИБКОМ ДИСКЕ -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td class="table_bg_a" align="center">
+			БИС КОНТРОЛЛЕРА КР1818ВГ93 ДЛЯ НАКОПИТЕЛЯ НА ГИБКОМ ДИСКЕ
+			</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Гор. линия 2 -->
+		<hr class="vc_addhr vc_size_tc_2">
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+		<!-- Иконка Chip -->
+		<img class="icon" src="icons/chip.png" title="Иконка из набора Kids. (C) Everaldo Coelho. License: GPL">
+		</td>
+
+		<td align="left" style="padding-left: 6px;">
+
+		<!-- ! -->
+		<span class="vc_spoiler"
+		onclick="javascript:VG93spoiler();"
+		title="Нажмите (таблица команд)">
+
+<script>
+function VG93spoiler()
+{
+if (document.getElementById('id_vg93sp').style.display == 'none')
+	{
+	// Вставить текст в страницу (БИС КОНТРОЛЛЕРА КР1818ВГ93 ДЛЯ НАКОПИТЕЛЯ НА ГИБКОМ ДИСКЕ).
+	VG93TXT();
+	// Открыть спойлер.
+	document.getElementById('id_vg93sp').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('id_vg93sp').style.display = 'none';
+	// Удалить текст из страницы (БИС КОНТРОЛЛЕРА КР1818ВГ93 ДЛЯ НАКОПИТЕЛЯ НА ГИБКОМ ДИСКЕ).
+	document.getElementById('id_vc_vg93text').innerHTML = '';
+	}
+}
+</script>
+
+		Развернуть/Свернуть
+		</span>
+
+		<br>
+		<!-- Подстрочный текст -->
+		<span class="vcsmalltxt">Статья из журнала: "Микропроцессорные средства и системы",
+		<br>
+		номер 3 за 1986 год.
+		</span>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<!-- Гор. линия 2 -->
+		<hr class="vc_addhr vc_size_tc_2">
+
+		<!-- То, что под спойлером -->
+		<div id="id_vg93sp" style="display: none;">
+
+			<br>
+
+			<!-- Дополнительное окно с прокруткой -->
+
+			<div id="id_vc_vg93_window" align="center" class="vc_vg93_window">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center" style="padding-left: 20px; padding-right: 20px;">
+
+					<!-- Здесь Radio Buttons -->
+					<!-- Растянуть по вертикали -->
+
+					<table class="vc_rb_bg" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+					<td>
+					Вернуть окно в исходное состояние:
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td class="vc_rbpaddingb">
+					<!-- Вернуть окно в исходное состояние -->
+					<input name="vg93txt" id="id_vcrb_vg93_1" class="vc_radiobutton" type="radio" value="" checked
+					onchange="VCHeightVG93_1();">
+					<label for="id_vcrb_vg93_1" class="vc_label_radio" title=""></label>
+					</td>
+
+					</tr>
+
+					<tr>
+
+					<td>
+					Растянуть окно по вертикали:
+					</td>
+
+					<td>&nbsp;</td>
+
+					<td class="vc_rbpaddingb">
+					<!-- Растянуть окно по вертикали -->
+					<input name="vg93txt" id="id_vcrb_vg93_2" class="vc_radiobutton" type="radio" value=""
+					onchange="VCHeightVG93_2();">
+					<label for="id_vcrb_vg93_2" class="vc_label_radio" title=""></label>
+					</td>
+
+					</tr>
+
+					</table> <!-- Конец Radio Buttons -->
+
+					<br>
+
+					<!-- Здесь текстовый файл для скачивания -->
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<!-- Иконка -->
+					<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+					</td>
+
+					<!-- txt-файл -->
+					<td style="padding-left: 6px;">
+					<a href="dl/KR1818VG93.TXT" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">КР1818ВГ93.TXT</a> (таблица команд, в UTF-8)
+					</td>
+
+					</tr>
+					</table>
+
+					<br>
+
+					<!-- Здесь текст ВГ93 -->
+
+					<table class="vc_vg93_window_bg" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td id="id_vc_vg93text" align="left">
+					<!-- Сюда вставка -->
+					</td>
+					</tr>
+					</table>
+
+					<br>
+
+					<!-- Cсылка на автора вёрстки -->
+
+					Автор вёрстки неизвестен!
+					<br>
+					<br>
+
+				</td>
+				</tr>
+				</table>
+
+			</div> <!-- Конец дополнительному окну с прокруткой -->
+
+		</div> <!-- Конец спойлера КР1818ВГ93 -->
+
+		<br>
+
+		<!-- Скачать pdf-файлы -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<!-- Описание -->
+			<td style="padding-left: 6px;">
+			Микропроцессорные средства и системы, n3 за 1986 год, стр. 3, 4, 5, 6, 7, 8:
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка 1 -->
+			<a href="dl/mpsis-1986-03_1.pdf" title="Откроется в новой вкладке" target="_blank">pdf-файл 1 (качество 1)</a>
+			</td>
+
+			<!-- Отступ между ссылками -->
+			<td>,&nbsp;</td>
+
+			<td>
+			<!-- Ссылка 2 -->
+			<a href="dl/mpsis-1986-03_2.pdf" title="Откроется в новой вкладке" target="_blank">pdf-файл 2 (качество 2)</a>
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Ссылка на Wiki -->
+
+		<a href="https://ru.wikipedia.org/wiki/КР1818ВГ93#:~:text=КР1818ВГ93 — интегральная микросхема контроллера накопителя,микросхемы FD1793 компании Western Digital." title="Откроется в новой вкладке" target="_blank">КР1818ВГ93 в Русской Вики</a>
+
+		<br>
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
 	</tr>
 
 	<!-- Горизонтальная линия -->
