@@ -249,6 +249,12 @@
 	font-weight: bold;
 	}
 
+	/* При наведении на другие строки */
+
+	.list:hover {
+	font-weight: bold;
+	}
+
 		/* Фон и бордюр для заголовка, игра Game-15 */
 		/* Без clock.gif */
 
