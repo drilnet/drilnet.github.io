@@ -3745,7 +3745,7 @@ if (document.getElementById('id_vg93sp').style.display == 'none')
 
 					<!-- txt-файл -->
 					<td style="padding-left: 6px;">
-					<a href="dl/KR1818VG93.TXT" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">КР1818ВГ93.TXT</a> (таблица команд, в UTF-8)
+					<a href="dl/KR1818VG93.TXT" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">КР1818ВГ93.TXT</a> (в UTF-8)
 					</td>
 
 					</tr>
