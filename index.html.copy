@@ -1249,8 +1249,20 @@
 					</tr>
 					</table>
 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-				Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+					<span class="list" title="По следам ЮТ-88 (исправлены некоторые ошибки)">Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)</span>
+					</td>
+
+					<td style="padding-left: 3px;">
+					<img class="icon" src="images/warning (info).png" title="Строка имеет всплывающую подсказку">
+					</td>
+
+					</tr>
+					</table>
 
 				</td>
 				</tr>
@@ -2087,12 +2099,12 @@
 
 			<td>
 			<!-- Иконка для спойлера -->
-			<img id="id_spoilerico" width="14px" height="14px" class="icon" src="icons/sp1.png" title="Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)">
+			<img id="id_calc_spoilerico" width="14px" height="14px" class="icon" src="icons/sp1.png" title="Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)">
 			</td>
 
 			<td style="padding-left: 6px;">
 			<!-- Спойлер -->
-			<span class="spoiler smalltxt" onclick="SpoilerICOSmall('dopkcalc', 'id_spoilerico');"
+			<span class="spoiler smalltxt" onclick="SpoilerICOSmall('id_dopkcalc', 'id_calc_spoilerico');"
 			title="Дополнение">Развернуть/Свернуть</span>
 			</td>
 
@@ -2100,7 +2112,7 @@
 		</table>
 
 		<!-- То, что под спойлером -->
-		<div id="dopkcalc" style="display: none;">
+		<div id="id_dopkcalc" style="display: none;">
 
 			<br>
 			<hr class="addhr">
@@ -4496,6 +4508,183 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 		</tr>
 		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- LPT-порт и AY-3-8910 (YM2149) -->
+
+	<tr>
+	<td align="center">
+
+		<table class="lptay_title" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+		LPT-порт и AY-3-8910 (YM2149) - LPT Port and AY-3-8910 (YM2149)
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td style="padding-left: 6px;">
+
+			<!-- Спойлер -->
+			<span class="spoiler"
+			onclick="document.getElementById('id_lptay_sp').style.display = (document.getElementById('id_lptay_sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">Развернуть/Свернуть</span>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером -->
+		<div id="id_lptay_sp" style="display: none;">
+
+			<!-- Миниатюры -->
+
+			<br>
+			Миниатюры:
+			<br>
+			<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<!-- Миниатюра 1 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_1.png" title="Миниатюра 1">
+				</td>
+
+				<!-- Миниатюра 2 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_2.png" title="Миниатюра 2">
+				</td>
+
+				<!-- Миниатюра 3 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_3.png" title="Миниатюра 3">
+				</td>
+
+				<!-- Миниатюра 4 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_4.png" title="Миниатюра 4">
+				</td>
+
+				<!-- Миниатюра 5 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_5.png" title="Миниатюра 5">
+				</td>
+
+				<!-- Миниатюра 6 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_6.png" title="Миниатюра 6">
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<!-- Миниатюра 7 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_7.png" title="Миниатюра 7">
+				</td>
+
+				<!-- Миниатюра 8 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_8.png" title="Миниатюра 8">
+				</td>
+
+				<!-- Миниатюра 9 -->
+				<td>
+				<img class="icon" src="images-lptay/miniature_AY-3-8910_5_9.png" title="Миниатюра 9">
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			</table> <!-- Конец миниатюрам -->
+
+			<br>
+
+			<!-- Скачать pdf-файл -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<!-- Иконка-pdf -->
+				<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+				</td>
+
+				<td style="padding-left: 6px;">
+				<!-- Ссылка -->
+				<a href="downloads/lptay/AY-3-8910_5.pdf" title="Откроется в новой вкладке" target="_blank">LPT-порт и AY-3-8910</a> (pdf-файл, для печати)
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Примечание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="left">
+
+			Незаконченная работа! Работа "зависла" из-за отсутствия осциллографа!
+			<br>
+			Я выкладываю это, как есть! Может кому-то будет интересно в этом покопаться!
+
+			</td>
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Ссылки -->
+
+			Ссылка на статью: <a href="https://habr.com/ru/post/218763" title="Откроется в новой вкладке" target="_blank">https://habr.com/ru/post/218763</a>
+			<br>
+			Скриншот статьи: <a href="images-lptay/screenshot_(habr.com).png" title="Откроется в новой вкладке" target="_blank">images</a>
+
+
+		</div> <!-- Конец спойлера LPT-порт и AY-3-8910 (YM2149) -->
 
 	</td>
 	</tr>

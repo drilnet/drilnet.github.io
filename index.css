@@ -322,21 +322,35 @@
 		color: #f3703c;
 		}
 
-	/* Выборка pdf-файлов из моих репозиториев */
-	/* Заголовок спойлера в виде ссылки */
+	/* --- */
+	/* LPT-порт и AY-3-8910 (YM2149) */
+	/* --- */
 
-	.spoilerpdf {
-	color: #006699;
-	text-decoration: none;
-	cursor: pointer;
+	/* Фон и бордюр для заголовка */
+
+	.lptay_title {
+	background: #f0f0f0;
+	border: 1px solid #f0f0f0;
+	border-radius: 0px;
+	padding: 4px 0px 4px 0px;
+	width: 800px;
 	}
 
-	/* При наведении на спойлер pdf-файлы */
+		/* Выборка pdf-файлов из моих репозиториев */
+		/* Заголовок спойлера в виде ссылки */
 
-	.spoilerpdf:hover {
-	color: #006699;
-	text-decoration: underline;
-	}
+		.spoilerpdf {
+		color: #006699;
+		text-decoration: none;
+		cursor: pointer;
+		}
+
+		/* При наведении на спойлер pdf-файлы */
+
+		.spoilerpdf:hover {
+		color: #006699;
+		text-decoration: underline;
+		}
 
 	/* Некоторые ответы на некоторые вопросы */
 	/* Заголовок спойлера в виде ссылки, для литературы */
