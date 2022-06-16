@@ -208,6 +208,26 @@
 	}
 
 	/* --- */
+	/* Описание GRAF16.REL */
+	/* --- */
+
+	/* Дополнительное окно на странице */
+
+	.vc_graf16_window {
+	overflow: scroll; /* Полоса прокрутки */
+	width: 640px;
+	height: 320px;
+	}
+
+		/* Фон и бордюр для размещаемого текста */
+
+		.vc_graf16_window_bg {
+		background: #f3f4f4;
+		border: 1px solid #c3c6c6;
+		padding: 6px;
+		}
+
+	/* --- */
 	/* Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910 */
 	/* --- */
 
@@ -319,20 +339,20 @@
 		background: url("images-rb/radio-true.png") no-repeat scroll 0 0;
 		}
 
-		/* Цвет тексту Radio Button в CALCDIV */
+		/* Цвет тексту Radio Button */
 
 		.vc_label_radio {
 		color: #006699;
 		}
 
-		/* При наведении на Radio Button в CALCDIV */
+		/* При наведении на Radio Button */
 
 		.vc_label_radio:hover{
 		color: #006699;
 		text-decoration: underline;
 		}
 
-		/* Внутренний нижний отступ для Radio Button в CALCDIV */
+		/* Внутренний нижний отступ для Radio Button */
 
 		.vc_rbpaddingb {
 		padding-bottom: 3px;

@@ -66,10 +66,25 @@
 	<meta name="keywords" content="вектор-06ц язык лс-паскаль, вектор06ц язык лс-паскаль">
 	<meta name="keywords" content="вектор-06 язык лс-паскаль, вектор06 язык лс-паскаль">
 
+	<meta name="keywords" content="graf16, graf16.rel, библиотека graf16, библиотека graf16.rel">
+	<meta name="keywords" content="вектор-06й graf16, вектор-06ц graf16.rel, вектор-06ц">
+	<meta name="keywords" content="библиотека graf16, вектор-06ц библиотека graf16.rel">
+	<meta name="keywords" content="описание graf16, описание graf16.rel">
+	<meta name="keywords" content="описание graf16 github, описание graf16.rel github">
+
 	<meta name="keywords" content="ay-3-8910, ay 3 8910, вектор-06ц, вектор 06ц">
 	<meta name="keywords" content="центр тень, covox, covox-d, covox d">
 	<meta name="keywords" content="харьковский вариант, ay-3-8910 харьковский вариант">
 	<meta name="keywords" content="ay 3 8910 харьковский вариант, ay 3 8910 харьковский вариант схема">
+	<meta name="keywords" content="микросхема ay-3-8910, мс ay-3-8910, микросхема ym2149, мс ym2149, ym2149">
+	<meta name="keywords" content="ay-3-8910 github, ym2149 github">
+
+	<meta name="keywords" content="трехканальный музыкальный таймер, трехканальный музыкальный таймер AY-3-8912">
+	<meta name="keywords" content="таймер ay-3-8910, таймер ay 3 8910, таймер ay-3-8912, таймер ay 3 8912">
+	<meta name="keywords" content="микросхема ay-3-8912, микросхема ay 3 8912, мс AY-3-8912, мс ay 3 8912">
+
+	<meta name="keywords" content="контроллер кр1818вг93, кр1818вг93, кр1818вг93 github">
+	<meta name="keywords" content="микросхема кр1818вг93, мс кр1818вг93, микросхема кр1818вг93 github">
 
 	<meta name="keywords" content="таблица команд кр580ик80, таблица команд кр580вм80а">
 	<meta name="keywords" content="таблица команд intel 8080, таблица команд 8080">
@@ -344,57 +359,89 @@
 
 			<p>
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#1" title="Перейти">
-			Системный диск Вектор'а-06Ц с МикроДОС Т-34 (Харьковский вариант), системный диск 1</a>
+			<table cellspacing="0" cellpadding="0" border="0">
 
-			<br>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#1" title="Перейти">
+				Системный диск Вектор'а-06Ц с МикроДОС Т-34 (Харьковский вариант), системный диск 1</a>
+			</td>
+			</tr>
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#2" title="Перейти">
-			Скриншоты файлового менеджера <b>CO</b> (Шишатский Коммандер)</a>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#2" title="Перейти">
+				Скриншоты файлового менеджера <b>CO</b> (Шишатский Коммандер)</a>
+			</td>
+			</tr>
 
-			<br>
+			<tr>
+			<td style="padding-top: 4px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#3" title="Перейти">
+				БИБЛИОТЕКА ПК Вектор-06Ц. Выпуск 1. ВЕКТОР-06Ц ИЗНУТРИ. Руководство для начинающих специалистов</a>
+			</td>
+			</tr>
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#3" title="Перейти">
-			БИБЛИОТЕКА ПК Вектор-06Ц. Выпуск 1. ВЕКТОР-06Ц ИЗНУТРИ. Руководство для начинающих специалистов</a>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#3" title="Перейти">
+				БИБЛИОТЕКА ПК Вектор-06Ц. Выпуск 2. Системные программы МикроДОС ПК Вектор-06Ц</a>
+			</td>
+			</tr>
 
-			<br>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#3" title="Перейти">
+				БИБЛИОТЕКА ПК Вектор-06Ц. Выпуск 3. Язык программирования ЛС-ПАСКАЛЬ</a>
+			</td>
+			</tr>
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#3" title="Перейти">
-			БИБЛИОТЕКА ПК Вектор-06Ц. Выпуск 2. Системные программы МикроДОС ПК Вектор-06Ц</a>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#graf16" title="Перейти">
+				Описание библиотеки GRAF16.REL, плюс сама библиотека</a>
+			</td>
+			</tr>
 
-			<br>
+			<tr>
+			<td style="padding-top: 4px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#AY1" title="Перейти">
+				ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"</a>
+			</td>
+			</tr>
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#3" title="Перейти">
-			БИБЛИОТЕКА ПК Вектор-06Ц. Выпуск 3. Язык программирования ЛС-ПАСКАЛЬ</a>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#AY2" title="Перейти">
+				Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910</a>
+			</td>
+			</tr>
 
-			<br>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#KR1818VG93" title="Перейти">
+				БИС КОНТРОЛЛЕРА КР1818ВГ93 ДЛЯ НАКОПИТЕЛЯ НА ГИБКОМ ДИСКЕ</a>
+			<td>
+			</tr>
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#4" title="Перейти">
-			ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"</a>
+			<tr>
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#8080" title="Перейти">
+				Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)</a>
+			</td>
+			</tr>
 
-			<br>
-
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#5" title="Перейти">
-			Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910</a>
-
-			<br>
-
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#6" title="Перейти">
-			БИС КОНТРОЛЛЕРА КР1818ВГ93 ДЛЯ НАКОПИТЕЛЯ НА ГИБКОМ ДИСКЕ</a>
-
-			<br>
-
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
-			<a href="#254" title="Перейти">
-			Таблица команд микропроцессора КР580ИК80 (КР580ВМ80А, Intel 8080)</a>
+			</table>
 
 			</p>
 
@@ -3060,15 +3107,18 @@
 		<tr>
 
 		<td>
-		<img src="images/x1_a.png">
+		<!-- ВЕКТОР-06Ц ИЗНУТРИ -->
+		<img src="images/x1_a.png" title="Выпуск 1. (C) Терентьев С.В.">
 		</td>
 
 		<td>
-		<img src="images/x1_b.png">
+		<!-- Системные программы МикроДОС ПК Вектор-06Ц -->
+		<img src="images/x1_b.png" title="Выпуск 2. (C) Терентьев С.В.">
 		</td>
 
 		<td>
-		<img src="images/x1_c.png">
+		<!-- ЛС-ПАСКАЛЬ -->
+		<img src="images/x1_c.png" title="Выпуск 3. (C) Терентьев С.В.">
 		</td>
 
 		</tr>
@@ -3086,14 +3136,10 @@
 
 			Выпуск 1. ВЕКТОР-06Ц ИЗНУТРИ. Руководство для начинающих специалистов.
 			<a href="biblioteka-pk-vector-06c/Vypusk_1.7z">Скачать (<b>50</b> файлов формата <b>PNG</b>, <b>200dpi</b>)</a>.
-
-		<br>
-
+			<br>
 			Выпуск 2. Системные программы МикроДОС ПК Вектор-06Ц.
 			<a href="biblioteka-pk-vector-06c/Vypusk_2.7z">Скачать (<b>54</b> файла формата <b>PNG</b>, <b>200dpi</b>)</a>.
-
-		<br>
-
+			<br>
 			Выпуск 3. Язык программирования ЛС-ПАСКАЛЬ.
 			<a href="biblioteka-pk-vector-06c/Vypusk_3.7z">Скачать (<b>62</b> файла формата <b>PNG</b>, <b>200dpi</b>)</a>.
 
@@ -3136,7 +3182,241 @@
 
 		<br>
 		<hr>
-		<a name="4"></a>
+		<a name="graf16"></a>
+
+	</td>
+	</tr>
+
+	<!-- Описание библиотеки GRAF16.REL -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td class="table_bg_a" align="center">
+			Описание библиотеки GRAF16.REL
+			</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Гор. линия 1 -->
+		<hr class="vc_addhr vc_size_tc_1">
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+		<!-- Иконка Manual -->
+		<img class="icon" src="icons/manual.png" title="Иконка из набора Crystal clear. (C) Everaldo Coelho. License: LGPL">
+		</td>
+
+		<td align="left" style="padding-left: 6px;">
+
+		<!-- ! -->
+		<span class="vc_spoiler"
+		onclick="javascript:vc_graf16_spoiler();"
+		title="Нажмите">
+
+<script>
+function vc_graf16_spoiler()
+{
+if (document.getElementById('id_graf16_sp').style.display == 'none')
+	{
+	// Вставить описание GRAF16 в страницу.
+	VCGRAF16TXT();
+	// Открыть спойлер.
+	document.getElementById('id_graf16_sp').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('id_graf16_sp').style.display = 'none';
+	// Удалить описание GRAF16 из страницы.
+	document.getElementById('id_vc_graf16_txt').innerHTML = '';
+	}
+}
+</script>
+
+		Развернуть/Свернуть
+		</span>
+
+		<br>
+
+		<!-- Подстрочный текст -->
+		<span class="vcsmalltxt">
+		Рекомендуется к прочтению! Принципы не поменялись!
+		<br>
+		Актуально и сегодня!
+		</span>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<!-- Гор. линия 1 -->
+		<hr class="vc_addhr vc_size_tc_1">
+
+		<!-- То, что под спойлером -->
+		<div id="id_graf16_sp" style="display: none;">
+
+			<br>
+
+			<!-- Дополнительное окно с прокруткой -->
+
+			<div id="id_vc_graf16_window" align="center" class="vc_graf16_window">
+
+				<!-- Здесь Radio Buttons -->
+	        		<!-- Растянуть по вертикали -->
+
+				<table class="vc_rb_bg" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+				<td>
+				Вернуть окно в исходное состояние:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td class="vc_rbpaddingb">
+				<!-- Вернуть окно в исходное состояние -->
+				<input name="graf16txt" id="id_graf16_txt_1" class="vc_radiobutton" type="radio" value="" checked
+				onchange="VCGRAF16Height_1();">
+				<label for="id_graf16_txt_1" class="vc_label_radio" title=""></label>
+				</td>
+
+				</tr>
+
+				<tr>
+
+				<td>
+				Растянуть окно по вертикали:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td class="vc_rbpaddingb">
+				<!-- Растянуть окно по вертикали -->
+				<input name="graf16txt" id="id_graf16_txt_2" class="vc_radiobutton" type="radio" value=""
+				onchange="VCGRAF16Height_2();">
+				<label for="id_graf16_txt_2" class="vc_label_radio" title=""></label>
+				</td>
+
+				</tr>
+
+				</table> <!-- Конец Radio Buttons -->
+
+				<br>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center" style="padding-left: 20px; padding-right: 20px;">
+
+					<!-- Здесь текстовый файл для скачивания -->
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<!-- Иконка -->
+					<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+					</td>
+
+					<!-- txt-файл -->
+					<td style="padding-left: 6px;">
+					<a href="dl/GRAF16.TXT" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">GRAF16.TXT</a> (в UTF-8)
+					</td>
+
+					</tr>
+					</table>
+
+					<br>
+
+					<!-- Здесь текст -->
+
+					<table class="vc_graf16_window_bg" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td id="id_vc_graf16_txt">
+					<!-- Сюда вставка -->
+					</td>
+					</tr>
+					</table>
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				<!-- Cсылка на автора -->
+
+				Украина. (C) Терентьев С.В. Центр "Тень".
+				<br>
+				<br>
+
+			</div> <!-- Конец дополнительному окну -->
+
+		</div> <!-- Конец спойлера GRAF16.REL -->
+
+		<br>
+
+		<!-- Скачать файл -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Файл 1 -->
+
+			<td>
+			<!-- Иконка Code -->
+			<img class="icon" src="icons/code.png" title="Иконка из набора Glaze. (C) Everaldo Coelho. License: GPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/GRAF16.REL" title="Скачать">GRAF16.REL</a> (от 12.12.1997)
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Автор -->
+
+		<span class="vcsmalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). (C) Терентьев С.В.</span> Центр "Тень".
+
+		<br>
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+		</table>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<a name="AY1"></a>
 
 	</td>
 	</tr>
@@ -3153,7 +3433,7 @@
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
 		<tr>
 			<td class="table_bg_a" align="center">
-			ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"</a>
+			ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"
 			</td>
 		</tr>
 		</table>
@@ -3289,7 +3569,9 @@
 
 		<!-- (C) -->
 
-		<span class="vcsmalltxt">Украина. (C) Демидов С.В.</span>
+		<span class="vcsmalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). (C) Демидов С.В.</span>
+		<br>
+		<span class="vcsmalltxt">Схема ХАРЬКОВСКИЙ ВАРИАНТ - <a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). (C) Терентьев С.В.</span>
 		<br>
 		<br>
 
@@ -3313,7 +3595,7 @@
 
 		<br>
 		<hr>
-		<a name="5"></a>
+		<a name="AY2"></a>
 
 	</td>
 
@@ -3329,7 +3611,7 @@
 		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
 		<tr>
 			<td class="table_bg_a" align="center">
-			Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910</a>
+			Трехканальный музыкальный таймер AY-3-8912 и AY-3-8910
 			</td>
 		</tr>
 		</table>
@@ -3595,7 +3877,7 @@ if (document.getElementById('id_aysp').style.display == 'none')
 
 		<br>
 		<hr>
-		<a name="6"></a>
+		<a name="KR1818VG93"></a>
 
 	</td>
 	</tr>
@@ -3841,7 +4123,7 @@ if (document.getElementById('id_vg93sp').style.display == 'none')
 
 		<br>
 		<hr>
-		<a name="254"></a>
+		<a name="8080"></a>
 
 	</td>
 	</tr>
