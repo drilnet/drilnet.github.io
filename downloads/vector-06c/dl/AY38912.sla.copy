@@ -25,6 +25,7 @@
         <HYPHEN/>
         <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Liberation Mono Bold Italic" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="ru"/>
         <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" ParagraphEffectOffset="0" DROP="0" DROPLIN="2"/>
+        <STYLE NAME="Отступ 1" FIRST="42.5196850393701" LANGUAGE="ru"/>
         <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
             <TableBorderLeft>
                 <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
@@ -54,7 +55,7 @@
             </TableBorderBottom>
         </CellStyle>
         <LAYERS NUMMER="0" LEVEL="0" NAME="Фон" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
-        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="1" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="3" markLength="20" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="" filename="" separationName="All" printerCommand=""/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="1" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="3" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="Файл" filename="" separationName="All" printerCommand=""/>
         <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="2" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="1" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="600" Resolution="600" Version="14" Intent="1" Intent2="0" SolidP="sRGB IEC61966-2.1" ImageP="sRGB IEC61966-2.1" PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="1.00062992125984" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
             <Subset Name="DejaVu Sans Mono Book"/>
             <Subset Name="Liberation Mono Bold"/>
@@ -95,592 +96,626 @@
         <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="901.89094488189" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="26.931968503937" NUM="1" NAM="" MNAM="Обычная" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
         <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="1783.78062992126" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="26.931968503937" NUM="2" NAM="" MNAM="Обычная" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
         <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="2665.67031496063" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="26.931968503937" NUM="3" NAM="" MNAM="Обычная" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="62.5209448818898" OwnPage="0" ItemID="176111632" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="820.788661417323" OwnPage="0" ItemID="176126992" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="48.3477165325197" OwnPage="0" ItemID="176130064" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="389.134488188977" YPOS="812.426456692913" OwnPage="0" ItemID="176133136" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="62.5209448818898" OwnPage="0" ItemID="176103440" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="820.788661417323" OwnPage="0" ItemID="468003856" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="48.3477165325197" OwnPage="0" ItemID="468006928" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="389.134488188977" YPOS="812.426456692913" OwnPage="0" ItemID="468010000" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0" FONT="Liberation Mono Bold" FONTSIZE="10"/>
                 <var name="pgno" FONT="Liberation Mono Bold" FONTSIZE="10" FCOLOR="White" FSHADE="100"/>
                 <trail ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="820.788661417323" OwnPage="0" ItemID="175710224" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="659.843149610158" YPOS="48.3477165325197" OwnPage="0" ItemID="175713296" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.433700787402" YPOS="820.788661417323" OwnPage="0" ItemID="175716368" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="820.788661417323" OwnPage="0" ItemID="456470544" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="659.843149610158" YPOS="48.3477165325197" OwnPage="0" ItemID="456473616" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.433700787402" YPOS="820.788661417323" OwnPage="0" ItemID="456476688" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="820.78866144252" OwnPage="0" ItemID="175719440" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="820.78866144252" OwnPage="0" ItemID="456479760" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="1001 1010 1011 1100 1101 1110 1111 0000 0001"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="121.260472440945" YPOS="820.788661417323" OwnPage="0" ItemID="175816720" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="121.260472440945" YPOS="820.788661417323" OwnPage="0" ItemID="466878480" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="6"/>
-                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: ..."/>
+                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: Демидов С.В. Автор неизвестен!"/>
                 <trail/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="48.3477165354331" OwnPage="0" ItemID="175819792" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="48.3477165354331" OwnPage="0" ItemID="466881552" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111 0000 0001 0010 0011"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="168.032125984882" YPOS="69.6075590551181" OwnPage="0" ItemID="175822864" PTYPE="4" WIDTH="467.716535433071" HEIGHT="737.007874" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" copath="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" gXpos="25.5118110236221" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="482454544" BACKITEM="-1">
+        <PAGEOBJECT XPOS="185.04000000063" YPOS="69.6075590551181" OwnPage="0" ItemID="466884624" PTYPE="4" WIDTH="425.196850393701" HEIGHT="737.007874" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" copath="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" gXpos="42.5196850393701" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="482720784" BACKITEM="-1">
             <StoryText>
-                <DefaultStyle LINESP="13" FONT="DejaVu Sans Mono Book"/>
-                <para/>
-                <ITEXT CH="     БИС AY-3-8912 и AY-3-8910"/>
-                <para/>
-                <para/>
-                <ITEXT CH="     Трехканальный  музыкальный таймер  AY-3-8912  может генери-"/>
-                <para/>
-                <ITEXT CH="ровать  музыкальные  тона  и  шумовые эффекты, а также управлять"/>
-                <para/>
-                <ITEXT CH="последовательными  портами  с  интерфейсом  RS232/MIDI и KEYPAD."/>
-                <para/>
-                <ITEXT CH="Микросхема содержит 16 регистров, доступ к которым осуществляет-"/>
-                <para/>
-                <ITEXT CH="ся посредством записи номера регистра в порт адреса  (в &quot;Синкле-"/>
-                <para/>
-                <ITEXT CH="ре&quot; FFFDH),  а затем  чтением  или  записью данных в порт данных"/>
-                <para/>
-                <ITEXT CH="(BFFDH).  Можно  осуществлять  последовательно несколько обраще-"/>
-                <para/>
-                <ITEXT CH="ний к одному и тому же регистру без перезаписи его номера в порт"/>
-                <para/>
-                <ITEXT CH="адреса."/>
-                <para/>
-                <para/>
-                <ITEXT CH="    Таблица 1"/>
-                <para/>
-                <para/>
-                <ITEXT CH="    Описание внутренних регистров микросхемы AY-3-8910/8912"/>
-                <para/>
-                <ITEXT CH="┌─────────────────────┬────┬────┬────┬────┬────┬────┬────┬────┐"/>
-                <para/>
-                <ITEXT CH="│      Регистр        │ B7 │ B6 │ B5 │ B4 │ B3 │ B2 │ B1 │ B0 │"/>
-                <para/>
-                <ITEXT CH="├────┬────────────────┼────┴────┴────┴────┴────┴────┴────┴────┤"/>
-                <para/>
-                <ITEXT CH="│ R0 │ Частота тона   │              Точно 8 бит              │"/>
-                <para/>
-                <ITEXT CH="├────┤  в канале A    ├───────────────────┬───────────────────┤"/>
-                <para/>
-                <ITEXT CH="│ R1 │                │                   │   Грубо 4 бита    │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼───────────────────┴───────────────────┤"/>
-                <para/>
-                <ITEXT CH="│ R2 │ Частота тона   │              Точно 8 бит              │"/>
-                <para/>
-                <ITEXT CH="├────┤ в канале B     ├───────────────────┬───────────────────┤"/>
-                <para/>
-                <ITEXT CH="│ R3 │                │                   │   Грубо 4 бита    │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼───────────────────┴───────────────────┤"/>
-                <para/>
-                <ITEXT CH="│ R4 │ Частота тона   │              Точно 8 бит              │"/>
-                <para/>
-                <ITEXT CH="├────┤ в канале C     ├───────────────────┬───────────────────┤"/>
-                <para/>
-                <ITEXT CH="│ R5 │                │                   │   Грубо 4 бита    │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼──────────────┬────┴───────────────────┤"/>
-                <para/>
-                <ITEXT CH="│ R6 │ Период шума    │              │      Период 5 бит      │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼─────────┬────┴─────────┬──────────────┤"/>
-                <para/>
-                <ITEXT CH="│    │ Управляющий    │ IN/OUT  │    Шум       │     Тон      │"/>
-                <para/>
-                <ITEXT CH="│ R7 │ регистр        ├────┬────┼────┬────┬────┼────┬────┬────┤"/>
-                <para/>
-                <ITEXT CH="│    │                │п.B*│п.A │ C  │ B  │ A  │ C  │ B  │ A  │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼────┴────┴────┼────┼────┼────┼────┼────┤"/>
-                <para/>
-                <ITEXT CH="│ R8 │ Ампл.-канал A  │              │ *M │ L3 │ L2 │ L1 │ L0 │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼──────────────┼────┼────┼────┼────┼────┤"/>
-                <para/>
-                <ITEXT CH="│ R9 │ Ампл.-канал B  │              │ *M │ L3 │ L2 │ L1 │ L0 │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼──────────────┼────┼────┼────┼────┼────┤"/>
-                <para/>
-                <ITEXT CH="│R10 │ Ампл.-канал C  │              │ *M │ L3 │ L2 │ L1 │ L0 │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼──────────────┴────┴────┴────┴────┴────┤"/>
-                <para/>
-                <ITEXT CH="│R11 │ Огибающая -    │              Точно 8 бит              │"/>
-                <para/>
-                <ITEXT CH="├────┤ период         ├───────────────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="│R12 │                │              Грубо 8 бит              │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼───────────────────┬────┬────┬────┬────┤"/>
-                <para/>
-                <ITEXT CH="│R13 │ Огиб. - форма  │                   │ E3 │ E2 │ E1 │ E0 │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼───────────────────┴────┴────┴────┴────┤"/>
-                <para/>
-                <ITEXT CH="│R14 │ Регистр порта A│           Ввод/вывод 8 бит            │"/>
-                <para/>
-                <ITEXT CH="├────┼────────────────┼───────────────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="│R15 │ Регистр порта B│           Ввод/вывод 8 бит            │"/>
-                <para/>
-                <ITEXT CH="└────┴────────────────┴───────────────────────────────────────┘"/>
-                <para/>
-                <ITEXT CH=" *M=1 - амплитуда устанавливается генератором огибающей."/>
-                <para/>
-                <ITEXT CH=" *M=0 - амплитуда устанавливается битами B0-B3."/>
-                <para/>
-                <ITEXT CH=" п.B* - бит не используется в AY-3-8912."/>
-                <para/>
-                <ITEXT CH="        Для AY-3-8910: 1-IN, 0-OUT."/>
-                <para/>
-                <ITEXT CH=" R15  - в AY-3-8912 не используется."/>
-                <para/>
-                <para/>
-                <ITEXT CH="    Тактовая частота, подаваемая на  вход CLC  микросхемы должна"/>
-                <para/>
-                <ITEXT CH="составлять 1.7734 МГц (с точностью 100 Гц)."/>
-                <para/>
-                <para/>
-                <ITEXT CH="   Выходная частота канала получается делением основного тона на"/>
-                <para/>
-                <ITEXT CH="двенадцатибитовый коэффициент деления, заданный значением D3..D0"/>
-                <para/>
-                <ITEXT CH="&quot;грубых&quot;  регистров  и D7..D0  &quot;точных&quot;  регистров. Основной тон"/>
-                <para/>
-                <ITEXT CH="есть  частота,  подаваемая  на  вход CLC таймера, деленная на 16"/>
-                <para/>
-                <ITEXT CH="(т.е. 110.83 кГц). При этом могут быть получены частоты от 27 Гц"/>
-                <para/>
-                <ITEXT CH="до 110 кГц."/>
-                <para/>
-                <ITEXT CH="   Период  огибающей задается  шестнадцатибитовым значением, за-"/>
-                <para/>
-                <ITEXT CH="данным регистрами R11 и R12. Длина периода получается умножением"/>
-                <para/>
-                <ITEXT CH="этой  величины на 1.444 мс  (соответствует  частоте тактовых им-"/>
-                <para/>
-                <ITEXT CH="пульсов, подаваемых  на вход CLC, деленной на 256). Диапазон пе-"/>
-                <para/>
-                <ITEXT CH="риодов огибающей от 1.444 мс до 9.5 с. (от 6.9 кГц до 0.1 Гц)."/>
-                <para/>
-                <para/>
-                <ITEXT CH="       Таблица 2"/>
-                <para/>
-                <ITEXT CH="                          Формы огибающей"/>
-                <para/>
-                <ITEXT CH="       ┌────┬────┬────┬────┬────────────────────────────┐"/>
-                <para/>
-                <ITEXT CH="       │ E3 │ E2 │ E1 │ E0 │   Графическое изображение  │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │  \                         │"/>
-                <para/>
-                <ITEXT CH="       │ 0  │ 0  │ X  │ X  │   \                        │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │    ----------------------  │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │   /|                       │"/>
-                <para/>
-                <ITEXT CH="       │ 0  │ 1  │ X  │ X  │  / |                       │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │     ---------------------  │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │  \ |\ |\ |\ |\ |\ |\ |\ |  │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 0  │ 0  │ 0  │   \| \| \| \| \| \| \| \|  │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │                            │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │  \                         │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 0  │ 0  │ 1  │   \                        │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │    ----------------------  │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │  \  /\  /\  /\  /\  /\  /  │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 0  │ 1  │ 0  │   \/  \/  \/  \/  \/  \/   │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │                            │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │     ---------------------  │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 0  │ 1  │ 1  │  \ |                       │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │   \|                       │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │   /| /| /| /| /| /| /| /|  │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 1  │ 0  │ 0  │  / |/ |/ |/ |/ |/ |/ |/ |  │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │                            │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │    ----------------------  │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 1  │ 0  │ 1  │   /                        │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │  /                         │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <para/>
-                <para/>
-                <para/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │   /\  /\  /\  /\  /\  /\   │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 1  │ 1  │ 0  │  /  \/  \/  \/  \/  \/  \  │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │                            │"/>
-                <para/>
-                <ITEXT CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │   /|                       │"/>
-                <para/>
-                <ITEXT CH="       │ 1  │ 1  │ 1  │ 1  │  / |                       │"/>
-                <para/>
-                <ITEXT CH="       │    │    │    │    │     ---------------------  │"/>
-                <para/>
-                <ITEXT CH="       └────┴────┴────┴────┴────────────────────────────┘"/>
-                <para/>
-                <para/>
-                <ITEXT CH="    При  программировании  заносят  все  необходимые  значения в"/>
-                <para/>
-                <ITEXT CH="регистры  R0..R12,  а  затем  задают  форму огибающей (R13), что"/>
-                <para/>
-                <ITEXT CH="является началом работы таймера."/>
-                <para/>
-                <para/>
-                <ITEXT CH="           Назначение выводов БИС AY-3-8912, AY-3-8910"/>
-                <para/>
-                <para/>
-                <ITEXT CH="         18 ┌────┬───┬───┐ 3  │+5V       27 ┌────┬───┬───┐ 21"/>
-                <para/>
-                <ITEXT CH="  BDIR ─────┤BDIR│   │Vcc├────┤    BDIR ────┤BDIR│   │PA0├────"/>
-                <para/>
-                <ITEXT CH="         20 │    │   │ __│ 17 │          29 │    │   │   │ 20"/>
-                <para/>
-                <ITEXT CH="   BC1 ─────┤BC1 │   │ ENo────┤     BC1 ────┤BC1 │   │ ░ │ 19"/>
-                <para/>
-                <ITEXT CH="         15 │    │   │   │ 19 │          22 │    │   │ ░ │ 18"/>
-                <para/>
-                <ITEXT CH="1.7734 ─────┤CLC │ A │BC2├────┘  1.7734 ────┤CLC │ A │ ░ │ 17"/>
-                <para/>
-                <ITEXT CH="   MHz      ├────┤ Y │   │          MHz     ├────┤ Y │ ░ │ 16"/>
-                <para/>
-                <ITEXT CH="         28 │    │ | │   │               37 │    │ | │ ░ │ 15"/>
-                <para/>
-                <ITEXT CH="    D0 ─────┤ D0 │ 3 │   │           D0 ────┤ D0 │ 3 │   │ 14"/>
-                <para/>
-                <ITEXT CH="         27 │    │ | │   │               36 │    │ | │PA7├────"/>
-                <para/>
-                <ITEXT CH="    D1 ─────┤ D1 │ 8 │   │           D1 ────┤ D1 │ 8 │   │"/>
-                <para/>
-                <ITEXT CH="         26 │    │ 9 │   │               35 │    │ 9 │   │ 13"/>
-                <para/>
-                <ITEXT CH="    D2 ─────┤ D2 │ 1 │   │           D2 ────┤ D2 │ 1 │PB0├────"/>
-                <para/>
-                <ITEXT CH="         25 │    │ 2 │   │               34 │    │ 0 │   │ 12"/>
-                <para/>
-                <ITEXT CH="    D3 ─────┤ D3 │   │   │           D3 ────┤ D3 │   │ ░ │ 11"/>
-                <para/>
-                <ITEXT CH="         24 │    │   │   │               33 │    │   │ ░ │ 10"/>
-                <para/>
-                <ITEXT CH="    D4 ─────┤ D4 │   │   │           D4 ────┤ D4 │   │ ░ │ 9"/>
-                <para/>
-                <ITEXT CH="         23 │    │   │   │               32 │    │   │ ░ │ 8"/>
-                <para/>
-                <ITEXT CH="    D5 ─────┤ D5 │   │   │           D5 ────┤ D5 │   │ ░ │ 7"/>
-                <para/>
-                <ITEXT CH="         22 │    │   │   │               31 │    │   │   │ 6"/>
-                <para/>
-                <ITEXT CH="    D6 ─────┤ D6 │   │   │           D6 ────┤ D6 │   │PB7├────"/>
-                <para/>
-                <ITEXT CH="         21 │    │   │   │               30 │    │   │___│ 24"/>
-                <para/>
-                <ITEXT CH="    D7 ─────┤ D7 │   │   │ 5         D7 ────┤ D7 │   │ENBo───┐"/>
-                <para/>
-                <ITEXT CH="            ├────┤   │ A ├──── A            ├────┤   │   │   ┴"/>
-                <para/>
-                <ITEXT CH="   ___   16 │___ │   │   │ 4        ___  23 │___ │   │   │ 4"/>
-                <para/>
-                <ITEXT CH="   RES ─────oRES │   │ B ├──── B    RES ────oRES │   │ A ├──── A"/>
-                <para/>
-                <ITEXT CH="          6 │    │   │   │ 1             28 │    │   │   │ 3"/>
-                <para/>
-                <ITEXT CH="        ┌───┤GND │   │ C ├──── C        ┌───┤BC2 │   │ B ├──── B"/>
-                <para/>
-                <ITEXT CH="        ┴   │    │   │   │              │25 │    │   │   │ 38"/>
-                <para/>
-                <ITEXT CH="            └────┴───┴───┘         +5V ─┼───┤ENB │   │ C ├──── C"/>
-                <para/>
-                <ITEXT CH="                Рис. 1a                 │40 │    │   │   │ 1"/>
-                <para/>
-                <ITEXT CH="                                        └───┤Vcc │   │GND├───┐"/>
-                <para/>
-                <ITEXT CH="                                            │    │   │   │   ┴"/>
-                <para/>
-                <ITEXT CH="                                            └────┴───┴───┘"/>
-                <para/>
-                <ITEXT CH="                                                Рис. 1b"/>
-                <para/>
-                <para/>
-                <para/>
-                <para/>
-                <para/>
-                <ITEXT CH="       Таблица 3"/>
-                <para/>
-                <ITEXT CH="                     Режимы работы таймера"/>
-                <para/>
-                <ITEXT CH="       ┌───────────────────────────┬──────┬─────┬──────┐"/>
-                <para/>
-                <ITEXT CH="       │ Режим работы              │ BDIR │ BC1 │ BC2  │"/>
-                <para/>
-                <ITEXT CH="       ├───────────────────────────┼──────┼─────┼──────┤"/>
-                <para/>
-                <ITEXT CH="       │ Микросхема неактивна      │   0  │  0  │  1   │"/>
-                <para/>
-                <ITEXT CH="       │ Чтение данных из регистра │   0  │  1  │  1   │"/>
-                <para/>
-                <ITEXT CH="       │ Запись данных в регистр   │   1  │  0  │  1   │"/>
-                <para/>
-                <ITEXT CH="       │ Выбор регистра            │   1  │  1  │  1   │"/>
-                <para/>
-                <ITEXT CH="       └───────────────────────────┴──────┴─────┴──────┘"/>
-                <para/>
-                <para/>
-                <ITEXT CH="          Схема дешифрации адресов портов таймера при"/>
-                <para/>
-                <ITEXT CH="                   подключении к &quot;Синклеру&quot;"/>
-                <para/>
-                <para/>
-                <ITEXT CH=" __                                  8 ┌────┐"/>
-                <para/>
-                <ITEXT CH=" WR  ──────────────────────────────────┤ 1  │ 10"/>
-                <para/>
-                <ITEXT CH="                                     9 │    o────────────── BDIR"/>
-                <para/>
-                <ITEXT CH="                                   ┌───┤D2.3│"/>
-                <para/>
-                <ITEXT CH="____    2 ┌────┐      ┌────┐       │   └────┘"/>
-                <para/>
-                <ITEXT CH="IORQ ─────┤ 1  │ 1  1 │ 1  │ 2     │             D1 К555ЛН1"/>
-                <para/>
-                <ITEXT CH="        3 │    o──────┤    o───────┤"/>
-                <para/>
-                <ITEXT CH=" A1  ─────┤D2.1│      │D1.1│       │             D2 К555ЛЕ1"/>
-                <para/>
-                <ITEXT CH="          └────┘      └────┘       │13 ┌────┐"/>
-                <para/>
-                <ITEXT CH="                    5 ┌────┐       └───┤ 1  │ 11"/>
-                <para/>
-                <ITEXT CH=" A14 ─────────────────┤ 1  │ 4      12 │    o────────────── BC1"/>
-                <para/>
-                <ITEXT CH="                    6 │    o───────────┤D2.4│"/>
-                <para/>
-                <ITEXT CH="                 ┌────┤D2.2│           └────┘"/>
-                <para/>
-                <ITEXT CH="                 ┴    └────┘"/>
-                <para/>
-                <ITEXT CH="                              Рис. 2"/>
-                <para/>
-                <para/>
-                <ITEXT CH="    Схема получения псевдостереофонического эффекта звучания"/>
-                <para/>
-                <para/>
-                <ITEXT CH="                     1 K            2 K 2"/>
-                <para/>
-                <ITEXT CH="       A ───────────▒▒▒▒▒▒────┬────▒▒▒▒▒▒─────┐"/>
-                <para/>
-                <ITEXT CH="                              │               ┴"/>
-                <para/>
-                <ITEXT CH="                     2 K 2    │       0.1"/>
-                <para/>
-                <ITEXT CH="                ┌───▒▒▒▒▒▒────┴───────┤├──────────── Левый"/>
-                <para/>
-                <ITEXT CH="       B ───────┤    2 K 2            0.1"/>
-                <para/>
-                <ITEXT CH="                └───▒▒▒▒▒▒────┬───────┤├──────────── Правый"/>
-                <para/>
-                <ITEXT CH="                              │"/>
-                <para/>
-                <ITEXT CH="                     1 K      │     2 K 2"/>
-                <para/>
-                <ITEXT CH="       C ───────────▒▒▒▒▒▒────┴────▒▒▒▒▒▒─────┐"/>
-                <para/>
-                <ITEXT CH="                                              ┴"/>
-                <para/>
-                <ITEXT CH="                            Рис. 3"/>
-                <para/>
-                <para/>
-                <ITEXT CH="    При  подключении  к компьютеру  &quot;Синклер&quot;  на вход  CLC  БИС"/>
-                <para/>
-                <ITEXT CH="подается  сигнал  частотой   1.75 МГц,  снимаемый  со  счетчиков"/>
-                <para/>
-                <ITEXT CH="на  плате  компьютера.  Для  получения   псевдостереофонического"/>
-                <para/>
-                <ITEXT CH="эффекта  звучания  подключение  БИС  к  усилителю осуществляется"/>
-                <para/>
-                <ITEXT CH="по  схеме,  приведенной  на  рис. 3. Между шинами питания микро-"/>
-                <para/>
-                <ITEXT CH="схемы  устанавливается  блокировочный  конденсатор  емкостью  не"/>
-                <para/>
-                <ITEXT CH="менее 0.1 мкФ."/>
-                <para/>
+                <DefaultStyle LINESPMode="1" LINESP="13" FONT="DejaVu Sans Mono Book" FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <ITEXT FONTSIZE="11" CH="БИС AY-3-8912 и AY-3-8910"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <ITEXT FONTSIZE="11" CH="Трехканальный  музыкальный  таймер  AY-3-8912  может  генери-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="ровать  музыкальные  тона  и  шумовые эффекты, а также управлять"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="последовательными  портами  с  интерфейсом  RS232/MIDI и KEYPAD."/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="Микросхема содержит 16 регистров, доступ к которым осуществляет-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="ся посредством записи номера регистра в порт адреса  (в &quot;Синкле-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="ре&quot; FFFDH),  а затем  чтением  или  записью данных в порт данных"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="(BFFDH).  Можно  осуществлять  последовательно несколько обраще-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="ний к одному и тому же регистру без перезаписи его номера в порт"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="адреса."/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="Таблица 1"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    Описание внутренних регистров микросхемы AY-3-8910/8912"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="┌─────────────────────┬────┬────┬────┬────┬────┬────┬────┬────┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│      Регистр        │ B7 │ B6 │ B5 │ B4 │ B3 │ B2 │ B1 │ B0 │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┬────────────────┼────┴────┴────┴────┴────┴────┴────┴────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R0 │ Частота тона   │              Точно 8 бит              │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┤ в канале A     ├───────────────────┬───────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R1 │                │                   │   Грубо 4 бита    │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼───────────────────┴───────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R2 │ Частота тона   │              Точно 8 бит              │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┤ в канале B     ├───────────────────┬───────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R3 │                │                   │   Грубо 4 бита    │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼───────────────────┴───────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R4 │ Частота тона   │              Точно 8 бит              │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┤ в канале C     ├───────────────────┬───────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R5 │                │                   │   Грубо 4 бита    │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼──────────────┬────┴───────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R6 │ Период шума    │              │      Период 5 бит      │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼─────────┬────┴─────────┬──────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│    │ Управляющий    │ IN/OUT  │    Шум       │     Тон      │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R7 │ регистр        ├────┬────┼────┬────┬────┼────┬────┬────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│    │                │п.B*│п.A │ C  │ B  │ A  │ C  │ B  │ A  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼────┴────┴────┼────┼────┼────┼────┼────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R8 │ Ампл.-канал A  │              │ *M │ L3 │ L2 │ L1 │ L0 │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼──────────────┼────┼────┼────┼────┼────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│ R9 │ Ампл.-канал B  │              │ *M │ L3 │ L2 │ L1 │ L0 │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼──────────────┼────┼────┼────┼────┼────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│R10 │ Ампл.-канал C  │              │ *M │ L3 │ L2 │ L1 │ L0 │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼──────────────┴────┴────┴────┴────┴────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│R11 │ Огибающая -    │              Точно 8 бит              │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┤ период         ├───────────────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│R12 │                │              Грубо 8 бит              │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼───────────────────┬────┬────┬────┬────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│R13 │ Огиб. - форма  │                   │ E3 │ E2 │ E1 │ E0 │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼───────────────────┴────┴────┴────┴────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│R14 │ Регистр порта A│           Ввод/вывод 8 бит            │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="├────┼────────────────┼───────────────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="│R15 │ Регистр порта B│           Ввод/вывод 8 бит            │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="└────┴────────────────┴───────────────────────────────────────┘"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" *M=1 - амплитуда устанавливается генератором огибающей."/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" *M=0 - амплитуда устанавливается битами B0-B3."/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" п.B* - бит не используется в AY-3-8912."/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="        Для AY-3-8910: 1-IN, 0-OUT."/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" R15  - в AY-3-8912 не используется."/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <ITEXT FONTSIZE="11" CH="Тактовая частота, подаваемая на  вход CLC  микросхемы  должна"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="составлять 1.7734 МГц (с точностью 100 Гц)."/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <ITEXT FONTSIZE="11" CH="Выходная частота канала получается делением основного тона на"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="двенадцатибитовый коэффициент деления, заданный значением D3..D0"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="&quot;грубых&quot;  регистров  и D7..D0  &quot;точных&quot;  регистров. Основной тон"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="есть  частота,  подаваемая  на  вход CLC таймера, деленная на 16"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="(т.е. 110.83 кГц). При этом могут быть получены частоты от 27 Гц"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="до 110 кГц."/>
+                <para LINESPMode="1"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <ITEXT FONTSIZE="11" CH="Период  огибающей задается  шестнадцатибитовым значением, за-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="данным регистрами R11 и R12. Длина периода получается умножением"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="этой  величины на 1.444 мс  (соответствует  частоте тактовых им-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="пульсов, подаваемых  на вход CLC, деленной на 256). Диапазон пе-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="риодов огибающей от 1.444 мс до 9.5 с. (от 6.9 кГц до 0.1 Гц)."/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       Таблица 2"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                          Формы огибающей"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ┌────┬────┬────┬────┬────────────────────────────┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ E3 │ E2 │ E1 │ E0 │   Графическое изображение  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │  \                         │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 0  │ 0  │ X  │ X  │   \                        │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │    ----------------------  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │   /|                       │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 0  │ 1  │ X  │ X  │  / |                       │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │     ---------------------  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │  \ |\ |\ |\ |\ |\ |\ |\ |  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 0  │ 0  │ 0  │   \| \| \| \| \| \| \| \|  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │                            │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │  \                         │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 0  │ 0  │ 1  │   \                        │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │    ----------------------  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │  \  /\  /\  /\  /\  /\  /  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 0  │ 1  │ 0  │   \/  \/  \/  \/  \/  \/   │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │                            │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │     ---------------------  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 0  │ 1  │ 1  │  \ |                       │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │   \|                       │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │   /| /| /| /| /| /| /| /|  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 1  │ 0  │ 0  │  / |/ |/ |/ |/ |/ |/ |/ |  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │                            │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │    ----------------------  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 1  │ 0  │ 1  │   /                        │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │  /                         │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │   /\  /\  /\  /\  /\  /\   │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 1  │ 1  │ 0  │  /  \/  \/  \/  \/  \/  \  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │                            │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├────┼────┼────┼────┼────────────────────────────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │   /|                       │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ 1  │ 1  │ 1  │ 1  │  / |                       │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │    │    │    │    │     ---------------------  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       └────┴────┴────┴────┴────────────────────────────┘"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <ITEXT FONTSIZE="11" CH="При  программировании  заносят  все  необходимые  значения  в"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="регистры  R0..R12,  а  затем  задают  форму огибающей (R13), что"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="является началом работы таймера."/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="           Назначение выводов БИС AY-3-8912, AY-3-8910"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         18 ┌────┬───┬───┐ 3  │+5V       27 ┌────┬───┬───┐ 21"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="  BDIR ─────┤BDIR│   │Vcc├────┤    BDIR ────┤BDIR│   │PA0├────"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         20 │    │   │ __│ 17 │          29 │    │   │   │ 20"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="   BC1 ─────┤BC1 │   │ ENo────┤     BC1 ────┤BC1 │   │ ░ │ 19"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         15 │    │   │   │ 19 │          22 │    │   │ ░ │ 18"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="1.7734 ─────┤CLC │ A │BC2├────┘  1.7734 ────┤CLC │ A │ ░ │ 17"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="   MHz      ├────┤ Y │   │          MHz     ├────┤ Y │ ░ │ 16"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         28 │    │ | │   │               37 │    │ | │ ░ │ 15"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D0 ─────┤ D0 │ 3 │   │           D0 ────┤ D0 │ 3 │   │ 14"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         27 │    │ | │   │               36 │    │ | │PA7├────"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D1 ─────┤ D1 │ 8 │   │           D1 ────┤ D1 │ 8 │   │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         26 │    │ 9 │   │               35 │    │ 9 │   │ 13"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D2 ─────┤ D2 │ 1 │   │           D2 ────┤ D2 │ 1 │PB0├────"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         25 │    │ 2 │   │               34 │    │ 0 │   │ 12"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D3 ─────┤ D3 │   │   │           D3 ────┤ D3 │   │ ░ │ 11"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         24 │    │   │   │               33 │    │   │ ░ │ 10"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D4 ─────┤ D4 │   │   │           D4 ────┤ D4 │   │ ░ │ 9"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         23 │    │   │   │               32 │    │   │ ░ │ 8"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D5 ─────┤ D5 │   │   │           D5 ────┤ D5 │   │ ░ │ 7"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         22 │    │   │   │               31 │    │   │   │ 6"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D6 ─────┤ D6 │   │   │           D6 ────┤ D6 │   │PB7├────"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="         21 │    │   │   │               30 │    │   │___│ 24"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    D7 ─────┤ D7 │   │   │ 5         D7 ────┤ D7 │   │ENBo───┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="            ├────┤   │ A ├──── A            ├────┤   │   │   ┴"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="   ___   16 │___ │   │   │ 4        ___  23 │___ │   │   │ 4"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="   RES ─────oRES │   │ B ├──── B    RES ────oRES │   │ A ├──── A"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="          6 │    │   │   │ 1             28 │    │   │   │ 3"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="        ┌───┤GND │   │ C ├──── C        ┌───┤BC2 │   │ B ├──── B"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="        ┴   │    │   │   │              │25 │    │   │   │ 38"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="            └────┴───┴───┘         +5V ─┼───┤ENB │   │ C ├──── C"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                Рис. 1a                 │40 │    │   │   │ 1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                                        └───┤Vcc │   │GND├───┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                                            │    │   │   │   ┴"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                                            └────┴───┴───┘"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                                                Рис. 1b"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       Таблица 3"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                     Режимы работы таймера"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ┌───────────────────────────┬──────┬─────┬──────┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ Режим работы              │ BDIR │ BC1 │ BC2  │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       ├───────────────────────────┼──────┼─────┼──────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ Микросхема неактивна      │   0  │  0  │  1   │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ Чтение данных из регистра │   0  │  1  │  1   │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ Запись данных в регистр   │   1  │  0  │  1   │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       │ Выбор регистра            │   1  │  1  │  1   │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       └───────────────────────────┴──────┴─────┴──────┘"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="          Схема дешифрации адресов портов таймера при"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                   подключении к &quot;Синклеру&quot;"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" __                                  8 ┌────┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" WR  ──────────────────────────────────┤ 1  │ 10"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                                     9 │    o────────────── BDIR"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                                   ┌───┤D2.3│"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="____    2 ┌────┐      ┌────┐       │   └────┘"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="IORQ ─────┤ 1  │ 1  1 │ 1  │ 2     │             D1 К555ЛН1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="        3 │    o──────┤    o───────┤"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" A1  ─────┤D2.1│      │D1.1│       │             D2 К555ЛЕ1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="          └────┘      └────┘       │13 ┌────┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                    5 ┌────┐       └───┤ 1  │ 11"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH=" A14 ─────────────────┤ 1  │ 4      12 │    o────────────── BC1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                    6 │    o───────────┤D2.4│"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                 ┌────┤D2.2│           └────┘"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                 ┴    └────┘"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                              Рис. 2"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="    Схема получения псевдостереофонического эффекта звучания"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                     1 K            2 K 2"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       A ───────────▒▒▒▒▒▒────┬────▒▒▒▒▒▒─────┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                              │               ┴"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                     2 K 2    │       0.1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                ┌───▒▒▒▒▒▒────┴───────┤├──────────── Левый"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       B ───────┤    2 K 2            0.1"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                └───▒▒▒▒▒▒────┬───────┤├──────────── Правый"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                              │"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                     1 K      │     2 K 2"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="       C ───────────▒▒▒▒▒▒────┴────▒▒▒▒▒▒─────┐"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                                              ┴"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="                            Рис. 3"/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <nbspace FONTSIZE="11"/>
+                <ITEXT FONTSIZE="11" CH="При  подключении  к компьютеру  &quot;Синклер&quot;  на  вход  CLC  БИС"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="подается  сигнал  частотой   1.75 МГц,  снимаемый  со  счетчиков"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="на  плате  компьютера.  Для  получения   псевдостереофонического"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="эффекта  звучания  подключение  БИС  к  усилителю осуществляется"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="по  схеме,  приведенной  на  рис. 3. Между шинами питания микро-"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="схемы  устанавливается  блокировочный  конденсатор  емкостью  не"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONTSIZE="11" CH="менее 0.1 мкФ."/>
+                <para LINESPMode="1"/>
+                <para/>
+                <ITEXT CH="Для заметок: ___________________________________________________"/>
+                <para/>
+                <para/>
+                <ITEXT CH="________________________________________________________________"/>
+                <para/>
+                <para/>
+                <ITEXT CH="________________________________________________________________"/>
+                <para/>
+                <para/>
+                <ITEXT CH="________________________________________________________________"/>
+                <para/>
+                <para/>
+                <ITEXT CH="________________________________________________________________"/>
+                <para/>
+                <para/>
+                <ITEXT CH="________________________________________________________________"/>
+                <para/>
+                <para/>
+                <ITEXT CH="________________________________________________________________"/>
+                <trail/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="944.41062992126" OwnPage="1" ItemID="175825936" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="1702.67834645669" OwnPage="1" ItemID="482283536" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="930.23740157189" OwnPage="1" ItemID="482286608" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="389.134488188977" YPOS="1694.31614173228" OwnPage="1" ItemID="482289680" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="944.41062992126" OwnPage="1" ItemID="466887696" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="1702.67834645669" OwnPage="1" ItemID="482631696" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="930.23740157189" OwnPage="1" ItemID="482634768" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="389.134488188977" YPOS="1694.31614173228" OwnPage="1" ItemID="482637840" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0" FONT="Liberation Mono Bold" FONTSIZE="10"/>
                 <var name="pgno" FONT="Liberation Mono Bold" FONTSIZE="10" FCOLOR="White" FSHADE="100"/>
                 <trail ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="1702.67834645669" OwnPage="1" ItemID="482292752" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="659.843149610158" YPOS="930.23740157189" OwnPage="1" ItemID="482336784" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.433700787402" YPOS="1702.67834645669" OwnPage="1" ItemID="482339856" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="1702.67834645669" OwnPage="1" ItemID="482640912" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="659.843149610158" YPOS="930.23740157189" OwnPage="1" ItemID="482684944" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.433700787402" YPOS="1702.67834645669" OwnPage="1" ItemID="482688016" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="1702.67834648189" OwnPage="1" ItemID="482342928" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="1702.67834648189" OwnPage="1" ItemID="482691088" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="1001 1010 1011 1100 1101 1110 1111 0000 0001"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="121.260472440945" YPOS="1702.67834645669" OwnPage="1" ItemID="482346000" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="121.260472440945" YPOS="1702.67834645669" OwnPage="1" ItemID="482694160" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="6"/>
-                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: ..."/>
+                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: Демидов С.В. Автор неизвестен!"/>
                 <trail/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="930.237401574803" OwnPage="1" ItemID="482451472" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="930.237401574803" OwnPage="1" ItemID="482717712" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111 0000 0001 0010 0011"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="168.032125984882" YPOS="951.497244094488" OwnPage="1" ItemID="482454544" PTYPE="4" WIDTH="467.716535433071" HEIGHT="737.007874" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" copath="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" gXpos="25.5118110236221" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="482590736" BACKITEM="175822864"/>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="1826.30031496063" OwnPage="2" ItemID="482457616" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="2584.56803149606" OwnPage="2" ItemID="482460688" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="1812.12708661126" OwnPage="2" ItemID="482566160" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="389.134488188977" YPOS="2576.20582677165" OwnPage="2" ItemID="482569232" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="185.04000000063" YPOS="951.497244094488" OwnPage="1" ItemID="482720784" PTYPE="4" WIDTH="425.196850393701" HEIGHT="737.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" copath="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" gXpos="42.5196850393701" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="483135504" BACKITEM="466884624"/>
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="1826.30031496063" OwnPage="2" ItemID="482723856" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="2584.56803149606" OwnPage="2" ItemID="482726928" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="1812.12708661126" OwnPage="2" ItemID="482889744" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="389.134488188977" YPOS="2576.20582677165" OwnPage="2" ItemID="482892816" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0" FONT="Liberation Mono Bold" FONTSIZE="10"/>
                 <var name="pgno" FONT="Liberation Mono Bold" FONTSIZE="10" FCOLOR="White" FSHADE="100"/>
                 <trail ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="2584.56803149606" OwnPage="2" ItemID="482572304" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="659.843149610158" YPOS="1812.12708661126" OwnPage="2" ItemID="482575376" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.433700787402" YPOS="2584.56803149606" OwnPage="2" ItemID="482578448" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="2584.56803149606" OwnPage="2" ItemID="482895888" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="659.843149610158" YPOS="1812.12708661126" OwnPage="2" ItemID="482898960" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.433700787402" YPOS="2584.56803149606" OwnPage="2" ItemID="482902032" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="2584.56803152126" OwnPage="2" ItemID="482581520" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="2584.56803152126" OwnPage="2" ItemID="482905104" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="1001 1010 1011 1100 1101 1110 1111 0000 0001"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="121.260472440945" YPOS="2584.56803149606" OwnPage="2" ItemID="482584592" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="121.260472440945" YPOS="2584.56803149606" OwnPage="2" ItemID="482908176" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="6"/>
-                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: ..."/>
+                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: Демидов С.В. Автор неизвестен!"/>
                 <trail/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="1812.12708661417" OwnPage="2" ItemID="482587664" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="1812.12708661417" OwnPage="2" ItemID="482911248" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111 0000 0001 0010 0011"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="168.032125984882" YPOS="1833.38692913386" OwnPage="2" ItemID="482590736" PTYPE="4" WIDTH="467.716535433071" HEIGHT="737.007874" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" copath="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" gXpos="25.5118110236221" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="482800656" BACKITEM="482454544"/>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="2708.19" OwnPage="3" ItemID="482593808" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="128.34708661126" YPOS="3466.45771653543" OwnPage="3" ItemID="482596880" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="2694.01677165063" OwnPage="3" ItemID="482599952" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="389.134488188977" YPOS="3458.09551181102" OwnPage="3" ItemID="482779152" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="185.04000000063" YPOS="1833.38692913386" OwnPage="2" ItemID="483135504" PTYPE="4" WIDTH="425.196850393701" HEIGHT="737.007874" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" copath="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" gXpos="42.5196850393701" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="483169296" BACKITEM="482720784"/>
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="2708.19" OwnPage="3" ItemID="483138576" PTYPE="5" WIDTH="538.582677165354" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="128.34708661126" YPOS="3466.45771653543" OwnPage="3" ItemID="483141648" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="2694.01677165063" OwnPage="3" ItemID="483144720" PTYPE="5" WIDTH="786.614173228347" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="389.134488188977" YPOS="3458.09551181102" OwnPage="3" ItemID="483147792" PTYPE="4" WIDTH="17.007874015748" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0.566929133858268" TEXTRA="5.10236220472441" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L17.0079 0 L17.0079 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0" FONT="Liberation Mono Bold" FONTSIZE="10"/>
                 <var name="pgno" FONT="Liberation Mono Bold" FONTSIZE="10" FCOLOR="White" FSHADE="100"/>
                 <trail ALIGN="1" LINESPMode="0" LINESP="10" OpticalMargins="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="3466.45771653543" OwnPage="3" ItemID="482782224" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="659.843149610158" YPOS="2694.01677165063" OwnPage="3" ItemID="482785296" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="135.433700787402" YPOS="3466.45771653543" OwnPage="3" ItemID="482788368" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="3466.45771653543" OwnPage="3" ItemID="483150864" PTYPE="5" WIDTH="255.11811023622" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="659.843149610158" YPOS="2694.01677165063" OwnPage="3" ItemID="483153936" PTYPE="5" WIDTH="786.6141732" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" PCOLOR2="Black" PLINEART="1" LOCK="1" path="" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="135.433700787402" YPOS="3466.45771653543" OwnPage="3" ItemID="483157008" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="411.811653543307" YPOS="3466.45771656063" OwnPage="3" ItemID="482791440" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="3466.45771656063" OwnPage="3" ItemID="483160080" PTYPE="4" WIDTH="248.031496062992" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.251968504" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L248.031 0 L248.031 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="1001 1010 1011 1100 1101 1110 1111 0000 0001"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="121.260472440945" YPOS="3466.45771653543" OwnPage="3" ItemID="482794512" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="121.260472440945" YPOS="3466.45771653543" OwnPage="3" ItemID="483163152" PTYPE="4" WIDTH="233.858267716535" HEIGHT="21.259842519685" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="3.54330708661417" TEXTRA="7.79527559055118" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" copath="M0 0 L233.858 0 L233.858 21.2598 L0 21.2598 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="6"/>
-                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: ..."/>
+                <ITEXT FONT="Liberation Mono Bold" FONTSIZE="6" CH="Вёрстка материала: Демидов С.В. Автор неизвестен!"/>
                 <trail/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="135.43370079126" YPOS="2694.01677165354" OwnPage="3" ItemID="482797584" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="135.43370079126" YPOS="2694.01677165354" OwnPage="3" ItemID="483166224" PTYPE="4" WIDTH="524.409448818898" HEIGHT="14.17322835" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="4.25196850393701" BEXTRA="4.25196850393701" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L524.409 0 L524.409 14.1732 L0 14.1732 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Liberation Mono Bold" FONTSIZE="8"/>
                 <ITEXT FONT="Liberation Mono Bold" FONTSIZE="8" CH="0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111 0000 0001 0010 0011"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="168.032125984882" YPOS="2715.27661417323" OwnPage="3" ItemID="482800656" PTYPE="4" WIDTH="467.716535433071" HEIGHT="737.007874" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" copath="M0 0 L467.717 0 L467.717 737.008 L0 737.008 L0 0 Z" gXpos="25.5118110236221" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="482590736"/>
+        <PAGEOBJECT XPOS="185.04000000063" YPOS="2715.27661417323" OwnPage="3" ItemID="483169296" PTYPE="4" WIDTH="425.196850393701" HEIGHT="737.007874" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" copath="M0 0 L425.197 0 L425.197 737.008 L0 737.008 L0 0 Z" gXpos="42.5196850393701" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="483135504"/>
     </DOCUMENT>
 </SCRIBUSUTF8NEW>
