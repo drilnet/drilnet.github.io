@@ -414,7 +414,7 @@
 <!-- RemoveIndexLoader() -->
 
 <!-- onload будет выполнен после загрузки страницы -->
-<body id="indexbodyid"
+<body
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
 		VCSPRResetInputFile();
 		VCSPRResetBMPFileSave();
@@ -433,19 +433,18 @@
 		<!-- Герб Украины -->
 
 <!--
-
 		<td width="1%" style="padding-right: 6px; color: #dcdcdc; border-right: 1px solid;">
-
 		<img class="icon" src="images/GerbUA_2.png"
 		title="Сделано в Blender 3D. Ukraine. (C) Демидов С.В. License: Free">
-
 		</td>
-
 -->
 
-		<!-- Остальное -->
+		<!-- Остальное (Герб Украины) -->
 
+<!--
 		<td width="99%" style="padding-left: 6px;">
+-->
+		<td>
 
 		<table width="100%" cellspacing="0" cellpadding="0" border="0">
 		<tr>
@@ -1329,15 +1328,43 @@
 		<tr>
 		<td style="padding-top: 4px;">
 
+			<table width="640px" cellspacing="0" cellpadding="0" border="0">
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите (конвертация написана на JavaScript)">
-			SPR to BMP</a> <span class="smalltxt">(Ресурсоёмкая операция!). <b>SPR</b> - это графический файл Вектор'а-06Ц.</span>
+			<tr>
+				<td class="smalltxt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
 
-			<br>
+				<td align="left" class="smalltxt">
+				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите (конвертация написана на JavaScript)">
+				SPR to BMP</a> (Ресурсоёмкая операция!). <b>SPR</b> - это графический файл Вектор'а-06Ц.
+				</td>
+			</tr>
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			GRF to BMP <span class="smalltxt">(Ресурсоёмкая операция!). <b>GRF</b> - это графический файл Вектор'а-06Ц.</span>
+			<tr>
+				<td class="smalltxt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td align="left" class="smalltxt">
+				GRF to BMP (Ресурсоёмкая операция!). <b>GRF</b> - это графический файл Вектор'а-06Ц.
+				</td>
+			<tr>
+
+			<tr>
+				<td class="smalltxt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td align="left" class="smalltxt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;
+				<b>BMP</b> - это графический файл PC-компьютера.
+				</td>
+			</tr>
+
+			</table>
 
 		</td>
 		</tr>
