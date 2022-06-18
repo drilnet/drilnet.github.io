@@ -2,6 +2,15 @@
 // Написано в FreeBSD, Midnight Commander.
 // Ukraine. (C) Demidov S.V.
 
+// ---
+// | Страница (downloads.html) загружена полностью, убрать анимированную иконку
+// ---
+function VCRemoveClockLoader()
+{
+	// Убрать иконку clock2_white.gif (загрузка завершена).
+	document.getElementById('id_vc_clock_loader').innerHTML = "";
+}
+
 //
 // Установить Radio Buttons по умолчанию.
 //
