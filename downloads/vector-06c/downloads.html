@@ -108,11 +108,14 @@
 	<!-- Установить Radio Buttons по умолчанию (AY, ВГ93, 8080) -->
 	<!-- VCResetRadioButtons() -->
 
+	<!-- Страница загружена полностью, убрать анимированную иконку -->
+	<!-- VCRemoveClockLoader() -->
+
+
 <body onload="
 
-	VCWidthTableCommand8080();
-	VCResetRadioButtons();
-
+	VCWidthTableCommand8080(); VCResetRadioButtons();
+	VCRemoveClockLoader();
 ">
 
 <a name="255"></a>
@@ -133,6 +136,11 @@
 
 			<td width="1%" class="smalltxthobby" style="vertical-align: bottom; padding-left: 4px;">
 			<a href="https://drilnet.github.io" title="https://drilnet.github.io">https://drilnet.github.io</a>
+			</td>
+
+			<!-- Анимированная иконка идёт загрузка -->
+			<td width="1%" id="id_vc_clock_loader" style="vertical-align: bottom; padding-left: 4px;">
+			<img class="icon" src="icons/clock2_white.gif" title="Идёт загрузка страницы!">
 			</td>
 
 			<td align="right" class="smalltxthobby" style="vertical-align: bottom;">
