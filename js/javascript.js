@@ -281,7 +281,7 @@ function CloseModalWinInfMailingAddres(id)
 
 	if (document.getElementById(id_1).style.display == 'none')
 		{
-		// Сменить иконку на sp2.png.
+		// Сменить иконку на sp2.png (минус).
 		document.getElementById(id_2).src = "icons/sp2.png";
 
 		// Открыть спойлер.
@@ -289,7 +289,7 @@ function CloseModalWinInfMailingAddres(id)
 		}
 		else
 		{
-		// Сменить иконку на sp1.png.
+		// Сменить иконку на sp1.png (плюс).
 		document.getElementById(id_2).src = "icons/sp1.png";
 
 		// Закрыть спойлер.
@@ -327,6 +327,6 @@ function G15_RemoveClock()
 // ---
 function RemoveIndexLoader()
 {
-	// Убрать иконку clock.gif (загрузка завершена).
+	// Убрать иконку clock2_white.gif (загрузка завершена).
 	document.getElementById('indexloader').innerHTML = "";
 }
