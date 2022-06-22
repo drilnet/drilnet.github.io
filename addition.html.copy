@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Написано в FreeBSD, Midnight Commander. -->
+<!-- Ukraine. (C) Demidov S.V. -->
+
+	<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
+
+	<script language="javascript" src="js/javascript-addition.js"></script>
+
+	</head>
+
+<!-- Сброс -->
+<!-- AdditionReset(); -->
+
+<body onload="AdditionReset();">
+
+	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
+
+	<tr> <!-- Шапка -->
+	<td>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td width="1%" class="texthobby">
+			<b>Hobby</b>
+			</td>
+
+			<td width="1%" class="smalltxthobby" style="vertical-align: bottom; padding-left: 4px;">
+			<a href="https://drilnet.github.io" title="https://drilnet.github.io">https://drilnet.github.io</a>
+			</td>
+
+			<td align="right" class="smalltxthobby" style="vertical-align: bottom;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td align="right" style="padding-left: 8px;">
+					<i><b>Благодарность</b> (флаги расположены в алфавитном порядке):</i>
+				</td>
+
+				<td style="padding-left: 4px;">
+					<!-- Флаги -->
+					<table class="USCNRU" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons-flags/US_24x24.png"
+					title="Благодарность за GITHUB">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/CN_24x24.png"
+					title="Благодарность за радиодетали и измерительные приборы">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<img class="icon" src="icons-flags/RU_24x24.gif"
+					title="Благодарность за сайт https://zx-pk.ru и за другие ресурсы">
+					</td>
+
+					</tr>
+					</table>
+				</td>
+
+				<td>
+					<td style="padding-left: 4px;">
+					<i><b>Успехов Вам!</b></i>
+					</td>
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+	<hr class="hrwhite">
+
+	<br>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<!-- Иконка GITHUB'а -->
+		<td width="1%" style="padding-right: 6px;">
+		<img class="icon" src="icons/github-logo.png" title="Лицензия на иконку: CC 3.0 BY. Автор: Dave Gandy">
+		</td>
+
+		<td>
+		<a href="https://github.com" title="https://github.com">GITHUB</a>
+		- Моя записная книжка (наброски, заметки и т.д. и т.п.)!
+		</td>
+
+		<td style="padding-right: 16px;">
+
+			<table align="right" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td style="padding: 0px 8px 0px 8px;">
+
+				<!-- Google поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://google.com" target="_blank">
+				<img class="icon" src="icons/googlesearch_20x20.png" title="Поисковая система Google">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 8px 0px 0px">
+
+				<!-- Meta поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://meta.ua" target="_blank">
+				<img class="icon" src="icons/metasearch_20x20.png" title="Украинская поисковая система Meta">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding: 0px 0px 0px 0px">
+
+				<!-- Yandex поиск -->
+
+				<table class="iconsearch" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<a href="https://yandex.ru" target="_blank">
+				<img class="icon" src="icons/yandexsearch_20x20.png" title="Поисковая система Yandex">
+				</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+	</td>
+	</tr> <!-- Конец шапки -->
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- З1 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 1 -->
+
+		<table class="add_pagebgh1" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+		Вставляем текст в html-страницу
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- З2 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 2 -->
+
+		<table class="add_pagebgh2" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+		Введите текст (UTF-8) или вставьте текст (UTF-8) из буфера обмена:
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- TextArea -->
+
+	<tr>
+	<td align="center">
+
+		<textarea id="id_textarea_1" rows="15" cols="128" name="text1">
+		Text 1
+		Text 2
+		Text 3
+		Text 4
+		Text 5
+</textarea>
+
+		<br>
+		<br>
+
+		<!-- Кнопка -->
+		<input type="submit" onclick="AdditionCharCodeAt();" value="Получить код на JavaScript">
+
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- 32 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 2 -->
+
+		<table class="add_pagebgh2" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+		Готовый массив на JavaScript (коды текста, UTF-8)
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Сюда вставляем код (UTF-8) -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+<!-- Здесь код -->
+<textarea id="id_code_utf8" rows="15" cols="128" name="text2">
+var Array_1 =
+
+[
+
+"0054","0065","0078","0074"
+
+];
+</textarea>
+
+		<br>
+		<br>
+
+		Количество элементов в массиве: <span id="id_elarray_1">Нет данных</span>
+		<br>
+		Размер в байтах (количество элементов массива * на 6): <span id="id_elarraybyte_1">Нет данных</span>
+
+		<br>
+		<br>
+
+		<!-- Кнопка -->
+		<input type="submit" onclick="CopyToBuffer_1()" value="Скопировать в буфер обмена">
+
+		<br>
+
+<!-- Скопировать код в буфер обмена (UTF-8) -->
+
+<script>
+function CopyToBuffer_1()
+{
+var copyText = document.getElementById("id_code_utf8");
+copyText.focus();
+copyText.select();
+document.execCommand("copy");
+}
+</script>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- З2 -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок 2 -->
+
+		<table class="add_pagebgh2" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+		Готовый массив на JavaScript (коды текста, CP 866)
+		</td>
+		</tr>
+
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Сюда вставляем код (CP 866) -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+<!-- Здесь код -->
+<textarea id="id_code_cp866" rows="15" cols="128" name="text3">
+var Array_1 =
+
+[
+
+"54","65","78","74"
+
+];
+</textarea>
+
+		<br>
+		<br>
+
+		Количество элементов в массиве: <span id="id_elarray_2">Нет данных</span>
+		<br>
+		Размер в байтах (количество элементов массива * на 4): <span id="id_elarraybyte_2">Нет данных</span>
+
+		<br>
+		<br>
+
+		<!-- Кнопка -->
+		<input type="submit" onclick="CopyToBuffer_2()" value="Скопировать в буфер обмена">
+
+		<br>
+
+<!-- Скопировать код в буфер обмена (CP 866) -->
+
+<script>
+function CopyToBuffer_2()
+{
+var copyText = document.getElementById("id_code_cp866");
+copyText.focus();
+copyText.select();
+document.execCommand("copy");
+}
+</script>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Сброс -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Кнопка сброса -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+			<a href="javascript:AdditionReset()" title="Нажмите">Сброс</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Подвал -->
+
+	<tr>
+	<td align="center" class="smalltxtfooter footer_p">
+
+	<b>Никогда не сдавайся!</b>
+	<br>
+	Написать мне можно на (замечания, предложения): stdls[ухо]mail.ru или bbarsinov[ухо]gmail.com
+	<br>
+	<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+
+	</td>
+	</tr>
+
+	<!-- Иконка -->
+
+	<tr>
+	<td align="center">
+
+	<img src="icons/Disabled_Person_(mini).gif" title="Человек с ограниченными возможностями">
+
+	</td>
+	</tr>
+
+	</table>
+
+</body>
+</html>
