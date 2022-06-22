@@ -1,0 +1,4 @@
+
+Набор:    Oxygen
+Дизайнер: Oxygen Team
+Лицензия: GPL
