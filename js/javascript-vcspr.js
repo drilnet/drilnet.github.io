@@ -166,7 +166,7 @@ function VCSPR(id)
 		errorspr = 1;
 
 		// Распаковка (распаковка в  screen_vector_8000_FFFF[addrvcs]).
-		for (addrspr = addrspr; addrspr > 15; addrspr--)
+stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
 			{
 
 			// Логическое И (&).
@@ -195,17 +195,13 @@ function VCSPR(id)
 					{
 					addrspr--;
 
-					// Что это значит?
-					// Экранная область Вектор'а полностью заполнена!
-					// Но! Есть ещё SPR-данные!
+					// Проверить, если выход за пределы экранной области Вектор'а.
 					if (addrvcs == -1)
 						{
 						// Ошибка SPR-файла!
 						errorspr = 0;
-
 						// Завершение циклов.
-						break;
-						break;
+						break stop1;
 						}
 
 					screen_vector_8000_FFFF[addrvcs] = bufferspr[addrspr];
@@ -228,17 +224,13 @@ function VCSPR(id)
 				for (cb = 0; cb < tb; cb++)
 					{
 
-					// Что это значит?
-					// Экранная область Вектор'а полностью заполнена!
-					// Но! Есть ещё SPR-данные!
+					// Проверить, если выход за пределы экранной области Вектор'а.
 					if (addrvcs == -1)
 						{
 						// Ошибка SPR-файла!
 						errorspr = 0;
-
 						// Завершение циклов.
-						break;
-						break;
+						break stop1;
 						}
 
 					screen_vector_8000_FFFF[addrvcs] = bufferspr[addrspr];
