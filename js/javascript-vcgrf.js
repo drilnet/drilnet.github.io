@@ -27,7 +27,7 @@ function VCGRFResetReference()
 	// Сбросить справочную информацию в нет данных.
 	document.getElementById('id_grffilename').innerHTML = "Нет данных";
 		document.getElementById('id_grfsizeall').innerHTML = "Нет данных";
-			document.getElementById('id_grfsizedata').innerHTML = "Нет данных";
+			document.getElementById('id_grfsizedata').innerHTML = "<span title=\"Нет данных\">Нет данных</span>";
 				document.getElementById('id_grfcolor').innerHTML = "Нет данных";
 					document.getElementById('id_errorgrf').innerHTML = "Нет данных";
 }
@@ -111,7 +111,7 @@ function VCGRF(id)
 		// Минус цвета, но плюс нулевой байт и плюс мусор.
 		grfsizedata = grfsizeall - 16;
 
-		temp = "<span title=\"минус цвета, но плюс нулевой байт и плюс мусор\">" + grfsizedata + " байт(а), в hex: ";
+		temp = "<span title=\"Минус цвета, но плюс нулевой байт и плюс мусор\">" + grfsizedata + " байт(а), в hex: ";
 		temp += grfsizedata.toString(16) + " байт(а)" + "</span>";
 
 		// вставить в страницу размер grf-данных.
