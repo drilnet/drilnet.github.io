@@ -1360,7 +1360,7 @@
 				</td>
 
 				<td align="left" class="smalltxt">
-				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите (конвертация написана на JavaScript)">
+				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите (плюс там есть небольшая галерея SPR-файлов, конвертация написана на JavaScript)">
 				SPR to BMP</a> (Ресурсоёмкая операция!). <b>SPR</b> - это графический файл Вектор'а-06Ц.
 				</td>
 			</tr>
@@ -1371,7 +1371,7 @@
 				</td>
 
 				<td align="left" class="smalltxt">
-				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinGRFtoBMP')" title="Нажмите (конвертация написана на JavaScript)">
+				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinGRFtoBMP')" title="Нажмите (плюс там есть небольшая галерея GRF-файлов, конвертация написана на JavaScript)">
 				GRF to BMP</a> (Ресурсоёмкая операция!). <b>GRF</b> - это графический файл Вектор'а-06Ц.
 				</td>
 			<tr>
@@ -8174,7 +8174,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			</tr>
 
 			<tr>
-			<td align="right"><span title="минус цвета, но плюс нулевой байт и плюс мусор">Размер GRF-данных:</span></td>
+			<td align="right"><span title="Минус цвета, но плюс нулевой байт и плюс мусор">Размер GRF-данных:</span></td>
 			<td>&nbsp;</td>
 
 			<td align="left">
@@ -8326,7 +8326,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		<tr>
 		<td align="left" class="smalltxt">
 
-			Аппаратная часть платы - Терентьев С.В. Программная часть - Терентьев С.В. и Третьяков А.Л.
+			Аппаратная часть (плата) - Терентьев С.В. Программная часть - Терентьев С.В. и Третьяков А.Л.
 			<br>
 			Идея подключить камеру к Вектор'у-06Ц - Терентьев С.В.
 			<br>
