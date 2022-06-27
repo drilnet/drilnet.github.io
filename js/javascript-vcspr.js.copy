@@ -257,7 +257,7 @@ stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
 
 			// Построить экранную область Вектор'а (256px x 256px) в браузере.
 			// Ресурсоёмкая операция!
-			VCSPRBuildRegeon256x256px();
+			VCBuildRegeon256x256px('region_1_256x256', 's');
 
 			// Цвета SPR-файла в отдельный массив.
 			var SPRColor = [];
@@ -269,7 +269,7 @@ stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
 				}
 
 		// Наполнить экранную область Вектор'а построенную в браузере (с перекодировкой цвета).
-		VCSPRPush(screen_vector_8000_FFFF, SPRColor);
+		VCSPRGRFPush(screen_vector_8000_FFFF, SPRColor, 's');
 
 		// Имя BMP-файлу.
 		temp = file.name;
@@ -284,10 +284,10 @@ stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
 
 		// Активировать кнопку Сохранить BMP-файл.
 		id_filebmp_save_s.setAttribute('style', ''); // Удалить серый цвет.
-			document.getElementById('id_filebmp_save_s').className = "sprgrf_bmpsave_s"; // Установить class sprgrf_bmpsave_s.
+			document.getElementById('id_filebmp_save_s').className = "sprgrf_bmpsave"; // Установить class sprgrf_bmpsave.
 			document.getElementById('id_filebmp_save_s').title = "Нажмите"; // Установить title.
-				id_filebmp_save_s.setAttribute('onclick', 'VCBMP();'); // Установить onClick (FireFox, Google Chrome).
-				id_filebmp_save_s.onclick = function(){VCBMP();}; // Установить onClick (Internet Explorer).
+				id_filebmp_save_s.setAttribute('onclick', 'VCBMP(\'id_filenamebmp_s\', \'s\');'); // Установить onClick (FireFox, Google Chrome).
+				id_filebmp_save_s.onclick = function(){VCBMP('id_filenamebmp_s', 's');}; // Установить onClick (Internet Explorer).
 		}
 		else
 		{
@@ -305,10 +305,10 @@ stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
 // Построить экранную область Вектор'а (256px x 256px) в браузере.
 // Ресурсоёмкая операция!
 //
-function VCSPRBuildRegeon256x256px()
+function VCBuildRegeon256x256px(regeon, sg)
 {
 
-	var x, y, z, id, temp;
+	var x, y, z, id, temp, regeon;
 
 	id = 7; z = 0;
 
@@ -323,7 +323,9 @@ function VCSPRBuildRegeon256x256px()
 			{
 			// Как располагаются id.
 			// s7 s6 s5 s4 s3 s2 s1 s0   s15 s14 s13 s12 s11 s10 s9 s8   s23 s22 s21 s20 s19 s18 s17 s16 и т.д...
-			temp += "<td id=\"s" + id + "\" width=\"1\" height=\"1\" style=\"background: #ffffff;\">" + "</td>";
+			// g7 g6 g5 g4 g4 g3 g1 g0   g15 g14 g13 g12 g11 g10 g9 g8   g23 g22 g21 g20 g19 g18 g17 g16 и т.д...
+			// sg - s или g.
+			temp += "<td id=\"" + sg + id + "\" width=\"1\" height=\"1\" style=\"background: #ffffff;\">" + "</td>";
 
 			id--; z++;
 
@@ -343,13 +345,13 @@ function VCSPRBuildRegeon256x256px()
 	temp += "</table>";
 
 	// Вставить в страницу.
-	document.getElementById('region_1_256x256').innerHTML = temp;
+	document.getElementById(regeon).innerHTML = temp;
 }
 
 //
 // Наполнить экранную область Вектор'а построенную в браузере (с перекодировкой цвета).
 //
-function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
+function VCSPRGRFPush(screen_vector_8000_FFFF, Color, sg)
 {
 	var addr_screen_8000_9FFF = 255; // FFH
 		var addr_screen_A000_BFFF = 8447; // 20FFH
@@ -374,7 +376,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 	var RGB = [];
 
 	var byte, bit8;
-	var addrarraybit8, id, sid, ColorHEX, p1, p2, p3, p4, x, y;
+	var addrarraybit8, id, sgid, ColorHEX, p1, p2, p3, p4, x, y;
 
 	id = 0;
 
@@ -400,7 +402,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 		byte = screen_vector_8000_FFFF[addr_screen_8000_9FFF];
 
 		// Десятичное в двоичное.
-		bit8 = DecToBin(byte);
+		bit8 = VCSGDecToBin(byte);
 
 		// Теперь двоичное число (каждый символ) в массив.
 		array_bit8_8000_9FFF = bit8.split('');
@@ -415,7 +417,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 		byte = screen_vector_8000_FFFF[addr_screen_A000_BFFF];
 
 		// Десятичное в двоичное.
-		bit8 = DecToBin(byte);
+		bit8 = VCSGDecToBin(byte);
 
 		// Теперь двоичное число (каждый символ) в массив.
 		array_bit8_A000_BFFF = bit8.split('');
@@ -430,7 +432,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 		byte = screen_vector_8000_FFFF[addr_screen_C000_DFFF];
 
 		// Десятичное в двоичное.
-		bit8 = DecToBin(byte);
+		bit8 = VCSGDecToBin(byte);
 
 		// Теперь двоичное число (каждый символ) в массив.
 		array_bit8_C000_DFFF = bit8.split('');
@@ -445,7 +447,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 		byte = screen_vector_8000_FFFF[addr_screen_E000_FFFF];
 
 		// Десятичное в двоичное.
-		bit8 = DecToBin(byte);
+		bit8 = VCSGDecToBin(byte);
 
 		// Теперь двоичное число (каждый символ) в массив.
 		array_bit8_E000_FFFF = bit8.split('');
@@ -460,7 +462,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[0]);
+				RGB = VCGetRGB(Color[0]);
 				}
 
 			else
@@ -471,7 +473,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[1]);
+				RGB = VCGetRGB(Color[1]);
 				}
 
 			else
@@ -482,7 +484,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[2]);
+				RGB = VCGetRGB(Color[2]);
 				}
 
 			else
@@ -493,7 +495,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[3]);
+				RGB = VCGetRGB(Color[3]);
 				}
 
 			else
@@ -504,7 +506,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[4]);
+				RGB = VCGetRGB(Color[4]);
 				}
 
 			else
@@ -515,7 +517,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[5]);
+				RGB = VCGetRGB(Color[5]);
 				}
 
 			else
@@ -526,7 +528,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[6]);
+				RGB = VCGetRGB(Color[6]);
 				}
 
 			else
@@ -537,7 +539,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 0)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[7]);
+				RGB = VCGetRGB(Color[7]);
 				}
 
 			else
@@ -548,7 +550,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[8]);
+				RGB = VCGetRGB(Color[8]);
 				}
 
 			else
@@ -559,7 +561,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[9]);
+				RGB = VCGetRGB(Color[9]);
 				}
 
 			else
@@ -570,7 +572,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[10]);
+				RGB = VCGetRGB(Color[10]);
 				}
 
 			else
@@ -581,7 +583,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[11]);
+				RGB = VCGetRGB(Color[11]);
 				}
 
 			else
@@ -592,7 +594,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[12]);
+				RGB = VCGetRGB(Color[12]);
 				}
 
 			else
@@ -603,7 +605,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[13]);
+				RGB = VCGetRGB(Color[13]);
 				}
 
 			else
@@ -614,7 +616,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[14]);
+				RGB = VCGetRGB(Color[14]);
 				}
 
 			else
@@ -625,15 +627,15 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 			    array_bit8_8000_9FFF[addrarraybit8] == 1)
 				{
 				// Получаем RGB.
-				RGB = GetRGB(SPRColor[15]);
+				RGB = VCGetRGB(Color[15]);
 				}
 
-			sid = "s" + id;
+			sgid = sg + id;
 
 			//                R        G        B
 			ColorHEX = "#" + RGB[3] + RGB[4] + RGB[5];
 
-			document.getElementById(sid).style.background = ColorHEX;
+			document.getElementById(sgid).style.background = ColorHEX;
 
 			id++;
 			addrarraybit8--;
@@ -666,7 +668,7 @@ function VCSPRPush(screen_vector_8000_FFFF, SPRColor)
 //
 // Десятичное в двоичное (возвращает строку - восемь бит).
 //
-function DecToBin(byte)
+function VCSGDecToBin(byte)
 {
 	// Возвращает строковое значение.
 	var bit8 = byte.toString(2);
@@ -717,7 +719,7 @@ function DecToBin(byte)
 // Получаем RGB.
 // Перекодировка, цвет Вектор'а в цвет PC-компьютера.
 //
-function GetRGB(sprcolor)
+function VCGetRGB(color)
 {
 	var R, G, B;
 
@@ -729,7 +731,7 @@ function GetRGB(sprcolor)
 	var array_PC_G = [ 0, 36, 72, 108, 144, 180, 216, 255 ]; // 3 бита зелёный. В hex: 00h, 24h, 48h, 6Ch, 90h, B4h, D8h, FFh.
 	var array_PC_B = [ 0, 85, 170, 255 ]; // 2 бита синий. В hex: 00h, 55h, AAh, FFh.
 
-	var bit8 = DecToBin(sprcolor);
+	var bit8 = VCSGDecToBin(color);
 
 	// 2 бита синий.
 	var B_bit = bit8.substr(0, 2);
@@ -851,7 +853,7 @@ function VCSPRResetBMPFileSave()
 //
 // BMP (главное).
 //
-function VCBMP()
+function VCBMP(id_filenamebmp, sg)
 {
 	// Создаём буфер для BMP-файла.
 	var buffer = new ArrayBuffer(196730); // 196730 байт.
@@ -911,7 +913,7 @@ function VCBMP()
 		arraybmp[116] = 0x00; arraybmp[117] = 0x00; arraybmp[118] = 0x00; arraybmp[119] = 0x00;
 			arraybmp[120] = 0x00; arraybmp[121] = 0x00;
 
-	var addrbmp, txt, s, x, y, z, p1, i1, i2, i3, R, G, B;
+	var addrbmp, txt, n, x, y, z, p1, i1, i2, i3, R, G, B;
 
 	// Левый нижний угол BMP-файла.
 	// addrbmp = 122;
@@ -919,7 +921,7 @@ function VCBMP()
 	// Левый верхней угол BMP-файла.
 	addrbmp = 122 + 768 * 256 - 768;
 
-	s = 7;
+	n = 7;
 
 	for (z = 0; z < 256;)
 		{
@@ -930,11 +932,11 @@ function VCBMP()
 			{
 
 			// 8 точек.
-			for (x = 0; x < 8;) // Перебор с s7 ... s0 ... ... ...
+			for (x = 0; x < 8;) // Перебор с s7 ... s0 ... ... ... Перебор с g7 ... g0 ... ... ...
 				{
 
 				// Получаем RGB из экранной области Вектор'а (получаем строку: rgb(x,x,x)).
-				txt = document.getElementById('s' + s).style.backgroundColor;
+				txt = document.getElementById(sg + n).style.backgroundColor;
 
 				// Для проверки:
 				// txt = "rgb(255,255,255)";
@@ -955,13 +957,13 @@ function VCBMP()
 				arraybmp[addrbmp++] = Number(R);
 
 				// Для проверки:
-				// alert(s + ": " + R + " " + G + " " + B);
+				// alert(n + ": " + R + " " + G + " " + B);
 
-				s--;
+				n--;
 				x++;
 				}
 
-			s = s + 16;
+			n = n + 16;
 			y++;
 			}
 
@@ -971,7 +973,7 @@ function VCBMP()
 		}
 
 	// Получаем имя BMP-файла.
-	var nameBMP = document.getElementById('id_filenamebmp_s').innerHTML;
+	var nameBMP = document.getElementById(id_filenamebmp).innerHTML;
 
 	// Записываем BMP-файл на диск.
 

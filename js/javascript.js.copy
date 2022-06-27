@@ -122,7 +122,7 @@ function CloseModalWin(id)
 function OpenShowModalWinSPRGRFtoBMP(id)
 {
 	// Перед открытием модального окна конвертер SPR to BMP.
-	if (id == 'ModalWinSPRtoBMP')
+	if (id == 'ModalWinSPRtoBMP' || id == 'ModalWinGRFtoBMP')
 		{
 		var h = document.documentElement.clientHeight;
 
@@ -136,6 +136,23 @@ function OpenShowModalWinSPRGRFtoBMP(id)
 
 		// Растянуть...
 		document.getElementById("winsprscroll").style.height = h + "px";
+		}
+
+	// Перед открытием модального окна конвертер GRF to BMP.
+	if (id == 'ModalWinGRFtoBMP')
+		{
+		var h = document.documentElement.clientHeight;
+
+		// 64 и 64 - отступ сверху и снизу (до модального окна, наружный отступ).
+		h = h - 64 - 64;
+
+		// - отступ сверху и снизу (в модальном окне, внутренний отступ, приблизительно).
+		// h = h - 63 - 56;
+		// h = h - 73 - 66; // Снизу отступ чуть-чуть больше.
+		h = h - 73 - 66;
+
+		// Растянуть...
+		document.getElementById("wingrfscroll").style.height = h + "px";
 		}
 
 	// Слой затемнения.
@@ -155,6 +172,7 @@ function OpenShowModalWinSPRGRFtoBMP(id)
 		modalWin.style.display = "none"; // "Выключаем" окно.
 
 		if (id == 'ModalWinSPRtoBMP') { VCSPRReset(); }
+		if (id == 'ModalWinGRFtoBMP') { VCGRFReset(); }
 
 		return false;
 		}
@@ -167,6 +185,7 @@ function OpenShowModalWinSPRGRFtoBMP(id)
 			modalWin.style.display = "none"; // "Выключаем" окно.
 
 			if (id == 'ModalWinSPRtoBMP') { VCSPRReset(); }
+			if (id == 'ModalWinGRFtoBMP') { VCGRFReset(); }
 
 			return false;
 			}
@@ -187,6 +206,7 @@ function CloseModalWinSPRGRFtoBMP(id)
 	modalWin.style.display = "none"; // "Выключаем" окно.
 
 	if (id == 'ModalWinSPRtoBMP') { VCSPRReset(); }
+	if (id == 'ModalWinGRFtoBMP') { VCGRFReset(); }
 }
 
 // ---
