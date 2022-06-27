@@ -1870,7 +1870,7 @@
 		padding: 0px 4px 0px 4px;
 		height: 16px;
 		color: #022169;
-		width: 800px;
+		width: 980px;
 		font-size: 1.2em; /* 14px */
 		}
 
@@ -1879,7 +1879,7 @@
 		.add_window {
 		overflow: scroll; /* полоса прокрутки */
 		width: 900px;
-		height: 400px;
+		height: 320px;
 		}
 
 	/* ----------------- */
@@ -3349,14 +3349,14 @@
 		/* SPRGRF to BMP */
 		/* Цвет тексту Сохранить BMP-файл */
 
-		.sprgrf_bmpsave_s {
+		.sprgrf_bmpsave {
 		color: #0144b4;
 		}
 
 		/* SPRGRF to BMP */
 		/* При наведении на Сохранить BMP-файл */
 
-		.sprgrf_bmpsave_s:hover {
+		.sprgrf_bmpsave:hover {
 		color: #0144b4;
 		cursor: pointer;
 		text-decoration: underline;

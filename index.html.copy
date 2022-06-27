@@ -364,6 +364,8 @@
 
 	<!-- VCSPR конвертер -->
 	<script language="javascript" src="js/javascript-vcspr.js"></script>
+	<!-- VCGRF конвертер -->
+	<script language="javascript" src="js/javascript-vcgrf.js"></script>
 
 	<!-- VRLE8 -->
 	<script language="javascript" src="js/javascript-vrle8-coding.js"></script>
@@ -635,6 +637,28 @@
 		</tr>
 
 		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Прекратите Войну -->
+
+	<tr>
+	<td align="center">
+
+		<span style="color: #e00000; font-size: 13px;">Люди! Прекратите Войну!</span>
 
 	</td>
 	</tr>
@@ -1347,7 +1371,8 @@
 				</td>
 
 				<td align="left" class="smalltxt">
-				GRF to BMP (Ресурсоёмкая операция!). <b>GRF</b> - это графический файл Вектор'а-06Ц.
+				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinGRFtoBMP')" title="Нажмите (конвертация написана на JavaScript)">
+				GRF to BMP</a> (Ресурсоёмкая операция!). <b>GRF</b> - это графический файл Вектор'а-06Ц.
 				</td>
 			<tr>
 
@@ -1365,6 +1390,31 @@
 			</tr>
 
 			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td class="tdrepo">
+
+			<br>
+
+		</td>
+		</tr>
+
+		<!-- Эмулятор Славинского -->
+
+		<tr>
+		<td class="tdrepo">
+
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="smalltxt">Кроссплатформенный эмулятор <a href="http://sensi.org/scalar/vector06js" title="Откроется в новой вкладке" target="_blank">vector06js</a></span>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="smalltxt">Работает прямо в браузере! (C) Viacheslav Slavinsky.</span>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="smalltxt">Открытый код эмулятора доступен <a href="https://github.com/svofski/vector06js" title="Откроется в новой вкладке" target="_blank">здесь</a></span>
 
 		</td>
 		</tr>
@@ -7251,7 +7301,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 			Что означает "Ошибка при распаковке: Да"
 			<br>
-			Это когда экранная область Вектор'а полностью заполнена - но остались ещё SPR-данные!
+			Это когда экранная область Вектор'а полностью заполнена - но остались ещё spr-данные!
 			<br>
 			Это неправильный SPR-файл! :)
 			<br>
@@ -7276,12 +7326,15 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			Подпрограмма <b>@DESPR</b>: 16 байт - палитра, 2 байта - 00, дальше идут spr-данные.
 			<br>
 			Что за два байта? Зачем? Вот тебе неправильный SPR-файл! :)
+			<br>
+			<br>
+			Обработку ошибок (логику) можно написать иначе, но я оставлю так!
 
 		</td>
 		</tr>
 		</table>
 
-		<!-- Сохранить в BMP-файл -->
+		<!-- Сохранить BMP-файл -->
 
 		<br>
 
@@ -8001,7 +8054,1194 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 		</table>
 
+	</div> <!-- Конец модального окна -->
+
+	<!--                                     -->
+	<!-- Модальное окно конвертер GRF to BMP -->
+	<!--                                     -->
+
+	<div id="ModalWinGRFtoBMP" class="modalwinconvertsprgrf">
+
+		<!-- Заголовок -->
+
+		<table class="sprgrfbgh1" align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+			Конвертер GRF-файл в BMP-файл
+
+		</td>
+		</tr>
+
+		</table>
+
+	<br>
+
+	<!-- Окно с прокруткой -->
+	<div id="wingrfscroll" style="overflow: scroll; width: 940px; height: 320px;">
+
+		<!-- Предупреждение -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td class="smalltxt sprgrfwarning" align="center">
+
+			Загрузить GRF-файл и подаждать n-секунд!
+			<br>
+			Ресурсоёмкая операция!
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- Поддержка браузеров -->
+
+		<table align="center" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td class="smalltxt">
+
+		Поддержка браузеров: FireFox, Google Chrome, Internet Explorer 11, Opera.
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Выбор GRF-файла -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+
+			<table class="sprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+				<!-- Выбор файла -->
+				<input id="id_filegrf" type="file" onchange="VCGRF('id_filegrf');" accept=".grf" style="display: none;">
+				<label for="id_filegrf">
+
+				<span class="sprgrf_inputfile" title="Нажмите">
+				Загрузить GRF-файл
+				</span>
+
+				</label>
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+
+		<td>&nbsp;</td>
+
+		<td>
+
+			<!-- Сброс -->
+			<table class="sprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+			<a href="javascript:VCGRFReset()" title="Сброс с задержкой (зависит от производительности компьютера)">Сброс</a>
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<!-- Некоторая справочная информация -->
+
+		<br>
+
+		<table class="sprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="right">Файл:</td>
+			<td>&nbsp;</td>
+			<td id="id_grffilename" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Размер GRF-файла:</td>
+			<td>&nbsp;</td>
+			<td id="id_grfsizeall" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right"><span title="минус цвета, но плюс нулевой байт и плюс мусор">Размер GRF-данных:</span></td>
+			<td>&nbsp;</td>
+
+			<td align="left">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td id="id_grfsizedata"><span title="Нет данных">Нет данных</span></td>
+				<td style="padding-left: 3px;"><img class="icon" src="images/warning (info).png" title="Строка имеет всплывающую подсказку"></td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			<tr>
+
+			<tr>
+			<td align="right">Цвета GRF-файла (в hex):</td>
+			<td>&nbsp;</td>
+			<td id="id_grfcolor" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Ошибка:</td>
+			<td>&nbsp;</td>
+			<td id="id_errorgrf" align="left">Нет данных</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Экранная область Вектор'а в браузере -->
+
+		<table class="sprgrf_8000-FFFF" align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Вставить сюда: -->
+			<td id="region_2_256x256" width="256" height="256">
+
+			<!-- Заставка -->
+			<a href="https://gfto.ru/index/konstruktor_3d_teksta/0-37" title="Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)" target="_blank">
+			<img class="icon" src="images-sprgrftobmp/imageGRF.png" >
+			</a>
+
+			</td>
+
+		</table>
+
+		<br>
+
+		<!-- Примечание (ошибка) -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left" class="smalltxt">
+
+			Обработка ошибок:
+			<br>
+			&nbsp;&nbsp;&nbsp;Ошибка Да - Если есть переполнение экранной области Вектор'а!
+			<br>
+			&nbsp;&nbsp;&nbsp;Ошибка Да - Если экранная область Вектор'а не полностью заполнена!
+			<br>
+			&nbsp;&nbsp;&nbsp;Ошибка Да - Если распаковка закончилась не по НОЛЬ!
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Сохранить BMP-файл -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Имя BMP-файла -->
+
+			<td>
+
+				<table class="sprgrf_file" width="320" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="id_filenamebmp_g" align="center" style="color: #cccccc;">
+
+				Пусто
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<!-- Кнопка сохранить BMP-файл -->
+
+			<td>
+
+				<table class="sprgrf_file" style="margin-left: 8px;" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+				<td>
+
+					<!-- Сохранить BMP-файл (сама кнопка) -->
+					<span id="id_filebmp_save_g" style="color: #cccccc;">Сохранить BMP-файл</span>
+
+				</td>
+				</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Небольшая галерея GRF-файлов -->
+
+		<table align="center" class="sprgrfbgh2" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Небольшая галерея GRF-файлов
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Примечание -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left">
+
+			Эти изображения - Это снято было на камеру!
+			<br>
+			Камера подключалась через специальную плату к Вектор'у-06Ц!
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left" class="smalltxt">
+
+			Аппаратная часть платы - Терентьев С.В. Программная часть - Терентьев С.В. и Третьяков А.Л.
+			<br>
+			Идея подключить камеру к Вектор'у-06Ц - Терентьев С.В.
+			<br>
+			<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков.
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Изображения -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 1 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/CHER1.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/CHER1.GRF" title="Нажмите">CHER1.GRF</a> (8576 байт)
+				<br>
+				Черныш С.К.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 2 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/CHER2.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/CHER2.GRF" title="Нажмите">CHER2.GRF</a> (8704 байт)
+				<br>
+				Черныш С.К.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 3 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ED1.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ED1.GRF" title="Нажмите">ED1.GRF</a> (9728 байт)
+				<br>
+				ЭД и КД (Харьковский вариант)
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 4 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ED3.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ED3.GRF" title="Нажмите">ED3.GRF</a> (11776 байт)
+				<br>
+				ЭД и КД (Харьковский вариант)
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 5 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/FR1.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/FR1.GRF" title="Нажмите">FR1.GRF</a> (13824 байт)
+				<br>
+				Терентьев и друзья
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 6 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/FR2.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/FR2.GRF" title="Нажмите">FR2.GRF</a> (15232 байт)
+				<br>
+				Терентьев и друзья
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 7 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/JA2.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/JA2.GRF" title="Нажмите">JA2.GRF</a> (7680 байт)
+				<br>
+				Терентьев С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 8 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/JA3.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/JA3.GRF" title="Нажмите">JA3.GRF</a> (8448 байт)
+				<br>
+				Терентьев С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 9 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/MALENA4.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/MALENA4.GRF" title="Нажмите">MALENA4.GRF</a> (12544 байт)
+				<br>
+				Нет информации
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 10 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/MU1.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/MU1.GRF" title="Нажмите">MU1.GRF</a> (4352 байт)
+				<br>
+				Нет информации
+				<br>
+				20 век, 90-е года
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 11 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/MU2.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/MU2.GRF" title="Нажмите">MU2.GRF</a> (6016 байт)
+				<br>
+				Нет информации
+				<br>
+				20 век, 90-е года
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 12 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/PIC1.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/PIC1.GRF" title="Нажмите">PIC1.GRF</a> (18688 байт)
+				<br>
+				Нет информации
+				<br>
+				20 век, 90-е года
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 13 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/PIC2.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/PIC2.GRF" title="Нажмите">PIC2.GRF</a> (24576 байт)
+				<br>
+				Нет информации
+				<br>
+				20 век, 90-е года
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 14 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ROM1.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ROM1.GRF" title="Нажмите">ROM1.GRF</a> (8576 байт)
+				<br>
+				Роман Белик
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 15 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ROM2.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ROM2.GRF" title="Нажмите">ROM2.GRF</a> (8832 байт)
+				<br>
+				Роман Белик
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 16 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ROM3.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ROM3.GRF" title="Нажмите">ROM3.GRF</a> (9216 байт)
+				<br>
+				Роман Белик и Демидов С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 17 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ROM4.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ROM4.GRF" title="Нажмите">ROM4.GRF</a> (8320 байт)
+				<br>
+				Роман Белик и Демидов С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 18 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ROM5.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ROM5.GRF" title="Нажмите">ROM5.GRF</a> (8192 байт)
+				<br>
+				Роман Белик
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 19 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/ROM7.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/ROM7.GRF" title="Нажмите">ROM7.GRF</a> (9472 байт)
+				<br>
+				Роман Белик и Демидов С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 20 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/STAS00.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/STAS00.GRF" title="Нажмите">STAS00.GRF</a> (9216 байт)
+				<br>
+				Демидов С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 21 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/STAS03.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/STAS03.GRF" title="Нажмите">STAS03.GRF</a> (8448 байт)
+				<br>
+				Виталик Дражен
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 22 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/STAS05.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/STAS05.GRF" title="Нажмите">STAS05.GRF</a> (9088 байт)
+				<br>
+				Виталик Дражен и Демидов С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 23 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/STAS06.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/STAS06.GRF" title="Нажмите">STAS06.GRF</a> (10368 байт)
+				<br>
+				Виталик Дражен и Демидов С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 24 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/STAS07.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/STAS07.GRF" title="Нажмите">STAS07.GRF</a> (12416 байт)
+				<br>
+				Виталик Дражен и Демидов С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 25 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/TENX1.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/TENX1.GRF" title="Нажмите">TENX1.GRF</a> (13312 байт)
+				<br>
+				Терентьев С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 26 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/TENX2.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/TENX2.GRF" title="Нажмите">TENX2.GRF</a> (12928 байт)
+				<br>
+				Терентьев С.В.
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 27 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/VITRYK1.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/VITRYK1.GRF" title="Нажмите">VITRYK1.GRF</a> (9600 байт)
+				<br>
+				Виталик Рыков
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Изображение 28 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/VITRYK2.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/VITRYK2.GRF" title="Нажмите">VITRYK2.GRF</a> (11008 байт)
+				<br>
+				Виталик Рыков
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 29 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/VITRYK3.png">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/VITRYK3.GRF" title="Нажмите">VITRYK3.GRF</a> (9088 байт)
+				<br>
+				Виталик Рыков
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Изображение 30 -->
+
+				<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf/VITRYK4.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/VITRYK4.GRF" title="Нажмите">VITRYK4.GRF</a> (14208 байт)
+				<br>
+				Виталик Рыков
+				<br>
+				20 век, 90-е года
+				<br>
+				<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="3"><br></td></tr>
+
+		<tr>
+
+			<td colspan="3" align="center">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td align="center">
+
+					<!-- Изображение 31 -->
+
+					<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					<img class="icon" src="images-gallery-grf/ZELYA1.png">
+
+					</td>
+					</tr>
+					</table>
+
+					<br>
+					<a href="images-gallery-grf/ZELYA1.GRF" title="Нажмите">ZELYA1.GRF</a> (14720 байт)
+					<br>
+					Виталик Дражен
+					<br>
+					20 век, 90-е года
+					<br>
+					<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+				</td>
+
+				<td align="center" style="padding-left: 8px;">
+
+					<!-- Изображение 32 -->
+
+					<table class="sprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					<img class="icon" src="images-gallery-grf/ZELYA2.png">
+
+					</td>
+					</tr>
+					</table>
+
+					<br>
+					<a href="images-gallery-grf/ZELYA2.GRF" title="Нажмите">ZELYA2.GRF</a> (5888 байт)
+					<br>
+					Виталик Дражен
+					<br>
+					20 век, 90-е года
+					<br>
+					<span class="smalltxt"><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина), Харьков</span>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+
+		</table>
+
+	<br>
+
+	<!-- SV -->
+
+	<div align="center" class="smalltxt">
+	Лицензия на скрипт (GRF to BMP): Free.
+	<br>
+	<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
 	</div>
+
+	<br>
+
+	</div> <!-- Конец окну с прокруткой -->
+
+		<!-- Закрыть модальное окно -->
+
+		<br>
+
+		<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+		<a href="javascript:CloseModalWinSPRGRFtoBMP('ModalWinGRFtoBMP')">закрыть</a>
+		</td>
+		</tr>
+
+		</table>
+
+	</div> <!-- Конец модального окна -->
 
 	<!--                          -->
 	<!-- Модальные окна Puzzle 15 -->
