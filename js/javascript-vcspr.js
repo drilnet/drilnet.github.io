@@ -241,7 +241,9 @@ stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
 
 			}
 
-		if (errorspr == 1)
+		// "Ошибка при распаковке: Да" - Если есть переполнение экранной области Вектор'а!
+		// "Ошибка при распаковке: Да" - Если экранная область Вектор'а не полностью заполнена!
+		if (errorspr == 1 && addrvcs == -1)
 			{
 			temp = "Нет (экранная область Вектор\'а - " + screen_vector_8000_FFFF.length + " байт, ";
 			temp += "в hex - " + screen_vector_8000_FFFF.length.toString(16) + " байт)";
