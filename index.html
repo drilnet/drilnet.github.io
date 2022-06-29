@@ -7297,16 +7297,26 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 		<table align="center" cellspacing="0" cellpadding="0" border="0">
 		<tr>
+		<td align="left" class="smalltxt">
+
+			"Ошибка при распаковке: Да" - Если есть переполнение экранной области Вектор'а!
+			<br>
+			"Ошибка при распаковке: Да" - Если экранная область Вектор'а не полностью заполнена!
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
 		<td align="center" class="smalltxt">
-
-			Что означает "Ошибка при распаковке: Да"
+		
+			Переполнение экранной области:
 			<br>
-			Это когда экранная область Вектор'а полностью заполнена - но остались ещё spr-данные!
-			<br>
-			Это неправильный SPR-файл! :)
-			<br>
-			Примеры неправильных SPR-файлов: <a href="images-gallery-spr/CAT.SPR" title="Нажмите">CAT.SPR</a>, <a href="images-gallery-spr/FISH.SPR" title="Нажмите">FISH.SPR</a> (изображения см. ниже)
-
+			файл <a href="images-gallery-spr/CAT.SPR" title="Нажмите">CAT.SPR</a> и файл <a href="images-gallery-spr/FISH.SPR" title="Нажмите">FISH.SPR</a> (изображения см. ниже)
+		
 		</td>
 		</tr>
 		</table>
@@ -7325,10 +7335,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			<br>
 			Подпрограмма <b>@DESPR</b>: 16 байт - палитра, 2 байта - 00, дальше идут spr-данные.
 			<br>
-			Что за два байта? Зачем? Вот тебе неправильный SPR-файл! :)
-			<br>
-			<br>
-			Обработку ошибок (логику) можно написать иначе, но я оставлю так!
+			Что за два байта? Зачем? :)
 
 		</td>
 		</tr>
