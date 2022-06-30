@@ -1361,7 +1361,7 @@
 
 				<td align="left" class="smalltxt">
 				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите (плюс там есть небольшая галерея SPR-файлов, конвертация написана на JavaScript)">
-				SPR to BMP</a> (Ресурсоёмкая операция!). <b>SPR</b> - это графический файл Вектор'а-06Ц.
+				SPR to BMP</a> (Ресурсоёмкая операция!). <a href="https://github.com/drilnet/vector-06c-spr2bmp/wiki" title="Как устроен SPR-файл (откроется в новой вкладке)" target="_blank">SPR</a> - это графический файл Вектор'а-06Ц.
 				</td>
 			</tr>
 
@@ -1372,7 +1372,7 @@
 
 				<td align="left" class="smalltxt">
 				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinGRFtoBMP')" title="Нажмите (плюс там есть небольшая галерея GRF-файлов, конвертация написана на JavaScript)">
-				GRF to BMP</a> (Ресурсоёмкая операция!). <b>GRF</b> - это графический файл Вектор'а-06Ц.
+				GRF to BMP</a> (Ресурсоёмкая операция!). <a href="https://github.com/drilnet/vector-06c-grf2bmp/wiki" title="Как устроен GRF-файл (откроется в новой вкладке)" target="_blank">GRF</a> - это графический файл Вектор'а-06Ц.
 				</td>
 			<tr>
 
