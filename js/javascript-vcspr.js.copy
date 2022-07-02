@@ -85,7 +85,7 @@ function VCSPR(id)
 	var bufferspr = new Uint8Array(reader.result);
 
 	// Получить имя файла с расширением.
-	temp = file.name;
+	var temp = file.name;
 
 	var ext = temp.substr(-3, 3);
 
@@ -101,7 +101,7 @@ function VCSPR(id)
 		// Распаковка SPR-файла.
 		//
 
-		var addrspr, sprsizeall, sprsizedata, z, temp, temp2;
+		var addrspr, sprsizeall, sprsizedata, z, temp2;
 
 		sprsizeall = bufferspr.length;
 

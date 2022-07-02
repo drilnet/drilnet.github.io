@@ -81,7 +81,7 @@ function VCGRF(id)
 	var buffergrf = new Uint8Array(reader.result);
 
 	// Получить имя файла с расширением.
-	temp = file.name;
+	var temp = file.name;
 
 	var ext = temp.substr(-3, 3);
 
@@ -97,7 +97,7 @@ function VCGRF(id)
 		// Распаковка GRF-файла.
 		//
 
-		var addrgrf, grfsizeall, grfsizedata, temp, temp2;
+		var addrgrf, grfsizeall, grfsizedata, temp2;
 
 		grfsizeall = buffergrf.length;
 
