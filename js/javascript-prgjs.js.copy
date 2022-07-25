@@ -6,7 +6,7 @@
 // | PrgJS.
 // ---
 //
-function PrgJS(Array_2, width)
+function PrgJS(Array_2, width, codepage)
 {
 	var Array_3 = [];
 
@@ -21,6 +21,7 @@ function PrgJS(Array_2, width)
 	for(z = 0; z < Array_2.length; z++)
 		{
 		temp1 = Number("0x" + Array_2[z]);
+		if ( codepage == "CP866" ){ temp1 = CodeCP866toCodeUTF8(temp1) }; // код CP866 в код UTF-8.
 		temp2 = String.fromCharCode(temp1); // Возвращает символ из кода.
 
 		if (temp2 == '\n')
