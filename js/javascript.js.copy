@@ -211,6 +211,95 @@ function CloseModalWinSPRGRFtoBMP(id)
 
 // ---
 // | Показать модальное окно.
+// | BMP to SPR и BMP to GRF.
+// ---
+function OpenShowModalWinBMPtoSPRGRF(id)
+{
+	// Перед открытием модального окна конвертер BMP to GRF.
+	if (id == 'ModalWinBMPtoGRF')
+		{
+		var h = document.documentElement.clientHeight;
+
+		// 64 и 64 - отступ сверху и снизу (до модального окна, наружный отступ).
+		h = h - 64 - 64;
+
+		// - отступ сверху и снизу (в модальном окне, внутренний отступ, приблизительно).
+		// h = h - 63 - 56;
+		// h = h - 73 - 66; // Снизу отступ чуть-чуть больше.
+		h = h - 73 - 66;
+
+		// Растянуть...
+		document.getElementById("winbmpgrfscroll").style.height = h + "px";
+		}
+
+	// Слой затемнения.
+	var darkLayer = document.createElement("div");
+		// id чтобы подхватить стиль.
+		darkLayer.id = "shadowbmptosg";
+			// Включаем затемнение.
+			document.body.appendChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "block"; // "Включаем" его.
+
+	darkLayer.onclick = function ()
+		{
+		// При клике на слой затемнения, всё исчезает.
+		darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+		modalWin.style.display = "none"; // "Выключаем" окно.
+
+		if (id == 'ModalWinBMPtoGRF')
+			{
+			VCBMPGRFReset();
+			// Удалить таблицу из модального окна (24 bits to 8 bits).
+			document.getElementById('id_vc_24to8_txt').innerHTML = '';
+			}
+
+		return false;
+		}
+
+	document.addEventListener("keydown", function(e){
+		if (e.which == 27)
+			{
+			// Код, который должен быть выполнен после нажатия на кнопку ESC.
+			darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+			modalWin.style.display = "none"; // "Выключаем" окно.
+
+			if (id == 'ModalWinBMPtoGRF')
+				{
+				VCBMPGRFReset();
+				// Удалить таблицу из модального окна (24 bits to 8 bits).
+				document.getElementById('id_vc_24to8_txt').innerHTML = '';
+				}
+
+			return false;
+			}
+	});
+}
+
+// ---
+// | Закрыть модальное окно.
+// | BMP to SPR и BMP to GRF.
+// ---
+function CloseModalWinBMPtoSPRGRF(id)
+{
+	// Удаляем затемнение.
+	var darkLayer = document.getElementById("shadowbmptosg");
+	darkLayer.parentNode.removeChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "none"; // "Выключаем" окно.
+
+	if (id == 'ModalWinBMPtoGRF')
+		{
+		VCBMPGRFReset();
+		// Удалить таблицу из модального окна (24 bits to 8 bits).
+		document.getElementById('id_vc_24to8_txt').innerHTML = '';
+		}
+}
+
+// ---
+// | Показать модальное окно.
 // | СПРАВОЧНАЯ ИНФОРМАЦИЯ ПО ПОЧТОВОМУ АДРЕСУ.
 // ---
 function OpenShowModalWinInfMailingAddres(id)
