@@ -83,6 +83,66 @@
 	text-decoration: underline;
 	}
 
+	/* Один для всех.
+	/* Фон и бордюр для Radio Button */
+
+	.bgradiobutton {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px;
+	}
+
+	/* Наружный отступ сверху для Radio Button */
+
+	.rbmargint {
+	margin-top: 8px;
+	}
+
+	/* Не показывать стандартный Radio Button */
+
+	.radiobutton {
+	display: none;
+	}
+
+	/* Неактивный Radio Button */
+
+	.radiobutton + label {
+	background: url("images-rb/radio-false.png") no-repeat scroll 0 0;
+	cursor: pointer;
+	padding: 0px 0px 1px 15px;
+	}
+
+	/* Активный Radio Button */
+
+	.radiobutton:checked + label {
+	background: url("images-rb/radio-true.png") no-repeat scroll 0 0;
+	}
+
+	/* Цвет тексту Radio Button */
+
+	.label_radio {
+	color: #006699;
+	}
+
+	/* При наведении на Radio Button */
+
+	.label_radio:hover{
+	color: #006699;
+	text-decoration: underline;
+	}
+
+	/* Внутренний нижний отступ для Radio Button */
+
+	.rbpaddingb {
+	padding-bottom: 1px;
+	}
+
+	/* Внутренний правый отступ для Radio Button */
+
+	.rbpaddingr {
+	padding-right: 4px;
+	}
+
 		/* Маленький шрифт */
 
 		.smalltxt {
@@ -565,6 +625,46 @@
 		/* Для конверторов SPR to BMP и GRF to BMP */
 
 		#shadowsprgrf {
+		position: fixed;
+
+		left: 0; /* Затемнение слева  */
+		top: 0;  /* Затемнение сверху */
+
+		width: 100%;  /* По ширине растянуть на весь экран */
+		height: 100%; /* По высоте растянуть на весь экран */
+
+		z-index: 1;          /* Поверх всех, кроме окна */
+		background: #000000; /* Цвет затемнения         */
+		opacity: 0.2;        /* Прозрачность            */
+		}
+
+	/* Модальное окно для конверторов BMP to SPR и BMP to GRF */
+
+	.modalwinconvertbmpsg {
+	height: auto; /* Высота окна */
+	width: 940px; /* Ширина окна */
+	border: 3px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
+
+	top: 64px; /* Сверху до окна */
+	right: 0;  /* Справа до окна */
+	left: 0;   /* Слева до окна  */
+
+	font-size: 12px; /* Размер шрифта */
+	margin: 0 auto;
+
+	z-index: 2;      /* Поверх всех     */
+	display: none;   /* Сначала невидим */
+	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+	}
+
+		/* При выводе модального окна, затемнение страницы */
+		/* Для конверторов BMP to SPR и BMP to GRF */
+
+		#shadowbmptosg {
 		position: fixed;
 
 		left: 0; /* Затемнение слева  */
@@ -3307,7 +3407,7 @@
 		.sprgrfbgh2 {
 		background: #f0f4f7;
 		border: 1px solid #f0f4f7;
-		padding: 0px 4px 0px 4px;
+		padding: 2px 4px 2px 4px;
 		height: 16px;
 		color: #022169;
 		width: 840px;
@@ -3378,6 +3478,152 @@
 		background: #ffffff;
 		border: 1px solid #e0e2e4;
 		padding: 4px 4px 4px 4px;
+		}
+
+		/* ------------------------*/
+		/* Конвертер BMP to SPRGRF */
+		/* ------------------------*/
+
+		/* BMP to SPRGRF */
+		/* Заголовок 1 для модального окна (фон, бордюр, цвет тексту) */
+
+		.bmpsprgrfbgh1 {
+		background: #f1f8ff;
+		border: 1px solid #f1f8ff;
+		padding: 4px 4px 4px 4px;
+		color: #022169;
+		width: 900px;
+		font-size: 19px;
+		}
+
+		/* BMP to SPRGRF */
+		/* Заголовок 2 (фон, бордюр, цвет тексту) */
+
+		.bmpsprgrfbgh2 {
+		background: #f0f4f7;
+		border: 1px solid #f0f4f7;
+		padding: 1px 4px 3px 4px;
+		height: 24px;
+		color: #022169;
+		width: 840px;
+		font-size: 1.2em; /* 14px */
+		}
+
+		/* BMP to SPRGRF */
+		/* Заголовок 2 (фон, бордюр, цвет тексту) */
+
+		.bmpsprgrfbgh2a {
+		background: #f0f4f7;
+		border: 1px solid #f0f4f7;
+		padding: 1px 4px 3px 4px;
+		height: 24px;
+		color: #022169;
+		width: 860px;
+		font-size: 1.2em; /* 14px */
+		}
+
+		/* BMP to SPRGRF */
+		/* Заголовок 3 (фон, бордюр) */
+
+		.bmpsprgrfbgh3 {
+		background: #f0f0f0;
+		border: 1px solid #e8e8e8;
+		padding: 2px 4px 3px 4px;
+		width: 266px;
+		margin-bottom: 4px;
+		}
+
+		/* BMP to SPRGRF */
+		/* Заголовок 3a (фон, бордюр) */
+
+		.bmpsprgrfbgh3a {
+		background: #f0f0f0;
+		border: 1px solid #e8e8e8;
+		padding: 2px 4px 3px 4px;
+		margin-bottom: 6px;
+		}
+
+		/* BMP to SPRGRF */
+		/* Цвет предупреждению */
+
+		.bmpsprgrfwarning {
+		color: #006000;
+		}
+
+		/* BMP to SPRGRF */
+		/* Фон и Бордюр для: Сохранить файл */
+
+		.bmpsprgrf_file {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		padding: 4px 10px 4px 10px;
+		}
+
+		/* BMP to SPRGRF */
+		/* Цвет тексту Сохранить файл */
+
+		.bmpsprgrf_savefile {
+		color: #0144b4;
+		}
+
+		/* BMP to SPRGRF */
+		/* При наведении на Сохранить файл */
+
+		.bmpsprgrf_savefile:hover {
+		color: #0144b4;
+		cursor: pointer;
+		text-decoration: underline;
+		}
+
+		/* BMP to SPRGRF */
+		/* Цвет текста выбор файла */
+
+		.bmpsprgrf_inputfile {
+		color: #0144b4;
+		}
+
+		/* BMP to SPRGRF */
+		/* При наведении на выбор файла */
+
+		.bmpsprgrf_inputfile:hover {
+		color: #0144b4;
+		cursor: pointer;
+		text-decoration: underline;
+		}
+
+		/* BMP to SPRGRF */
+		/* Фон и Бордюр для некоторая справочная информация */
+
+		.bmpsprgrf_reference {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		padding: 4px 10px 4px 10px;
+		}
+
+		/* BMP to SPRGRF */
+		/* Фон и Бордюр для экранной области Вектор'а */
+
+		.bmpsprgrf_scr {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		padding: 4px 10px 4px 10px;
+		}
+
+		/* BMP to SPRGRF */
+		/* Фон и бордюр для экранной области Вектор'а в браузере */
+
+		.bmpsprgrf_8000-FFFF {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		padding: 4px 4px 4px 4px;
+		}
+
+		/* Фон и бордюр для размещаемого текста странице*/
+
+		.vc_bmpsprgrf_txt_window_bg {
+		background: #f3f4f4;
+		border: 1px solid #c3c6c6;
+		padding: 6px;
 		}
 
 	/* ----------------------********--*/
@@ -3642,6 +3888,16 @@
 
 	.vrle_fzeroerror {
 	color: #c00000;
+	}
+
+	/* VRLEx */
+	/* Фон и бордюр для обновления */
+
+	.vrle_update_bgh1 {
+	background: #f0f0f0;
+	border: 1px solid #e8e8e8;
+	padding: 1px 4px 2px 4px;
+	margin-bottom: 4px;
 	}
 
 		/* PrgJS */

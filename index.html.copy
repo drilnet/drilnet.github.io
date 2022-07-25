@@ -366,6 +366,8 @@
 	<script language="javascript" src="js/javascript-vcspr.js"></script>
 	<!-- VCGRF конвертер -->
 	<script language="javascript" src="js/javascript-vcgrf.js"></script>
+	<!-- VCBMPtoGRF конвертер -->
+	<script language="javascript" src="js/javascript-vcbmptogrf.js"></script>
 
 	<!-- VRLE8 -->
 	<script language="javascript" src="js/javascript-vrle8-coding.js"></script>
@@ -373,6 +375,9 @@
 
 	<!-- Размещение программы JS на странице html -->
 	<script language="javascript" src="js/javascript-prgjs.js"></script>
+
+	<!-- Символ CP866 в символ UTF-8 -->
+	<script language="javascript" src="js/javascript-CP866toUTF8.js"></script>
 
 	</head>
 
@@ -393,6 +398,12 @@
 
 <!-- Пересчитать горизонталь для Структура данных (горизонталь для окна) -->
 <!-- VRLE8WidthDataStructure(); -->
+
+<!-- Установить ширину модальному окну -->
+<!-- VCBMPGRFSetWidthModWin(); -->
+
+<!-- Установить Radio Button (BMP to GRF) -->
+<!-- VCBMPGRFResetRB(); -->
 
 <!-- Вставить в страницу законы Кирхгофа -->
 <!-- BuildKirchhoffLaws(); -->
@@ -421,6 +432,7 @@
 		VCSPRResetInputFile();
 		VCSPRResetBMPFileSave();
 		VRLE8WidthDataStructure();
+		VCBMPGRFSetWidthModWin(); VCBMPGRFResetRB();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
 		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader()">
 
@@ -658,7 +670,7 @@
 	<tr>
 	<td align="center">
 
-		<span style="color: #e00000; font-size: 13px;">Люди! Прекратите Войну!</span>
+		<span style="color: #e00000; font-size: 14px;">Люди! Прекратите Войну!</span>
 
 	</td>
 	</tr>
@@ -1386,6 +1398,28 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;
 				<b>BMP</b> - это графический файл PC-компьютер'а.
+				</td>
+			</tr>
+
+			<tr>
+				<td class="smalltxt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td align="left" class="smalltxt">
+				BMP to SPR
+				</td>
+			</tr>
+
+			<tr>
+				<td class="smalltxt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td align="left" class="smalltxt">
+				<!-- Перед окрытием модального окна, вставим таблицу (24To8) в страницу -->
+				<a href="javascript:VC24To8TXT();OpenShowModalWinBMPtoSPRGRF('ModalWinBMPtoGRF')" title="Нажмите (конвертация написана на JavaScript)">
+				BMP to GRF</a> (Ресурсоёмкая операция! Если использовать предварительный просмотр!).
 				</td>
 			</tr>
 
@@ -2276,6 +2310,15 @@
 		</td>
 
 		<td style="padding-left: 8px;">
+
+			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>
+				Последнее обновление: 25.07.2022 (исправлены ошибки)
+				</td>
+			</tr>
+			</table>
+
 
 			<!-- ! -->
 			<span class="spoilervrle"
@@ -3750,7 +3793,9 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 	// Удалить функцию 1 на JavaScript из страницы (из index.html).
 	document.getElementById('id_vrle8js2').innerHTML = '';
 	// Удалить функцию 2 на JavaScript из страницы (из index.html).
-	document.getElementById('id_vrle8js3').innerHTML = '';
+	document.getElementById('id_vrle8js3').innerHTML = ''; // Вариант с ошибкой.
+	// Удалить функцию 3 на JavaScript из страницы (из index.html).
+	document.getElementById('id_vrle8js4').innerHTML = ''; // Исправленный вариант.
 	}
 }
 </script>
@@ -3852,6 +3897,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 							Спасибо.
 							<br>
 							<br>
+
 							Этот код (Функция 1) в репозитории моего сайта, файл: <a href="https://github.com/drilnet/drilnet.github.io/blob/master/js/javascript-vrle8-coding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">javascript-vrle8-coding.js</a>
 							<br>
 							<br>
@@ -3869,6 +3915,9 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 							</table>
 
 							<br>
+							<span style="color: #e00000;">Этот код с ошибкой (как не надо делать)! Исправленный вариант см. ниже!</span>
+							<br>
+							<br>
 
 							<!-- Здесь функция, которая кодирует -->
 
@@ -3881,6 +3930,66 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 							</table>
 
 							<!-- Концовка для функции 2 -->
+
+							<br>
+
+							<!-- Файл для скачивания (js) -->
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+
+							<!-- Иконка -->
+							<td>
+							<img class="icon" src="icons/js_small.png" title="Иконка из набора: Humano 2. (C) Oliver Scholtz (and others). License: GPL">
+							</td>
+
+							<!-- js-файл -->
+							<td style="padding-left: 6px;">
+							<a href="downloads/vrlex/vrle8-coding_error.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-coding_error.js</a> (в UTF-8) &#60;= <span style="color: #e00000;">Этот код с ошибкой! Исправленный вариант см. ниже!</span>
+							</td>
+
+							</tr>
+							</table>
+
+							<br>
+
+							<!-- Заголовок для функции 2 (исправленный вариант) -->
+
+							<table class="vrlebgh3" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td>
+
+							Функция 2 (см. ниже, исправленный вариант)
+
+							</td>
+							</tr>
+							</table>
+
+							<br>
+
+							Есть цепочка байт повтор. и неповтор.
+							<br>
+							Как правильно порезать одну большую порцию > 127 байт?
+							<br>
+							<br>
+							Количество байт &#60; 127 - часть порции
+							<br>
+							Количество байт = 127 - n-полных порций (n-максимальных порций)
+							<br>
+							Количество байт > 127 - n-полных порций и часть порции
+							<br>
+							<br>
+
+							<!-- Здесь функция, которая кодирует (исправленный вариант) -->
+
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td id="id_vrle8js4">
+							<!-- Сюда вставка -->
+							</td>
+							</tr>
+							</table>
+
+							<!-- Концовка для функции 2 (исправленный вариант) -->
 
 							<br>
 
@@ -4137,11 +4246,11 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 				<td>
 
-				[ <a href="https://en.wikipedia.org/wiki/Truevision_TGA" title="Откроется в новой вкладке" target="_blank">Графический формат Truevision TGA (ENG Wiki)</a> ]
+				[ <a href="https://en.wikipedia.org/wiki/Truevision_TGA" title="Откроется в новой вкладке" target="_blank">Графический формат Truevision TGA (Wiki ENG)</a> ]
 				<br>
-				[ <a href="https://ru.wikipedia.org/wiki/Truevision_TGA" title="Откроется в новой вкладке" target="_blank">Графический формат Truevision TGA (RUS Wiki)</a> ]
+				[ <a href="https://ru.wikipedia.org/wiki/Truevision_TGA" title="Откроется в новой вкладке" target="_blank">Графический формат Truevision TGA (Wiki RUS)</a> ]
 				<br>
-				[ <a href="https://uk.wikipedia.org/wiki/TGA" title="Откроется в новой вкладке" target="_blank">Графический формат Truevision TGA (UKR Wiki)</a> ]
+				[ <a href="https://uk.wikipedia.org/wiki/TGA" title="Откроется в новой вкладке" target="_blank">Графический формат Truevision TGA (Wiki UKR)</a> ]
 
 				</td>
 
@@ -8746,9 +8855,9 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		</tr>
 		</table>
 
-		<!-- Некоторая справочная информация -->
-
 		<br>
+
+		<!-- Некоторая справочная информация -->
 
 		<table class="sprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
 
@@ -8774,7 +8883,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 				<tr>
 
 				<td id="id_grfsizedata"><span title="Нет данных">Нет данных</span></td>
-				<td style="padding-left: 3px;"><img class="icon" src="images/warning (info).png" title="Строка имеет всплывающую подсказку"></td>
+				<td style="padding-left: 6px;"><img class="icon" src="images/warning (info).png" title="Строка имеет всплывающую подсказку"></td>
 
 				</tr>
 				</table>
@@ -9843,6 +9952,2752 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		</table>
 
 	</div> <!-- Конец модального окна -->
+
+	<!--                                     -->
+	<!-- Модальное окно конвертер BMP to GRF -->
+	<!--                                     -->
+
+	<div id="ModalWinBMPtoGRF" class="modalwinconvertbmpsg">
+
+		<!-- Заголовок -->
+
+		<table id="bmpsprgrf_wh1" class="bmpsprgrfbgh1" align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+			Конвертер BMP-файл в GRF-файл (BMP to GRF)
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+	<!-- Окно с прокруткой -->
+	<div id="winbmpgrfscroll" style="overflow: scroll; width: 940px; height: 320px;">
+
+		<!-- Спасибо -->
+		<div align="center" class="smalltxt">
+		Спасибо Автору за GRF-формат (разыскивается Автор GRF-формата)!
+		</div>
+
+		<br>
+
+		<!-- Предупреждение -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td class="smalltxt sprgrfwarning" align="center">
+
+			Загрузить BMP-файл и подаждать n-секунд!
+			<br>
+			Ресурсоёмкая операция!
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Поддержка браузеров -->
+
+		<table align="center" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td class="smalltxt">
+
+		Поддержка браузеров: FireFox, Google Chrome, Internet Explorer 11, Opera.
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Предупреждение -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td class="smalltxt sprgrfwarning" align="left">
+
+			Входной BMP-файл должен быть:
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+				<td>
+				<br>
+				&nbsp;&nbsp;&nbsp;1. Ширина и Высота - 256 x 256 px.
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(не больше, ширина - кратно 8, высота - кратно 1, но лучше 256 x 256 px.).
+					</td>
+
+					<td style="padding-left: 6px;">
+					<img class="icon" src="images/warning (info).png" title="Кратно 8: 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256">
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+				&nbsp;&nbsp;&nbsp;2. Бит на точку - 24 (сначало в индексированный 16 цветов, а потом в RGB).
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+				&nbsp;&nbsp;&nbsp;3. Тип компрессии - 0 (0 - несжатый).
+				</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Выбор BMP-файла -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+
+			<table class="sprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+				<!-- Выбор файла -->
+				<input id="id_filebmpgrf" type="file" onchange="VCBMPtoGRF('id_filebmpgrf');" accept=".bmp" style="display: none;">
+				<label for="id_filebmpgrf">
+
+				<span class="bmpsprgrf_inputfile" title="Нажмите">
+				Загрузить BMP-файл
+				</span>
+
+				</label>
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+
+		<td>&nbsp;</td>
+
+		<td>
+
+			<table class="bmpsprgrf_file" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+			<!-- Сохранить GRF-файл (сама кнопка) -->
+			<span id="id_bfilegrf_save" style="color: #cccccc;">Сохранить GRF-файл</span>
+
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+
+		<td>&nbsp;</td>
+
+		<td>
+
+			<!-- Сброс -->
+			<table class="sprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+			<a href="javascript:VCBMPGRFReset()" title="Сброс с задержкой (зависит от производительности компьютера)">Сброс</a>
+			</td>
+			</tr>
+			</table>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Предварительный просмотр ДА-НЕТ -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+			Предварительный просмотр:&nbsp;
+			</td>
+
+			<!-- ДА -->
+			<td>
+			Да&nbsp;
+			</td>
+
+			<td class="calcledrbpaddingb calcledrbpaddingr">
+
+				<!-- [ x ] -->
+				<input name="bmpgrfview" id="rbbmpgrf_1" class="radiobutton" type="radio" value="" onchange="VCBMPGRFRadioB_1()" checked>
+				<label for="rbbmpgrf_1" class="label_radio" title=""></label>
+
+			</td>
+
+			<!-- НЕТ -->
+			<td>
+			&nbsp;Нет&nbsp;
+			</td>
+
+			<td class="calcledrbpaddingb calcleddrbpaddingr">
+
+				<!-- [   ] -->
+				<input name="bmpgrfview" id="rbbmpgrf_2" class="radiobutton" type="radio" value="" onchange="VCBMPGRFRadioB_2()">
+				<label for="rbbmpgrf_2" class="label_radio" title=""></label>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<div align="center">
+		<b>GRF-файл будет таким:</b>
+		</div>
+
+		<br>
+
+		<!-- Экранная область Вектор'а в браузере -->
+
+		<table class="bmpsprgrf_8000-FFFF" align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<!-- Вставить сюда: -->
+			<td id="region_3_256x256" width="256" height="256">
+
+			<!-- Заставка (заимствуем у images-sprgrftobmp) -->
+			<a href="https://gfto.ru/index/konstruktor_3d_teksta/0-37" title="Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)" target="_blank">
+			<img class="icon" src="images-sprgrftobmp/imageGRF.png" >
+			</a>
+
+			</td>
+
+		</table>
+
+		<br>
+
+		<div align="center">
+		Некоторым избражениям после перекодирования нужна коррекция цвета!
+		<br>
+		Не всегда хороший результат после перекодирования может получится!
+		</div>
+
+		<br>
+
+		<!-- Некоторая справочная информация 1 -->
+		<!-- BMP-файл -->
+
+		<table class="bmpsprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="right">Файл:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_filename" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Начальный адрес изображения:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_addr_1" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Конечный адрес изображения:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_addr_2" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Ширина изображения:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_width" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Высота изображения:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_height" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Бит на точку:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_bitcount" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Тип компрессии:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_compression" align="left">Нет данных</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Некоторая справочная информация 2 -->
+
+		<table class="bmpsprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="right"><span title="8 бит - 256 цветов Вектор'а (именно 256 цветов Вектор'а)">24 бита в 8 бит, всех цветов (в dec):</span></td>
+			<td>&nbsp;</td>
+			<td id="id_vccolor256_1" align="left"><span title="Нет данных">Нет данных</span></td>
+
+			<!-- Подсказка -->
+			<td rowspan="2" align="left">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td style="padding-left: 6px;"><img class="icon" src="images/warning (info).png" title="Строки имеют всплывающие подсказки"></td>
+
+				</tr>
+				</table>
+
+			</td>
+
+			</tr>
+
+			<tr>
+
+			<td align="right" valign="top"><span title="Нет подсказки">Коды цветов Вектор'а (в hex):</span></td>
+			<td>&nbsp;</td>
+
+			<td align="left">
+	
+				<!-- Окно с прокруткой (коды цветов) -->
+				<div style="overflow: scroll; width: 320px; height: 32px;">
+				<span id="id_vccolor256_2"><span title="Нет данных">Нет данных</span></span>
+				</div>
+
+			</td>
+
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Некоторая справочная информация 3 -->
+		<!-- GRF-файл -->
+
+		<table class="bmpsprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="right">Файл:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_grf_filename" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Размер GRF-файла:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_grf_size" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Количество всех повторяющихся (разных):</td>
+			<td>&nbsp;</td>
+			<td align="left">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="id_bmpgrf_t1">
+				<span title="Нет данных">Нет данных</span>
+				</td>
+
+				<!-- Подсказка -->
+				<td style="padding-left: 6px;"><img class="icon" src="images/warning (info).png"
+				title="Результат имеет всплывающую подсказку"></td>
+
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="right">Количество всех неповторяющихся:</td>
+			<td>&nbsp;</td>
+			<td align="left">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td id="id_bmpgrf_t2">
+				<span title="Нет данных">Нет данных</span>
+				</td>
+
+				<!-- Подсказка -->
+				<td style="padding-left: 6px;"><img class="icon" src="images/warning (info).png"
+				title="Результат имеет всплывающую подсказку"></td>
+
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Примечание -->
+
+		<div align="center" class="smalltxt">
+		Размер GRF-файла - Без 16 байт цветов и без нулевого байта.
+		<br>
+		Количество всех повторяющихся и неповторяющихся - Без 16 байт цветов и без нулевого байта.
+		</div>
+
+		<br>
+
+		<!-- Заголовок (маленький) -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<b>Экранная область Вектор'а:</b>
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Здесь экранная область Вектор'а -->
+
+		<table align="center" class="bmpsprgrf_scr" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+			<div id="id_vcscreen_1" align="center" style="display: block; overflow: scroll; width: 800px; height: 132px;">
+
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+			Пусто!
+			<br>
+
+			</div>
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Некоторая справочная информация 4 -->
+		<!-- VSC-файл -->
+
+		<table class="bmpsprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="right">Файл:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_vsc_filename" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Размер VSC-файла:</td>
+			<td>&nbsp;</td>
+			<td align="left">Всегда 32768 байт</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Кнопка -->
+
+		<table class="bmpsprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+			<!-- Сохранить экранную область Вектора (VSC-файл) -->
+			<!-- Сама кнопка -->
+			<span id="id_vc_vsc_g" style="color: #cccccc;">Сохранить экранную область Вектора на диск (VSC-файл)</span>
+
+			</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Некоторая справочная информация 5 -->
+		<!-- TXT-файл -->
+
+		<table class="bmpsprgrf_reference" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="right">Файл:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_txt_filename" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Цвета:</td>
+			<td>&nbsp;</td>
+			<td id="id_bmpgrf_txt_color" align="left">Нет данных</td>
+			</tr>
+
+			<tr>
+			<td align="right">Размер TXT-файла:</td>
+			<td>&nbsp;</td>
+			<td align="left">Всегда 47 байт</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Кнопка -->
+
+		<table class="bmpsprgrf_file" align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+
+			<!-- Сама кнопка -->
+			<span id="id_vc_button_txt_g" style="color: #cccccc;">Сохранить цвета для VSC-файла (TXT-файл)</span>
+
+			</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Небольшая галерея перекодированных файлов (GRF-файлы) -->
+
+		<table id="bmpsprgrf_wh2" align="center" class="bmpsprgrfbgh2" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Небольшая галерея перекодированных файлов (GRF-файлы, разные)
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<div align="center">
+		Уважаемые Правообладатели Изображений!
+		<br>
+		Если я, нарушаю Ваши права - напишите мне на bbarsinov[ухо]gmail.com
+		</div>
+
+		<br>
+
+		<!-- Изображения -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 1 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/ALITA1.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/ALITA1.PNG" title="Нажмите">ALITA1.PNG</a> (256x256, 100478 байт)
+				<br>
+				Фильм - Алита: Боевой ангел
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>, 2019)
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Alita:_Battle_Angel" title="Откроется в новой вкладке" target="_blank">Wiki ENG</a>]
+				[<a href="https://ru.wikipedia.org/wiki/Алита:_Боевой_ангел" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Аліта:_Бойовий_ангел" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 2 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/ALITA1_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/ALITA1.GRF" title="Нажмите">ALITA1.GRF</a> (256x256, 14967 байт)
+				<br>
+				Фильм - Алита: Боевой ангел
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>, 2019)
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Alita:_Battle_Angel" title="Откроется в новой вкладке" target="_blank">Wiki ENG</a>]
+				[<a href="https://ru.wikipedia.org/wiki/Алита:_Боевой_ангел" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Аліта:_Бойовий_ангел" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 3 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/AUTOMOB.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/AUTOMOB.PNG" title="Нажмите">AUTOMOB.PNG</a> (256x256, 83402 байт)
+				<br>
+				Автор: Неизвестен
+				<br>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 4 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/AUTOMOB_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/AUTOMOB.GRF" title="Нажмите">AUTOMOB.GRF</a> (256x256, 15058 байт)
+				<br>
+				Автор: Неизвестен
+				<br>
+				<br>
+				<br>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 5 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE1.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/CHDE1.PNG" title="Нажмите">CHDE1.PNG</a> (256x256, 113889 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 6 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE1_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/CHDE1.GRF" title="Нажмите">CHDE1.GRF</a> (256x256, 17434 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 7 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE2.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/CHDE2.PNG" title="Нажмите">CHDE2.PNG</a> (256x256, 60764 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<span class="smalltxt">Изображение взято с: <a href="https://sticker-collection.com" title="Откроется в новой вкладке" target="_blank">ссылка</a></span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 8 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE2_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/CHDE2.GRF" title="Нажмите">CHDE2.GRF</a> (256x256, 9305 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<br>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 9 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE3.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/CHDE3.PNG" title="Нажмите">CHDE3.PNG</a> (256x256, 47995 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 10 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE3_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/CHDE3.GRF" title="Нажмите">CHDE3.GRF</a> (256x256, 6917 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 11 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE4.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/CHDE4.PNG" title="Нажмите">CHDE4.PNG</a> (256x256, 74176 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<span class="smalltxt">Изображение взято с: <a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">ссылка</a></span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 12 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHDE4_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/CHDE4.GRF" title="Нажмите">CHDE4.GRF</a> (256x256, 12600 байт)
+				<br>
+				Мультсериал
+				<br>
+				Чип и Дейл спешат на помощь
+				<br>
+				Страна: США (<a href="https://en.wikipedia.org/wiki/United_States" title="Откроется в новой вкладке" target="_blank">USA</a>)
+				<br>
+				<a href="http://disney.wikia.com" title="Откроется в новой вкладке" target="_blank">Walt Disney</a>
+				<br>
+				<span class="smalltxt">
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n'_Dale" title="Откроется в новой вкладке" target="_blank">Wiki ENG 1</a>]
+				[<a href="https://en.wikipedia.org/wiki/Chip_'n_Dale:_Rescue_Rangers_(film)" title="Откроется в новой вкладке" target="_blank">Wiki ENG 2</a>]
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Чип_и_Дейл_спешат_на_помощь" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Чіп_і_Дейл_—_бурундучки-рятівнички" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				</span>
+				<br>
+				<br>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 13 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/DIZZY.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/DIZZY.PNG" title="Нажмите">DIZZY.PNG</a> (256x256, 14859 байт)
+				<br>
+
+					<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td align="right">
+						Название:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						Crystal Kingdom Dizzy
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Автор:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						MAC
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Год:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						2017
+						</td>
+
+					</tr>
+
+					</table>
+
+				<span class="smalltxt">Взято с ZXART: <a href="https://zxart.ee/rus/avtory/m/mac/crystal-kingdom-dizzy3/" title="Откроется в новой вкладке" target="_blank">ссылка</a></span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 14 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/DIZZY_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/DIZZY.GRF" title="Нажмите">DIZZY.GRF</a> (256x256, 12811 байт)
+
+					<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td align="right">
+						Название:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						Crystal Kingdom Dizzy
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Автор:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						MAC
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Год:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						2017
+						</td>
+
+					</tr>
+
+					</table>
+
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 15 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/MERCEN.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/MERCEN.PNG" title="Нажмите">MERCEN.PNG</a> (256x256, 9994 байт)
+				<br>
+
+					<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td align="right">
+						Название:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+
+							<td>
+							<span title="Название: Mercenary 4. The Heaven's Devil">Mercenary 4. The H...</span>
+							</td>
+
+							<td>
+							<!-- Подсказка -->
+							<td style="padding-left: 6px;"><img class="icon" src="images/warning (info).png"
+							title="Строка имеет всплывающую подсказку"></td>
+							</td>
+
+							</tr>
+							</table>
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Автор:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						diver
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Год:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						2014
+						</td>
+
+					</tr>
+
+					</table>
+
+				<span class="smalltxt">Взято с ZXART: <a href="https://zxart.ee/rus/avtory/d/diver/mercenary-4-the-heaven-s-devil/" title="Откроется в новой вкладке" target="_blank">ссылка</a></span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 16 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/MERCEN_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/MERCEN.GRF" title="Нажмите">MERCEN.GRF</a> (256x256, 9564 байт)
+				<br>
+
+					<table cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td align="right">
+						Название:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+
+							<td>
+							<span title="Название: Mercenary 4. The Heaven's Devil">Mercenary 4. The H...</span>
+							</td>
+
+							<td>
+							<!-- Подсказка -->
+							<td style="padding-left: 6px;"><img class="icon" src="images/warning (info).png"
+							title="Строка имеет всплывающую подсказку"></td>
+							</td>
+
+							</tr>
+							</table>
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Автор:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						diver
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td align="right">
+						Год:
+						</td>
+
+						<td>&nbsp;</td>
+
+						<td align="left">
+						2014
+						</td>
+
+					</tr>
+
+					</table>
+
+				<br>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 17 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/KOZ1.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/KOZ1.PNG" title="Нажмите">KOZ1.PNG</a> (256x256, 68961 байт)
+				<br>
+				Серия мультфильмов: Козаки
+				<br>
+				Страна: <a href="https://en.wikipedia.org/wiki/Ukraine" title="Откроется в новой вкладке" target="_blank">Украина</a>
+				<br>
+				(Киевская Киностудия)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Казаки_(серия_мультфильмов)" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Козаки_(мультсеріал)" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 18 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/KOZ1_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/KOZ1.GRF" title="Нажмите">KOZ1.RGF</a> (256x256, 10337 байт)
+				<br>
+				Серия мультфильмов: Козаки
+				<br>
+				Страна: <a href="https://en.wikipedia.org/wiki/Ukraine" title="Откроется в новой вкладке" target="_blank">Украина</a>
+				<br>
+				(Киевская Киностудия)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Казаки_(серия_мультфильмов)" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Козаки_(мультсеріал)" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 19 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/KOZ2.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/KOZ2.PNG" title="Нажмите">KOZ2.PNG</a> (256x256, 59456 байт)
+				<br>
+				Серия мультфильмов: Козаки
+				<br>
+				Страна: <a href="https://en.wikipedia.org/wiki/Ukraine" title="Откроется в новой вкладке" target="_blank">Украина</a>
+				<br>
+				(Киевская Киностудия)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Казаки_(серия_мультфильмов)" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Козаки_(мультсеріал)" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 20 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/KOZ2_VC.png" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/KOZ2.GRF" title="Нажмите">KOZ2.GRF</a> (256x256, 9914 байт)
+				<br>
+				Серия мультфильмов: Козаки
+				<br>
+				Страна: <a href="https://en.wikipedia.org/wiki/Ukraine" title="Откроется в новой вкладке" target="_blank">Украина</a>
+				<br>
+				(Киевская Киностудия)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Казаки_(серия_мультфильмов)" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Козаки_(мультсеріал)" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 21 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/KOZ3.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/KOZ3.PNG" title="Нажмите">KOZ3.PNG</a> (256x256, 56309 байт)
+				<br>
+				Серия мультфильмов: Козаки
+				<br>
+				Страна: <a href="https://en.wikipedia.org/wiki/Ukraine" title="Откроется в новой вкладке" target="_blank">Украина</a>
+				<br>
+				(Киевская Киностудия)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Казаки_(серия_мультфильмов)" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Козаки_(мультсеріал)" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 22 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/KOZ3_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/KOZ3.GRF" title="Нажмите">KOZ3.RGF</a> (256x256, 9789 байт)
+				<br>
+				Серия мультфильмов: Козаки
+				<br>
+				Страна: <a href="https://en.wikipedia.org/wiki/Ukraine" title="Откроется в новой вкладке" target="_blank">Украина</a>
+				<br>
+				(Киевская Киностудия)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Казаки_(серия_мультфильмов)" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				[<a href="https://uk.wikipedia.org/wiki/Козаки_(мультсеріал)" title="Откроется в новой вкладке" target="_blank">Wiki UKR</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 23 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/MV-6-1B.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/MV-6-1B.PNG" title="Нажмите">MV-6-1B.PNG</a> (256x256, 66372 байт)
+				<br>
+				<a href="https://www.animenewsnetwork.com" title="Откроется в новой вкладке" target="_blank">AnimeNewsNetwork.com</a>
+				<br>
+				(англоязычный веб-сайт,
+				<br>
+				посвящённый аниме-индустрии)
+				<br>
+				<span class="smalltxt"><a href="https://ru.wikipedia.org" title="Откроется в новой вкладке" target="_blank">Аниме</a> - Японская Мультипликация</span>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 24 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/MV-6-1B_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/MV-6-1B.GRF" title="Нажмите">MV-6-1B.GRF</a> (256x256, 14049 байт)
+				<br>
+				<a href="https://www.animenewsnetwork.com/" title="Откроется в новой вкладке" target="_blank">AnimeNewsNetwork.com</a>
+				<br>
+				(англоязычный веб-сайт,
+				<br>
+				посвящённый аниме-индустрии)
+				<br>
+				<span class="smalltxt"><a href="https://ru.wikipedia.org" title="Откроется в новой вкладке" target="_blank">Аниме</a> - Японская Мультипликация</span>
+				<br>
+				<br>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 25 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NATURE1.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NATURE1.PNG" title="Нажмите">NATURE1.PNG</a> (256x256, 90115 байт)
+				<br>
+				Автор: Неизвестен
+				<br>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 26 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NATURE1_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NATURE1.GRF" title="Нажмите">NATURE1.GRF</a> (256x256, 16070 байт)
+				<br>
+				Автор: Неизвестен
+				<br>
+				Перед конвертацией были
+				<br>
+				правки в <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 27 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NATURE2.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NATURE2.PNG" title="Нажмите">NATURE2.PNG</a> (256x256, 103606 байт)
+				<br>
+				Автор: Неизвестен
+				<br>
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 28 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NATURE2_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NATURE2.GRF" title="Нажмите">NATURE2.GRF</a> (256x256, 18101 байт)
+				<br>
+				Автор: Неизвестен
+				<br>
+				<br>
+				<br>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 29 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NUPOG1.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NUPOG1.PNG" title="Нажмите">NUPOG1.PNG</a> (256x256, 67836 байт)
+				<br>
+				Мультсериал: Ну, Погоди!
+				<br>
+				Страна: Советский Союз, Россия
+				<br>
+				(Союзмультфильм)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Ну,_погоди!" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 30 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NUPOG1_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NUPOG1.GRF" title="Нажмите">NUPOG1.GRF</a> (256x256, 9835 байт)
+				<br>
+				Мультсериал: Ну, Погоди!
+				<br>
+				Страна: Советский Союз, Россия
+				<br>
+				(Союзмультфильм)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Ну,_погоди!" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 31 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NUPOG2.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NUPOG2.PNG" title="Нажмите">NUPOG2.PNG</a> (256x256, 75657 байт)
+				<br>
+				Мультсериал: Ну, Погоди!
+				<br>
+				Страна: Советский Союз, Россия
+				<br>
+				(Союзмультфильм)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Ну,_погоди!" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 32 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NUPOG2_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NUPOG2.GRF" title="Нажмите">NUPOG2.GRF</a> (256x256, 13575 байт)
+				<br>
+				Мультсериал: Ну, Погоди!
+				<br>
+				Страна: Советский Союз, Россия
+				<br>
+				(Союзмультфильм)
+				<br>
+				[<a href="https://ru.wikipedia.org/wiki/Ну,_погоди!" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+				<br>
+				<span class="smalltxt">Мультфильм моего детства</span>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td colspan="4" align="center">
+
+				<table class="bmpsprgrf_reference" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="left">
+
+				Обратите внимание на <a href="images-gallery-grf-2/NUPOG1.PNG" title="Нажмите">NUPOG1.PNG</a>
+				и на <a href="images-gallery-grf-2/NUPOG1.GRF" title="Нажмите">NUPOG1.GRF</a>!
+				Обратите внимание на Зайца, а именно на одежду и рот!
+				<br>
+				Что не так? У <a href="images-gallery-grf-2/NUPOG1.GRF" title="Нажмите">NUPOG1.GRF</a> нехватка цветов!
+				Куда делись цвета? <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>
+				скушал их (индексирование в 16 цветов)!
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td colspan="4" align="center">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+				<td align="center">
+
+					<!-- Заголовок -->
+
+					<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td align="center">
+
+					Оригинал:
+
+					</td>
+					</tr>
+					</table>
+
+					<!-- Изображение 33 -->
+
+					<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					<img class="icon" src="images-gallery-grf-2/NUPOG3.PNG" >
+
+					</td>
+					</tr>
+					</table>
+
+					<br>
+					<a href="images-gallery-grf-2/NUPOG3.PNG" title="Нажмите">NUPOG3.PNG</a> (256x256, 73997 байт)
+					<br>
+					Мультсериал: Ну, Погоди!
+					<br>
+					Страна: Советский Союз, Россия
+					<br>
+					(Союзмультфильм)
+					<br>
+					[<a href="https://ru.wikipedia.org/wiki/Ну,_погоди!" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+					<br>
+					<span class="smalltxt">Мультфильм моего детства</span>
+
+				</td>
+
+				<td align="center" style="padding-left: 8px;">
+
+					<!-- Заголовок -->
+
+					<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td align="center">
+
+					Компьютер Вектор-06Ц:
+
+					</td>
+					</tr>
+					</table>
+
+					<!-- Изображение 34 -->
+
+					<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					<img class="icon" src="images-gallery-grf-2/NUPOG3_VC.PNG" >
+
+					</td>
+					</tr>
+					</table>
+
+					<br>
+					<a href="images-gallery-grf-2/NUPOG3.GRF" title="Нажмите">NUPOG3.GRF</a> (256x256, 11555 байт)
+					<br>
+					Мультсериал: Ну, Погоди!
+					<br>
+					Страна: Советский Союз, Россия
+					<br>
+					(Союзмультфильм)
+					<br>
+					[<a href="https://ru.wikipedia.org/wiki/Ну,_погоди!" title="Откроется в новой вкладке" target="_blank">Wiki RUS</a>]
+					<br>
+					<span class="smalltxt">Мультфильм моего детства</span>
+
+				</td>
+
+				<td align="center" style="padding-left: 8px;">
+
+					<!-- Заголовок -->
+
+					<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td align="center">
+
+					Компьютер Вектор-06Ц:
+
+					</td>
+					</tr>
+					</table>
+
+					<!-- Изображение 35 -->
+
+					<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+
+					<img class="icon" src="images-gallery-grf-2/NUPOG3A_VC.PNG" >
+
+					</td>
+					</tr>
+					</table>
+
+					<br>
+					<a href="images-gallery-grf-2/NUPOG3A.GRF" title="Нажмите">NUPOG3A.GRF</a> (256x256, 10948 байт)
+					<br>
+					Исправленный вариант!
+					<br>
+					Исходный файл: <a href="images-gallery-grf-2/NUPOG3.GRF" title="Нажмите">NUPOG3.GRF</a>
+					<br>
+					Я не художник! :)
+					<br>
+					<br>
+					<br>
+
+				</td>
+
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 36 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/PORTADA.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/PORTADA.PNG" title="Нажмите">PORTADA.PNG</a> (256x256, 63497 байт)
+				<br>
+				<a href="https://en.datosjam.net.pe" title="Откроется в новой вкладке" target="_blank">Ссылка 1</a>
+				<br>
+				<a href="https://en.datosjam.net.pe/manga/dr-stone-manga-could-end-in-march/" title="Откроется в новой вкладке" target="_blank">Ссылка 2</a>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 37 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/PORTADA_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/PORTADA.GRF" title="Нажмите">PORTADA.GRF</a> (256x256, 11416 байт)
+				<br>
+				<a href="https://en.datosjam.net.pe" title="Откроется в новой вкладке" target="_blank">Ссылка 1</a>
+				<br>
+				<a href="https://en.datosjam.net.pe/manga/dr-stone-manga-could-end-in-march/" title="Откроется в новой вкладке" target="_blank">Ссылка 2</a>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 38 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHERRY.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/CHERRY.PNG" title="Нажмите">CHERRY.PNG</a> (256x256, 116758 байт)
+				<br>
+				Автор: Неизвестен 
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 39 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/CHERRY_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/CHERRY.GRF" title="Нажмите">CHERRY.GRF</a> (256x256, 19388  байт)
+				<br>
+				Автор: Неизвестен 
+				<br>
+				<br>
+
+			<td>
+
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Примечание -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3a" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				&nbsp;Просмотр изображения в эмуляторе E3000, просмотр программой <a href="downloads/vector-06c/system-disk-1-fls/VGRF.COM" title="Нажмите">VGRF.COM</a> (просмотр в MicroDOS T-34)&nbsp;
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td align="center">
+
+				<img class="icon" src="images-gallery-grf-2/AUTOMOB_Screenshot.PNG" >
+
+			</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Сравнение с VPCX -->
+
+		<!-- Заголовок -->
+
+		<table id="bmpsprgrf_wh2a" align="center" class="bmpsprgrfbgh2a" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Небольшой тест
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Изображения (небольшой тест) -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 1 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/MNW.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/MNW.PNG" title="Нажмите">MNW.PNG</a> (256x256, 118378 байт)
+				<br>
+				20 век, 90-е года 
+				<br>
+				Автор: Неизвестен 
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				<a href="file:///home/dsv/drilnet.github.io/downloads/vector-06c/system-disk-1-fls/VPCX.COM" title="Нажмите">VPCX</a> Терентьева С.В.:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 2 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/MNW_VPCX.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				256x256
+				<br>
+				20 век, 90-е года 
+				<br>
+				Автор: Неизвестен 
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Мой вариант:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 3 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/MNW_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf/AUTOMOB.PNG" title="Нажмите">MNW.GRF</a> (256x256, 24744 байт)
+				<br>
+				20 век, 90-е года 
+				<br>
+				Автор: Неизвестен 
+
+			</td>
+
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- ! -->
+
+		<div align="center">
+		Обратите внимание на надписи на изображениях: MARS NEEDS WOMEN и Greetings From The Alien Sex Fiend! :)
+		<br>
+		Кто автор этого искусства?
+		</div>
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table id="bmpsprgrf_wh2b" align="center" class="bmpsprgrfbgh2" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Цвета PC-компьютер'а через цвета Вектор'а-06Ц
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Здесь текстовый файл для скачивания (таблица 24 to 8) -->
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+			<!-- Иконка -->
+			<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+			</td>
+
+			<!-- txt-файл -->
+			<td style="padding-left: 6px;">
+			<a href="downloads/bmptosprgrf/24bitsTo8bits.txt" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">24bitsTo8bits.txt</a> (в UTF-8)
+			</td>
+
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Здесь таблица 24 bits to 8 bits -->
+
+		<table align="center" class="vc_bmpsprgrf_txt_window_bg" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td id="id_vc_24to8_txt">
+		<!-- Сюда вставка -->
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- SV -->
+
+		<div align="center" class="smalltxt">
+		Лицензия на скрипт (BMP to GRF): Free.
+		<br>
+		<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+		</div>
+
+		<br>
+
+		<!-- Здесь bmp-файл (hex) -->
+<!--
+		<div id="id_bmptogrf_bmphex" style="display: block;">
+		</div>
+-->
+		<!-- Это не используется (1) -->
+<!--
+		<div id="id_bmptogrf_X1" style="display: block;">
+		</div>
+-->
+	</div> <!-- Конец окну с прокруткой BMP to GRF -->
+
+	<!-- Закрыть модальное окно -->
+
+	<br>
+
+	<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+	<tr>
+	<td>
+	<a href="javascript:CloseModalWinBMPtoSPRGRF('ModalWinBMPtoGRF')">закрыть</a>
+	</td>
+	</tr>
+
+	</table>
+
+	</div> <!-- Конец модального окна BMP to GRF -->
 
 	<!--                          -->
 	<!-- Модальные окна Puzzle 15 -->
@@ -11321,7 +14176,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			<tr>
 
 				<td>
-				Исходники в формате графического редактора <a href="https://www.gimp.org" title="Откроется в новой вкладке">Gimp</a>:
+				Исходники в формате графического редактора <a href="https://www.gimp.org" title="Откроется в новой вкладке" target="_blank">Gimp</a>:
 				</td>
 
 				<td>&nbsp;</td>
