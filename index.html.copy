@@ -12138,11 +12138,11 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 				и на <a href="images-gallery-grf-2/NUPOG1.GRF" title="Нажмите">NUPOG1.GRF</a>!
 				Обратите внимание на Зайца, а именно на одежду и рот!
 				<br>
-				Что не так? У <a href="images-gallery-grf-2/NUPOG1.GRF" title="Нажмите">NUPOG1.GRF</a> нехватка цветов!
-				Куда делись цвета? Часть цветов скушал <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>
-				(индексирование в 16 цветов)!
+				Что не так? У <a href="images-gallery-grf-2/NUPOG1.GRF" title="Нажмите">NUPOG1.GRF</a>, у Зайца исчез язык и исчезли складке на рубашке!
+				Куда они делись?
 				<br>
-				Ещё часть цветов могла потерятся при конвертации BMP в GRF.
+				Индексирование изображения в 16 цветов (в <a href="https://www.gimp.org" title="Графический редактор Gimp (откроется в новой вкладке)" target="_blank">Gimp</a>)
+				и потеря цветов при конвертации BMP в GRF.
 
 				</td>
 				</tr>
