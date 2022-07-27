@@ -34,8 +34,22 @@ function VCResetRadioButtons()
 }
 
 //
+// Установить ширину Системный диск Вектор'а-06Ц (системный диск 1).
+//
+function VCSetSystemDisk1Width()
+{
+	if (window.screen.width >= 1360);
+		{
+		// Установить ширину (таблица).
+		document.getElementById('id_vc_sd1_width_1').style.width = "1100px";
+		// Установить ширину (низ таблицы).
+		document.getElementById('id_vc_sd1_width_2').style.width = "1100px";
+		}
+}
+
+//
 // Описание GRAF16.REL.
-// Вернуть окно в исходное состояние. 
+// Вернуть окно в исходное состояние.
 //
 function VCGRAF16Height_1()
 {
