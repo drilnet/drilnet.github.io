@@ -35,8 +35,15 @@ function VCBMPGRFReset()
 	// Сбросить справочную информацию.
 	VCBMPGRFResetReference();
 
-	// Сбросить inout file.
-//	VCBMPGRFResetInputFile();
+	// -
+	txt = navigator.userAgent;
+
+	// Если не Firefox, то сброс.
+	if (txt.search(/Firefox/) < 0)
+		{
+		// Сбросить inout file.
+		VCBMPGRFResetInputFile();
+		}
 
 	// Сбросить экранную область Вектор'а (256px x 256px) в браузере.
 	VCBMPGRFReset256x256();
