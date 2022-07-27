@@ -3381,12 +3381,70 @@ if (document.getElementById('id_graf16_sp').style.display == 'none')
 
 		<br>
 
-		<!-- Скачать файл -->
+		<!-- Миниатюры -->
+
+		Миниатюры:
+		<br>
+		<br>
 
 		<table cellspacing="0" cellpadding="0" border="0">
 		<tr>
 
-			<!-- Файл 1 -->
+			<!-- Миниатюра 1 -->
+			<td>
+			<img class="icon" src="images/miniature_GRAF16_01.png" title="Миниатюра 1">
+			</td>
+
+			<!-- Миниатюра 2 -->
+			<td>
+			<img class="icon" src="images/miniature_GRAF16_02.png" title="Миниатюра 2">
+			</td>
+
+			<!-- Миниатюра 3 -->
+			<td>
+			<img class="icon" src="images/miniature_GRAF16_03.png" title="Миниатюра 3">
+			</td>
+
+			<td> ... </td>
+
+			<!-- Миниатюра 14 -->
+			<td>
+			<img class="icon" src="images/miniature_GRAF16_14.png" title="Миниатюра 14">
+			</td>
+
+			<!-- Миниатюра 15 -->
+			<td>
+			<img class="icon" src="images/miniature_GRAF16_15.png" title="Миниатюра 15">
+			</td>
+
+			<!-- Миниатюра 16 -->
+			<td>
+			<img class="icon" src="images/miniature_GRAF16_16.png" title="Миниатюра 16">
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- Скачать -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<!-- Скачать pdf-файлы -->
+
+			<td>
+			<!-- Иконка-pdf -->
+			<img class="icon" src="icons/pdf_small.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td style="padding-left: 6px;">
+			<!-- Ссылка -->
+			<a href="dl/GRAF16.pdf" title="Откроется в новой вкладке" target="_blank">GRAF16.pdf</a>
+			</td>
+
+			<td>&nbsp;&nbsp;&nbsp;</td>
+
+		<!-- Скачать файл GRAF16.REL -->
 
 			<td>
 			<!-- Иконка Code -->
