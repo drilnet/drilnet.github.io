@@ -424,6 +424,16 @@
 
 			<tr>
 			<td style="padding-top: 4px;">
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
+				<a href="#boot" title="Перейти">
+				РЕКОМЕНДАЦИИ ПО ЗАМЕНЕ ПЗУ НАЧАЛЬНОЙ ЗАГРУЗКИ В БПЭВМ "ВЕКТОР-06Ц"</a>
+
+			</td>
+			</tr>
+
+			<tr>
+			<td>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
 				<a href="#AY1" title="Перейти">
 				ПРОГРАММИРУЕМЫЙ ГЕНЕРАТОР ЗВУКА AY-3-8910 (ХАРЬКОВСКИЙ ВАРИАНТ - ЦЕНТР "ТЕНЬ"), ПЛЮС "COVOX-D"</a>
@@ -3477,6 +3487,202 @@ if (document.getElementById('id_graf16_sp').style.display == 'none')
 			</td>
 		</tr>
 		</table>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<a name="boot"></a>
+
+	</td>
+	</tr>
+
+	<!-- РЕКОМЕНДАЦИИ ПО ЗАМЕНЕ ПЗУ НАЧАЛЬНОЙ ЗАГРУЗКИ В БПЭВМ "ВЕКТОР-06Ц" -->
+
+	<tr>
+	<td align="center">
+
+		<br>
+
+		<!-- Заголовок -->
+
+		<table class="titlemiddle" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td class="table_bg_a" align="center">
+			РЕКОМЕНДАЦИИ ПО ЗАМЕНЕ ПЗУ НАЧАЛЬНОЙ ЗАГРУЗКИ В БПЭВМ "ВЕКТОР-06Ц"
+			</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Гор. линия 1 -->
+		<hr class="vc_addhr vc_size_tc_1">
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+		<td>
+		<!-- Иконка Chip -->
+		<img class="icon" src="icons/chip.png" title="Иконка из набора Kids. (C) Everaldo Coelho. License: GPL">
+		</td>
+
+		<td align="left" style="padding-left: 6px;">
+
+		<!-- ! -->
+		<span class="vc_spoiler"
+		onclick="javascript:vc_boot_spoiler();"
+		title="Нажмите">
+		Развернуть/Свернуть
+		</span>
+
+<script>
+function vc_boot_spoiler()
+{
+if (document.getElementById('id_boot_sp').style.display == 'none')
+	{
+	// Вставить описание в страницу (boot).
+	VCBOOTTXT();
+	// Открыть спойлер.
+	document.getElementById('id_boot_sp').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('id_boot_sp').style.display = 'none';
+	// Удалить описание из страницы (boot).
+	document.getElementById('id_vc_boot_txt').innerHTML = '';
+	}
+}
+</script>
+
+		</td>
+
+		</tr>
+		</table>
+
+		<!-- Гор. линия 1 -->
+		<hr class="vc_addhr vc_size_tc_1">
+
+		<!-- То, что под спойлером -->
+		<div id="id_boot_sp" style="display: none;">
+
+			<br>
+
+			<!-- Дополнительное окно с прокруткой -->
+
+			<div id="id_vc_boot_window" align="center" class="vc_boot_window">
+
+				<!-- Здесь Radio Buttons -->
+	        		<!-- Растянуть по вертикали -->
+
+				<table class="vc_rb_bg" cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+				<td>
+				Вернуть окно в исходное состояние:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td class="vc_rbpaddingb">
+				<!-- Вернуть окно в исходное состояние -->
+				<input name="boottxt" id="id_boot_txt_1" class="vc_radiobutton" type="radio" value="" checked
+				onchange="VCBootHeight_1();">
+				<label for="id_boot_txt_1" class="vc_label_radio" title=""></label>
+				</td>
+
+				</tr>
+
+				<tr>
+
+				<td>
+				Растянуть окно по вертикали:
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td class="vc_rbpaddingb">
+				<!-- Растянуть окно по вертикали -->
+				<input name="boottxt" id="id_boot_txt_2" class="vc_radiobutton" type="radio" value=""
+				onchange="VCBootHeight_2();">
+				<label for="id_boot_txt_2" class="vc_label_radio" title=""></label>
+				</td>
+
+				</tr>
+
+				</table> <!-- Конец Radio Buttons -->
+
+				<br>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center" style="padding-left: 20px; padding-right: 20px;">
+
+					<!-- Здесь текстовый файл для скачивания -->
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<!-- Иконка -->
+					<img class="icon" src="icons/txt_small.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+					</td>
+
+					<!-- txt-файл -->
+					<td style="padding-left: 6px;">
+					<a href="dl/VCBOOT.TXT" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">VCBOOT.TXT</a> (в UTF-8)
+					</td>
+
+					</tr>
+					</table>
+
+					<br>
+
+					<!-- Здесь текст (описание замены ПЗУ) -->
+
+					<table class="vc_boot_window_bg" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td id="id_vc_boot_txt">
+					<!-- Сюда вставка -->
+					</td>
+					</tr>
+					</table>
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+			</div> <!-- Конец окну с прокруткой -->
+
+		</div> <!-- Конец спойлера Boot -->
+
+		<br>
+
+		Ссылка: <a href="http://sensi.org/scalar/ware/543" title="Откроется в новой вкладке" target="_blank">http://sensi.org/scalar/ware/543</a>
+		<br>
+		<br>
+
+		<!-- Кнопка наверх -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+			<a href="#255" title="Нажмите">Вернуться наверх</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
 
 	<!-- Горизонтальная линия -->
 
