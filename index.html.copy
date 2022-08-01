@@ -1388,7 +1388,7 @@
 
 				<td align="left" class="smalltxt">
 				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinSPRtoBMP')" title="Нажмите (плюс там есть небольшая галерея SPR-файлов, конвертация написана на JavaScript)">
-				SPR to BMP</a> (Ресурсоёмкая операция!). <a href="https://github.com/drilnet/vector-06c-spr2bmp/wiki" title="Как устроен SPR-файл (откроется в новой вкладке)" target="_blank">SPR</a> - это графический файл Вектор'а-06Ц.
+				SPR to BMP</a> Ресурсоёмкая операция! <a href="https://github.com/drilnet/vector-06c-spr2bmp/wiki" title="Как устроен SPR-файл (откроется в новой вкладке)" target="_blank">SPR</a> - это графический файл Вектор'а-06Ц.
 				</td>
 			</tr>
 
@@ -1399,7 +1399,7 @@
 
 				<td align="left" class="smalltxt">
 				<a href="javascript:OpenShowModalWinSPRGRFtoBMP('ModalWinGRFtoBMP')" title="Нажмите (плюс там есть небольшая галерея GRF-файлов, конвертация написана на JavaScript)">
-				GRF to BMP</a> (Ресурсоёмкая операция!). <a href="https://github.com/drilnet/vector-06c-grf2bmp/wiki" title="Как устроен GRF-файл (откроется в новой вкладке)" target="_blank">GRF</a> - это графический файл Вектор'а-06Ц.
+				GRF to BMP</a> Ресурсоёмкая операция! <a href="https://github.com/drilnet/vector-06c-grf2bmp/wiki" title="Как устроен GRF-файл (откроется в новой вкладке)" target="_blank">GRF</a> - это графический файл Вектор'а-06Ц.
 				</td>
 			<tr>
 
@@ -1411,7 +1411,6 @@
 				<td align="left" class="smalltxt">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;
 				<b>BMP</b> - это графический файл PC-компьютер'а.
 				</td>
 			</tr>
@@ -1434,7 +1433,13 @@
 				<td align="left" class="smalltxt">
 				<!-- Перед окрытием модального окна, вставим таблицу (24To8) в страницу -->
 				<a href="javascript:VC24To8TXT();OpenShowModalWinBMPtoSPRGRF('ModalWinBMPtoGRF')" title="Нажмите (конвертация написана на JavaScript)">
-				BMP to GRF</a> (Ресурсоёмкая операция! Если использовать предварительный просмотр!).
+				BMP to GRF</a> Ресурсоёмкая операция! Если использовать предварительный просмотр!
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Добавлен <b>Canvas</b>! <b>Canvas</b> Wiki:
+				<a href="https://en.wikipedia.org/wiki/Canvas_element" title="Откроется в новой вкладке" target="_blank">ENG</a>,
+				<a href="https://ru.wikipedia.org/wiki/Canvas_(HTML)" title="Откроется в новой вкладке" target="_blank">RUS</a>,
+				<a href="https://uk.wikipedia.org/wiki/Canvas" title="Откроется в новой вкладке" target="_blank">UKR</a>.
 				</td>
 			</tr>
 
@@ -7408,7 +7413,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 			<!-- Заставка -->
 			<a href="https://gfto.ru/index/konstruktor_3d_teksta/0-37" title="Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)" target="_blank">
-			<img class="icon" src="images-sprgrftobmp/imageSPR.png" >
+			<img class="icon" src="images-sprgrf/imageSPR.png" >
 			</a>
 
 			</td>
@@ -8933,7 +8938,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 			<!-- Заставка -->
 			<a href="https://gfto.ru/index/konstruktor_3d_teksta/0-37" title="Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)" target="_blank">
-			<img class="icon" src="images-sprgrftobmp/imageGRF.png" >
+			<img class="icon" src="images-sprgrf/imageGRF.png" >
 			</a>
 
 			</td>
@@ -10154,7 +10159,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 		<br>
 
-		<!-- Предварительный просмотр ДА-НЕТ -->
+		<!-- Предварительный просмотр ДА-НЕТ-Canvas -->
 
 		<table align="center" cellspacing="0" cellpadding="0" border="0">
 		<tr>
@@ -10170,8 +10175,8 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 			<td class="calcledrbpaddingb calcledrbpaddingr">
 
-				<!-- [ x ] -->
-				<input name="bmpgrfview" id="rbbmpgrf_1" class="radiobutton" type="radio" value="" onchange="VCBMPGRFRadioB_1()" checked>
+				<!-- [   ] -->
+				<input name="bmpgrfview" id="rbbmpgrf_1" class="radiobutton" type="radio" value="" onchange="VCBMPGRFRadioB_1()">
 				<label for="rbbmpgrf_1" class="label_radio" title=""></label>
 
 			</td>
@@ -10186,6 +10191,19 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 				<!-- [   ] -->
 				<input name="bmpgrfview" id="rbbmpgrf_2" class="radiobutton" type="radio" value="" onchange="VCBMPGRFRadioB_2()">
 				<label for="rbbmpgrf_2" class="label_radio" title=""></label>
+
+			</td>
+
+			<!-- Canvas -->
+			<td>
+			&nbsp;Canvas&nbsp;
+			</td>
+
+			<td class="calcledrbpaddingb calcleddrbpaddingr">
+
+				<!-- [ x ] -->
+				<input name="bmpgrfview" id="rbbmpgrf_3" class="radiobutton" type="radio" value="" onchange="VCBMPGRFRadioB_3()" checked>
+				<label for="rbbmpgrf_3" class="label_radio" title=""></label>
 
 			</td>
 
@@ -10208,9 +10226,9 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			<!-- Вставить сюда: -->
 			<td id="region_3_256x256" width="256" height="256">
 
-			<!-- Заставка (заимствуем у images-sprgrftobmp) -->
+			<!-- Заставка Canvas -->
 			<a href="https://gfto.ru/index/konstruktor_3d_teksta/0-37" title="Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)" target="_blank">
-			<img class="icon" src="images-sprgrftobmp/imageGRF.png" >
+			<img class="icon" src="images-sprgrf/imageGRFCanvas.png" >
 			</a>
 
 			</td>
@@ -12399,6 +12417,149 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 				<tr>
 				<td>
 
+				<img class="icon" src="images-gallery-grf-2/FF.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/FF.PNG" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)">FF.PNG</a> (256x256, 115899 байт)
+				<br>
+				Автор: Неизвестен 
+				<br>
+				<br>
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 39 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/FF_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/FF.GRF" title="Скачать">FF.GRF</a> (256x256, 22361  байт)
+				<br>
+				Автор: Неизвестен 
+				<br>
+				<br>
+
+			<td>
+
+		</tr>
+
+		<tr><td colspan="4"><br></td></tr>
+
+		<tr>
+
+			<td align="center">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 40 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NATURE3.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NATURE3.PNG" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)">NATURE3.PNG</a> (256x256, 135164 байт)
+				<br>
+				Автор: Неизвестен 
+
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Компьютер Вектор-06Ц:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 41 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<img class="icon" src="images-gallery-grf-2/NATURE3_VC.PNG" >
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+				<a href="images-gallery-grf-2/NATURE3.GRF" title="Скачать">NATURE3.GRF</a> (256x256, 19760 байт)
+				<br>
+				Автор: Неизвестен 
+
+			</td>
+
+			<td align="center" style="padding-left: 8px;">
+
+				<!-- Заголовок -->
+
+				<table class="bmpsprgrfbgh3" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+
+				Оригинал:
+
+				</td>
+				</tr>
+				</table>
+
+				<!-- Изображение 42 -->
+
+				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
 				<img class="icon" src="images-gallery-grf-2/CHERRY.PNG" >
 
 				</td>
@@ -12428,7 +12589,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 				</tr>
 				</table>
 
-				<!-- Изображение 39 -->
+				<!-- Изображение 43 -->
 
 				<table class="bmpsprgrf_8000-FFFF" cellspacing="0" cellpadding="0" border="0">
 				<tr>
@@ -12628,6 +12789,18 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		Обратите внимание на надписи на изображениях: MARS NEEDS WOMEN и Greetings From The Alien Sex Fiend! :)
 		<br>
 		Кто автор этого искусства?
+		</div>
+
+		<br>
+
+		<!-- Обращение -->
+
+		<div align="center">
+		Уважаемый соискатель!
+		<br>
+		Что я могу сказать - Сесть и всё это написать заново!
+		<br>
+		<span class="smalltxt">С уважением Демидов С.В.</span>
 		</div>
 
 		<br>
