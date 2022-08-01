@@ -45,9 +45,6 @@ function VCBMPGRFReset()
 		VCBMPGRFResetInputFile();
 		}
 
-	// Сбросить экранную область Вектор'а (256px x 256px) в браузере.
-	VCBMPGRFReset256x256();
-
 	// Установить Radio Button.
 	VCBMPGRFResetRB();
 
@@ -120,13 +117,29 @@ function VCBMPGRFResetInputFile()
 
 //
 // Сбросить экранную область Вектор'а.
+// Установить заставку не Canvas.
 //
 function VCBMPGRFReset256x256()
 {
-	// Заставку заимствуем у images-sprgrftobmp
-	var temp = "<a href=\"https://gfto.ru/index/konstruktor_3d_teksta/0-37\" title=\"Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)\" target=\"_blank\">";
-		temp += "<img class=\"icon\" src=\"images-sprgrftobmp/imageGRF.png\">";
-			temp += "</a>";
+		// Заставка с надписью не Canvas.
+		var temp = "<a href=\"https://gfto.ru/index/konstruktor_3d_teksta/0-37\" title=\"Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)\" target=\"_blank\">";
+			temp += "<img class=\"icon\" src=\"images-sprgrf/imageGRF.png\">";
+				temp += "</a>";
+
+	// Установить заставку.
+	document.getElementById('region_3_256x256').innerHTML = temp;
+}
+
+//
+// Сбросить экранную область Вектор'а.
+// Установить заставку Canvas.
+//
+function VCBMPGRFResetCanvas256x256()
+{
+		// Заставка с надписью Canvas.
+		var temp = "<a href=\"https://gfto.ru/index/konstruktor_3d_teksta/0-37\" title=\"Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)\" target=\"_blank\">";
+			temp += "<img class=\"icon\" src=\"images-sprgrf/imageGRFCanvas.png\">";
+				temp += "</a>";
 
 	// Установить заставку.
 	document.getElementById('region_3_256x256').innerHTML = temp;
@@ -137,8 +150,13 @@ function VCBMPGRFReset256x256()
 //
 function VCBMPGRFResetRB()
 {
-	document.getElementById('rbbmpgrf_1').checked = true;
-	document.getElementById('rbbmpgrf_2').checked = false;
+	document.getElementById('rbbmpgrf_1').checked = false; // Да.
+	document.getElementById('rbbmpgrf_2').checked = false; // Нет.
+	document.getElementById('rbbmpgrf_3').checked = true;  // Canvas.
+
+	// Сбросить экранную область Вектор'а.
+	// Установить заставку Canvas.
+	VCBMPGRFResetCanvas256x256();
 }
 
 //
@@ -196,22 +214,39 @@ function VCBMPGRFResetButtons()
 }
 
 //
-// Предварительный просмотр: Да Нет
+// Button 1.
+// Предварительный просмотр: Да-Нет-Canvas.
 // Включить.
 //
 function VCBMPGRFRadioB_1()
 {
-// Здесь пусто.
+	// Сбросить экранную область Вектор'а.
+	// Установить заставку не Canvas.
+	VCBMPGRFReset256x256();
 }
 
 //
-// Предварительный просмотр: Да Нет
+// Button 2.
+// Предварительный просмотр: Да-Нет-Canvas.
 // Выключить.
 //
 function VCBMPGRFRadioB_2()
 {
 	// Сбросить экранную область Вектор'а.
+	// Установить заставку не Canvas.
 	VCBMPGRFReset256x256();
+}
+
+//
+// Button 3.
+// Предварительный просмотр: Да-Нет-Canvas.
+// Canvas.
+//
+function VCBMPGRFRadioB_3()
+{
+	// Сбросить экранную область Вектор'а.
+	// Установить заставку Canvas.
+	VCBMPGRFResetCanvas256x256();
 }
 
 //
@@ -410,6 +445,7 @@ function VCBMPtoGRF(id)
 		// screen_vector_8000_FFFF[1][x] - Массив 16 цветов Вектор'а.
 		var screen_vector_8000_FFFF = VCBMPtoScreenVC(arrayBMP, bl2, w); // w - ширина (должно быть кратно 8).
 
+		// Предварительный просмотр Да.
 		if (document.getElementById('rbbmpgrf_1').checked === true)
 			{
 
@@ -427,8 +463,26 @@ function VCBMPtoGRF(id)
 
 			}
 
+		// Предварительный просмотр Canvas.
+		if (document.getElementById('rbbmpgrf_3').checked === true)
+			{
+
+			// ----------
+			// Это для предварительного просмотра.
+
+			// Экранная область Вектор'а.
+			document.getElementById('region_3_256x256').innerHTML = "<canvas id=\"id_canvas\" width=\"256\" height=\"256\" style=\"opacity: 1;\">"
+			+ "Браузер не поддерживает Canvas!</canvas>";
+
+			// Наполнить экранную область Вектор'а построенную в браузере (с перекодировкой цвета).
+			VCSPRGRFPushCanvas(screen_vector_8000_FFFF[0], screen_vector_8000_FFFF[1], 'id_canvas');
+
+			// ----------
+
+			}
+
 		// ----------
-		// Это экранная область Вектора (hex-данные).
+		// Это экранная область Вектора (HEX-данные).
 
 		var addrhex;
 
@@ -595,8 +649,345 @@ function VCBMPtoGRF(id)
 }
 
 //
+// Экранную область Вектор'а на страницу браузера.
+//
+function VCSPRGRFPushCanvas(screen_vector_8000_FFFF, Color, id_canvas)
+{
+	var c = document.getElementById(id_canvas);
+	var ctx = c.getContext("2d");
+
+	var addr_screen_8000_9FFF = 255; // FFH
+		var addr_screen_A000_BFFF = 8447; // 20FFH
+			var addr_screen_C000_DFFF = 16639; // 40FFH
+				var addr_screen_E000_FFFF = 24831; // 60FFH
+
+	// Массивы с битами.
+	var array_bit8_8000_9FFF = [];
+	var array_bit8_A000_BFFF = [];
+	var array_bit8_C000_DFFF = [];
+	var array_bit8_E000_FFFF = [];
+
+	// Массив с цветами:
+	//
+	//    RGB[0] - десятичное R;
+	//    RGB[1] - десятичное G;
+	//    RGB[2] - десятичное B;
+	//
+	//    RGB[3] - шестнадцитеричное R (строковое);
+	//    RGB[4] - шестнадцитеричное G (строковое);
+	//    RGB[5] - шестнадцитеричное B (строковое).
+	var RGB = [];
+
+	var byte, bit8;
+	var addrarraybit8, ColorHEX, p1, p2, p3, p4, p5, x, y, xx, yy;
+
+	// Canvas.
+	xx = 0;
+	yy = 0.5; // Почему 0.5 ??? Стас! Стас! Стас! :)
+
+	for (y = 0; y < 256;)
+		{
+
+		// Запомнить!
+		p1 = addr_screen_8000_9FFF;
+		p2 = addr_screen_A000_BFFF;
+		p3 = addr_screen_C000_DFFF;
+		p4 = addr_screen_E000_FFFF;
+
+		// Запомнить!
+		p5 = yy;
+
+	for (x = 0; x < 32;)
+		{
+
+		////////////
+		// Байт 1 //
+		////////////
+
+		// Байт с 8000_FFFF.
+
+		// Получаем байт.
+		byte = screen_vector_8000_FFFF[addr_screen_8000_9FFF];
+
+		// Десятичное в двоичное.
+		bit8 = VCSGDecToBin(byte);
+
+		// Теперь двоичное число (каждый символ) в массив.
+		array_bit8_8000_9FFF = bit8.split('');
+
+		////////////
+		// Байт 2 //
+		////////////
+
+		// Байт с A000_BFFF.
+
+		// Получаем байт.
+		byte = screen_vector_8000_FFFF[addr_screen_A000_BFFF];
+
+		// Десятичное в двоичное.
+		bit8 = VCSGDecToBin(byte);
+
+		// Теперь двоичное число (каждый символ) в массив.
+		array_bit8_A000_BFFF = bit8.split('');
+
+		////////////
+		// Байт 3 //
+		////////////
+
+		// Байт с C000_DFFF.
+
+		// Получаем байт.
+		byte = screen_vector_8000_FFFF[addr_screen_C000_DFFF];
+
+		// Десятичное в двоичное.
+		bit8 = VCSGDecToBin(byte);
+
+		// Теперь двоичное число (каждый символ) в массив.
+		array_bit8_C000_DFFF = bit8.split('');
+
+		////////////
+		// Байт 4 //
+		////////////
+
+		// Байт с E000_FFFF.
+
+		// Получаем байт.
+		byte = screen_vector_8000_FFFF[addr_screen_E000_FFFF];
+
+		// Десятичное в двоичное.
+		bit8 = VCSGDecToBin(byte);
+
+		// Теперь двоичное число (каждый символ) в массив.
+		array_bit8_E000_FFFF = bit8.split('');
+
+		// Перекодируем цвета.
+		for (addrarraybit8 = 0; addrarraybit8 < 8;) // Перебор с 0 ... 7.
+			{
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 0.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[0]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 1.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[1]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 2.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[2]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 3.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[3]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 4.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[4]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 5.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[5]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 6.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[6]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 7.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 0)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[7]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 8.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[8]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 9.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[9]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 10.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[10]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 11.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 0 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[11]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 12.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[12]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 13.
+			    array_bit8_C000_DFFF[addrarraybit8] == 0 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[13]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 0 && // 14.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[14]);
+				}
+
+			else
+
+			if (array_bit8_E000_FFFF[addrarraybit8] == 1 && // 15.
+			    array_bit8_C000_DFFF[addrarraybit8] == 1 &&
+			    array_bit8_A000_BFFF[addrarraybit8] == 1 &&
+			    array_bit8_8000_9FFF[addrarraybit8] == 1)
+				{
+				// Получаем RGB.
+				RGB = VCGetRGB(Color[15]);
+				}
+
+			//                R        G        B
+			ColorHEX = "#" + RGB[3] + RGB[4] + RGB[5];
+
+			// Каждая линия/точка отдельно.
+			ctx.beginPath();
+			// Цвет линии/точки.
+			ctx.strokeStyle = ColorHEX;
+			// Установить курсор (xx - width, yy - height).
+			ctx.moveTo(xx,yy);
+			// Линия/точка из xx,yy в xx+1,yy.
+			ctx.lineTo(xx+1,yy);
+			// Закрыть Path.
+			ctx.closePath();
+			// Завершить.
+			ctx.stroke();
+
+			xx++;
+			addrarraybit8++;
+			}
+
+		addr_screen_8000_9FFF = addr_screen_8000_9FFF + 256;
+		addr_screen_A000_BFFF = addr_screen_A000_BFFF + 256;
+		addr_screen_C000_DFFF = addr_screen_C000_DFFF + 256;
+		addr_screen_E000_FFFF = addr_screen_E000_FFFF + 256;
+
+		x++;
+		}
+
+		// Восстановить.
+		addr_screen_8000_9FFF = p1;
+		addr_screen_A000_BFFF = p2;
+		addr_screen_C000_DFFF = p3;
+		addr_screen_E000_FFFF = p4;
+
+		// -
+		addr_screen_8000_9FFF--;
+		addr_screen_A000_BFFF--;
+		addr_screen_C000_DFFF--;
+		addr_screen_E000_FFFF--;
+
+		// -
+		yy = p5; yy++; xx = 0;
+
+		y++;
+		}
+}
+
+//
 // Наполнить и вернуть экранную область Вектор'а.
-// BMP в экранную область Вектор'а.
+// BMP-данные в экранную область Вектор'а в массив.
 //
 function VCBMPtoScreenVC(arrayBMP, bl2, w)
 {

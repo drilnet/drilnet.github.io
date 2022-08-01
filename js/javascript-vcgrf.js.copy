@@ -51,7 +51,7 @@ function VCGRFResetInputFile()
 function VCGRFReset256x256()
 {
 	var temp = "<a href=\"https://gfto.ru/index/konstruktor_3d_teksta/0-37\" title=\"Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)\" target=\"_blank\">";
-		temp += "<img class=\"icon\" src=\"images-sprgrftobmp/imageGRF.png\">";
+		temp += "<img class=\"icon\" src=\"images-sprgrf/imageGRF.png\">";
 			temp += "</a>";
 
 	// Установить заставку.

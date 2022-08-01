@@ -1,3 +1,7 @@
+
+// Написано в FreeBSD, Midnight Commander.
+// Ukraine. (C) Demidov S.V.
+
 //
 // Сброс.
 //
@@ -47,7 +51,7 @@ function VCGRFResetInputFile()
 function VCGRFReset256x256()
 {
 	var temp = "<a href=\"https://gfto.ru/index/konstruktor_3d_teksta/0-37\" title=\"Надпись сделана: https://gfto.ru (нажмите, откроется в новой вкладке)\" target=\"_blank\">";
-		temp += "<img class=\"icon\" src=\"images-sprgrftobmp/imageGRF.png\">";
+		temp += "<img class=\"icon\" src=\"images-sprgrf/imageGRF.png\">";
 			temp += "</a>";
 
 	// Установить заставку.
@@ -196,7 +200,6 @@ stop1:		for (addrgrf = addrgrf; addrgrf < grfsizeall;)
 
 				for (cb = 0; cb < tb; cb++)
 					{
-
 					// Проверить, если выход за пределы экранной области Вектор'а.
 					if (addrvcs == 32768)
 						{
@@ -240,6 +243,10 @@ stop1:		for (addrgrf = addrgrf; addrgrf < grfsizeall;)
 
 			addrgrf++;
 			} // Конец for..
+
+		if (errorgrf1 != 1) { alert("Переполнение экранной области! " + addrvcs); }
+			if (addrvcs != 32768) { alert("Экранная область Вектор'а не полностью заполнена! " + addrvcs); }
+				if (errorgrf2 != 1) { alert("Распаковка закончилась не по НОЛЬ!" + addrvcs); }
 
 		// Ошибка Да - Если есть переполнение экранной области Вектор'а!
 		// Ошибка Да - Если экранная область Вектор'а не полностью заполнена!
