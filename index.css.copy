@@ -149,6 +149,12 @@
 		font-size: 0.9em;
 		}
 
+		/* Маленький шрифт для modal win (repo) */
+
+		.smalltxtmodrepo {
+		font-size: 0.8em;
+		}
+
 		/* Маленький шрифт для iframe */
 
 		.smalltxtiframe {
@@ -270,7 +276,7 @@
 	padding-bottom: 2px;
 	}
 
-	/* Ширина для строки, названия репозиторий */
+	/* Ширина для строк, названия репозиториев */
 
 	.widthrepo {
 	width: 720px;
@@ -301,6 +307,15 @@
 	border-radius: 2px;
 	padding: 3px 8px 3px 8px;
 	font-size: 11px;
+	}
+
+	/* Заголовок Wiki */
+
+	.wiki_bgh1 {
+	background: #f0f0f0;
+	border: 1px solid #e8e8e8;
+	padding: 2px 4px 3px 4px;
+	margin-bottom: 4px;
 	}
 
 	/* При наведении на строки: Библиотека ПК1, Библиотека ПК2, Библиотека ПК3 */
@@ -677,6 +692,34 @@
 		background: #000000; /* Цвет затемнения         */
 		opacity: 0.2;        /* Прозрачность            */
 		}
+
+	/* Заголовок для анимации */
+
+	.anim_title {
+	background: #f0f2f4;
+	border: 1px solid #f0f2f4;
+	border-radius: 0px;
+	padding: 4px 0px 4px 0px;
+	width: 800px;
+	}
+
+	/* Фон и бордюр для анимации */
+
+	.anim_bg {
+	background: #ffffff;
+	border: 1px solid #e0e2e4;
+	padding: 4px 4px 4px 4px;
+	}
+
+	/* Фон и бордюр для ФИО */
+
+	.anim_name_bg {
+	background: #f0f0f0;
+	border: 1px solid #e8e8e8;
+	padding: 2px 4px 3px 4px;
+	margin-top: 4px;
+	width: 100%;
+	}
 
 	/* ------- */
 	/* CALCDIV */
