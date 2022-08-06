@@ -3661,7 +3661,16 @@
 		padding: 4px 4px 4px 4px;
 		}
 
-		/* Фон и бордюр для размещаемого текста странице*/
+		/* BMP to SPRGRF */
+		/* Фон и бордюр для логотипа */
+
+		.bmpsprgrf_logo {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		padding: 4px 4px 4px 4px;
+		}
+
+		/* Фон и бордюр для размещаемого текста странице */
 
 		.vc_bmpsprgrf_txt_window_bg {
 		background: #f3f4f4;
