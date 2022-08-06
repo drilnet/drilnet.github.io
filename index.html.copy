@@ -10981,56 +10981,6 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 		<br>
 
-		<!-- GRF-Logo -->
-
-		<table align="center" class="bmpsprgrfbgh2" cellspacing="0" cellpadding="0" border="0">
-		<tr>
-		<td align="center">
-
-		Логотип (Logo)
-
-		</tr>
-		</td>
-		</table>
-
-		<br>
-
-		<!-- License -->
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-		<tr>
-		<td>
-
-		Лицензия (License) на Logo: <b>Free</b>
-
-		</td>
-		</tr>
-		</table>
-
-		<br>
-
-		<!-- Сам Logo -->
-
-		<table align="center" class="bmpsprgrf_logo" cellspacing="0" cellpadding="0" border="0">
-		<tr>
-		<td>
-
-		<img class="icon" src="images/animation/GRF-Logo_HQ.webp" title="(C) Демидов С.В.">
-
-		</td>
-		</tr>
-		</table>
-
-		<br>
-
-		<!-- Автор Demidov S.V. -->
-
-		<div align="center" class="smalltxt">
-		<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). (C) Демидов С.В.
-		</div>
-
-		<br>
-
 		<!-- Небольшая галерея перекодированных файлов (GRF-файлы) -->
 
 		<table id="bmpsprgrf_wh2" align="center" class="bmpsprgrfbgh2" cellspacing="0" cellpadding="0" border="0">
@@ -13337,10 +13287,38 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 		<br>
 
+		<!-- GRF-Logo -->
+
+		<table align="center" class="bmpsprgrfbgh2" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		Логотип (Logo)
+
+		</tr>
+		</td>
+		</table>
+
+		<br>
+
+		<!-- Сам Logo -->
+
+		<table align="center" class="bmpsprgrf_logo" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<img class="icon" src="images/animation/GRF-Logo_HQ.webp" title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
 		<!-- SV -->
 
 		<div align="center" class="smalltxt">
-		Лицензия на скрипт (BMP to GRF): Free.
+		Лицензия (License) на Logo и на скрипт BMP to GRF: Free.
 		<br>
 		<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
 		</div>
