@@ -12113,7 +12113,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 				</table>
 
 				<br>
-				<a href="images-gallery-grf-2/KOZ1.GRF" title="Скачать">KOZ1.RGF</a> (256x256, 10337 байт)
+				<a href="images-gallery-grf-2/KOZ1.GRF" title="Скачать">KOZ1.GRF</a> (256x256, 10337 байт)
 				<br>
 				Серия мультфильмов: Козаки
 				<br>
@@ -12287,7 +12287,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 				</table>
 
 				<br>
-				<a href="images-gallery-grf-2/KOZ3.GRF" title="Скачать">KOZ3.RGF</a> (256x256, 9789 байт)
+				<a href="images-gallery-grf-2/KOZ3.GRF" title="Скачать">KOZ3.GRF</a> (256x256, 9789 байт)
 				<br>
 				Серия мультфильмов: Козаки
 				<br>
@@ -13407,7 +13407,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		<tr>
 		<td align="center">
 
-		Логотип (Logo)
+		Логотип (Logo) GRF
 
 		</tr>
 		</td>
