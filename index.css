@@ -3908,6 +3908,25 @@
 	}
 
 	/* VRLEx */
+	/* Дополнительное окно на странице (VRLE8 в SPR) */
+
+	.vrlespr_window {
+	overflow: scroll; /* Полоса прокрутки */
+	width: 700px;
+	height: 264px;
+	}
+
+	/* VRLEx */
+	/* VRLE8 в SPR */
+	/* Фон и бордюр для размещаемого текста */
+
+	.vrlespr_window_bg {
+	background: #f3f4f4;
+	border: 1px solid #c3c6c6;
+	padding: 6px;
+	}
+
+	/* VRLEx */
 	/* Дополнительное окно на странице (Структура данных VRLE8) */
 
 	.vrledst_window {
@@ -3952,64 +3971,85 @@
 	margin-bottom: 4px;
 	}
 
-		/* PrgJS */
-		/* Размещение программы JS на странице html */
+		/* ----------------------------------*/
+		/* Конвертер GRF to SPR и SPR to GRF */
+		/* ----------------------------------*/
 
-		/* PrgJS */
-		/* Таблица для программы на JavaScript */
-		.prgjs_zebra {
-		border-collapse: collapse;
+
+		/* GRF to SPR и SPR to GRF */
+		/* Цвет текста выбор файла */
+
+		.grfspr_sprgrf_inputfile {
+		color: #0144b4;
 		}
 
-		/* PrgJS */
-		/* Зебра 1, для программы на JavaScript */
+		/* GRF to SPR и SPR to GRF */
+		/* При наведении на выбор файла */
 
-		.prgjs_bg_a {
-		background: #f3f4f4;
-		border: 1px solid #f3f3f4;
-		padding: 0px 4px 0px 4px;
-		text-align: left;
+		.grfspr_sprgrf_inputfile:hover {
+		color: #0144b4;
+		cursor: pointer;
+		text-decoration: underline;
 		}
 
-		/* PrgJS */
-		/* Зебра 2, для программы на JavaScript */
+	/* PrgJS */
+	/* Размещение программы JS на странице html */
 
-		.prgjs_bg_b {
-		background: #ffffff;
-		border: 1px solid #ffffff;
-		padding: 0px 4px 0px 4px;
-		text-align: left;
-		}
+	/* PrgJS */
+	/* Таблица для программы на JavaScript */
+	.prgjs_zebra {
+	border-collapse: collapse;
+	}
 
-		/* PrgJS */
-		/* Программа на JavaScript. Цвет комментариям */
+	/* PrgJS */
+	/* Зебра 1, для программы на JavaScript */
 
-		.prgjsrem {
-		color: #006600;
-		font-style: italic;
-		}
+	.prgjs_bg_a {
+	background: #f3f4f4;
+	border: 1px solid #f3f3f4;
+	padding: 0px 4px 0px 4px;
+	text-align: left;
+	}
 
-		/* PrgJS */
-		/* Программа на JavaScript. Цвет операторам */
+	/* PrgJS */
+	/* Зебра 2, для программы на JavaScript */
 
-		.prgjsoper {
-		color: #6666ee;
-		font-weight: bold;
-		}
+	.prgjs_bg_b {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 0px 4px 0px 4px;
+	text-align: left;
+	}
 
-		/* PrgJS */
-		/* Программа на JavaScript. Цвет function и var */
+	/* PrgJS */
+	/* Программа на JavaScript. Цвет комментариям */
 
-		.prgjsfv {
-		color: #009999;
-		font-weight: bold;
-		}
+	.prgjsrem {
+	color: #006600;
+	font-style: italic;
+	}
 
-		/* PrgJS */
-		/* Программа на JavaScript. Цвет фигурным скобкам */
-		.prgjsbraces {
-		/* color: #4d7bc7; */
-		/* color: #4444cc; */
-		color: #555555;
-		font-weight: bold;
-		}
+	/* PrgJS */
+	/* Программа на JavaScript. Цвет операторам */
+
+	.prgjsoper {
+	color: #6666ee;
+	font-weight: bold;
+	}
+
+	/* PrgJS */
+	/* Программа на JavaScript. Цвет function и var */
+
+	.prgjsfv {
+	color: #009999;
+	font-weight: bold;
+	}
+
+	/* PrgJS */
+	/* Программа на JavaScript. Цвет фигурным скобкам */
+	.prgjsbraces {
+	/* color: #4d7bc7; */
+	/* color: #4444cc; */
+	color: #555555;
+	font-weight: bold;
+	}

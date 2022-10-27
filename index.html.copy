@@ -378,6 +378,10 @@
 	<script language="javascript" src="js/javascript-vcgrf.js"></script>
 	<!-- VCBMPtoGRF конвертер -->
 	<script language="javascript" src="js/javascript-vcbmptogrf.js"></script>
+	<!-- VCGRFtoSPR -->
+	<script language="javascript" src="js/javascript-vcgrftospr.js"></script>
+	<!-- VCSPRtoGRF -->
+	<script language="javascript" src="js/javascript-vcsprtogrf.js"></script>
 
 	<!-- VRLE8 -->
 	<script language="javascript" src="js/javascript-vrle8-coding.js"></script>
@@ -403,8 +407,17 @@
 <!-- Сбросить input file (конвертер SPR to BMP) -->
 <!-- VCSPRResetInputFile(); -->
 
-<!-- Сделать кнопку Сохранить BMP-файл неактивной (конвертер SPR to BMP) -->
-<!-- VCSPRResetBMPFileSave(); -->
+<!-- Сбросить input file (конвертер GRF to BMP) -->
+<!-- VCGRFResetInputFile(); -->
+
+<!-- Сбросить input file (конвертер BMP to GRF) -->
+<!-- VCBMPGRFResetInputFile(); -->
+
+<!-- Сбросить input file (конвертер GRF to SPR) -->
+<!-- VCGRFtoSPRResetInputFile(); -->
+
+<!-- Сбросить input file (конвертер SPR to GRF) -->
+<!-- VCSPRtoGRFResetInputFile(); -->
 
 <!-- Пересчитать горизонталь для Структура данных (горизонталь для окна) -->
 <!-- VRLE8WidthDataStructure(); -->
@@ -439,8 +452,8 @@
 <!-- onload будет выполнен после загрузки страницы -->
 <body
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
-		VCSPRResetInputFile();
-		VCSPRResetBMPFileSave();
+		VCSPRResetInputFile(); VCGRFResetInputFile();
+		VCBMPGRFResetInputFile(); VCGRFtoSPRResetInputFile(); VCSPRtoGRFResetInputFile();
 		VRLE8WidthDataStructure();
 		VCBMPGRFSetWidthModWin(); VCBMPGRFResetRB();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
@@ -1432,7 +1445,7 @@
 
 				<td align="left" class="smalltxt">
 				<!-- Перед окрытием модального окна, вставим таблицу (24To8) в страницу -->
-				<a href="javascript:VC24To8TXT();OpenShowModalWinBMPtoSPRGRF('ModalWinBMPtoGRF')" title="Нажмите (конвертация написана на JavaScript)">
+				<a href="javascript:VC24To8TXT();OpenShowModalWinBMPtoSPRGRF('ModalWinBMPtoGRF')" title="Нажмите (плюс там есть небольшая галерея GRF-файлов, конвертация написана на JavaScript)">
 				BMP to GRF</a> Ресурсоёмкая операция! Если использовать предварительный просмотр!
 				<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1440,11 +1453,69 @@
 				<a href="https://en.wikipedia.org/wiki/Canvas_element" title="Откроется в новой вкладке" target="_blank">ENG</a>,
 				<a href="https://ru.wikipedia.org/wiki/Canvas_(HTML)" title="Откроется в новой вкладке" target="_blank">RUS</a>,
 				<a href="https://uk.wikipedia.org/wiki/Canvas" title="Откроется в новой вкладке" target="_blank">UKR</a>.
-				Добавлено <a href="javascript:OpenShowModalWin('ModalWinLogoGRF')" title="Нажмите">Logo</a>.
+				Добавлено <a href="javascript:OpenShowModalWin('ModalWinLogoGRF')" title="Нажмите">Logo 1</a>, <a href="javascript:OpenShowModalWin('ModalWinLogo2GRF')" title="Нажмите">Logo 2</a>.
 				<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				Добавлена информация как с <a href="https://zxart.ee" title="Откроется в новой вкладке" target="_blank">ZXART</a>
 				конвертировать графику в GRF-формат.
+				</td>
+			</tr>
+
+			<!-- GRF to SPR и SPR to GRF -->
+
+			<tr>
+				<td class="smalltxt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+
+				<td align="left" class="smalltxt">
+
+				<br>
+
+					<table cellspacing="0" cellpadding="0" border="0">
+
+						<tr>
+
+						<td>
+						<!-- Выбор файла -->
+						<input id="id_filegrftospr" type="file" onchange="VCGRFtoSPR('id_filegrftospr');" accept=".grf" style="display: none;">
+
+						<label for="id_filegrftospr">
+						<span class="grfspr_sprgrf_inputfile" title="Нажмите (конвертация написана на JavaScript)">
+						GRF to SPR</span></label> Быстрая конвертация! <b>Примечание.</b>
+						Размер <a href="https://github.com/drilnet/vector-06c-grf2bmp/wiki" title="Как устроен GRF-файл (откроется в новой вкладке)" target="_blank">GRF</a>-файла
+						=
+						Размер <a href="https://github.com/drilnet/vector-06c-spr2bmp/wiki" title="Как устроен SPR-файл (откроется в новой вкладке)" target="_blank">SPR</a>-файла.
+						</td>
+
+						<td style="padding-left: 3px;">
+						<img class="icon" src="images/warning (info).png" title="Точнее сказать: Размер GRF-данных = Размер SPR-данных">
+						</td>
+
+						</tr>
+
+						<tr>
+
+						<td>
+						<!-- Выбор файла -->
+						<input id="id_filesprtogrf" type="file" onchange="VCSPRtoGRF('id_filesprtogrf');" accept=".spr" style="display: none;">
+
+						<label for="id_filesprtogrf">
+						<span class="grfspr_sprgrf_inputfile" title="Нажмите (конвертация написана на JavaScript)">
+						SPR to GRF</span></label> Быстрая конвертация! <b>Примечание.</b>
+						Размер <a href="https://github.com/drilnet/vector-06c-spr2bmp/wiki" title="Как устроен SPR-файл (откроется в новой вкладке)" target="_blank">SPR</a>-файла
+						=
+						Размер <a href="https://github.com/drilnet/vector-06c-grf2bmp/wiki" title="Как устроен GRF-файл (откроется в новой вкладке)" target="_blank">GRF</a>-файла.
+						</td>
+
+						<td style="padding-left: 3px;">
+						<img class="icon" src="images/warning (info).png" title="Точнее сказать: Размер SPR-данных = Размер GRF-данных">
+						</td>
+
+						</tr>
+
+					</table>
+
 				</td>
 			</tr>
 
@@ -2499,11 +2570,18 @@
 			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 				<td>
-				Последнее обновление: 25.07.2022 (исправлены ошибки)
+				Последнее обновление: 27.10.2022 (добавлена информация: как из VRLE8 сделать SPR)
 				</td>
 			</tr>
 			</table>
 
+			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>
+				Последнее обновление: 25.07.2022 (исправлены ошибки)
+				</td>
+			</tr>
+			</table>
 
 			<!-- ! -->
 			<span class="spoilervrle"
@@ -3995,11 +4073,11 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 					<!-- Гор. линия 6 -->
 					<hr class="vrle_addhr vrle_addhrsize5">
-					<br>
 
 					<!-- То, что под спойлером -->
 					<div id="vrle8spoilerjs2" style="display: none;">
 
+						<br>
 						<!-- Гор. линия -->
 						<hr class="vrle_addhr vrle_addhrsize3">
 
@@ -4224,7 +4302,120 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 						<hr class="vrle_addhr vrle_addhrsize3">
 						<br>
 
+						<!-- Гор. линия 7 -->
+						<hr class="vrle_addhr vrle_addhrsize5">
+
+
 					</div> <!-- Конец спойлера Кодирование на JavaScript -->
+
+				</td>
+				</tr>
+
+				<!-- VRLE8 в SPR -->
+				<!-- ----------- -->
+
+				<tr>
+				<td align="center">
+
+					<!-- Спойлер -->
+
+					<table width="240px" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td width="1%">
+					<img class="icon" src="icons/txt.png" title="Иконка из набора: Realistik New. (C) Pavel InFeRnODeMoN. License: GPL">
+					</td>
+
+					<td align="left" style="padding-left: 6px;">
+
+					<!-- ! -->
+					<span class="spoilervrle"
+					onclick="javascript:vrle8spoiler_vrle8tosprsd();"
+					title="Нажмите">
+
+<script>
+function vrle8spoiler_vrle8tosprsd()
+{
+if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
+	{
+	// Вставить в страницу (index.html) txt (как из VRLE8 сделать SPR).
+	VRLE8toSPRtxt();
+	// Открыть спойлер.
+	document.getElementById('vrle8spoilersprsd').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('vrle8spoilersprsd').style.display = 'none';
+	// Удалить txt из страницы (из index.html).
+	document.getElementById('id_vrle8_to_spr_txt').innerHTML = '';
+	}
+}
+</script>
+
+					VRLE8 в SPR
+					</span>
+
+					</td>
+
+					</tr>
+					</table>
+
+					<!-- Гор. линия 8 -->
+					<hr class="vrle_addhr vrle_addhrsize5">
+					<br>
+
+					<!-- То, что под спойлером -->
+					<div id="vrle8spoilersprsd" style="display: none;">
+
+						<!-- Гор. линия -->
+						<hr class="vrle_addhr vrle_addhrsize3">
+
+						<br>
+
+						<!-- Дополнительное окно с прокруткой -->
+
+						<div align="center" class="vrlespr_window">
+
+							<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+							<td>
+
+								Как из VRLE8-данных получить SPR-данные?
+								<br>
+								Или простыми словами: Как из VRLE8 сделать SPR?
+								<br>
+								Решение: Нужно переместить информационный байт (см. ниже)!
+								<br>
+								<br>
+
+								<table class="vrlespr_window_bg" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								<td id="id_vrle8_to_spr_txt">
+								<!-- Сюда вставка -->
+								</td>
+								</tr>
+								</table>
+
+								<br>
+								Примечание.
+								<br>
+								Используется при перекодировании GRF to SPR!
+								<br>
+								<br>
+
+							</td>
+							</tr>
+							</table>
+
+						</div> <!-- Конец дополнительному окну с прокруткой -->
+
+						<br>
+						<!-- Гор. линия -->
+						<hr class="vrle_addhr vrle_addhrsize3">
+						<br>
+
+					</div> <!-- Конец спойлера VRLE8 в SPR -->
 
 				</td>
 				</tr>
@@ -6182,8 +6373,6 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			<td rowspan="2" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
 				<img src="icons/help.png" title="ВОРОН! КОСМОДРОМ! AliExpress! Спасибо за радиодетали!">
 			</td>
-
-
 		</tr>
 
 		<tr>
@@ -6198,7 +6387,44 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 			<td align="center" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
 			Найдётся всё! :)
 			</td>
+		</tr>
 
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Сссылки на интернет магазины 2 -->
+
+	<tr>
+	<td align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+			<td align="center" style="border-right: 1px solid; border-left: 1px solid; padding-right: 16px; padding-left: 16px;">
+				<a href="https://epicentrk.ua" target="_blank">
+				<img src="images-store-logos/logo_epicentrk.png" title="Откроется в новой вкладке (https://epicentrk.ua)">
+				</a>
+			</td>
+		</tr>
+
+		<tr>
+			<td align="center" style="border-right: 1px solid; border-left: 1px solid; padding-right: 16px; padding-left: 16px;">
+			Найдётся всё!
+			</td>
 		</tr>
 
 		</table>
@@ -13407,7 +13633,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		<tr>
 		<td align="center">
 
-		Логотип (Logo) GRF
+		Логотипы (Logo 1 и Logo 2) GRF
 
 		</tr>
 		</td>
@@ -13415,13 +13641,27 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 		<br>
 
-		<!-- Сам Logo -->
+		<!-- Само Logo 1 -->
 
 		<table align="center" class="bmpsprgrf_logo" cellspacing="0" cellpadding="0" border="0">
 		<tr>
 		<td>
 
 		<img class="icon" src="images/animation/GRF-Logo_HQ.webp" title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Само Logo 2 -->
+
+		<table align="center" class="bmpsprgrf_logo" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<img class="icon" src="images/animation/GRF-Logo2_LQ.webp" title="(C) Демидов С.В.">
 
 		</td>
 		</tr>
@@ -13438,7 +13678,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		<!-- SV -->
 
 		<div align="center" class="smalltxt">
-		Лицензия (License) на Logo и на скрипт BMP to GRF: Free.
+		Лицензия (License) на Logo 1 и на Logo 2 и на скрипт BMP to GRF: Free.
 		<br>
 		<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
 		</div>
@@ -13474,16 +13714,21 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 	</div> <!-- Конец модального окна BMP to GRF -->
 
 	<!--                         -->
-	<!-- Модальное окно GRF Logo -->
+	<!-- Модальные окно GRF Logo -->
 	<!--                         -->
+
+	<!-- Лого 1 -->
 
 	<div id="ModalWinLogoGRF" class="modalwin" align="center">
 
-		Лицензия (License) на Logo: <b>Free</b>
+		Лицензия (License) на Logo 1: <b>Free</b>
+		<br>
+		<br>
+		Логотип анимационный
 		<br>
 		<br>
 
-		<!-- Сам Logo -->
+		<!-- Само Logo 1 -->
 
 		<table class="bmpsprgrf_logo" cellspacing="0" cellpadding="0" border="0">
 		<tr>
@@ -13515,7 +13760,52 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 		</tr>
 		</table>
 
-	</div> <!-- Конец модальному окну (GRF Logo) -->
+	</div> <!-- Конец модальному окну (GRF Logo 1) -->
+
+	<!-- Лого 2 -->
+
+	<div id="ModalWinLogo2GRF" class="modalwin" align="center">
+
+		Лицензия (License) на Logo 2: <b>Free</b>
+		<br>
+		<br>
+		Логотип анимационный
+		<br>
+		<br>
+
+		<!-- Само Logo 2 -->
+
+		<table class="bmpsprgrf_logo" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<img class="icon" src="images/animation/GRF-Logo2_LQ.webp" title="(C) Демидов С.В.">
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Автор Demidov S.V. -->
+
+		<div class="smalltxtmodrepo">
+		<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). (C) Демидов С.В.
+		</div>
+
+		<br>
+
+		<!-- Кнопка Закрыть -->
+
+		<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+		<a href="javascript:CloseModalWin('ModalWinLogo2GRF')">закрыть</a>
+		</td>
+		</tr>
+		</table>
+
+	</div> <!-- Конец модальному окну (GRF Logo 2) -->
 
 	<!--                          -->
 	<!-- Модальные окна Puzzle 15 -->
