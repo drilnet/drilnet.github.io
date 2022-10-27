@@ -3913,7 +3913,7 @@
 	.vrlespr_window {
 	overflow: scroll; /* Полоса прокрутки */
 	width: 700px;
-	height: 264px;
+	height: 272px;
 	}
 
 	/* VRLEx */
