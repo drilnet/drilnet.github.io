@@ -113,7 +113,7 @@ function VCSPR(id)
 				break;
 				}
 			addrspr--;
-			}	
+			}
 
 		temp =  sprsizeall + " байт(а), в hex: " + sprsizeall.toString(16) + " байт(а)";
 
@@ -157,89 +157,17 @@ function VCSPR(id)
 
 		// Теперь сама распаковка SPR-данных.
 
-		var addrvcs, bit, tb, cb, errorspr;
 		var screen_vector_8000_FFFF = [];
 
-		addrvcs = 32767;
+		var errorspr, addrvcs;
 
-		// Единица, нет ошибки.
-		errorspr = 1;
+		// Распаковка SPR-данных.
+		screen_vector_8000_FFFF = DepackingSPR(bufferspr, addrspr, sprsizeall);
 
-		// Распаковка (распаковка в  screen_vector_8000_FFFF[addrvcs]).
-stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
-			{
+		errorspr = screen_vector_8000_FFFF[1];
+			addrvcs = screen_vector_8000_FFFF[2];
 
-			// Логическое И (&).
-			//
-			//   -------------
-			//   | x | y | f |
-			//   -------------
-			//   | 0 | 0 | 0 |
-			//   | 0 | 1 | 0 |
-			//   | 1 | 0 | 0 |
-			//   | 1 | 1 | 1 |
-			//   -------------
-
-			// 128D = 80H.
-			bit = 128 & bufferspr[addrspr]; // 80H и bufferspr[addrspr].
-
-			// Если старший бит 0 (это бит 7) то неповторяющиеся.
-			if (bit == 0)
-				{
-				// Неповторяющиеся байты.
-				// ---
-
-				tb = bufferspr[addrspr];
-
-				for (cb = 0; cb < tb; cb++)
-					{
-					addrspr--;
-
-					// Проверить, если выход за пределы экранной области Вектор'а.
-					if (addrvcs == -1)
-						{
-						// Ошибка SPR-файла!
-						errorspr = 0;
-						// Завершение циклов.
-						break stop1;
-						}
-
-					screen_vector_8000_FFFF[addrvcs] = bufferspr[addrspr];
-
-					addrvcs--;
-					}
-				}
-				else
-				{
-				// Повторяющиеся байты.
-				// ---
-
-				// Старший бит 1 (это бит 7) то повторяющиеся.
-
-				// Установить старший бит в ноль.
-				tb = 127 & bufferspr[addrspr]; // 7FH и tb.
-
-				addrspr--;
-
-				for (cb = 0; cb < tb; cb++)
-					{
-
-					// Проверить, если выход за пределы экранной области Вектор'а.
-					if (addrvcs == -1)
-						{
-						// Ошибка SPR-файла!
-						errorspr = 0;
-						// Завершение циклов.
-						break stop1;
-						}
-
-					screen_vector_8000_FFFF[addrvcs] = bufferspr[addrspr];
-
-					addrvcs--;
-					}
-				}
-
-			}
+		// alert(errorspr + " " + addrvcs);
 
 		// "Ошибка при распаковке: Да" - Если есть переполнение экранной области Вектор'а!
 		// "Ошибка при распаковке: Да" - Если экранная область Вектор'а не полностью заполнена!
@@ -271,7 +199,7 @@ stop1:		for (addrspr = addrspr; addrspr > 15; addrspr--)
 				}
 
 		// Наполнить экранную область Вектор'а построенную в браузере (с перекодировкой цвета).
-		VCSPRGRFPush(screen_vector_8000_FFFF, SPRColor, 's');
+		VCSPRGRFPush(screen_vector_8000_FFFF[0], SPRColor, 's');
 
 		// Имя BMP-файлу.
 		temp = file.name;
@@ -997,4 +925,100 @@ function VCBMP(id_filenamebmp, sg)
 		link.setAttribute("download", nameBMP);
 		link.click();
 		}
+}
+
+//
+// Распаковка SPR-данных.
+//    0 - Неповтор.
+//    1 - Повтор.
+//
+function DepackingSPR(bufferspr, addrspr, sprsizeall)
+{
+	var addrvcs, bits, tb, cb, errorspr;
+	// Здесь распакованные данные.
+	var screen_vector_8000_FFFF = [];
+
+	addrvcs = 32767;
+
+	// Единица, нет ошибки.
+	errorspr = 1;
+
+	// Распаковка (распаковка в screen_vector_8000_FFFF[addrvcs]).
+stop1:	for (addrspr = addrspr; addrspr > 15; addrspr--)
+		{
+
+		// Логическое И (&).
+		//
+		//   -------------
+		//   | x | y | f |
+		//   -------------
+		//   | 0 | 0 | 0 |
+		//   | 0 | 1 | 0 |
+		//   | 1 | 0 | 0 |
+		//   | 1 | 1 | 1 |
+		//   -------------
+
+		// Установить биты 6, 5, 4, 3, 2, 1, 0 в ноль, 7 бит оставить без изменений.
+		bits = 128 & bufferspr[addrspr]; // 80H и bufferspr[addrspr]. 128D = 80H.
+
+		// Если старший бит 0 (это бит 7) то неповторяющиеся.
+		if (bits == 0)
+			{
+			// Неповторяющиеся байты.
+			// ---
+
+			tb = bufferspr[addrspr];
+
+			for (cb = 0; cb < tb; cb++)
+				{
+				addrspr--;
+
+				// Проверить, если выход за пределы экранной области Вектор'а.
+				if (addrvcs == -1)
+					{
+					// Ошибка SPR-файла!
+					errorspr = 0;
+					// Завершение циклов.
+					break stop1;
+					}
+
+				screen_vector_8000_FFFF[addrvcs] = bufferspr[addrspr];
+
+				addrvcs--;
+				}
+			}
+			else
+			{
+			// Повторяющиеся байты.
+			// ---
+
+			// Установить 7 бит в ноль, остальные биты оставить без изменений.
+			tb = 127 & bufferspr[addrspr]; // 7FH и bufferspr[addrspr]. 127D = 7FH.
+
+			addrspr--;
+
+			for (cb = 0; cb < tb; cb++)
+				{
+
+				// Проверить, если выход за пределы экранной области Вектор'а.
+				if (addrvcs == -1)
+					{
+					// Ошибка SPR-файла!
+					errorspr = 0;
+					// Завершение циклов.
+					break stop1;
+					}
+
+				screen_vector_8000_FFFF[addrvcs] = bufferspr[addrspr];
+
+				addrvcs--;
+				}
+			}
+
+		}
+
+	// alert(errorspr + " " + addrvcs);
+
+	// Вернуть массив.
+	return [screen_vector_8000_FFFF, errorspr, addrvcs];
 }

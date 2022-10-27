@@ -107,7 +107,7 @@ function VCBMPGRFResetReference()
 }
 
 //
-// Сбросить input file (выбор grf-файла).
+// Сбросить input file (выбор bmp-файла).
 //
 function VCBMPGRFResetInputFile()
 {
@@ -223,6 +223,9 @@ function VCBMPGRFRadioB_1()
 	// Сбросить экранную область Вектор'а.
 	// Установить заставку не Canvas.
 	VCBMPGRFReset256x256();
+
+	// Сбросить input file (выбор bmp-файла).
+	VCBMPGRFResetInputFile();
 }
 
 //
@@ -235,6 +238,9 @@ function VCBMPGRFRadioB_2()
 	// Сбросить экранную область Вектор'а.
 	// Установить заставку не Canvas.
 	VCBMPGRFReset256x256();
+
+	// Сбросить input file (выбор bmp-файла).
+	VCBMPGRFResetInputFile();
 }
 
 //
@@ -247,6 +253,9 @@ function VCBMPGRFRadioB_3()
 	// Сбросить экранную область Вектор'а.
 	// Установить заставку Canvas.
 	VCBMPGRFResetCanvas256x256();
+
+	// Сбросить input file (выбор bmp-файла).
+	VCBMPGRFResetInputFile();
 }
 
 //

@@ -148,101 +148,18 @@ function VCGRF(id)
 		// вставить в страницу цвета grf-файла (одной строкой).
 		document.getElementById('id_grfcolor').innerHTML = temp;
 
-		// Теперь сама распаковка GRF-данных.
-
-		var addrvcs, bit, tb, cb, errorgrf1, errorgrf2;
 		var screen_vector_8000_FFFF = [];
 
-		addrvcs = 0;
+		var errorgrf1, addrvcs, errorgrf2;
 
-		// Единица, нет ошибки.
-		errorgrf1 = 1;
+		// Теперь сама распаковка GRF-данных.
+		screen_vector_8000_FFFF = DepackingGRF(buffergrf, addrgrf, grfsizeall);
 
-		// Установить на ошибку.
-		errorgrf2 = 0;
+		errorgrf1 = screen_vector_8000_FFFF[1];
+			addrvcs = screen_vector_8000_FFFF[2];
+				errorgrf2 = screen_vector_8000_FFFF[3];
 
-		// Распаковка (распаковка в screen_vector_8000_FFFF[addrvcs]).
-stop1:		for (addrgrf = addrgrf; addrgrf < grfsizeall;)
-			{
-
-			// Конец распаковки.
-			if (buffergrf[addrgrf] == 0)
-				{
-				// Нет ошибки.
-				errorgrf2 = 1;
-				break;
-				}
-
-			// Логическое И (&).
-			//
-			//   -------------
-			//   | x | y | f |
-			//   -------------
-			//   | 0 | 0 | 0 |
-			//   | 0 | 1 | 0 |
-			//   | 1 | 0 | 0 |
-			//   | 1 | 1 | 1 |
-			//   -------------
-
-			// 128D = 80H.
-			bit = 128 & buffergrf[addrgrf]; // 80H и buffergrf[addrgrf].
-
-			// Если старший бит 0 (это бит 7) то повторяющиеся.
-			if (bit == 0)
-				{
-				// Повторяющиеся байты.
-				// ---
-
-				// Сколько повторяющихся.
-				tb = buffergrf[addrgrf];
-
-				addrgrf++;
-
-				for (cb = 0; cb < tb; cb++)
-					{
-					// Проверить, если выход за пределы экранной области Вектор'а.
-					if (addrvcs == 32768)
-						{
-						// Ошибка GRF-файла!
-						errorgrf1 = 0;
-						// Завершение циклов.
-						break stop1;
-						}
-
-					screen_vector_8000_FFFF[addrvcs] = buffergrf[addrgrf];
-
-					addrvcs++;
-					}
-				}
-				else
-				{
-				// Неповторяющиеся байты.
-				// ---
-
-				// Установить старший бит в ноль.
-				tb = 127 & buffergrf[addrgrf]; // 7FH и tb.
-
-				for (cb = 0; cb < tb; cb++)
-					{
-					addrgrf++;
-
-					// Проверить, если выход за пределы экранной области Вектор'а.
-					if (addrvcs == 32768)
-						{
-						// Ошибка GRF-файла!
-						errorgrf1 = 0;
-						// Завершение циклов.
-						break stop1;
-						}
-
-					screen_vector_8000_FFFF[addrvcs] = buffergrf[addrgrf];
-
-					addrvcs++;
-					}
-				}
-
-			addrgrf++;
-			} // Конец for..
+		// alert(errorgrf1 + " " + addrvcs + " " + errorgrf2);
 
 		if (errorgrf1 != 1) { alert("Переполнение экранной области! " + addrvcs); }
 			if (addrvcs != 32768) { alert("Экранная область Вектор'а не полностью заполнена! " + addrvcs); }
@@ -275,7 +192,7 @@ stop1:		for (addrgrf = addrgrf; addrgrf < grfsizeall;)
 				}
 
 		// Наполнить экранную область Вектор'а построенную в браузере (с перекодировкой цвета).
-		VCSPRGRFPush(screen_vector_8000_FFFF, GRFColor, 'g');
+		VCSPRGRFPush(screen_vector_8000_FFFF[0], GRFColor, 'g');
 
 		// Имя BMP-файлу.
 		temp = file.name;
@@ -327,4 +244,109 @@ function VCGRFResetBMPFileSave()
 	id_filebmp_save_g.setAttribute('onclick', '');
 	// Удалить onClick (Internet Explorer).
 	id_filebmp_save_g.onclick = function(){};
+}
+
+//
+// Распаковка GRF-данных.
+//    0 - Повтор.
+//    1 - Неповтор.
+//
+function DepackingGRF(buffergrf, addrgrf, grfsizeall)
+{
+	var addrvcs, bit, tb, cb, errorgrf1, errorgrf2;
+	var screen_vector_8000_FFFF = [];
+
+	addrvcs = 0;
+
+	// Единица, нет ошибки.
+	errorgrf1 = 1;
+
+	// Установить на ошибку.
+	errorgrf2 = 0;
+
+	// Распаковка (распаковка в screen_vector_8000_FFFF[addrvcs]).
+stop1:	for (addrgrf = addrgrf; addrgrf < grfsizeall;)
+		{
+
+		// Конец распаковки.
+		if (buffergrf[addrgrf] == 0)
+			{
+			// Нет ошибки.
+			errorgrf2 = 1;
+			break;
+			}
+
+		// Логическое И (&).
+		//
+		//   -------------
+		//   | x | y | f |
+		//   -------------
+		//   | 0 | 0 | 0 |
+		//   | 0 | 1 | 0 |
+		//   | 1 | 0 | 0 |
+		//   | 1 | 1 | 1 |
+		//   -------------
+
+		// Установить биты 6, 5, 4, 3, 2, 1, 0 в ноль, 7 бит оставить без изменений.
+		bit = 128 & buffergrf[addrgrf]; // 80H и buffergrf[addrgrf]. 128D = 80H.
+
+		// Если старший бит 0 (это бит 7) то повторяющиеся.
+		if (bit == 0)
+			{
+			// Повторяющиеся байты.
+			// ---
+
+			// Сколько повторяющихся.
+			tb = buffergrf[addrgrf];
+
+			addrgrf++;
+
+			for (cb = 0; cb < tb; cb++)
+				{
+				// Проверить, если выход за пределы экранной области Вектор'а.
+				if (addrvcs == 32768)
+					{
+					// Ошибка GRF-файла!
+					errorgrf1 = 0;
+					// Завершение циклов.
+					break stop1;
+					}
+
+				screen_vector_8000_FFFF[addrvcs] = buffergrf[addrgrf];
+
+				addrvcs++;
+				}
+			}
+			else
+			{
+			// Неповторяющиеся байты.
+			// ---
+
+			// Установить старший бит в ноль, остальные биты оставить без изменений.
+			tb = 127 & buffergrf[addrgrf]; // 7FH и buffergrf[addrgrf]. 127D = 7FH.
+
+			for (cb = 0; cb < tb; cb++)
+				{
+				addrgrf++;
+
+				// Проверить, если выход за пределы экранной области Вектор'а.
+				if (addrvcs == 32768)
+					{
+					// Ошибка GRF-файла!
+					errorgrf1 = 0;
+					// Завершение циклов.
+					break stop1;
+					}
+
+				screen_vector_8000_FFFF[addrvcs] = buffergrf[addrgrf];
+
+				addrvcs++;
+				}
+				}
+
+		addrgrf++;
+		} // Конец for...
+
+	// Вернуть массив.
+	return [screen_vector_8000_FFFF, errorgrf1, addrvcs, errorgrf2];
 }
