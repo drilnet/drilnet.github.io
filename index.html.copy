@@ -105,31 +105,54 @@
 	<meta name="keywords" content="вектор-06ц кино, вектор-06 кино, вектор кино">
 	<meta name="keywords" content="вектор06ц кино, вектор06 кино">
 
-<!-- -->
+<!-- SPR, GRF -->
+
+	<meta name="keywords" content="coder spr, coder spr github, decoder spr, decoder spr github">
+	<meta name="keywords" content="spr, spr вектор-06ц, spr вектор-06, spr вектор">
+	<meta name="keywords" content="spr вектор06ц, spr вектор06, spr вектор">
+	<meta name="keywords" content="spr vector-06c, spr vector-06, spr vector">
+	<meta name="keywords" content="spr github">
+
+	<meta name="keywords" content="coder grf, coder grf github, decoder grf, decoder grf github">
+	<meta name="keywords" content="grf, grf вектор-06ц, grf вектор-06, grf вектор">
+	<meta name="keywords" content="grf вектор06ц, grf вектор06, grf вектор">
+	<meta name="keywords" content="grf vector-06c, grf vector-06, grf vector">
+	<meta name="keywords" content="grf github">
+
+<!-- spr to bmp -->
 
 	<meta name="keywords" content="конвертер графических файлов spr в bmp, spr в bmp, spr2bmp, spr to bmp">
 	<meta name="keywords" content="github spr в bmp, github spr to bmp, github spr2bmp">
-	<meta name="keywords" content="spr, spr вектор-06ц, spr вектор-06, spr вектор">
-	<meta name="keywords" content="spr вектор06ц, spr вектор06">
-	<meta name="keywords" content="spr vector-06c, spr vector-06, spr vector">
+	<meta name="keywords" content="spr в bmp вектор-06ц, spr в bmp вектор-06, spr в bmp вектор">
+	<meta name="keywords" content="spr to bmp вектор-06ц, spr to bmp вектор-06, spr to bmp вектор">
+	<meta name="keywords" content="spr2bmp вектор-06ц, spr2bmp вектор-06, spr2bmp вектор">
 
-<!-- -->
+	<meta name="keywords" content="spr to bmp vector-06c, spr to bmp vector-06, spr to bmp vector">
+	<meta name="keywords" content="spr2bmp vector-06c, spr2bmp vector-06, spr2bmp vector">
+
+<!-- grf to bmp -->
 
 	<meta name="keywords" content="конвертер графических файлов grf в bmp, grf в bmp, grf2bmp, grf to bmp">
 	<meta name="keywords" content="github grf в bmp, github grf to bmp, github grf2bmp">
-	<meta name="keywords" content="grf, grf вектор-06ц, grf вектор-06, grf вектор">
-	<meta name="keywords" content="grf вектор06ц, grf вектор06">
-	<meta name="keywords" content="grf vector-06c, grf vector-06, grf vector">
+	<meta name="keywords" content="grf в bmp вектор-06ц, grf в bmp вектор-06, grf в bmp вектор">
+	<meta name="keywords" content="grf to bmp вектор-06ц, grf to bmp вектор-06, grf to bmp вектор">
+	<meta name="keywords" content="grf2bmp вектор-06ц, grf2bmp вектор-06, grf2bmp вектор">
 
-<!-- -->
+	<meta name="keywords" content="grf to bmp vector-06c, grf to bmp vector-06, grf to bmp vector">
+	<meta name="keywords" content="grf2bmp vector-06c, grf2bmp vector-06, grf2bmp vector">
+
+<!-- bmp to grf -->
 
 	<meta name="keywords" content="конвертер графических файлов bmp в grf, bmp в grf, bmp2grf, bmp to grf">
 	<meta name="keywords" content="github bmp в grf, github bmp2grf, github bmp to grf">
-	<meta name="keywords" content="grf, grf вектор-06ц, grf вектор-06, grf вектор">
-	<meta name="keywords" content="grf вектор06ц, grf вектор06">
-	<meta name="keywords" content="grf vector-06c, grf vector-06, grf vector">
+	<meta name="keywords" content="bmp в grf вектор-06ц, bmp в grf вектор-06, bmp в grf вектор">
+	<meta name="keywords" content="bmp to grf вектор-06ц, bmp to grf вектор-06, bmp to grf вектор">
+	<meta name="keywords" content="bmp2grf вектор-06ц, bmp2grf вектор-06, bmp2grf вектор">
 
-<!-- -->
+	<meta name="keywords" content="bmp to grf vector-06c, bmp to grf vector-06, bmp to grf vector">
+	<meta name="keywords" content="bmp2grf vector-06c, bmp2grf vector-06, bmp2grf vector">
+
+<!-- grf to spr -->
 
 	<meta name="keywords" content="конвертер графических файлов grf в spr, grf в spr, grf2spr, grf to spr">
 	<meta name="keywords" content="github grf в spr, github grf2spr, github grf to spr">
@@ -137,13 +160,19 @@
 	<meta name="keywords" content="grf to spr вектор-06ц, grf to spr вектор-06, grf to spr вектор">
 	<meta name="keywords" content="grf2spr вектор-06ц, grf2spr вектор-06, grf2spr вектор">
 
-<!-- -->
+	<meta name="keywords" content="grf to spr vector-06c, grf to spr vector-06, grf to spr vector">
+	<meta name="keywords" content="grf2spr vector-06c, grf2spr vector-06, grf2spr vector">
+
+<!-- spr to grf -->
 
 	<meta name="keywords" content="конвертер графических файлов spr в grf, spr в grf, spr2grf, spr to grf">
 	<meta name="keywords" content="github spr в grf, github spr2grf, github spr to grf">
 	<meta name="keywords" content="spr в grf вектор-06ц, spr в grf вектор-06, spr в grf вектор">
 	<meta name="keywords" content="spr to grf вектор-06ц, spr to grf вектор-06, spr to grf вектор">
 	<meta name="keywords" content="spr2grf вектор-06ц, spr2grf вектор-06, spr2grf вектор">
+
+	<meta name="keywords" content="spr to grf vector-06c, spr to grf vector-06, spr to grf vector">
+	<meta name="keywords" content="spr2grf vector-06c, spr2grf vector-06, spr2grf vector">
 
 <!-- -->
 
@@ -159,9 +188,14 @@
 <!-- -->
 
 	<meta name="keywords" content="rle кодирование/декодирование своими руками">
+	<meta name="keywords" content="rle кодирование своими руками">
+	<meta name="keywords" content="rle декодирование своими руками">
 	<meta name="keywords" content="rle кодирование">
 	<meta name="keywords" content="rle декодирование">
-	<meta name="keywords" content="rle, rle info, VRLE8, vrle8">
+
+	<meta name="keywords" content="coder rle, coder vrle8, decoder rle, decoder vrle8">
+	<meta name="keywords" content="rle github, rle info github, vrle8 github">
+	<meta name="keywords" content="rle, rle info, vrle8">
 
 <!-- -->
 
