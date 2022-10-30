@@ -3463,9 +3463,9 @@
 				<!-- То, что под спойлером -->
 				<div id="vrle8hex2" style="display: none;">
 
-					<!-- Примечание 1 -->
-
 					<br>
+
+					<!-- Примечание 1 -->
 
 					<table cellspacing="0" cellpadding="0" border="0">
 					<tr>
@@ -3479,9 +3479,25 @@
 					</tr>
 					</table>
 
-					<!-- Примечание 2 -->
+					<br>
+
+					<!-- Внимание! -->
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td align="left">
+
+					Внимание!
+					<br>
+					В начале 6-ть байт - Это заголовок!
+
+					</td>
+					</tr>
+					</table>
 
 					<br>
+
+					<!-- Примечание 2 -->
 
 					<table cellspacing="0" cellpadding="0" border="0">
 					<tr>
