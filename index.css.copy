@@ -330,6 +330,16 @@
 	font-weight: bold;
 	}
 
+	/* Фон и бордюр для Обновлено */
+	/* Файловый архив Вектор'а-06Ц */
+
+	.dl_update_bg {
+	background: #f0f0f0;
+	border: 1px solid #e8e8e8;
+	padding: 1px 4px 1px 4px;
+	margin-bottom: 4px;
+	}
+
 		/* Фон и бордюр для заголовка, игра Game-15 */
 		/* Без clock.gif */
 

@@ -1421,11 +1421,21 @@
 			</td>
 
 			<td style="padding-left: 8px;">
+
+			<!-- Обновлено -->
+			<table class="dl_update_bg smalltxt" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>
+				Обновлено: 08.12.2022
+				</td>
+			</tr>
+			</table>
 			<!-- Ссылка -->
 			<a href="downloads/vector-06c/downloads.html" title="Откроется в новой вкладке (Системный диск Вектор'а-06Ц. Скриншоты CO. Библиотека ПК и др.)" target="_blank">Перейти в архив Вектор'а-06Ц</a>
 			<br>
 			<!-- Подстрочный текст -->
 			<span class="smalltxt">Загляните в архив пожалуйста!</span>
+
 			</td>
 
 			</tr>
