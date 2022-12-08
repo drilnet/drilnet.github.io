@@ -3012,6 +3012,88 @@
 		<br>
 		<br>
 
+		<!-- Спойлер системный диск Вектор'а в 3D -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+
+		<!-- ! -->
+		<span class="vc_spoiler"
+		onclick="javascript:vc_FloppyDisk35_spoiler();"
+		title="Нажмите">
+		Системный диск Вектор'а-06Ц (3D-модель)
+		<br>
+		МикроДОС Т-34
+		</span>
+
+<script>
+function vc_FloppyDisk35_spoiler()
+{
+if (document.getElementById('id_floppydisk35_sp').style.display == 'none')
+	{
+	// Открыть спойлер.
+	document.getElementById('id_floppydisk35_sp').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('id_floppydisk35_sp').style.display = 'none';
+	}
+}
+</script>
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- То, что под спойлером -->
+		<div id="id_floppydisk35_sp" style="display: none;">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+				<!-- Сторона A -->
+				<img class="icon" src="images/FloppyDisk35_40%_Side_A.png" title="(C) Демидов С.В.">
+				</td>
+
+				<td style="padding-left: 4px;">
+				<!-- Сторона Б -->
+				<img class="icon" src="images/FloppyDisk35_40%_Side_B.png" title="(C) Демидов С.В.">
+				</td>
+
+				<td style="padding-left: 4px;">
+				<!-- Анимация -->
+				<img class="icon" src="images/FloppyDisk35.webp" title="(C) Демидов С.В.">
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			Надпись на диске: Вектор-06Ц, МикроДОС Т-34, Харьков 1994г.
+			<br>
+			<span class="vcsmalltxt">
+			Шрифт: <b>Marck Script</b>, (C) Denis Masharov & (C) Marck Fogel.
+			</span>
+			<br>
+			<br>
+
+			<span class="vcsmalltxt">
+			Сделано в <a href="https:\\www.blender.org" title="Откроется в новой вкладке" target="_blank">Blender 3D</a>
+			<br>
+			<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). (C) Демидов С.В.
+			</span>
+
+			<br>
+			<br>
+
+		</div> <!-- Конец спойлера Floppy Disk 3.5 -->
+
 		<!-- Кнопка наверх -->
 
 		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
