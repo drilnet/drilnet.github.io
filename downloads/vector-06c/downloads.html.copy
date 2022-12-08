@@ -3161,6 +3161,22 @@ if (document.getElementById('id_floppydisk35_sp').style.display == 'none')
 
 		<br>
 
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<b>Примечание.</b>
+		<br>
+		Файлы упакованные на Вектор'е архиватором <a href="system-disk-1-fls/ARC.COM">ARC.COM</a>,
+		<br>
+		можно распаковать архиватором <b>ARC</b> в OS <a href="https://www.freebsd.org" title="Откроется в новой вкладке" target="_blank">FreeBSD</a>!
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
 		<!-- Кнопка наверх -->
 
 		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
