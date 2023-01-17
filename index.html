@@ -756,6 +756,10 @@
 	<td align="center">
 
 		<span style="color: #e00000; font-size: 14px;">Люди! Прекратите Войну!</span>
+		<br>
+		<span style="color: #e00000; font-size: 14px;">Нет Войне!</span>
+		<br>
+		<span style="color: #e00000; font-size: 14px;">Нет Обстрелам!</span>
 
 	</td>
 	</tr>
@@ -1611,16 +1615,15 @@
 		<td class="tdrepo">
 
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="smalltxt">Кроссплатформенный эмулятор Вектор'а-06Ц:
+		Кроссплатформенный эмулятор Вектор'а-06Ц:
 		<a href="http://sensi.org/scalar/vector06js" title="Откроется в новой вкладке (http://sensi.org/scalar/vector06js)" target="_blank">Ссылка 1</a>,
 		<a href="https://svofski.github.io/vector06js" title="Откроется в новой вкладке (https://svofski.github.io/vector06js)" target="_blank">Ссылка 2</a>
-		</span>
 		<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="smalltxt">Работает прямо в браузере! (C) Viacheslav Slavinsky.</span>
+		Работает прямо в браузере! (C) Viacheslav Slavinsky.
 		<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="smalltxt">Открытый код эмулятора доступен <a href="https://github.com/svofski/vector06js" title="Откроется в новой вкладке" target="_blank">здесь</a></span>
+		Открытый код эмулятора доступен <a href="https://github.com/svofski/vector06js" title="Откроется в новой вкладке" target="_blank">здесь</a>
 
 		</td>
 		</tr>
@@ -2642,6 +2645,14 @@
 		</td>
 
 		<td style="padding-left: 8px;">
+
+			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>
+				Последнее обновление: 17.01.2023 (обновлена информация: как из VRLE8 сделать SPR)
+				</td>
+			</tr>
+			</table>
 
 			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
 			<tr>
@@ -4483,7 +4494,9 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 
 								Как из VRLE8 сделать SPR?
 								<br>
-								Нужно переместить информационный байт (см. ниже)!
+								Нужно отрезать заголовок (в начале, 6 байт), добавить 16 байт цветов (в начало),
+								<br>
+								и переместить информационные байты (как переместить информационные байты см. ниже).
 								<br>
 								<br>
 
@@ -6504,6 +6517,369 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 	</td>
 	</tr>
 
+	<!-- Разметка радиаторов -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок -->
+
+		<table class="rad_title" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Разметка радиаторов купленных в магазине <a href="http://www.kosmodrom.com.ua" target="_blank" title="Откроется в новой вкладке">КОСМОДРОМ</a>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Сп. 1 -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+			<!-- Спойлер 1 -->
+			<span class="spoiler"
+			onclick="document.getElementById('id_sp_rad_1').style.display = (document.getElementById('id_sp_rad_1').style.display=='none'?'inline':'none');"
+			title="Нажмите">Радиатор 30x42x25мм</span>
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером 1 (30x42x25мм) -->
+		<div id="id_sp_rad_1" style="display: none;">
+
+			<br>
+			<hr class="rad_hr">
+			<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+
+				<!-- Изображение 1 -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/Radiator_30x42x25mm_160x120.png" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+				<td style="padding-left: 6px;">
+
+				<!-- Изображение 2 (анимация) -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/animation/Radiator_30x42x25mm_HQ.webp" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+				<td style="padding-left: 6px;">
+
+				<!-- Изображение 3 -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/Radiator_30x42x25mm_160x120_TO-126.png" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+				<td style="padding-left: 6px;">
+
+				<!-- Изображение 4 -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/Radiator_30x42x25mm_160x120_TO-220.png" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Описание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="left">
+
+			Радиатор 30мм х 42мм, высота 25мм (включая основание, толщина основания - 6мм).
+			<br>
+			Крепление радиатора к плате - два отверстия (с торца), которые нужно сделать (см. два крестика).
+			<br>
+			Расстояние между отверстиями - 0.75" (от центра отверстий), 075" * 2.54 = 1.905см = 19.05мм,
+			<br>
+			далее на основании 30мм / 2 = 15мм (центр), теперь от центра по 0.375" (0.75" / 2 = 0.375",
+			<br>
+			0.375" * 2.54 = 0.9525см = 9.525мм) в одну и в другую сторону.
+			<br>
+			<br>
+
+			Крепление транзистора - отверстие между 2-м и 3-м ребром, которое нужно сделать,
+			<br>
+			30мм / 2 = 15мм (центр), и 16мм от края 1-го ребра. 
+			<br>
+			<br>
+
+			Немного низкая посадка транзистора MJE13007!
+			<br>
+			Если выше, через ребро - ножки MJE13007 не достают до платы!
+			<br>
+			<br>
+
+			Диаметр отверстий - 2.5мм, потом метчик М3.
+			<br>
+			Ссылка на радиатор: <a href="http://www.kosmodrom.com.ua/prodlist.php?name=alpr" title="Откроется в новой вкладке" target="_blank">здесь</a>
+			<br>
+			<br>
+
+			Транзистор MJE13003 - Корпус TO-126.
+			<br>
+			Транзистор MJE13007 - Корпус TO-220.
+			<br>
+			<br>
+
+			<b>"</b> - Означает дюймы (inch).
+			<br>
+			<br>
+
+			<!-- Спойлер Линейка -->
+			<span class="spoiler"
+			onclick="document.getElementById('id_sp_rad_linejka').style.display = (document.getElementById('id_sp_rad_linejka').style.display=='none'?'inline':'none');"
+			title="Нажмите">Линейка</span>
+
+			<br>
+
+			<span class="smalltxt">Изображение дюймовой линейки!</span>
+
+			<br>
+
+			<!-- То, что под спойлером -->
+			<div id="id_sp_rad_linejka" style="display: none;">
+
+				<br>
+
+				<table class="rad_linejka_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+				<!-- Линейка INCH -->
+				<img class="icon" src="images/inch.png" title="">
+
+				</td>
+				</tr>
+				</table>
+
+				<br>
+
+				1 / 8 = 0.125" (шаг), 0.125" * 6 = 0.75".
+				<br>
+				0125" * 2.54 = 0.3175см, 0.3175см * 2 = 0.635см, 0.635см * 2 = 1.27см, 1.27см * 2 = 2.54см.
+				<br>
+
+			</div> <!-- Конец спойлера линейка -->
+
+			<br>
+
+			<span class="smalltxt">
+			<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+			</span>
+
+			</td>
+			</tr>
+			</table>
+
+			<br>
+			<hr class="rad_hr">
+			<br>
+
+		</div> <!-- Конец спойлера 30x42x25мм -->
+
+		<!-- Сп. 2 -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+			<!-- Спойлер 2 -->
+			<span class="spoiler"
+			onclick="document.getElementById('id_sp_rad_2').style.display = (document.getElementById('id_sp_rad_2').style.display=='none'?'inline':'none');"
+			title="Нажмите">Радиатор 42x42x25мм</span>
+
+		</td>
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером 2 (42x42x25мм) -->
+		<div id="id_sp_rad_2" style="display: none;">
+
+			<br>
+			<hr class="rad_hr">
+			<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+				<td>
+
+				<!-- Изображение 1 -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/Radiator_42x42x25mm_160x120.png" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+				<td style="padding-left: 6px;">
+
+				<!-- Изображение 2 (анимация) -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/animation/Radiator_42x42x25mm_HQ.webp" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+				<td style="padding-left: 6px;">
+
+				<!-- Изображение 3 -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/Radiator_42x42x25mm_160x120_TO-126.png" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+				<td style="padding-left: 6px;">
+
+				<!-- Изображение 4 -->
+
+				<table class="rad_bg" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<img class="icon" src="images/Radiator_42x42x25mm_160x120_TO-220.png" title="(C) Демидов С.В.">
+				</td>
+				</tr>
+				</table>
+
+				</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<!-- Описание -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="left">
+
+			Радиатор 42мм х 42мм, высота 25мм (включая основание, толщина основания - 6мм).
+			<br>
+			Крепление радиатора к плате - два отверстия, которые нужно сделать (см. два крестика).
+			<br>
+			Расстояние между отверстиями - 1" (от центра отверстий), далее на основании 42мм / 2 = 21мм (центр),
+			<br>
+			теперь от центра по 0.5" в одну и в другую сторону (0.5" + 0.5" = 1").
+			<br>
+			<br>
+
+			Крепление транзистора - отверстие между 2-м и 3-м ребром, которое нужно сделать,
+			<br>
+			42мм / 2 = 21мм (центр), и 16мм от края 1-го ребра.
+			<br>
+			<br>
+
+			Немного низкая посадка транзистора MJE13007!
+			<br>
+			Если выше, через ребро - ножки MJE13007 не достают до платы!
+			<br>
+			<br>
+
+			Диаметр отверстий - 2.5мм, потом метчик М3.
+			<br>
+			Ссылка на радиатор: <a href="http://www.kosmodrom.com.ua/prodlist.php?name=alpr" title="Откроется в новой вкладке" target="_blank">здесь</a>
+			<br>
+			<br>
+
+			Транзистор MJE13003 - Корпус TO-126.
+			<br>
+			Транзистор MJE13007 - Корпус TO-220.
+			<br>
+			<br>
+
+			<b>"</b> - Означает дюймы (inch).
+			<br>
+			<br>
+
+			<span class="smalltxt">
+			<a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine</a> (Украина). <b>(C) Демидов С.В.</b>
+			</span>
+
+			</td>
+			</tr>
+			</table>
+
+			<br>
+			<hr class="rad_hr">
+
+		</div> <!-- Конец спойлера 42x42x25мм -->
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
 	<!-- Сссылки на интернет магазины 2 -->
 
 	<tr>
@@ -6512,15 +6888,31 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 		<table cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
+
 			<td align="center" style="border-right: 1px solid; border-left: 1px solid; padding-right: 16px; padding-left: 16px;">
+				<a href="https://3v3.com.ua" target="_blank">
+				<img src="images-store-logos/logo_3v3.png" title="Откроется в новой вкладке (https://3v3.com.ua)">
+				</a>
+			</td>
+
+			<td align="center" style="border-right: 1px solid; padding-right: 16px; padding-left: 16px;">
 				<a href="https://epicentrk.ua" target="_blank">
 				<img src="images-store-logos/logo_epicentrk.png" title="Откроется в новой вкладке (https://epicentrk.ua)">
 				</a>
 			</td>
+
+			<td rowspan="2" style="padding-left: 16px; padding-right: 16px; border-right: 1px solid;">
+				<img src="icons/help.png" title="3V3! Спасибо за радиодетали! ЕПIЦЕНТР! Спасибо за товары!">
+			</td>
+
 		</tr>
 
 		<tr>
 			<td align="center" style="border-right: 1px solid; border-left: 1px solid; padding-right: 16px; padding-left: 16px;">
+			Электронные компоненты
+			</td>
+
+			<td align="center" style="border-right: 1px solid; padding-right: 16px; padding-left: 16px;">
 			Найдётся всё!
 			</td>
 		</tr>
@@ -13768,7 +14160,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 		<br>
 
 		<div align="center" class="smalltxt">
-		Разыскивается Автор GRF-формата!
+		Разыскивается Автор GRF-формата! :)
 		</div>
 
 		<br>

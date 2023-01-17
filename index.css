@@ -731,6 +731,44 @@
 	width: 100%;
 	}
 
+		/* Заголовок для Радиаторов */
+
+		.rad_title {
+		background: #f0f2f4;
+		border: 1px solid #f0f2f4;
+		border-radius: 0px;
+		padding: 4px 0px 4px 0px;
+		width: 900px;
+		}
+
+		/* Фон и бордюр для Радиаторов */
+
+		.rad_bg {
+		background: #ffffff;
+		border: 1px solid #d0d2d4;
+		padding: 4px 4px 4px 4px;
+		}
+
+		/* Горизонтальная линия для Радиаторов */
+
+		.rad_hr {
+		border: none;              /* Убираем границу для браузера Firefox    */
+		background-color: #d7d7d7; /* Цвет линии для браузера Firefox и Opera */
+		color: #d7d7d7;            /* Цвет линии для остальных браузеров      */
+		height: 1px;               /* Толщина линии                           */
+		width: 760px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		}
+
+		/* Фон и бордюр (линейка) */
+
+		.rad_linejka_bg {
+		background: #ffffff;
+		border: 1px solid #d0d2d4;
+		padding: 4px 4px 4px 4px;
+		}
+
 	/* ------- */
 	/* CALCDIV */
 	/* ------- */
@@ -889,7 +927,7 @@
 	vertical-align: bottom;
 	}
 
-	/* Загаловок калькулятора CALCDIV (фон и бордюр) */
+	/* Заголовок калькулятора CALCDIV (фон и бордюр) */
 
 	.calcdivbgtitle {
 	background: #f0f4f7;
@@ -1136,7 +1174,7 @@
 	}
 
 	/* CALCZENERDIODE */
-	/* Загаловок калькулятора (фон и бордюр) */
+	/* Заголовок калькулятора (фон и бордюр) */
 
 	.calczdbgtitle {
 	background: #f0f4f7;
@@ -2089,7 +2127,7 @@
 	}
 
 	/* CALCTRANSISTORKEY */
-	/* Загаловок калькулятора (фон и бордюр) */
+	/* Заголовок калькулятора (фон и бордюр) */
 
 	.calctkbgtitle {
 	background: #f0f4f7;
@@ -2744,7 +2782,7 @@
 	}
 
 	/* CALCLED */
-	/* Загаловок калькулятора (фон и бордюр) */
+	/* Заголовок калькулятора (фон и бордюр) */
 
 	.calcledbgtitle {
 	background: #f0f4f7;
@@ -3923,7 +3961,7 @@
 	.vrlespr_window {
 	overflow: scroll; /* Полоса прокрутки */
 	width: 700px;
-	height: 256px;
+	height: 272px;
 	}
 
 	/* VRLEx */
