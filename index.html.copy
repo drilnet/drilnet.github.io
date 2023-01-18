@@ -6545,13 +6545,55 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 		<td>
 
 			<!-- Спойлер 1 -->
-			<span class="spoiler"
-			onclick="document.getElementById('id_sp_rad_1').style.display = (document.getElementById('id_sp_rad_1').style.display=='none'?'inline':'none');"
+			<span class="spoilervrle"
+			onclick="javascript:radiatorspoiler_30();"
 			title="Нажмите">Радиатор 30x42x25мм</span>
 
 		</td>
 		</tr>
 		</table>
+
+<script>
+function radiatorspoiler_30()
+{
+if (document.getElementById('id_sp_rad_1').style.display == 'none')
+	{
+	// Открыть спойлер.
+	document.getElementById('id_sp_rad_1').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('id_sp_rad_1').style.display = 'none';
+
+	// pageYOffset или scrollY
+	// Возвращает число пикселей (насколько пролистали документ).
+
+	// innerHeight.
+	// Высота (в пикселях) области просмотра окна браузера
+	// (плюс горизонтальная полоса прокрутеки).
+
+	// document.body.scrollHeight
+	// Измерение высоты контента в элементе, включая содержимое,
+	// невидимое из-за прокрутки.
+
+	var y = pageYOffset + innerHeight;
+
+	if (y > document.body.scrollHeight)
+		{
+		y = pageYOffset;
+
+			// Передёрнуть Scroll!
+			window.scroll(0,y-1);
+			window.scroll(0,y);
+			// В firefox нормально, в chrom есть небольшая проблема,
+			// поэтому передёрнуть Scroll.
+
+		// alert("Scroll внизу!");
+		}
+	}
+}
+</script>
 
 		<!-- То, что под спойлером 1 (30x42x25мм) -->
 		<div id="id_sp_rad_1" style="display: none;">
@@ -6729,13 +6771,55 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 		<td>
 
 			<!-- Спойлер 2 -->
-			<span class="spoiler"
-			onclick="document.getElementById('id_sp_rad_2').style.display = (document.getElementById('id_sp_rad_2').style.display=='none'?'inline':'none');"
+			<span class="spoilervrle"
+			onclick="javascript:radiatorspoiler_42();"
 			title="Нажмите">Радиатор 42x42x25мм</span>
 
 		</td>
 		</tr>
 		</table>
+
+<script>
+function radiatorspoiler_42()
+{
+if (document.getElementById('id_sp_rad_2').style.display == 'none')
+	{
+	// Открыть спойлер.
+	document.getElementById('id_sp_rad_2').style.display = 'inline';
+	}
+	else
+	{
+	// Закрыть спойлер.
+	document.getElementById('id_sp_rad_2').style.display = 'none';
+
+	// pageYOffset или scrollY
+	// Возвращает число пикселей (насколько пролистали документ).
+
+	// innerHeight.
+	// Высота (в пикселях) области просмотра окна браузера
+	// (плюс горизонтальная полоса прокрутеки).
+
+	// document.body.scrollHeight
+	// Измерение высоты контента в элементе, включая содержимое,
+	// невидимое из-за прокрутки.
+
+	var y = pageYOffset + innerHeight;
+
+	if (y > document.body.scrollHeight)
+		{
+		y = pageYOffset;
+
+			// Передёрнуть Scroll!
+			window.scroll(0,y-1);
+			window.scroll(0,y);
+			// В firefox нормально, в chrom есть небольшая проблема,
+			// поэтому передёрнуть Scroll.
+
+		// alert("Scroll внизу!");
+		}
+	}
+}
+</script>
 
 		<!-- То, что под спойлером 2 (42x42x25мм) -->
 		<div id="id_sp_rad_2" style="display: none;">
