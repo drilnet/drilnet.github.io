@@ -4348,7 +4348,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 							<!-- ÐÐµÐ±Ð¾Ð»ÑŒÑˆÐ¾Ðµ Ð¾ÐºÐ½Ð¾ Ñ Ð¿Ñ€Ð¾ÐºÑ€ÑƒÑ‚ÐºÐ¾Ð¹ -->
 
-							<div align="left" style="overflow: scroll; width: 640px; height: auto;">
+							<div align="left" style="overflow: scroll; width: 640px;">
 
 								<table width="950px" style="margin-bottom: 4px;" cellspacing="0" cellpadding="0" border="0">
 								<tr>
@@ -14954,1180 +14954,98 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 		<tr>
 		<td align="center">
 
-		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%84%D0%BE%D1%82%D0%BE%20%D0%BF%D0%BB%D0%B0%D1%82%D1%8B%2072dpi/top.png"
-		title="Ð¡Ð¾Ð±Ñ€Ð°Ð½Ð½Ð°Ñ Ð¿Ð»Ð°Ñ‚Ð°: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver3_5')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- TEA2025B. Ver. 4 -->
-
-	<!-- 1 -->
-
-	<div id="ModalWinTEA2025B_Ver4_1" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-
-		<br>
-		<br>
-		<b>Ð¡Ñ…ÐµÐ¼Ð° TEA2025B (ÑÑ‚ÐµÑ€ÐµÐ¾) Ð±ÐµÐ· Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ° Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%A1%D1%85%D0%B5%D0%BC%D0%B0.png"
-		title="Ð¡Ñ…ÐµÐ¼Ñƒ Ð½Ð°Ñ‡ÐµÑ€Ñ‚Ð¸Ð»: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-
-		<br>
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð£ÑÐ¸Ð»Ð¸Ñ‚ÐµÐ»ÑŒ Ð·Ð²ÑƒÐºÐ° Ð½Ð° Ð¼Ð¸ÐºÑ€Ð¾ÑÑ…ÐµÐ¼Ðµ TEA2025B -> TEA2025B. Ver. 4">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_1')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 2 -->
-
-	<div id="ModalWinTEA2025B_Ver4_2" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-
-		<br>
-		<br>
-		<b>Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ñ€Ð°Ð´Ð¸Ð¾Ð´ÐµÑ‚Ð°Ð»ÐµÐ¹ Ð½Ð° Ð¿ÐµÑ‡Ð°Ñ‚Ð½Ð¾Ð¹ Ð¿Ð»Ð°Ñ‚Ðµ</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%A0%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2.png"
-		title="Ð Ð°ÑÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð¾Ð²: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-
-		<br>
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð£ÑÐ¸Ð»Ð¸Ñ‚ÐµÐ»ÑŒ Ð·Ð²ÑƒÐºÐ° Ð½Ð° Ð¼Ð¸ÐºÑ€Ð¾ÑÑ…ÐµÐ¼Ðµ TEA2025B -> TEA2025B. Ver. 4">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_2')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 3 -->
-
-	<div id="ModalWinTEA2025B_Ver4_3" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-
-		<br>
-		<br>
-		<b>ÐŸÐµÑ‡Ð°Ñ‚Ð½Ð°Ñ Ð¿Ð»Ð°Ñ‚Ð° (Ð¿Ð¾Ð·Ð¸Ñ‚Ð¸Ð²)</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%20(%D0%9F).png"
-		title="Ð Ð°Ð·Ð²Ð¾Ð´ÐºÐ° Ð¿Ð»Ð°Ñ‚Ñ‹: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-
-		<br>
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð£ÑÐ¸Ð»Ð¸Ñ‚ÐµÐ»ÑŒ Ð·Ð²ÑƒÐºÐ° Ð½Ð° Ð¼Ð¸ÐºÑ€Ð¾ÑÑ…ÐµÐ¼Ðµ TEA2025B -> TEA2025B. Ver. 4">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_3')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 4 -->
-
-	<div id="ModalWinTEA2025B_Ver4_4" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-
-		<br>
-		<br>
-		<b>ÐŸÐµÑ‡Ð°Ñ‚Ð½Ð°Ñ Ð¿Ð»Ð°Ñ‚Ð° (Ð½ÐµÐ³Ð°Ñ‚Ð¸Ð²)</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0%2C%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%2072dpi/TEA2025B.%20%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%20(%D0%9D).png"
-		title="Ð Ð°Ð·Ð²Ð¾Ð´ÐºÐ° Ð¿Ð»Ð°Ñ‚Ñ‹: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-
-		<br>
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%204" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð£ÑÐ¸Ð»Ð¸Ñ‚ÐµÐ»ÑŒ Ð·Ð²ÑƒÐºÐ° Ð½Ð° Ð¼Ð¸ÐºÑ€Ð¾ÑÑ…ÐµÐ¼Ðµ TEA2025B -> TEA2025B. Ver. 4">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver4_4')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--                               -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾ BoxPhotorezist -->
-	<!--                               -->
-
-	<div id="ModalWinBoxPhotorezist" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		<b>Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚:</b>
-
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Box%20For%20Exposure%20Photoresist/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%97%D0%B0%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B/Preview%20(512x402).png">
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/Box%20For%20Exposure%20Photoresist/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%97%D0%B0%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B/Preview%20(451x130).png">
-
-		<br>
-		<br>
-		Ð¡Ð´ÐµÐ»Ð°Ð½Ð¾ Ð¸Ð· Ð±ÑƒÐ¼Ð°Ð¶Ð½Ð¾Ð³Ð¾ ÑÑ‰Ð¸ÐºÐ°!
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinBoxPhotorezist')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--                                -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾ Divider R1 Ð¸ R2 -->
-	<!--                                -->
-
-	<div id="ModalWinDividerR1R2" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<iframe id="repodividerr1r2" src="calcdivr2.html" style="width: 780px; height: 320px;" scrolling="yes"></iframe>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<br>
-		<a href="calcdivr2.html" target="_blank" title="Ð¤Ð¾Ñ€Ð¼ÑƒÐ»Ñ‹, Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ñ‹, ÐºÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€ Ð½Ð° HTML + JavaScript">ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinDividerR1R2')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--                                 -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾ Power Supply 512 -->
-	<!--                                 -->
-
-	<!-- 1 -->
-
-	<div id="ModalWinPS512_1" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-		<br>
-		<br>
-		<b>Ð¡Ñ…ÐµÐ¼Ð° Ð±Ð»Ð¾ÐºÐ° Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-			<div id="repops512sceheme" class="modalwintxtsize2" style="overflow: scroll; width: 740px; height: 320px;">
-				Ð£Ð²Ð°Ð¶Ð°ÐµÐ¼Ñ‹Ð¹ ÑÐ¾Ð¸ÑÐºÐ°Ñ‚ÐµÐ»ÑŒ! ÐžÐ±Ñ€Ð°Ñ‚Ð¸Ñ‚Ðµ ÑÐ²Ð¾Ñ‘ Ð²Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ Ð½Ð° Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ñ‚ÐµÑÑ‚Ð¾Ð²!
-				<br>
-				Ð¡Ð¼Ð¾Ñ‚Ñ€Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PS_512.pdf" title="Ð¡ÐºÐ°Ñ‡Ð°Ñ‚ÑŒ">pdf-Ñ„Ð°Ð¹Ð»</a> (ÑÐ¼Ð¾Ñ‚Ñ€Ð¸Ñ‚Ðµ Ð² ÐºÐ¾Ð½Ñ†Ðµ).
-
-				<br>
-				<br>
-
-				<img src="images-repository/PS_512_720x471.png"
-				title="Ð¡Ñ…ÐµÐ¼Ñƒ Ð½Ð°Ñ‡ÐµÑ€Ñ‚Ð¸Ð»: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-			</div>
-
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð¡Ñ‚Ð°Ð±Ð¸Ð»Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ... -> Power Supply +5V, -5V, +12V, -12V">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinPS512_1')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 2 -->
-
-	<div id="ModalWinPS512_2" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-		<br>
-		<br>
-		<b>Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ñ€Ð°Ð´Ð¸Ð¾Ð´ÐµÑ‚Ð°Ð»ÐµÐ¹ Ð½Ð° Ð¿ÐµÑ‡Ð°Ñ‚Ð½Ð¾Ð¹ Ð¿Ð»Ð°Ñ‚Ðµ</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PCB%20-%20Images/PS_512_(DIN5_Inside)_1_640x.png"
-		title="Ð Ð°ÑÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð¾Ð²: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-		<br>
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð¡Ñ‚Ð°Ð±Ð¸Ð»Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ... -> Power Supply +5V, -5V, +12V, -12V">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinPS512_2')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 3 -->
-
-	<div id="ModalWinPS512_3" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-		<br>
-		<br>
-		<b>ÐŸÐµÑ‡Ð°Ñ‚Ð½Ð°Ñ Ð¿Ð»Ð°Ñ‚Ð° (Ð¿Ð¾Ð·Ð¸Ñ‚Ð¸Ð²)</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PCB%20-%20Images/PS_512_(DIN5_Inside)_2_640x.png"
-		title="Ð Ð°Ð·Ð²Ð¾Ð´ÐºÐ° Ð¿Ð»Ð°Ñ‚Ñ‹: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-		<br>
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð¡Ñ‚Ð°Ð±Ð¸Ð»Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ... -> Power Supply +5V, -5V, +12V, -12V">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinPS512_3')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 4 -->
-
-	<div id="ModalWinPS512_4" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ (License): <b>Free</b>
-		<br>
-		<br>
-		<b>ÐŸÐµÑ‡Ð°Ñ‚Ð½Ð°Ñ Ð¿Ð»Ð°Ñ‚Ð° (Ð½ÐµÐ³Ð°Ñ‚Ð¸Ð²)</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/PCB%20-%20Images/PS_512_(DIN5_Inside)_3_640x.png"
-		title="Ð Ð°Ð·Ð²Ð¾Ð´ÐºÐ° Ð¿Ð»Ð°Ñ‚Ñ‹: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-		<br>
-		<br>
-		Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð² 600dpi Ð¸Ñ‰Ð¸Ñ‚Ðµ <a href="https://github.com/drilnet/electronics/tree/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð¸ÐºÐ° -> Ð¡Ñ‚Ð°Ð±Ð¸Ð»Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ... -> Power Supply +5V, -5V, +12V, -12V">Ð·Ð´ÐµÑÑŒ</a>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinPS512_4')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 5 -->
-
-	<div id="ModalWinPS512_5" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		<b>Ð¡Ð¾Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img src="https://github.com/drilnet/electronics/raw/master/Power%20Supply%20%2B5V%2C%20-5V%2C%20%2B12V%2C%20-12V/Images%20-%20Photo/ImagePS_512_3.png"
-		title="(Ð¡) Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinPS512_5')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- Reklama -->
-
-	<div id="ModalWinPS512_R" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-			<h3>Ð“Ð´Ðµ Ð·Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ñ‚Ð¾Ñ€Ð¾Ð¸Ð´Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ‚Ñ€Ð°Ð½ÑÑ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¾Ñ€ Ð² Ð£ÐºÑ€Ð°Ð¸Ð½Ðµ?</h3>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-			<table cellspacing="0" cellpadding="0" border="0">
-			<tr>
-			<td>
-
-			Ð¯ Ð·Ð°ÐºÐ°Ð·Ñ‹Ð²Ð°Ð» Ð·Ð´ÐµÑÑŒ: <a href="https://mibox.com.ua" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">https://mibox.com.ua</a>
-			<br>
-			E-mail: <a href="mailto:mibox2005@gmail.com">mibox2005@gmail.com</a>
-			<br>
-			ÐšÐ¾Ð¿Ñ‡Ð¸Ð½ÑÐºÐ¸Ð¹ Ð›ÐµÐ¾Ð½Ð¸Ð´ Ð¡Ñ‚Ð°Ð½Ð¸ÑÐ»Ð°Ð²Ð¾Ð²Ð¸Ñ‡
-
-			</td>
-			</tr>
-			</table>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinPS512_R')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--                              -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾ Genius SP-G06 -->
-	<!--                              -->
-
-	<div id="ModalWinGeniusSP-G06" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		<b>Ð”Ð¾ Ñ€ÐµÐ¼Ð¾Ð½Ñ‚Ð° (ÐºÐ¾Ð»Ð¾Ð½ÐºÐ¸ Ð¿Ñ€Ð¸Ð±Ð»Ð¸Ð·Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ 2002 Ð³Ð¾Ð´Ð°):</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%94%D0%BE%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png">
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<br>
-		<b>ÐŸÐ¾ÑÐ»Ðµ Ñ€ÐµÐ¼Ð¾Ð½Ñ‚Ð°:</b>
-		<br>
-		<br>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-		<img width="50%" height="auto" src="https://github.com/drilnet/electronics/raw/master/Speakers%20Genius%20SP-G06/Images/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%2C%2072dpi.png"
-		title="Ð ÐµÐ¼Ð¾Ð½Ñ‚ ÐºÐ¾Ð»Ð¾Ð½Ð¾Ðº: Ð”ÐµÐ¼Ð¸Ð´Ð¾Ð² Ð¡.Ð’.">
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinGeniusSP-G06')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--                          -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾ Ð˜Ð½Ñ‚ÐµÐ»Ð»ÐµÐºÑ‚ -->
-	<!--                          -->
-
-	<div id="ModalWinIntelligence" class="modalwin">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		<hr>
-		Ð’Ð°Ð¼ <a href="https://github.com/drilnet/Intelligence" title="Ð ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¹: Ð˜Ð½Ñ‚ÐµÐ»Ð»ÐµÐºÑ‚. Ð˜ÑÐºÑƒÑÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ Ð¸Ð½Ñ‚ÐµÐ»Ð»ÐµÐºÑ‚">ÑÑŽÐ´Ð°</a>
-		<hr>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinIntelligence')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--->
-
-	<!--                                            -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾ SMF (Simple Machines Forum) -->
-	<!--                                            -->
-
-	<!-- 1 -->
-
-	<div id="ModalWinSMF" class="modalwin modalwintxtsize2">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<!-- ÐžÑ€Ð¸Ð³Ð¸Ð½Ð°Ð» (Ð»Ð¾Ð³Ð¾) -->
-		<tr>
-		<td align="center">
-
-		<hr>
-
-		ÐžÑ€Ð¸Ð³Ð¸Ð½Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð±Ñ‹Ð»Ð¾ Ð²Ð·ÑÑ‚Ð¾ Ñ ÑÐ°Ð¹Ñ‚Ð°: <a href="https://prowebber.ru" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">https://prowebber.ru</a>
-		<br>
-		<br>
-		Ð’Ð¾Ñ‚ Ð¾Ð½Ð¾:
-		<br>
-		<br>
-
-			<!-- Ð›Ð¾Ð³Ð¾ SMF (Ð¾Ñ€Ð¸Ð³Ð¸Ð½Ð°Ð») -->
-
-			<table class="smfbglogooriginal" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-			<td>
-
-				<img class="icon" src="icons/SMF_Original.png" title="Ð›Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿">
-
-			</td>
-			</tr>
-			</table>
-
-			<br>
-
-			Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ Ð½Ð° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð½Ðµ ÑƒÐºÐ°Ð·Ð°Ð½Ð°! ÐÐ²Ñ‚Ð¾Ñ€ Ð½Ðµ ÑƒÐºÐ°Ð·Ð°Ð½!
-
-		<hr>
-
-		</td>
-		</tr>
-
-		<!-- ÐšÐ°Ðº ÑÐ´ÐµÐ»Ð°Ð» Ð¯ -->
-		<tr>
-		<td align="center">
-
-		<br>
-
-			<!-- Ð›Ð¾Ð³Ð¾ SMF -->
-
-			<table cellspacing="0" cellpadding="0" border="0">
-			<tr>
-
-				<td>
-				Ð¯ ÑÐµÐ±Ðµ Ð´Ð»Ñ ÑÐ°Ð¹Ñ‚Ð° ÑÐ´ÐµÐ»Ð°Ð» Ñ‚Ð°Ðº:
-				</td>
-
-				<td>&nbsp;</td>
-
-				<td>
-
-					<table class="smfbglogoi" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-
-					<td>
-					<img class="icon" src="icons/SMF_2.png" title="Ð›Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿">
-					<td>
-
-					</tr>
-					</table>
-
-				</td>
-
-			</tr>
-			</table>
-
-		<br>
-
-			<!-- Ð¡ÑÑ‹Ð»ÐºÐ¸ Ð½Ð° (Ð»Ð¾Ð³Ð¾) Ð½Ð° png-Ñ„Ð°Ð¹Ð»Ñ‹ -->
-
-			<table cellspacing="0" cellpadding="0" border="0">
-			<tr>
-
-				<td>
-				<a href="icons/SMF_1.png" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">SMF_1.png</a> (562 x 66 px)
-				</td>
-
-				<td>&nbsp;&nbsp;</td>
-
-				<td>
-				<a href="icons/SMF_2.png" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">SMF_2.png</a> (285 x 33 px)
-				</td>
-
-				<td>&nbsp;&nbsp;</td>
-
-				<td>
-				<a href="icons/SMF_3.png" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">SMF_3.png</a> (204 x 24 px)
-				</td>
-
-			</tr>
-			</table>
-
-			<br>
-
-			<!-- Ð¡ÑÑ‹Ð»ÐºÐ¸ Ð½Ð° (Ð»Ð¾Ð³Ð¾) Ð½Ð° xcf-Ñ„Ð°Ð¹Ð»Ñ‹ -->
-
-			<table class="smfxcf" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-
-				<td>
-				Ð˜ÑÑ…Ð¾Ð´Ð½Ð¸ÐºÐ¸ Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ Ð³Ñ€Ð°Ñ„Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€Ð° <a href="https://www.gimp.org" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">Gimp</a>:
-				</td>
-
-				<td>&nbsp;</td>
-
-				<td>
-				<a href="icons/SMF_1.xcf" title="Ð¡ÐºÐ°Ñ‡Ð°Ñ‚ÑŒ">SMF_1.xcf</a>,
-				</td>
-
-				<td>&nbsp;</td>
-
-				<td>
-				<a href="icons/SMF_2.xcf" title="Ð¡ÐºÐ°Ñ‡Ð°Ñ‚ÑŒ">SMF_2.xcf</a>,
-				</td>
-
-				<td>&nbsp;</td>
-
-				<td>
-				<a href="icons/SMF_3.xcf" title="Ð¡ÐºÐ°Ñ‡Ð°Ñ‚ÑŒ">SMF_3.xcf</a>.
-				</td>
-
-			</tr>
-			</table>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinSMF')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!-- 2 -->
-
-	<div id="ModalWinSMF2" class="modalwin modalwintxtsize2">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="left">
-
-		Ð ÑƒÑÑÐºÐ¾ÑÐ·Ñ‹Ñ‡Ð½Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾ <a href="https://www.simplemachines.ru" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">Ð·Ð´ÐµÑÑŒ</a>.
-		<br>
-		Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾!
-
-		</td>
-		</tr>
-
-		<tr>
-		<td align="center">
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWin('ModalWinSMF2')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--->
-
-	<!--                                -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð¾ÐºÐ½Ð° Ð´Ð»Ñ Ð»Ð¸Ñ‚ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñ‹  -->
-	<!--                                -->
-
-	<!-- Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² Ð¼Ð°ÑÑÐ¸Ð² (Ð² javascript): ModalWinBook_1, ModalWinBook_2 Ð¸ Ñ‚.Ð´. -->
-
-	<div id="ModalWinBook_0" class="modalwinbook"></div>
-	<div id="ModalWinBook_1" class="modalwinbook"></div>
-	<div id="ModalWinBook_2" class="modalwinbook"></div>
-	<div id="ModalWinBook_3" class="modalwinbook"></div>
-	<div id="ModalWinBook_4" class="modalwinbook"></div>
-	<div id="ModalWinBook_5" class="modalwinbook"></div>
-	<div id="ModalWinBook_6" class="modalwinbook"></div>
-	<div id="ModalWinBook_7" class="modalwinbook"></div>
-	<div id="ModalWinBook_8" class="modalwinbook"></div>
-	<div id="ModalWinBook_9" class="modalwinbook"></div>
-	<div id="ModalWinBook_10" class="modalwinbook"></div>
-	<div id="ModalWinBook_11" class="modalwinbook"></div>
-	<div id="ModalWinBook_12" class="modalwinbook"></div>
-	<div id="ModalWinBook_13" class="modalwinbook"></div>
-	<div id="ModalWinBook_14" class="modalwinbook"></div>
-	<div id="ModalWinBook_15" class="modalwinbook"></div>
-
-	<!--                 -->
-	<!-- ÐžÐºÐ½Ð¾            -->
-	<!-- Ð—Ð°ÐºÐ¾Ð½Ñ‹ ÐšÐ¸Ñ€Ñ…Ð³Ð¾Ñ„Ð° -->
-	<!--                 -->
-
-	<div id="Kirchhoff" align="center" class="pop-up-window_kirchhoff">
-	</div>
-
-	<!--                                              -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾                               -->
-	<!-- ÐÐ¾Ð¼Ð¸Ð½Ð°Ð»Ñ‹ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ñ… ÑÐ¾Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð»ÐµÐ½Ð¸Ð¹ (Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹) -->
-	<!--                                              -->
-
-	<div id="ModalWinNSS" align="center" class="nssmodalwin">
-	</div>
-
-	<!--                                                 -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾                                  -->
-	<!-- ÐšÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€ Ð±Ð»Ð¸Ð¶Ð°Ð¹ÑˆÐµÐµ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ð¾Ðµ ÑÐ¾Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð»ÐµÐ½Ð¸Ðµ -->
-	<!--                                                 -->
-
-	<div id="ModalWinBS" class="bsmodalwin">
-	</div>
-
-	<!--           -->
-	<!-- ÐžÐºÐ½Ð¾      -->
-	<!-- Ð—Ð°ÐºÐ¾Ð½ ÐžÐ¼Ð° -->
-	<!--           -->
-
-	<div id="ZOm" align="center" class="pop-up-window_zom">
-	</div>
-
-	<!--                                                                -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾                                                 -->
-	<!-- ÐÐ¾Ð¼Ð¸Ð½Ð°Ð»Ñ‹ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐºÑ‚Ñ€Ð¾Ð»Ð¸Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… ÐºÐ¾Ð½Ð´ÐµÐ½ÑÐ°Ñ‚Ð¾Ñ€Ð¾Ð² (Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹) -->
-	<!--                                                                -->
-
-	<div id="ModalWinNSEK" align="center" class="nsekmodalwin">
-	</div>
-
-	<!--                                           -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾                            -->
-	<!-- ÐšÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€ Ð±Ð»Ð¸Ð¶Ð°Ð¹ÑˆÐ°Ñ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ð°Ñ Ñ‘Ð¼ÐºÐ¾ÑÑ‚ÑŒ -->
-	<!-- Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð»Ð¸Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ ÐºÐ¾Ð½Ð´ÐµÐ½ÑÐ°Ñ‚Ð¾Ñ€Ñ‹            -->
-	<!--                                           -->
-
-	<div id="ModalWinCalcBSEE" align="center" class="calcbsee_modalwin">
-	</div>
-
-	<!--                                                 -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾                                  -->
-	<!-- Ð¡Ð¿Ñ€Ð°Ð²Ð¾Ñ‡Ð½Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¿Ð¾ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð¼Ñƒ Ð°Ð´Ñ€ÐµÑÑƒ (RUS) -->
-	<!--                                                 -->
-
-	<div id="ModalWinInfMAr" class="modalwininfmailingaddres">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		<hr>
-
-			7 Ð¸ÑŽÐ»Ñ 2020 Ð³Ð¾Ð´Ð° <b>Ð‘Ð°Ð»Ð°ÐºÐ»ÐµÐ¹ÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½</b> Ð±Ñ‹Ð» Ð»Ð¸ÐºÐ²Ð¸Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½ Ð² Ñ€Ð°Ð¼ÐºÐ°Ñ… Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ð¾-Ñ‚ÐµÑ€Ñ€Ð¸Ñ‚Ð¾Ñ€Ð¸Ð°Ð»ÑŒÐ½Ð¾Ð¹
-			<br>
-			Ñ€ÐµÑ„Ð¾Ñ€Ð¼Ñ‹ Ð¿Ð¾ Ð½Ð¾Ð²Ð¾Ð¼Ñƒ Ð´ÐµÐ»ÐµÐ½Ð¸ÑŽ Ð¥Ð°Ñ€ÑŒÐºÐ¾Ð²ÑÐºÐ¾Ð¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸, Ñ‚ÐµÑ€Ñ€Ð¸Ñ‚Ð¾Ñ€Ð¸Ñ Ð²Ð¾ÑˆÐ»Ð° Ð² ÑÐ¾ÑÑ‚Ð°Ð² <b>Ð˜Ð·ÑŽÐ¼ÑÐºÐ¾Ð³Ð¾ Ñ€Ð°Ð¹Ð¾Ð½Ð°</b>!
-
-			<br>
-			<br>
-
-			<a href="https://zakon.rada.gov.ua/laws/show/807-IX#Text" title="ÐžÑ‚ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐºÐ»Ð°Ð´ÐºÐµ" target="_blank">ÐŸÐ¾ÑÑ‚Ð°Ð½Ð¾Ð²Ð° Ð’ÐµÑ€Ñ…Ð¾Ð²Ð½Ð¾Ñ— Ð Ð°Ð´Ð¸ Ð£ÐºÑ€Ð°Ñ—Ð½Ð¸ "ÐŸÑ€Ð¾ ÑƒÑ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ñ‚Ð° Ð»Ñ–ÐºÐ²Ñ–Ð´Ð°Ñ†Ñ–ÑŽ Ñ€Ð°Ð¹Ð¾Ð½Ñ–Ð²"</a>
-
-		<hr>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWinInfMailingAddres('ModalWinInfMAr')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-	<!--                                                 -->
-	<!-- ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾ÐºÐ½Ð¾                                  -->
-	<!-- Ð¡Ð¿Ñ€Ð°Ð²Ð¾Ñ‡Ð½Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¿Ð¾ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð¼Ñƒ Ð°Ð´Ñ€ÐµÑÑƒ (ENG) -->
-	<!--                                                 -->
-
-	<div id="ModalWinInfMAe" class="modalwininfmailingaddres">
-
-		<table align="center" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
-		<td align="center">
-
-		<hr>
-
-			On July 7, 2020, the <b>Balakley district</b> was liquidated as part of the administrative-territorial reform
-			<br>
-			for the new division of the Kharkiv region, the territory became part of the <b>Izyum district</b>!
-
-		<hr>
-
-		</td>
-		</tr>
-
-		<tr>
-		<td>
-
-			<br>
-
-			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
-
-			<tr>
-			<td>
-			<a href="javascript:CloseModalWinInfMailingAddres('ModalWinInfMAe')">Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ</a>
-			</td>
-			</tr>
-
-			</table>
-
-                </td>
-		</tr>
-
-		</table>
-
-	</div>
-
-</body>
-</html>
+		<img src="https://github.com/drilnet/electronics/raw/master/AUDIO%20AMPLIFIER%20TEA2025B/TEA2025B.%20Ver.%203/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%‹^ÆE“†O@Ä”ÿ Ãå¬öþä”—ê£úZ)²§èQÚ9É‚,R¸úŸñúûs&ÑUÓRo)ªCZ×¡uiaÊR:º†Ö¶åA¯¸©¦›n½¤Š‡»îýÛ²2j¡# “xtî&¢‚¢µñ´ó3+&bu~.G¹b÷"O®K&”Š|úAÉ[–ã¹íÞìµ>Uè±¶-6œ³ÿ 
+ÄÅNC6£a6îjŽî-Ü+LõÇS–Ñxv±õÃ|‰ê5~û®£¦òI­õû<\û¤{U´—blž†v\™ìÏyZé÷lö$…SH&R~ª··øeüÁËHjº´žŠvnƒ<ré@sž…ÚMÚì«T"Ð¶I%@?[Ÿ`DåÚ¹…z.çÙmöý­ÒÕêÔ¦:v—u…?¡T½¾ŠÔû~>_ú951ÇX“û‘.KÛ¶õ9é-Kºf£É%k+9ãƒôöÎí´%Ú‹¬R÷å®¹€íö†ª:^{™àñ‚¥tÿ þŸN=CÊ¬¡ÛOmœ¤52ç¦Úl¸2jÿ Çõúý}ˆ?uˆâÒ<º”¶mž;(€AN—¸™H žµ¹¸æÇéì%¼Gôñ–êrä(!kÈñæ:Zã1uM3ª‡<ëù÷óEäSÕÅOY¹Ë7Ö[^ÜìøªðüºDnMœñÕM;;ékµ®}Ë|¥Ì©-„Vàe@c7;oGëçkT¦²sÐo,´“ÌU“O±÷#,÷ÑEAë7«ËàZ0;›¥¶7;Aá™ì,¼“Èúþ=ƒ·®$”M(¥z’}³åèš½ÜH®zÅ÷S-f©È«Zÿ ·úßÙ^ëx‘Y‹kl–ë½û÷+=Ñö=˜æ¤c¥„]6'Ç P ¦çþ#Üc7µ±ï¬×S×QÏXË.n;œ‚îñ˜êõ¯PsûŽ—pÇå!Uˆü_cTäqË“j¦ªzõ={kíe½ÅüwÒÇ¨‚8ŽüšFHeoÏäñÏ6÷7XÝˆã@YoÝ”±Ú• Š :	·NV]¼u¹f*TékžãìeµÃà„Œt'ºäÍÃ|x ´R5S‡U¹ólÿ ccéHæh©h—µ´pGµ-·mÞÛIÜÀÔu=ì?s}›Š×wæ&J…:¬Í½‹ß»7tS­[WÓ(•Y„¦Eêþ‡ÙMîý}ËP!8Bp>]Bÿ {ùÚí¦_å²ž2€Šy}[/WîŠ¬ŽÎ<‘Ù®×6ä}ÈûMô{¾Þ— äŠõˆ¼Ÿ¿®õh·ó¾G—C*í<vP	[J	ÛMÿ Oo>ï-¯hÍ:ÏÍíŸ¢*¥ú*¡¦Å½v6mSª°'ú_ñì¹9šIn<	Ö€ô=Ûy»pßvv¶a¡)N‚¨76w_6&¬Ê`¹E¹7ööl6›+—ú… ž=DÖ\¯iqÌ^$½Ù©¯OØ‰Ö\ž£#úÎ®[‹“íÛª"hP1ÔÉý×h ( ÇB–+.)ª„.Âà­?OÀöIsheƒÄ§Rs@ö÷"€zSUÍ%d‘±?[r?§øeñ*@¤tY»½­¤¢C“×Á†«ï8ÕŒ–þcìšóyksÅåÔAîÏ<.ÝË`#Y‹LØ¬v2²COhÁbNžû=±ËÂúùÚòä}•ëyBËu»“u»‚Iés³«±ï^±´ÀúÀ"ãð¯»îRÝ½×†ƒ‡Fí}yqÌ+ŒŽŒ[c©¦†9±äkÐ-n@¹ÿ mÁq,}·XeÅƒ`·W‡Mù:7v3#LUn¬ª¦÷¿Þ=Ù\ÛH„)­:o’ÛÍ;^D*¡7®²¥Ò8‹³;XóêAì/½Åã1 Pt×+ÞKºî+lœô®Ü‰-lrÒTÆ<R) Öú{gið¡"XŽG§'Ù-­!Œj­+ÐeMÕ4µEæ„LÄñý?OgwüÐêÁ€ë,}¾æ9sb@ZŸ1{«Zši'_áøöÓï¶·6Úq^¢žw÷-÷=ãÂû~]Ø<dàÄEÏ+éôüû·{¸Š±évÁ½DdY\ô&
+Ík}GüOø{ŠåÜÑ.G©«oÜÖö ±ç¥fßÂE–‰©æar¤r¨÷óeÌÖ·«y4½H¶\ÕÅµ˜äórÆì
+­·—–¢9˜ÓÏÏêánu·y‡›ìù‹–Ö	Ôx±Žƒ­Ìâçcl¸cž—èÃÍË7öüóoÇ¸	Ë’@Oç¸ ¨Ò:n®þ*7%È×Of»\· ž¨-·’‹^“´Xºº±aX3¦Àþyö1{‹¹mŠÔï[órÝ©ººm4½9¶ó”MZŽš¡%KxÕÔ? û‹ï½ÃÝùwpÙ³+!ùùu‰ä}çníc}¯f”êjŠƒùtY÷ßÃÝ·‰ÉËšÀcá¦»™bŒ <ßñï+}·ûÍÏ»X¦×ºIW =b>áÎœÅsp×K+HòœŸ>Õ½p«ŽjUˆ‰"R¶ÓsÇ§Óîcµça%Ð˜·k|ú’y^þæk û‰£|úFáö+Å\ÐÔÂÖˆ°k[êO±&ãÍPµ°’'ûz,Ü=À[Ç÷m£ î¶hª%†ê2€Ú¹.,@Ù.ãÍöÖ›[]Ý0Àë=ëç5Ú-åº½z™õèºs»t^M!`,Ú~··°×"µŸ4ßÉ¸¸ŸX—ìþÐœãÎgp™ij’~Þ»w¸³»2®¯DÑøb×äŒ9#H½Éå»Ý–Ò°R¬Ì£¬Â÷^ÿ •m9XíVad
+S!¾v9Çn‰ð5yI$—ÌcÊì9ÕÀ½Æ;ÆÃlÓHñâF:…=—Ý"å-á®®ÐD’yuwô›m÷:2X0–0CrZÞþñ'ræÈ9gs$=t3b÷#c6"YÐw—é:ÚYlR]T—Óéë«Øÿ `÷×i¾è¤ø¸W¤û—¸k½L–;"SB@èß{WpOÑSÄÖÒSPŸ¥¯Ç¹oçmª5ñQòsÖ\{+É[4"=Û{£Hh{º"›Ó«7®'&B8jY…Éí{û˜ùWœ¶ž`E´yŸJõ—×›ÆÁ´m¦kBª ò§Y0Û«=·"¤ÉQÈr××÷'§.í—Š =a?»ÿ ïøfŽØ’xt÷EÚi’œ­Dñk&Ä³-Çô÷©yN;UÕëîùtZ^<¥MI<GJè'‚°
+ˆ@kÜÜA¿<[Ù{£À<9:edHÒhz|‹#H°´p¬€‹Y–ÿ ¥Ï²yínüH7)¯f¨…:,ÝÙÑ;'³èLõ:1²ÆnÓ*ªZâ÷¸öýÇ5ÜòÖÝ$·KãiçÐrïÜ¹}¶°“v¸Œ\H¢ª9è
+Åüêí¹AA¼êwutPT§Ü£°²Ù¿´Û{Å~gûËs4’ÏiµY2H•ÐiÖ:óßsÜÍú6ƒhSlEBè¨4üººß‹]-ÔÕû0d6vJ
+‡§¦PÑA2HC¬|‚ ûÀ>yûÍû5¥·6ÄË½*A•é'²<‰Ìÿ x~g‘÷ë§úƒ“¬šÿ >ˆÿ Ìü.j†ºº†:iV8u˜f
+}J§‚=õKîï+ó7+E¿Z:»H °¨$u‘;÷Ý}=º¾‘·a¨ Hb1Ñ,éšŒÍu]F2¦9•ˆ¹<[Ü™wºmûuóÛ«CŽ±âçrÛvmæKXXR¤Œdw’¨–‚§JÕXðÚôÿ °.ùÌ·¢ìG|3çÔsÌ<Å{6ãà
+„è.Êl\Þ#4^™¤Zmw—Ó¦þÆ<··è¸ÏCS½ÛídH ¿¯Jó¶–®“\Àù=a…ïÇ¿µ›×2ˆÁŠ#öS£¾jç&d1FiNè¾o
+M‡E\ðVQÒ&AIS!“o¯ÓÞû±»s.å¼ˆ¡fðáÖ6ï»×6n7Ei#€©§C?P`èE1©¡hÄWM…‡âö÷^ÐÅ5ŽÂ¦l³qê^ö£ê"]sŠ±9èÏ`p¹Ì½râ±’È³T©Ž?Y¶¦úqý=È|ÇºØìÛDÛµÂ‚bRß°uœ¾ÉmÜ·yÏÖC™ÈÚ×UxR£¢Iò7hwWBö=Ÿš¼mL­\i4êd0¢HâçÓÀàû½­÷ïfç˜.ì!e3[’4šWuï!²rNÅÊw7ûon“Cf¦Ð šÓ£ÉÒý)‰Ý™úÂî™+±ùj(š²ŒÊ[Å3¥ÙJßúûûƒîæñ/+n{KÛá‡Òþ£Ë¬Böçï=qî¾{2òõ·‚ÐªKALƒC^„MŒÈŠÊiåFC¬ M‰…÷ÊÎYç±¸s¢ÚîªZZÿ ¦ëèt÷:yùQ~	§Û§¥Ö'5QC/ÙÖÉª8-¨‘t^=ôâ=†Ë÷3mŠ¤SìëçgÞŽpšÛš7ëŒÎÒ?øOK1Kµóç%‰dn*O<pêö“ræí¦BbŠ·¬I¹æ×x¾«©¡= ·vÎƒié›Têºý <þ}Èü©ÍsnIáÜŠ8õèWu³\ZÙ­ÙGAè ‚K•Ïû}}Ž¾ºHÎM:!ŽêGrXÐº8° ‚ ­þªmù÷µÜµš!¯NIxÒR0kÒŸN°é?_õÿ yöUºLÒ¡SÔÁÈÍ$Qóéc7ÛTÇ£HÕk/ýcì3
+Ïlú«Ž„[¼ÒM)ñŽ:IUãÞúoøãý}‰í¯ã’*ž‚w’ÅoEŒÔ¤ýºÔ°ú€/p?áí3Ý¸’ˆzµîâÖÖ .Yº“9³*’PýAãóÏÐûG,ëñIÇ¢)cŒ%5cÔ¶ÁRÏëÕã“‹ÿ fÇýoiÎûqe5dßšÞAÖ!’ŠxÙ[Z)Üž/ý}×ëÅìd0Òz©î¯ç½)e‚ž¦” 0{Ž~ŸŸdñÍqk1¡¨èk-Ó/¼‡NÛWÌHô4&Cpc%uñ·¸£Üw¬ù:`×d‚:ˆn½îÚ¶Á¶‡~õ¨¥zÃ¹:ª†ŒMSAç ~ÂÞâßïy5Í¡Û¶²Ia@z‚ýË÷×sºµ–ËiªÖ¢£ =±òU4he¤TÍ*§ŠE•½‰±öä+kÎwßÎí»JÊjXqÏŸXßÉ\¥¼ó3Ûßn!U-ZðÔ+Ð•·z.:å “í“ÂñÆË
+ ÒºEù÷óï>þåçö‚åŽˆž€Ÿ@zûö/Ü­“þï[~Éµ‘†ÙG¡®ž†Ù•f$¥ŠHšE–À~¾ç{zÙy–Â!€½ŸXÁo¿\ó&õsº\9$Ÿ>¦@µ@‹^Ã‘þÇèã^íp¶¯“ÓÓ\Ú‰‰óé_¦–uå~¿CÍïø÷st+iyâŽ…›nÿ m¯Ò½<:›%#JJ0úYH°ÿ x÷]ŸqCÆz*ÝîÒÞ"þ½%rûoÉ}*çŸ©$ÿ SîaåŽoðæX¤n×›¢.Úób täöm=i0O!ÁHþ¼ûÈ-«¥±„Mpë¹‡›ÖÓq77Š§Ï¤£t~Ñe”×c)ª×õ4HO¨ñõÓoúîÑôrÉóê÷ï7¼Øm²ls”WN“OðtZ;ãV6ŽIëñ‘Gj}–Çü=9Þ‹ÝõÖ÷%øqë7Ýï|ÜþášC!©­OŠžG	M€©zj´QˆõøkûÈ›{««‹Q4^c§oí ©¨=GzŒiˆ„ÐE¾¼Nmìšä^»U«ÐRõ®¥'Y=0ÍOM9ô9ŸMüIöÀ’HètYVB
+;_¯¾ó-BÈIt>›ýx¿Ð{9~uƒj¶Ê½Ç©³—¹Ê“–ÚÎÜAN‘óm‡ÃeìAU×nIý7±7öo³ß¾àŸRþyè·`k‰ï¾¶è	¯K0f¦Et»\~9ÿ =˜ÙVMHÐîis|±¯””{~Wÿ '‘.Vÿ aíoï8Ð	õ:rœ±G2áŽÛß§ÎJžIVE‰bùÿ aþÛØ‹fç8¢a¶z®y’ÓmÛu%5Ð_³v8ÚùØd™JJ·[=^Ä;žð»“FÀPŽ›W?_¾âºTtri3ub(
+HC€·Ð{†§Úíu°8=_»t¹úÙÚ­Ò¥#Ž¾:ŽG 6#éôö»žK&0¶GS7µRÜs*õèëü3AÝJ›}×¿»ZOlfYÛ©Cœ÷8-‘4'Ë¤öÁE‘ð×Z2d<r×Ø›tñnl¼[^ê ˆ·ÄÝ£±´S¤Ÿòô!déè$‚9c«pU…ùüq_Ý¥óA Áë4¹Ckº:JËä3ÓÞÜ¤Åf©å£ªÒî…/by ßØ'›a¿Û®ãÜmk¤OCÛîóoíTÓP# O{m6 Ê:ÆFX”+qï#¹˜WqÙcwø¨+Ö!û„Ò/136ukÐgš¯¨5Ì|^ÿ ñ¿rªÁw‘Ç¨ïu²úœqé--Tu5ì×æÜ­‡³1ÇúkÐ·–¶qeoõr-)ëÓ³¬”tI£yC¥˜-øõiÙ’Ç%çÑÜ AêoÙmNã²´´(¨·6[7‰0LZHÇ¥µ\ñkakÝ¦ÞÓ{S ÓçÐ»o´Úv.W—q¹¦°™húß“¬ÞMjÖÃU¹½ÚÃØ²ç¸´´6î*)Ô	·û‡qu½·Ó%~Þ–uJž„¤Ñi•¢Q£\õý†áÞ##à¤aºîÍÚ£:bÌÃY š™c*â2ªãŽ@°ãØž9–.XÚ$Ü£jP²OÙ>P³ÝùŠ{‘¬T\õY]ï‚í•ž¦ÜXµ¯ž–:…‘š/+.×±Óî0öÏ|ÿ ]ÆŸlµPAë ÜßºòÇ¶{,W¨0 W€<:1Qò¶¿%‹Åá3ôÆ*„Xã‘¤Æ’ýä'{	¶ò}´³Yš<™=rïWîE¹ÅØ¿éFsž}6â§Ïšyéä_Ü
+À‹p³¶ÛŸmVI°Û™îì¶ò¡iÒÊ–®\\°ÎÓ:…*AÔ>Ã÷‘EyÆüºŠ¹‡ufŒÍ¨}­ƒÚì1´ôí0’Ê«¨½É·Ÿx§Ï>ÓÁ¸ß=Ê¦š“Ã 1^ó+‹wc¦¼:Žî¢ÎÃöµK4©6o¯§óî6‹‘.yno«²$iÏR^ÛÉÖ›XÄZðãÑiíí¯WŒŠL¦-OÔç@ú¯×ñï"=¶æ[}Õ?wn&Ž1ž¯Ï\·ÛY¸€`.‚M¹Åj5y*æê5ªþœû‘÷]Œ[¨´ãÔUÉv”¼ð‚×=:d±”F¡¾š$üñn~¶Ý³½ºŠñK;´¯·EANƒŒÖÚ–?¸’Žb«~‡ƒÏµï¿Eáè™sÖ<s¿0B"”,AžÚ ¬ ÍHòß™<ÿ ±÷E»‚hHÏ¨k–®B_–O3ÑªÂÕ¿Û %€Ò>¿‹ðö»·V”õ“·]…¦zXc3E2Ù­Èüÿ ªþ¾É7ná*GR”6„èV ÜrUÃ¦ÚÅ¬xÜ{ŠwN^ŽÎBã©+“68nnä9¯A‡bGPÔÒUSÂu(-`Óü±o"nq­âÙLØ8ë$_”­FÄ÷4¡Ž‹FCsùhç¥ªˆ³)×èo«ÞFÚí+Ë<'çÔ"9fMÆGSZTôN;¶Z
+Éä‚ ñ™é
+³þ=Ë{]ºÏn š£®oåŠo&ÓÐkKº§»4TÆ6
+n¢;_ŸÈöp»tôC´r¬s\ý9}Gíéóoïš×­Ò¨u³#[þ…öŠïl·8'¢Ù¶kX7¿¦‘é¤ô4mÉ(kòÐTdqtîÎÀ3<HO?[\{îˆa´e†CŽ…kÍ–äÿ ¸*ª3CÑªÛ',é[‹¥‚=J5¬j‹Ïäp†õÎ9Üšu	sOº÷{öòÖË;0âz¹ñ-‹È‰R=&ü[éï{eÉÜ“&£¨ºúÇsñÚ´ë¼}tŒÊÄXÿ ƒKû:61ªã©§’6hÕ•½:XBTòÍcþ°ú“ì©ÚX©ŸpÜFßkáEÆJP˜¡{9_ñü}}—LÚÎ©Ez¹Šý¯/JÊk^˜ª¨¡j—†Ž-ÏçÚøn$	¥8‰ÐÉ„R½:RVÈ…Ñ,¦Ç‚?Ä{I-¬mVoˆô­b4§Sô®óc*éC–e’·¹ê}‡ÊnÍ¡GgO/÷2 Œ`ôŸ—1öºéÕ•ÜBÿ Ÿg1læ`%qCÑ”|ºðÂÝ }’hêã,È¥¹6 r?×ö*Ûíî‘§¢y²îÒÚÜyôà«±±ÿ ’Ê‚Æãû?ž ö-6—hë‘Ñ¶Çgyi
+™)Ö<˜ÌfñGŠK+È	QÂ›ŸñöÝe¾¹ýytÜ¯ï[š• ¬W®w•¢–9¾¡5‚ß[Ú÷¿¼çþQ¸Þ¬f¶•8ƒN³ÛÔÜ„pÝ%FštlkŸ¸±	:¤-®0Ú€RMÏ>ð»—m÷NLæ‰,É`¥¯¯Y#Íñ¶ãË"åÉgEÿ 'AsM%D© 6’-Ç}=ävÓ¹Ý¤”×4¯Xc¿%Õõ¼±N	ãN©3æ7w?WdeÆÕQ5DGQŽM&ÂÇƒrõínåÎk¸Û¹Xé‘Ö ï_wîlçÝòK›%aŸCÒWá?ó7¢Ù[Àm]ÇË?N²VŸÒ.Þ&ûë÷I¶æ.Y—tµm7Và°ÆM:Ï?¸‡Üûœöÿ s¡½…ÊÅø«Z®§*û¼±'5Ž¢9#Bëb@q¨=Åßu]Ïý·Þ¤ÙåÔ#SCZÓu‹ï‡c¼{oí¿†,´¥|øt¶ÏƒiËj¤XXi‚âö÷Ðíßž?xÙ»‘uÓ…zùã÷ïbI&»›Sµ|úve9HÑpyr?ÂãÞ9s7Ïì±=zÇí·™fÜ.É¯ŸB÷bèÁ
+‘oø§°ô<ßpÀ‚k^‡ö“Í$Áú|‹nÇ"zP½¾£ñÏ»o0þ©
+ÇrHb#ñ’[»`ÔæqsÓÅq&†ñŸ¡½½$ûò÷¸;m¥ê½ÉIÏIï­ô&+‚3ÕEwÇ^öVÏÍ}ÜpO61e,²)kÕ{ñînßùÏ·.\?K2xäp¨­iÔî-§,XXèG+yta>wtXÓC†Í»Àedˆ¼­`<ßÞ{‰í&ëÎÖw{8ÖT uûEi$<ùktÑ‰šzW«„ÞûV‡}`%)P’ÅSN&K0±Mcëï½§÷yöwœMŽé(V¡¾½wS™fØù›Ú"°@5[CZÓÌ/Uå¼þPîÜ^V¢£¬¤(¶¦<•>úiÉ_|Ýºßs‚Êò2©%Oõ‚þÒÝ^ó.ñsciöE¼½:ªL÷ÆJÜ~ð­ÄÌñ/†¢EÐÄ€ßŸyÍ^úí“¤RØÕü@§Ï¨Ýÿ q&Ú9’mž5"XØ©ûz¶·Hb¶ý|FCÎ¥IÓ¤rãÚ}·Ü]Ööj¬¾Þ€ÛO;ï×5– ý½<N8(bH‚>… p¿ù÷wÞ$¸bó’+Ô¯a¸Ísl%~Þ•{~»'ƒ¯§ª†29‰P”GË÷-»oÞ¬ä·™ªXž„›_­[¥j”5ý½Ú;w ´4³‘÷ò"$Šír\ð}>ùçî¯´¼ác{q{´ÿ `¤°#Ó©š_xù«™w;Kü+pÊ„ŒTTôœî:
+yñJzPŠŒ¸N
+ýnØ{ýÚy¶þáeåýÎmR& '8ÇYOîçµ6[#ÙïÛufE.FrEzcÄPe±ßv‰M6°/uÚ÷•¼ÞmwŸNäén±ãoÝÞŠFSú´ é“¦‹†m"X‰_ O©·±Øó»xœCuÛY]ÝÊ÷·5,OŸM+Z€Øð@?ëqôöqôo¯ÄéZZI;„nšª¤–=AMÇ6¼û:·C¡e¾Ö±ÀC¤É¤Kã™­õ¿ûíÇôö¦âÌ‘ª!^”L­kjUGS(ëé–´8’÷<r-þ¿«Ùt¶wz$åë‹ÍØ8\W¥ ÉF$I?O¿-caì¡¬¡×Y'¶m/
+	4ä“ã5F6H¤‘t´eI$m~u{6å­ ÃvWÏ¢Nkå†¾³{¹’ ˆf^‚3²O¡ƒIsbmÉ¿¹‰'”¨†”ëwrñoÖÝtŠô«¡ÈÉKXž>€ûT¶JÂ§‰è°m€i‘òzYÒfa„`	ú›ÿ ½{M5ƒ¨êC·µxÈ“‡J¸2F¾•ÇÖüÿ ¾ãÙL–·jœô¦ÖÎ÷|ÜÒ:°¨é¹%¤’–_`5€<ŸÇãÙþÔ%YU[‡Y7µrkmûŽUÒHè•ò,‘ }·çû?áìh~\…ü­°mÛ}¹¸¹¥zc†:Ú*’­güGêâþÖ1ŠhêxL‘\Î¨†‹ÔºüdÕÑê‘úàX›~Ÿëû,ŠqÒ½í­¥°ðèOI¨k†
+©RBT^ÜóþÖ\*\[¼z0ÛvËÛÛ±pÀˆÆIéyM¸MJ,¥Jƒ{ýÇdðmžÖÃ=óeÄ&ai­8Ó§ªÓX ±ÿ ‰÷¹Ki=ÚBˆ„Vë*VíúÃöõqÂÒ†Qsm$ñøöç]ÆïnÛ]ìÍ\²ÙŽTÜ¯wxï. -5ÈÇA†o¯¡ÇeZz
+ÓSIÖ–7Y¹âÝ›|Ÿwµ­âŸ>³•î#Û¢Òª#‰F|¸t°Ûzl<â£ ÌÄ€I·?ëû•6MM°¸qÞzÂÿ zýÛÝ/f}‡a4\‚Gìéç;¹ñÍ€(k…âÃëø¿±îÝc?‚}Xî×¸XY>ë¸7sg=*(Þ<–9*#±²‚à~ŸÏ´R±†cuŽ²î_YnÔjžœ±Ù	ãCcÇ÷ú.}¦šÙê!±ˆË7OÔp}ô Ï§ýõ½¡™þž2xÓ©”ÖÞÒau-(:_c6Rº3Ê‘•`tÞÖú~ö½ßÖ2 9H«ÏæèmÖšã#÷
+ãñ­-±)Ž ¿ôõg{sÜ^F.#n£qWuŽV#W—AÜØê9#i)‚€ÆÄ .ÜñìOó%^”ò>ÖÖ[y½¹òÎzÁŽ2µ  óýÂþÜ{É›ô€¨éû™îîØÚÚáxc¡#	’ÃOÑ×²i@ <êþœÿ Ä{ß[^ÄÆ{n’l_½g»KxT»ÒÏ^léŽ’2ÚIµùú}×ö’]Â]Ù> =fFÙ´îVü¢ÿ _Ux~]#6Ä´µ9†‚IN³%€Õa{ý9ö7ÝÖXì5¨®:Æ;}ë÷12° =/·Þ­ºIM²éQçñ`}†¶mÎßIŽSCÒk¿¶Ý7Gí%«±ÌÞ.lVBWJP„ úuúßÙª]ívBîÙAbsÐ2ïvØvèÄbY(@®iÑj¬ÀUìì«¼5R*ù	Që½½íî×y†Œ¸#¨Œ½Öïz[Ã¢éÑ©ë.ëËâ(­žEU /‘ˆ<Qî-ç/k¶Mî]r@µ>tI‰±Ã&Èm"Q©‡§CÜùœƒ('s0Ô’O6³_ÜO¾ýÜùVúÌ´Ð®¿vj6èoÌ÷Yf<:+>DdRÏ#UÍÀæö÷E÷iåÙ.<7]½¯}’µÞ²öÑnÞÿ "7dÏŽjsÉtVÒÞ›Ž>æ>Qû¹r†É*_ $+œô Ü¾ï|µ´8¸Üˆ“Î‡¤–Îì}û‚‘æ¢ÈNa”±1b ~‡ØÛš=¸ä]êÜ[]Û%W ¯UÜ6ÎW´Û?vØ QJc¡Ÿ¹·Ô5_q§[¾¦«ý=¤öKd´0É
+@~FåØîŸ¶µ5éISòyd)þÎ¢'ÔiòƒoëqîÝþï<é¹Z0­hzÇ_p,öé¯Z—R)À¯_ÿÒ2UùP(l¢úxü{í¦Å°Gaœg®Vr&,eu«tÛüF)WC0Õcÿ ú{ÇbÑšŽ§£e`Uh:†ò+_[q~#ýëÙ’®‘Ðí¢VÞc®ÄëêÕé°çŸzÐXät«dÛf½œë¼~õ§Âd©g••Ò9T²›X¨nTeûÆÄ7]¶[NÔÚ:ÉŽEäÝÆÚT¾„eÈ=	}ÏØ=/¼ºøGW·¨$ÏÁN|Sˆc	BðCZÿ _x‡²ò2{_Í3os_0³v-á“ƒž¤Ï»§¹_xžl²°Üîäî¤ŠšP©µ;f·]&ž¡¦Z …Ö Œ=¬¹»lçžgyn­êT)Ë®³r³|¹í/+YrôJ	Œ(,iRE3Ñðémë~Í¥«ÖâV¦MJ÷µôóÉ÷r7µ—÷þáË¾n1þ˜rÀ‘óè5÷£÷Ë—ýºm£mxÓ&ç#åÒŠ«t^¤°*I­þœûÎk}¤G AÀuÂíÃg1Í.ãtIf%¿oJz\Å=U-õ¦ ?¨ÿ ‰öQqi"ÉJc¨Ë|º–íL1¥ÒTÃ#€Ò-ïýGÓúñí™¢tN­Õ­rE:Vÿ ¡Z˜í \úG×Ó{e‚î æ&óê`åQ°7#ˆzxÇ‰ç²›‹qõ6·ø{GsáDj: Ý7ˆvÔjGJZ'I—UØ7›ý?>Énn•ùt;À7:ëAÔÁ°×5HÅa³²76‘í6ÛÍ+a0Y?>õì"-ÑJÝ»C#¶êe3Å"Ä¬Ú[I·×Ü¯¶îöû¬CÁ`Iè3¹#]È ³'¤e6ìjsàI`Ú}Wÿ [Ùêí
+ýì:òß%³²Év´>³Ög+%€»T‹ƒÈúÛÛ±ZÂAÔªû%œž§¤£fIºk7¿Óú~}#Ù’Ú1Ò­›—€_Öƒ¬°S®H…rÄ·ö6÷Wf‡#¡lW–ÖLŽ°ÔmXiåÖnAçë¯äßÞÒô°è·qæ)æ—Ãƒ‡Mutÿ i ‘€…~—æÜ =ºdÔš[¨÷˜îå´“Ð¹²3Ñ<ik0'ôþ9öÜí˜ÖJuØÞKq/„þg¥Nzª7ÑY¹ÿ \qohì 5gÙiˆÜ:3ÔºÒ¢\\‘k§>Ä¨ý´^€;°HßBtËOä·üÞðOEP°Wõ=©f ›±ãéýÃÚ˜äZô2ÛÕfƒ¨ÑÖ</f¸±æçúj:†¡Ð–ÞÐŒÓ§ú,ÔJË¦K•ú¾ŸìG´¯m#yt²;)dzÈ(:XÑç®ŠØsùý_h¤´ ät&¶ÛÕc«qéú—$†Åå[0çŸÀÿ [ÚmkÀt²(„XQÒ‚æ‰¹ä}Xõøö_-S:´s&º§Á#ÑJšÜÿ ª$ÿ °öÕeZtóÍHÇJº}Ñ…F“W±"ß×ÙL»Q9¦¤Û'‘u0éGKœŠTY"pã‹_éþÊæÛØ6—=,~‘BþÄßmO,TòT¤€An>¼þ¯qÏ7òŒW´ˆ™û:CµÄc—ÄaÐ“žÎGTâ—Ye¹¹ñÍ½‚öM•­‡†ËJuó†Ò»¦ì$#»ÒžJª9¥‰¬ê¥[ƒúG¹[—Ù!”DãªÉË–É¶2„Í=:	vîë¬E¨ ¨rì…—KH·ÓëìY´[–F)^£lb·ñasN=6fò¯(’Î8'õ¿øû¤;zjFûžÚ³Ü0UàzDÿ ™\(k0ãýø{<ƒmŒö‘Ž6N_ŽIT8ÇL9=Ky%oOõón}ˆ-D6ñÑSØÚm6"H”j§\±¬±D
+žAçëÏúÞõ1ixôžÎI¯»péw†¡L‘]K€G#ñýý“ÞLÖÊBõ+òÜ{	)VLËõíE§…´È¢öSoõ¿ÇÛ[ü±1Ñ‡2sŒò;
+}GÂÑÔb§­«I<¬~¼ûzîxîã«yõ¦å5åÞ—4-Òº]ÏSO4(NŽ4Ÿª¯úžâ=“~è†D'MîûJ	Öi3ÖzŒ„“È•›°çŽ÷H­R c|tÝžÛ·"FÀJl©–0³)ª¿Sôü{I% H¼úsÏÔ]­±¯—M„\…H¹`
+°_jì¿ÄÚ²tsg´Ûm	¼½ 5+žƒ‡ž
+)Ô<¯?ñŸk®78J¯PýÌ(nÂùôöiÒr€Ž~—+ô?Cì%=Ó<´<:‰÷ù.ï×‰éCqÄÀªÁ‚?‘ý}˜ý£Ô¡o·ËÌ²:bËf!¨³ÜñKñö½µ‘d usAynQÃ¨P²ÔE­7?Aïv0u·H¶{:÷7N48šçV¨Ò?­¯õö$†öâÑ?Hu.ríôÛ}!ž—Ô˜[Dj -‰ÿ zö–]ÒøµXc¡¤[ÅõÕÊ™:Í_¶&‰uÒê`Í‡âÿ áíØ÷¨h›£ÛíÊ5ƒKœô¥ÚµTR"2¸ ‚oÇ²Ú8n²ž‘X_ÕÀ'£A´+ÚMxºÿ ‡úþá~g³AW=K|­|­:­z1û‚ZM`”áZæÀ[ÜA¹òÜŒ,åÐëww…|u<:ŸºqØíÑŽ2ÄÌ¨I
+/Í½“ò­æãÊÛ—ÓÜWA= 7{DÜíZîqÜ=z/oµä§•Ð¥€&Ü}y1E<!Áòè	eqôÎQ¸Óµ¥WÐM­ùö’ç{·'»©kÝ­Ò*7R&ÃW 'I g›°öÔ[½›µ+ÐšÒâÎ¯^’™,ytxæYü0äý}žA¸i£ÄkÔµÉÛP’A+.:rT•xŒÂL®â2àžJ­Ç¹?m¸ƒrÛ48©Ònož+=ÄI^…Ì&Y¤‚7òj* ›Ÿè?ØtÛQ%)L‚óëØô(m½Í
+L±ÊÀõÿ a~}Æ¼ÑËO5»I
+ô§iñá»Œt1GQDJÑ8  #úX{‚ç´žÒrŽ¼R°ñSÄo.¢Kª6¸<Èä_ëofvådIèºâ=Sk‡Réj„2#¥î,ÖçýkûMyd·1äôèºñÌ1™Ž)Ð¥„­ò qc`/þ¾žI÷óVÊ¨ìNŠ Þ’Q¥‡¥au• ¸âÇëý~žã•Mœ¼ÓlöpÑ
+ôÝšÂÇ›¦b Àú_ŸõBÞÍ¹g™®9Fð$¤ødõF—n¸¹ÏOb§ ;µê)<©"·kp×÷»<Ùîf) pI¥sÔùíí¼PZÉáŠã þ›*U1±E`þ¼r¼·ðÜÙ&„ŽïœÉÃ×Nôa^—«Kk±(ÖÅ¸±¹ÿ `k­ÂHíœÕzç?¼¾åO¾_±|úQÓdä²«=È±7ÿ q¶á·‹©O„´¯XÇs¸ÝnwU?>¹M^€ùGsu°ãÝ¬¹j@š\àô¾Û—˜Ÿþ#ÔisRØ€.Ö6ÿ mìÞOµSôxÛB-RœôŸ9‰ ‰IP~§Ÿ§ÓóìAoÊöÈ¡Zô‡nÙ#k¾Õ¨éƒ1ñƒ"HI'“ôÿ [ØÓgØÖSá²S¡sò»Ë•Z³¤ì{…jHŽI³¨7·±0åkßã¥Vû<vÔÖ8téO"Dm@Û‘øÿ \lIht0èQ·ÛøÎ4Œyñþ«õ‡ú÷ÿ ˆö‰vßÔ©I6[O‰¨é¬äÝ‹Ÿ¯õP³tÚ‘’´èI·l@HŒt×¨IãbÃê,>¤},9ögcnÐ¸ ðè^»F¡Eé[JgG@·	¸ÿ {çØÚÚèDC‘Ð‡hÛâ†ŠÝÕ˜õ¢«/Ês~O^>žÇ6—¦êÞœz3œLn†:ãR±×Ó²7.½°çÛQ³YÎpèWin±A¥øž¼Ý.CW®\& [êyüîFÛ®mom©!ÏIFÏ×bFéâ…åÉÑ"óa«úéaÅµø(qÔýËÆ×lØÌ‡ˆwÙ‰Ø8››ýûjßrdMåæf’s§Ë§…ÂRÒ Ö¾¿¢ÿ _éí¾‘ðzón——Ÿ¼Â/°úö÷þžÙf”ç£8.e5~˜ë¤¤@Jº©?O§?íýïê%&½HÏ=Ô¡˜=&æ¬U€ ¯öHü­®}£múÎSŽ×q×¤½mmc]}$Û‘øúû|2SP9èMc´Û©zsxùfW1¨ÜŸõïÏ³í®óÃ¦£Ñ¬ñ@Lt™ê(åhjXŸÀßïWök¹]F-Œ€ç£ƒgiî@Uíéœ«1ÎeòM¯þþÉlnLñÜz“¤ÚÒ
+c¤Žx×ÅŽ|…F`¢äÆ5sõæÞÜ±¼ŒîËg'ŸKîíbM¡îKiÒ:á´j29ÕPÔ²¬Ccø>ÇÍ³9”3aOPW1{‰±ì;{»L¦A_1ZôfpXl]=f¦‘@
+nÈ>¿’/íå´úF¢°ãœ=ÄÞyÊé£¶”¬ ùk¾ú¢1% ­À¸ÿ aíu³[ÄuÊÔê
+æÙvÛL—ójaêztÁmÊÙÙZhJß“Å¿ÓÚÇzµˆQ½cÖýî%”5†ÕÇ èI¥ÆIA¥•
+í^ãý¿°»^­ëPž€¶·×;íàrM+Ò’	õ¢Ïäÿ _i"§©³k´¶ 7tÛYM1y <ð-ílÈ•éL^(mQŽ“Yu+›Æ—ºòüsìÖÚæQñž—Ä²»‚ç ó%†…PŒqbE—éþÇØ‚Úù|2zmæd [ñé·3²°ÛÃðMIOåÐU™‘/{[ò=¤]ÂâÆìd•=KÛNæÛfÖ^áÉr8uY]çÒ_Üúùr8ôá˜µ¢
+~mÇ±Ä3E¸D%t¹°Ü¹ªíZ+j“òè5ÙÙÜ,‘A3ÉãRŸ <ð~¾Í#„È)'Rô<Ó·r¶Þ–PÈ€öôt6p¡ÈE@›÷l§N®oªŸhnàðÔ¨êöœí>äÞ/Ñ ÚVhÒ?&¡e^àÃØ:þÝQüP:ów=x1`ÝÇ¡ûEB²ÄÃZò@àõ¯î>Ýe×/†Ã3Ë{Œ¯·4ï‚z0íTG) p	&ü_qîû³	jÑñèãj·¸¼¹©ÏC–ÐÝôÏÇ à‹Å}Á\çÊ2_ZI‹PAèR ¹¨ŒšÑÂÀeè³¸‘#iV>7ý<}ó›ùSrä®f•¸"2Õ4ûzT²ËxNÎÆªÂ‡ ~áò?|Ò@º±ÓuóÅÇ¼ëöƒšvÍÓ—âyšA^°óÜÞPÛ¹~gaJšôŒZÌÔÍÁ­H"Ö½ýÊ¸mÜëCÑ6Ñ>Ñ$Aupé”ëšŒ›=é‚1¿Ð{XóÍ¥”`™*>Þ•ÞófÛ··€¬:3]eYÍ«[O±ÎÛÏwà,nzŽ¹›ù|sƒéÒ/™Îm|Š(ÜÀ[Iº›ŸéìöïhÛ7«_B+Ðk–ù~;­Çê®›xô-®A³”šêaÜ\ú¨ökEÚfÓ`u#sáa¶mM«Ž§àöDyqâUíé?CýG²ý×šÍ‘Z´è3Ê<á’¶¦©n™·PM!J’¥GþÌvŸq­B±ÑÕï7A4Ô™°zë:¿92ËJî«ùO±¤<õ³Èº–P	ùô’÷œ¶ë+rŠÓ×®¨:â¡[ÊÔì² ¹4Ÿ§²Ûþµfð#üú‚¹“ÜÓ{tÖ–_°ô'ìHÖƒ!ö•”Á¢¸C©GÒö_`^a¸–îÜÜA%‚|¹¿Ý[î¦åä5¯¯Bö­6®b”VŠx£‘‡6Uà‘ô¿¸Æ/rù‡esfX°
+9óÝ;Û} ÁlçQè;‡©ÿ „ä`ÈâjÄp’â¸¶ŸÈ·µð{—ûÎ6†ú"_×¬}Û÷û««µ½e%ÉÉè_¦Øø|Í&š¨á5!>ºTjk²¦çmÛkœ<:„g¬œä®a¾¤½V£Ï¢!òkif¶¥<•xj¸Š&G¨XrÖö6“±æ]™…åÆ‡§­:Æ|[ã5äúGÛÐ©ð+¾ªªkÎØÜØH©ã6$jußE®G¼1÷sÙwæ¶mÓc»v•*hôC÷p½¸åÞyŒí× 'cÕÂd6¾ÔÝ4L‹>©càª¨7aeý?ëûÄ}½ÈöÆô	ÞCmš’Eë¥·Ãuq½$Ûëö°OEsvüo&¦i¨áW™™@^-ý=æï"ýï¶‹»ãÜ¤Ñ( ùôçÞ²ÚZmOQO.ƒÕ‘áe	_K®0ÉpÓ¦ÿ _b~`ûÃÂ»•r1CÖsß¼»´2´$Ö§=)j:ëfä©TZx¥TýZT5Ç×éî—Üßq/®«3»FOõî|Ã¿sLao$b–zDäöž+…©]4¥¬?Ö÷"l›‡0oTIÑ€>g¢ØvÆUA§Húúƒ"“ÊP ä±>å­—`ŠÖ’^¦¯·¡ÎÓËq[F&»#×¤üÏZË’V‘	ä¿ÚÒ±!Ji
+#åÒû™ Z–”éÎz}	.6ãÕô>Ù–îäÖ=-[™LCÃê=SRÌLfÀØú¸ûi#¹Fñ5è®H¥ik&Ié®††‚j††¨jBm~?ØóìKi%ô	ãÂiN†œ¡k4bb0:t©Ût4L%¦º¡ÛñþÛÙˆßïn×Â—ˆêEÝ·k©@E=£¨y:ÅÅÑ=`ˆÊ"BÄrÖ¿>Á\Ó»µµ›ÅƒLõó÷4>Ù¶´vòRB=zÓpÑö^Líøè	«rQNI¾€}âî­Æë™EæåsXCTç¯X´ØÞó_5Aky&&Ià	èíOƒ=õº#¨Èlª±ÐH©Ä†6uRý=åÆË÷˜öÓ$²(U ¥s×Ð‡²vÿ uh=º·²ß¤ŽãwhÃ1 4b+OÛÒ7ãÏY÷žÃÝ3mŽÌ§¬Ð’iYe.c ¿¯¹l{ÙÊ\ãgõ‹ §Ö,s·Þ/fºç™vÞU]6ºˆÇV5C´©ü±EWeV
+.l>¿OÕì#wÍ³dµ©Ñ$œçyq¸« -¨ôM¾d|gÀfpqø¤v…|†JuÖokÛÓìmÉ¾äM}k.ß0ÔcV:’¹Ã{¾Ùy nÖq®¶ŠžŽŽÛTÚÓ š¥Lo§L¡ô¶žAçØ¿–÷›ÛÉœÝ@áN±ŸÛ¾dÞ9‡œ›™lÃV·ée†•bzn,ßïö·w‘]I×W9ˆö´OéSGá‚¡hÃª0vã‚½Ï°/4J£i—º•R?—SÏ ÚÜÝï‘GmÄ°ÿ Fog:Ê¶–ÝiR4
+VÉ¨:ÿ ¾:sÖßÍ6~æ}U™i"ikŒþ.º8›o:GÊ–X<#œð§I=Õ_Je¨§Š@)À&¤-qv>ú­í´òå¥Ä©G(µ—\,÷³ixùËpu÷¶xùž‰öøi¢«‰µFY¬.~·þŸñç­¾Þ6ˆ1Z°Ÿ˜¶ˆ’íæÑçÖ-•ƒ-THTcù?_v¾ÜŽß+åÓ¼§¿E¶î²p¯BïëÈhñ³G%ZÀ³ÂÁXµ¹dãéÿ ÷óG¸ñíû\’.hGL{ýîÌ[vÀmQukZ.«ï3±+p[¥\ˆž¦f’§¸ŸÛÍñwÝøÝG	Z·˜ëùC|uÝD‹	jôçž¡y+Êî ˜‹ÿ ¼¯‹J) u’@¬af*¡¯iÍ’®ñýOøû¡¾.Ý§‡B^ÞL×b2jèÃÑâÚC…6+õ÷fºÛÖNòäš¬†Ÿ1ÓMdóÍâv ñÇñ§Ú¸ä’1¬“ÞI$w Ê:ol"—0Ç%ÃGÔÅ½¦ºÝV5ÔÝ9»˜’ðß‡Mñì½’@òznz¯oÇ°ëób‰„QŠž¡SÍFës6Ë¨±éu¶08Ö’(gù¿ãÙµÝíÌÖÂAN³SÚ”Ü ‚%¸íSNŒ–ÓûªLI#G¥‡<X¯¤ï¹ñ`º”;ðzè?·æ-=À/@þþM9I^P}d›oê<Ÿr÷$êmš(×È°·Þq%ç8L–ÿ MzNa^7b
+ß›^ßï~Ä÷ŠÈ0zm“ý Xç¥-d>QGë·<ßýO²è$î£ž†Ö¶¦XüiOHÊøædqã?¤s¤ÛéìÞ	HÏAeš(ÐÂzL¼.Ñ0 _ü¯³%`sÐWn·I¿®xúšº ©ö#“Ï»OS}½I›]ªiÃ¥V/4ïPªíkñý?×ÙMí’ˆI	ö[}Å˜¯Oí–O¹*ÆÍø¿?ëÛÙZZ1ƒPáÐîòÅÖõcI\¼¢e+ÈâÃõý§{4hz=¶Û"Ã1éîŸ7-5LRIÂ\sÉÿ yöQ6Ü“[´CK¾–1?Ô§Ð¬*m,Uh·(.úsø¿¸­àúMÅ­dÀ=H–Ïí> 5zc¡Slæ Èã…#œUÐGÓê-î÷+h—mÜ~²=IÞÞ‰Ì!§þ}dø§3*øäýZ‡õ÷s°]ã’äVøÀÇS+ÙßnÊ‚Ú´XŒ#rcåž(Ð“È°ÄóÂŸp¿±»¶ãËœÁ"µt’sÔe÷ÆÜ/¶îWKY\ŠuË'ÓÒf°5pÒD­!‰ÕU€ÔM¿ÂÞçÞk÷v-Ú+É˜…TõŒÿ wÏty~)gÜe “CSÕOwGçv¶zz¬¬rÊá¬Zÿ Ÿy«ìïº['?íˆ-çôë7÷}ón²ÛEÎÍFR+QÑJì¬,°£/ ƒÁãò=å.~”:°_ÞÛ½Þïê%§A;::´U¯õ'ê}ŸÜNªÝcVõÌpXÚ˜äâ:0»LÓOJÌëÀúÞß†öÝ/l”“)êÜù¿m[ÝNÙ'£!>ÕÉd±áž$Ç{ý?ãÿ ì-õg´:=µß,n­õ)NŠþ÷ÙuØú·’H@$Ü©¿<û<¤7
+F§¨Ë™w^ãÃ·ÍO—Aì;š³Æ8õzOÒÍø‹{1¶ÚRäk“£.^äã»,ø¥…e·\Ë+ýA?SÏ×j.D;LEÓ¡žïw¶ò†Ø`„ÔãÓí&È‰^V2nXèxöºæS–L‘Ô¹óÜÅšhóN›s„ÅF’}Ìe€¨aõú=…ßsÝ·i¼4B ößºs3Þ!V
+Oô¶MÀÏª*8ƒ2ý~oÈú_g–Û2Âšçn>½d/,rlÞ>âýÇ9éAŽ­ª®ÇY‡þÇ¤ŽÀ{/Ü^ÚÌVóÏIyŸ}²ÛmÚÖÙÅ=kÐÛ±éó§Ç4Òx‹X1WÓ§¸K9³–6¸Z{Û…Ô<ª:·ŽzÙ¶¸ZK™Ã@z5ÛCsÖmW†<ƒˆ {+ùhúÜŸ|ø÷sœ®35¯+©v¡^?Ë¬{æz7y7¦ÙY–>¯Y7fG_–‡-©þŒÂ&–äO¸Ë“½¾æ=òO˜‚ƒø«þ^¢ÛÍ²ÿ ˜÷®¹$–55é)žÌÖNŠT±Uàþ¯§ûy-Ê¾Üì{E4Fº‡Ë¡Ý·-[ÀŠì*GL‘
+º}SH<ÂæÄ›ßýorœ	eHm#¢úÓ¡ÞÝßMà[¥?.“Õù$¥VH”2‹€}xö}o±½Åàäùt¡öyU5NrzL6PÏ­K•66?B/ô¿±-žÇ4:kÒÝ»h@r:Æ’ÕxØ‰Í¯sf6µ½ŸEoj´P´=,m Ž?O]ÅšŽhå%OÐ‹}ôöb»<Þ¢½l6™–Ž§j§©ˆT#ú‡$ƒþÇÞ©-¹ðHãÑÐ¦³Ñï=q“6‘S‘ŸëÇãÝàÙdšMS
+Ò½»—n¯-Ì÷5è3Íï¨&ò“e_÷¯õ?ãì_aÊ–Î¸éÕäÄœ-OMSo­¦Ž5Xfü-ìêÓ–…´•aÔÊüºxu;nç¢†i:þ×WÐû¶ë`LzTt.¼º;tK §—C<y»£SNÄ¶¸þžãÆÛŒ4˜c£«jVfæóÏ¤e~c%Jà„%I°àÙyÿ b6Û)Ðôß¶ë`	­)×tY|´ÅM<mr-ký~žÛŸlÛ¢RÓ7‹¶»jOñ‹§ 8d¶¦äÎÓ—ð0°#WäOhm¹£—ö‰t4œ:7Ü¹“•¬mÊ#‚z@ÏÔ[…Ø´”åGÔýAÿ ¯³ø}ÇØ¾ä ¼ñµ"Ÿ'®[!Œ¨òMé_ÕpmÇÔñíDüßew	°©á×¤ç	Ðœùtý\W«4J8OX6à¡öIrn²)Ç—@I Üy¦÷ê¥­+Ò5˜¥®à²¬Ã‹³Ï±~×´½§•W©K•9ÚUiƒÔôVUe¢ÅÄèa{X{Ã§…©i^²—ysn±•iBzæ|UHÑÔêYHüÿ Qø?áîª&Öœ:o—þGÁ0¹¢¥&*Æ·:ëþ'Ù€ñåî‡¨ëp’úr–ËPxž›*å€­éäéæçðxö¢\5d­¶©næýN'Mn¥˜Ô1_Å¿ÞýªkiEOR.ÛËvPD<CÓìuK—N@i,¶'óêÿ hšµ: èUhðÚÑAùôÔô#>ºCtnxì~¾Ô,ttu·ÛOx¡¸ztÉ˜š
+•o<Š²(ã›_w³>Ž‡;«XÙøq®HéÏgn¤¨Jc)d,'­½§ß,¼xž‹¹^	cºÍÂ½	™\"dZ*¸Eãm:íÏ×õ{Ù]<µ—©B÷tµÛ­ÎâÔª§SíJDŽªØk¥þ¾Õ-ì•0¸û:†7Þv½Ý‘ïliÒâ—iOYH&¡@í§Qµ>ÉçÞáµ›EÁ§A=·˜-·G×3Ò‡¤>áÀVQG!­…‘ù±ü}~¾ÏvÍÊÞá‡‚ÕèAvßQ‹%ÔOAÅ=TT³«Ò=Ù\ÝI?×ëìâô™cðœR½y—f‚1yx4‘ž–Išy‚y6·çóý}Ã·ˆë§¡ÿ "<”N8¯ùb} qÇôàoÐÛ·QýÕäP)¡ÏP^•!°ØýxçÚ°ú—zÀÒÏsãÚ:‡YE$ ÏOr>§IúŸÏÞ·•¶N©»L³þŒg>ƒ¨ÐWÔÂ¯ÔþóùöÅÒ.½'¡×'ìpÃiõ—‡Žz“Wúßü>¼ûmbP´=_{¿ŠY|48p¬§‚udžÊì^	úûP’<GRytA
+K<Á#¾½!¥ÁVGUªÕÔéõúû7KÈäJKÑÄ·V{rˆõ]H‘rPEtR¶!J›óoë§ý·½GôìÔ=]µµÒ™¥=uO:N4ÖIþßŸø7·%j‹‡EVÅäGn¸õê=E}N1üPXƒ~?ß}}¶w#L¼zYrø˜lžè÷/ñ$Ñ.`[‹û,–ÀÛµS‡B˜,¡³Ž§ˆéS>’²˜òà\}-þÉ^I`¹Ë£a¸ÈlÌ)çÓAˆÓŽ?ªêüy··î&F5énÍ`ó×óé=U’©ŠS‹én9?Cùúÿ ½{v%GRqèR6¸‘Ã‘Ú:o4Ò™| -ÏÖãŸéoj“)GãÒkëØb>9$ÐÇØ 8·ì}øàÔtPâí´F+^˜+w*R^8}‡û§²ÞþKVžS@¢½JíÍÖï|‚U&¤t]»}e $*ñ©æââú¾¶÷ŒÜÃî{]Ý5ŽØjÕ¦:è?$ûC¶ìÖIsz‚ ‘Ó_ã·&å«Ž®š9Ý5Ýœƒn#W°¶ÙíþëÎ;ˆŸtFMI5áÑß<{«Ê¾ÛlÎZTWPh Š×£uÅä1±CæŠÒ*/ªÜ’õ÷—¼¥ËO-í‰ad Pgç×(=Õ÷NïŸw‰o¦øu:EqN•pæ'H™XÀr>ž«{5¬eñÔwÝ)éÃºLrvar?Ãëþ·º\íÁÖ tUÚ#}dt¥|’Î¾Hä¹ µ¯ýxe‘Ûj0ê›„@®E:Ê™	ÌÄ @<ý?Ö÷F€´Õá´)dBŠ“×4ÈÇ"†ŠOP<óôÿ mÉ+é#(²²0Û™§#©‚©%ÒXú‡7?áþü!hÆ8uïwF{£}8Rä :	ñõú[{b[cñtHbdÃq=Mûé#t*}?á~=°`FR^[5ñ<CÖiòÑ$Zäsé¸þ¤þOÓÛqÙ±m*:(Þ£Ù;Æ:wÅgh§…O”ëŸ¯<p} »Û§WÊàõÚÃs"œt â7JD¡V°_ž??_a]Ãc2Ez?²Úä”øl8ôèûÊE:Qþßƒý{/^Z†²½?wËŠ†¬)Ó•6ïªEŸ§ó¨ö#Ú9ùfÙê¬½/ö«q…ãÓÌ}‡T€]`ýaþ±öG'"Z;j\t—•ÒW27Yäì ÀUx[‹_ëcí±ÈÊH›”LÆ€c¦Y7þ›‚ÖçðÞ¯öÞÌS’œ:¨äÂ?Ycß	 Ö’ú‡<±ÿ b½Ûú #Ã®>ÎìùF«Ü´ê|ýØh–@@ôøØöŽnJˆq­:SyËËZPg©Ñï:y
+kt ýIçëì¾NS•¤è¸m2BÕ§˜ëñuÑ‰¦³þ#ë{û*{MÊÍ´ÐÓ¢÷ñãM:ðq-^ãIü{¯†eÄã=ÇoãËY3Ôjš©Cé{_Ksr=¬·±†”#£Ñ·" vë¨ò¹6çÝeÛÖO€t_zÁHzÉýàXýHÂàõÿ ëí”åâç¼u½§—eº}n:…>ø–'){±?ž-ìÂ.K·pŽ„2òŠ©Õ'—R)wT³é?ƒõ&çéþ·¶.yfÞÜqé$Ö–iQåÓŒ’RVéw#úpÿ Ö>ÊGÕZU#è%¸]»>˜‡S`†—NÊ¯ÓýçÚg–çV¶§­á€/þ¯õyu¦‰	,„ ñþyöüWŽF“ÓwÓšéw&‹¯äsý¯¯ÓÝG-^“Ç#˜ô>ºe‘ úßì-îÉ¥ðxô¦+u,uŽxÖe³ÀãúÞö··ág…±Ñ¡Ò©Ó'‰©´þº¿Qþ¿‹û62%Òin‹$‘„}¼:Vâòò®Xñ©·ÓØOqÚ¢zÐtŠ7SSçÒ¹3!£±p	çÔIçØB} ‰;Ez-¿c"•ã×8³b"K9#óÏÒßNO´oËæcD\ôIk·Jä°p}ÁN2¸¿ëÈÿ b=ºœ³tVŒ¸éåÙf'U:ã&ê€.’WP:¿ØžO½¯&LN êÓlS²ÒEMÛ	b5_ý{íbòDŸŽžÛy^GrÎ1ÓmFv9Æ›Ÿñ§³›n^6ãIèï÷
+CðŽšjr&OÓ¤ý5[ýà{3‡mD4=&›oGp½GJ´>‰‡àsqÍø¿õö`-aèG·Yø+¦%¯På–‘^Þ@úý??ÓÚØá»Óªœ:^öóÇ vëªÝ¿M“¥c,EÉüßý·-wÉ¬'?„1]#ÛéŽ‘Ô˜,¶.°4a‚«\}@Òôö$ŸxÛo­J¹#ªÚÒÎ2ÕÏB¥,•
+AB«6“{òMÇ¸Æñ­¬®Œ°W Nï¾ÃzÞj“Ò_'‡ÈÒ1’‘‘øSþÇØmÜöûµrzb×o¶”Ó¦˜²_MR°ëoëþÇÙ´–62­mhzVÉ
+B8t­¡ÌA¥K1±·Õ‡úÞÃw›\ìJÆ:P­3/`éAR‘Ï?Ç•·<=‘I¶^FrL¼™5ž±ä©é*á.¶Ô×+k\ÿ ¯íÝº[«y45iÒ÷·‘¢ÀãÐmR¿m1ÓëøÇ¶ÊeŠª3ÒK{·:Øtå\l¢ÎÂç“{ßúøß´òZ±l¯FpDó·¥%RßÓ%­Ï×ÚY-¼´ôíÒ”OôéG‘‘-g"Àý²Ûº'ËÕì-•S[ŽŸ"ÉÌX]Éú“cý~žÈnvè•ÏD›¬ðÂj£§økQâ
+dÒH7çŸ¯øûOi*Ë¥V½ç–[•ÐzŽ+#ˆ]J¯?×ò¾Þú)AÓB:F-ž­:“
+ã¦ ±[ýHÿ ­½¢š}Î V0zi¯î#¢ÃŠt°ÄSã„r*<l,n"ßAì#»^o	K!‡B®ZÞ¯6ûÅ¼rNžœ2=µk¤ò#âüÉ?Ðdås–Þ¾3_·£hçÍëu¼¨„è¶öÏKÓM¨£E*9áGIæîD÷V}ÁÄµÔ;Í)uw:H*Äžƒ½›‚Ÿ<tòXþ’}Ì›–ãý‰q#©ÇÛI¤ÛcŽYûiNŒ„Yò4K<1b·¸‹÷ÃÜ{Ím—æ)ŸH¯Y•°se…Í††
+^±G¶rpÆÑK .EÑú{YýeÚ¦‘dŠ@OÛÐO™¹ÆÅmžÚ©è5Ý;Z¢PãìÃ‚«ÇéÒÜËœÅkP|Z~}D;]Šî7æöfÀ=]çÔ4Y˜jV¢“Æ\7Ñmn-{{š¶ŽykP¡öô,ß9º=o6ÐÃ¢xÝaÙ{›Îd1§šà}9×~}‹ßšï7eÑlµë·ž{ÞwàÁf+š}½]™'%…XéäS Œp’@úñì¼Oir$c¬¸ö­ï&Ú^q#Ï¤Nnž<FVó³"kú\€¢þÅv5ý1
+štç2¥Ô7À@¸¯KœRãrp£Ç8,Wé{±¿øŸaÊ[»2T®:’¹OÚò.OMÛËjÁ¸6ÖW¬D²ÒÌªÃ“«Aµ½¥Ú÷†ù$qØMR4Ë›$¶W ‘H¡ë\®çÅî>¼ßÙ:Ù+¬‘¡gf
+W]Æ’}¢ç>]¶Žíw+DZ>p:ç8r&Õõ’ý$H	$à
+ôs>1÷Gp*…YŒA`ò8úi°úûò]éº¶õÊtß¶tðo_¹%Â9 è}®Þõ{_%%U4ÄF…œxÍý#Õn=É{‰Ûmöã5ñ
+´óë¡ž×{y¾o1ÙXÂ\µ	ÇK‡ó²jAÌÉIU­b³K§›ÚÚoîÞý»ån{ˆ†%Sä@=d¯;{]³r.Ð`æDU¨àÔêÆö7sÍ¿`¦š·&f¥ÖO-ÿ W!¸>àžmöŸoå8]vke@ :Œù/få¦S}µ[¥	­@áèAÊÐæpt{ƒŸ—ÆZHkH+aNR‹iÞ¬®9{}²V­@%GA?xî!æ)â[KP|H‹Ý“´4±WN²²èWÖ×oÍþ¾ñwÝ_»Á¸<ÒX@#-R(:ŠaöæÚî!¸D¾®qÑ“¡Ü˜lÝ‘L,YA#H'Vž?â=à6ñí6òvìÐÛ3¤uÁŒ«ýYê*÷’9‡˜­ÑéŒg ó-[ˆŽ¹ƒÆ‡KúñÇå~^ö§œ7[d–k—Ò¤zÁ©½žßwŽd{KšÑM*kÓ-jíÌ^
+ªZfºØ‘ßôýÇ¹–9+›y&u»±•˜™êZØý›µå›„›Â2æ´àz3=}¶âfª HTrt…[qøûÉ.]÷#™eAkºjôêrÙöÝÜ•l€8tn]“GW<PÅæAõ
+éçÜ¯´s­Å«…‘Î–õë$ùÎ`¡®+«Ôô\·>ÄÌÔ»,1È#Õøé{Å=Ë[/8Y:Š°©ë ,çÙöÈ~¢z½îáéÈŽ&jœŒlÂÌÄ².¾ç.Kæ¨î&FÂ§çÔ{î3]_m¥Èê¹·—MI‘‚IöÕ–x™®ªm%Çäî[3¤£õ°zÇ>]»°ÞnæCð>‹nkØÛu¬¬J¥¦…ÁsgÑ¥Mÿ >é+J¨LYêMÞvU¼Ùrú©š˜§„Í·ØX}ÝK>Nhá®‡J·”€X­™½Ç\ÛºÈ–”»®ûÍcÌ;,ed‰O=½‹)à_º‰
+K	ú¯´ûÕÔ¶€¨=}º›v»ž+pŒ°‘Â§¡#uvéë	q•1ãg©ÀÖ<q¼©<a€K8ú{F9‡dÜ·	6¹œ,Ñ
+ñ§]\Ý=§±ä?eãçù§)PÄòèÂÇÙÕt[$î-¶dˆWÓ^¢5$igOP {‡}ÌÛl7ý¹¬îÈ`œ\”ûÁ{€y·gh-æÒ¦ €xôNëw–_3•ž¢¶F:¤f`I7b¯½{Éu”†âÝ#ÎD>ÀrU­Þò'Ñ¨©ãÐ—‚É¼´¥ë÷°&öüsï*$·XÈë®œ“µÅÞ–ày•˜ü¤tŒ±ÍêRê
+ž.²]Ê"Ð¼¼(ø:ž¶Mºá¥‚ÒÕrÌ8}½þ•Û[[wãié*(¡g‘–d%Å‰¿¾ýæ÷MÞÃÜ‰/í\•G¯ì=u#`¾Þ9GÛ˜(ÄR>—Eæ·Â¬†"I7®Ê”Îé <5_}û±ûÓaÎ¼«m°î”Y¡P¹óë…zÆãš}Â–âþ#"99óê´ö÷wö~Æ™öÍ]]`‰Û°•žËa¤ý}æ|•²_\ÉáVaiÔ;íÿ ²¼©¾sW»¢‡íé¸÷ïrÃ¹¡’¦FiV ègµÉÔ~ž×ï6Öv¶koT?.‡ÿ r÷"rô0m› Ž È =Í›ò«;.Ö£ ¬Ä—©¦ÎÉsè[Iü{„¹¯ÛÛ=äêK‚¡ø¨=`w¸»›Å¼vK{©}èÃl¯“[ñ¨ØDÂ Ôô-øÑXûÉPÀ·HCšž²Oîë÷vå­´^î,ÍzRRw–âÌå þ)#£$ªÌŒÅþÕìb=¸ØöÝ½£²Œ
+‚0:œ9›•ùs“ï’=²5(@èÚn\Ö;}õêÓKEîÔºK4jÿ Øµ¯ox?ÍÏyíÇ7<öÒ²+µiR]û®òÑæ‹hwÑ‹é¥ê¦÷ïLQ&^ªx©Õ”µ‚(¯Wöo/¹×{¼eµG¯]^åšÆÂÍ€p»çkíÈ6}V3#OŒP€ÚZñobÿ jvÙ7ni[“R„ç¢¯t÷_¢å™†0§ÊÍ‰±j±ócá+S–…˜ŸyË+í6ñx…HÉëãû‘Ï{ÿ 2ÛòŽÚ-š@•È¯HÇAÂÏQ‘fœ+:ªFÜ•µ½Æ7›w;ƒxAÖfmû¶ÙÉY°pñŠúÔŽƒ®¾ë¼Ãî’	s)Ž0TŽo§óì1Ì»¼Í	ŠÚºt¯Ú=‡•ïÞãuu9ÅiÐë½zr%2ëFVd¢ÄðÃÛœíÛÞBg•»‡øzû¯îžÙcKŽÏ ¦“¤·65Zi)dÒOëÒmõúßØ‚mîî§ðuQzö_q¶-‡o;`\äô2ìÍ‚¦4‡*ä£OÔŸb]—Ú-¦ÎAqx5·@.uû×ÞÅ`Ö{0§•z«ºlfñÅ©éÀ”¡!íÍù>ÇË›Dj! >Î Û/x7ÍÙZòþZ‚xÐ3SñZ¡*YéßB\°¸Þ×Ã·ü·]µTéè[ËÞôíû{ÐÇ©ú:Ã¤ ÁVÄÕ•Z´²úoqþóì¬{g²Û·"ëaëÔ„>òû·Ó›;1©¯FÐ`! RžÅt[‚n? ö.±Š81(P¾AÜÅÌÛ3nfk‡.\ùšõ›QO†œ§ªÆüýyÜ¹S ÔZÁd³\Ž¤åqRÅ÷0/úŽ“Àÿ aîÖ2:ñÑ0îSIŠtÛI,è8ÁôñþµÏø{Qw¦¿oIùgmY ¸¹5=))«Äij‡±"üŸëõÃ·0Ð—KÍrDp/hë„¹8bs"Ì>¤ð~œ[Ùt®
+~§C=»f•›Ãrz›A½"fûyŸÒ››}G°ÕõŸÔÁÐûoÙÿ vÇâËñt(âêhê"G§*å¬x·çýoq®õ°Kà‡N¶ˆÜJhJ¡	 ·7ú{õŒm
+÷ôÞ÷oÌQõ’D	_Iú’GãñojÕ8	ÑjÅÏ›ÑâÁ[ÅÉ±üû>u"-# ÿ ê<ÚÛ¥Tµ,¢G?[É$†TR@êó_Énp:WÒmŠ9ùŒ†¿«þ'óì²k©aËÑd»ô•ÒM:ÃÛOL…£^T\p?ì}œm‚3]7ÍÕ® <z`Ž«'Nâ„¡:~Ÿðö%ºÒ¡ÒsÐsm°¶‹›ƒÃ=,1”5s.¥C©¹ r>¾Ã"Fjý/Ü÷ûE_ :v8ªÔ
+×ëÚÞïÍ¹4cÐ6îþ‚xõÚ…}HÖžl?&Þï)¶vÁé-ªÚºÖ½g‰ª$uÖ¾Ÿízy¿Óóí¦Ž6§­\\[Z)t5nœ¼ôõZCÃ/øÿ ­ïh×
+4‘QÐFâîÿ q°N¸Šé©XT‘p ÿ y¿·´sbLtŽîÙ$­¤“Ð›·²‚ZMUQp¼,8ŸaâÃÂ›M»V½bg»œùKWÙ¶ÇÔrB.ÛÞßÂêà{ª5Êÿ Réÿ |}Çûÿ $®ílË0¡`sÖ5lÛuâJoYˆzÔt¦ì¾ÀÛ›lµ4ªÕˆ›ÕÅõiþ¿í½Áö>ÕóÍº´¢BÖÕ­<©Ô?ï»ïý’Á|ÄÇóùtGöVêÝÛK~¥v')3c„Úš#2hÕk O±ò{sÊ|åíû…ª“Jj§ŸXÕíÖÓß2¤6ê{NHèÐïÞŸq}²Õ’…Pæÿ SnK{YÉßwÍƒ•îâÒ @5ë&o}¸´¸ÝRötÕ¦œGAf~*ÇŠ:êP$ŽKaoÏ$ûœ,ZÎÖ?¢nÒ¼C½Þ³lÙÑm¨
+Pu“'˜¤qzd€WŽ·÷«¦‰A’_…z¿'ÅÝÔKttÆH¯Ù×<†3|âsTæ¦”ËŠ¨±ªH
+ßíGÝ-wîV¿³h­ŸLéŠu.óîíÊü¸Ö°l­ÙFªzôíš¦hÌèÉ£S/ô6¹ú{Gk5ÅÔÞ	ÊúõorÞóÐ€Ðô‰¡Ê,‹%<ß©Moéôö.]©­Ô:yô,å]ˆm–¡Xw›²òÂºŸõìÇÙÎß•º”¶^^šäøåxtàýÖÁ³+†s#ö98¡vŒ‰¶ ·÷sÏ2{Ê¼Ýû4&kr@ W¬…º÷ë{äßkî¹Od´4ˆT52*)Ð³º¯±*ê0ô'©Ž	Y"b÷º«ZæÞçÝ¯~Ü÷¥.·8ô»€Hôë½¦»æ[«¹/9Œò¹4?3ÐÓCDÐ²ë$Ž 7·ûûEq:·pêæa–ÞšTtõ4é¢×R8çñøÿ û%’à!¨ãÖ.óŽö%vªOX¨°°µ›H÷±áî­¹HzíÎ‰ât§£€Ò¯¥x°âß“Í½‡÷±0¡=óþí…[AGcšÉ"2SÒ‡x‹Wž?öÞÛeúòP}½cÿ 0íËw1–åþ|zKíL´’Â¥D2 ÒÃúû4’Ö1_¹GIö…B
+&U|ú/×ÜY\¬3ãk™!¸ô«ÿ ø{ƒ¹ç{ØbÜRÙÐ4 úuó¾ï³.ðÑ2ëaÏ¡sª°™h°Å_!–EQëcrxüßÜŸÊ·–Ñí‘².ŠÔ¥íÔÖëaâ*é‡BÄ$€²r¦ÞÅ©tT¥ýµõHô´Åãà«”GXÚ"ag?Ð}	öY¸î¯c’ÜU‡C~fƒbszT1QÀô™¯ÀVy±µNðIsmWÿ ë{Œ·ne›yoT)ë½ÃæÉùƒ|šéÆ•$Ð OqÉ$§ÔuOÔÿ ­ì¦ÒëÀÄCQôiHÉé©)¢§SnÄ½sì_`²˜¼G¶»y/ÇNtqS¸úƒþôG³Þä·B;W péCT@LiÉúZßObKå·¦³ÔãÊÑE¸gé¯#×9JºVž’&cÍˆSøæ×ö,±æí¾ÚAìY-Ê7›M¶Øg¸ 7Hx09Ì-HDêA¿!€ôÿ KûÒÃrOÑ`GNG¹Åºî"+„žžâÍPÔ¦´-°&ÜX×ö™ö½¾æ2AîêcåÎW°Åü†¬zçÊÓ×Î“Œ=W·×ü}îÒÒKXŒg€áÓóX¶á¼‰@¢ƒÖG‘dƒOã†¹gŸøß¶ Ñ1fêN‚Ð4in¢¼:iª­zZ)WÐÏôãŸø§¸oÜáõ`SÇ®‡ýÝ¹NÒ·r§éÐžÏÇS#Ã-žÅ”ó§ñ¢û¿.Ç#¢ºyõ’[‚Zâw¶6Í6r­Q"
+[ß›·ÒþÏ÷(®´ # ~áÍö|½e%Ôî Pz0ûmÖmé£H(Àf$[ñÏ±€±]¼% >¹÷“÷ª~oæ†Û­äýb0z_ÔâÞ¹CHt1ÿ }ô÷Ho–ØéLŽ±Žãq†%ª
+±é“Àh›Á?ãìö×s×ž‚××¬jÇ¨X}±ì<ªG¨ñþ¿ãÛ·{ËB½_jæ_ ]1ñéã'µ1©‘§X¿ø¯$ì²ß{½™ôytW»ï{–í6‘ðô˜|m4w:Sg1ÜÊMGOZ›|úÆ©F=
+Üþ87¿õçÚ¢f&§£#õ	éÞŽ²X£(ŒÊ4ñýx¿çÚKˆ›StòD
+ÑúŸHðÏ!Jƒ«Pæÿ K}míåà]PôUu¸}ƒ¬UØÌp2h`¡ƒôæü}=¢ŠööC©‡£ÝÊööòc#VÝïƒ¢Á,%<¸à_Uÿ >ÒK{ss|°Ó¬væk»‹ÎciZVs ª}KK:‘`o¯àŸb‰ZÆg'¡d¨›l+jÄg¥­6(MLB¡$ŸHçýà·÷HnèPôwµÎT'MqROŽ©@7ÿ òW³ud™zÚÒN[~®I£[–°?×‘øö‚æ%J‘ÔËÊ±ÆYzSIi”‘ô#Ÿñö™èRÌ+¦PS=
+›jjtb.tŽ?<}8÷ó#)¬ƒä›Ó%¸J—ÄÓÖ£²éYlÖëô6¹·°C_Íi*êÊõ0X]˜Û¿Ò9·ëf†EpÍ j^#ý‡±þÁºÛ‡WLW¨÷œ7;[xžé¯ rjHèj¥*ú¹¿ûÈ÷)E3O¡¨§XÍ¹Ou,ì[§®reŒd+¨ÒG÷z[0ýÊsÐzöÌƒ¬š×¦šéÉHøŸõ¿§µpGCFé¨öõ™[¦·$B”Úàÿ W·üG·ü9˜áÐzø´„ áÒ~ZÙ¡Ç¨Á€7?¨§ûßµQÚ$”=XlâæFZ`×¢i¸+³ýöXÇ'ç¸k [Ÿd{Ä6v7I(#SuŽ^àm;^Á¿x¨ÃY<?>¦"‘ÄA6«¹E'Žu¨û[Ê¢Œ`ô;Ø¯RM±ZœGPjŒøë‘}7µÿ <­ír"Ü
+ôd–ft3Ž„Ý‹˜õÇ­‹!µÁïZ½•n–uˆéãÔ§ÈÎ¶ƒÅ_.„ìÞŸ¥`
+‰ôÜ}/r?$û
+Z_n|¡vW¤üÛ¼ßn[€±QÇ#vÕ4ø*ÓJà˜ÃY¿ óìE¸øW¶ž"ñ¦z•¹Ðíq$LhOFCkg*)ª©äG`é?QoÏ¸C›öh/l%…Ô²?—bá%oQÐÍ¹s.ŒÌÖx:¯úmkxo³Ú«œÖñGÿ /Y‘²òü[§.4áAìÿ 'DÏ)UM%}Ld‚Ûê~·?›ûè¦ÃÏ¶C1ã¤ƒ¬#÷U†ç5¬x ž³bè%báXý?×ãÚ­Âà…ÖÜGA]–ñ"`­Ã¬9­·[ïB„©?ííõÞÚÛ7{woCž†7—¶‘Z5Ñ s Â)ÃÎº_ëÈ¿ûr}¨º¿	%#ltne{èÚ+n%ó_sHÄBQé½¯aýM½›Ù<R¯©¶òè½ºw9è:¬Êd©f×!O6¸ñ_gk´‘éêLÛ9jÒIÔÃ¨sîsâc;/Ð\ÿ Oe3B±ËEêwåÎU× Ð”5G¸ª'k%~ þñÏ¶ÚÐ?u:²ÓoŽ†•e®Àf G7üj¬‚Å0Vè9ºI‘0N=& Ë$Rç skom_×Ø™­üE×Qü<oV;Œ©-=®y$[ý¿üoØgvºð•º”y#ekÉUŸ…zMîÌˆ…6²Øÿ ãØ"Òõà…<OY7kË¶±Û.±ÀtŒÅn,F—Ô@{òOõã“ìHvØ¯Yè£p’ÞÐ£ÇC./yV˜£) › oþ?SÇ²©vX‘NW–Ð\nÝxÌ½FJ0%U·çdOµé»:%Þ7›k’v P† øÊVO,Q³Ü}T}}ÛwÛçð¿LÓa'6óÖç»î¼„F	óèlŠj	¢Ch¼‘ÇÐs}>ã§†î
+¹'=Ýîe]NÄž›kÒ1~eãýo¯³;)g/‹î-å™=™Eª¨‘¢‰oÉàý}È/1‡sÐb=¶ÊÎsqxr=z`8yé¤óHŒîm¨Zÿ ì=š}|S&ˆÏDÞþ¬Æ+CéÓ“SAY©âãûCò9öe’,8tžñ¢ŒÏ1ÏX$ÚÞt%	kØ\Pmkÿ ¼{ÒoåÑ%¾ð·.“’lº¸å&4<¿Þ=›§0[´}Ç¡Ežñm÷šÔLŽÜªX*¡@6#›[ÞâÝ y5BÝy§˜ÒzÃ¯AU~Üxçcv#€Öúbk;ÕqW=ùrð<7O‚ž¦ŠXùµÈ"÷þ¼û4Žù"`ÊzÈ¦X € ãÐWÙÑ©“Z(7?Ž~œóìCm¸‡£kÆH"!A–[eÇ,R;ØOöf±^ iÒ¢ñ¤[ôÖm3ŒDgê~£éo§>ÌVea^…noÑ3×TØT<±ý-þß™«ÑÕ–òàdõ&m¾àƒþûñom¤Ê1ÑÂî+ ãÒz³R·ý»þOï#ÛêÁ¸tO¸ßÀªK7Lá«,]"úrmöû¾´ôþ}>¾ÒV+«=EŠªzYŒS‚4ð?‘ï]_VIÂGÀô¤¢ÜUgLd¨oèmôâÃÝ5aSÑÍ®È¯i:Ybw‹1XÙ†¿Á‘r8öíüÇE7j™Z%Àéyßu(Â3'§ñööøÛ¿ ½æÉ”¹èD¢Í¦N u!kéùÿ [Ù{[ø&½1PB¹ÇXrxIj 3B‡È†èWüÝ ¸Tm'Ï¥=¿Ó”'¤¼9œÎ&@¬­¡¹¸>Ÿõ½©{X&É"µÙ-¦mljzYâ»ÜˆêŽ’l9¹7ú_Ù|ÛBÇÑîUˆþˆ¯KÜnì ’Ux¥ÒüX_‹û+›m—IÔ:-›o¹3€ø+yÜ«M¹?Óð}—.Þª>}(ýÕL$9=<Òfic±’@8RÞ¯íÖr¶g§Ì7f¸*)sT^–Y†‹í}xü{)–ÊjG[6×‘‡—45T5ðé{ñøúß€}‡®`¸¶zðéE™›¼ôÃ“ÛpO))õ^Æßëû2´Ý4ï<:½íø·n˜'ØuU³S£ú­·×Úôæ"jHqÓƒ˜¬–	Ø
+ôŸnnüa°§“Æ/m ý?³í|{¾Íwâ½zÒ}šè×]z†r/BËö“§‘þ>ß-··
+ì¶ñUHêrÓg¤ ¤Rô°¿×ëíƒ-š,E:*¸½Ú\éÔ:™î „4l
+ÚÖ¿úþØwÛõ`ô²Ó÷O‡@rzuÇeó4nªl,§ëí-Õ•”éQÑÍ¥¥›°	Ôšìýa7u·ì> Üûn×n„
+/H7m²ßQ+Ó­éÔ­ÛÕýHúÿ °öŽëh¥%_.“ÛmeÜƒÔjªæ.Z&$ð>€Ï·aJéqÃ¥÷|Ã"wK¹e¥•u7çéõ¿øû¼ÛJL‡ •ÎÞd›QáÒÒ:úl¼>9Âú—ëassÏØ}­d²“\g§SLGJç¤ÜûN)hÔXŸÀ·×óìÒ=æM_£wF¶áÒ#µj"o4WàÞöüý}™Únñ¸Ñ!éÎåÄšœç®è)j#²N¥~—àŸð¿¿\IHzÜ;”pÄJñéðSÓÆë)r
+‹ÿ ¯ùö‡Ä‘” ÷Êæöî±Ž•”ú8ÐDÓ]€ \Ûô½ý‘Üí“»Tt®çJÊ)Ô³[åa$êP7½½´-B&‡é±i^”øíÉXª"œ’4Ø_ýMøúû#½Ùm‹x±ŒôžkhÅž”´Ž®Ô*Âÿ @·õ]_íý‘Ü¥í®m«Ž‘6ç>Ý[qž˜7ÌÁVDe„&®H [ÙžÑÌ[¤áËZtšóq»JÓ o-±Ò7×‚ ÛõãòO¹Ë˜‚ŒsÑ­­ãêH—'¦7Ûó-Ä+ê_Òmõ#üG³ÞHEXã©fhã€5Á¦:™Œž¦Ž¤AY
+n7ÒGûî}¦»Hç‹Ä„ç¢}Ër3nKiljœó¸äÉÒ¿ ©æÜ^Ñí×Mo8©èMp±XmeÜäœÇ_‰)ä–5äj6
+>¶ú_ØÚ×}> Vè-o¼	-YF:@¦;%Œb‘ÆÄ¨âêWéýoìÿ Ç·œV½!Y#º}37S±ùùifT«-s¬¶¿¶g´I±ç§~”‰tÀ*=z^Pn(j
+ eôþÛqì’}½j§M\Áà?w”M:I kA#ýÓÙxCS52€±ÇNtùj”Xê¬>€ßÇÐid·x˜´==µÁ"w…¯S¢ £%¥—QýVSÇÇ´Í<ÌºeÉy36:UQå&‚?Ø­­É¿þ£Ù=Åœr6µãÒ	ÓÇ+Zõ§&5Ê·oö÷·ø{v+BE’m…¤áÖ/u1ê6ÒyþŸ_wy
