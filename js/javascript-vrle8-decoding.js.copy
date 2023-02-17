@@ -131,11 +131,14 @@ function VRLE8dLoadFile(id)
 		sw = 1;
 		}
 
-	// Можно только расширение rl8.
-	if (ext2 == 'RL8' || ext2 == 'Rl8' || ext2 == 'rL8' || ext2 == 'rl8')
+	if (sw == 0)
 		{
-		ext = ext2;
-		sw = 1;
+		// Можно только расширение rl8.
+		if (ext2 == 'RL8' || ext2 == 'Rl8' || ext2 == 'rL8' || ext2 == 'rl8')
+			{
+			ext = ext2;
+			sw = 1;
+			}
 		}
 
 	if (sw == 1)
@@ -432,7 +435,7 @@ function VRLE8dSave()
 	var array2 = []; // Массив с dec-данными (числовой массив);
 	var array3 = []; // Массив с декод. данными.
 
-	var z, temp, bits, addr3, cb, tb;
+	var z, temp;
 
 	// Получить hex-данные.
 	temp = document.getElementById('id_vrle8dhex_2').innerHTML;
@@ -453,57 +456,8 @@ function VRLE8dSave()
 		z++;
 		}
 
-	addr3 = 0;
-
-	// Декодирование в array3.
-	for (z = 6; z < array2.length;)
-		{
-
-		// Логическое И (&).
-		//
-		//   -------------
-		//   | x | y | f |
-		//   -------------
-		//   | 0 | 0 | 0 |
-		//   | 0 | 1 | 0 |
-		//   | 1 | 0 | 0 |
-		//   | 1 | 1 | 1 |
-		//   -------------
-
-		// Установить биты 6, 5, 4, 3, 2, 1, 0 в ноль, 7 бит оставить без изменений.
-		bits = 128 & array2[z]; // 80H и array2[z]. 128D = 80H.
-
-		// Если 7 бит 0 - неповторяющиеся.
-		if (bits == 0)
-			{
-			// Неповторяющиеся байты.
-			// ---
-
-			tb = array2[z++];
-
-			// Порция.
-			for (cb = 0; cb < tb; cb++)
-				{
-				array3[addr3++] = array2[z++];
-				}
-			}
-			else
-			{
-			// Повторяющиеся байты.
-			// ---
-
-			// 7 бит 1 - повторяющиеся.
-			// Установить 7 бит в ноль, остальные оставить без изменений.
-			tb = 127 & array2[z++]; // 7FH и tb.
-
-			// Порция.
-			for (cb = 0; cb < tb; cb++)
-				{
-				array3[addr3++] = array2[z];
-				}
-			z++;
-			}
-		}
+	// Декодирование.
+	array3 = VRLE8Decoding(array2, 6);
 
 	// Типизированный массив.
 	var buf = new Uint8Array(array3);
@@ -531,6 +485,76 @@ function VRLE8dSave()
 		link.setAttribute("download", nameVRLE8);
 		link.click();
 		}
+}
+
+//
+// VRLE8 Decoding.
+//
+function VRLE8Decoding(array1, offset)
+{
+
+	// array1 - Входной массив.
+	// array2 - Выходной массив.
+	// offset - Смещение от начала массива.
+
+	var array2 = [];
+
+	var addr1, addr2, bits, cb, tb;
+
+	addr2 = 0;
+
+	// Декодирование в array3.
+	for (addr1 = offset; addr1 < array1.length;)
+		{
+
+		// Логическое И (&).
+		//
+		//   -------------
+		//   | x | y | f |
+		//   -------------
+		//   | 0 | 0 | 0 |
+		//   | 0 | 1 | 0 |
+		//   | 1 | 0 | 0 |
+		//   | 1 | 1 | 1 |
+		//   -------------
+
+		// Установить биты 6, 5, 4, 3, 2, 1, 0 в ноль, 7 бит оставить без изменений.
+		bits = 128 & array1[addr1]; // 80H и array1[addr1]. 128D = 80H.
+
+		// Если 7 бит 0 - неповторяющиеся.
+		if (bits == 0)
+			{
+			// Неповторяющиеся байты.
+			// ---
+
+			tb = array1[addr1++];
+
+			// Порция.
+			for (cb = 0; cb < tb; cb++)
+				{
+				array2[addr2++] = array1[addr1++];
+				}
+			}
+			else
+			{
+			// Повторяющиеся байты.
+			// ---
+
+			// 7 бит 1 - повторяющиеся.
+			// Установить 7 бит в ноль, остальные оставить без изменений.
+			tb = 127 & array1[addr1++]; // 7FH и tb.
+
+			// Порция.
+			for (cb = 0; cb < tb; cb++)
+				{
+				array2[addr2++] = array1[addr1];
+				}
+			addr1++;
+			}
+		}
+
+	// Вернуть декодированный массив.
+	return array2;
 }
 
 //

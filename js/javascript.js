@@ -300,6 +300,55 @@ function CloseModalWinBMPtoSPRGRF(id)
 
 // ---
 // | Показать модальное окно.
+// | [ Английский Алфавит ]  [ Русский Алфавит ]  [ Украинский Алфавит ]
+// ---
+function OpenShowModalWin_ABC_ENG_RUS_UKR(id)
+{
+	// Слой затемнения.
+	var darkLayer = document.createElement("div");
+		// id чтобы подхватить стиль.
+		darkLayer.id = "shadowabc";
+			// Включаем затемнение.
+			document.body.appendChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "block"; // "Включаем" его.
+
+	darkLayer.onclick = function ()
+		{
+		// При клике на слой затемнения, всё исчезает.
+		darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+		modalWin.style.display = "none"; // "Выключаем" окно.
+		return false;
+		}
+
+	document.addEventListener("keydown", function(e){
+		if (e.which == 27)
+			{
+			// Код, который должен быть выполнен после нажатия на кнопку ESC.
+			darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+			modalWin.style.display = "none"; // "Выключаем" окно.
+			return false;
+			}
+	});
+}
+
+// ---
+// | Закрыть модальное окно.
+// | [ Английский Алфавит ]  [ Русский Алфавит ]  [ Украинский Алфавит ]
+// ---
+function CloseModalWinABC(id)
+{
+	// Удаляем затемнение.
+	var darkLayer = document.getElementById("shadowabc");
+	darkLayer.parentNode.removeChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "none"; // "Выключаем" окно.
+}
+
+// ---
+// | Показать модальное окно.
 // | СПРАВОЧНАЯ ИНФОРМАЦИЯ ПО ПОЧТОВОМУ АДРЕСУ.
 // ---
 function OpenShowModalWinInfMailingAddres(id)
@@ -432,7 +481,44 @@ function G15_RemoveClock()
 }
 
 // ---
-// | Страница (index.html) загружена полностью, убрать анимированную иконку
+// | Передёрнуть ползунок (Scroll).
+// ---
+function DistortScroll()
+{
+	// pageYOffset или scrollY
+	// Возвращает число пикселей (насколько пролистали документ).
+//	alert(pageYOffset);
+
+	// innerHeight.
+	// Высота (в пикселях) области просмотра окна браузера
+	// (плюс горизонтальная полоса прокрутеки).
+//	alert(innerHeight);
+
+	// document.body.scrollHeight
+	// Измерение высоты контента в элементе, включая содержимое,
+	// невидимое из-за прокрутки.
+//	alert(document.body.scrollHeight);
+
+	// scrollBy - Прокручивает страницу относительно её текущего положения.
+
+	// Если pageYOffset = 0, то ползунок вверху.
+	if (pageYOffset == 0)
+		{
+		// Ползунок вверху.
+		// Передёрнуть Scroll.
+		window.scrollBy(0, 1); // Страницу Вверх. Ползунок Вниз.
+		window.scrollBy(0, -1); // Страницу Назад. Ползунок назад.
+		}
+		else
+		{
+		// Передёрнуть Scroll.
+		window.scrollBy(0, -1); // Страницу Вниз. Ползунок вверх.
+		window.scrollBy(0, 1); // Страницу Назад. Ползунок назад.
+		}
+}
+
+// ---
+// | Страница (index.html) загружена полностью, убрать анимированную иконку.
 // ---
 function RemoveIndexLoader()
 {

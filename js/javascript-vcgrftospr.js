@@ -5,7 +5,22 @@
 //
 // Сбросить input file (выбор grf-файла).
 //
-function VCGRFtoSPRResetInputFile()
+function VCGRFtoSPRResetInputFile_1()
+{
+	var txt = navigator.userAgent;
+
+	// Если не Firefox, то сброс для input file.
+	if (txt.search(/Firefox/) < 0)
+		{
+		// Сбросить input file.
+		document.getElementById('id_filegrftospr').value="";
+		}
+}
+
+//
+// Сбросить input file (выбор grf-файла).
+//
+function VCGRFtoSPRResetInputFile_2()
 {
 	// Сбросить input file.
 	document.getElementById('id_filegrftospr').value="";
@@ -209,5 +224,18 @@ function VCGRFtoSPR(id)
 				}
 			}
 		}
+		else
+		{
+		alert("Неправильное расширение у файла!");
+
+		// Сбросить input file.
+		VCGRFtoSPRResetInputFile_2();
+
+		return;
+		}
+
+	// Сбросить input file.
+	VCGRFtoSPRResetInputFile_1();
+
 	}
 }
