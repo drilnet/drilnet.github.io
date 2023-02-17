@@ -209,13 +209,19 @@
 	<meta name="keywords" content="rle github, rle github info, rle info github">
 	<meta name="keywords" content="vrle8, vrle8 info, rle, rle info">
 
-<!-- -->
+<!-- vrle8 new -->
 
-	<meta name="keywords" content="puzle15, puzzle 15, game15, game 15">
-	<meta name="keywords" content="puzle15 js, puzzle 15 js, game15 js, game 15 js">
-	<meta name="keywords" content="puzle15 javascript, puzzle 15 javascript, game15 javascript, game 15 javascript">
-	<meta name="keywords" content="puzle15 html js, puzzle 15 html js, game15 html js, game 15 html js">
-	<meta name="keywords" content="puzle15 html javascript, puzzle 15 html javascript, game15 html javascript, game 15 html javascript">
+	<meta name="keywords" content="vrle8 new, vrle8 new coding, vrle8 две функции в одну">
+	<meta name="keywords" content="vrle8 быстрая конвертация, vrle8 быстрая конвертация File To VRLE8">
+	<meta name="keywords" content="vrle8 быстрая конвертация VRLE8 To File">
+
+<!-- game-15 -->
+
+	<meta name="keywords" content="puzle15, puzzle 15, game15, game 15, game-15">
+	<meta name="keywords" content="puzle15 js, puzzle 15 js, game15 js, game 15 js, game-15 js">
+	<meta name="keywords" content="puzle15 javascript, puzzle 15 javascript, game15 javascript, game 15 javascript, game-15 javascript">
+	<meta name="keywords" content="puzle15 html js, puzzle 15 html js, game15 html js, game 15 html js, game-15 html js">
+	<meta name="keywords" content="puzle15 html javascript, puzzle 15 html javascript, game15 html javascript, game 15 html javascript, game-15 html javascript">
 	<meta name="keywords" content="пятнашки">
 	<meta name="keywords" content="пятнашки js, пятнашки javascript ">
 	<meta name="keywords" content="пятнашки html js, пятнашки html javascript ">
@@ -449,6 +455,9 @@
 	<script language="javascript" src="js/javascript-vrle8-coding.js"></script>
 	<script language="javascript" src="js/javascript-vrle8-decoding.js"></script>
 
+	<!-- VRLE8 NEW -->
+	<script language="javascript" src="js/javascript-vrle8-coding-new.js"></script>
+
 	<!-- Размещение программы JS на странице html -->
 	<script language="javascript" src="js/javascript-prgjs.js"></script>
 
@@ -476,10 +485,16 @@
 <!-- VCBMPGRFResetInputFile(); -->
 
 <!-- Сбросить input file (конвертер GRF to SPR) -->
-<!-- VCGRFtoSPRResetInputFile(); -->
+<!-- VCGRFtoSPRResetInputFile_2(); -->
 
 <!-- Сбросить input file (конвертер SPR to GRF) -->
-<!-- VCSPRtoGRFResetInputFile(); -->
+<!-- VCSPRtoGRFResetInputFile_2(); -->
+
+<!-- Сбросить input file (конвертер File To VRLE8 NEW) -->
+<!-- VRLE8NewCodResetInputFile_2(); -->
+
+<!-- Сбросить input file (конвертер VRLE8 NEW To File) -->
+<!-- VRLE8NewDeCodResetInputFile_2(); -->
 
 <!-- Пересчитать горизонталь для Структура данных (горизонталь для окна) -->
 <!-- VRLE8WidthDataStructure(); -->
@@ -514,12 +529,28 @@
 <!-- onload будет выполнен после загрузки страницы -->
 <body
 	onload="LoadBook(); G15_RemoveClock(); G15_Init();
-		VCSPRResetInputFile(); VCGRFResetInputFile();
-		VCBMPGRFResetInputFile(); VCGRFtoSPRResetInputFile(); VCSPRtoGRFResetInputFile();
+		VCSPRResetInputFile(); VCGRFResetInputFile(); VCBMPGRFResetInputFile();
+
+		// Используется в grf to spr
+		VCGRFtoSPRResetInputFile_2();
+		// Используется в spr to grf
+		VCSPRtoGRFResetInputFile_2();
+
+		// VRLE8 NEW - это две функции объединены в одну!
+
+			// Используется в File To VRLE8 NEW.
+			VRLE8NewCodResetInputFile_2();
+			// Используется в VRLE8 NEW To File.
+			VRLE8NewDeCodResetInputFile_2();
+
 		VRLE8WidthDataStructure();
 		VCBMPGRFSetWidthModWin(); VCBMPGRFResetRB();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
-		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader()">
+		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader();
+
+		// Передёрнуть ползунок (Scroll)
+		DistortScroll();
+		">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -1547,7 +1578,16 @@
 
 				<td align="left" class="smalltxt">
 
-				<br>
+					<br>
+
+					<!-- Обновлено -->
+					<table class="coding_update_bg smalltxt" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+					Обновлено: 05.02.2023
+					</td>
+					</tr>
+					</table>
 
 					<table cellspacing="0" cellpadding="0" border="0">
 
@@ -2646,7 +2686,15 @@
 
 		<td style="padding-left: 8px;">
 
-			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
+			<table class="vrle_update_bg smalltxt" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>
+				Последнее обновление: 09.02.2023 (обновлена информация: Дополнительная информация)
+				</td>
+			</tr>
+			</table>
+
+			<table class="vrle_update_bg smalltxt" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 				<td>
 				Последнее обновление: 17.01.2023 (обновлена информация: как из VRLE8 сделать SPR)
@@ -2654,7 +2702,7 @@
 			</tr>
 			</table>
 
-			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
+			<table class="vrle_update_bg smalltxt" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 				<td>
 				Последнее обновление: 27.10.2022 (добавлена информация: как из VRLE8 сделать SPR)
@@ -2662,13 +2710,37 @@
 			</tr>
 			</table>
 
-			<table class="vrle_update_bgh1 smalltxt" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td>
-				Последнее обновление: 25.07.2022 (исправлены ошибки)
-				</td>
-			</tr>
-			</table>
+				<table  style="margin-bottom: 4px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+					<td>
+					<!-- Иконка для спойлера -->
+					<img id="id_vrle8_spoilerico" width="14px" height="14px" class="icon" src="icons/sp1.png" title="Иконка из набора Fatcow. (C) FatCow Web Hosting. License: Creative Commons (Attribution 3.0 United States)">
+					</td>
+
+					<td style="padding-left: 6px;">
+					<!-- Спойлер -->
+					<span class="spoiler smalltxt" onclick="SpoilerICOSmall('id_sp_vrle8_update', 'id_vrle8_spoilerico');"
+					title="Нажмите (остальное)">Ещё</span>
+					</td>
+
+				</tr>
+				</table>
+
+				<!-- То, что под спойлером -->
+				<div id="id_sp_vrle8_update" style="display: none;">
+
+					<table class="vrle_update_bg smalltxt" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td>
+						Последнее обновление: 25.07.2022 (исправлены ошибки)
+						</td>
+					</tr>
+					</table>
+
+				</div> <!-- Конец спойлера Обновление -->
+
+<!-- - -->
 
 			<!-- ! -->
 			<span class="spoilervrle"
@@ -2688,6 +2760,8 @@
 			<br>
 			Онлайн-кодирование! Онлайн-декодирование! Дополнительная информация!
 			</span>
+
+<!-- - -->
 
 		</td>
 
@@ -4243,21 +4317,67 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 							<br>
 
-							<!-- Файл для скачивания (js) -->
+							<!-- Файлы для скачивания (js) -->
+
 							<table cellspacing="0" cellpadding="0" border="0">
+
 							<tr>
 
-							<!-- Иконка -->
-							<td>
-							<img class="icon" src="icons/js_small.png" title="Иконка из набора: Humano 2. (C) Oliver Scholtz (and others). License: GPL">
-							</td>
+								<!-- Иконка JS -->
+								<td>
+								<img class="icon" src="icons/js_small.png" title="Иконка из набора: Humano 2. (C) Oliver Scholtz (and others). License: GPL">
+								</td>
 
-							<!-- js-файл -->
-							<td style="padding-left: 6px;">
-							<a href="downloads/vrlex/vrle8-buildarrayaddr8.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-buildarrayaddr8.js</a> (в UTF-8)
-							</td>
+								<!-- js-файл -->
+								<td style="padding-left: 6px;" align="left">
+								<a href="downloads/vrlex/vrle8-buildarrayaddr8.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-buildarrayaddr8.js</a>
+								<br>
+								<!-- Подстрочный текст -->
+								Текстовый файл (в UTF-8).
+								</td>
 
 							</tr>
+
+							<tr><td colspan="2"><br></td></tr>
+
+							<tr>
+
+								<!-- Иконка PDF 1 -->
+								<td>
+								<img class="icon" src="icons/pdf_small.png" title="Иконка из набора: Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+								</td>
+
+								<!-- pdf-файл 1 -->
+								<td style="padding-left: 6px;" align="left">
+								<a href="downloads/vrlex/vrle8-buildarrayaddr8.pdf" title="Нажмите (откроется в новой вкладке)" target="_blank">vrle8-buildarrayaddr8.pdf</a>
+								<br>
+								<!-- Подстрочный текст -->
+								Для печати (тоже самое что и: <a href="downloads/vrlex/vrle8-buildarrayaddr8.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-buildarrayaddr8.js</a>).
+								</td>
+
+							</tr>
+
+							<tr><td colspan="2"><br></td></tr>
+
+							<tr>
+
+								<!-- Иконка PDF 2 -->
+								<td>
+								<img class="icon" src="icons/pdf_small.png" title="Иконка из набора: Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+								</td>
+
+								<!-- pdf-файл 2 -->
+								<td style="padding-left: 6px;" align="left">
+								<a href="downloads/vrlex/vrle8-buildarrayaddr8_2.pdf" title="Нажмите (откроется в новой вкладке)" target="_blank">vrle8-buildarrayaddr8_2.pdf</a>
+								<br>
+								<!-- Подстрочный текст -->
+								Для печати (тоже самое что и: <a href="downloads/vrlex/vrle8-buildarrayaddr8.pdf" title="Нажмите (откроется в новой вкладке)" target="_blank">vrle8-buildarrayaddr8.pdf</a>, только названия переменных
+								<br>
+								другие и название функции чуть-чуть другое).
+								</td>
+
+							</tr>
+
 							</table>
 
 							<br>
@@ -4308,6 +4428,7 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 							<br>
 
 							<!-- Файл для скачивания (js) -->
+
 							<table cellspacing="0" cellpadding="0" border="0">
 							<tr>
 
@@ -4382,21 +4503,46 @@ if (document.getElementById('vrle8spoilerjs2').style.display == 'none')
 
 							<br>
 
-							<!-- Файл для скачивания (js) -->
+							<!-- Файлы для скачивания (js) -->
+
 							<table cellspacing="0" cellpadding="0" border="0">
+
 							<tr>
 
-							<!-- Иконка -->
-							<td>
-							<img class="icon" src="icons/js_small.png" title="Иконка из набора: Humano 2. (C) Oliver Scholtz (and others). License: GPL">
-							</td>
+								<!-- Иконка -->
+								<td>
+								<img class="icon" src="icons/js_small.png" title="Иконка из набора: Humano 2. (C) Oliver Scholtz (and others). License: GPL">
+								</td>
 
-							<!-- js-файл -->
-							<td style="padding-left: 6px;">
-							<a href="downloads/vrlex/vrle8-coding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-coding.js</a> (в UTF-8)
-							</td>
+								<!-- js-файл -->
+								<td style="padding-left: 6px;">
+								<a href="downloads/vrlex/vrle8-coding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-coding.js</a>
+								<br>
+								<!-- Подстрочный текст -->
+								Текстовый файл (в UTF-8).
+								</td>
 
 							</tr>
+
+							<tr><td colspan="2"><br></td></tr>
+
+							<tr>
+
+								<!-- Иконка PDF -->
+								<td>
+								<img class="icon" src="icons/pdf_small.png" title="Иконка из набора: Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+								</td>
+
+								<!-- pdf-файл -->
+								<td style="padding-left: 6px;" align="left">
+								<a href="downloads/vrlex/vrle8-coding.pdf" title="Нажмите (откроется в новой вкладке)" target="_blank">vrle8-coding.pdf</a>
+								<br>
+								<!-- Подстрочный текст -->
+								Для печати (тоже самое что и: <a href="downloads/vrlex/vrle8-coding.js" title="Скачать (правой кнопкой мыши, далее сохранить ссылку как...)" target="_blank">vrle8-coding.js</a>).
+								</td>
+
+							</tr>
+
 							</table>
 
 							<br>
@@ -4847,7 +4993,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 			<!-- Спасибо GITHUB -->
 
 			<br>
-			<span class="smalltxt">Thank you very much for the <a href="https://github.com" title="Откроется в новой вкладке" target="_blank">GITHUB!</span>
+			<span class="smalltxt">Thank you very much for the <a href="https://github.com" title="Откроется в новой вкладке" target="_blank">GITHUB!</a></span>
 			<br>
 			<br>
 
@@ -4856,6 +5002,192 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 			<hr class="vrle_addhr vrle_addhrsize">
 
 		</div> <!-- Конец спойлера VRLE8 -->
+
+		<br>
+
+		<table cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+			<!-- File To VRLE8 NEW -->
+
+				<td>
+
+				Быстрая конвертация:
+
+				<!-- Выбор файла -->
+				<input id="id_filetovrle8new" type="file" onchange="FileToVRLE8New('id_filetovrle8new');" accept="*" value="" style="display: none;">
+					<label for="id_filetovrle8new">
+					<span class="vrle_inputfile" title="Нажмите (конвертация написана на JavaScript)">File To VRLE8</span>
+					</label>
+				</td>
+
+				<td>
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+					<td>
+					&nbsp;(fast coding)
+					</td>
+					<td style="padding-left: 3px;">
+					<img src="images/warning (info).png" title="Конвертация с проверкой (Validation coding)!">
+					</td>
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+			<!-- VRLE8 NEW To File -->
+
+				<td>
+
+				Быстрая конвертация:
+
+				<!-- Выбор файла -->
+				<input id="id_vrle8newtofile" type="file" onchange="VRLE8NewToFile('id_vrle8newtofile');" accept=".vrle8,.rl8" value="" style="display: none;">
+					<label for="id_vrle8newtofile">
+					<span class="vrle_inputfile" title="Нажмите (конвертация написана на JavaScript)">VRLE8 To File</span>
+					</label>
+
+				</td>
+
+				<td>&nbsp;(fast decoding)</td>
+
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+			<img class="icon" src="icons/pdf_26x31.png" title="Иконка из набора Crystal Clear. (C) Everaldo Coelho. License: LGPL">
+			</td>
+
+			<td>&nbsp;&nbsp;</td>
+
+			<td>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+					<td>
+					<a href="downloads\vrlex\vrle8-coding-new (ru).pdf" title="Откроется в новой вкладке (написано на JavaScript)" target="_blank">vrle8-coding-new (ru).pdf</a>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td>
+					<a href="downloads\vrlex\vrle8-coding-new (ua).pdf" title="Откроется в новой вкладке (написано на JavaScript)" target="_blank">vrle8-coding-new (ua).pdf</a>
+					<br>
+					<!-- Подстрочный текст -->
+					<span class="smalltxt">Коментарі на Українській Мові (переклад як, є)! :)</span>
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+
+		</table>
+
+		<br>
+
+		<!-- Спойлер -->
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+
+			<!-- Спойлер -->
+			<span class="spoiler"
+			onclick="document.getElementById('id_vrle8_new_sp').style.display = (document.getElementById('id_vrle8_new_sp').style.display=='none'?'inline':'none');"
+			title="Нажмите">Дополнение</span>
+
+			</td>
+
+		</tr>
+		</table>
+
+		<!-- То, что под спойлером -->
+		<div id="id_vrle8_new_sp" style="display: none;">
+
+		<br>
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+			<img class="icon" src="icons/js.png" title="Иконка из набора Humano 2. (C) Oliver Scholtz (and others). License: GPL">
+			</td>
+
+			<td>&nbsp;&nbsp;</td>
+
+			<td>
+
+				<table cellspacing="0" cellpadding="0" border="0">
+
+				<tr>
+
+					<td>
+					<a href="downloads\vrlex\vrle8-coding-new (ru).js" title="Откроется в новой вкладке (Скачать, правой кнопкой мыши, далее Сохранить ссылку как...)" target="_blank">vrle8-coding-new (ru).js</a>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td>
+					<a href="downloads\vrlex\vrle8-coding-new (ua).js" title="Откроется в новой вкладке (Скачать, правой кнопкой мыши, далее Сохранить ссылку как...)" target="_blank">vrle8-coding-new (ua).js</a>
+					<br>
+					<!-- Подстрочный текст -->
+					<span class="smalltxt">Коментарі на Українській Мові (переклад як, є)! :)</span>
+					</td>
+
+				</tr>
+
+				</table>
+
+			</td>
+
+			</tr>
+			</table>
+
+		</div> <!-- Конец спойлера Дополнение -->
+
+	<br>
+	<span class="smalltxt">OpenSource! Снимаю шляпу перед тобой!
+	<br>
+	Thanks <a href="https://drilnet.github.io" title="Откроется в новой вкладке" target="_blank">GITHUB</a>!
+	</span>
 
 	</td>
 	</tr>
@@ -6581,31 +6913,8 @@ if (document.getElementById('id_sp_rad_1').style.display == 'none')
 	// Закрыть спойлер.
 	document.getElementById('id_sp_rad_1').style.display = 'none';
 
-	// pageYOffset или scrollY
-	// Возвращает число пикселей (насколько пролистали документ).
-
-	// innerHeight.
-	// Высота (в пикселях) области просмотра окна браузера
-	// (плюс горизонтальная полоса прокрутеки).
-
-	// document.body.scrollHeight
-	// Измерение высоты контента в элементе, включая содержимое,
-	// невидимое из-за прокрутки.
-
-	var y = pageYOffset + innerHeight;
-
-	if (y > document.body.scrollHeight)
-		{
-		y = pageYOffset;
-
-			// Передёрнуть Scroll!
-			window.scroll(0,y-1);
-			window.scroll(0,y);
-			// В firefox нормально, в chrom есть небольшая проблема,
-			// поэтому передёрнуть Scroll.
-
-		// alert("Scroll внизу!");
-		}
+	// Передёрнуть ползунок (Scroll).
+	DistortScroll();
 	}
 }
 </script>
@@ -6807,31 +7116,8 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 	// Закрыть спойлер.
 	document.getElementById('id_sp_rad_2').style.display = 'none';
 
-	// pageYOffset или scrollY
-	// Возвращает число пикселей (насколько пролистали документ).
-
-	// innerHeight.
-	// Высота (в пикселях) области просмотра окна браузера
-	// (плюс горизонтальная полоса прокрутеки).
-
-	// document.body.scrollHeight
-	// Измерение высоты контента в элементе, включая содержимое,
-	// невидимое из-за прокрутки.
-
-	var y = pageYOffset + innerHeight;
-
-	if (y > document.body.scrollHeight)
-		{
-		y = pageYOffset;
-
-			// Передёрнуть Scroll!
-			window.scroll(0,y-1);
-			window.scroll(0,y);
-			// В firefox нормально, в chrom есть небольшая проблема,
-			// поэтому передёрнуть Scroll.
-
-		// alert("Scroll внизу!");
-		}
+	// Передёрнуть ползунок (Scroll).
+	DistortScroll()
 	}
 }
 </script>
@@ -7099,6 +7385,35 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 			</tr>
 			</table>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+
+			<!-- Алфавит -->
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>[ <a href="javascript:OpenShowModalWin_ABC_ENG_RUS_UKR('ModalWinABC_ENG')" title="Нажмите (откроется модальное окно)">Английский Алфавит</a> ]</td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td>[ <a href="javascript:OpenShowModalWin_ABC_ENG_RUS_UKR('ModalWinABC_RUS')" title="Нажмите (откроется модальное окно)">Русский Алфавит</a> ]</td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td>[ <a href="javascript:OpenShowModalWin_ABC_ENG_RUS_UKR('ModalWinABC_UKR')" title="Нажмите (откроется модальное окно)">Украинский Алфавит</a> ]</td>
+
+			</tr>
+			</table>
+
+			<br>
+
+			<a href="https://zno.if.ua" title="Откроется в новой вкладке" target="_blank">УКРАЇНСЬКА МОВА ТА ЛІТЕРАТУРА</a>
+			<br>
+			<!-- Подстрочный текст-->
+			<span class="smalltxt">Підготовка до ЗНО і не тільки</span>
 
 		</td>
 		</tr>
@@ -16033,6 +16348,125 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 	<div id="ModalWinCalcBSEE" align="center" class="calcbsee_modalwin">
 	</div>
+
+	<!--                                       -->
+	<!-- Модальное окно [ Английский Алфавит ] -->
+	<!--                                       -->
+
+	<div id="ModalWinABC_ENG" class="modalwinabc" align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left">
+
+		<b>Английский Алфавит (26 букв)</b>
+		<br>
+		<br>
+		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
+		<br>
+		a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+		<br>
+		<br>
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWinABC('ModalWinABC_ENG')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+		</table>
+
+	</div> <!-- Конец ABC ENG -->
+
+	<!--                                    -->
+	<!-- Модальное окно [ Русский Алфавит ] -->
+	<!--                                    -->
+
+	<div id="ModalWinABC_RUS" class="modalwinabc" align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left">
+
+		<b>Русский Алфавит (33 буквы)</b>
+		<br>
+		<br>
+		А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я
+		<br>
+		а, б, в, г, д, е, ё, ж, 3, и, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ъ, ы, ь, э, ю, я
+		<br>
+		<br>
+		Гласные: А, И, О, У, Ы, Э
+		<br>
+		Согласные: Б, В, Г, Д, Ж, З, Й, К, Л, М, Н, П, Р, С, Т, Ф, Х, Ц, Ч, Ш, Щ
+		<br>
+		<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWinABC('ModalWinABC_RUS')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+		</table>
+
+	</div> <!-- Конец ABC RUS -->
+
+	<!--                                       -->
+	<!-- Модальное окно [ Украинский Алфавит ] -->
+	<!--                                       -->
+
+	<div id="ModalWinABC_UKR" class="modalwinabc" align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="left">
+
+		<b>Украинский Алфавит (33 буквы)</b>
+		<br>
+		<br>
+		А, Б, В, Г, Ґ, Д, Е, Є, Ж, З, И, І, Ї, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ь, Ю, Я
+		<br>
+		а, б, в, г, ґ, д, е, є, ж, з, и, і, ї, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ь, ю, я
+		<br>
+		<br>
+		Гласные (Голосні): А, Е, И, І, О, У
+		<br>
+		Согласные Звонкие (Приголосні Дзвінкі):  Б, В, Г, Ґ, Д, Д', Ж, З, З', ДЖ, ДЗ, ДЗ', Й, Л, Л', М, Н, Н', Р, Р'
+		<br>
+		Согласные Глухие (Приголосні Глухі): К, П, С, С', Т, Т', Ф, Х, Ц, Ц', Ч, Ш
+		<br>
+		<br>
+		<a href="https://zno.if.ua/?p=281" title="Откроется в новой вкладке (голосні, приголосні)" target="_blank">Ссылка на источник</a>
+		<br>
+		<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWinABC('ModalWinABC_UKR')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
+		</tr>
+		</table>
+
+	</div> <!-- Конец ABC UKR -->
 
 	<!--                                                 -->
 	<!-- Модальное окно                                  -->
