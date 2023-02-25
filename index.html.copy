@@ -5098,7 +5098,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 				<tr>
 
 					<td>
-					<a href="downloads\vrlex\vrle8-coding-new (ru).pdf" title="Откроется в новой вкладке (Кодер на JavaScript)" target="_blank">vrle8-coding-new (ru).pdf</a> (для печати)
+					<a href="downloads\vrlex\vrle8-coding-new (ru).pdf" title="Откроется в новой вкладке (Кодер на JavaScript. Комментарии на Русском Языке)" target="_blank">vrle8-coding-new (ru).pdf</a> (для печати)
 					</td>
 
 				</tr>
@@ -5106,7 +5106,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 				<tr>
 
 					<td>
-					<a href="downloads\vrlex\vrle8-coding-new (ua).pdf" title="Откроется в новой вкладке (Кодер на JavaScript)" target="_blank">vrle8-coding-new (ua).pdf</a> (для печати)
+					<a href="downloads\vrlex\vrle8-coding-new (ua).pdf" title="Откроется в новой вкладке (Кодер на JavaScript. Комментарии на Украинском Языке)" target="_blank">vrle8-coding-new (ua).pdf</a> (для печати)
 					<br>
 					<!-- Подстрочный текст -->
 					<span class="smalltxt">Коментарі на Українській Мові (переклад як, є)! :)</span>
@@ -5138,7 +5138,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 			<!-- Спойлер -->
 			<span class="spoiler"
 			onclick="document.getElementById('id_vrle8_new_sp').style.display = (document.getElementById('id_vrle8_new_sp').style.display=='none'?'inline':'none');"
-			title="Нажмите">Дополнение</span>
+			title="Нажмите (Кодер на JavaScript. Текстовые файлы в кодировке UTF-8)">Дополнение</span>
 
 			</td>
 
@@ -5189,13 +5189,13 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 			</tr>
 			</table>
 
-		</div> <!-- Конец спойлера Дополнение -->
+			<br>
+			<span class="smalltxt">OpenSource! Снимаю шляпу перед тобой!
+			<br>
+			Thanks <a href="https://github.com" title="https://github.com">GITHUB</a>!
+			</span>
 
-	<br>
-	<span class="smalltxt">OpenSource! Снимаю шляпу перед тобой!
-	<br>
-	Thanks <a href="https://github.com" title="https://github.com">GITHUB</a>!
-	</span>
+		</div> <!-- Конец спойлера Дополнение -->
 
 	</td>
 	</tr>
