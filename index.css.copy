@@ -2113,6 +2113,35 @@
 		height: 320px;
 		}
 
+		/* Цвет текста выбор файла */
+
+		.add_inputfile {
+		color: #0144b4;
+		}
+
+		/* При наведении на выбор файла */
+
+		.add_inputfile:hover {
+		color: #0144b4;
+		cursor: pointer;
+		text-decoration: underline;
+		}
+
+		/* При наведении жирный текст */
+
+		.add_bold:hover {
+		font-weight: bold;
+		cursor: context-menu;
+		}
+
+		/* Рамка */
+
+		.add_frame {
+		background: #ffffff;
+		border: 1px solid #e0e2e4;
+		padding: 4px 10px 4px 10px;
+		}
+
 	/* ----------------- */
 	/* CALCTRANSISTORKEY */
 	/* ----------------- */

@@ -18,7 +18,16 @@
 <!-- Сброс -->
 <!-- AdditionReset(); -->
 
-<body onload="AdditionReset();">
+<!-- Бит на символ (Reset)    -->
+<!-- AdditionNBitSymReset_1() -->
+<!--    id_table_n_bit_symbol - Куда вставить таблицу -->
+<!--    id_code_ ... -->
+<!--    id_sym_ ...  -->
+<!--    id_fn_n_bit_symbol - Куда вставить имя файла  -->
+<!--    id_file_n_bit_symbol - inputfile (выбор файла)-->
+
+<body onload="AdditionReset();
+		AdditionNBitSymReset_1('id_table_n_bit_symbol', 'id_code_', 'id_sym_', 'id_fn_n_bit_symbol', 'id_file_n_bit_symbol');">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -437,12 +446,131 @@ document.execCommand("copy");
 	<tr>
 	<td align="center">
 
+		Очистить Textarea (3шт.):
+		<br>
+		<br>
+
 		<!-- Кнопка сброса -->
 
 		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
 		<tr>
 			<td>
 			<a href="javascript:AdditionReset()" title="Нажмите">Сброс</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- N-бит на символ -->
+
+	<tr>
+	<td align="center">
+
+		<!-- Заголовок -->
+
+		<table class="add_pagebgh2" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td align="center">
+		N-бит на символ
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<!-- Сюда вставка таблице -->
+		<div id="id_table_n_bit_symbol" align="center">
+		</div>
+
+		<br>
+
+		<!-- Сюда вставка Имя Файла -->
+		Файл: <span id="id_fn_n_bit_symbol">---</span>
+		<br>
+		<br>
+
+		Вариант 1
+		<table class="add_frame" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			<!-- Сюда вставка info о битах -->
+			<span id="id_info_bit_n_bit_symbol">---</span>
+			<br>
+			<!-- Сколько бит на символ (info 2) -->
+			<span id="id_info_bit_n_bit_symbol_2">---</span>
+
+			</td>
+			</tr>
+		</table>
+
+		<br>
+
+		Вариант 2
+		<table class="add_frame" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td align="center">
+
+			<span class="spoiler"
+			onclick="document.getElementById('sp_addition_coding').style.display = (document.getElementById('sp_addition_coding').style.display=='none'?'inline':'none');"
+			title="Нажмите">
+
+			<span title="Нажмите">Развернуть/Свернуть</span>
+			</span>
+
+		<br>
+
+		<!-- То, что под спойлером -->
+		<div id="sp_addition_coding" style="display: none;">
+			<br>
+				<!-- Сюда вставка (подсчёт) -->
+				<div id="id_add_coding_t" align="center" style="overflow: scroll; width: 480px; height: 200px;">
+
+				---<br>
+				---<br>
+				---<br>
+
+				</div>
+			<br>
+		</div> <!-- Конец спойлера -->
+
+			</td>
+			</tr>
+		</table>
+
+		<br>
+
+		<!-- Выбор txt-файла -->
+		<input id="id_file_n_bit_symbol" type="file" onchange="AdditionNBitSymLoadFile('id_file_n_bit_symbol', 'id_table_n_bit_symbol');"
+		accept=".txt" value="" style="display: none;">
+			<label for="id_file_n_bit_symbol">
+			<span class="add_inputfile" title="Нажмите (загрузить файл)">Загрузить txt-файл</span>
+			</label>
+
+		<br>
+		<br>
+
+		<!-- Кнопка сброса -->
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+			<a href="javascript:AdditionNBitSymReset_2('id_table_n_bit_symbol', 'id_code_', 'id_sym_', 'id_fn_n_bit_symbol')"
+			title="Нажмите">Сброс</a>
 			</td>
 		</tr>
 		</table>
