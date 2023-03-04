@@ -277,3 +277,577 @@ var ArrayCodeUTF8 =
 
 	alert("Ошибка при перекодировке, код UTF-8 в код CP 866" + " (код: " + code_utf8 + "d, " + code_utf8.toString(16) + "h " + String.fromCharCode(code_utf8) + ")");
 }
+
+//
+// N-бит на символ.
+// Reset 1 (Загрузка страницы).
+//
+function AdditionNBitSymReset_1(id_insert_table, id_c, id_s, id_insert_file_name, id_inputfile)
+{
+	// Вставить саму Таблицу.
+	AdditionNBitSymInsertTable(id_insert_table, id_c, id_s);
+
+	// Имя файла установить ---.
+//	document.getElementById(id_insert_file_name).innerHTML = "---";
+
+	// info (сколькими битами можно закодировать).
+//	document.getElementById('id_info_bit_n_bit_symbol').innerHTML = "---";
+//	document.getElementById('id_info_bit_n_bit_symbol_2').innerHTML = "---";
+
+	// Сбросить input file.
+	document.getElementById(id_inputfile).value = "";
+}
+
+//
+// N-бит на символ.
+// Reset 2 (Кнопка Сброс).
+//
+function AdditionNBitSymReset_2(id_insert_table, id_c, id_s, id_insert_file_name)
+{
+	// Вставить саму Таблицу.
+	AdditionNBitSymInsertTable(id_insert_table, id_c, id_s);
+
+	// Имя файла установить ---.
+	document.getElementById(id_insert_file_name).innerHTML = "---";
+
+	// info (сколькими битами можно закодировать).
+	document.getElementById('id_info_bit_n_bit_symbol').innerHTML = "---";
+	document.getElementById('id_info_bit_n_bit_symbol_2').innerHTML = "---";
+
+	// Сколько раз встречаются байты (байт: 00 - 5 раз, байт: 01 - 3 раза и т.д.)
+	document.getElementById('id_add_coding_t').innerHTML = "---<br>---<br>---";
+}
+
+//
+// N-бит на символ.
+// Загрузка файла.
+//
+function AdditionNBitSymLoadFile(id_file, id_insert_table)
+{
+	file = document.getElementById(id_file).files[0];
+		reader = new FileReader();
+			reader.readAsArrayBuffer(file);
+				reader.onload = function()
+					{
+
+	var buffer = new Uint8Array(reader.result);
+
+	// Сначала вставить саму таблицу.
+	AdditionNBitSymInsertTable(id_insert_table, 'id_code_', 'id_sym_');
+
+	// Теперь вставить в таблицу (наполнить её).
+	AdditionNBitSymInsertToTable(buffer, 'id_code_', 'id_sym_');
+
+	// Вставить в страницу имя файла и размер файла..
+	document.getElementById('id_fn_n_bit_symbol').innerHTML = file.name + " (размер: " + buffer.length + " байт(а))";
+
+	}
+
+	var txt = navigator.userAgent;
+
+	// Если не Firefox, то сброс для input file.
+	if (txt.search(/Firefox/) < 0)
+		{
+		// Сбросить input file.
+		document.getElementById(id_file).value = "";
+		}
+}
+
+//
+// N-бит на символ.
+// Вставить саму Таблицу.
+//
+function AdditionNBitSymInsertTable(id_insert_table, id_c, id_s)
+{
+
+	var x, y, code_h, hex, id_code, id_sym, temp;
+
+	code_h = 0;
+
+	// 0123456789ABCDEF по горизонтали.
+	// --------------------------------
+
+	temp = "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+	temp += "<tr>";
+
+	temp += "<td>&nbsp;</td>";
+	temp += "<td>&nbsp;&nbsp;</td>";
+
+		temp += "<td>&nbsp;0</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;1</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;2</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;3</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;4</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;5</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;6</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;7</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;8</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;9</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;A</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;B</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;C</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;D</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;E</td>";
+			temp += "<td>&nbsp;</td>";
+
+		temp += "<td>&nbsp;F</td>";
+			temp += "<td>&nbsp;&nbsp;</td>";
+
+		temp += "<td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>";
+		temp += "<td>8</td><td>9</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td>";
+
+	temp += "</tr>";
+	temp += "</table>";
+
+	temp += "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+
+	id_code = 0; id_sym = 0;
+
+	for(x = 0; x < 16; x++)
+		{
+		temp += "<tr>";
+
+		// 0123456789ABCDEF по вертикали.
+		// ------------------------------
+
+		temp += "<td>";
+
+			if (code_h >= 10)
+				{
+				// В Hex.
+				hex = code_h.toString(16);
+
+				// Символ в верхний регистр.
+				temp += hex.toUpperCase();
+				}
+				else
+				{
+				temp += code_h;
+				}
+
+		temp += "</td>";
+
+		// Пробел.
+		temp += "<td>&nbsp;&nbsp;</td>";
+
+		// Hex-Код.
+		// --------
+
+		for(y = 0; y < 16; y++)
+			{
+			temp += "<td id=" + id_c + id_code + ">";
+			temp += "--";
+			temp += "</td>";
+
+			// Если не конец кода, то один пробел.
+			if (y != 15)
+				{
+				// Пробел.
+				temp += "<td>&nbsp;</td>";
+				}
+				else
+				{
+				// В конце два пробела.
+				temp += "<td>&nbsp;&nbsp;</td>";
+				}
+
+			id_code++;
+			}
+
+		// Символы.
+		// --------
+
+		for(y = 0; y < 16; y++)
+			{
+			temp += "<td id=" + id_s + id_sym + ">";
+			temp += ".";
+			temp += "</td>";
+
+			id_sym++;
+			}
+
+		temp += "</tr>";
+
+		code_h++;
+		}
+
+	temp += "</table>";
+
+	// Вставить в странцу.
+	document.getElementById(id_insert_table).innerHTML = temp;
+}
+
+//
+// N-бит на символ.
+// Вставить в Таблицу (наполнить её).
+//
+function AdditionNBitSymInsertToTable(buffer, id_c, id_s)
+{
+
+	// ...
+	var ArrayTotalByte = Array(256).fill(0); // Заполнить массив 0.
+
+	// ...
+	var ArrayDataHex = Array(256).fill('--'); // Заполнить массив --.
+
+	// Здесь отсортированный ArrayTotalByte и ArrayDataHex.
+//	var ArraySort = [];
+
+	var x, y, sw_1, sw_2, hex, dec, id_code, count, countbytes;
+	var title, temp;
+
+	sw_1 = 0;
+
+	for(x = 0; x < buffer.length; x++)
+		{
+
+		if (sw_1 == 0)
+			{
+			// Для первого раза (новый байт).
+			// ---
+
+			for(y = 0; y < 256; y++)
+				{
+				if (buffer[x] == y)
+					{
+					// В Hex.
+					hex = buffer[x].toString(16);
+
+					// В верхний регистр.
+					hex = hex.toUpperCase();
+
+					// Если нужно, дополнить нулём.
+					if (hex.length == 1) { hex = "0" + hex; }
+
+					// Записать в таблицу.
+					ArrayDataHex[y] = hex;
+					// Попутно считаем сколько таких байт всего (всего 1 байт).
+					// Информацию о этом храним в массиве ArrayTotalByte.
+					ArrayTotalByte[y] = 1;
+
+					sw_1 = 1;
+					break;
+					}
+				}
+			}
+			else
+			{
+			// Остальные разы.
+			// ---
+
+			sw_2 = 0;
+
+			for(y = 0; y < 256; y++)
+				{
+
+				// Получить Hex или -- из таблицы.
+				hex = ArrayDataHex[y];
+
+				// Если не --, значит Hex.
+				if (hex != '--')
+					{
+					// Hex в Dec.
+					dec = parseInt(hex, 16);
+
+					if (dec == buffer[x])
+						{
+						// Есть байт в таблице.
+
+						count = ArrayTotalByte[y];
+						count++;
+						ArrayTotalByte[y] = count;
+
+						sw_2 = 1;
+						break;
+						}
+					}
+
+				}
+
+			// Записываем байт (новый байт) в таблицу.
+			if (sw_2 == 0)
+				{
+
+				for(y = 0; y < 256; y++)
+					{
+					if (buffer[x] == y)
+						{
+						// В Hex.
+						hex = y.toString(16);
+
+						// В верхний регистр.
+						hex = hex.toUpperCase();
+
+						// Если нужно, дополнить нулём.
+						if (hex.length == 1) { hex = "0" + hex; }
+
+						// Записать в таблицу.
+						ArrayDataHex[y] = hex;
+						// Попутно считаем сколько таких байт всего (всего 1 байт).
+						// Информацию о этом храним в массиве ArrayTotalByte.
+						ArrayTotalByte[y] = 1;
+
+						break;
+						}
+					}
+
+				}
+
+			}
+
+		}
+
+	countbytes = 0;
+
+	// Вставить в страницу (в таблицу) Hex-код.
+	// Дополнительно title и class.
+	for(y = 0; y < 256; y++)
+		{
+		// Если не --, значит Hex.
+		if (ArrayDataHex[y] != '--')
+			{
+			title = "Байт: " + ArrayDataHex[y] +  " (Dec: " + y + ") встречается в файле " + ArrayTotalByte[y] + " раз(а)";
+
+			id_code = id_c + y;
+
+			// Вставить title.
+			document.getElementById(id_code).title = title;
+			// Вставить class (class="add_bold").
+			document.getElementById(id_code).className = "add_bold";
+			// Вставить в страницу Hex-код.
+			document.getElementById(id_code).innerHTML = ArrayDataHex[y];
+
+			// Байты, которые есть в таблице.
+			// Считаем их.
+			countbytes++;
+			}
+		}
+
+	// Проверка. Self Control.
+	// Результат должен быть - размер файла.
+
+//	count = 0;
+
+//	for(y = 0; y < 256; y++)
+//		{
+//		count = count + ArrayTotalByte[y];
+//		}
+
+//	alert("Размер файла: " + count + " байт(а)");
+
+	// Вставить Sym.
+	// ---
+
+	var sym, id_sym;
+
+	for(y = 0; y < 256; y++)
+		{
+		// Получить Hex или -- из таблицы.
+		hex = ArrayDataHex[y];
+
+		// Если не --, значит Hex.
+		if (hex != '--')
+			{
+			// Hex в Dec.
+			dec = parseInt(hex, 16);
+
+			// Буквы: ABCDEFGHIJKLMNOPQRSTUVWXYZ.
+			// Буквы: abcdefghijklmnopqrstuvwxyz.
+			if ( (dec >= 0x41 && dec <= 0x5a) || (dec >= 0x61 && dec <= 0x7a) )
+				{
+				// Получаем символ по коду.
+				sym = String.fromCharCode(dec);
+
+				id_sym = id_s + y;
+
+				// Вставить в страницу символ.
+				document.getElementById(id_sym).innerHTML = sym;
+				}
+
+			else
+
+			// Цифры: 0123456789.
+			if (dec >= 0x30 && dec <= 0x39)
+				{
+				// Получаем символ по коду.
+				sym = String.fromCharCode(dec);
+
+				id_sym = id_s + y;
+
+				// Вставить в страницу символ.
+				document.getElementById(id_sym).innerHTML = sym;
+				}
+
+			else
+
+			// Остальное: ~!@#$%^&*()_+=[]{},.?/\"' плюс пробел
+			if (
+				dec == 0x7e || dec == 0x21 || dec == 0x40 || dec == 0x23 || dec == 0x24 ||
+				dec == 0x25 || dec == 0x5e || dec == 0x26 || dec == 0x2a || dec == 0x28 ||
+				dec == 0x29 || dec == 0x5f || dec == 0x2b || dec == 0X3d || dec == 0x5b ||
+				dec == 0x5d || dec == 0x7b || dec == 0x7d || dec == 0x2c || dec == 0x2e ||
+				dec == 0x3f || dec == 0x2f || dec == 0x5c || dec == 0x22 || dec == 0x27 || dec == 0x20)
+				{
+				// Получаем символ по коду.
+				sym = String.fromCharCode(dec);
+
+				id_sym = id_s + y;
+
+				// Вставить в страницу символ.
+				document.getElementById(id_sym).innerHTML = sym;
+				}
+			}
+		}
+
+	var data, flag, txt;
+
+	flag = 255; data = 255; txt = "";
+
+	// Закодировать можно однобитным кодом.
+	if (countbytes == 1)
+		{
+		data = "1"; flag = 1;
+		txt = "Закодировать можно однобитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно однобитным кодом.
+	if (countbytes == 2)
+		{
+		data = "1"; flag = 2;
+		txt = "Закодировать можно однобитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно двухбитным кодом.
+	// 2 бита. 3 = 3h = 11b.
+	if (countbytes == 3)
+		{
+		data = "2";
+		txt = "Закодировать можно двухбитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно трёхбитным кодом.
+	// 3 бита. 4 = 4h = 100b. 7 = 7h = 111b.
+	if (countbytes >= 4 && countbytes <= 7)
+		{
+		data = "3";
+		txt = "Закодировать можно трёхбитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно четырёхбитным кодом.
+	// 4 бита. 8 = 8h = 1000b. 15 = Fh = 1111b.
+	if (countbytes >= 8 && countbytes <= 15)
+		{
+		data = "4";
+		txt = "Закодировать можно четырёхбитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно пятибитным кодом.
+	// 5 бит. 16 = 10h = 10000b. 31 = 1Fh = 11111b.
+	if (countbytes >= 16 && countbytes <= 31)
+		{
+		data = "5";
+		txt = "Закодировать можно пятибитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно шестибитным кодом.
+	// 6 бит. 32 = 20h = 100000b. 63 = 3Fh = 111111b.
+	if (countbytes >= 32 && countbytes <= 63)
+		{
+		data = "6";
+		txt = "Закодировать можно шестибитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно семибитным кодом.
+	// 7 бит. 64 = 40h = 1000000b. 127 = 7Fh = 1111111b.
+	if (countbytes >= 64 && countbytes <= 127)
+		{
+		data = "7";
+		txt = "Закодировать можно семибитным кодом!";
+		}
+
+	else
+
+	// Закодировать можно восьмибитным кодом.
+	// 8 бит. 128 = 80h = 10000000b. 255 = fFh = 11111111b.
+	if (countbytes >= 128 && countbytes <= 256)
+		{
+		// Нет смысла кодировать!
+		data = "8";
+		txt = "Закодировать можно восьмибитным кодом (нет смысла кодировать)!";
+		}
+
+	// Вставить в страницу info (сколькими битами можно закодировать).
+	document.getElementById('id_info_bit_n_bit_symbol').innerHTML = txt;
+	document.getElementById('id_info_bit_n_bit_symbol_2').innerHTML = data + " бит на символ!<br>Размер файла * n-бит на символ и / на 8 (будет приблизительно сжатый размер).";
+
+	// ...
+	temp = "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+	temp += "<tr><td align=\"left\">";
+
+	for(y = 0; y < 256; y++)
+		{
+		if (ArrayTotalByte[y] != 0)
+			{
+			temp += "Байт: " + ArrayDataHex[y] + " встречается в файле " + ArrayTotalByte[y] + " раз(а)." + "<br>";
+			}
+			else
+			{
+			// В Hex.
+			hex = y.toString(16);
+			// В верхний регистр.
+			hex = hex.toUpperCase();
+			// Если нужно, дополнить нулём.
+			if (hex.length == 1) { hex = "0" + hex; }
+
+			temp += "Байт: " + hex + " --" + "<br>";
+			}
+		}
+
+	temp += "</td></tr>";
+	temp += "</table>";
+
+	// Вставить в сираницу.
+	document.getElementById('id_add_coding_t').innerHTML = temp;
+}
