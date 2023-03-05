@@ -492,6 +492,10 @@ document.execCommand("copy");
 
 		<br>
 
+		<div style="margin-bottom: 4px;">
+		Таблица 1
+		</div>
+
 		<!-- Сюда вставка таблице -->
 		<div id="id_table_n_bit_symbol" align="center">
 		</div>
@@ -503,7 +507,7 @@ document.execCommand("copy");
 		<br>
 		<br>
 
-		Вариант 1
+		ВАРИАНТ 1
 		<table class="add_frame" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 			<td align="center">
@@ -520,7 +524,10 @@ document.execCommand("copy");
 
 		<br>
 
-		Вариант 2
+		ВАРИАНТ 2
+		<br>
+		Унарное кодирование
+
 		<table class="add_frame" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 			<td align="center">
@@ -537,6 +544,11 @@ document.execCommand("copy");
 		<!-- То, что под спойлером -->
 		<div id="sp_addition_coding" style="display: none;">
 			<br>
+
+				<div style="margin-bottom: 4px;">
+				Таблица 2
+				</div>
+
 				<!-- Сюда вставка (подсчёт) -->
 				<div id="id_add_coding_t" align="center" style="overflow: scroll; width: 480px; height: 200px;">
 
@@ -555,7 +567,7 @@ document.execCommand("copy");
 		<br>
 
 		<!-- Выбор txt-файла -->
-		<input id="id_file_n_bit_symbol" type="file" onchange="AdditionNBitSymLoadFile('id_file_n_bit_symbol', 'id_table_n_bit_symbol');"
+		<input id="id_file_n_bit_symbol" type="file" onchange="AdditionLoadFile('id_file_n_bit_symbol', 'id_table_n_bit_symbol');"
 		accept=".txt" value="" style="display: none;">
 			<label for="id_file_n_bit_symbol">
 			<span class="add_inputfile" title="Нажмите (загрузить файл)">Загрузить txt-файл</span>
