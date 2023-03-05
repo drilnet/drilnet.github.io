@@ -280,6 +280,7 @@ var ArrayCodeUTF8 =
 
 //
 // N-бит на символ.
+// ---
 // Reset 1 (Загрузка страницы).
 //
 function AdditionNBitSymReset_1(id_insert_table, id_c, id_s, id_insert_file_name, id_inputfile)
@@ -300,6 +301,7 @@ function AdditionNBitSymReset_1(id_insert_table, id_c, id_s, id_insert_file_name
 
 //
 // N-бит на символ.
+// ---
 // Reset 2 (Кнопка Сброс).
 //
 function AdditionNBitSymReset_2(id_insert_table, id_c, id_s, id_insert_file_name)
@@ -320,9 +322,11 @@ function AdditionNBitSymReset_2(id_insert_table, id_c, id_s, id_insert_file_name
 
 //
 // N-бит на символ.
+// ---
 // Загрузка файла.
+// Один файл для всех вариантов!
 //
-function AdditionNBitSymLoadFile(id_file, id_insert_table)
+function AdditionLoadFile(id_file, id_insert_table)
 {
 	file = document.getElementById(id_file).files[0];
 		reader = new FileReader();
@@ -332,16 +336,27 @@ function AdditionNBitSymLoadFile(id_file, id_insert_table)
 
 	var buffer = new Uint8Array(reader.result);
 
-	// Сначала вставить саму таблицу.
-	AdditionNBitSymInsertTable(id_insert_table, 'id_code_', 'id_sym_');
-
-	// Теперь вставить в таблицу (наполнить её).
-	AdditionNBitSymInsertToTable(buffer, 'id_code_', 'id_sym_');
-
-	// Вставить в страницу имя файла и размер файла..
+	// Вставить в страницу имя файла и размер файла.
 	document.getElementById('id_fn_n_bit_symbol').innerHTML = file.name + " (размер: " + buffer.length + " байт(а))";
 
+	// Сначала вставить саму таблицу.
+	// Таблица 1.
+	AdditionNBitSymInsertTable(id_insert_table, 'id_code_', 'id_sym_');
+
+	// Теперь вставить в таблицу (наполнить её, наполнить Таблицу 1).
+	// Возвращает два массива.
+	//
+	// Array_DataHex_TotalByte[0] - ArrayDataHex.
+	// Array_DataHex_TotalByte[1] - ArrayTotalByte.
+	//
+	var Array_DataHex_TotalByte = AdditionNBitSymInsertToTable(buffer, 'id_code_', 'id_sym_');
+
+	// Вариант 2.
+	// Унарное кодирование.
+	AdditionUnaryCoding(Array_DataHex_TotalByte[0], Array_DataHex_TotalByte[1])
 	}
+
+// ---------------
 
 	var txt = navigator.userAgent;
 
@@ -351,11 +366,15 @@ function AdditionNBitSymLoadFile(id_file, id_insert_table)
 		// Сбросить input file.
 		document.getElementById(id_file).value = "";
 		}
+
+// ---------------
+
 }
 
 //
 // N-бит на символ.
-// Вставить саму Таблицу.
+// ---
+// Вставить саму Таблицу (Таблица 1).
 //
 function AdditionNBitSymInsertTable(id_insert_table, id_c, id_s)
 {
@@ -501,13 +520,14 @@ function AdditionNBitSymInsertTable(id_insert_table, id_c, id_s)
 
 	temp += "</table>";
 
-	// Вставить в странцу.
+	// Вставить в странцу саму таблицу.
 	document.getElementById(id_insert_table).innerHTML = temp;
 }
 
 //
 // N-бит на символ.
-// Вставить в Таблицу (наполнить её).
+// ---
+// Вставить в Таблицу 1 (наполнить её).
 //
 function AdditionNBitSymInsertToTable(buffer, id_c, id_s)
 {
@@ -518,11 +538,8 @@ function AdditionNBitSymInsertToTable(buffer, id_c, id_s)
 	// ...
 	var ArrayDataHex = Array(256).fill('--'); // Заполнить массив --.
 
-	// Здесь отсортированный ArrayTotalByte и ArrayDataHex.
-//	var ArraySort = [];
-
 	var x, y, sw_1, sw_2, hex, dec, id_code, count, countbytes;
-	var title, temp;
+	var title;
 
 	sw_1 = 0;
 
@@ -822,7 +839,27 @@ function AdditionNBitSymInsertToTable(buffer, id_c, id_s)
 	document.getElementById('id_info_bit_n_bit_symbol').innerHTML = txt;
 	document.getElementById('id_info_bit_n_bit_symbol_2').innerHTML = data + " бит на символ!<br>Размер файла * n-бит на символ и / на 8 (будет приблизительно сжатый размер).";
 
-	// ...
+	// Вернуть два массива.
+	return [ ArrayDataHex, ArrayTotalByte ];
+}
+
+//
+// N-бит на символ.
+// ---
+// Вариант 2.
+// Унарное кодирование.
+//
+function AdditionUnaryCoding(ArrayDataHex, ArrayTotalByte)
+{
+	// Двоичный: 0, 1, 0...
+	var ArrayBinary = [];
+
+	// Двоичный закодированный.
+	var ArrayBinaryCoding = [];
+
+	var temp, y, hex,
+
+	// Таблица 2.
 	temp = "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
 	temp += "<tr><td align=\"left\">";
 
@@ -848,6 +885,6 @@ function AdditionNBitSymInsertToTable(buffer, id_c, id_s)
 	temp += "</td></tr>";
 	temp += "</table>";
 
-	// Вставить в сираницу.
+	// Вставить в страницу.
 	document.getElementById('id_add_coding_t').innerHTML = temp;
 }
