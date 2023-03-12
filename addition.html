@@ -203,6 +203,8 @@
 		<tr>
 		<td align="center">
 		Вставляем текст в html-страницу
+		<br>
+		N-бит на символ
 		</td>
 		</tr>
 
@@ -492,8 +494,9 @@ document.execCommand("copy");
 
 		<br>
 
+		<!-- T1 -->
 		<div style="margin-bottom: 4px;">
-		Таблица 1
+		<b>Таблица 1</b>
 		</div>
 
 		<!-- Сюда вставка таблице -->
@@ -503,7 +506,7 @@ document.execCommand("copy");
 		<br>
 
 		<!-- Сюда вставка Имя Файла -->
-		Файл: <span id="id_fn_n_bit_symbol">---</span>
+		<span id="id_fn_n_bit_symbol">Файл: Пусто!</span>
 		<br>
 		<br>
 
@@ -545,19 +548,58 @@ document.execCommand("copy");
 		<div id="sp_addition_coding" style="display: none;">
 			<br>
 
-				<div style="margin-bottom: 4px;">
-				Таблица 2
-				</div>
+				<!-- T2 -->
+				<table style="margin-bottom: 4px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+				<b>Таблица 2</b>
+				</td>
+				</tr>
+				</table>
 
+				<!-- Окно с прокруткой -->
 				<!-- Сюда вставка (подсчёт) -->
-				<div id="id_add_coding_t" align="center" style="overflow: scroll; width: 480px; height: 200px;">
+				<div id="id_add_code_t" align="center" style="overflow: scroll; width: 512px; height: 200px;">
 
 				---<br>
 				---<br>
-				---<br>
+				---
 
 				</div>
+
+				<br>
+				<!-- Сюда вставка имя файла и размер -->
+				<div id="id_fn_n_bit_symbol_unary">Файл: Пусто!</div>
+				<!-- Сюда вставка количество всех бит в файле -->
+				<div id="id_fn_n_bit_symbol_unary_bit">Количество всех бит: Пусто!</div>
+
 			<br>
+
+				<!-- T3 -->
+				<table style="margin-bottom: 4px;" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td align="center">
+				<b>Таблица 3</b><br>Правая колонка - Унарный Код!
+				</td>
+				</tr>
+				</table>
+
+				<!-- Окно с прокруткой -->
+				<!-- Сюда вставка (унарный код) -->
+				<div id="id_add_code_unary" align="center" style="overflow: scroll; width: 512px; height: 200px;">
+
+				---<br>
+				---<br>
+				---
+
+				</div>
+
+				<br>
+				<!-- Сюда вставка имя файла и размер -->
+				<div id="id_fn_n_bit_symbol_unary_2">Файл: Пусто!</div>
+				<!-- Сюда вставка количество всех унарных бит -->
+				<div id="id_fn_n_bit_symbol_unary_bit_all">Количество всех унарных бит: Пусто!</div>
+
 		</div> <!-- Конец спойлера -->
 
 			</td>
@@ -565,6 +607,7 @@ document.execCommand("copy");
 		</table>
 
 		<br>
+		<div class="smalltxt" style="color: #006000;">Не надо грузить очень большие файлы!</div>
 
 		<!-- Выбор txt-файла -->
 		<input id="id_file_n_bit_symbol" type="file" onchange="AdditionLoadFile('id_file_n_bit_symbol', 'id_table_n_bit_symbol');"
