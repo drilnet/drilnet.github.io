@@ -299,41 +299,55 @@ function AdditionNBitSymReset_1(id_insert_table, id_c, id_s, id_insert_file_name
 //
 function AdditionNBitSymReset_2(id_insert_table, id_c, id_s, id_insert_file_name)
 {
-	// Вставить саму Таблицу.
+	// Вставить саму Таблицу (пустую таблицу).
 	AdditionNBitSymInsertTable(id_insert_table, id_c, id_s);
 
 	// Установить имя файла Пусто!
 	document.getElementById(id_insert_file_name).innerHTML = "Файл: Пусто!";
 
+// --- ВАРИАНТ 1 --- //
+
 	// info (сколькими битами можно закодировать).
 	document.getElementById('id_info_bit_n_bit_symbol').innerHTML = "---";
 	document.getElementById('id_info_bit_n_bit_symbol_2').innerHTML = "---";
 
+// --- ВАРИАНТ 2 --- //
+
+	// Таблица 1. Унарное кодирование.
 	// Сколько раз встречаются байты (байт: 00 - 5 раз, байт: 01 - 3 раза и т.д.)
 	document.getElementById('id_add_code_t').innerHTML = "---<br>---<br>---";
 
-// ---
-
-	// Таблица 2.
-	// Вставить в страницу имя файла и размер файла.
+	// Таблица 1. Унарное кодирование.
+	// Вставить в страницу имя файла и размер файла (вставить пусто), под Таблицой 1.
 	document.getElementById('id_fn_n_bit_symbol_unary').innerHTML = "Файл: Пусто!";
 
-	// Таблица 3.
-	// Вставить в страницу имя файла и размер файла.
+	// Таблица 2. Унарное кодирование.
+	// Вставить в страницу имя файла и размер файла (вставить пусто), под Таблицой 2.
 	document.getElementById('id_fn_n_bit_symbol_unary_2').innerHTML = "Файл: Пусто!";
 
-	// Таблица 2.
-	// Вставить в страницу количество всех бит в файле.
+	// Таблица 1. Унарное кодирование.
+	// Вставить в страницу количество всех бит в файле: Пусто (под Таблицой 1)!
 	document.getElementById('id_fn_n_bit_symbol_unary_bit').innerHTML = "Количество всех бит: Пусто!";
 
-// ---
-
-	// Таблица 3 (с Unary Code).
+	// Таблица 2 Унарное кодирование (Unary Code).
 	document.getElementById('id_add_code_unary').innerHTML = "---<br>---<br>---";
 
-	// Таблица 3
-	// Количество всех унарных бит: Пусто!
+	// Таблица 2. Унарное кодирование.
+	// Количество всех унарных бит: Пусто (под Таблицой 2)!
 	document.getElementById('id_fn_n_bit_symbol_unary_bit_all').innerHTML = "Количество всех унарных бит: Пусто!";
+
+// --- ВАРИАНТ 3 --- //
+
+	// Таблица 1. Префиксное кодирование.
+	// Вставить в страницу имя файла и размер файла (вставить пусто).
+	document.getElementById('id_fn_n_bit_symbol_prefix').innerHTML = "Файл: Пусто!";
+
+	// Таблица 1. Префиксное кодирование (Code).
+	document.getElementById('id_add_code_prefix').innerHTML = "---<br>---<br>---";
+
+	// Таблица 1. Префиксное кодирование.
+	// Количество всех бит: Пусто!
+	document.getElementById('id_fn_n_bit_symbol_prefix_bit_all').innerHTML = "Количество всех бит: Пусто!";
 }
 
 //
@@ -370,6 +384,10 @@ function AdditionLoadFile(id_file, id_insert_table)
 	// Вариант 2.
 	// Унарное кодирование.
 	AdditionUnaryCoding(Array_DataHex_TotalByte[0], Array_DataHex_TotalByte[1], buffer)
+
+	// Вариант 3.
+	// Префиксное кодирование.
+	AdditionPrefixCoding(Array_DataHex_TotalByte[0], Array_DataHex_TotalByte[1])
 	}
 
 // ---------------
@@ -874,9 +892,6 @@ function AdditionUnaryCoding(ArrayDataHex, ArrayTotalByte, buffer)
 	// Двоичный: 0, 1, 0...
 //	var ArrayBinary = [];
 
-	// Двоичный закодированный.
-	var ArrayBinaryCoding = [];
-
 	// Копия массива ArrayTotalByte (дополнительный массив)
 	var ArrayTotalByteZero = [];
 
@@ -951,10 +966,10 @@ function AdditionUnaryCoding(ArrayDataHex, ArrayTotalByte, buffer)
 //		ArrayBinary[z++] = Number(bin.substr(7, 1)); // 0.
 //		}
 
-	// Вставить в страницу имя файла и размер файла. Таблица 2.
+	// Вставить в страницу имя файла и размер файла. Таблица 1.
 	document.getElementById('id_fn_n_bit_symbol_unary').innerHTML = document.getElementById('id_fn_n_bit_symbol').innerHTML;
 
-	// Вставить в страницу имя файла и размер файла. Таблица 3.
+	// Вставить в страницу имя файла и размер файла. Таблица 2.
 	document.getElementById('id_fn_n_bit_symbol_unary_2').innerHTML = document.getElementById('id_fn_n_bit_symbol').innerHTML;
 
 	// Вставить в страницу количество всех бит в файле.
@@ -971,7 +986,7 @@ function AdditionUnaryCoding(ArrayDataHex, ArrayTotalByte, buffer)
 
 	total_byte = 0;
 
-	// Считаем сколько всех байт в массиве ArrayTotalByteZero (Таблица 1, Таблица 2).
+	// Считаем сколько всех байт в массиве ArrayTotalByteZero.
 	// Ноль не считаем!
 	for(y = 0; y < 256; y++)
 		{
@@ -1002,6 +1017,7 @@ function AdditionUnaryCoding(ArrayDataHex, ArrayTotalByte, buffer)
 			}
 
 		// Создаём массив ArrayDataHexTotalByteCodeUnary[].
+		// ---
 		// Попутно, там где было самое большое число (массив ArrayTotalByteZero[]) - записать 0.
 		// Плюс, считаем сколько унарных бит в СТРОКЕ и считаем ПО СТРОКАМ (складываем всё это в total_unary_bit_str).
 		for(y = 0; y < 256; y++)
@@ -1058,7 +1074,7 @@ function AdditionUnaryCoding(ArrayDataHex, ArrayTotalByte, buffer)
 	number = 1;
 	total_unary_bit_all = 0;
 
-	// Таблица 3.
+	// Таблица 2.
 	temp = "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
 
 	for(y = 0; y < ArrayDataHexTotalByteCodeUnary.length;)
@@ -1113,9 +1129,165 @@ function AdditionUnaryCoding(ArrayDataHex, ArrayTotalByte, buffer)
 
 	// Вставить в страницу количество всех унарных бит.
 	document.getElementById('id_fn_n_bit_symbol_unary_bit_all').innerHTML =
-	"Количество всех унарных бит: " + total_unary_bit_all + " (" + total_unary_bit_all / 8 + " байт(а)" + ")";
+	"Количество всех унарных бит: " + total_unary_bit_all + " (размер: " + total_unary_bit_all / 8 + " байт(а)" + ")";
 
 // Для проверки.
 //	alert(total_unary_bit_str);
 //	alert(big_number);
+}
+
+//
+// Префиксное кодирование (проба).
+//
+function AdditionPrefixCoding(ArrayDataHex, ArrayTotalByte)
+{
+
+	// Копия массива ArrayTotalByte (дополнительный массив)
+	var ArrayTotalByteZero = [];
+
+	// В этом массиве и ArrayDataHex и ArrayTotalByte, плюс код.
+	var ArrayDataHexTotalByteCode = [];
+
+	var x, y, temp, binary_code, big_number, sw, total_byte, number, bin, total_bit, t_byte;
+
+	// Небольшая манипуляция с массивами.
+	// ---
+
+	// Скопировать массив ArrayTotalByte в массив ArrayTotalByteZero.
+	for(y = 0; y < 256; y++)
+		{
+		ArrayTotalByteZero[y] = ArrayTotalByte[y];
+		}
+
+	total_byte = 0;
+
+	// Считаем сколько всех байт в массиве ArrayTotalByteZero.
+	// Ноль не считаем!
+	for(y = 0; y < 256; y++)
+		{
+		if (ArrayTotalByteZero[y] != 0)
+			{
+			total_byte++;
+			}
+		}
+
+	binary_code = 0; sw = 0; z = 0;
+
+	for(x = 0; x < total_byte; x++)
+		{
+		big_number = 1;
+
+		// Найти какой символ чаще всего встречается в файле.
+		// Найти самое большое число в массиве ArrayTotalByteZero[].
+		for(y = 0; y < 256; y++)
+			{
+			// Если нужно, пропускаем 0.
+			if (ArrayTotalByteZero[y] != 0)
+				{
+				if (ArrayTotalByteZero[y] > big_number)
+					{
+					big_number = ArrayTotalByteZero[y];
+					}
+				}
+			}
+
+		// Создаём массив ArrayDataHexTotalByteCode[].
+		// ---
+		// Попутно, там где было самое большое число (массив ArrayTotalByteZero[]) - записать 0.
+		for(y = 0; y < 256; y++)
+			{
+			if (big_number == ArrayTotalByteZero[y])
+				{
+				// Создаём ещё один массив: ArrayDataHexTotalByteCode[].
+				if (sw == 0)
+					{
+					// Для первого раза.
+					ArrayDataHexTotalByteCode[z++] = ArrayDataHex[y];
+					ArrayDataHexTotalByteCode[z++] = ArrayTotalByteZero[y]; // (!)
+					ArrayDataHexTotalByteCode[z++] = binary_code;
+
+					sw = 1;
+					}
+					else
+					{
+					// Остальные разы.
+					ArrayDataHexTotalByteCode[z++] = ArrayDataHex[y];
+					ArrayDataHexTotalByteCode[z++] = ArrayTotalByteZero[y]; // (!)
+
+					ArrayDataHexTotalByteCode[z++] = ++binary_code;
+					}
+
+				// Записать 0.
+				ArrayTotalByteZero[y] = 0;
+				// Прервать цикл.
+				break;
+				}
+			}
+		}
+
+		// (!)
+		// ArrayTotalByteZero[]
+		// Отработан! Нулевой массив! Пустой массив!
+
+	number = 0; total_bit = 0; t_byte = 0;
+
+	// Таблица 1.
+	temp = "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+
+	for(y = 0; y < ArrayDataHexTotalByteCode.length;)
+		{
+		temp += "<tr>";
+
+		// Нумерация.
+		temp += "<td align=\"right\">";
+		temp += number + ".";
+		temp += "</td>";
+
+		temp += "<td align=\"left\">&nbsp;</td>";
+
+		// Hex.
+		temp += "<td align=\"left\" nowrap>";
+		temp += "Байт: " + ArrayDataHexTotalByteCode[y++];
+		temp += "</td>";
+
+		temp += "<td align=\"left\">&nbsp;</td>";
+
+		// TotalByte.
+		// Сколько раз встречается в файле.
+		temp += "<td align=\"left\" nowrap>";
+		temp += "встречается в файле ";
+		t_byte =  ArrayDataHexTotalByteCode[y++];
+		temp += t_byte;
+		temp += " раз(а)";
+		temp += "</td>";
+
+		temp += "<td align=\"left\">&nbsp;&nbsp;</td>";
+
+		// Код.
+		temp += "<td align=\"left\" title=\"\">";
+
+		bin = ArrayDataHexTotalByteCode[y++];
+		bin++;
+		bin = bin.toString(2);
+
+		// Всех бит.
+		total_bit += (bin.length + 3) * t_byte;
+
+		temp += bin;
+		temp += "</td>";
+
+		temp += "</tr>";
+		number++;
+		}
+
+	temp += "</table>";
+
+	document.getElementById('id_add_code_prefix').innerHTML = temp;
+
+	// Вставить в страницу имя файла и размер файла. Таблица 1.
+	document.getElementById('id_fn_n_bit_symbol_prefix').innerHTML = document.getElementById('id_fn_n_bit_symbol').innerHTML;
+
+	// Вставить в страницу количество всех бит.
+	document.getElementById('id_fn_n_bit_symbol_prefix_bit_all').innerHTML =
+	"Количество всех бит: " + total_bit + " (размер: " + total_bit / 8 + " байт(а)" + ")";
 }
