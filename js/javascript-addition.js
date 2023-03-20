@@ -1270,7 +1270,7 @@ function AdditionPrefixCoding(ArrayDataHex, ArrayTotalByte)
 //		bin++;
 		bin = bin.toString(2);
 
-		// Всех бит.
+		// Всех бит. 3 - Это три бита префикс (см. length).
 		total_bit += (bin.length + 3) * t_byte;
 
 		temp += bin;
