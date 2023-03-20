@@ -1267,7 +1267,7 @@ function AdditionPrefixCoding(ArrayDataHex, ArrayTotalByte)
 		temp += "<td align=\"left\" title=\"\">";
 
 		bin = ArrayDataHexTotalByteCode[y++];
-		bin++;
+//		bin++;
 		bin = bin.toString(2);
 
 		// Всех бит.
@@ -1289,5 +1289,5 @@ function AdditionPrefixCoding(ArrayDataHex, ArrayTotalByte)
 
 	// Вставить в страницу количество всех бит.
 	document.getElementById('id_fn_n_bit_symbol_prefix_bit_all').innerHTML =
-	"Количество всех бит: " + total_bit + " (размер: " + total_bit / 8 + " байт(а)" + ")";
+	"Количество всех бит: " + total_bit + " (сжатый размер: " + total_bit / 8 + " байт(а)" + ")";
 }
