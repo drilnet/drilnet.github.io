@@ -610,7 +610,7 @@ document.execCommand("copy");
 
 		ВАРИАНТ 3
 		<br>
-		Префиксное кодирование
+		Префиксное кодирование (проба)
 
 		<table class="add_frame" style="margin-top: 4px;" cellspacing="0" cellpadding="0" border="0">
 			<tr>
