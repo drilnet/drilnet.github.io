@@ -5026,7 +5026,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 
 				<td>
 
-				Быстрая конвертация:
+				Быстрая конвертация (RLE):
 
 				<!-- Выбор файла -->
 				<input id="id_filetovrle8new" type="file" onchange="FileToVRLE8New('id_filetovrle8new');" accept="*" value="" style="display: none;">
@@ -5058,7 +5058,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 
 				<td>
 
-				Быстрая конвертация:
+				Быстрая конвертация (RLE):
 
 				<!-- Выбор файла -->
 				<input id="id_vrle8newtofile" type="file" onchange="VRLE8NewToFile('id_vrle8newtofile');" accept=".vrle8,.rl8" value="" style="display: none;">
