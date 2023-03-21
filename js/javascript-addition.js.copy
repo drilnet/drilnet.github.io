@@ -1282,6 +1282,9 @@ function AdditionPrefixCoding(ArrayDataHex, ArrayTotalByte)
 
 	temp += "</table>";
 
+	// Для проверки.
+	// alert(ArrayDataHexTotalByteCode);
+
 	document.getElementById('id_add_code_prefix').innerHTML = temp;
 
 	// Вставить в страницу имя файла и размер файла. Таблица 1.
