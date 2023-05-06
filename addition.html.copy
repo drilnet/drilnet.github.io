@@ -18,16 +18,7 @@
 <!-- Сброс -->
 <!-- AdditionReset(); -->
 
-<!-- Бит на символ (Reset)    -->
-<!-- AdditionNBitSymReset_1() -->
-<!--    id_table_n_bit_symbol - Куда вставить таблицу -->
-<!--    id_code_ ... -->
-<!--    id_sym_ ...  -->
-<!--    id_fn_n_bit_symbol - Куда вставить имя файла  -->
-<!--    id_file_n_bit_symbol - inputfile (выбор файла)-->
-
-<body onload="AdditionReset();
-		AdditionNBitSymReset_1('id_table_n_bit_symbol', 'id_code_', 'id_sym_', 'id_fn_n_bit_symbol', 'id_file_n_bit_symbol');">
+<body onload="AdditionReset();">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
 
@@ -203,8 +194,6 @@
 		<tr>
 		<td align="center">
 		Вставляем текст в html-страницу
-		<br>
-		N-бит на символ
 		</td>
 		</tr>
 
