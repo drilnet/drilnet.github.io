@@ -583,6 +583,46 @@
 		opacity: 0.2;        /* Прозрачность            */
 		}
 
+	/* Модальное окно Торренты */
+
+	.modalwintorrent {
+	height: auto; /* Высота окна */
+	width: 920px; /* Ширина окна */
+	border: 3px solid #999999; /* Тощина и цвет рамки */
+	border-radius: 4px;        /* Закругленные края   */
+	background: #ffffff;       /* Фон окна            */
+
+	padding: 12px 12px 12px 12px; /* Внутренние отступы по краям */
+
+	top: 64px; /* Сверху до окна */
+	right: 0;  /* Справа до окна */
+	left: 0;   /* Слева до окна  */
+
+	font-size: 12px; /* Размер шрифта */
+	margin: 0 auto;
+
+	z-index: 2;      /* Поверх всех     */
+	display: none;   /* Сначала невидим */
+	position: fixed; /* Фиксированное позиционирование, окно стабильно при прокрутке */
+	}
+
+		/* При выводе модального окна, затемнение страницы */
+		/* Торрент */
+
+		#shadowtorrent {
+		position: fixed;
+
+		left: 0; /* Затемнение слева  */
+		top: 0;  /* Затемнение сверху */
+
+		width: 100%;  /* По ширине растянуть на весь экран */
+		height: 100%; /* По высоте растянуть на весь экран */
+
+		z-index: 1;          /* Поверх всех, кроме окна */
+		background: #000000; /* Цвет затемнения         */
+		opacity: 0.2;        /* Прозрачность            */
+		}
+
 	/* Модальное окно для: [Английский Алфавит ] [ Русский Алфавит ] [ Украинский алфавит ] */
 
 	.modalwinabc {
@@ -2106,42 +2146,43 @@
 		}
 
 		/* Дополнительное окно на странице */
+		/* Полоса прокрутки */
 
-		.add_window {
-		overflow: scroll; /* полоса прокрутки */
+/*		.add_window {
+		overflow: scroll;
 		width: 900px;
 		height: 320px;
 		}
-
+*/
 		/* Цвет текста выбор файла */
-
+/*
 		.add_inputfile {
 		color: #0144b4;
 		}
-
+*/
 		/* При наведении на выбор файла */
-
+/*
 		.add_inputfile:hover {
 		color: #0144b4;
 		cursor: pointer;
 		text-decoration: underline;
 		}
-
+*/
 		/* При наведении жирный текст */
-
+/*
 		.add_bold:hover {
 		font-weight: bold;
 		cursor: context-menu;
 		}
-
+*/
 		/* Рамка */
-
+/*
 		.add_frame {
 		background: #ffffff;
 		border: 1px solid #e0e2e4;
 		padding: 4px 10px 4px 10px;
 		}
-
+*/
 	/* ----------------- */
 	/* CALCTRANSISTORKEY */
 	/* ----------------- */
@@ -4179,3 +4220,66 @@
 	color: #555555;
 	font-weight: bold;
 	}
+
+		/* ----------*/
+		/*  Торренты */
+		/* ----------*/
+
+		.torrents_bg_h1 {
+		background: #e1e7ec;
+		border: 1px solid #b5bfc4;
+		padding: 0px 4px 0px 4px;
+		width: 1220px;
+		height: 30px;
+		margin-bottom: 3px;
+		text-align: center;
+		}
+
+		.torrents_bg_table {
+		background: #efefef;
+		border: 1px solid #b5bfc4;
+		padding: 0px 0px 0px 0px;
+		width: 1220px;
+		height: 20px;
+		text-align: center;
+		}
+
+		/* Линия */
+
+		.torrents_br_td {
+		border-right: 1px solid #b5bfc4;
+		}
+
+		/* Линия */
+
+		.torrents_bl_td {
+		border-left: 1px solid #b5bfc4;
+		}
+
+		/* Линия */
+
+		.torrents_bb_td {
+		border-bottom: 1px solid #b5bfc4;
+		}
+
+		/* Отступ для td*/
+
+		.torrents_left_td {
+		padding-left: 8px;
+		}
+
+		/* Отступы для td */
+
+		.torrents_pad_t_pad_b_td {
+		padding-top: 6px;
+		padding-bottom: 6px;
+		}
+
+		.torrents_bg_h2 {
+		background: #e1e7ec;
+		border: 1px solid #b5bfc4;
+		padding: 0px 4px 0px 4px;
+		width: 1220px;
+		height: 12px;
+		margin-top: 3px;
+		}

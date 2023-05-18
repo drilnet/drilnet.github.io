@@ -4,7 +4,7 @@
 <!-- Написано в FreeBSD, Midnight Commander. -->
 <!-- Ukraine. (C) Demidov S.V. -->
 
-	<head> 
+	<head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 
@@ -401,22 +401,56 @@
 	<meta name="keywords" content="ремонт колонок genius sp-g06 что было и что стало">
 	<meta name="keywords" content="ремонт genius sp-g06 что было и что стало">
 
-<!-- -->
+<!-- AY-3-8910 (LPT-порт) -->
 
-	<meta name="keywords" content="ay-3-8910, ay 3 8910, вектор-06ц, вектор 06ц">
-	<meta name="keywords" content="центр тень, covox, covox-d, covox d">
-	<meta name="keywords" content="харьковский вариант, ay-3-8910 харьковский вариант">
-	<meta name="keywords" content="ay 3 8910 харьковский вариант, ay 3 8910 харьковский вариант схема">
+	<meta name="keywords" content="ay-3-8910, ay 3 8910">
+	<meta name="keywords" content="ay-3-8910 github, ay 3 8910 github">
+	<meta name="keywords" content="ay-3-8910 lpt-port, ay 3 8910 lpt port">
+	<meta name="keywords" content="ay-3-8910 lpt-порт, ay 3 8910 lpt порт">
 
-<!-- -->
+	<meta name="keywords" content="ay-3-8910 lpt-port github, ay 3 8910 lpt port github">
+	<meta name="keywords" content="ay-3-8910 lpt-порт github, ay 3 8910 lpt порт github">
 
-	<meta name="keywords" content="таблица команд кр580ик80, таблица команд кр580вм80а">
-	<meta name="keywords" content="таблица команд intel 8080, таблица команд 8080">
-	<meta name="keywords" content="таблица команд кр580ик80 github, таблица команд кр580вм80а github">
-	<meta name="keywords" content="таблица команд intel 8080 github, таблица команд 8080 github">
-	<meta name="keywords" content="кр580ик80, кр580вм80а, intel 8080, 8080">
-	<meta name="keywords" content="кр580ик80 github, кр580вм80а github, intel 8080 github, 8080 github">
-	<meta name="keywords" content="ют-88, ют 88, по следам ют-88, по следам ют 88">
+	<meta name="keywords" content="ym2149">
+	<meta name="keywords" content="ym2149 github">
+	<meta name="keywords" content="ym2149 lpt-port, ym2149 lpt port">
+	<meta name="keywords" content="ym2149 lpt-порт, ym2149 lpt порт">
+
+	<meta name="keywords" content="ym2149 lpt-port github, ym2149 lpt port github">
+	<meta name="keywords" content="ym2149 lpt-порт github, ym2149 lpt порт github">
+
+	<meta name="keywords" content="трехканальный музыкальный таймер, трехканальный музыкальный таймер AY-3-8910">
+	<meta name="keywords" content="таймер ay-3-8910, таймер ay 3 8910">
+
+<!-- Торренты -->
+
+	<meta name="keywords" content="torrent, torrents, torrent github, torrents github">
+	<meta name="keywords" content="торрент, торренты, торрент github, торренты github">
+
+	<meta name="keywords" content="torrent drilnet, torrents drilnet">
+	<meta name="keywords" content="torrent drilnet github, torrents drilnet github">
+
+	<!-- Журналы BlenderArt -->
+	<meta name="keywords" content="blenderart, blenderart мagazines, blenderart мagazines download, blenderart download">
+	<meta name="keywords" content="blenderart журналы, blenderart журналы скачать, blenderart скачать">
+
+	<meta name="keywords" content="blenderart github, blenderart мagazines github, blenderart мagazines download github">
+	<meta name="keywords" content="blenderart журналы github, blenderart журналы скачать github, blenderart скачать github">
+
+	<!-- Журналы Владимира вычегжанина -->
+	<meta name="keywords" content="magazines blender-empire, magazines blender-empire download">
+	<meta name="keywords" content="журналы blender-empire, журналы blender-empire скачать">
+
+	<meta name="keywords" content="vychegzhanin журналы blender-empire, vychegzhanin журналы blender-empire сачать">
+	<meta name="keywords" content="вычегжанин журналы blender-empire, вычегжанин журналы blender-empire скачать">
+
+	<meta name="keywords" content="vychegzhanin, vladimir vychegzhanin">
+	<meta name="keywords" content="вычегжанин, владимир вычегжанин">
+
+	<!-- Небольшая подборка бесплатных программ -->
+	<meta name="keywords" content="бесплатные программы, бесплатные программы торрент">
+	<meta name="keywords" content="free programs, free programs torrent">
+	<meta name="keywords" content="free programs github, free programs torrent github">
 
 <!-- -->
 
@@ -531,6 +565,9 @@
 <!-- Вставить в страницу калькулятор ближайшая стандартная электролитическая ёмкость -->
 <!-- BuildBSEE('ModalWinCalcBSEE'); -->
 
+<!-- Ширина окна для Торрент -->
+<!-- TorrentsWidth(); -->
+
 <!-- Страница загружена полностью, убрать анимированную иконку -->
 <!-- RemoveIndexLoader(); -->
 
@@ -554,10 +591,16 @@
 		VRLE8WidthDataStructure();
 		VCBMPGRFSetWidthModWin(); VCBMPGRFResetRB();
 		BuildKirchhoffLaws(); BuildNSS('ModalWinNSS'); BuildBS1('ModalWinBS'); BuildOhm();
-		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE'); RemoveIndexLoader();
+		BuildNSEK('ModalWinNSEK'); BuildBSEE('ModalWinCalcBSEE');
 
-		// Передёрнуть ползунок (Scroll)
+		// Передёрнуть ползунок (Scroll).
 		DistortScroll();
+
+		// Ширина окна для Торрент.
+		TorrentsWidth();
+
+		RemoveIndexLoader();
+
 		">
 
 	<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0">
@@ -6809,7 +6852,149 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 	</td>
 	</tr>
 
+	<!-- Мои торренты -->
 
+	<tr>
+	<td align="center">
+
+		Торренты (Torrents)
+		<br>
+
+	<br>
+
+	<!-- Окно с прокруткой -->
+	<!-- overflow: scroll; width: 940px; height: auto; -->
+	<div id="torrents_winscroll_1" style="">
+
+		<table id="torrents_winscroll_2" style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px;"  cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+			<!-- Заголовок таблицы -->
+
+			<table class="torrents_bg_h1" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+			Только OpenSource! Только Free!
+			</td>
+			</tr>
+			</table>
+
+			<!-- Сама таблица -->
+
+			<table class="torrents_bg_table" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+
+				<td class="torrents_pad_t_pad_b_td torrents_br_td torrents_bb_td" width="32px">1.</td>
+
+				<td align="left" class="torrents_pad_t_pad_b_td torrents_left_td torrents_bb_td">
+
+				Журналы BlenderArt (eng, n1-n47, 2005-2015г.).
+				BlenderArt Magazines:
+				<a href="https://archive.org/details/blenderartmagazine?query=blenderart" title="Откроется в новой вкладке" target="_blank">ссылка 1</a>,
+				<a href="https://issuu.com/search?q=blenderart" title="Откроется в новой вкладке" target="_blank">ссылка 2</a>,
+				<a href="https://blenderart.org" title="Откроется в новой вкладке" target="_blank">ссылка 3</a>.
+				Формат: <b>PDF</b>. Размер: <span style="color: #007700;">439593K</span>.
+
+				</td>
+
+				<td align="center" class="torrents_pad_t_pad_b_td torrents_bl_td torrents_bb_td" width="128px">
+				<a href="downloads/torrents/St_BlenderArt_Magazines_(eng_n1-n47_2005-2015).7z.torrent" title="Скачать">Скачать торрент</a>
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td class="torrents_pad_t_pad_b_td torrents_br_td torrents_bb_td" width="32px">2.</td>
+
+				<td align="left" class="torrents_pad_t_pad_b_td torrents_left_td torrents_bb_td">
+				Журналы Blender-Empire (rus, n1-n14, 2008-неизвестно, Вычегжанин Владимир и др.). Формат: <b>PDF</b>. Размер: <span style="color: #007700;">275909K</span>.
+				<span class="smalltxt">
+				[ <a href="javascript:OpenShowModalWin_Torrent('ModalWinTorrentBE')" title="Нажмите (откроется в модальном окне)">Обложки журналов</a> ]
+				</span>
+				<br>
+				<span class="smalltxt">
+				Ещё эти журналы были на: <a href="https://issuu.com" title="Откроется в новой вкладке" target="_blank">https://issuu.com</a> (не все номера и нельзя скачать).
+				Выложить в Интернет: <span style="color: #aa0000">Согласовано с Автором</span>. Большое Спасибо!
+				</span>
+				</td>
+
+				<td align="center" class="torrents_pad_t_pad_b_td torrents_bl_td torrents_bb_td" width="128px">
+				<a href="downloads/torrents/St_Blender-Empire_Magazines_(rus_n1-n14_2008-X).7z.torrent" title="Скачать">Скачать торрент</a>
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td class="torrents_pad_t_pad_b_td torrents_br_td" width="32px">3.</td>
+
+				<td align="left" class="torrents_pad_t_pad_b_td torrents_left_td">
+				Небольшая подборка бесплатных программ для Windows 7, 8, 10, 11. 2023г.
+				Размер: <span style="color: #007700;">2784M</span>.
+				[ <a href="downloads/torrents/prg_dir_1.txt" class="smalltxt" title="Откроется в новой вкладке" target="_blank">Содержимое архива</a> ]
+				<br>
+				<span class="smalltxt">
+				Архиватор <a href="https://7-zip.org.ua" title="Откроется в новой вкладке" target="_blank">7-zip</a>,
+				Audio-редактор <a href="https://www.audacityteam.org" title="Откроется в новой вкладке" target="_blank">Audacity</a>,
+				Video-редакторы, Граф. редактор <a href="https://www.gimp.org" title="Откроется в новой вкладке" target="_blank">Gimp</a>,
+				3D-редактор <a href="https://www.blender.org" title="Откроется в новой вкладке" target="_blank">Blender</a>,
+				<a href="https://www.farmanager.com" title="Откроется в новой вкладке" target="_blank">Far</a> manager,
+				<a href="https://www.libreoffice.org" title="Откроется в новой вкладке" target="_blank">LibreOffice</a>,
+				Издательская система <a href="https://www.scribus.net" title="Откроется в новой вкладке" target="_blank">Scribus</a>, и др.
+				</span>
+				</td>
+
+				<td align="center" class="torrents_pad_t_pad_b_td torrents_bl_td" width="128px">
+				<a href="downloads/torrents/St_A_Small_Selection_Of_Free_Programs_For_Windows_7,8,10,11_(2023).7z.torrent" title="Скачать">Скачать торрент</a>
+				</td>
+
+			</tr>
+
+			</table>
+
+			<!-- Концовка таблицы -->
+
+			<table class="torrents_bg_h2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+			</td>
+			</tr>
+			</table>
+
+		</td>
+		</tr>
+		</table>
+
+	</div> <!-- Конец окну с прокруткой -->
+
+		<br>
+		<span style="color: #006600;">Не всегда стаю на раздачи!</span> :)
+		<br>
+		<br>
+		Пожалуйста, претензии мне на gmail (mail в конце страницы).
+		<br>
+		Copyright Complaint. Email at the end of the page.
+		<br>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Реклама -->
 	<!-- Сссылки на интернет магазины  (электронные компоненты) -->
 
 	<tr>
@@ -16356,6 +16541,37 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 	<div id="ModalWinCalcBSEE" align="center" class="calcbsee_modalwin">
 	</div>
+
+	<!--                                   -->
+	<!-- Модальное окно                    -->
+	<!-- Торрент (Torrent), Blender-Empire -->
+	<!--                                   -->
+
+	<div id="ModalWinTorrentBE" class="modalwintorrent" align="center">
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<img class="icon" src="images/Blender-Empire_All.jpg" title="(C) Вычегжанин Владимир и др.">
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+		<table class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td>
+		<a href="javascript:CloseModalWinTorrent('ModalWinTorrentBE')">закрыть</a>
+		</td>
+		</tr>
+
+		</table>
+
+	</div> <!-- Конец Torrent BE -->
 
 	<!--                                       -->
 	<!-- Модальное окно [ Английский Алфавит ] -->
