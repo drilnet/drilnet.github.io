@@ -1,0 +1,73 @@
+7zip 16.04 (2016-10-04) x86.exe
+7zip 21.06 (2021-11-24), x64.exe
+7zip.png
+7zip.url.txt
+audacity - Win-3.3.2-x64 (Win 7, Win 8, Win 10, Win 11).exe
+audacity - WinXP, 7, 8 - 2.1.0.exe
+audacity.png
+audacity.url.txt
+avidemux_2.7.2_win32.exe
+avidemux_2.7.8_win64.exe
+avidemux_2.7.8VC++64bits.exe
+avidemux_2.8.1VC++64bits.exe
+avidemux.png
+avidemux.url.txt
+blender-2.79b-windows64 (for Win 7).msi
+blender-3.5.1-windows-x64.msi
+blender.url.txt
+burnaware free 14.9 (disc burning).exe
+burnaware free 16.5 (disc burning).exe
+burnaware free 16.5 (disc burning).png
+burnaware free.url.txt
+djvu solo 3.1 - Install (program for creating and viewing djVu) - Russifier.exe
+djvu solo 3.1 - Install (program for creating and viewing djVu).exe
+djvu solo 3.1.url.txt
+FAR Ver 3.0 build 4242 x86 MSI - (Far30b4242.x86.20150117).7z
+FAR Ver 3.0 build 4242 x86 MSI - (Far30b4242.x86.20150117).msi
+FAR Ver 3.0 build 6116.x64 (2023-03-11).msi
+FAR Ver 3.0 build 6116.x86 (2023-03-11).msi
+FAR.url.txt
+ffmpeg-2023-05-08-git-2d43c23b81-full_build.7z
+ffmpeg-N-104863-g6cf55b9da2-win64-gpl.zip
+ffmpeg.url.txt
+format factory (ffsetup ver.4.3.0.0, www.pcfreetime.com).exe
+format factory (ffsetup ver.4.3.0.0, www.pcfreetime.com).png
+format factory (ffsetup ver.5.14.0.1, www.pcfreetime.com).exe
+format factory.url.txt
+free audio converter v.5.0.58 build 324.exe
+free audio converter v.5.0.58 build 324.jpg
+ghostscript - gs916w32bit.exe
+ghostscript - gs916w64bit.exe
+ghostscript ver. 10.01.1, 32bit.exe
+ghostscript ver. 10.01.1, 64bit.exe
+ghostscript ver.9.22, 32bit.exe
+ghostscript ver.9.22, 64bit.exe
+ghostscript.url.txt
+gimp ver. 2.10.34-setup (Windows 7 or newer).exe
+gimp ver. 2.8.22, 32bit и 64bit.exe
+gimp.png
+gimp.url.txt
+inkscape_1.png
+inkscape_2.png
+inkscape-1.2.2_2022-12-09_732a01da63-x64.exe
+inkscape-1.2.2_2022-12-09_732a01da63-x86.exe
+inkscape.url.txt
+kdenlive-23.04.0a (free video editor).exe
+kdenlive.png
+kdenlive.url.txt
+librecad-installer-2.2.0.exe
+librecad.url.txt
+libreoffice_7.5.3_Win_x86-64 (RUS, UKR).msi
+libreoffice.png
+libreoffice.url.txt
+openshot-v3.1.1-x86_64 (Win 7, 8, 10. Video Editor).exe
+openshot.png
+openshot.url.txt
+scribus-1.4.8-windows-x64.exe
+scribus-1.4.8-windows-x86.exe
+scribus.png
+scribus.url.txt
+shotcut-win64 ver. 22.12.21, Win 7 (editor for non-linear video editing).exe
+shotcut-win64 ver. 23.05.07, Win 10, Win 11 (editor for non-linear video editing).exe
+shotcut.png
+shotcut.url.txt
