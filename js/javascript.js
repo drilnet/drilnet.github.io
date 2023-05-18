@@ -300,6 +300,55 @@ function CloseModalWinBMPtoSPRGRF(id)
 
 // ---
 // | Показать модальное окно.
+// | Торренты.
+// ---
+function OpenShowModalWin_Torrent(id)
+{
+	// Слой затемнения.
+	var darkLayer = document.createElement("div");
+		// id чтобы подхватить стиль.
+		darkLayer.id = "shadowtorrent";
+			// Включаем затемнение.
+			document.body.appendChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "block"; // "Включаем" его.
+
+	darkLayer.onclick = function ()
+		{
+		// При клике на слой затемнения, всё исчезает.
+		darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+		modalWin.style.display = "none"; // "Выключаем" окно.
+		return false;
+		}
+
+	document.addEventListener("keydown", function(e){
+		if (e.which == 27)
+			{
+			// Код, который должен быть выполнен после нажатия на кнопку ESC.
+			darkLayer.parentNode.removeChild(darkLayer); // Удаляем затемнение.
+			modalWin.style.display = "none"; // "Выключаем" окно.
+			return false;
+			}
+	});
+}
+
+// ---
+// | Закрыть модальное окно.
+// | Торренты.
+// ---
+function CloseModalWinTorrent(id)
+{
+	// Удаляем затемнение.
+	var darkLayer = document.getElementById("shadowtorrent");
+	darkLayer.parentNode.removeChild(darkLayer);
+
+	var modalWin = document.getElementById(id); // Находим наше "окно".
+	modalWin.style.display = "none"; // "Выключаем" окно.
+}
+
+// ---
+// | Показать модальное окно.
 // | [ Английский Алфавит ]  [ Русский Алфавит ]  [ Украинский Алфавит ]
 // ---
 function OpenShowModalWin_ABC_ENG_RUS_UKR(id)
@@ -514,6 +563,27 @@ function DistortScroll()
 		// Передёрнуть Scroll.
 		window.scrollBy(0, -1); // Страницу Вниз. Ползунок вверх.
 		window.scrollBy(0, 1); // Страницу Назад. Ползунок назад.
+		}
+}
+
+// ---
+// Торренты ширина окна.
+// ---
+function TorrentsWidth()
+{
+	var w = window.screen.width;
+
+	if (w < 1360)
+		{
+		// Окно с прокруткой.
+		document.getElementById('torrents_winscroll_1').style.overflow = "scroll";
+		document.getElementById('torrents_winscroll_1').style.width = "900px";
+		document.getElementById('torrents_winscroll_1').style.height = "auto";
+		// Отступы.
+		document.getElementById('torrents_winscroll_2').style.paddingTop = "0px";
+		document.getElementById('torrents_winscroll_2').style.paddingBottom = "8px";
+		document.getElementById('torrents_winscroll_2').style.paddingLeft = "8px";
+		document.getElementById('torrents_winscroll_2').style.paddingRight = "8px";
 		}
 }
 
