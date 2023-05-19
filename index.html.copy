@@ -6901,8 +6901,22 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 
 				</td>
 
-				<td align="center" class="torrents_pad_t_pad_b_td torrents_bl_td torrents_bb_td" width="128px">
-				<a href="downloads/torrents/St_BlenderArt_Magazines_(eng_n1-n47_2005-2015).7z.torrent" title="Скачать">Скачать торрент</a>
+				<td align="center" class="torrents_bl_td torrents_bb_td" width="112px">
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango. (C) Various">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<a href="downloads/torrents/St_BlenderArt_Magazines_(eng_n1-n47_2005-2015).7z.torrent" title="Скачать торрент">torrent</a>
+					</td>
+
+					</tr>
+					</table>
+
 				</td>
 
 			</tr>
@@ -6923,8 +6937,22 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 				</span>
 				</td>
 
-				<td align="center" class="torrents_pad_t_pad_b_td torrents_bl_td torrents_bb_td" width="128px">
-				<a href="downloads/torrents/St_Blender-Empire_Magazines_(rus_n1-n14_2008-X).7z.torrent" title="Скачать">Скачать торрент</a>
+				<td align="center" class="torrents_bl_td torrents_bb_td" width="112px">
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango. (C) Various">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<a href="downloads/torrents/St_Blender-Empire_Magazines_(rus_n1-n14_2008-X).7z.torrent" title="Скачать торрент">torrent</a>
+					</td>
+
+					</tr>
+					</table>
+
 				</td>
 
 			</tr>
@@ -6949,8 +6977,22 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 				</span>
 				</td>
 
-				<td align="center" class="torrents_pad_t_pad_b_td torrents_bl_td" width="128px">
-				<a href="downloads/torrents/St_A_Small_Selection_Of_Free_Programs_For_Windows_7,8,10,11_(2023).7z.torrent" title="Скачать">Скачать торрент</a>
+				<td align="center" class="torrents_bl_td" width="112px">
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango. (C) Various">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<a href="downloads/torrents/St_A_Small_Selection_Of_Free_Programs_For_Windows_7,8,10,11_(2023).7z.torrent" title="Скачать торрент">torrent</a>
+					</td>
+
+					</tr>
+					</table>
+
 				</td>
 
 			</tr>
