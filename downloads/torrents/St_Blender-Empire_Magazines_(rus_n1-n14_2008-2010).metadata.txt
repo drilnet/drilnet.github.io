@@ -1,0 +1,344 @@
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n01.pdf
+Directory                       : .
+File Size                       : 50 MB
+File Modification Date/Time     : 2023:05:14 13:01:57+03:00
+File Access Date/Time           : 2023:05:18 14:17:30+03:00
+File Inode Change Date/Time     : 2023:05:15 12:45:59+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 39
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #1
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%EndComments
+Creator                         : QuarkXPress(R) 7.31
+Producer                        : QuarkXPress(R) 7.31
+Create Date                     : 2008:07:24 22:21:58
+Modify Date                     : 2008:07:24 22:21:58
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n02.pdf
+Directory                       : .
+File Size                       : 14 MB
+File Modification Date/Time     : 2023:05:14 13:02:37+03:00
+File Access Date/Time           : 2023:05:18 14:17:30+03:00
+File Inode Change Date/Time     : 2023:05:15 12:45:59+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 26
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #2
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%MarksAllSeparations: true.%%EndComments
+Create Date                     : 2008:09:02 13:19:21
+Producer                        : QuarkXPress(R) 7.31
+Author                          : Âû÷åãæàíèí Âëàäèìèð (noc-emperor)
+Keywords                        : Blender, æóðíàë, óðîê
+Creator                         : QuarkXPress(R) 7.31
+Subject                         : æóðíàë ïðî Blender
+Modify Date                     : 2008:09:02 13:19:21
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n03.pdf
+Directory                       : .
+File Size                       : 7.7 MB
+File Modification Date/Time     : 2023:05:14 13:03:17+03:00
+File Access Date/Time           : 2023:05:18 14:17:30+03:00
+File Inode Change Date/Time     : 2023:05:15 12:45:59+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 41
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #3
+Creator                         : QuarkXPress(R) 7.31
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%MarksAllSeparations: true.%%EndComments
+Producer                        : QuarkXPress(R) 7.31
+Create Date                     : 2008:10:11 22:58:01
+Modify Date                     : 2008:10:11 22:58:01
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n04.pdf
+Directory                       : .
+File Size                       : 23 MB
+File Modification Date/Time     : 2023:05:14 13:04:14+03:00
+File Access Date/Time           : 2023:05:18 14:17:31+03:00
+File Inode Change Date/Time     : 2023:05:15 12:44:58+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 32
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #4
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%MarksAllSeparations: true.%%EndComments
+Create Date                     : 2008:11:11 12:46:37
+Producer                        : QuarkXPress(R) 7.31
+Author                          : Âû÷åãæàíèí Âëàäèìèð
+Keywords                        : æóðíàë, Blender, Empire
+Creator                         : QuarkXPress(R) 7.31
+Subject                         : æóðíàë ïðî Blender
+Modify Date                     : 2008:11:11 12:46:37
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n05.pdf
+Directory                       : .
+File Size                       : 21 MB
+File Modification Date/Time     : 2023:05:14 13:04:41+03:00
+File Access Date/Time           : 2023:05:18 14:17:31+03:00
+File Inode Change Date/Time     : 2023:05:15 12:44:58+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 34
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #5
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%MarksAllSeparations: true.%%EndComments
+Create Date                     : 2009:01:06 12:50:07
+Producer                        : QuarkXPress(R) 7.31
+Author                          : Âû÷åãæàíèí Âëàäèìèð
+Keywords                        : Blender Empire 5, æóðíàë ïðî Blender
+Creator                         : QuarkXPress(R) 7.31
+Modify Date                     : 2009:01:06 12:50:07
+Subject                         : æóðíàë ïðî Blender
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n06.pdf
+Directory                       : .
+File Size                       : 16 MB
+File Modification Date/Time     : 2023:05:14 13:05:08+03:00
+File Access Date/Time           : 2023:05:18 14:17:31+03:00
+File Inode Change Date/Time     : 2023:05:15 12:44:58+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 84
+Has XFA                         : No
+Page Layout                     : SinglePage
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #6
+Creator                         : Scribus 1.3.3.12
+Producer                        : Scribus PDF Library 1.3.3.12
+Author                          : Вычегжанин Владимир
+Keywords                        : журнал, Blender-Empire, Вычегжанин Владимир, Blender, статьи, уроки, комиксы, моделирование, рендеринг, видео уроки, галерея
+Create Date                     : 2009:03:03 19:33:47
+Modify Date                     : 2009:03:03 19:33:47
+Trapped                         : False
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n07.pdf
+Directory                       : .
+File Size                       : 16 MB
+File Modification Date/Time     : 2023:05:14 13:05:59+03:00
+File Access Date/Time           : 2023:05:18 14:17:31+03:00
+File Inode Change Date/Time     : 2023:05:15 12:44:58+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 68
+Has XFA                         : No
+Page Layout                     : SinglePage
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #7
+Creator                         : Scribus 1.3.3.12
+Producer                        : Scribus PDF Library 1.3.3.12
+Author                          : Вычегжанин Владимир
+Keywords                        : Вычегжанин Владимир, Blender-Empire №7, журнал о Blender на русском языке, Blender, уроки, модификаторы, галерея, осмотр мышкой, игровой движек, LuxRender
+Create Date                     : 2009:05:20 18:32:19
+Modify Date                     : 2009:05:20 18:32:19
+Trapped                         : False
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n08.pdf
+Directory                       : .
+File Size                       : 12 MB
+File Modification Date/Time     : 2023:05:14 13:06:20+03:00
+File Access Date/Time           : 2023:05:18 14:17:31+03:00
+File Inode Change Date/Time     : 2023:05:15 12:44:58+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 52
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #8
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%MarksAllSeparations: true.%%EndComments
+Create Date                     : 2009:07:08 15:25:22
+Producer                        : QuarkXPress(R) 7.31
+Author                          : Vychegjanin Vladimir
+Keywords                        : Blender-Empire, magazine, Russia
+Creator                         : QuarkXPress(R) 7.31
+Subject                         : Blender-Empire 8
+Modify Date                     : 2009:07:08 15:25:22
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n09.pdf
+Directory                       : .
+File Size                       : 33 MB
+File Modification Date/Time     : 2009:12:11 09:16:00+02:00
+File Access Date/Time           : 2023:05:20 19:36:55+03:00
+File Inode Change Date/Time     : 2023:05:15 12:44:58+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 152
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%MarksAllSeparations: true.%%EndComments
+Create Date                     : 2009:09:10 11:19:25
+Producer                        : QuarkXPress(R) 7.31
+Author                          : Vychegzhanin Vladimir
+Keywords                        : Blender-Empire, magazine
+Creator                         : QuarkXPress(R) 7.31
+Subject                         : Blender
+Modify Date                     : 2009:09:10 11:19:25
+Title                           : Blender-Empire #9
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n10.pdf
+Directory                       : .
+File Size                       : 15 MB
+File Modification Date/Time     : 2023:05:14 13:07:11+03:00
+File Access Date/Time           : 2023:05:20 19:32:39+03:00
+File Inode Change Date/Time     : 2023:05:15 12:43:57+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 68
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #10
+Producer                        : QuarkXPress(R) 7.31
+Creator                         : QuarkXPress(R) 7.31
+Create Date                     : 2009:11:30 00:15:25
+Modify Date                     : 2009:11:30 00:15:25
+Subject                         : magazine Blender-Empire
+Author                          : Vychegzhanin Vladimir
+X Press Private                 : %%DocumentProcessColors: Cyan Magenta Yellow Black.%%EndComments
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n11.pdf
+Directory                       : .
+File Size                       : 24 MB
+File Modification Date/Time     : 2010:03:02 13:21:20+02:00
+File Access Date/Time           : 2023:05:18 14:17:32+03:00
+File Inode Change Date/Time     : 2023:05:15 12:43:46+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 92
+Has XFA                         : No
+Page Layout                     : SinglePage
+Creator                         : Scribus 1.3.3.12
+Producer                        : Scribus PDF Library 1.3.3.12
+Title                           : Blender-Empire #11
+Author                          : Vychegzhanin Vladimir
+Keywords                        : Blender-Empire #11, Blender, 3D, журнал о компьютерной графике
+Create Date                     : 2010:03:02 14:20:20
+Modify Date                     : 2010:03:02 14:20:20
+Trapped                         : False
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n12.pdf
+Directory                       : .
+File Size                       : 27 MB
+File Modification Date/Time     : 2023:05:13 12:06:30+03:00
+File Access Date/Time           : 2023:05:18 14:17:32+03:00
+File Inode Change Date/Time     : 2023:05:15 12:43:39+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 134
+Has XFA                         : No
+Page Layout                     : SinglePage
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #12
+Creator                         : Scribus 1.3.3.12
+Producer                        : Scribus PDF Library 1.3.3.12
+Author                          : Vychegzhanin Vladimir
+Keywords                        : Blender-Empire #11, Blender, 3D, журнал о компьютерной графике
+Create Date                     : 2010:05:17 18:53:39
+Modify Date                     : 2010:05:17 18:53:39
+Trapped                         : False
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n13.pdf
+Directory                       : .
+File Size                       : 22 MB
+File Modification Date/Time     : 2023:05:14 13:07:59+03:00
+File Access Date/Time           : 2023:05:18 14:17:33+03:00
+File Inode Change Date/Time     : 2023:05:15 12:43:57+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 92
+Has XFA                         : No
+Page Layout                     : TwoColumnRight
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #13
+Creator                         : Scribus 1.3.3.12
+Producer                        : Scribus PDF Library 1.3.3.12
+Author                          : 
+Create Date                     : 2010:07:14 15:11:27
+Modify Date                     : 2010:07:14 15:11:27
+Trapped                         : False
+
+ExifTool Version Number         : 12.00
+File Name                       : Blender-Empire_n14.pdf
+Directory                       : .
+File Size                       : 61 MB
+File Modification Date/Time     : 2023:05:14 13:08:27+03:00
+File Access Date/Time           : 2023:05:18 14:17:33+03:00
+File Inode Change Date/Time     : 2023:05:15 12:43:57+03:00
+File Permissions                : rw-r--r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 93
+Has XFA                         : No
+Page Layout                     : SinglePage
+XMP Toolkit                     : Image::ExifTool 12.00
+Title                           : Blender-Empire #14
+Creator                         : Scribus 1.3.3.12
+Producer                        : Scribus PDF Library 1.3.3.12
+Author                          : 
+Create Date                     : 2010:09:11 20:16:04
+Modify Date                     : 2010:09:11 20:16:04
+Trapped                         : False
