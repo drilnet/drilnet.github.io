@@ -6926,9 +6926,10 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 				<td class="torrents_pad_t_pad_b_td torrents_br_td torrents_bb_td" width="32px">2.</td>
 
 				<td align="left" class="torrents_pad_t_pad_b_td torrents_left_td torrents_bb_td">
-				Журналы Blender-Empire (rus, n1-n14, 2008-<span style="text-decoration: underline; cursor: context-menu;" title="Так сложились обстоятельства :)">неизвестно</span>, Вычегжанин Владимир и др.). Формат: <b>PDF</b>. Размер: <span style="color: #007700;">275909K</span>.
+				Журналы Blender-Empire (rus, n1-n14, 2008-2010г, Вычегжанин Владимир и др.). Формат: <b>PDF</b>. Размер: <span style="color: #007700;">275909K</span>.
 				<span class="smalltxt">
 				[ <a href="javascript:OpenShowModalWin_Torrent('ModalWinTorrentBE')" title="Нажмите (откроется в модальном окне)">Обложки журналов</a> ]
+				[ <a href="downloads/torrents/St_Blender-Empire_Magazines_(rus_n1-n14_2008-2010).metadata.txt" title="Откроется в новой вкладке" target="_blank">Метаданные</a> ]
 				</span>
 				<br>
 				<span class="smalltxt">
@@ -6947,7 +6948,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 					</td>
 
 					<td style="padding-left: 4px;">
-					<a href="downloads/torrents/St_Blender-Empire_Magazines_(rus_n1-n14_2008-X).7z.torrent" title="Скачать торрент">torrent</a>
+					<a href="downloads/torrents/St_Blender-Empire_Magazines_(rus_n1-n14_2008-2010).7z.torrent" title="Скачать торрент">torrent</a>
 					</td>
 
 					</tr>
