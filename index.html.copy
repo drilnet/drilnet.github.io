@@ -6907,7 +6907,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 					<tr>
 
 					<td>
-					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango. (C) Various">
+					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango: http://tango.freedesktop.org/Tango_Desktop_Project">
 					</td>
 
 					<td style="padding-left: 4px;">
@@ -6944,7 +6944,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 					<tr>
 
 					<td>
-					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango. (C) Various">
+					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango: http://tango.freedesktop.org/Tango_Desktop_Project">
 					</td>
 
 					<td style="padding-left: 4px;">
@@ -6984,7 +6984,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 					<tr>
 
 					<td>
-					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango. (C) Various">
+					<img class="icon" src="icons/torrent.png" title="Иконка из набора Tango: http://tango.freedesktop.org/Tango_Desktop_Project">
 					</td>
 
 					<td style="padding-left: 4px;">
