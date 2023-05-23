@@ -1078,10 +1078,30 @@
 		<tr>
 		<td class="tdrepo">
 
+			<table class="widthrepo" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td>
+
 			&nbsp;&nbsp;
 			<b>Репозиторий:</b>
 			<a href="https://github.com/drilnet/blender3d-tea2025b">
-			Blender 3D. Микросхема TEA2025B в 3D</a>
+			Blender 3D. Микросхема TEA2025B в 3D, плюс модель печатной платы</a>
+
+			</td>
+
+			<td width="1%">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA')" title="Нажмите, чтобы увидеть TEA2025B и модель печатной платы">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			</td>
+
+			</tr>
+			</table>
 
 		</td>
 		</tr>
@@ -8006,6 +8026,10 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 		<img src="https://github.com/drilnet/blender3d-dice2/blob/master/Preview_1.gif?raw=true"
 		title="(C) Демидов С.В.">
 
+		<br>
+		<br>
+		<a href="https://github.com/drilnet/blender3d-dice2" title="Откроется в новой вкладке" target="_blank">Перейти в репозиторий</a>
+
 		</td>
 		</tr>
 
@@ -8053,6 +8077,10 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 		<img src="https://github.com/drilnet/blender3d-dice2/blob/master/Preview_1.png?raw=true"
 		title="(C) Демидов С.В.">
+
+		<br>
+		<br>
+		<a href="https://github.com/drilnet/blender3d-dice2" title="Откроется в новой вкладке" target="_blank">Перейти в репозиторий</a>
 
 		</td>
 		</tr>
@@ -8102,6 +8130,10 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 		<td align="center">
 
 		<img src="https://github.com/drilnet/blender3d-motor/blob/master/Motor%20(preview).gif?raw=true">
+
+		<br>
+		<br>
+		<a href="https://github.com/drilnet/blender3d-motor" title="Откроется в новой вкладке" target="_blank">Перейти в репозиторий</a>
 
 		</td>
 		</tr>
@@ -8276,6 +8308,8 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 		<br>
 		Используется в <a href="downloads/vector-06c/downloads.html" title="Файловый архив Вектор'а-06Ц (откроется в новой вкладке)" target="_blank">файловом архиве</a> Вектор'а-06Ц.
 		<br>
+		<a href="https://github.com/drilnet/blender3d-floppy-disk-35" title="Откроется в новой вкладке" target="_blank">Перейти в репозиторий</a>
+		<br>
 		<br>
 
 		<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
@@ -8410,6 +8444,73 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 			</table>
 
                 </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!--                         -->
+	<!-- Модальное окно TEA2025B -->
+	<!--                         -->
+
+	<div id="ModalWinTEA" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>GNU GPL V3</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+
+			<td valign="top">
+			<img src="images/animation/TEA2025B_contrast_LQ.webp" title="(C) Демидов С.В.">
+			</td>
+
+			<td>&nbsp;</td>
+
+			<td>
+			<img src="images/animation/Printed_circuit_board_contrast_LQ.webp" title="(C) Демидов С.В.">
+			</td>
+
+			</tr>
+			</table>
+
+			<br>
+			<a href="https://github.com/drilnet/blender3d-tea2025b" title="Откроется в новой вкладке" target="_blank">Перейти в репозиторий</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+		</td>
 		</tr>
 
 		</table>
