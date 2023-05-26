@@ -219,7 +219,7 @@
 		/* Маленький шрифт для Hobby */
 
 		.smalltxthobby {
-		font-size: 0.9em;
+		font-size: 0.95em;
 		}
 
 		/* Шапка */
@@ -4221,9 +4221,9 @@
 	font-weight: bold;
 	}
 
-		/* ----------*/
-		/*  Торренты */
-		/* ----------*/
+		/* ---------*/
+		/* Торренты */
+		/* ---------*/
 
 		.torrents_bg_h1 {
 		background: #e1e7ec;
@@ -4283,3 +4283,21 @@
 		height: 12px;
 		margin-top: 3px;
 		}
+
+	/* ------------------- */
+	/* Bar (Полоса, Рейка) */
+	/* ------------------- */
+
+	/* Цвет фона и цвет рамки */
+
+	.bar_frame {
+	background: #ffffff;
+	border: 1px solid #aaaaaa;
+	padding: 4px;
+	}
+
+	/* Разме заголовку */
+
+	.bar_size_title {
+	font-size: 1.5em;
+	}

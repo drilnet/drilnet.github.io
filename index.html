@@ -424,6 +424,8 @@
 
 <!-- Торренты -->
 
+	<meta name="keywords" content="opensource torrent, opensource torrents">
+
 	<meta name="keywords" content="torrent, torrents, torrent github, torrents github">
 	<meta name="keywords" content="торрент, торренты, торрент github, торренты github">
 
@@ -575,7 +577,14 @@
 
 <!-- onload будет выполнен после загрузки страницы -->
 <body
-	onload="LoadBook(); G15_RemoveClock(); G15_Init();
+	onload="
+		// Установить Ширину Украинскому Флагу (в зависимости от монитора).
+		BarFlagWidth();
+
+		// Установить Ширину окна для Bar.
+		BarWidth();
+
+		LoadBook(); G15_RemoveClock(); G15_Init();
 		VCSPRResetInputFile(); VCGRFResetInputFile(); VCBMPGRFResetInputFile();
 
 		// Используется в grf to spr
@@ -802,7 +811,9 @@
 	<tr>
 	<td align="center">
 
-		<table width="900px" cellspacing="0" cellpadding="0" border="0">
+		<!-- Флаг Украины -->
+
+		<table id="id_flag_width" width="900px" cellspacing="0" cellpadding="0" border="0">
 
 		<tr>
 		<td height="20px" style="background: #1919fa; color: #ffffff;">
@@ -844,6 +855,129 @@
 		<span style="color: #e00000; font-size: 14px;">Нет Войне!</span>
 		<br>
 		<span style="color: #e00000; font-size: 14px;">Нет Обстрелам!</span>
+
+	</td>
+	</tr>
+
+	<!-- Горизонтальная линия -->
+
+	<tr>
+	<td>
+
+		<br>
+		<hr>
+		<br>
+
+	</td>
+	</tr>
+
+	<!-- Bar (полоса, рейка) -->
+
+	<tr>
+	<td align="center">
+
+	<span class="bar_size_title">Попробуйте хоть что-то сделать своими руками!</span>
+	<br>
+	<br>
+
+	<div id="id_bar_winscroll_1" style="">
+
+		<table id="id_bar_winscroll_2" style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px;"  cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td>
+
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+
+			<td>
+
+				<table class="bar_frame" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+					<a href="javascript:Bar_Sw_TEA2025B();">
+					<img id="id_bar_images_tea2025b" class="icon" src="images/bar/TEA2025B_2.png" title="Нажмите на изображение">
+					</a>
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
+
+				<table class="bar_frame" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+					<a href="javascript:Bar_Sw_BOX();">
+					<img id="id_bar_images_box" class="icon" src="images/bar/BOX_2.png" title="Нажмите на изображение">
+					</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
+
+				<table class="bar_frame" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+					<a href="javascript:Bar_Sw_PS();">
+					<img id="id_bar_images_ps" class="icon" src="images/bar/PS_2.png" title="Нажмите на изображение">
+					</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
+
+				<table class="bar_frame" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+					<a href="javascript:Bar_Sw_Speaker();">
+					<img id="id_bar_images_speaker" class="icon" src="images/bar/Speaker_2.png" title="Нажмите на изображение">
+					</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+			<td style="padding-left: 6px;">
+
+				<table class="bar_frame" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td>
+
+					<a href="javascript:Bar_Sw_Board();" title="Нажмите на изображение">
+					<img id="id_bar_images_board" class="icon" src="images/bar/Printed_circuit_board_2.png" title="Нажмите на изображение">
+					</a>
+
+				</td>
+				</tr>
+				</table>
+
+			</td>
+
+		</tr>
+		</table>
+
+		</td>
+		</tr>
+		</table>
+
+	</div>
+
+	<br>
+	! Нажмите на изображение !
 
 	</td>
 	</tr>
