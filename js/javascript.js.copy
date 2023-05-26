@@ -587,6 +587,145 @@ function TorrentsWidth()
 		}
 }
 
+//
+// Установить ширину Украинскому Флагу.
+//
+function BarFlagWidth()
+{
+	var w = window.screen.width;
+
+	if (w > 1360)
+		{
+		document.getElementById('id_flag_width').width = "1100px";
+		}
+}
+
+//
+// Установить ширину Bar (для изображений).
+//
+function BarWidth()
+{
+	var w = window.screen.width;
+
+	if (w < 1360)
+		{
+		// Окно с прокруткой.
+		document.getElementById('id_bar_winscroll_1').style.overflow = "scroll";
+		document.getElementById('id_bar_winscroll_1').style.width = "900px";
+		document.getElementById('id_bar_winscroll_1').style.height = "auto";
+		// Отступы.
+		document.getElementById('id_bar_winscroll_2').style.paddingTop = "0px";
+		document.getElementById('id_bar_winscroll_2').style.paddingBottom = "8px";
+		document.getElementById('id_bar_winscroll_2').style.paddingLeft = "8px";
+		document.getElementById('id_bar_winscroll_2').style.paddingRight = "8px";
+		}
+}
+
+//
+// Bar.
+// Switch 1.
+//
+function Bar_Sw_TEA2025B()
+{
+	var namefile;
+
+	namefile = document.getElementById('id_bar_images_tea2025b').src;
+	namefile = namefile.substr(-14);
+
+	if (namefile == 'TEA2025B_2.png')
+		{
+		document.getElementById('id_bar_images_tea2025b').src = "images/bar/TEA2025B_1.png";
+		}
+		else
+		{
+		document.getElementById('id_bar_images_tea2025b').src = "images/bar/TEA2025B_2.png";
+		}
+}
+
+//
+// Bar.
+// Switch 2.
+//
+function Bar_Sw_BOX()
+{
+//	var namefile;
+
+	namefile = document.getElementById('id_bar_images_box').src;
+	namefile = namefile.substr(-9);
+
+	if (namefile == 'BOX_2.png')
+		{
+		document.getElementById('id_bar_images_box').src = "images/bar/BOX_1.png";
+		}
+		else
+		{
+		document.getElementById('id_bar_images_box').src = "images/bar/BOX_2.png";
+		}
+}
+
+//
+// Bar.
+// Switch 3.
+//
+function Bar_Sw_PS()
+{
+	var namefile;
+
+	namefile = document.getElementById('id_bar_images_ps').src;
+	namefile = namefile.substr(-8);
+
+	if (namefile == 'PS_2.png')
+		{
+		document.getElementById('id_bar_images_ps').src = "images/bar/PS_1.png";
+		}
+		else
+		{
+		document.getElementById('id_bar_images_ps').src = "images/bar/PS_2.png";
+		}
+}
+
+//
+// Bar.
+// Switch 4.
+//
+function Bar_Sw_Speaker()
+{
+	var namefile;
+
+	namefile = document.getElementById('id_bar_images_speaker').src;
+	namefile = namefile.substr(-13);
+
+	if (namefile == 'Speaker_2.png')
+		{
+		document.getElementById('id_bar_images_speaker').src = "images/bar/Speaker_1.png";
+		}
+		else
+		{
+		document.getElementById('id_bar_images_speaker').src = "images/bar/Speaker_2.png";
+		}
+}
+
+//
+// Bar.
+// Switch 5.
+//
+function Bar_Sw_Board()
+{
+	var namefile;
+
+	namefile = document.getElementById('id_bar_images_board').src;
+	namefile = namefile.substr(-27);
+
+	if (namefile == 'Printed_circuit_board_2.png')
+		{
+		document.getElementById('id_bar_images_board').src = "images/bar/Printed_circuit_board_1.png";
+		}
+		else
+		{
+		document.getElementById('id_bar_images_board').src = "images/bar/Printed_circuit_board_2.png";
+		}
+}
+
 // ---
 // | Страница (index.html) загружена полностью, убрать анимированную иконку.
 // ---
