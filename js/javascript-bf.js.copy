@@ -54,7 +54,7 @@ function BF_LoadFile(id_file)
 
 	var buffer = new Uint8Array(reader.result);
 
-	// !
+	// ! - нужно определять пустые таблицы или нет, если пустые то BF_Reset - иначе нет.
 	BF_Reset();
 
 	// Вставить в страницу имя файла и размер файла.
