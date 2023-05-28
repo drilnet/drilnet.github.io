@@ -36,7 +36,7 @@ function VCBMPGRFReset()
 	VCBMPGRFResetReference();
 
 	// -
-	txt = navigator.userAgent;
+	var txt = navigator.userAgent;
 
 	// Если не Firefox, то сброс.
 	if (txt.search(/Firefox/) < 0)
