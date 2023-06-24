@@ -9061,7 +9061,7 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 			<tr>
 			<td>
-			<img class="icon" src="images/animation/Gray_RYK_256x256.gif"
+			<img class="icon" src="images-repository/animation/Gray_RYK_256x256.gif"
 			title="Перекодировка: Демидов С.В.">
 			</td>
 			</tr>
@@ -9084,7 +9084,7 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 			<tr>
 			<td>
-			<img class="icon" src="images/animation/Gray_TRE_256x256.gif"
+			<img class="icon" src="images-repository/animation/Gray_TRE_256x256.gif"
 			title="Перекодировка: Демидов С.В.">
 			</td>
 			</tr>
@@ -9107,7 +9107,7 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 			<tr>
 			<td>
-			<img class="icon" src="images/animation/Gray_DEM_256x256.gif"
+			<img class="icon" src="images-repository/animation/Gray_DEM_256x256.gif"
 			title="Перекодировка: Демидов С.В.">
 			</td>
 			</tr>
