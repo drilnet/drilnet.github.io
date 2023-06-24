@@ -3341,7 +3341,7 @@
 
 					<td id="id_vrle8_sum2" align="left" title="Нет данных">
 					Нет данных
-			    	</td>
+				</td>
 
 				</tr>
 
@@ -8826,9 +8826,9 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 	</div>
 
-	<!--                         -->
-	<!-- Модальное окно TEA2025B -->
-	<!--                         -->
+	<!--                                         -->
+	<!-- Модальное окно микросхема TEA2025B в 3D -->
+	<!--                                         -->
 
 	<div id="ModalWinTEA" class="modalwin">
 
@@ -8853,13 +8853,13 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 			<tr>
 
 			<td valign="top">
-			<img src="images/animation/TEA2025B_contrast_LQ.webp" title="(C) Демидов С.В.">
+			<img src="images-repository/animation/TEA2025B_contrast_LQ.webp" title="(C) Демидов С.В.">
 			</td>
 
 			<td>&nbsp;</td>
 
 			<td>
-			<img src="images/animation/Printed_circuit_board_contrast_LQ.webp" title="(C) Демидов С.В.">
+			<img src="images-repository/animation/Printed_circuit_board_contrast_LQ.webp" title="(C) Демидов С.В.">
 			</td>
 
 			</tr>
