@@ -52,24 +52,28 @@ function OpenShowModalWin(id)
 		document.getElementById("repodividerr1r2").style.height = h + "px";
 		}
 
-	// Перед окрытием окна (схема Power Supply 512):
+	// Перед окрытием модального окна (схема Power Supply 512):
 	if (id == "ModalWinPS512_1");
 		{
-		var h = document.documentElement.clientHeight;
+		var h = window.screen.height;
 
-		// 64 и 64 - отступ сверху и снизу (до модального окна, наружный отступ).
-		h = h - 64 - 64;
+		if (h >= 900)
+			{
+			// Растянуть...
+			document.getElementById("repops512sceheme").style.height = "auto";
+			}
+		}
 
-		// - отступ сверху и снизу (в модальном окне, внутренний отступ, приблизительно).
-		// h = h - 83 - 94;
-		// h = h - 93 - 104; // Снизу отступ чуть-чуть больше.
-		h = h - 93 - 104;
+	// Перед окрытием модального окна (схема Power Supply 7809):
+	if (id == "ModalWinPS7809_1");
+		{
+		var h = window.screen.height;
 
-		// Подтянуть окно с полосой прокрутки (подтянуть снизу).
-		if (h > 481) { h = 481}; // 481 - максимальная высота окна с полосой прокрутки.
-
-		// Растянуть...
-		document.getElementById("repops512sceheme").style.height = h + "px";
+		if (h >= 900)
+			{
+			// Растянуть...
+			document.getElementById("repops7809sceheme").style.height = "auto";
+			}
 		}
 
 	// Слой затемнения.
