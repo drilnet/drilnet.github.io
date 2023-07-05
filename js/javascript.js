@@ -83,8 +83,7 @@ function OpenShowModalWin(id)
 
 		if (h >= 900)
 			{
-			// Изменить размер изображениям (Width и Height).
-			// Подставить другие изображения.
+			// Подставить другие изображения с другими Width и Height.
 			document.getElementById('genius_img_1').src = "images-repository/Genius_Do_remonta_72dpi_2.png";
 			document.getElementById('genius_img_2').src = "images-repository/Genius_Posle_remonta_72dpi_2.png";
 			}
