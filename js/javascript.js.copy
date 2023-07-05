@@ -64,7 +64,7 @@ function OpenShowModalWin(id)
 			}
 		}
 
-	// Перед окрытием модального окна (схема Power Supply 7809):
+	// Перед открытием модального окна (схема Power Supply 7809):
 	if (id == "ModalWinPS7809_1");
 		{
 		var h = window.screen.height;
@@ -73,6 +73,20 @@ function OpenShowModalWin(id)
 			{
 			// Растянуть...
 			document.getElementById("repops7809sceheme").style.height = "auto";
+			}
+		}
+
+	// Перед открытием модального окна (колонки Genius)
+	if (id == "ModalWinGeniusSP-G06");
+		{
+		var h = window.screen.height;
+
+		if (h >= 900)
+			{
+			// Изменить размер изображениям (Width и Height).
+			// Подставить другие изображения.
+			document.getElementById('genius_img_1').src = "images-repository/Genius_Do_remonta_72dpi_2.png";
+			document.getElementById('genius_img_2').src = "images-repository/Genius_Posle_remonta_72dpi_2.png";
 			}
 		}
 
