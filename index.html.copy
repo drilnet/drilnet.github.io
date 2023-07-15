@@ -2317,7 +2317,7 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;
 			<a href="https://github.com/drilnet/electronics/tree/master/Power Supply +9V for TEA2025B"
 			title="Трансформаторный (используется микросхема: L7809CV)">
-			Стабилизированный блок питания +9В/0.5А для TEA2025B</a>
+			Стабилизированный блок питания +9В/0.5А для TEA2025B (и не только для TEA2025B)</a>
 
 			</td>
 
@@ -5529,12 +5529,14 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 		<table cellspacing="0" cellpadding="0" border="0">
 		<tr>
 
-			<td>
+			<td align="center">
 
 			<!-- Спойлер -->
 			<span class="spoiler"
 			onclick="document.getElementById('id_byte_file_sp').style.display = (document.getElementById('id_byte_file_sp').style.display=='none'?'inline':'none');"
 			title="Нажмите">Какие байты присутствуют в файле, плюс сколько раз они встречаются</span>
+			<br>
+			<span class="smalltxt">Относится к алгоритму Хаффмана</span>
 
 			</td>
 
