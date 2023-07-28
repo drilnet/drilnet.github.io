@@ -65,29 +65,14 @@ function OpenShowModalWin(id)
 		}
 
 	// Перед открытием модального окна (схема Power Supply 7809):
-	if (id == "ModalWinPS7809_1");
-		{
-		var h = window.screen.height;
-
-		if (h >= 900)
-			{
-			// Растянуть...
-			document.getElementById("repops7809sceheme").style.height = "auto";
-			}
-		}
+//	if (id == "ModalWinPS7809_1");
+//		{
+//		}
 
 	// Перед открытием модального окна (колонки Genius)
-	if (id == "ModalWinGeniusSP-G06");
-		{
-		var h = window.screen.height;
-
-		if (h >= 900)
-			{
-			// Подставить другие изображения с другими Width и Height.
-			document.getElementById('genius_img_1').src = "images-repository/Genius_Do_remonta_72dpi_2.png";
-			document.getElementById('genius_img_2').src = "images-repository/Genius_Posle_remonta_72dpi_2.png";
-			}
-		}
+//	if (id == "ModalWinGeniusSP-G06");
+//		{
+//		}
 
 	// Слой затемнения.
 	var darkLayer = document.createElement("div");
@@ -130,6 +115,50 @@ function CloseModalWin(id)
 
 	var modalWin = document.getElementById(id); // Находим наше "окно".
 	modalWin.style.display = "none"; // "Выключаем" окно.
+}
+
+// Изменить размер по высоте (окна с прокруткой).
+// Схема TEA2025B Ver. 5.
+// РЕПОЗИТОРИИ.
+function SetHeightTEAVer5()
+{
+	var h = window.screen.height;
+
+	if (h >= 900)
+		{
+		// Растянуть окна.
+		document.getElementById("id_repo_scroll_TEA_V5_1").style.height = "auto";
+		document.getElementById("id_repo_scroll_TEA_V5_2").style.height = "auto";
+		}
+}
+
+// Изменить размер по высоте (окно с прокруткой).
+// Схема Power Supply 7809.
+// РЕПОЗИТОРИИ.
+function SetHeight7809()
+{
+	var h = window.screen.height;
+
+	if (h >= 900)
+		{
+		// Растянуть...
+		document.getElementById("repops7809sceheme").style.height = "auto";
+		}
+}
+
+// Подставить другие изображения (большие).
+// Колонки Genius.
+// РЕПОЗИТОРИИ.
+function SetBigImagesGenius()
+{
+	var h = window.screen.height;
+
+	if (h >= 900)
+		{
+		// Подставить другие изображения с другими Width и Height.
+		document.getElementById('genius_img_1').src = "images-repository/Genius_Do_remonta_72dpi_2.png";
+		document.getElementById('genius_img_2').src = "images-repository/Genius_Posle_remonta_72dpi_2.png";
+		}
 }
 
 // ---
