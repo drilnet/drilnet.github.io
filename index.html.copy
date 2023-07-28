@@ -586,6 +586,21 @@
 <!-- Ширина окна для Торрент -->
 <!-- TorrentsWidth(); -->
 
+<!-- Изменить размер по высоте (окно с прокруткой) -->
+<!-- Схема TEA2025B Ver. 5 -->
+<!-- РЕПОЗИТОРИИ -->
+<!-- SetHeightTEAVer5(); -->
+
+<!-- Изменить размер по высоте (окно с прокруткой) -->
+<!-- Схема Power Supply 7809 -->
+<!-- РЕПОЗИТОРИИ -->
+<!-- SetHeight7809(); -->
+
+<!-- Подставить другие изображения (большие) -->
+<!-- Колонки Genius -->
+<!-- РЕПОЗИТОРИИ -->
+<!-- SetBigImagesGenius(); -->
+
 <!-- Страница загружена полностью, убрать анимированную иконку -->
 <!-- RemoveIndexLoader(); -->
 
@@ -630,6 +645,21 @@
 
 		// Ширина окна для Торрент.
 		TorrentsWidth();
+
+			// Изменить размер по высоте (окно с прокруткой).
+			// Схема TEA2025B Ver. 5.
+			// РЕПОЗИТОРИИ.
+			SetHeightTEAVer5();
+
+			// Изменить размер по высоте (окно с прокруткой).
+			// Схема Power Supply 7809.
+			// РЕПОЗИТОРИИ.
+			SetHeight7809();
+
+			// Подставить другие изображения (большие).
+			// Колонки Genius.
+			// РЕПОЗИТОРИИ.
+			SetBigImagesGenius();
 
 		RemoveIndexLoader();
 
@@ -2123,6 +2153,32 @@
 
 			</td>
 
+			<!-- TEA2025B. Ver. 5 -->
+
+			<td width="1%" style="padding-left: 9px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver5_1')" title="Схема TEA2025B (стерео) без источника питания">
+				<img src="images/numeric_1.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver5_2')" title="Печатная плата">
+				<img src="images/numeric_2.png">
+				</a>
+
+			</td>
+
+			<td width="1%" style="padding-left: 3px;">
+
+				<a href="javascript:OpenShowModalWin('ModalWinTEA2025B_Ver5_3')" title="Собранная плата">
+				<img src="images/numeric_3.png">
+				</a>
+
+			</td>
+
 			</tr>
 			</table>
 
@@ -2664,6 +2720,18 @@
 				<!-- TEA2025B -->
 				&bull;
 				<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 4/TEA2025B. Схема, печатная плата.pdf" title="Откроется в новой вкладке" target="_blank">TEA2025B. Ver.4. Схема, печатная плата</a>
+
+				<br>
+
+				<!-- TEA2025B -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 5/TE2025B Ver. 5 (RUS).pdf" title="Откроется в новой вкладке (на Русском)" target="_blank">TEA2025B. Ver.5. Схема, печатная плата, собранная плата (RUS)</a>
+
+				<br>
+
+				<!-- TEA2025B -->
+				&bull;
+				<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 5/TE2025B Ver. 5 (UKR).pdf" title="Откроется в новой вкладке (на Украинском)" target="_blank">TEA2025B. Ver.5. Схема, печатная плата, собранная плата (UKR)</a>
 
 				<br>
 
@@ -16320,6 +16388,222 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 
 	</div>
 
+	<!-- TEA2025B. Ver. 5 -->
+
+	<!-- 1 -->
+
+	<div id="ModalWinTEA2025B_Ver5_1" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Схема TEA2025B (стерео) без источника питания</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<!-- Окно с прокруткой -->
+			<div id="id_repo_scroll_TEA_V5_1" style="overflow: scroll; width: auto; height: 320px;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td style="padding-right: 4px; padding-bottom: 2px;">
+
+				<img src="images-repository/TEA_V5_Scheme_72dpi_(720x371)_RUS.png"
+				title="Схему начертил: Демидов С.В.">
+
+				</td>
+				</tr>
+				</table>
+
+			</div>
+
+			<br>
+			Изображение в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 5" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 5">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver5_1')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2 -->
+
+	<div id="ModalWinTEA2025B_Ver5_2" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		Лицензия (License): <b>Free</b>
+
+		<br>
+		<br>
+		<b>Печатная плата</b>
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<!-- Окно с прокруткой -->
+			<div id="id_repo_scroll_TEA_V5_2" style="overflow: scroll; width: auto; height: 320px;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+				<td style="padding-right: 4px; padding-bottom: 2px;">
+
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+
+					<td>
+					<img src="images-repository/TEA_V5_Printed_circuit_board_1_72dpi_(193x380).png"
+					title="Расстановка компнентов: Демидов С.В.">
+					</td>
+
+					<td style="padding-left: 4px;" valign="top">
+					<img src="images-repository/TEA_V5_Printed_circuit_board_2a_72dpi_(171x358).png"
+					title="Разводка платы: Демидов С.В.">
+					</td>
+
+					<td style="padding-left: 4px;" valign="top">
+					<img src="images-repository/TEA_V5_Printed_circuit_board_3a_72dpi_(171x358).png"
+					title="Разводка платы: Демидов С.В.">
+					</td>
+
+				</tr>
+				</table>
+
+				</td>
+				</tr>
+				</table>
+
+			</div>
+
+		<br>
+		Изображения в 600dpi ищите <a href="https://github.com/drilnet/electronics/tree/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 5" title="Репозиторий: Электроника -> Усилитель звука на микросхеме TEA2025B -> TEA2025B. Ver. 5">здесь</a>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver5_2')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 3 -->
+
+	<div id="ModalWinTEA2025B_Ver5_3" class="modalwin">
+
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+		<td align="center">
+
+		<b>Собранная плата</b>
+
+		<br>
+		<br>
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<img src="images-repository/TEA_V5_Sobrannaya_Plata_72dpi.png"
+			title="Собранная плата: Демидов С.В.">
+
+		</td>
+		</tr>
+
+		<tr>
+		<td align="center">
+
+			<br>
+			<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 5/TE2025B Ver. 5 (RUS).pdf"
+			title="Откроется в новой вкладке" target="_blank">pdf-файл RUS</a>,
+			<a href="https://github.com/drilnet/electronics/blob/master/AUDIO AMPLIFIER TEA2025B/TEA2025B. Ver. 5/TE2025B Ver. 5 (UKR).pdf"
+			title="Откроется в новой вкладке" target="_blank">pdf-файл UKR</a>
+			<br>
+			(схема, печатная плата, собранная плата)
+
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+
+			<br>
+
+			<table align="center" class="txtbutton" cellspacing="0" cellpadding="0" border="0">
+
+			<tr>
+			<td>
+			<a href="javascript:CloseModalWin('ModalWinTEA2025B_Ver5_3')">закрыть</a>
+			</td>
+			</tr>
+
+			</table>
+
+                </td>
+		</tr>
+
+		</table>
+
+	</div>
+
 	<!--                               -->
 	<!-- Модальное окно BoxPhotorezist -->
 	<!--                               -->
@@ -16809,7 +17093,7 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 		<tr>
 		<td align="center">
 
-			<div id="repops7809sceheme" class="_modalwintxtsize2" style="overflow: scroll; width: 740px; height: 320px;">
+			<div id="repops7809sceheme" style="overflow: scroll; width: 740px; height: 320px;">
 
 				<img class="icon" src="images-repository/PS_7809_SCH_1_(72dpi)_720x211.png" title="Схему начертил: Демидов С.В.">
 
@@ -16944,9 +17228,9 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 		</tr>
 
 		<tr>
-		<td>
+		<td align="center">
 
-			<img class="icon" src="images-repository/PS_7809_PCB_3_(72dpi)_640x.png" title="Разводка платы: Демидов С.В.">
+			<img class="icon" src="images-repository/PS_7809_PCB_4_(72dpi)_612x.png" title="Разводка платы: Демидов С.В.">
 
 		</td>
 		</tr>
@@ -17003,9 +17287,9 @@ if (document.getElementById('id_sp_rad_2').style.display == 'none')
 		</tr>
 
 		<tr>
-		<td>
+		<td align="center">
 
-			<img class="icon" src="images-repository/PS_7809_PCB_4_(72dpi)_640x.png" title="Разводка платы: Демидов С.В.">
+			<img class="icon" src="images-repository/PS_7809_PCB_7_(72dpi)_612x.png" title="Разводка платы: Демидов С.В.">
 
 		</td>
 		</tr>
