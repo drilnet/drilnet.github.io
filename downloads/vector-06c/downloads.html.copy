@@ -3273,6 +3273,10 @@ if (document.getElementById('id_floppydisk35_sp').style.display == 'none')
 		<tr>
 		<td align="center">
 
+			В <b>600dpi</b> на главной странице (торрентом)!
+			<br>
+			<br>
+
 			<!-- Автор -->
 			(C) Терентьев С.В., г. Харьков, 1993г., фирма "Тетрис" (Центр "Тень").
 
@@ -3773,6 +3777,8 @@ if (document.getElementById('id_boot_sp').style.display == 'none')
 
 		Ссылка: <a href="http://sensi.org/scalar/ware/543" title="Откроется в новой вкладке" target="_blank">http://sensi.org/scalar/ware/543</a>
 		<br>
+		Ссылка (новый адрес): <a href="http://caglrc.cc/scalar/ware/543" title="Откроется в новой вкладке" target="_blank">http://caglrc.cc/scalar/ware/543</a>
+		<br>
 		<br>
 
 		<!-- Кнопка наверх -->
@@ -3934,9 +3940,11 @@ if (document.getElementById('id_boot_sp').style.display == 'none')
 		<!-- Спасибо -->
 
 		<br>
-		Спасибо <a href="https://zx-pk.ru" title="Откроется в новой вкладе" target="_blank">https://zx.pk.ru</a> и <a href="http://www.sensi.org/scalar/" title="Откроется в новой вкладке" target="_blank">http://www.sensi.org/scalar/</a> за сохранённую работу!
+		Спасибо <a href="https://zx-pk.ru" title="Откроется в новой вкладе" target="_blank">https://zx.pk.ru</a> и <a href="http://www.sensi.org/scalar/" title="Откроется в новой вкладке" target="_blank">http://www.sensi.org/scalar/</a>
+		(новый адрес sensi: <a href="http://caglrc.cc/scalar/" title="Откроется в новой вкладе" target="_blank">http://caglrc.cc/scalar/</a>) за сохранённую работу!
 		<br>
 		<span class="vcsmalltxt">Ссылка на эту работу: <a href="http://www.sensi.org/scalar/ware/858/" title="Откроется в новой вкладке" target="_blank">http://www.sensi.org/scalar/ware/858/</a></span>
+		<span class="vcsmalltxt">Ссылка на эту работу (новый адрес): <a href="http://caglrc.cc/scalar/ware/858/" title="Откроется в новой вкладке" target="_blank">http://caglrc.cc/scalar/ware/858/</a></span>
 		<br>
 		<br>
 
