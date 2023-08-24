@@ -7557,7 +7557,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 	</div> <!-- Конец окну с прокруткой -->
 
 		<br>
-		<span style="color: #006600;">Раздача приблизительно с 10:00 утра и до 22:00 вечера (GMT+2 Киев).</span>
+		<span style="color: #006600;">Раздача приблизительно с 10:00 утра и до 22:00 вечера (Киевское Время).</span>
 		<br>
 		<span style="color: #006600;">Не всегда стаю на раздачи!</span> :)
 		<br>
