@@ -1737,7 +1737,7 @@
 			<table class="dl_update_bg smalltxt" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 				<td>
-				Обновлено: 08.12.2022
+				Обновлено: 24.08.2023
 				</td>
 			</tr>
 			</table>
@@ -1948,7 +1948,7 @@
 		<a href="https://www.sensi.org/scalar/" title="Откроется в новой вкладке (https://www.sensi.org/scalar/)" target="_blank">Картотека ПО для Вектор'а-06Ц</a>
 		<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="smalltxt">(C) Viacheslav Slavinsky.</span>
+		<span class="smalltxt">(C) Viacheslav Slavinsky и др.</span>
 
 		</td>
 		</tr>
@@ -7459,9 +7459,9 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 
 			<tr>
 
-				<td class="torrents_pad_t_pad_b_td torrents_br_td" width="32px">3.</td>
+				<td class="torrents_pad_t_pad_b_td torrents_br_td torrents_bb_td" width="32px">3.</td>
 
-				<td align="left" class="torrents_pad_t_pad_b_td torrents_left_td">
+				<td align="left" class="torrents_pad_t_pad_b_td torrents_left_td torrents_bb_td">
 				Небольшая подборка бесплатных программ для Windows 7, 8, 10, 11. 2023г.
 				Размер: <span style="color: #007700;">2784M</span>.
 				[ <a href="downloads/torrents/prg_dir_1.txt" class="smalltxt" title="Откроется в новой вкладке" target="_blank">Содержимое архива</a> ]
@@ -7477,7 +7477,7 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 				</span>
 				</td>
 
-				<td align="center" class="torrents_bl_td" width="112px">
+				<td align="center" class="torrents_bl_td torrents_bb_td" width="112px">
 
 					<table cellspacing="0" cellpadding="0" border="0">
 					<tr>
@@ -7488,6 +7488,48 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 
 					<td style="padding-left: 4px;">
 					<a href="downloads/torrents/St_A_Small_Selection_Of_Free_Programs_For_Windows_7,8,10,11_(2023).7z.torrent" title="Скачать торрент">torrent</a>
+					</td>
+
+					</tr>
+					</table>
+
+				</td>
+
+			</tr>
+
+			<!-- 4 -->
+
+			<tr>
+
+				<td class="torrents_pad_t_pad_b_td torrents_br_td" width="32px">4.</td>
+
+				<td align="left" class="torrents_pad_t_pad_b_td torrents_left_td">
+				Три брошюры БИБЛИОТЕКА ПК Вектор-06Ц (выпуск 1, выпуск 2, выпуск 3), Харьков 1993г, Терентьев С.В.
+				Формат: <b>JPG</b> (<b>600dpi</b>). Размер: <span style="color: #007700;">2194M</span>.
+
+				<br>
+				<span class="smalltxt">
+				<b>Выпуск 1</b>: ВЕКТОР-06Ц ИЗНУТРИ Руководство для начинающих специалистов. <b>Выпуск 2</b>: Системные программы МикроДОС. <b>Выпуск 3</b>: Язык программирования ЛС-ПАСКАЛЬ.
+				<br>
+				Качество не очень! Брошюрам много лет!
+
+				[ <a href="images/BroshyuraTenx_1.png" title="Откроется в новой вкладке" target="_blank">Обложка 1</a> ]
+				[ <a href="images/BroshyuraTenx_2.png" title="Откроется в новой вкладке" target="_blank">Обложка 2</a> ]
+				[ <a href="images/BroshyuraTenx_3.png" title="Откроется в новой вкладке" target="_blank">Обложка 3</a> ]
+				</span>
+				</td>
+
+				<td align="center" class="torrents_bl_td" width="112px">
+
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+
+					<td>
+					<img class="icon" src="icons/torrent.png" title="Иконка из набора Silk 2. (C) Mark James. License: Creative Commons (Attr. 2.5 Generic)">
+					</td>
+
+					<td style="padding-left: 4px;">
+					<a href="downloads/torrents/St_Biblioteka_PK_Vector-06C_Vypusk_1_Vypusk_2_Vypusk_3.7z.torrent" title="Скачать торрент">torrent</a>
 					</td>
 
 					</tr>
@@ -7514,6 +7556,8 @@ if (document.getElementById('vrle8spoilersprsd').style.display == 'none')
 
 	</div> <!-- Конец окну с прокруткой -->
 
+		<br>
+		<span style="color: #006600;">Раздача приблизительно с 10:00 утра и до 22:00 вечера (GMT+2 Киев).</span>
 		<br>
 		<span style="color: #006600;">Не всегда стаю на раздачи!</span> :)
 		<br>
